@@ -148,7 +148,7 @@ These matters require a formal document hierarchy, subject-matter authority rule
 
 Activity 0.2.8 — Record references between sources: **PREPARED — WORKING DRAFT**.
 
-This map provides an auditable first-pass relationship inventory based on direct source inspection. It does not close WP-0.2. The exact-byte archival of the five PDFs, repository-side hash verification, disposition of the two unverified references, final register review, and LAEV approval remain outstanding.
+This map provides an auditable first-pass relationship inventory based on direct source inspection. The five original PDFs have now been located in `docs/` on `main`; their SHA-256 checksums match the foundational register, and their Git blob identities match the repository objects. See `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. The two referenced sources remain NOT LOCATED / UNVERIFIED. Final register review and express LAEV approval remain outstanding.
 
 ---
 End of ERX-SOURCE-CROSS-REFERENCE-MAP-001

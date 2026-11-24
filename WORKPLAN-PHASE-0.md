@@ -117,7 +117,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.2.8 Record identified source cross-references.
 - [x] 0.2.9 Publish the initial foundational materials register (baseline; final review pending).
 
-**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, and `registers/foundational-material-register.csv`. **Evidence:** five supplied PDFs inspected; SHA-256 values recorded. Repository tree inspection completed; no original PDFs found in the repository. Original binary archival and post-commit hash verification remain pending because this session's GitHub write workflow does not expose the local PDF bytes as a binary upload payload. **Acceptance:** PARTIAL — WP-0.2 remains IN_PROGRESS.  
+**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, `registers/foundational-material-register.csv`, and [`docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md`](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) v0.1.0 — WORKING DRAFT. **Evidence:** five supplied PDFs inspected; SHA-256 values recorded. Repository tree inspection completed; no original PDFs found in the repository. Original binary archival and post-commit hash verification remain pending because this session's GitHub write workflow does not expose the local PDF bytes as a binary upload payload. **Acceptance:** PARTIAL — WP-0.2 remains IN_PROGRESS.  
 **Acceptance:** each known source has an ID, name, provenance, version, location, integrity, and status; missing sources and uncertainties are explicit. Do not reconstruct missing sources through assumptions.  
 **Dependency:** WP-0.1.
 
@@ -359,10 +359,10 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 | WP-0.1 | Definition and Rationale | APPROVED | LAEV | [ERX-PHASE-0-CHARTER-001 v1.0.0](docs/phase-0/ERX-PHASE-0-CHARTER-001.md) · express approval 2026-11-23 | Four technical adjustments incorporated; WP-0.1 approved, not declared COMPLETED. |
 | WP-0.2 | Foundational Materials | IN_PROGRESS | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Custody rules](docs/foundational/README.md) | Five supplied PDFs inspected; originals not yet archived in repository; two referenced sources unverified. |
 | WP-0.3 | Document Hierarchy | BLOCKED | LAEV | [Preparatory governance draft](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) | Draft v0.1.0 published for preparation only; formal execution and approval depend on WP-0.2 acceptance. |
-| WP-0.4 | Document Control | NOT_STARTED | To be assigned | — | — |
-| WP-0.5 | ERX Repository | NOT_STARTED | LAEV / to be assigned | — | — |
-| WP-0.6 | Master Index | NOT_STARTED | To be assigned | — | — |
-| WP-0.7 | Requirements | NOT_STARTED | To be assigned | — | — |
+| WP-0.4 | Document Control | BLOCKED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) | Formal execution depends on WP-0.3 approval. |
+| WP-0.5 | ERX Repository | BLOCKED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) | Formal execution depends on WP-0.3 and WP-0.4 approval. |
+| WP-0.6 | Master Index | BLOCKED | To be assigned | [Provisional index](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [CSV register](registers/document-register.csv) | Preparatory draft only; depends on WP-0.2 through WP-0.5 acceptance. |
+| WP-0.7 | Requirements | BLOCKED | To be assigned | [Preparatory method](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) · [Traceability schema](registers/requirements-traceability.csv) | No substantive extracted requirements yet; depends on WP-0.3 and WP-0.6 acceptance. |
 | WP-0.8 | ADR Decisions | NOT_STARTED | LAEV / to be assigned | — | — |
 | WP-0.9 | Risks and Dependencies | NOT_STARTED | To be assigned | — | — |
 | WP-0.10 | Governance | NOT_STARTED | LAEV / to be assigned | — | — |

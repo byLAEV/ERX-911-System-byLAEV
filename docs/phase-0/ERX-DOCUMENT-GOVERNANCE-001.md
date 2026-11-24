@@ -4,19 +4,19 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-GOVERNANCE-001 |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Status | WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design authority | LAEV |
-| Basis | Five supplied foundational PDFs inspected; initial WP-0.2 register |
+| Basis | Five foundational PDFs inspected; repository byte-identity evidence consolidated; WP-0.2 acceptance pending |
 | Date | 2026-11-23 |
 
 ## 1. Purpose
 
 This document proposes a controlled organization and hierarchy for ERX project documents. It distinguishes original sources from development artifacts, assigns provisional subject-matter roles, records known relationships, and defines how contradictions and document evolution are to be handled.
 
-This is a preparatory draft only. WP-0.2 remains IN_PROGRESS and its source inventory has not been approved. Consequently, this document does not establish a final or approved hierarchy, does not supersede any source, and does not resolve any technical or normative conflict.
+This is a preparatory draft only. WP-0.2 is IN_REVIEW, with the five-source inventory and repository byte-identity evidence consolidated in ERX-WP-0.2-COMPLETION-DOSSIER-001; express LAEV acceptance remains pending. Consequently, this document does not establish a final or approved hierarchy, does not supersede any source, and does not resolve any technical or normative conflict.
 
 ## 2. Governing Principles
 
@@ -40,7 +40,7 @@ This is a preparatory draft only. WP-0.2 remains IN_PROGRESS and its source inve
 | Verification artifact | Test plan, test result, audit evidence, validation report, or independent review | Future verification reports |
 | Implementation artifact | Source code, configuration, build, release, or deployment material | Future software repository contents |
 
-Classification is provisional until WP-0.2 is complete and the relevant documents have been verified.
+Classification is provisional until WP-0.2 is accepted and the relevant documents have been verified.
 
 ## 4. Provisional Document Hierarchy
 
@@ -148,27 +148,27 @@ The detailed identifier, metadata, and versioning rules are assigned to WP-0.4 a
 
 ## 9. Open Items and Preconditions
 
-- WP-0.2 has not been completed or approved.
-- The five source PDFs have been inspected, but their original binary files have not yet been archived in the GitHub repository and post-commit hashes have not been verified.
-- ERX-CONSENSUS-001 v0.1 has not been located.
-- ERX-IMPL-PROPOSAL-001 has not been located.
+- WP-0.2 is IN_REVIEW; its completion dossier is published, but LAEV acceptance has not been recorded.
+- The five original PDF binaries are present in `docs/` on `main`. Their registered SHA-256 checksums match the supplied originals, and their Git blob identities match the repository objects; evidence is recorded in ERX-WP-0.2-COMPLETION-DOSSIER-001.
+- ERX-CONSENSUS-001 v0.1 remains NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED.
+- ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED.
 - Full section-by-section comparison among ERX-PROT-001, ERX-ATLAS-001, and UTXO-911-001 remains outstanding.
 - The formal document hierarchy and subject-matter authority matrix have not been approved.
 - The technical response's formal identifier and version remain unstated in the supplied source.
 
 ## 10. Preliminary Issue Register
 
-The preparatory issue inventory is recorded in [`ERX-DOCUMENT-ISSUE-REGISTER-001.md`](ERX-DOCUMENT-ISSUE-REGISTER-001.md) and [`registers/document-issue-register.csv`](../../registers/document-issue-register.csv). It records open metadata, missing-source, authority, diagram interpretation, response-effect, and archive-integrity matters. These entries are not adjudicated contradictions and remain open pending WP-0.2 acceptance and formal WP-0.3 execution.
+The preparatory issue inventory is recorded in [`ERX-DOCUMENT-ISSUE-REGISTER-001.md`](ERX-DOCUMENT-ISSUE-REGISTER-001.md) and [`registers/document-issue-register.csv`](../../registers/document-issue-register.csv). It records metadata, missing-source, authority, diagram interpretation, and response-effect matters. DOC-ISS-008 has been resolved by archive integrity evidence. The remaining entries are not adjudicated contradictions and remain open pending WP-0.2 acceptance and formal WP-0.3 execution.
 
 ## 11. WP-0.3 Status and Acceptance
 
 **Status: BLOCKED — PREPARATORY DRAFT ONLY.**
 
-This draft has been prepared to make the next work package reviewable and to identify the hierarchy questions that must be decided. Formal WP-0.3 execution and approval remain dependent on completion and acceptance of WP-0.2.
+This draft has been updated to reflect the current archival evidence and to make the next work package reviewable. Formal WP-0.3 execution and approval remain dependent on LAEV's acceptance of WP-0.2.
 
 WP-0.3 may be submitted for formal review only after:
 1. WP-0.2 source inventory is completed and reviewed.
-2. Original source preservation and integrity evidence are addressed or formally dispositioned.
+2. Original source preservation and integrity evidence are verified or formally dispositioned.
 3. Referenced but missing documents are located or formally recorded as unavailable with an approved treatment.
 4. The subject-matter matrix and document relationships are checked against the complete source set.
 5. All material contradictions and ambiguities are entered in a traceable issue register.

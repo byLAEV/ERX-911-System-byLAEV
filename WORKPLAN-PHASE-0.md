@@ -212,7 +212,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependencies:** WP-0.2 through WP-0.5. Formal WP-0.6 acceptance remains blocked until these dependencies are completed and accepted; this provisional index does not satisfy the gate.
 
 ### WP-0.7 — Requirements Identification and Classification
-**Status:** NOT_STARTED
+**Status:** BLOCKED — PREPARATORY METHODOLOGY ONLY
 
 **Activities**
 - [ ] 0.7.1 Identification methodology.
@@ -227,9 +227,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases.
 - [ ] 0.7.11 Build the traceability matrix.
 
-**Deliverable:** `registers/requirements-traceability.csv` and `docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md`.  
+**Preparatory deliverables:** [`registers/requirements-traceability.csv`](registers/requirements-traceability.csv) (schema only; no extracted requirements) and [`docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md`](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) v0.1.0 — NOT APPROVED. 
 **Acceptance:** each requirement has an ID, verifiable statement, type, source, status, assigned phase, and verification criterion. Inferred requirements are distinguished from extracted requirements.  
-**Dependencies:** WP-0.3 and WP-0.6.
+**Dependencies:** WP-0.3 and WP-0.6. Formal WP-0.7 execution remains blocked until both dependencies are completed and accepted; source extraction also requires direct inspection of exact foundational source versions.
 
 ### WP-0.8 — Architecture Decision Register (ADR)
 **Status:** NOT_STARTED

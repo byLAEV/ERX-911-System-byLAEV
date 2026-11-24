@@ -101,13 +101,13 @@ These dimensions are not interchangeable. In particular, a source may be invento
 | UTXO-911-001 v1.0 | Foundational functional source cited by | ERX-ROADMAP-001 v1.0 |
 | ERX-PROT-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
 | ERX-ATLAS-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
-| ERX-CONSENSUS-001 v0.1 | Referenced source; not located | ERX-ROADMAP-001 v1.0 |
+| `Consenso ERX byLAEV.pdf` | Candidate for cited ERX-CONSENSUS-001 v0.1; identity unverified | ERX-ROADMAP-001 v1.0 |
 | ERX-IMPL-PROPOSAL-001 | Referenced source; not located | ERX-ROADMAP-001 v1.0 |
 | Technical Response to ERX-ROADMAP-001 | Responds to observations concerning | ERX-ROADMAP-001 v1.0 |
 | ERX-PHASE-0-CHARTER-001 v1.0.0 | Authorizes Phase 0 governance and preparation scope | FASE 0 |
 | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 v0.1.0 | Inventories | FND-001 through FND-005 |
 | ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001 v0.1.0 | Defines preservation method for | FND-001 through FND-005 |
-| ERX-DOCUMENT-GOVERNANCE-001 v0.1.0 | Proposes hierarchy and document authority rules | ERX document set |
+| ERX-DOCUMENT-GOVERNANCE-001 v0.2.0 | Proposes hierarchy and document authority rules | ERX document set |
 | ERX-DOCUMENT-CONTROL-001 v0.1.0 | Proposes identifiers, versions, statuses, metadata and approval records | ERX controlled documents |
 | ERX-REPOSITORY-GOVERNANCE-001 v0.1.0 | Proposes repository organization and governance | ERX GitHub repository |
 
@@ -116,16 +116,12 @@ Relationships above reflect explicit source references or clearly stated documen
 ## 8. Pending and Unresolved Records
 
 1. Supplemental identity verification and LAEV disposition of the candidate consensus PDF (DOC-ISS-002).
-2. Locate and inspect ERX-IMPL-PROPOSAL-001 (DOC-ISS-003).
+2. Locate and inspect or formally disposition ERX-IMPL-PROPOSAL-001 (DOC-ISS-003).
 3. Complete and approve WP-0.3 hierarchy and subject-matter authority.
 4. Complete and approve WP-0.4 document identification and control.
-5. Inspect and approve actual repository settings and governance under WP-0.5.
+5. Inspect and approve repository settings and governance under WP-0.5.
 6. Reconcile document classification and status after governing policies are approved.
-7. Verify the README and CSV register metadata and contents against canonical records.
-7. Complete and approve WP-0.4 document identification and control.
-8. Inspect and approve actual repository settings and governance under WP-0.5.
-9. Reconcile any document classification or status changes after the governing policies are approved.
-10. Verify the README and CSV register metadata and contents against the canonical records.
+7. Verify README and CSV register metadata and contents against canonical records.
 
 ## 9. WP-0.6 Status and Acceptance
 

@@ -17,6 +17,8 @@ This register tracks metadata discrepancies, missing-source conditions, authorit
 The machine-readable companion is `registers/document-issue-register.csv`.
 
 ## 2. Evidence updates
+- DOC-ISS-002 is no longer described simply as not located: a candidate named `Consenso ERX byLAEV.pdf` was discovered in `docs/` on 2026-11-24. Its internal identity/version and equivalence to Roadmap reference `ERX-CONSENSUS-001 v0.1` remain unverified. See `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`.
+- DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
 - DOC-ISS-009 and DOC-ISS-010 were added after direct comparison of ERX-PROT-001 v1.1 Sections 5–10, UTXO-911-001 v1.0 Sections 2–6, and ERX-ATLAS-001 v1.1 Plates 01–08 and its correspondence table.
 - The comparison found a broad three-stage communication lifecycle correspondence, alongside a more granular call-request/acceptance description and a distinct agent-availability UTXO in UTXO-911-001. These are unresolved scope/mapping questions, not proven contradictions.
@@ -27,7 +29,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | ID | Issue | Status | Work Package |
 |---|---|---|---|
 | DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | WP-0.3 |
-| DOC-ISS-002 | ERX-CONSENSUS-001 v0.1 not located | OPEN | WP-0.2 carry-forward |
+| DOC-ISS-002 | Candidate `Consenso ERX byLAEV.pdf`; identity to ERX-CONSENSUS-001 v0.1 unverified | CANDIDATE_LOCATED_IDENTITY_UNVERIFIED | WP-0.2 carry-forward / WP-0.3 |
 | DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | WP-0.2 carry-forward |
 | DOC-ISS-004 | Technical Response lacks formal ID/version/date | OPEN | WP-0.3 |
 | DOC-ISS-005 | UTXO-911 / Protocol authority relationship | OPEN | WP-0.3 |
@@ -62,7 +64,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 9. Where an issue could affect emergency handling, unique call admission, agent availability, double-spend prevention, evidence integrity, privacy or security, no implementation assumption is approved by this register.
 
 ## 6. Dependencies and next action
-DOC-ISS-002 and DOC-ISS-003 remain source-location/provenance limitations. DOC-ISS-005, DOC-ISS-006, DOC-ISS-009 and DOC-ISS-010 require LAEV decisions after review of the source alignment report. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
+DOC-ISS-002 requires identity/content verification of the candidate `docs/Consenso ERX byLAEV.pdf`; DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006, DOC-ISS-009 and DOC-ISS-010 require LAEV decisions after review of the source alignment report. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
 **Status: WORKING REGISTER — PENDING LAEV REVIEW.** This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
 

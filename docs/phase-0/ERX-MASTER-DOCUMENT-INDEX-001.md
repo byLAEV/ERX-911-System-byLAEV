@@ -27,6 +27,7 @@ Records are drawn from:
 - The five-source baseline in ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 v0.1.0.
 - The current Phase 0 Workplan and repository file records.
 - The preparatory governance, document-control, repository-governance, and archival-procedure drafts.
+- The source cross-reference map and documentary issue register, both working drafts.
 
 Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original filenames are retained. Source-file presence in the repository is distinguished from the existence of an inventory record.
 
@@ -49,6 +50,10 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-013 | ERX-DOCUMENT-CONTROL-001 | Document Identification and Control | 0.1.0 | WP-0.4 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` | Formal WP-0.4 blocked by WP-0.3 |
 | IDX-014 | ERX-REPOSITORY-GOVERNANCE-001 | Repository Identity, Structure and Governance | 0.1.0 | WP-0.5 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md` | Formal WP-0.5 blocked by WP-0.3 and WP-0.4 |
 | IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 0.1.0 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | This document; WP-0.6 acceptance pending |
+
+| IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.1.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
+| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Preliminary Documentary Ambiguities and Open Issues | 0.1.0 | WP-0.3 preparatory register | PREPARATORY REGISTER — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eight open issues; no dispositions approved |
+| IDX-020 | NOT_STATED | Machine-readable documentary issue register | NOT_STATED | WP-0.3 supporting register | WORKING REGISTER — NOT APPROVED | `registers/document-issue-register.csv` | Companion to ERX-DOCUMENT-ISSUE-REGISTER-001 |
 
 ## 4. Referenced but Unlocated Documents
 

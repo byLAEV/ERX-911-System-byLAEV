@@ -4,176 +4,80 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-GOVERNANCE-001 |
-| Version | 0.1.1 |
-| Status | WORKING DRAFT — NOT APPROVED |
+| Version | 0.2.0 |
+| Status | WORKING DRAFT — PENDING LAEV APPROVAL |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
-| Design authority | LAEV |
-| Basis | Five foundational PDFs inspected; repository byte-identity evidence consolidated; WP-0.2 acceptance pending |
-| Date | 2026-11-23 |
+| Design and Approval Authority | LAEV |
+| Evidence baseline | Five foundational PDFs inspected; WP-0.2 accepted by LAEV and recorded in Workplan |
+| Updated | 2026-11-24 |
 
 ## 1. Purpose
+This document proposes governance principles for classifying, organizing, interpreting, modifying and preserving ERX documentation. It is a working proposal and does not itself approve hierarchy or subject-matter authority.
 
-This document proposes a controlled organization and hierarchy for ERX project documents. It distinguishes original sources from development artifacts, assigns provisional subject-matter roles, records known relationships, and defines how contradictions and document evolution are to be handled.
+## 2. Governing principles
+1. Preserve supplied originals unchanged.
+2. Maintain traceability from every derivative to exact source versions.
+3. Do not silently reconcile different statements.
+4. Distinguish subject-matter relevance from universal precedence.
+5. A commit or publication is not approval.
+6. Preserve version, provenance, history and unresolved uncertainty.
+7. Do not infer contents of unavailable referenced documents.
+8. Do not treat a response or recommendation as an amendment without express approval.
 
-This is a preparatory draft only. WP-0.2 is IN_REVIEW, with the five-source inventory and repository byte-identity evidence consolidated in ERX-WP-0.2-COMPLETION-DOSSIER-001; express LAEV acceptance remains pending. Consequently, this document does not establish a final or approved hierarchy, does not supersede any source, and does not resolve any technical or normative conflict.
+## 3. Document classes
+- Foundational normative protocol source.
+- Foundational graphical/operational source.
+- Foundational functional source.
+- Foundational planning source.
+- Technical response/review artifact.
+- Governance and approval artifact.
+- Controlled development specification.
+- Verification artifact.
+- Implementation artifact.
+- Working register or analysis artifact.
+- Referenced but unavailable source.
 
-## 2. Governing Principles
+The classification and source-specific assignments are in ERX-DOCUMENT-HIERARCHY-MATRIX-001.md.
 
-1. **Source preservation:** an original source remains unchanged. Corrections, translations, extracts, and revisions are derivative artifacts.
-2. **Traceability:** every derivative must identify the sources on which it relies.
-3. **No silent reconciliation:** inconsistent statements are recorded as issues; they are not harmonized by editorial assumption.
-4. **Subject-matter authority:** authority is determined by the subject explicitly covered by a document, not merely by its date, file name, or position in a directory.
-5. **Explicit approval:** publication, a Git commit, or a draft status does not constitute approval.
-6. **Version awareness:** references must identify the exact document version wherever known.
-7. **Preservation of history:** superseded documents remain discoverable and must not be overwritten as if they had never existed.
-8. **Uncertainty visibility:** missing sources, unverified versions, and unresolved decisions remain explicitly marked.
+## 4. Proposed hierarchy
+The four-level governance model is:
+- Level A — LAEV-approved project mandate and governance.
+- Level B — foundational sources, each within its own subject and provenance.
+- Level C — approved derivative specifications and decisions.
+- Level D — working, implementation and verification artifacts.
 
-## 3. Document Classes
+These levels do not establish universal precedence between Level B sources. The detailed proposal and limits are in ERX-DOCUMENT-HIERARCHY-MATRIX-001.md. Adoption remains pending LAEV.
 
-| Class | Definition | Examples in current source set |
-|---|---|---|
-| Foundational source | Original design, protocol, functional, or planning document supplied as a source | ERX-PROT-001; ERX-ATLAS-001; UTXO-911-001; ERX-ROADMAP-001 |
-| Technical response / review | A response, assessment, or observation concerning another document | Technical Response to ERX-ROADMAP-001 |
-| Governance artifact | Charter, workplan, policy, register, approval, or closure record governing project work | ERX-PHASE-0-CHARTER-001; WORKPLAN-PHASE-0; foundational register |
-| Development specification | A new or revised technical specification created during controlled development | Future ERX component specifications |
-| Verification artifact | Test plan, test result, audit evidence, validation report, or independent review | Future verification reports |
-| Implementation artifact | Source code, configuration, build, release, or deployment material | Future software repository contents |
+## 5. Subject-matter authority
+The proposed allocation by subject is in ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.md. It distinguishes institutional protocol, graphical representation, functional UTXO cycle, project planning, response/review, and unavailable cited sources. It is not binding until LAEV approves it.
 
-Classification is provisional until WP-0.2 is accepted and the relevant documents have been verified.
+## 6. Relationships and source alignment
+The source-backed relationship map is ERX-DOCUMENT-RELATIONSHIP-MAP-001.md; the direct comparison is ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md.
 
-## 4. Provisional Document Hierarchy
+The comparison identifies:
+- Broad correspondence among the three communication stages described in Protocol, Atlas and UTXO-911.
+- More granular call-request and call-acceptance states in UTXO-911 requiring mapping.
+- A distinct agent-availability UTXO state machine in UTXO-911 requiring scope allocation.
+- An explicit Atlas-to-Protocol normative relationship.
+- A Technical Response whose formal amendment effect on the Roadmap is not evidenced.
+- Two cited sources whose contents remain unavailable and unverified.
 
-The following hierarchy is proposed as an organizational model. It is not an automatic precedence rule and does not grant one document authority over all subjects.
+These are documented scope and authority questions; no direct contradiction is declared without incompatible statements in the same scope.
 
-### Level A — Project mandate and governance
+## 7. Contradiction and ambiguity handling
+The controlled draft procedure is ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001.md. It requires exact source/version/section references, classification, impact, interim treatment, review, LAEV disposition and synchronized registers. It remains pending approval.
 
-- Approved Phase 0 Charter.
-- Approved project governance and authority decisions.
-- Approved workplan and formally approved changes to it.
+## 8. Document evolution and supersession
+The controlled draft policy is ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001.md. It requires baseline preservation, explicit change classification, impact review, competent approval, traceable publication and retention of prior versions. It remains pending approval.
 
-These artifacts govern project scope, process, responsibility, and approval. They do not independently redefine the technical behavior of the ERX protocol.
+## 9. Issue control
+The current issue register is ERX-DOCUMENT-ISSUE-REGISTER-001.md and registers/document-issue-register.csv. It contains DOC-ISS-001 through DOC-ISS-010. DOC-ISS-008 is RESOLVED_EVIDENCE; all other entries remain open pending disposition. DOC-ISS-009 and DOC-ISS-010 reflect source comparison findings and are not labeled proven contradictions.
 
-### Level B — Foundational technical and planning sources
+## 10. Approval and limits
+This document and its referenced matrices are drafts/proposals. LAEV retains design and approval authority. Independent technical review evaluates consistency and evidence but does not replace LAEV approval. No source is amended or superseded by this proposal.
 
-- ERX-PROT-001 v1.1 — institutional protocol specification.
-- ERX-ATLAS-001 v1.1 — graphical representation explicitly related to ERX-PROT-001 v1.1.
-- UTXO-911-001 v1.0 — conceptual and functional specification of the three-stage 911 communication UTXO cycle.
-- ERX-ROADMAP-001 v1.0 — development, implementation, and institutional homologation plan.
-- Technical Response to the Observations on ERX-ROADMAP-001 — technical and management response.
-
-These documents retain their individual scopes. Their inclusion in one level does not imply that they are interchangeable or that all have the same normative force.
-
-### Level C — Controlled development documents
-
-- Detailed requirements and traceability matrices.
-- Architecture decision records.
-- Detailed protocol and component specifications.
-- Interface and data specifications.
-- Security and privacy specifications.
-- Operational procedures.
-
-These documents must cite the source requirements and decisions they elaborate. They may not silently alter an approved foundational rule.
-
-### Level D — Verification and implementation evidence
-
-- Test plans and test cases.
-- Test results and validation reports.
-- Code, configuration, build and release records.
-- Audit and integrity evidence.
-- Deployment and operational evidence, when later authorized.
-
-Evidence demonstrates implementation or verification results; it does not amend a protocol specification by itself.
-
-## 5. Provisional Subject-Matter Authority Matrix
-
-| Subject | Primary source / proposed authority | Supporting source | Boundary / unresolved point |
-|---|---|---|---|
-| Institutional 911 communication protocol | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1 | Detailed interpretation must be traced to exact sections and diagrams. |
-| Graphical flow and operational representation | ERX-ATLAS-001 v1.1 | ERX-PROT-001 v1.1 | The Atlas is a representation; a diagram must not silently override protocol text. |
-| Three-stage UTXO communication cycle | UTXO-911-001 v1.0 | ERX-PROT-001 v1.1 | Exact alignment and any differences require a section-by-section comparison. |
-| Development phase sequence and gates | ERX-ROADMAP-001 v1.0 | Technical Response to the Roadmap | Changes require a recorded decision and versioned Roadmap revision. |
-| Technical observations on Roadmap | Technical Response to the Observations on ERX-ROADMAP-001 | ERX-ROADMAP-001 v1.0 | It is a response, not an automatic replacement for the Roadmap. |
-| Consensus architecture | ERX-CONSENSUS-001 v0.1 (cited, not located) | ERX-ROADMAP-001 v1.0 | Authority and contents cannot be assessed until the source is recovered. |
-| Institutional implementation proposal | ERX-IMPL-PROPOSAL-001 (cited, not located) | ERX-ROADMAP-001 v1.0 | Authority and contents cannot be assessed until the source is recovered. |
-| Project governance and approval | Approved ERX Phase 0 governance artifacts | Workplan and decision records | The Phase 0 Charter is approved; the Workplan itself remains pending approval. |
-
-This matrix is provisional. “Primary source” means the source most directly assigned to the subject in this working model; it does not establish a legally binding precedence rule.
-
-## 6. Known Document Relationships
-
-- ERX-ATLAS-001 v1.1 explicitly identifies ERX-PROT-001 v1.1 as its related normative document.
-- ERX-ROADMAP-001 v1.0 identifies ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1, UTXO-911-001 v1.0, ERX-CONSENSUS-001 v0.1, and ERX-IMPL-PROPOSAL-001 as foundational references.
-- The Technical Response addresses observations and risks associated with ERX-ROADMAP-001 and recommends retaining its development sequence while incorporating observations as implementation and validation requirements.
-- The Phase 0 Charter authorizes the governance and preparation work of Phase 0; it does not authorize operational implementation of ERX.
-
-These relationships are based on the supplied documents' opening/control information and inspected content. A complete cross-reference map requires full-document review and section-level citations.
-
-## 7. Contradiction and Ambiguity Handling
-
-Every suspected contradiction must be recorded before any resolution is proposed.
-
-Minimum issue record:
-
-| Field | Required content |
-|---|---|
-| Issue ID | Unique ERX issue identifier |
-| Sources | Exact document IDs, versions, sections/pages/diagram IDs |
-| Statements | Concise description or quotation of each conflicting statement |
-| Issue type | Contradiction, ambiguity, omission, outdated reference, or version mismatch |
-| Impact | Protocol, architecture, safety, privacy, security, institutional, implementation, or documentary impact |
-| Interim treatment | Whether work must stop, proceed with a documented assumption, or remain unaffected |
-| Owner | Person responsible for analysis |
-| Options | Viable interpretations or resolutions |
-| Decision authority | Authority empowered to approve the resolution |
-| Status | OPEN, UNDER_REVIEW, DECIDED, or DEFERRED |
-| Evidence | ADR, approved amendment, review, or other disposition record |
-
-No source is considered amended merely because a later document describes it differently. A conflict is resolved only through an explicit, traceable decision by the designated authority and, where necessary, a new version or amendment of the affected document.
-
-## 8. Document Evolution Rules
-
-1. Assign a unique document identifier before controlled publication.
-2. Preserve the original supplied file and record its checksum.
-3. Create revisions as new versions; do not replace the historical source artifact.
-4. Record change rationale, affected sections, source references, author, reviewer, approver, and date.
-5. Mark a document DRAFT, IN_REVIEW, APPROVED, SUPERSEDED, or WITHDRAWN only under the project's approved document-control policy.
-6. A derivative document must list the exact source versions used.
-7. A superseding document must identify the version it replaces and explain the change.
-8. A translation is a derivative; it does not silently replace the original-language source.
-9. Keep unresolved conflicts and missing-source references visible.
-10. Update the master index and cross-reference records when a document is created, revised, approved, superseded, or withdrawn.
-
-The detailed identifier, metadata, and versioning rules are assigned to WP-0.4 and WP-0.11 and remain subject to their approval.
-
-## 9. Open Items and Preconditions
-
-- WP-0.2 is IN_REVIEW; its completion dossier is published, but LAEV acceptance has not been recorded.
-- The five original PDF binaries are present in `docs/` on `main`. Their registered SHA-256 checksums match the supplied originals, and their Git blob identities match the repository objects; evidence is recorded in ERX-WP-0.2-COMPLETION-DOSSIER-001.
-- ERX-CONSENSUS-001 v0.1 remains NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED.
-- ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED.
-- Full section-by-section comparison among ERX-PROT-001, ERX-ATLAS-001, and UTXO-911-001 remains outstanding.
-- The formal document hierarchy and subject-matter authority matrix have not been approved.
-- The technical response's formal identifier and version remain unstated in the supplied source.
-
-## 10. Preliminary Issue Register
-
-The preparatory issue inventory is recorded in [`ERX-DOCUMENT-ISSUE-REGISTER-001.md`](ERX-DOCUMENT-ISSUE-REGISTER-001.md) and [`registers/document-issue-register.csv`](../../registers/document-issue-register.csv). It records metadata, missing-source, authority, diagram interpretation, and response-effect matters. DOC-ISS-008 has been resolved by archive integrity evidence. The remaining entries are not adjudicated contradictions and remain open pending WP-0.2 acceptance and formal WP-0.3 execution.
-
-## 11. WP-0.3 Status and Acceptance
-
-**Status: BLOCKED — PREPARATORY DRAFT ONLY.**
-
-This draft has been updated to reflect the current archival evidence and to make the next work package reviewable. Formal WP-0.3 execution and approval remain dependent on LAEV's acceptance of WP-0.2.
-
-WP-0.3 may be submitted for formal review only after:
-1. WP-0.2 source inventory is completed and reviewed.
-2. Original source preservation and integrity evidence are verified or formally dispositioned.
-3. Referenced but missing documents are located or formally recorded as unavailable with an approved treatment.
-4. The subject-matter matrix and document relationships are checked against the complete source set.
-5. All material contradictions and ambiguities are entered in a traceable issue register.
-
-**This document is not approved. It does not close WP-0.2, start formal WP-0.3 execution, approve a document hierarchy, or authorize Phase 1.**
+WP-0.3 remains IN_PROGRESS. WP-0.4 and WP-0.5 remain blocked until WP-0.3 is expressly completed and approved. No implementation, deployment, institutional operation or Phase 1 authorization is granted.
 
 ---
-End of ERX-DOCUMENT-GOVERNANCE-001
+END

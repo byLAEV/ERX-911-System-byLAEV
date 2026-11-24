@@ -42,18 +42,19 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-005 | FND-005 / ID NOT STATED | Technical Response to the Observations on ERX-ROADMAP-001 | NOT_STATED | Foundational response / review source | Original supplied; repository archive pending | Supplied file: `Respuesta técnica a las observaciones de ERX-ROADMAP-001.pdf`; intended: `docs/foundational/originals/Respuesta técnica a las observaciones de ERX-ROADMAP-001.pdf` | Formal identifier/version not stated |
 | IDX-006 | ERX-PHASE-0-CHARTER-001 | Phase 0 Charter | 1.0.0 | Governance artifact | APPROVED by LAEV | `docs/phase-0/ERX-PHASE-0-CHARTER-001.md` | WP-0.1 approval; not equivalent to Phase 0 closure |
 | IDX-007 | ERX-WP-PHASE-0-001 | WORKPLAN-PHASE-0 | 1.0.0 | Governance / planning artifact | DRAFT / PENDING APPROVAL | `WORKPLAN-PHASE-0.md` | Workplan is a tracking instrument, not an approval record |
-| IDX-008 | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 | Foundational Source Inventory | 0.1.0 | Register / WP-0.2 artifact | IN_PROGRESS — inventory baseline | `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md` | Five sources inventoried; archival pending |
+| IDX-008 | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 | Foundational Source Inventory | 0.1.0 | Register / WP-0.2 artifact | IN_REVIEW — evidence consolidated | `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md` | Five sources inventoried; repository archival and byte identity verified; LAEV review pending |
 | IDX-009 | ID NOT STATED | Foundational materials README / custody guidance | NOT_STATED | Repository support artifact | NOT_VERIFIED | `docs/foundational/README.md` | Existing file referenced by Workplan |
 | IDX-010 | ID NOT STATED | Foundational material CSV register | NOT_STATED | Machine-readable register | NOT_VERIFIED | `registers/foundational-material-register.csv` | Existing file referenced by Workplan |
-| IDX-011 | ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001 | Exact-Byte Preservation Procedure for Foundational PDF Sources | 0.1.0 | WP-0.2 working procedure | WORKING PROCEDURE — NOT APPROVED | `docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md` | Procedure published; no binary archival claimed |
+| IDX-011 | ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001 | Exact-Byte Preservation Procedure for Foundational PDF Sources | 0.1.0 | WP-0.2 working procedure | WORKING PROCEDURE — NOT APPROVED | `docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md` | Procedure applied; exact-byte verification evidenced in WP-0.2 dossier |
 | IDX-012 | ERX-DOCUMENT-GOVERNANCE-001 | Document Organization and Hierarchy | 0.1.0 | WP-0.3 development artifact | WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md` | Preparatory only; WP-0.2 gate pending |
 | IDX-013 | ERX-DOCUMENT-CONTROL-001 | Document Identification and Control | 0.1.0 | WP-0.4 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` | Formal WP-0.4 blocked by WP-0.3 |
 | IDX-014 | ERX-REPOSITORY-GOVERNANCE-001 | Repository Identity, Structure and Governance | 0.1.0 | WP-0.5 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md` | Formal WP-0.5 blocked by WP-0.3 and WP-0.4 |
 | IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 0.1.0 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | This document; WP-0.6 acceptance pending |
 
 | IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.1.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
-| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Preliminary Documentary Ambiguities and Open Issues | 0.1.0 | WP-0.3 preparatory register | PREPARATORY REGISTER — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eight open issues; no dispositions approved |
+| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Preliminary Documentary Ambiguities and Open Issues | 0.1.0 | WP-0.3 preparatory register | PREPARATORY REGISTER — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eight recorded issues; DOC-ISS-008 resolved by evidence, remaining seven open |
 | IDX-020 | NOT_STATED | Machine-readable documentary issue register | NOT_STATED | WP-0.3 supporting register | WORKING REGISTER — NOT APPROVED | `registers/document-issue-register.csv` | Companion to ERX-DOCUMENT-ISSUE-REGISTER-001 |
+| IDX-021 | ERX-WP-0.2-COMPLETION-DOSSIER-001 | WP-0.2 Foundational Materials Completion Dossier | 0.1.0 | Phase 0 evidence dossier | IN_REVIEW — NOT APPROVED | `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md` | Five repository originals byte-identity verified; LAEV approval pending |
 
 ## 4. Referenced but Unlocated Documents
 
@@ -111,11 +112,10 @@ Relationships above reflect explicit source references or clearly stated documen
 
 ## 8. Pending and Unresolved Records
 
-1. Archive the five original PDFs as exact binary files in the repository and verify post-commit SHA-256 values.
+1. LAEV review and approval of the WP-0.2 inventory and completion dossier.
 2. Locate ERX-CONSENSUS-001 v0.1.
 3. Locate ERX-IMPL-PROPOSAL-001.
-4. Complete WP-0.2 provenance, custody, and source inventory review.
-5. Obtain LAEV review and approval of the WP-0.2 register.
+4. Complete any provenance or source-location corrections requested during WP-0.2 review.
 6. Complete and approve WP-0.3 hierarchy and subject-matter authority.
 7. Complete and approve WP-0.4 document identification and control.
 8. Inspect and approve actual repository settings and governance under WP-0.5.

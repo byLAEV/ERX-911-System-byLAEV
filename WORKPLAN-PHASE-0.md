@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.0.2
+- **Version:** 1.0.3
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 

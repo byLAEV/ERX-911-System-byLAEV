@@ -62,6 +62,11 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-025 | ERX-WP-0.2-APPROVAL-RECORD-001 | Formal Acceptance of Foundational Materials | 1.0.0 | Approval record | APPROVED — LAEV 2026-11-23 | `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` | Authoritative record of WP-0.2 acceptance | 
 | IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Potential Consensus Source | 0.1.0 | Supplemental evidence note | PUBLISHED — IDENTITY UNVERIFIED | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Candidate `docs/Consenso ERX byLAEV.pdf`; not confirmed as Roadmap-cited source | 
  
+| IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.1.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
+| IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.3.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; LAEV hierarchy and subject-authority decisions pending |
+| IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.3.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
+| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.2.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Includes supplemental candidate source discovery; no WP-0.3 approval |
+
 ## 4. Referenced Sources and Identity Status
 
 | Reference | Description in ERX-ROADMAP-001 | Version | Current status | Required action |

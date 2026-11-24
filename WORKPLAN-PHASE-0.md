@@ -125,17 +125,17 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Status:** IN_PROGRESS — FORMAL EXECUTION AUTHORIZED BY WP-0.2 ACCEPTANCE
 
 **Activities**
-- [ ] 0.3.1 Classify documents.
-- [ ] 0.3.2 Distinguish sources from development documents.
-- [ ] 0.3.3 Define document hierarchy.
-- [ ] 0.3.4 Define document authority by subject area.
-- [ ] 0.3.5 Record relationships and dependencies.
-- [ ] 0.3.6 Identify contradictions.
-- [ ] 0.3.7 Define the handling of contradictions.
-- [ ] 0.3.8 Establish document evolution rules.
+- [x] 0.3.1 Prepare provisional document classification (descriptive, not precedence).
+- [x] 0.3.2 Distinguish foundational sources from governance/development artifacts.
+- [ ] 0.3.3 Decide and approve document hierarchy.
+- [ ] 0.3.4 Decide and approve subject-matter authority.
+- [x] 0.3.5 Record known relationships and dependencies.
+- [ ] 0.3.6 Complete evidence-based contradiction identification and adjudication.
+- [ ] 0.3.7 Approve contradiction-handling procedure.
+- [ ] 0.3.8 Approve document evolution and supersession rules.
 
-**Preparatory drafts:** [`docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md`](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) v0.1.1 — WORKING DRAFT, NOT APPROVED; [`docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md`](docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md) v0.1.0 — PREPARATORY, NOT APPROVED. 
-**Acceptance:** hierarchy and subject-matter authority are explicit; contradictions are recorded with conflicting sources, impact, owner, disposition, and status.  
+**Execution evidence:** [`docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md`](docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md) v0.1.0 — IN_PROGRESS, DECISIONS NOT APPROVED; preparatory governance draft and issue matrix remain supporting inputs. 
+**Acceptance:** hierarchy and subject-matter authority are explicitly approved; contradictions are recorded with exact source references, impact, owner, approved disposition, and status; evolution/supersession rules are approved. The acceptance criteria are not yet satisfied.  
 **Dependency:** WP-0.2 APPROVED. Formal WP-0.3 execution is authorized. The preparatory governance draft and issue matrix are inputs only; decisions and hierarchy require documented evidence and LAEV approval.
 
 ### WP-0.4 — Document Identification and Control
@@ -358,7 +358,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 |---|---|---|---|---|---|
 | WP-0.1 | Definition and Rationale | APPROVED | LAEV | [ERX-PHASE-0-CHARTER-001 v1.0.0](docs/phase-0/ERX-PHASE-0-CHARTER-001.md) · express approval 2026-11-23 | Four technical adjustments incorporated; WP-0.1 approved, not declared COMPLETED. |
 | WP-0.2 | Foundational Materials | APPROVED | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Cross-reference map](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) · [Archive procedure](docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md) · [Completion dossier](docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md) | Five originals archived in `docs/` and byte-identity verified; DOC-ISS-008 resolved; LAEV expressly accepted WP-0.2 baseline on 2026-11-23; two cited sources remain NOT LOCATED / UNVERIFIED and are carried forward as explicit limitations. |
-| WP-0.3 | Document Hierarchy | IN_PROGRESS | LAEV | [Preparatory governance draft](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) · [Issue register](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) · [CSV issues](registers/document-issue-register.csv) | Formal execution authorized following WP-0.2 acceptance; seven issues remain OPEN as WP-0.3 inputs; DOC-ISS-008 is RESOLVED_EVIDENCE. |
+| WP-0.3 | Document Hierarchy | IN_PROGRESS | LAEV | [Execution record](docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md) · [Preparatory governance draft](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) · [Issue register](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) · [CSV issues](registers/document-issue-register.csv) | WP-0.2 accepted by LAEV; initial classification and relationship evidence recorded; hierarchy, subject authority, contradiction dispositions, and evolution rules remain undecided. |
 | WP-0.4 | Document Control | BLOCKED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) | Formal execution depends on WP-0.3 approval. |
 | WP-0.5 | ERX Repository | BLOCKED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) | Formal execution depends on WP-0.3 and WP-0.4 approval. |
 | WP-0.6 | Master Index | BLOCKED | To be assigned | [Provisional index](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [CSV register](registers/document-register.csv) | Preparatory draft only; depends on WP-0.2 through WP-0.5 acceptance. |

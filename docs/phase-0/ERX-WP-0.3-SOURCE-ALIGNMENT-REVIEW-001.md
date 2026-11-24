@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | TECHNICAL REVIEW — PENDING LAEV DISPOSITION |
 | Work Package | WP-0.3 / Activity 0.3.6 |
 | Sources | FND-001, FND-002, FND-003, FND-004, FND-005 |
@@ -30,19 +30,21 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Assessment: broad three-stage lifecycle correspondence is supported.
 - Disposition: relationship accepted as descriptive correspondence; not a full field-by-field equivalence.
 
-### F-03 — UTXO-911 includes more granular request and acceptance states
-- Evidence: UTXO-911-001 v1.0 Section 2 describes an initial call-request UTXO and a subsequent call-acceptance UTXO; Section 3 describes the operator's initial communication protocol UTXO.
-- Evidence: ERX-PROT-001 v1.1 Sections 6–7 group reception/origin/routing in UTXO 01 and contact establishment/initial protocol in UTXO 02.
-- Assessment: possible decomposition of the first two Protocol stages, or a difference in state granularity. Current evidence does not establish whether these are separate ledger outputs, internal sub-states, or alternate terminology.
-- Disposition: OPEN — LAEV must decide the intended mapping before requirements extraction.
+### F-03 — UTXO-911 includes a distinct call-acceptance output not shown in the three-output Protocol/Atlas chain
+- Evidence: UTXO-911-001 v1.0 Sections 2.1–2.5: the call-request UTXO is consumed on operator acceptance and a new call-acceptance UTXO is generated. Sections 3.1–3.5 then describe a further UTXO for the operator's initial protocol.
+- Evidence: ERX-PROT-001 v1.1 Sections 1–2 and 6–8 define UTXO 01 → UTXO 02 → UTXO 03. Section 7, Step 15, says UTXO 01 is consumed and UTXO 02 created after contact establishment and initial protocol results are recorded.
+- Evidence: ERX-ATLAS-001 v1.1 Plates 02–05 and the Protocol/Atlas correspondence table depict the same three-output chain; Plate 05 explicitly says UTXO 02 consumes UTXO 01 and UTXO 03 consumes UTXO 02.
+- Evidence: ERX-ROADMAP-001 v1.0 Section 3.1 adopts the three-UTXO communication cycle.
+- Assessment: this is a structural state-model divergence. UTXO-911 explicitly names a separate call-acceptance UTXO between request and initial protocol; Protocol/Atlas do not show that as an additional spendable output. It may be intended as an intermediate ledger output or as a logical acceptance event/sub-state, but the source text does not settle that interpretation.
+- Disposition: OPEN — LAEV must decide whether acceptance is an independent spendable output or a uniquely identified event within the UTXO 01 → UTXO 02 transition. See ERX-WP-0.3-LAEV-DECISION-PACKAGE-001, DP-02.
 - Related issue: DOC-ISS-009.
 
-### F-04 — UTXO-911 expressly defines an agent-availability state
-- Evidence: UTXO-911-001 v1.0 Sections 4.5 and 5 define a new UTXO of agent availability, independent from each call's UTXOs, and consume it when the agent accepts a new call.
-- Evidence: UTXO-911-001 v1.0 Section 6 prohibits simultaneous use of the same availability state for incompatible call acceptances.
-- Evidence: ERX-PROT-001 v1.1 Sections 1–10 define the three communication UTXOs and mandatory uniqueness rules; the inspected sections do not fully specify this separate agent-availability lifecycle.
-- Assessment: scope extension or complementary state machine; not proven contradiction.
-- Disposition: OPEN — determine whether agent availability belongs to ERX protocol scope, an institutional module, or a separately governed functional subsystem.
+### F-04 — Independent agent-availability cycle is expressly adopted by the Roadmap
+- Evidence: UTXO-911-001 v1.0 Sections 4.5–6 define a new agent-availability UTXO, independent from each call's UTXOs, and consume it when the agent accepts a new call.
+- Evidence: ERX-ROADMAP-001 v1.0 Section 3.1 expressly establishes two related but independent cycles: Cycle A — Communication 911 (UTXO 01–03); Cycle B — agent availability (AVAILABLE → ASSIGNED/ACCEPTED → BUSY → RELEASE AND NEW AVAILABILITY). It states that the agent cycle does not reuse call UTXOs and is related through identity, assignment and session references.
+- Evidence: Technical Response to ERX-ROADMAP-001, page 1, explicitly supports keeping the communication and agent-availability UTXO cycles independent.
+- Assessment: the architectural separation is source-confirmed, not an unresolved question. Protocol/Atlas do not fully detail the agent state machine, but the Roadmap establishes its independent scope.
+- Disposition: source alignment established. Remaining work is to formalize transition rules, authority, release conditions, exceptions and verification in a later detailed specification. LAEV may accept this bounded treatment in WP-0.3 and assign detailed state-machine work to the applicable later package.
 - Related issue: DOC-ISS-010.
 
 ### F-05 — Atlas includes a dedicated UTXO engine plate
@@ -81,7 +83,7 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Candidate source identity unresolved: DOC-ISS-002; missing-source limitation: DOC-ISS-003.
 - Metadata discrepancy: DOC-ISS-001 and DOC-ISS-004.
 
-No direct contradiction between the inspected passages is declared by this review. Two material scope questions are added for LAEV disposition.
+A structural state-model divergence remains open in DOC-ISS-009. The independent agent-availability cycle is confirmed by Roadmap Section 3.1 and the Technical Response; DOC-ISS-010 is narrowed to detailed state-machine formalization and acceptance. Other authority and response-effect matters remain pending LAEV disposition.
 
 ## 4. WP-0.3.6 result
 The activity has produced a source-grounded issue classification and comparison record. It is not fully closed because the material scope questions and authority questions require express LAEV dispositions. The issues may be formally deferred with documented impact and mitigation if LAEV decides that their resolution belongs to a later package, but they may not be silently ignored.

@@ -38,6 +38,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 - ERX-DOCUMENT-GOVERNANCE-001.
 - ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 — records a post-approval candidate consensus PDF; identity unverified.
 - ERX-WP-0.3-AUDIT-REPORT-001 v0.1.0 — second-pass documentary consistency audit.
+- ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.1.0 — options and recommendations for outstanding LAEV decisions.
 
 ## 4. Material source-alignment findings
 1. ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1 and UTXO-911-001 v1.0 broadly correspond on a three-stage communication lifecycle.
@@ -52,8 +53,8 @@ No direct contradiction between the inspected passages is declared by the source
 ## 5. Outstanding LAEV decisions
 - Adopt, revise or reject the proposed hierarchy.
 - Adopt, revise or reject the subject-matter authority allocations.
-- Decide mapping of request/acceptance states to the three communication UTXOs.
-- Decide scope and ownership of the agent-availability UTXO state machine.
+- Decide the structural divergence between UTXO-911's separate call-acceptance output and the Protocol/Atlas three-output chain.
+- Accept the source-confirmed independent agent-availability cycle and assign detailed state-machine specification to a later package.
 - Decide normative treatment of Atlas plates.
 - Decide treatment of the Technical Response as recommendation or approved Roadmap amendment.
 - Approve, revise or reject the contradiction-handling and document-evolution procedures.

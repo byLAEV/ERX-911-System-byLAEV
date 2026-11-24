@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.2-COMPLETION-DOSSIER-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | SUBMITTED FOR REVIEW — ACCEPTED BY LAEV VIA SEPARATE APPROVAL RECORD |
 | Work Package | WP-0.2 |
 | Project | ERX byLAEV — 911 Double-Spend System |

@@ -112,7 +112,13 @@ Before repository archival:
 4. Record the repository path, Git commit, and verification result.
 5. Keep derivative translations or working copies separate from the original source files.
 
-## 8. Limitations and Open Items
+## 8. Repository Source Discovery
+
+A recursive Git tree inspection of the repository default branch (`main`) was completed on 2026-11-23. The tree contained the Phase 0 Charter, Workplan, foundational register, custody README, and CSV register, but none of the five original PDF binaries and no files named for ERX-CONSENSUS-001 or ERX-IMPL-PROPOSAL-001. A repository code search for the two referenced identifiers also returned no matches. This establishes only that these files were not present in the inspected repository tree/search results at the time of inspection; it does not establish non-existence in other storage locations.
+
+**Binary archival constraint:** the currently available GitHub write workflow in this session can create UTF-8 text files and Git blobs, but the original PDF bytes are not exposed to that workflow as base64 payloads. Therefore, no PDF binary has been uploaded, and no repository-side checksum verification has been claimed. The originals must be uploaded through an approved binary-capable GitHub path or supplied through a local upload workflow that preserves exact bytes.
+
+## 9. Limitations and Open Items
 
 - This baseline covers the five PDF files supplied in the project conversation, not every possible source in prior conversations, external storage, or the GitHub repository.
 - The formal issue dates for FND-001, FND-002, FND-003, and FND-005 were not established from the inspected title/control sections unless explicitly stated above.
@@ -121,7 +127,7 @@ Before repository archival:
 - ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001 remain unverified.
 - This inventory does not assess whether the sources are mutually consistent or establish authority precedence.
 
-## 9. WP-0.2 Baseline Status
+## 10. WP-0.2 Baseline Status
 
 **IN_PROGRESS**
 
@@ -134,9 +140,9 @@ Completed in this baseline:
 - Explicit references and missing/unverified sources recorded.
 
 Still pending:
-- Search the repository and other authorized project source locations for additional originals.
+- Search additional authorized project source locations for additional originals; the repository default-branch tree has now been inspected.
 - Locate and inspect ERX-CONSENSUS-001 and ERX-IMPL-PROPOSAL-001.
-- Archive exact original PDFs in the repository and verify post-commit hashes.
+- Archive exact original PDFs in the repository using a binary-capable upload path and verify post-commit hashes.
 - Complete the provenance and source-location fields.
 - Submit the completed WP-0.2 package for LAEV review and approval.
 

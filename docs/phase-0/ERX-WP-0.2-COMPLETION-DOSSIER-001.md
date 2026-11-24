@@ -5,7 +5,7 @@
 |---|---|
 | Document ID | ERX-WP-0.2-COMPLETION-DOSSIER-001 |
 | Version | 0.1.0 |
-| Status | SUBMITTED FOR LAEV REVIEW — NOT APPROVED |
+| Status | SUBMITTED FOR REVIEW — ACCEPTED BY LAEV VIA SEPARATE APPROVAL RECORD |
 | Work Package | WP-0.2 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Evidence review date | 2026-11-23 |
@@ -15,7 +15,7 @@
 
 This dossier consolidates the objective evidence available to review WP-0.2, Identification and Consolidation of Foundational Materials. It records the five original PDF sources in the repository and the integrity verification performed against the supplied originals.
 
-It does not approve WP-0.2, establish document hierarchy, resolve WP-0.3 issues, or close Phase 0. Approval remains an express LAEV action.
+At the time of preparation, this dossier was submitted for LAEV review. LAEV subsequently approved WP-0.2 on 2026-11-23 in `ERX-WP-0.2-APPROVAL-RECORD-001 v1.0.0`. That separate approval record is authoritative for acceptance. This dossier does not establish document hierarchy, resolve WP-0.3 issues, or close Phase 0.
 
 ## 2. Repository archival and integrity evidence
 
@@ -99,3 +99,7 @@ WP-0.3 remains BLOCKED for formal execution until WP-0.2 is accepted. Phase 1 re
 
 ---
 End of ERX-WP-0.2-COMPLETION-DOSSIER-001
+
+## 9. Subsequent approval status
+
+WP-0.2 was expressly accepted by LAEV on 2026-11-23. The authoritative decision is `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` v1.0.0. This dossier remains the evidence submission and is not itself the approval instrument. A later-discovered candidate consensus PDF is recorded separately in `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`; it does not retroactively alter the accepted five-file baseline.

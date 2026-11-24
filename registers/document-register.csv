@@ -1,0 +1,18 @@
+index_id,document_id,source_id,title,version,classification,lifecycle_status,repository_path,source_location,notes
+IDX-001,ERX-PROT-001,FND-001,ERX byLAEV Institutional Protocol,1.1,Foundational source,ORIGINAL_SUPPLIED_REPOSITORY_ARCHIVE_PENDING,,ERX byLAEV 1.pdf,SHA-256 recorded in foundational register
+IDX-002,ERX-ATLAS-001,FND-002,Institutional Atlas of ERX byLAEV Flow Diagrams and Operation,1.1,Foundational source,ORIGINAL_SUPPLIED_REPOSITORY_ARCHIVE_PENDING,,ERX-ATLAS-001 v1.pdf,Internal version 1.1 filename says v1
+IDX-003,UTXO-911-001,FND-003,UTXO de Comunicación 911 byLAEV,1.0,Foundational source,ORIGINAL_SUPPLIED_REPOSITORY_ARCHIVE_PENDING,,UTXO DE COMUNICACIÓN 911 byLAEV.pdf,SHA-256 recorded in foundational register
+IDX-004,ERX-ROADMAP-001,FND-004,Master Phase Plan for ERX Development Implementation and Institutional Homologation,1.0,Foundational planning source,ORIGINAL_SUPPLIED_REPOSITORY_ARCHIVE_PENDING,,### ERX-ROADMAP-001.pdf,SHA-256 recorded in foundational register
+IDX-005,NOT_STATED,FND-005,Technical Response to the Observations on ERX-ROADMAP-001,NOT_STATED,Foundational response source,ORIGINAL_SUPPLIED_REPOSITORY_ARCHIVE_PENDING,,Respuesta técnica a las observaciones de ERX-ROADMAP-001.pdf,Formal document ID and version not stated
+IDX-006,ERX-PHASE-0-CHARTER-001,,Phase 0 Charter,1.0.0,Governance artifact,APPROVED,docs/phase-0/ERX-PHASE-0-CHARTER-001.md,,Express LAEV approval recorded 2026-11-23
+IDX-007,ERX-WP-PHASE-0-001,,WORKPLAN-PHASE-0,1.0.0,Governance planning artifact,DRAFT_PENDING_APPROVAL,WORKPLAN-PHASE-0.md,,Planning instrument; not an approval record
+IDX-008,ERX-FOUNDATIONAL-MATERIAL-REGISTER-001,,Foundational Source Inventory,0.1.0,Register,IN_PROGRESS,docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md,,Five-source baseline; archival pending
+IDX-009,NOT_STATED,,Foundational materials README and custody guidance,NOT_STATED,Repository support artifact,NOT_VERIFIED,docs/foundational/README.md,,Metadata and content require verification
+IDX-010,NOT_STATED,,Foundational material CSV register,NOT_STATED,Machine-readable register,NOT_VERIFIED,registers/foundational-material-register.csv,,Metadata and content require verification
+IDX-011,ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001,,Exact-Byte Preservation Procedure for Foundational PDF Sources,0.1.0,Working procedure,NOT_APPROVED,docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md,,Procedure published; binary archival not claimed
+IDX-012,ERX-DOCUMENT-GOVERNANCE-001,,Document Organization and Hierarchy,0.1.0,Development artifact,NOT_APPROVED,docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md,,Preparatory draft; WP-0.2 gate pending
+IDX-013,ERX-DOCUMENT-CONTROL-001,,Document Identification and Control,0.1.0,Development artifact,NOT_APPROVED,docs/phase-0/ERX-DOCUMENT-CONTROL-001.md,,Preparatory draft; formal WP-0.4 blocked
+IDX-014,ERX-REPOSITORY-GOVERNANCE-001,,Repository Identity Structure and Governance,0.1.0,Development artifact,NOT_APPROVED,docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md,,Preparatory draft; formal WP-0.5 blocked
+IDX-015,ERX-MASTER-DOCUMENT-INDEX-001,,Master Document Index,0.1.0,Register and development artifact,NOT_APPROVED,docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md,,Provisional baseline; WP-0.6 acceptance pending
+IDX-016,ERX-CONSENSUS-001,,Consensus framework,0.1,Referenced source,NOT_LOCATED_UNVERIFIED,,,Referenced by ERX-ROADMAP-001; not found in inspected source set or repository search
+IDX-017,ERX-IMPL-PROPOSAL-001,,Institutional implementation proposal,NOT_STATED,Referenced source,NOT_LOCATED_UNVERIFIED,,,Referenced by ERX-ROADMAP-001; not found in inspected source set or repository search

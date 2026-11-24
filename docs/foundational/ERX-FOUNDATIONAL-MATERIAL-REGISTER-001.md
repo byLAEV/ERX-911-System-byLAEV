@@ -5,7 +5,7 @@
 |---|---|
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Register ID | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | WP-0.2 BASELINE APPROVED BY LAEV — SUPPLEMENTAL DISCOVERIES TRACKED SEPARATELY |
 | Work Package | WP-0.2 |
 | Prepared by | LAEV / byLAEV project documentation |

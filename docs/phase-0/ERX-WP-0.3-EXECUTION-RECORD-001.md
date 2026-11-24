@@ -36,6 +36,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 - ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0.
 - ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.
 - ERX-DOCUMENT-GOVERNANCE-001.
+- ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 — records a post-approval candidate consensus PDF; identity unverified.
 
 ## 4. Material source-alignment findings
 1. ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1 and UTXO-911-001 v1.0 broadly correspond on a three-stage communication lifecycle.
@@ -43,7 +44,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 3. UTXO-911-001 Sections 4.5–6 define an agent-availability UTXO distinct from each call's communication states. Its place in ERX architecture remains undecided (DOC-ISS-010).
 4. Atlas identifies Protocol as its related normative document and provides a plate correspondence table. A rule for specific diagram/text divergence remains to be approved.
 5. The Technical Response is not evidenced as an approved amendment to the Roadmap.
-6. ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001 remain cited but not located; their contents are not inferred.
+6. A candidate `Consenso ERX byLAEV.pdf` is present in `docs/`; its equivalence to Roadmap-cited ERX-CONSENSUS-001 v0.1 is not established. ERX-IMPL-PROPOSAL-001 remains not located. Neither source's contents are inferred without inspection.
 
 No direct contradiction between the inspected passages is declared by the source alignment review. The unresolved matters are scope, granularity, authority and documentary effect.
 

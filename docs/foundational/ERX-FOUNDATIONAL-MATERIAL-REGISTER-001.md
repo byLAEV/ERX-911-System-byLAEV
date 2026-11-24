@@ -105,12 +105,7 @@ The five PDFs were available as original supplied files in the working conversat
 
 **Repository archival is verified in `docs/`.** On 2026-11-23, all five exact original PDF files were located on the repository `main` branch under `docs/`. Their local SHA-256 values matched the registered checksums, and each locally calculated Git blob SHA-1 matched the GitHub blob SHA returned for the corresponding repository object. The archival paths and integrity evidence are consolidated in `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. The original supplied filenames are preserved.
 
-Before repository archival:
-1. Confirm the canonical original filename for each PDF.
-2. Copy the exact original bytes without re-exporting or modifying the PDF.
-3. Recalculate SHA-256 after upload or download and compare it with this register.
-4. Record the repository path, Git commit, and verification result.
-5. Keep derivative translations or working copies separate from the original source files.
+The archival procedure has been executed for the five listed originals. Their exact repository paths and byte-identity evidence are recorded in the WP-0.2 completion dossier. Preserve the files unchanged; future replacement or re-upload must repeat the exact-byte and checksum verification steps and record the resulting commit.
 
 ## 8. Repository Source Discovery and Custody Verification
 

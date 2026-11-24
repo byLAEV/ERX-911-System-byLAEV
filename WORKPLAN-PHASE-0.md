@@ -104,20 +104,20 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Input:** Phase 0 breakdown defined by LAEV.
 
 ### WP-0.2 — Identification and Consolidation of Foundational Materials
-**Status:** NOT_STARTED
+**Status:** IN_PROGRESS
 
 **Activities**
-- [ ] 0.2.1 Identify existing sources.
-- [ ] 0.2.2 Inventory original documents.
-- [ ] 0.2.3 Record provenance.
-- [ ] 0.2.4 Identify original versions.
-- [ ] 0.2.5 Classify by document type.
-- [ ] 0.2.6 Preserve original files.
-- [ ] 0.2.7 Identify missing sources.
-- [ ] 0.2.8 Record cross-references between sources.
-- [ ] 0.2.9 Consolidate the foundational materials register.
+- [x] 0.2.1 Identify existing sources (five supplied PDFs inspected).
+- [x] 0.2.2 Inventory original documents (five-source baseline recorded).
+- [x] 0.2.3 Record available provenance; missing metadata explicitly flagged.
+- [x] 0.2.4 Record versions stated in the source documents; unstated versions flagged.
+- [x] 0.2.5 Provisional classification by document type.
+- [ ] 0.2.6 Archive exact original PDF binaries in the repository and verify hashes (pending).
+- [x] 0.2.7 Identify sources referenced but not supplied (ERX-CONSENSUS-001 and ERX-IMPL-PROPOSAL-001).
+- [x] 0.2.8 Record identified source cross-references.
+- [x] 0.2.9 Publish the initial foundational materials register (baseline; final review pending).
 
-**Deliverable:** `docs/foundational/` and `registers/foundational-material-register.csv`.  
+**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, and `registers/foundational-material-register.csv`. **Evidence:** five supplied PDFs inspected; SHA-256 values recorded. Original binary archival and post-commit hash verification remain pending. **Acceptance:** PARTIAL — WP-0.2 remains IN_PROGRESS.  
 **Acceptance:** each known source has an ID, name, provenance, version, location, integrity, and status; missing sources and uncertainties are explicit. Do not reconstruct missing sources through assumptions.  
 **Dependency:** WP-0.1.
 
@@ -357,7 +357,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 | ID | Work Package | Status | Owner | Evidence | Notes |
 |---|---|---|---|---|---|
 | WP-0.1 | Definition and Rationale | APPROVED | LAEV | [ERX-PHASE-0-CHARTER-001 v1.0.0](docs/phase-0/ERX-PHASE-0-CHARTER-001.md) · express approval 2026-11-23 | Four technical adjustments incorporated; WP-0.1 approved, not declared COMPLETED. |
-| WP-0.2 | Foundational Materials | NOT_STARTED | To be assigned | — | — |
+| WP-0.2 | Foundational Materials | IN_PROGRESS | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Custody rules](docs/foundational/README.md) | Five supplied PDFs inspected; originals not yet archived in repository; two referenced sources unverified. |
 | WP-0.3 | Document Hierarchy | NOT_STARTED | To be assigned | — | — |
 | WP-0.4 | Document Control | NOT_STARTED | To be assigned | — | — |
 | WP-0.5 | ERX Repository | NOT_STARTED | LAEV / to be assigned | — | — |

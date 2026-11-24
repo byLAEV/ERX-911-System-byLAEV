@@ -139,7 +139,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependency:** WP-0.2 must be completed and accepted before formal WP-0.3 execution and approval. The current draft is preparatory only.
 
 ### WP-0.4 — Document Identification and Control
-**Status:** NOT_STARTED
+**Status:** BLOCKED — PREPARATORY DRAFT ONLY
 
 **Activities**
 - [ ] 0.4.1 ERX identifier system.
@@ -152,9 +152,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.4.8 Modification history.
 - [ ] 0.4.9 Cross-references.
 
-**Deliverable:** `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` and document template.  
+**Preparatory draft:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.1.0 — NOT APPROVED; includes a proposed document header template. 
 **Acceptance:** every document can be uniquely identified; draft, review, and approved statuses are distinguished; history can be reconstructed.  
-**Dependencies:** WP-0.1 and WP-0.3.
+**Dependencies:** WP-0.1 and WP-0.3. Formal WP-0.4 execution remains blocked until WP-0.3 is completed and expressly approved. This preparatory draft does not change the dependency gate.
 
 ### WP-0.5 — ERX Repository Creation and Organization
 **Status:** NOT_STARTED

@@ -22,7 +22,6 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
 - DOC-ISS-009 and DOC-ISS-010 were added after direct comparison of ERX-PROT-001 v1.1 Sections 5–10, UTXO-911-001 v1.0 Sections 2–6, and ERX-ATLAS-001 v1.1 Plates 01–08 and its correspondence table.
 - The comparison found a broad three-stage communication lifecycle correspondence, alongside a more granular call-request/acceptance description and a distinct agent-availability UTXO in UTXO-911-001. These are unresolved scope/mapping questions, not proven contradictions.
-- DOC-ISS-002 and DOC-ISS-003 remain references to sources not located in the inspected source set/repository. Their content and provenance remain unverified.
 
 ## 3. Current issue status
 

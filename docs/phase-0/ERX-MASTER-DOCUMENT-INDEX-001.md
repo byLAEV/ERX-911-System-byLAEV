@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -49,10 +49,10 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-012 | ERX-DOCUMENT-GOVERNANCE-001 | Document Organization and Hierarchy | 0.2.0 | WP-0.3 development artifact | WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md` | WP-0.3 proposal; LAEV hierarchy decision pending |
 | IDX-013 | ERX-DOCUMENT-CONTROL-001 | Document Identification and Control | 0.1.0 | WP-0.4 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` | Formal WP-0.4 blocked by WP-0.3 |
 | IDX-014 | ERX-REPOSITORY-GOVERNANCE-001 | Repository Identity, Structure and Governance | 0.1.0 | WP-0.5 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md` | Formal WP-0.5 blocked by WP-0.3 and WP-0.4 |
-| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 0.3.0 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | This document; WP-0.6 acceptance pending |
+| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 0.4.0 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | This document; WP-0.6 acceptance pending |
 
 | IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.1.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
-| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.3.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Ten issues tracked; DOC-ISS-008 resolved; DOC-ISS-002 candidate source identity unverified |
+| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.4.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Ten issues tracked; DOC-ISS-008 resolved; DOC-ISS-002 candidate source identity unverified |
 | IDX-020 | NOT_STATED | Machine-readable documentary issue register | NOT_STATED | WP-0.3 supporting register | WORKING REGISTER — NOT APPROVED | `registers/document-issue-register.csv` | Companion to ERX-DOCUMENT-ISSUE-REGISTER-001 |
 | IDX-021 | ERX-WP-0.2-COMPLETION-DOSSIER-001 | WP-0.2 Foundational Materials Completion Dossier | 0.2.0 | Phase 0 evidence dossier | EVIDENCE ACCEPTED UNDER WP-0.2 | `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md` | Header records historical submission status; approval is in separate approval record |
 | IDX-022 | ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001 | WP-0.2 Source Inspection and Bounded Comparison | 0.1.0 | Working evidence record | ACCEPTED AS WP-0.2 BASELINE EVIDENCE | `docs/phase-0/ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001.md` | Bounded comparison only; no hierarchy or conflict adjudication |
@@ -65,7 +65,9 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.1.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
 | IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.3.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; LAEV hierarchy and subject-authority decisions pending |
 | IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.3.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
-| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.2.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Includes supplemental candidate source discovery; no WP-0.3 approval |
+| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.3.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Includes supplemental candidate source discovery; no WP-0.3 approval |
+
+| IDX-031 | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 | Documentary Authority, UTXO Mapping and Open Source Dispositions | 0.1.0 | Decision proposal package | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-PACKAGE-001.md` | Options and recommendations only; no decisions approved |
 
 ## 4. Referenced Sources and Identity Status
 

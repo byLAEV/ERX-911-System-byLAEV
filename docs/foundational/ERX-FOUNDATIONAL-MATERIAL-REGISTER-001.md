@@ -103,7 +103,7 @@ No conclusion is made that these documents do not exist. Only their absence from
 
 The five PDFs were available as original supplied files in the working conversation environment and were inspected without editing their contents. Their exact SHA-256 checksums are recorded above.
 
-**Repository preservation is still pending.** The binary PDF originals have not yet been committed to `docs/foundational/` in the GitHub repository as part of this WP-0.2 operation. This register must not be interpreted as evidence that repository archival has already occurred.
+**Repository archival is verified in `docs/`.** On 2026-11-23, all five exact original PDF files were located on the repository `main` branch under `docs/`. Their local SHA-256 values matched the registered checksums, and each locally calculated Git blob SHA-1 matched the GitHub blob SHA returned for the corresponding repository object. The archival paths and integrity evidence are consolidated in `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. The original supplied filenames are preserved.
 
 Before repository archival:
 1. Confirm the canonical original filename for each PDF.
@@ -112,11 +112,13 @@ Before repository archival:
 4. Record the repository path, Git commit, and verification result.
 5. Keep derivative translations or working copies separate from the original source files.
 
-## 8. Repository Source Discovery
+## 8. Repository Source Discovery and Custody Verification
 
-A recursive Git tree inspection of the repository default branch (`main`) was completed on 2026-11-23. The tree contained the Phase 0 Charter, Workplan, foundational register, custody README, and CSV register, but none of the five original PDF binaries and no files named for ERX-CONSENSUS-001 or ERX-IMPL-PROPOSAL-001. A repository code search for the two referenced identifiers also returned no matches. This establishes only that these files were not present in the inspected repository tree/search results at the time of inspection; it does not establish non-existence in other storage locations.
+The five original PDF files were located on the repository default branch (`main`) under `docs/`, using their exact supplied filenames. Each file was fetched from GitHub in Base64 form and its returned Git blob SHA was recorded. The locally mounted original bytes were independently hashed: SHA-256 matched the inventory, and `git hash-object` matched the corresponding GitHub blob SHA for all five sources. This provides byte-identity evidence between the supplied originals and the repository objects.
 
-**Binary archival constraint:** the currently available GitHub write workflow in this session can create UTF-8 text files and Git blobs, but the original PDF bytes are not exposed to that workflow as base64 payloads. Therefore, no PDF binary has been uploaded, and no repository-side checksum verification has been claimed. The originals must be uploaded through an approved binary-capable GitHub path or supplied through a local upload workflow that preserves exact bytes.
+The two Roadmap references `ERX-CONSENSUS-001 v0.1` and `ERX-IMPL-PROPOSAL-001` were not found in the inspected source set or repository search. Their status is bounded as NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED; this does not establish that they do not exist elsewhere.
+
+The archival evidence and paths are consolidated in `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`.
 
 ## 9. Limitations and Open Items
 
@@ -129,7 +131,7 @@ A recursive Git tree inspection of the repository default branch (`main`) was co
 
 ## 10. WP-0.2 Baseline Status
 
-**IN_PROGRESS**
+**IN_REVIEW — evidence consolidated; LAEV approval pending**
 
 Completed in this baseline:
 - Five supplied original PDF sources identified and opened.
@@ -142,7 +144,7 @@ Completed in this baseline:
 Still pending:
 - Search additional authorized project source locations for additional originals; the repository default-branch tree has now been inspected.
 - Locate and inspect ERX-CONSENSUS-001 and ERX-IMPL-PROPOSAL-001.
-- Archive exact original PDFs in the repository using a binary-capable upload path and verify post-commit hashes.
+- Review the repository archival and byte-identity evidence in the WP-0.2 completion dossier.
 - Complete the provenance and source-location fields.
 - Submit the completed WP-0.2 package for LAEV review and approval.
 

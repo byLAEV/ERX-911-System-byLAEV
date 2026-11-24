@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | WORKING REGISTER — PENDING LAEV DECISIONS |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -33,6 +33,7 @@
 7. Document evolution and supersession policy draft.
 8. Updated execution record.
 10. Supplemental post-approval source discovery note for candidate consensus PDF.
+11. Second-pass documentary consistency audit report.
 9. Independent review and LAEV approval records — not yet produced.
 
 ## 3. Outstanding acceptance conditions

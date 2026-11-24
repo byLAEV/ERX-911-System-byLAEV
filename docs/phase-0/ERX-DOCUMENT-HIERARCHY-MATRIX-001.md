@@ -31,7 +31,7 @@ This matrix consolidates the provisional document classification and presents a 
 
 | Level | Class | Included records | Governing effect | Limit |
 |---|---|---|---|---|
-| A | Project mandate and governance | LAEV-approved Charter, expressly approved project decisions, approved workplan and approved amendments | Controls project scope, authorization, responsibilities and acceptance within the approved scope | Does not silently rewrite technical protocol content |
+| A | Project mandate and governance | LAEV-approved Charter, expressly approved project decisions, and an approved Workplan or approved amendments only after their express approval | Controls project scope, authorization, responsibilities and acceptance within the approved scope | Does not silently rewrite technical protocol content |
 | B | Foundational sources | FND-001 through FND-005, each within its documented subject and provenance | Establishes the baseline source material and planning basis | No universal precedence among these sources is assumed |
 | C | Approved derivative specifications and decisions | Approved requirements, ADRs, detailed specifications, controlled amendments and procedures | Elaborates or changes a source only within expressly approved scope and traceability | Must cite source versions and approval; cannot rely on publication alone |
 | D | Working, implementation and verification artifacts | Drafts, working registers, code, configurations, tests, audit evidence and reports | Supports development, execution and verification | Does not become normative or amend a source by mere existence or commit |

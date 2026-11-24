@@ -104,7 +104,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Input:** Phase 0 breakdown defined by LAEV.
 
 ### WP-0.2 — Identification and Consolidation of Foundational Materials
-**Status:** IN_REVIEW — evidence consolidated; LAEV approval pending
+**Status:** APPROVED — LAEV express acceptance recorded 2026-11-23
 
 **Activities**
 - [x] 0.2.1 Identify existing sources (five supplied PDFs inspected).
@@ -117,12 +117,12 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.2.8 Record identified source cross-references and prepare bounded cross-document comparison.
 - [x] 0.2.9 Publish the initial foundational materials register (baseline; final review pending).
 
-**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, `registers/foundational-material-register.csv`, [`docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md`](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) v0.1.0 — WORKING DRAFT, and [`docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md`](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) with [`registers/document-issue-register.csv`](registers/document-issue-register.csv) as preparatory WP-0.3 inputs. **Evidence:** five supplied PDFs inspected, source topics and bounded cross-document correspondences recorded, and present on `main` under `docs/`; registered SHA-256 checksums match the supplied originals, and locally calculated Git blob SHA-1 values match the GitHub blob SHAs for all five. See `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. DOC-ISS-008 is RESOLVED_EVIDENCE. Two referenced documents remain NOT LOCATED / UNVERIFIED and require LAEV disposition. **Acceptance:** evidence package consolidated; submitted for LAEV review.  
+**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, `registers/foundational-material-register.csv`, [`docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md`](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) v0.1.0 — WORKING DRAFT, and [`docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md`](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) with [`registers/document-issue-register.csv`](registers/document-issue-register.csv) as preparatory WP-0.3 inputs. **Evidence:** five supplied PDFs inspected, source topics and bounded cross-document correspondences recorded, and present on `main` under `docs/`; registered SHA-256 checksums match the supplied originals, and locally calculated Git blob SHA-1 values match the GitHub blob SHAs for all five. See `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. DOC-ISS-008 is RESOLVED_EVIDENCE. Two referenced documents remain NOT LOCATED / UNVERIFIED and require LAEV disposition. **Acceptance:** SATISFIED by LAEV's explicit approval in the project conversation on 2026-11-23. The five-source inventory, archival integrity evidence, bounded source-inspection record, and documented not-located status of the two Roadmap references are accepted as the WP-0.2 baseline. The two references remain unverified source records, not silently considered present or substantively approved.  
 **Acceptance:** each known source has an ID, name, provenance, version, location, integrity, and status; missing sources and uncertainties are explicit. Do not reconstruct missing sources through assumptions.  
 **Dependency:** WP-0.1.
 
 ### WP-0.3 — Document Organization and Hierarchy
-**Status:** BLOCKED — PREPARATORY DRAFT ONLY
+**Status:** IN_PROGRESS — FORMAL EXECUTION AUTHORIZED BY WP-0.2 ACCEPTANCE
 
 **Activities**
 - [ ] 0.3.1 Classify documents.
@@ -136,7 +136,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Preparatory drafts:** [`docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md`](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) v0.1.1 — WORKING DRAFT, NOT APPROVED; [`docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md`](docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md) v0.1.0 — PREPARATORY, NOT APPROVED. 
 **Acceptance:** hierarchy and subject-matter authority are explicit; contradictions are recorded with conflicting sources, impact, owner, disposition, and status.  
-**Dependency:** WP-0.2 must be completed and accepted before formal WP-0.3 execution and approval. The current draft is preparatory only.
+**Dependency:** WP-0.2 APPROVED. Formal WP-0.3 execution is authorized. The preparatory governance draft and issue matrix are inputs only; decisions and hierarchy require documented evidence and LAEV approval.
 
 ### WP-0.4 — Document Identification and Control
 **Status:** BLOCKED — PREPARATORY DRAFT ONLY
@@ -357,8 +357,8 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 | ID | Work Package | Status | Owner | Evidence | Notes |
 |---|---|---|---|---|---|
 | WP-0.1 | Definition and Rationale | APPROVED | LAEV | [ERX-PHASE-0-CHARTER-001 v1.0.0](docs/phase-0/ERX-PHASE-0-CHARTER-001.md) · express approval 2026-11-23 | Four technical adjustments incorporated; WP-0.1 approved, not declared COMPLETED. |
-| WP-0.2 | Foundational Materials | IN_REVIEW | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Cross-reference map](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) · [Archive procedure](docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md) · [Completion dossier](docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md) | Five originals archived in `docs/` and byte-identity verified; DOC-ISS-008 resolved; two Roadmap-referenced sources remain unlocated and disposition/approval pending. |
-| WP-0.3 | Document Hierarchy | BLOCKED | LAEV | [Preparatory governance draft](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) · [Issue register](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) · [CSV issues](registers/document-issue-register.csv) | Preparatory inputs only; seven issues remain OPEN; DOC-ISS-008 is RESOLVED_EVIDENCE; formal execution and approval depend on WP-0.2 acceptance. |
+| WP-0.2 | Foundational Materials | APPROVED | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Cross-reference map](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) · [Archive procedure](docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md) · [Completion dossier](docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md) | Five originals archived in `docs/` and byte-identity verified; DOC-ISS-008 resolved; LAEV expressly accepted WP-0.2 baseline on 2026-11-23; two cited sources remain NOT LOCATED / UNVERIFIED and are carried forward as explicit limitations. |
+| WP-0.3 | Document Hierarchy | IN_PROGRESS | LAEV | [Preparatory governance draft](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) · [Issue register](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) · [CSV issues](registers/document-issue-register.csv) | Formal execution authorized following WP-0.2 acceptance; seven issues remain OPEN as WP-0.3 inputs; DOC-ISS-008 is RESOLVED_EVIDENCE. |
 | WP-0.4 | Document Control | BLOCKED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) | Formal execution depends on WP-0.3 approval. |
 | WP-0.5 | ERX Repository | BLOCKED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) | Formal execution depends on WP-0.3 and WP-0.4 approval. |
 | WP-0.6 | Master Index | BLOCKED | To be assigned | [Provisional index](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [CSV register](registers/document-register.csv) | Preparatory draft only; depends on WP-0.2 through WP-0.5 acceptance. |

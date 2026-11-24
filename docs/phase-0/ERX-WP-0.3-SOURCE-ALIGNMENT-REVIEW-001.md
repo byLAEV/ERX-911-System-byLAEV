@@ -9,6 +9,7 @@
 | Work Package | WP-0.3 / Activity 0.3.6 |
 | Sources | FND-001, FND-002, FND-003, FND-004, FND-005 |
 | Date | 2026-11-24 |
+| Supplemental evidence | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 v0.1.0 |
 
 ## 1. Method
 The five supplied PDFs were inspected directly. Findings below cite document sections, plates, or control information. This is a documentary alignment review, not a legal opinion and not an implementation validation. A difference in granularity is not labeled a contradiction unless incompatible requirements in the same scope are demonstrated.
@@ -62,11 +63,13 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Disposition: treat as response/review artifact unless an express approval record is produced.
 - Related issue: DOC-ISS-007.
 
-### F-08 — Missing cited sources remain unassessable
-- Evidence: ERX-ROADMAP-001 v1.0 cites ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001; neither was included in the five-PDF source set or found in the inspected repository records described by WP-0.2.
-- Assessment: their content, provenance and authority cannot be assessed.
-- Disposition: carry as explicit limitations; no inference about their requirements or authority.
-- Related issues: DOC-ISS-002 and DOC-ISS-003.
+### F-08 — Cited sources and supplemental candidate status
+- Evidence: ERX-ROADMAP-001 v1.0 cites ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001.
+- Supplemental discovery: a PDF named `Consenso ERX byLAEV.pdf` is present at `docs/Consenso ERX byLAEV.pdf` on `main` (Git blob SHA `c2f965c9bf455506571ac4c1635b4fb47af34216`). The filename alone does not establish that it is ERX-CONSENSUS-001 v0.1. Its internal identity, version, provenance and content have not yet been verified.
+- ERX-IMPL-PROPOSAL-001 was not located in the inspected repository tree.
+- Assessment: DOC-ISS-002 is now CANDIDATE LOCATED — IDENTITY UNVERIFIED; DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
+- Disposition: preserve the candidate separately until identity is established; infer no requirements or authority from its filename.
+- Related issues: DOC-ISS-002 and DOC-ISS-003. See ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.
 
 ## 3. Issue classification
 - Confirmed source relationship: Atlas → Protocol (normative relationship as stated by Atlas).
@@ -75,7 +78,7 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Unresolved additional lifecycle: agent availability state machine (DOC-ISS-010).
 - Unresolved authority/interpretation: DOC-ISS-005 and DOC-ISS-006.
 - Unresolved response effect: DOC-ISS-007.
-- Missing-source limitations: DOC-ISS-002 and DOC-ISS-003.
+- Candidate source identity unresolved: DOC-ISS-002; missing-source limitation: DOC-ISS-003.
 - Metadata discrepancy: DOC-ISS-001 and DOC-ISS-004.
 
 No direct contradiction between the inspected passages is declared by this review. Two material scope questions are added for LAEV disposition.

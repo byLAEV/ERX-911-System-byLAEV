@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -59,7 +59,10 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-023 | ERX-WP-0.2-LAEV-REVIEW-AND-DISPOSITION-001 | WP-0.2 LAEV Review and Disposition Record | 0.1.0 | Historical decision form | HISTORICAL — SUPERSEDED BY APPROVAL RECORD | `docs/phase-0/ERX-WP-0.2-LAEV-REVIEW-AND-DISPOSITION-001.md` | Retained as original pending form; formal approval is ERX-WP-0.2-APPROVAL-RECORD-001 |
 | IDX-024 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | WP-0.3 Preparatory Issue Review Matrix | 0.1.0 | Preparatory analysis artifact | NOT_APPROVED — WP-0.3 BLOCKED | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Seven open issues organized; options are not decisions; WP-0.2 gate remains |
 
-| IDX-025 | ERX-WP-0.2-APPROVAL-RECORD-001 | Formal Acceptance of Foundational Materials | 1.0.0 | Approval record | APPROVED — LAEV 2026-11-23 | `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` | Authoritative record of WP-0.2 acceptance |\n| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Potential Consensus Source | 0.1.0 | Supplemental evidence note | PUBLISHED — IDENTITY UNVERIFIED | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Candidate `docs/Consenso ERX byLAEV.pdf`; not confirmed as Roadmap-cited source |\n\n## 4. Referenced Sources and Identity Status
+| IDX-025 | ERX-WP-0.2-APPROVAL-RECORD-001 | Formal Acceptance of Foundational Materials | 1.0.0 | Approval record | APPROVED — LAEV 2026-11-23 | `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` | Authoritative record of WP-0.2 acceptance | 
+| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Potential Consensus Source | 0.1.0 | Supplemental evidence note | PUBLISHED — IDENTITY UNVERIFIED | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Candidate `docs/Consenso ERX byLAEV.pdf`; not confirmed as Roadmap-cited source | 
+ 
+## 4. Referenced Sources and Identity Status
 
 | Reference | Description in ERX-ROADMAP-001 | Version | Current status | Required action |
 |---|---|---|---|---|

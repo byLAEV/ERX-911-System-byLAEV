@@ -16,3 +16,6 @@ IDX-014,ERX-REPOSITORY-GOVERNANCE-001,,Repository Identity Structure and Governa
 IDX-015,ERX-MASTER-DOCUMENT-INDEX-001,,Master Document Index,0.1.0,Register and development artifact,NOT_APPROVED,docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md,,Provisional baseline; WP-0.6 acceptance pending
 IDX-016,ERX-CONSENSUS-001,,Consensus framework,0.1,Referenced source,NOT_LOCATED_UNVERIFIED,,,Referenced by ERX-ROADMAP-001; not found in inspected source set or repository search
 IDX-017,ERX-IMPL-PROPOSAL-001,,Institutional implementation proposal,NOT_STATED,Referenced source,NOT_LOCATED_UNVERIFIED,,,Referenced by ERX-ROADMAP-001; not found in inspected source set or repository search
+IDX-018,ERX-SOURCE-CROSS-REFERENCE-MAP-001,,Foundational Source Relationships and Inspection Map,0.1.0,WP-0.2 working artifact,NOT_APPROVED,docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md,,First-pass map; does not establish final hierarchy
+IDX-019,ERX-DOCUMENT-ISSUE-REGISTER-001,,Preliminary Documentary Ambiguities and Open Issues,0.1.0,WP-0.3 preparatory register,NOT_APPROVED,docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md,,Eight open issues; no dispositions approved
+IDX-020,NOT_STATED,,Machine-readable documentary issue register,NOT_STATED,WP-0.3 supporting register,NOT_APPROVED,registers/document-issue-register.csv,,Companion to ERX-DOCUMENT-ISSUE-REGISTER-001

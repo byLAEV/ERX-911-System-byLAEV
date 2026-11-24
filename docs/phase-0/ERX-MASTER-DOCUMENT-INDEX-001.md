@@ -82,7 +82,8 @@ For each record marked NOT LOCATED, that status is bounded to the five supplied 
 
 The following classifications are provisional and based on the foundational inventory and currently observed repository records:
 
-- **Foundational sources:** original protocol, Atlas, UTXO communication specification, Roadmap, and technical response.
+- **Foundational sources:** original protocol, Atlas, UTXO communication specification and Roadmap (FND-001–FND-004).
+- **Supporting response/review artifact:** Technical Response to ERX-ROADMAP-001 (FND-005); it is not a normative source or Roadmap amendment absent express approval.
 - **Governance artifacts:** Phase 0 Charter and Workplan.
 - **Registers:** foundational material register, CSV register, and this provisional master index.
 - **Working procedures:** foundational archive procedure.

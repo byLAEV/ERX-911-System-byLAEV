@@ -31,6 +31,8 @@ It is an issue log, not a final contradiction determination. An ambiguity is not
 
 See the machine-readable companion: `registers/document-issue-register.csv`.
 
+Current evidence update (2026-11-23): DOC-ISS-008 is **RESOLVED_EVIDENCE**. The five original PDFs were located in `docs/` on `main`; their local SHA-256 checksums match the foundational register and their Git blob SHA-1 values match the GitHub repository objects. The evidence is recorded in `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. The remaining seven issues are OPEN and retain their existing work-package assignments.
+
 | ID | Issue | Current status | Responsible authority |
 |---|---|---|---|
 | DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | LAEV |
@@ -40,7 +42,7 @@ See the machine-readable companion: `registers/document-issue-register.csv`.
 | DOC-ISS-005 | UTXO-911-001 / ERX-PROT-001 authority relationship | OPEN | LAEV |
 | DOC-ISS-006 | Normative force of Atlas diagrams | OPEN | LAEV |
 | DOC-ISS-007 | Whether Technical Response amends Roadmap | OPEN | LAEV |
-| DOC-ISS-008 | Original PDF archival and post-commit hash verification | OPEN | LAEV |
+| DOC-ISS-008 | Original PDF archival and post-commit hash verification | RESOLVED_EVIDENCE | LAEV |
 
 ## 4. Handling Rules
 
@@ -55,7 +57,7 @@ See the machine-readable companion: `registers/document-issue-register.csv`.
 
 ## 5. Dependencies and Status
 
-DOC-ISS-002, DOC-ISS-003, and DOC-ISS-008 are WP-0.2 completion matters. The remaining issues are prepared for WP-0.3 review but must not be treated as formally adjudicated until WP-0.2 is accepted and WP-0.3 is authorized.
+DOC-ISS-002 and DOC-ISS-003 remain WP-0.2 source-location/provenance matters. DOC-ISS-008 has been resolved by repository byte-identity evidence and is retained as a closed audit item. The remaining issues are prepared for WP-0.3 review but must not be treated as formally adjudicated until WP-0.2 is accepted and WP-0.3 is authorized.
 
 **Status: PREPARATORY — NOT APPROVED.**
 

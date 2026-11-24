@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -118,8 +118,10 @@ Relationships above reflect explicit source references or clearly stated documen
 1. Supplemental identity verification and LAEV disposition of the candidate consensus PDF (DOC-ISS-002).
 2. Locate and inspect ERX-IMPL-PROPOSAL-001 (DOC-ISS-003).
 3. Complete and approve WP-0.3 hierarchy and subject-matter authority.
-4. Complete any provenance or source-location corrections requested during WP-0.2 review.
-6. Complete and approve WP-0.3 hierarchy and subject-matter authority.
+4. Complete and approve WP-0.4 document identification and control.
+5. Inspect and approve actual repository settings and governance under WP-0.5.
+6. Reconcile document classification and status after governing policies are approved.
+7. Verify the README and CSV register metadata and contents against canonical records.
 7. Complete and approve WP-0.4 document identification and control.
 8. Inspect and approve actual repository settings and governance under WP-0.5.
 9. Reconcile any document classification or status changes after the governing policies are approved.
@@ -139,7 +141,7 @@ Formal completion requires:
 5. The CSV and Markdown registers to be reconciled.
 6. LAEV to review and expressly approve the consolidated master index.
 
-**This document does not close WP-0.2, execute or approve WP-0.3 through WP-0.5, complete WP-0.6, approve the Workplan, or authorize Phase 1.**
+**This document does not close WP-0.3 through WP-0.6, approve the Workplan, or authorize Phase 1. WP-0.2 remains APPROVED under its separate approval record.**
 
 ---
 End of ERX-MASTER-DOCUMENT-INDEX-001

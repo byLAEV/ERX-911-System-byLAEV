@@ -86,20 +86,20 @@ La secuencia representa dependencias lógicas. Se permite iteración y concurren
 ## 5. Paquetes de trabajo
 
 ### WP-0.1 — Definición y fundamento de FASE 0
-**Estado:** NOT_STARTED  
+**Estado:** APPROVED  
 **Actividades**
-- [ ] 0.1.1 Identificación de la fase.
-- [ ] 0.1.2 Propósito.
-- [ ] 0.1.3 Objetivo general.
-- [ ] 0.1.4 Objetivos específicos.
-- [ ] 0.1.5 Justificación de la fase.
-- [ ] 0.1.6 Alcance de trabajo.
-- [ ] 0.1.7 Exclusiones del alcance.
-- [ ] 0.1.8 Principios de desarrollo.
-- [ ] 0.1.9 Criterios de finalización.
+- [x] 0.1.1 Identificación de la fase.
+- [x] 0.1.2 Propósito.
+- [x] 0.1.3 Objetivo general.
+- [x] 0.1.4 Objetivos específicos.
+- [x] 0.1.5 Justificación de la fase.
+- [x] 0.1.6 Alcance de trabajo.
+- [x] 0.1.7 Exclusiones del alcance.
+- [x] 0.1.8 Principios de desarrollo.
+- [x] 0.1.9 Criterios de finalización.
 
 **Entregable:** `docs/phase-0/ERX-PHASE-0-CHARTER-001.md`  
-**Aceptación:** propósito, objetivos, justificación, alcance, exclusiones, principios y criterios de cierre documentados y sometidos a aprobación.  
+**Aceptación:** SATISFECHA para WP-0.1 mediante aprobación expresa de LAEV de la versión 1.0.0 del Charter. WP-0.1 queda en APPROVED; no se declara COMPLETED hasta que la evidencia y el registro de seguimiento estén consolidados conforme al control de FASE 0.  
 **Entrada:** desglose de FASE 0 definido por LAEV.
 
 ### WP-0.2 — Identificación y consolidación del material fundacional
@@ -344,7 +344,7 @@ La secuencia representa dependencias lógicas. Se permite iteración y concurren
 
 | ID | Paquete | Estado inicial | Responsable | Evidencia | Observaciones |
 |---|---|---|---|---|---|
-| WP-0.1 | Definición y fundamento | NOT_STARTED | LAEV / por asignar | — | — |
+| WP-0.1 | Definición y fundamento | APPROVED | LAEV | [ERX-PHASE-0-CHARTER-001 v1.0.0](docs/phase-0/ERX-PHASE-0-CHARTER-001.md) · aprobación expresa 2026-11-23 | Cuatro ajustes técnicos incorporados; WP-0.1 aprobado, no declarado COMPLETED. |
 | WP-0.2 | Material fundacional | NOT_STARTED | Por asignar | — | — |
 | WP-0.3 | Jerarquía documental | NOT_STARTED | Por asignar | — | — |
 | WP-0.4 | Control documental | NOT_STARTED | Por asignar | — | — |
@@ -385,7 +385,7 @@ Este Workplan no ejecuta ni declara completados el diseño detallado o implement
 | Autoridad de diseño y aprobación | LAEV | PENDING | — | — |
 | Revisión técnica independiente | Por designar | NOT_ASSIGNED | — | — |
 
-La incorporación de este archivo al repositorio establece el Workplan como instrumento disponible para seguimiento. No equivale a aprobación formal ni declara iniciadas las actividades.
+La incorporación de este archivo al repositorio establece el Workplan como instrumento disponible para seguimiento. La aprobación del Charter WP-0.1 no implica la aprobación de este Workplan en su conjunto, no declara completada FASE 0 y no autoriza el inicio de FASE 1.
 
 ---
 **Fin de WORKPLAN-FASE-0 — ERX byLAEV**

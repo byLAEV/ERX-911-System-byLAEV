@@ -194,7 +194,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependencies:** WP-0.3 and WP-0.4. Formal WP-0.5 execution remains blocked until both dependencies are completed and expressly approved.
 
 ### WP-0.6 — Master Index and Document Register
-**Status:** NOT_STARTED
+**Status:** BLOCKED — PROVISIONAL PREPARATORY DRAFT ONLY
 
 **Activities**
 - [ ] 0.6.1 General document register.
@@ -207,9 +207,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.6.8 Identify pending documents.
 - [ ] 0.6.9 Consolidate the master index.
 
-**Deliverable:** `registers/document-register.csv` and `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md`.  
+**Preparatory deliverables:** [`registers/document-register.csv`](registers/document-register.csv) and [`docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md), both provisional and NOT APPROVED. 
 **Acceptance:** all documents identified and created during Phase 0 appear with consistent IDs, versions, classifications, statuses, and references.  
-**Dependencies:** WP-0.2 through WP-0.5.
+**Dependencies:** WP-0.2 through WP-0.5. Formal WP-0.6 acceptance remains blocked until these dependencies are completed and accepted; this provisional index does not satisfy the gate.
 
 ### WP-0.7 — Requirements Identification and Classification
 **Status:** NOT_STARTED

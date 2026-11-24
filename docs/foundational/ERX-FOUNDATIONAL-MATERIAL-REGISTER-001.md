@@ -111,7 +111,7 @@ The archival procedure has been executed for the five listed originals. Their ex
 
 The five original PDF files were located on the repository default branch (`main`) under `docs/`, using their exact supplied filenames. Each file was fetched from GitHub in Base64 form and its returned Git blob SHA was recorded. The locally mounted original bytes were independently hashed: SHA-256 matched the inventory, and `git hash-object` matched the corresponding GitHub blob SHA for all five sources. This provides byte-identity evidence between the supplied originals and the repository objects.
 
-The two Roadmap references `ERX-CONSENSUS-001 v0.1` and `ERX-IMPL-PROPOSAL-001` were not found in the inspected source set or repository search. Their status is bounded as NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED; this does not establish that they do not exist elsewhere.
+At the time of the original five-source WP-0.2 inspection, neither Roadmap reference had been located in the five-file supplied set. A subsequent repository audit on 2026-11-24 found a candidate PDF named `Consenso ERX byLAEV.pdf`; its equivalence to `ERX-CONSENSUS-001 v0.1` remains unverified (DOC-ISS-002). `ERX-IMPL-PROPOSAL-001` remains NOT LOCATED / CONTENT AND PROVENANCE UNVERIFIED (DOC-ISS-003). See `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`.
 
 The archival evidence and paths are consolidated in `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`.
 
@@ -121,7 +121,7 @@ The archival evidence and paths are consolidated in `docs/phase-0/ERX-WP-0.2-COM
 - The formal issue dates for FND-001, FND-002, FND-003, and FND-005 were not established from the inspected title/control sections unless explicitly stated above.
 - The source document named “ERX-ATLAS-001 v1” internally identifies itself as v1.1; this discrepancy is recorded, not silently corrected.
 - The technical response lacks a formal identifier and version in the supplied content.
-- ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001 remain unverified.
+- ERX-CONSENSUS-001 v0.1 has a candidate PDF whose identity and contents remain unverified; ERX-IMPL-PROPOSAL-001 remains not located.
 - This inventory does not assess whether the sources are mutually consistent or establish authority precedence.
 
 ## 10. WP-0.2 Evidence and Review Status
@@ -137,10 +137,9 @@ Completed in this baseline:
 - Explicit references and missing/unverified sources recorded.
 
 Still pending:
-- Search additional authorized project source locations for additional originals; the repository default-branch tree has now been inspected.
-- Locate and inspect ERX-CONSENSUS-001 and ERX-IMPL-PROPOSAL-001.
-- Review the repository archival and byte-identity evidence in the WP-0.2 completion dossier.
-- Complete the provenance and source-location fields.
+- Supplemental verification of the candidate consensus PDF and LAEV disposition remain pending under DOC-ISS-002; this is a post-approval follow-up, not a reopening of the accepted five-source inventory.
+- Locate or formally disposition ERX-IMPL-PROPOSAL-001 under DOC-ISS-003.
+- Formal hierarchy, subject-matter authority and conflict dispositions remain assigned to WP-0.3.
 - Supplemental post-approval discovery: `docs/Consenso ERX byLAEV.pdf` was found on 2026-11-24. Its identity as the Roadmap-cited `ERX-CONSENSUS-001 v0.1` is unverified; see `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` and DOC-ISS-002.
 - `ERX-IMPL-PROPOSAL-001` remains not located/unverified.
 

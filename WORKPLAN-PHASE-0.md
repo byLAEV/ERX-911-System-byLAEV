@@ -112,12 +112,12 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.2.3 Record available provenance; missing metadata explicitly flagged.
 - [x] 0.2.4 Record versions stated in the source documents; unstated versions flagged.
 - [x] 0.2.5 Provisional classification by document type.
-- [ ] 0.2.6 Archive exact original PDF binaries in the repository and verify hashes (pending).
+- [ ] 0.2.6 Archive exact original PDF binaries in the repository and verify hashes (blocked pending binary-capable upload path).
 - [x] 0.2.7 Identify sources referenced but not supplied (ERX-CONSENSUS-001 and ERX-IMPL-PROPOSAL-001).
 - [x] 0.2.8 Record identified source cross-references.
 - [x] 0.2.9 Publish the initial foundational materials register (baseline; final review pending).
 
-**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, and `registers/foundational-material-register.csv`. **Evidence:** five supplied PDFs inspected; SHA-256 values recorded. Original binary archival and post-commit hash verification remain pending. **Acceptance:** PARTIAL — WP-0.2 remains IN_PROGRESS.  
+**Deliverables:** `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md`, `docs/foundational/README.md`, and `registers/foundational-material-register.csv`. **Evidence:** five supplied PDFs inspected; SHA-256 values recorded. Repository tree inspection completed; no original PDFs found in the repository. Original binary archival and post-commit hash verification remain pending because this session's GitHub write workflow does not expose the local PDF bytes as a binary upload payload. **Acceptance:** PARTIAL — WP-0.2 remains IN_PROGRESS.  
 **Acceptance:** each known source has an ID, name, provenance, version, location, integrity, and status; missing sources and uncertainties are explicit. Do not reconstruct missing sources through assumptions.  
 **Dependency:** WP-0.1.
 

@@ -24,7 +24,7 @@ This matrix consolidates the provisional document classification and presents a 
 | FND-003 | UTXO-911-001 — UTXO de Comunicación 911 | 1.0 | Foundational functional UTXO source | Sections 1–8; describes communication UTXO stages and an additional agent-availability state cycle |
 | FND-004 | ERX-ROADMAP-001 — Master Phase Plan | 1.0 | Foundational project planning source | 37-page roadmap; phase sequence, dependencies, deliverables and gates |
 | FND-005 | Response to observations on ERX-ROADMAP-001 | Not stated | Technical response / review artifact | Two-page response; no formal ID, version or issue date stated in inspected control information |
-| REF-001 | ERX-CONSENSUS-001 | 0.1 cited | Referenced but not located | Roadmap reference only; content and provenance unverified |
+| REF-001 | ERX-CONSENSUS-001 | 0.1 cited | Candidate located — identity unverified | `docs/Consenso ERX byLAEV.pdf` discovered after WP-0.2 approval; internal identity/version and equivalence to Roadmap citation unverified |
 | REF-002 | ERX-IMPL-PROPOSAL-001 | Not stated | Referenced but not located | Roadmap reference only; content and provenance unverified |
 
 ## 3. Proposed governance hierarchy — decision required
@@ -50,7 +50,7 @@ This matrix consolidates the provisional document classification and presents a 
 - LAEV decision adopting, revising or rejecting the proposed hierarchy.
 - Consistent classification in the master document register.
 - Explicit treatment of FND-005 as response/review unless amendment approval is evidenced.
-- Explicit limitation for REF-001 and REF-002.
+- Explicit treatment of REF-001 candidate identity and REF-002 missing source.
 - Consistent status and version references across Workplan, execution record and registers.
 
 ## 6. Current disposition

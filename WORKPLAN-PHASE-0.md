@@ -134,7 +134,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.3.7 Define the handling of contradictions.
 - [ ] 0.3.8 Establish document evolution rules.
 
-**Preparatory draft:** [`docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md`](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) v0.1.0 — WORKING DRAFT, NOT APPROVED. 
+**Preparatory drafts:** [`docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md`](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) v0.1.1 — WORKING DRAFT, NOT APPROVED; [`docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md`](docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md) v0.1.0 — PREPARATORY, NOT APPROVED. 
 **Acceptance:** hierarchy and subject-matter authority are explicit; contradictions are recorded with conflicting sources, impact, owner, disposition, and status.  
 **Dependency:** WP-0.2 must be completed and accepted before formal WP-0.3 execution and approval. The current draft is preparatory only.
 

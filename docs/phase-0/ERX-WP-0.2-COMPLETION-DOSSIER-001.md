@@ -66,7 +66,11 @@ The preliminary issue register remains the controlled list of matters reserved f
 
 DOC-ISS-008 (repository archival and post-commit integrity) is supported as resolved by this dossier. DOC-ISS-002 and DOC-ISS-003 remain open as source-location/provenance matters, with their current unlocated status explicitly recorded. Other authority and metadata issues remain assigned to WP-0.3.
 
-## 6. WP-0.2 activity evidence
+## 6. Supplementary source-inspection evidence
+
+A deeper source inspection and bounded comparison record has been published at `docs/phase-0/ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001.md`. It records source section/topic structures, observed correspondences across the Protocol, Atlas, UTXO specification, Roadmap, and Technical Response, and the limits of what can be concluded from the supplied sources. It does not establish requirements, precedence, or formal conflict resolutions.
+
+## 7. WP-0.2 activity evidence
 
 | Activity | Result |
 |---|---|
@@ -80,14 +84,14 @@ DOC-ISS-008 (repository archival and post-commit integrity) is supported as reso
 | 0.2.8 Record cross-references | Prepared in working map |
 | 0.2.9 Publish foundational register | Published; this dossier supports final review |
 
-## 7. Review recommendation and approval boundary
+## 8. Review recommendation and approval boundary
 
 **Recommended tracking status: IN_REVIEW.**
 
 The source inventory, repository custody, and integrity evidence are now consolidated for LAEV review. The reviewer should confirm:
 1. Acceptance of the five-source inventory and exact-byte archival evidence.
 2. Acceptance of the bounded disposition for the two referenced-but-not-located documents, or provide an alternative disposition.
-3. Acceptance of the foundational register and cross-reference map as WP-0.2 outputs.
+3. Acceptance of the foundational register, cross-reference map, and source-inspection comparison record as WP-0.2 outputs.
 
 On express approval, WP-0.2 may be marked APPROVED in the Workplan and the tracking register. Until that approval is recorded, it remains IN_REVIEW.
 

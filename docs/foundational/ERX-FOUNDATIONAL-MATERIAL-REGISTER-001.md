@@ -6,7 +6,7 @@
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Register ID | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 |
 | Version | 0.1.0 |
-| Status | IN_REVIEW — evidence consolidated; LAEV approval pending |
+| Status | WP-0.2 BASELINE APPROVED BY LAEV — SUPPLEMENTAL DISCOVERIES TRACKED SEPARATELY |
 | Work Package | WP-0.2 |
 | Prepared by | LAEV / byLAEV project documentation |
 | Inventory basis | Five original PDF files supplied in the project conversation |
@@ -16,7 +16,7 @@
 
 This register records the foundational ERX source files that were directly available for inspection during WP-0.2. It distinguishes source identity, the document's internal identifier and version, the supplied filename, documentary nature, provenance, integrity evidence, and unresolved matters.
 
-This is an inventory baseline, not a declaration that WP-0.2 or Phase 0 is complete.
+This register records the five-file WP-0.2 baseline accepted by LAEV on 2026-11-23. Later-discovered repository sources are recorded in separate supplemental evidence notes and do not silently rewrite the accepted baseline. WP-0.2 approval does not declare Phase 0 complete.
 
 ## 2. Inventory Method and Evidence
 
@@ -126,7 +126,7 @@ The archival evidence and paths are consolidated in `docs/phase-0/ERX-WP-0.2-COM
 
 ## 10. WP-0.2 Evidence and Review Status
 
-**IN_REVIEW — evidence consolidated; LAEV approval pending**
+**WP-0.2 BASELINE APPROVED — LAEV acceptance recorded 2026-11-23.**
 
 Completed in this baseline:
 - Five supplied original PDF sources identified and opened.
@@ -141,9 +141,10 @@ Still pending:
 - Locate and inspect ERX-CONSENSUS-001 and ERX-IMPL-PROPOSAL-001.
 - Review the repository archival and byte-identity evidence in the WP-0.2 completion dossier.
 - Complete the provenance and source-location fields.
-- Submit the completed WP-0.2 package for LAEV review and approval.
+- Supplemental post-approval discovery: `docs/Consenso ERX byLAEV.pdf` was found on 2026-11-24. Its identity as the Roadmap-cited `ERX-CONSENSUS-001 v0.1` is unverified; see `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` and DOC-ISS-002.
+- `ERX-IMPL-PROPOSAL-001` remains not located/unverified.
 
-**This register is a working inventory baseline, not an approved final register and not a Phase 0 closure record.**
+**This register is the accepted five-source WP-0.2 baseline plus traceable supplemental notes. It is not a Phase 0 closure record.**
 
 ---
 End of ERX-FOUNDATIONAL-MATERIAL-REGISTER-001

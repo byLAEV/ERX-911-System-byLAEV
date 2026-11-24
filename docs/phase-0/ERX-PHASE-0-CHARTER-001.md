@@ -1,324 +1,324 @@
 # ERX-PHASE-0-CHARTER-001
-## Definición y fundamento de FASE 0
-### Gobierno y preparación del proyecto ERX byLAEV
+## Phase 0 Definition and Rationale
+### ERX byLAEV Project Governance and Preparation
 
-| Campo | Registro |
+| Field | Record |
 |---|---|
-| Proyecto | 911 — Sistema de Doble Gasto byLAEV |
-| Sistema | ERX byLAEV |
-| Identificador | ERX-PHASE-0-CHARTER-001 |
-| Versión | 1.0.0 |
-| Fase | FASE 0 — Gobierno y preparación del proyecto |
-| Paquete de trabajo | WP-0.1 |
-| Autoría y diseño | LAEV / byLAEV |
-| Estado documental | APPROVED |
-| Aprobación | LAEV — aprobación expresa registrada |
-| Fecha de aprobación | 2026-11-23 |
-| Documento rector de planificación | ERX-ROADMAP-001 v1.0 |
+| Project | 911 — Double-Spend System byLAEV |
+| System | ERX byLAEV |
+| Identifier | ERX-PHASE-0-CHARTER-001 |
+| Version | 1.0.0 |
+| Phase | PHASE 0 — Project Governance and Preparation |
+| Work Package | WP-0.1 |
+| Authorship and Design | LAEV / byLAEV |
+| Document Status | APPROVED |
+| Approval | Express approval by LAEV recorded |
+| Approval Date | 2026-11-23 |
+| Governing Planning Document | ERX-ROADMAP-001 v1.0 |
 
 ---
 
-## 0. CONTROL DOCUMENTAL
+## 0. DOCUMENT CONTROL
 
-### 0.1. Identificación y función
+### 0.1. Identification and Purpose
 
-Este documento establece la definición, fundamento, propósito, objetivos, justificación, alcance, exclusiones, principios y criterios de finalización de la FASE 0 del proyecto ERX byLAEV.
+This document establishes the definition, rationale, purpose, objectives, justification, scope, exclusions, development principles, and completion criteria for Phase 0 of the ERX byLAEV project.
 
-Constituye el documento de apertura conceptual y organizativa de la fase y el entregable principal del paquete WP-0.1.
+It is the conceptual and organizational opening document for the phase and the primary deliverable of work package WP-0.1.
 
-### 0.2. Fuentes y procedencia
+### 0.2. Sources and Provenance
 
-La elaboración se basa en los siguientes documentos examinados:
+This document is based on the following examined documents:
 
-- ERX-PROT-001 v1.1 — Protocolo institucional.
-- ERX-ATLAS-001 v1.1 — Atlas institucional de arquitectura y diagramas.
-- UTXO-911-001 v1.0 — Especificación funcional del ciclo UTXO de comunicación 911.
-- ERX-ROADMAP-001 v1.0 — Plan maestro de fases.
-- Respuesta técnica a las observaciones de ERX-ROADMAP-001 — documento de respuesta técnica.
+- ERX-PROT-001 v1.1 — Institutional Protocol.
+- ERX-ATLAS-001 v1.1 — Institutional Atlas of Architecture and Diagrams.
+- UTXO-911-001 v1.0 — Functional Specification of the 911 Communication UTXO Cycle.
+- ERX-ROADMAP-001 v1.0 — Master Phase Roadmap.
+- Technical Response to the Observations on ERX-ROADMAP-001 — technical response document.
 
-ERX-ROADMAP-001 también referencia:
+ERX-ROADMAP-001 also references:
 
-- ERX-CONSENSUS-001 v0.1 — Marco de consenso, señalado en el Roadmap como referencia de coordinación que deberá completarse antes de incorporarse a una implementación multiinstitucional.
-- ERX-IMPL-PROPOSAL-001 — Propuesta de implementación institucional.
+- ERX-CONSENSUS-001 v0.1 — Consensus Framework, identified in the Roadmap as a coordination reference that must be completed before inclusion in a multi-institutional implementation.
+- ERX-IMPL-PROPOSAL-001 — Institutional Implementation Proposal.
 
-La referencia de estos dos últimos documentos se conserva como procedencia declarada por el Roadmap. Su archivo íntegro, versión vigente, disponibilidad y contenido deberán verificarse e inventariarse en WP-0.2. Este Charter no presume haberlos examinado ni completa su contenido por inferencia.
+References to these two documents are retained as provenance declared by the Roadmap. Their complete files, current versions, availability, and contents must be verified and inventoried in WP-0.2. This Charter does not presume to have examined them and does not fill in their contents by inference.
 
-### 0.3. Naturaleza y autoridad
+### 0.3. Document Nature and Authority
 
-Documento de desarrollo y gobierno del proyecto. No sustituye las fuentes fundacionales, no modifica por sí mismo los documentos normativos y no prevalece sobre las reglas de autoridad documental que se establecerán en WP-0.3.
+This is a project development and governance document. It does not replace foundational sources, does not independently amend normative documents, and does not supersede the document-authority rules to be established in WP-0.3.
 
-### 0.4. Registro de aprobación
+### 0.4. Approval Record
 
-Este documento fue aprobado expresamente por LAEV, sujeto a la incorporación de cuatro ajustes técnicos: (1) conservar las referencias documentales adicionales del Roadmap y marcar su verificación como pendiente; (2) precisar que los principios del Roadmap son restricciones de diseño y no pruebas de implementación; (3) explicitar la independencia de los ciclos UTXO de comunicación y disponibilidad del agente; y (4) permitir el traslado controlado de asuntos pendientes a fases posteriores, sin ocultarlos ni declararlos resueltos.
+LAEV expressly approved this document subject to four technical adjustments: (1) retain the additional document references cited by the Roadmap and mark their verification as pending; (2) clarify that Roadmap principles are design constraints, not evidence of implementation; (3) explicitly state the independence of the communication and agent-availability UTXO cycles; and (4) permit controlled deferral of pending matters to later phases without concealing them or declaring them resolved.
 
-La aprobación se aplica a esta versión consolidada 1.0.0, que incorpora dichos ajustes.
+Approval applies to this consolidated version 1.0.0, which incorporates those adjustments.
 
 ---
 
-# 1. IDENTIFICACIÓN DE LA FASE
+# 1. PHASE IDENTIFICATION
 
-**FASE 0 — GOBIERNO Y PREPARACIÓN DEL PROYECTO**
+**PHASE 0 — PROJECT GOVERNANCE AND PREPARATION**
 
-La FASE 0 constituye la primera etapa del desarrollo de ERX byLAEV.
+Phase 0 is the first stage of ERX byLAEV development.
 
-Es una fase preparatoria destinada a organizar las condiciones documentales, arquitectónicas, técnicas y organizativas necesarias para desarrollar, implementar, verificar y posteriormente evaluar el sistema institucional.
+It is a preparatory phase intended to organize the documentary, architectural, technical, and organizational conditions required to develop, implement, verify, and subsequently evaluate the institutional system.
 
-Su ubicación al inicio del plan maestro responde a la necesidad de establecer reglas de desarrollo, procedencia y autoridad de fuentes, trazabilidad de requisitos y mecanismos de control antes de avanzar hacia el cierre normativo y la construcción del software.
+Its position at the beginning of the master roadmap reflects the need to establish development rules, source provenance and authority, requirements traceability, and control mechanisms before proceeding to normative closure and software construction.
 
-La FASE 0 no es una etapa de implementación funcional de ERX. Prepara y gobierna el entorno documental y de trabajo bajo el cual deberán ejecutarse las fases posteriores.
+Phase 0 is not a functional implementation phase of ERX. It prepares and governs the documentary and working environment under which subsequent phases will be carried out.
 
-# 2. PROPÓSITO
+# 2. PURPOSE
 
-Establecer una estructura de gobierno, documentación, identificación, trazabilidad, planificación y control que permita desarrollar ERX byLAEV de manera ordenada, verificable y coherente con su arquitectura fundacional.
+Establish a governance, documentation, identification, traceability, planning, and control structure that enables ERX byLAEV to be developed in an orderly, verifiable manner consistent with its foundational architecture.
 
-La fase busca preservar la continuidad entre documentos existentes, decisiones de diseño, requisitos identificados y futuros componentes de software. Cada modificación, decisión, requisito, dependencia y resultado deberá poder relacionarse con su procedencia y evidencia.
+The phase aims to preserve continuity among existing documents, design decisions, identified requirements, and future software components. Every change, decision, requirement, dependency, and result must be traceable to its provenance and supporting evidence.
 
-El trabajo distinguirá, sin confundir sus respectivas funciones:
+The work shall distinguish, without conflating their respective functions:
 
-- Arquitectura normativa y protocolo.
-- Representación gráfica y documentación funcional.
-- Modelo institucional de estados UTXO.
-- Arquitectura de software.
-- Implementación técnica.
-- Verificación independiente.
-- Integración, adopción y homologación institucional.
+- Normative architecture and protocol.
+- Graphical representation and functional documentation.
+- Institutional UTXO state model.
+- Software architecture.
+- Technical implementation.
+- Independent verification.
+- Institutional integration, adoption, and homologation.
 
-# 3. OBJETIVO GENERAL
+# 3. GENERAL OBJECTIVE
 
-Establecer y aprobar el marco documental, organizativo y de control necesario para ejecutar el desarrollo de ERX byLAEV conforme a ERX-ROADMAP-001, garantizando la identificación y preservación de las fuentes fundacionales, la jerarquía documental, la trazabilidad de requisitos y decisiones, el registro de riesgos y dependencias, la asignación de responsabilidades y el control verificable de las modificaciones del proyecto.
+Establish and approve the documentary, organizational, and control framework required to carry out ERX byLAEV development in accordance with ERX-ROADMAP-001, ensuring identification and preservation of foundational sources, document hierarchy, requirements and decision traceability, risk and dependency recording, allocation of responsibilities, and verifiable control of project changes.
 
-# 4. OBJETIVOS ESPECÍFICOS
+# 4. SPECIFIC OBJECTIVES
 
-1. **Consolidación documental:** identificar, inventariar y preservar los documentos que constituyen el fundamento del proyecto.
-2. **Jerarquía documental:** establecer la relación entre documentos normativos, funcionales, gráficos, arquitectónicos, técnicos y de planificación.
-3. **Identificación y versionado:** definir un sistema uniforme de identificación, nomenclatura, versiones y estados documentales.
-4. **Organización del repositorio:** establecer el repositorio ERX como espacio de preservación, desarrollo, revisión y seguimiento.
-5. **Índice maestro:** crear un registro centralizado de documentos, versiones, estados y relaciones.
-6. **Identificación de requisitos:** extraer y clasificar requisitos existentes, distinguiendo obligaciones documentadas, requisitos de diseño, aspectos pendientes y decisiones abiertas.
-7. **Registro de decisiones:** documentar contexto, alternativas, justificación y consecuencias de las decisiones arquitectónicas.
-8. **Identificación de riesgos:** registrar riesgos documentales, técnicos, arquitectónicos e institucionales, así como sus dependencias y medidas de tratamiento.
-9. **Gobernanza:** delimitar responsabilidades de diseño, protocolo, software, seguridad, revisión y validación.
-10. **Control de modificaciones:** establecer procedimientos de revisión, aprobación, conservación de versiones anteriores y continuidad documental.
-11. **Verificación de preparación:** comprobar que las condiciones para iniciar FASE 1 estén documentadas y que los asuntos pendientes estén identificados y tratados.
+1. **Document consolidation:** identify, inventory, and preserve the documents that form the project's foundation.
+2. **Document hierarchy:** establish the relationships among normative, functional, graphical, architectural, technical, and planning documents.
+3. **Identification and versioning:** define a consistent system for document identifiers, naming, versions, and statuses.
+4. **Repository organization:** establish the ERX repository as the environment for preservation, development, review, and tracking.
+5. **Master index:** create a centralized register of documents, versions, statuses, and relationships.
+6. **Requirements identification:** extract and classify existing requirements, distinguishing documented obligations, design requirements, pending matters, and open decisions.
+7. **Decision register:** document the context, alternatives, rationale, and consequences of architectural decisions.
+8. **Risk identification:** record documentary, technical, architectural, and institutional risks, together with dependencies and mitigation measures.
+9. **Governance:** define responsibilities for design, protocol, software, security, review, and validation.
+10. **Change control:** establish procedures for review, approval, preservation of previous versions, and documentary continuity.
+11. **Readiness verification:** verify that the conditions for starting Phase 1 are documented and that pending matters are identified and addressed.
 
-# 5. JUSTIFICACIÓN DE LA FASE
+# 5. PHASE JUSTIFICATION
 
-ERX comprende distintas disciplinas y responsabilidades que deben mantenerse coordinadas sin perder su independencia funcional. Su arquitectura contempla un protocolo institucional de comunicación 911, un modelo de estados UTXO, mecanismos criptográficos, evidencias temporales, almacenamiento institucional, integración de software y verificación independiente.
+ERX encompasses multiple disciplines and responsibilities that must remain coordinated without losing their functional independence. Its architecture includes an institutional 911 communications protocol, a UTXO state model, cryptographic mechanisms, timestamp evidence, institutional storage, software integration, and independent verification.
 
-El desarrollo requiere un marco que conserve la coherencia entre documentos, decisiones y componentes, y que impida confundir una propuesta, una especificación, una implementación y una validación.
+The project therefore requires a framework that preserves consistency among documents, decisions, and components, and prevents a proposal, specification, implementation, and validation from being treated as equivalent.
 
-La FASE 0 responde a estas necesidades:
+Phase 0 addresses the following needs:
 
-### 5.1. Continuidad documental
-Evitar que nuevas versiones sustituyan o contradigan las fuentes originales sin procedimiento, justificación y trazabilidad.
+### 5.1. Documentary Continuity
+Prevent new versions from replacing or contradicting original sources without a documented procedure, rationale, and traceability.
 
-### 5.2. Consistencia arquitectónica
-Evitar que el desarrollo separado de componentes introduzca comportamientos incompatibles con las reglas del protocolo.
+### 5.2. Architectural Consistency
+Prevent independent component development from introducing behavior incompatible with protocol rules.
 
-### 5.3. Trazabilidad
-Relacionar cada requisito y decisión con una fuente documental o con una decisión nueva identificada como tal.
+### 5.3. Traceability
+Link each requirement and decision to a documentary source or to a new decision explicitly identified as such.
 
-### 5.4. Control de evolución
-Permitir que ERX evolucione mediante versiones identificables, revisables y recuperables.
+### 5.4. Evolution Control
+Enable ERX to evolve through identifiable, reviewable, and recoverable versions.
 
-### 5.5. Responsabilidad técnica
-Distinguir quién diseña, implementa, revisa, aprueba y valida cada elemento.
+### 5.5. Technical Accountability
+Distinguish who designs, implements, reviews, approves, and validates each element.
 
-### 5.6. Prevención de errores de gestión
-Evitar que el cumplimiento administrativo de actividades sea interpretado como evidencia de funcionamiento, seguridad o aceptación institucional.
+### 5.6. Prevention of Management Errors
+Prevent administrative completion of activities from being interpreted as evidence of functionality, security, or institutional acceptance.
 
-### 5.7. Preparación para el desarrollo normativo
-Establecer las condiciones para abordar FASE 1, cuyo objetivo es cerrar formalmente las reglas del modelo de estados y del gasto único antes de desarrollar el motor transaccional.
+### 5.7. Preparation for Normative Development
+Establish the conditions for Phase 1, whose objective is to formally close the rules governing the state model and single-spend mechanism before development of the transaction engine.
 
-# 6. ALCANCE DE TRABAJO
+# 6. SCOPE OF WORK
 
-FASE 0 comprende los doce paquetes de trabajo definidos en WORKPLAN-FASE-0.md:
+Phase 0 comprises the twelve work packages defined in WORKPLAN-PHASE-0.md:
 
-1. Definición y fundamento de la fase.
-2. Identificación y consolidación del material fundacional.
-3. Organización y jerarquía documental.
-4. Identificación y control de documentos.
-5. Creación y organización del repositorio ERX.
-6. Elaboración del índice maestro y registro documental.
-7. Identificación y clasificación de requisitos.
-8. Registro de decisiones arquitectónicas.
-9. Registro de riesgos y dependencias.
-10. Gobernanza y responsabilidades.
-11. Planificación y control de versiones.
-12. Verificación y cierre formal.
+1. Phase definition and rationale.
+2. Identification and consolidation of foundational materials.
+3. Document organization and hierarchy.
+4. Document identification and control.
+5. ERX repository creation and organization.
+6. Master index and document register.
+7. Requirements identification and classification.
+8. Architecture decision register.
+9. Risk and dependency register.
+10. Governance and responsibilities.
+11. Version planning and control.
+12. Phase verification and formal closure.
 
-El alcance incluye documentos, registros, matrices, procedimientos, criterios de aceptación y mecanismos de seguimiento necesarios para cumplir esos objetivos. También incluye identificar los asuntos cuya resolución corresponda a fases posteriores.
+The scope includes the documents, registers, matrices, procedures, acceptance criteria, and tracking mechanisms required to meet these objectives. It also includes identifying matters whose resolution belongs to later phases.
 
-# 7. EXCLUSIONES DEL ALCANCE
+# 7. SCOPE EXCLUSIONS
 
-FASE 0 no comprende:
+Phase 0 does not include:
 
-1. **Cierre normativo definitivo:** no modifica ni declara cerradas las reglas normativas de ERX-PROT-001.
-2. **Especificación definitiva UTXO:** no constituye la especificación completa de identificadores, estados, transiciones, consumo, concurrencia, atomicidad, idempotencia y recuperación. Estas materias deberán formalizarse principalmente en FASE 1.
-3. **Desarrollo de software:** no implementa ERX Core, ERX Institutional Module ni ERX Verifier.
-4. **Implementación criptográfica:** no desarrolla ni valida algoritmos, formatos de firma, estructuras de datos o mecanismos criptográficos definitivos.
-5. **Integración productiva OTS:** no realiza integración ni envío productivo de sellos OpenTimestamps.
-6. **Integración institucional:** no conecta sistemas reales de telefonía, localización, CAD, agentes, proveedores o centros 911.
-7. **Validación operacional:** no certifica seguridad, interoperabilidad, disponibilidad ni funcionamiento institucional.
-8. **Homologación:** no autoriza operar ERX en centros de emergencia ni sustituye las aprobaciones de autoridades competentes.
+1. **Final normative closure:** it does not amend or declare the normative rules of ERX-PROT-001 closed.
+2. **Final UTXO specification:** it is not the complete specification of identifiers, states, transitions, consumption, concurrency, atomicity, idempotency, and recovery. These matters must be formalized primarily in Phase 1.
+3. **Software development:** it does not implement ERX Core, ERX Institutional Module, or ERX Verifier.
+4. **Cryptographic implementation:** it does not develop or validate definitive algorithms, signature formats, data structures, or cryptographic mechanisms.
+5. **Production OTS integration:** it does not perform production integration or submission of OpenTimestamps timestamps.
+6. **Institutional integration:** it does not connect live telephony, location, CAD, agent, provider, or 911-center systems.
+7. **Operational validation:** it does not certify security, interoperability, availability, or institutional operation.
+8. **Homologation:** it does not authorize ERX operation in emergency centers or replace approvals required from competent authorities.
 
-# 8. PRINCIPIOS DE DESARROLLO
+# 8. DEVELOPMENT PRINCIPLES
 
-Los principios siguientes se adoptan como restricciones y criterios rectores del desarrollo conforme a ERX-ROADMAP-001 v1.0. Su inclusión en este Charter no significa que estén implementados, probados o certificados. Su formalización verificable y su demostración técnica corresponden a las fases pertinentes.
+The following principles are adopted as development constraints and guiding criteria under ERX-ROADMAP-001 v1.0. Their inclusion in this Charter does not mean that they have been implemented, tested, or certified. Their verifiable formalization and technical demonstration belong to the relevant phases.
 
-| Principio | Condición establecida en el Roadmap | Tratamiento en FASE 0 |
+| Principle | Condition established in the Roadmap | Treatment in Phase 0 |
 |---|---|---|
-| No interferencia | ERX nunca condiciona la atención de emergencias. | Preservar como restricción operativa prioritaria. |
-| Gasto único | Ningún estado puede consumirse dos veces. | Registrar como fundamento del diseño UTXO. |
-| Atomicidad | Consumo y creación de estados deben ser coherentes. | Registrar como requisito por formalizar y verificar. |
-| Idempotencia | Repetir una solicitud no duplica sus efectos. | Registrar como requisito por formalizar y verificar. |
-| Historial | Los acontecimientos anteriores no se eliminan por una transición. | Preservar trazabilidad e historial. |
-| Identidad | Toda transición debe tener un emisor y una autorización verificables. | Registrar necesidades de identidad y autorización. |
-| Privacidad | Los datos sensibles permanecen bajo custodia institucional. | Preservar como restricción de diseño y gobernanza. |
-| Independencia temporal | OTS no condiciona el cierre ni la atención. | Mantener evidencia temporal fuera de la ruta crítica de atención. |
-| Recuperación | Las interrupciones no deben resucitar estados consumidos. | Registrar como requisito de continuidad y recuperación. |
-| Verificación | La evidencia debe poder comprobarse independientemente. | Mantener separación entre producción y verificación de evidencia. |
-| Separación institucional | Cada centro conserva su autoridad y responsabilidad. | Preservar límites de autoridad entre instituciones. |
+| Non-interference | ERX must never condition emergency response. | Preserve as a priority operational constraint. |
+| Single spend | No state may be consumed more than once. | Record as a foundation of the UTXO design. |
+| Atomicity | State consumption and creation must be consistent. | Record as a requirement to be formalized and verified. |
+| Idempotency | Repeating a request must not duplicate its effects. | Record as a requirement to be formalized and verified. |
+| History | Previous events are not erased by a transition. | Preserve traceability and history. |
+| Identity | Every transition must have a verifiable issuer and authorization. | Record identity and authorization requirements. |
+| Privacy | Sensitive data remains under institutional custody. | Preserve as a design and governance constraint. |
+| Temporal independence | OTS must not condition closure or emergency response. | Keep timestamp evidence outside the critical response path. |
+| Recovery | Interruptions must not resurrect consumed states. | Record as a continuity and recovery requirement. |
+| Verification | Evidence must be independently verifiable. | Maintain separation between evidence production and verification. |
+| Institutional separation | Each center retains its authority and responsibility. | Preserve institutional authority boundaries. |
 
-### 8.1. Separación obligatoria de los ciclos UTXO
+### 8.1. Mandatory Separation of UTXO Cycles
 
-Conforme a ERX-ROADMAP-001, ERX mantiene dos ciclos relacionados, pero independientes:
+Under ERX-ROADMAP-001, ERX maintains two related but independent cycles:
 
-**Ciclo A — Comunicación 911**
+**Cycle A — 911 Communication**
 
-- UTXO 01: Recepción.
-- UTXO 02: Contacto y protocolo inicial.
-- UTXO 03: Desarrollo y cierre.
+- UTXO 01: Intake.
+- UTXO 02: Contact and Initial Protocol.
+- UTXO 03: Development and Closure.
 
-Cada llamada posee su propio ciclo y expediente.
+Each call has its own cycle and record.
 
-**Ciclo B — Disponibilidad del agente**
+**Cycle B — Agent Availability**
 
-- DISPONIBLE.
-- ASIGNADO / ACEPTADO.
-- OCUPADO.
-- LIBERACIÓN Y NUEVA DISPONIBILIDAD.
+- AVAILABLE.
+- ASSIGNED / ACCEPTED.
+- BUSY.
+- RELEASE AND RETURN TO AVAILABILITY.
 
-El ciclo de disponibilidad del agente tiene estados propios y no reutiliza los UTXO de la llamada. El UTXO 03 no sustituye el estado de disponibilidad del agente. Tampoco debe emitirse una nueva disponibilidad mientras el agente continúe ocupado, en pausa o sujeto a otra condición que impida recibir solicitudes.
+The agent-availability cycle has its own states and does not reuse the call UTXOs. UTXO 03 does not replace the agent's availability state. A new availability state must not be issued while the agent remains busy, on pause, or subject to another condition that prevents accepting requests.
 
-La relación entre ambos ciclos se establece mediante referencias de identidad, asignación y sesión. Esta relación no fusiona sus estados ni sus condiciones de consumo y transición.
+The relationship between both cycles is established through identity, assignment, and session references. This relationship does not merge their states or their consumption and transition conditions.
 
-La formalización completa de identificadores, transiciones, invariantes, concurrencia, atomicidad y recuperación de ambos ciclos corresponde al trabajo normativo y técnico posterior, principalmente FASE 1.
+The complete formalization of identifiers, transitions, invariants, concurrency, atomicity, and recovery for both cycles belongs to subsequent normative and technical work, primarily Phase 1.
 
-### 8.2. Independencia de la evidencia temporal
+### 8.2. Independence of Timestamp Evidence
 
-La evidencia OTS y los procesos externos de sincronización deben mantenerse fuera de la ruta crítica de atención. Su generación, confirmación o disponibilidad no puede condicionar la recepción, atención, despacho ni cierre operativo de una emergencia. La respuesta técnica a las observaciones del Roadmap respalda que los procesos externos de evidencia temporal y sincronización se ejecuten de manera asíncrona respecto de las operaciones transaccionales locales.
+OTS evidence and external synchronization processes must remain outside the critical path of emergency handling. Their generation, confirmation, or availability must not condition emergency intake, response, dispatch, or operational closure. The technical response to the Roadmap observations supports running external timestamp-evidence and synchronization processes asynchronously relative to local transactional operations.
 
-### 8.3. Preservación de fuentes
+### 8.3. Source Preservation
 
-Los documentos originales se conservan como referencias de procedencia. Las modificaciones se documentan en nuevas versiones o documentos derivados.
+Original documents are retained as provenance references. Changes are documented in new versions or derivative documents.
 
-### 8.4. No inferencia silenciosa
+### 8.4. No Silent Inference
 
-Los vacíos, contradicciones y decisiones no resueltas permanecen identificados hasta que exista una resolución documentada.
+Gaps, contradictions, and unresolved decisions remain identified until a documented resolution exists.
 
-### 8.5. Separación de responsabilidades
+### 8.5. Separation of Responsibilities
 
-La autoridad de diseño, la implementación, la revisión y la validación independiente no deben confundirse.
+Design authority, implementation, review, and independent validation must not be conflated.
 
-### 8.6. Aprobación por evidencia
+### 8.6. Evidence-Based Approval
 
-Ninguna fase se considera completada únicamente por haber producido archivos, ejecutado tareas o satisfecho listas administrativas. El avance requiere evidencias verificables y criterios de aceptación.
+A phase is not considered complete merely because files have been produced, tasks executed, or administrative checklists satisfied. Progress requires verifiable evidence and fulfillment of acceptance criteria.
 
-### 8.7. Continuidad
+### 8.7. Continuity
 
-Toda modificación debe permitir reconstruir qué existía, qué cambió, por qué cambió y quién autorizó el cambio.
+Every change must make it possible to reconstruct what existed, what changed, why it changed, and who authorized the change.
 
-# 9. CRITERIOS DE FINALIZACIÓN
+# 9. COMPLETION CRITERIA
 
-FASE 0 podrá declararse completada cuando se verifique el cumplimiento de los criterios de los doce paquetes de trabajo y de las siguientes condiciones generales:
+Phase 0 may be declared complete only after fulfillment of the criteria for all twelve work packages and verification of the following general conditions:
 
-- [ ] Fuentes conocidas inventariadas, preservadas o identificadas como faltantes.
-- [ ] Versiones y procedencia de las fuentes registradas.
-- [ ] Jerarquía documental y autoridad por materia definidas y aprobadas.
-- [ ] Contradicciones y vacíos registrados con tratamiento asignado.
-- [ ] Identificadores, nomenclatura, versiones y estados documentales definidos.
-- [ ] Repositorio, accesos y control de cambios documentados.
-- [ ] Índice maestro consistente con los documentos existentes.
-- [ ] Requisitos identificados, clasificados y vinculados a una fuente documental o a una decisión nueva claramente señalada.
-- [ ] Decisiones arquitectónicas aprobadas y pendientes registradas.
-- [ ] Riesgos y dependencias con impacto, tratamiento, responsables y condiciones de resolución.
-- [ ] Gobernanza, responsabilidades, revisión y aprobación definidas.
-- [ ] Continuidad y conservación de versiones establecidas.
-- [ ] Informe de cumplimiento y registro formal de cierre disponibles.
-- [ ] Aprobación expresa de LAEV para el cierre de FASE 0.
-- [ ] Autorización expresa para iniciar la fase siguiente.
+- [ ] Known sources are inventoried, preserved, or explicitly identified as missing.
+- [ ] Source versions and provenance are recorded.
+- [ ] Document hierarchy and subject-matter authority are defined and approved.
+- [ ] Contradictions and gaps are recorded with assigned handling.
+- [ ] Document identifiers, naming, versions, and statuses are defined.
+- [ ] Repository, access, and change control are documented.
+- [ ] The master index is consistent with the actual documents.
+- [ ] Requirements are identified, classified, and linked to a documentary source or a clearly identified new decision.
+- [ ] Approved and pending architecture decisions are recorded.
+- [ ] Risks and dependencies have impact, mitigation, owners, and resolution conditions.
+- [ ] Governance, responsibilities, review, and approval are defined.
+- [ ] Documentary continuity and version preservation are established.
+- [ ] A compliance report and formal closure record are available.
+- [ ] LAEV has expressly approved Phase 0 closure.
+- [ ] Express authorization to start the next phase is recorded.
 
-Los asuntos técnicos que correspondan a FASE 1 o posteriores no tienen que resolverse anticipadamente durante FASE 0. Podrán trasladarse si están identificados, clasificados, vinculados a su fuente o decisión, justificados, asignados a una fase de resolución y aceptados expresamente en el proceso de cierre. Su traslado no equivale a declararlos resueltos ni a dispensar requisitos que el Roadmap exija para avanzar.
+Technical matters belonging to Phase 1 or later do not need to be resolved prematurely during Phase 0. They may be deferred if they are identified, classified, linked to their source or decision, justified, assigned to a resolution phase, and expressly accepted during closure. Deferral does not mean they are resolved or waive any requirements the Roadmap requires for progression.
 
-El criterio de avance establecido por ERX-ROADMAP-001 exige que todos los requisitos existentes estén identificados, clasificados y vinculados a una fuente documental o a una decisión nueva claramente señalada.
+The progression criterion established by ERX-ROADMAP-001 requires all existing requirements to be identified, classified, and linked to a documentary source or a clearly identified new decision.
 
-# 10. RESULTADO ESPERADO
+# 10. EXPECTED OUTCOME
 
-Al finalizar FASE 0, ERX byLAEV deberá disponer de un entorno de desarrollo organizado y gobernado documentalmente, que incluya:
+At the end of Phase 0, ERX byLAEV must have an organized and document-governed development environment, including:
 
-- Repositorio institucional de desarrollo.
-- Material fundacional preservado e inventariado.
-- Jerarquía y autoridad documental.
-- Sistema de identificación y versionado.
-- Índice maestro.
-- Matriz de requisitos y trazabilidad.
-- Registro de decisiones arquitectónicas.
-- Registro de riesgos y dependencias.
-- Modelo de gobernanza y matriz de responsabilidades.
-- Procedimiento de control de cambios.
-- Informe de cumplimiento.
-- Registro formal de cierre.
+- Institutional development repository.
+- Preserved and inventoried foundational materials.
+- Document hierarchy and authority.
+- Identification and versioning system.
+- Master index.
+- Requirements and traceability matrix.
+- Architecture decision register.
+- Risk and dependency register.
+- Governance model and responsibility matrix.
+- Change-control procedure.
+- Compliance report.
+- Formal closure record.
 
-Este resultado permitirá iniciar FASE 1 con una base documental identificable, organizada y controlada. No implica que el modelo UTXO esté completamente cerrado ni que exista software funcional o aceptación institucional.
+This outcome will allow Phase 1 to begin on an identifiable, organized, and controlled documentary basis. It does not imply that the UTXO model is fully closed, that functional software exists, or that institutional acceptance has been granted.
 
-# 11. RELACIÓN CON FASE 1
+# 11. RELATIONSHIP WITH PHASE 1
 
-ERX-ROADMAP-001 identifica FASE 1 como **Cierre normativo y modelo de estados**, con prioridad crítica.
+ERX-ROADMAP-001 identifies Phase 1 as **Normative Closure and State Model**, with critical priority.
 
-Su objetivo es definir de forma inequívoca cómo funciona el sistema de gasto único antes de desarrollar el motor transaccional.
+Its objective is to define unambiguously how the single-spend system works before development of the transaction engine.
 
-FASE 0 prepara las condiciones documentales y organizativas para ese trabajo. FASE 1 deberá formalizar, entre otras materias:
+Phase 0 prepares the documentary and organizational conditions for that work. Phase 1 must formalize, among other matters:
 
-- Identificadores UTXO y de entidades.
-- Estados institucionales y tipos de salida.
-- Reglas de consumo y creación de estados.
-- Transiciones válidas e invariantes.
-- Atomicidad e idempotencia.
-- Concurrencia y prevención de doble consumo.
-- Separación entre el ciclo de comunicación y el ciclo de disponibilidad del agente.
-- Referencias de identidad, asignación y sesión entre ciclos.
-- Excepciones, interrupciones y recuperación.
-- Condiciones de verificación.
+- UTXO and entity identifiers.
+- Institutional states and output types.
+- State-consumption and state-creation rules.
+- Valid transitions and invariants.
+- Atomicity and idempotency.
+- Concurrency and double-consumption prevention.
+- Separation between the communication cycle and the agent-availability cycle.
+- Identity, assignment, and session references between cycles.
+- Exceptions, interruptions, and recovery.
+- Verification conditions.
 
-La autorización para iniciar FASE 1 deberá quedar registrada expresamente después del cierre de FASE 0. La aprobación de este Charter no constituye esa autorización.
+Authorization to begin Phase 1 must be expressly recorded after Phase 0 closure. Approval of this Charter does not constitute that authorization.
 
-# 12. AUTORIDAD, APROBACIÓN Y CONTROL DE CAMBIOS
+# 12. AUTHORITY, APPROVAL, AND CHANGE CONTROL
 
-LAEV / byLAEV conserva la autoridad de diseño del proyecto y la responsabilidad de aprobar las decisiones de diseño que correspondan a su ámbito. Las responsabilidades de implementación, revisión y validación técnica deberán identificarse conforme al modelo de gobernanza que se establezca durante FASE 0.
+LAEV / byLAEV retains project design authority and responsibility for approving design decisions within its scope. Implementation, review, and technical-validation responsibilities must be identified under the governance model established during Phase 0.
 
-La aprobación de este documento establece formalmente la definición y fundamento de FASE 0 como marco de trabajo del proyecto. No aprueba automáticamente los demás documentos, no declara completada la fase y no autoriza operación institucional ni inicio de FASE 1.
+Approval of this document formally establishes the definition and rationale of Phase 0 as the project's working framework. It does not automatically approve other documents, declare the phase complete, authorize institutional operation, or authorize the start of Phase 1.
 
-Toda modificación posterior deberá generar una nueva revisión documental, conservar el historial y registrar su justificación y aprobación correspondiente.
+Any subsequent modification must generate a new document revision, preserve the history, and record its rationale and corresponding approval.
 
-## Registro formal de aprobación
+## Formal Approval Record
 
-| Campo | Registro |
+| Field | Record |
 |---|---|
-| Documento | ERX-PHASE-0-CHARTER-001 |
-| Versión aprobada | 1.0.0 |
-| Autoría | LAEV / byLAEV |
-| Autoridad aprobadora | LAEV |
-| Decisión | APPROVED — aprobación expresa del autor |
-| Condición | Cuatro ajustes técnicos incorporados en esta versión |
-| Fecha de aprobación | 2026-11-23 |
-| Evidencia de aprobación | Instrucción expresa de LAEV en la conversación del proyecto, 2026-11-23 |
-| Publicación en repositorio | Pendiente de commit |
+| Document | ERX-PHASE-0-CHARTER-001 |
+| Approved Version | 1.0.0 |
+| Authorship | LAEV / byLAEV |
+| Approving Authority | LAEV |
+| Decision | APPROVED — express approval by the author |
+| Condition | Four technical adjustments incorporated in this version |
+| Approval Date | 2026-11-23 |
+| Approval Evidence | Express instruction from LAEV in the project conversation, 2026-11-23 |
+| Repository Publication | Published in the ERX repository |
 
 ---
 
-**FIN DEL DOCUMENTO**
+**END OF DOCUMENT**
 
 ERX-PHASE-0-CHARTER-001  
-ERX byLAEV — Sistema de Doble Gasto para Comunicaciones 911  
+ERX byLAEV — Double-Spend System for 911 Communications  
 LAEV / byLAEV

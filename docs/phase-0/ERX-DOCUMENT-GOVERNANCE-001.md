@@ -156,7 +156,11 @@ The detailed identifier, metadata, and versioning rules are assigned to WP-0.4 a
 - The formal document hierarchy and subject-matter authority matrix have not been approved.
 - The technical response's formal identifier and version remain unstated in the supplied source.
 
-## 10. WP-0.3 Status and Acceptance
+## 10. Preliminary Issue Register
+
+The preparatory issue inventory is recorded in [`ERX-DOCUMENT-ISSUE-REGISTER-001.md`](ERX-DOCUMENT-ISSUE-REGISTER-001.md) and [`registers/document-issue-register.csv`](../../registers/document-issue-register.csv). It records open metadata, missing-source, authority, diagram interpretation, response-effect, and archive-integrity matters. These entries are not adjudicated contradictions and remain open pending WP-0.2 acceptance and formal WP-0.3 execution.
+
+## 11. WP-0.3 Status and Acceptance
 
 **Status: BLOCKED — PREPARATORY DRAFT ONLY.**
 

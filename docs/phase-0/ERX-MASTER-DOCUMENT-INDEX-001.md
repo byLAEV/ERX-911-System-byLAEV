@@ -55,6 +55,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Preliminary Documentary Ambiguities and Open Issues | 0.1.0 | WP-0.3 preparatory register | PREPARATORY REGISTER — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eight issues originally recorded; DOC-ISS-008 resolved by evidence, seven remain open |
 | IDX-020 | NOT_STATED | Machine-readable documentary issue register | NOT_STATED | WP-0.3 supporting register | WORKING REGISTER — NOT APPROVED | `registers/document-issue-register.csv` | Companion to ERX-DOCUMENT-ISSUE-REGISTER-001 |
 | IDX-021 | ERX-WP-0.2-COMPLETION-DOSSIER-001 | WP-0.2 Foundational Materials Completion Dossier | 0.1.0 | Phase 0 evidence dossier | IN_REVIEW — NOT APPROVED | `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md` | Five repository originals byte-identity verified; LAEV approval pending |
+| IDX-022 | ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001 | WP-0.2 Source Inspection and Bounded Comparison | 0.1.0 | Working evidence record | IN_REVIEW — NOT APPROVED | `docs/phase-0/ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001.md` | Detailed source topic map and cross-source correspondences; no hierarchy or conflict adjudication |
 
 ## 4. Referenced but Unlocated Documents
 

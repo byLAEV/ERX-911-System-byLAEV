@@ -6,7 +6,7 @@
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Register ID | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 |
 | Version | 0.1.0 |
-| Status | IN_PROGRESS — inventory baseline |
+| Status | IN_REVIEW — evidence consolidated; LAEV approval pending |
 | Work Package | WP-0.2 |
 | Prepared by | LAEV / byLAEV project documentation |
 | Inventory basis | Five original PDF files supplied in the project conversation |
@@ -129,7 +129,7 @@ The archival evidence and paths are consolidated in `docs/phase-0/ERX-WP-0.2-COM
 - ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001 remain unverified.
 - This inventory does not assess whether the sources are mutually consistent or establish authority precedence.
 
-## 10. WP-0.2 Baseline Status
+## 10. WP-0.2 Evidence and Review Status
 
 **IN_REVIEW — evidence consolidated; LAEV approval pending**
 

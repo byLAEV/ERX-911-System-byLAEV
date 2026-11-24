@@ -122,7 +122,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependency:** WP-0.1.
 
 ### WP-0.3 — Document Organization and Hierarchy
-**Status:** NOT_STARTED
+**Status:** BLOCKED — PREPARATORY DRAFT ONLY
 
 **Activities**
 - [ ] 0.3.1 Classify documents.
@@ -134,9 +134,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.3.7 Define the handling of contradictions.
 - [ ] 0.3.8 Establish document evolution rules.
 
-**Deliverable:** `docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md`.  
+**Preparatory draft:** [`docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md`](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) v0.1.0 — WORKING DRAFT, NOT APPROVED. 
 **Acceptance:** hierarchy and subject-matter authority are explicit; contradictions are recorded with conflicting sources, impact, owner, disposition, and status.  
-**Dependency:** WP-0.2.
+**Dependency:** WP-0.2 must be completed and accepted before formal WP-0.3 execution and approval. The current draft is preparatory only.
 
 ### WP-0.4 — Document Identification and Control
 **Status:** NOT_STARTED
@@ -358,7 +358,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 |---|---|---|---|---|---|
 | WP-0.1 | Definition and Rationale | APPROVED | LAEV | [ERX-PHASE-0-CHARTER-001 v1.0.0](docs/phase-0/ERX-PHASE-0-CHARTER-001.md) · express approval 2026-11-23 | Four technical adjustments incorporated; WP-0.1 approved, not declared COMPLETED. |
 | WP-0.2 | Foundational Materials | IN_PROGRESS | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Custody rules](docs/foundational/README.md) | Five supplied PDFs inspected; originals not yet archived in repository; two referenced sources unverified. |
-| WP-0.3 | Document Hierarchy | NOT_STARTED | To be assigned | — | — |
+| WP-0.3 | Document Hierarchy | BLOCKED | LAEV | [Preparatory governance draft](docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md) | Draft v0.1.0 published for preparation only; formal execution and approval depend on WP-0.2 acceptance. |
 | WP-0.4 | Document Control | NOT_STARTED | To be assigned | — | — |
 | WP-0.5 | ERX Repository | NOT_STARTED | LAEV / to be assigned | — | — |
 | WP-0.6 | Master Index | NOT_STARTED | To be assigned | — | — |

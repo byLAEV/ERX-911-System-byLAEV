@@ -32,11 +32,12 @@
 6. Contradiction and ambiguity handling procedure draft.
 7. Document evolution and supersession policy draft.
 8. Updated execution record.
+10. Supplemental post-approval source discovery note for candidate consensus PDF.
 9. Independent review and LAEV approval records — not yet produced.
 
 ## 3. Outstanding acceptance conditions
 - LAEV must decide hierarchy and subject-matter authority.
-- DOC-ISS-001–007 and DOC-ISS-009–010 require documented disposition; DOC-ISS-002 and DOC-ISS-003 may remain accepted limitations only with explicit approval and impact statement.
+- DOC-ISS-001–010 require documented disposition as applicable. DOC-ISS-002 now has a candidate PDF whose identity is unverified; DOC-ISS-003 remains not located. Both require explicit LAEV disposition and impact statement if deferred.
 - DOC-ISS-008 is RESOLVED_EVIDENCE.
 - The contradiction-handling procedure and evolution/supersession policy require review and approval.
 - Execution record, Workplan, register and linked documents must agree.

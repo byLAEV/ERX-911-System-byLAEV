@@ -35,8 +35,8 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | DOC-ISS-006 | Normative force and divergence handling for Atlas plates | OPEN | WP-0.3 |
 | DOC-ISS-007 | Whether Technical Response amends Roadmap | OPEN | WP-0.3 |
 | DOC-ISS-008 | Original PDF archival and hash verification | RESOLVED_EVIDENCE | WP-0.2 |
-| DOC-ISS-009 | Mapping of call-request and call-acceptance states | OPEN | WP-0.3 |
-| DOC-ISS-010 | Separate agent-availability UTXO lifecycle | OPEN | WP-0.3 |
+| DOC-ISS-009 | Structural divergence: UTXO-911 call-acceptance output vs Protocol/Atlas three-output chain | OPEN | WP-0.3 |
+| DOC-ISS-010 | Formal detail of independent agent-availability state machine | SOURCE_ALIGNMENT_CONFIRMED_DETAIL_PENDING | WP-0.3 / later detailed specification |
 
 The exact evidence, impact, required disposition, owner and status are maintained in the CSV companion.
 
@@ -49,6 +49,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 - RESPONSE_EFFECT — formal effect of a response on its target is not evidenced.
 - ARCHIVE_INTEGRITY — source identity and repository preservation evidence.
 - SCOPE_GRANULARITY — related sources model the same process at different state granularity.
+- STRUCTURAL_MODEL_DIVERGENCE — sources describe materially different state-output or transition decompositions; LAEV must decide whether the difference is a separate output, a sub-state or an approved profile.
 - ADDITIONAL_STATE_MACHINE — a source describes a linked state lifecycle not fully specified in another source.
 
 ## 5. Handling rules
@@ -63,7 +64,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 9. Where an issue could affect emergency handling, unique call admission, agent availability, double-spend prevention, evidence integrity, privacy or security, no implementation assumption is approved by this register.
 
 ## 6. Dependencies and next action
-DOC-ISS-002 requires identity/content verification of the candidate `docs/Consenso ERX byLAEV.pdf`; DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006, DOC-ISS-009 and DOC-ISS-010 require LAEV decisions after review of the source alignment report. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
+DOC-ISS-002 requires identity/content verification of the candidate `docs/Consenso ERX byLAEV.pdf`; DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; its detailed state machine must be assigned and specified. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
 **Status: WORKING REGISTER — PENDING LAEV REVIEW.** This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
 

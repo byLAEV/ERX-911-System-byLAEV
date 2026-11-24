@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | TECHNICAL REVIEW — PENDING LAEV DISPOSITION |
 | Work Package | WP-0.3 / Activity 0.3.6 |
 | Sources | FND-001, FND-002, FND-003, FND-004, FND-005 |

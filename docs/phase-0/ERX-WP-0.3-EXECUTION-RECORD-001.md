@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | IN_PROGRESS — EVIDENCE UPDATED; LAEV DECISIONS PENDING |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -37,6 +37,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 - ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.
 - ERX-DOCUMENT-GOVERNANCE-001.
 - ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 — records a post-approval candidate consensus PDF; identity unverified.
+- ERX-WP-0.3-AUDIT-REPORT-001 v0.1.0 — second-pass documentary consistency audit.
 
 ## 4. Material source-alignment findings
 1. ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1 and UTXO-911-001 v1.0 broadly correspond on a three-stage communication lifecycle.

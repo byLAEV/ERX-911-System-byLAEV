@@ -157,7 +157,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependencies:** WP-0.1 and WP-0.3. Formal WP-0.4 execution remains blocked until WP-0.3 is completed and expressly approved. This preparatory draft does not change the dependency gate.
 
 ### WP-0.5 — ERX Repository Creation and Organization
-**Status:** NOT_STARTED
+**Status:** BLOCKED — PREPARATORY DRAFT ONLY
 
 **Activities**
 - [ ] 0.5.1 Repository identity.
@@ -189,9 +189,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 └── templates/
 ```
 
-**Deliverable:** approved structure and `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md`.  
+**Preparatory draft:** [`docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md`](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) v0.1.0 — NOT APPROVED. Existing repository configuration remains to be inspected. 
 **Acceptance:** locations, access, branches, change control, and intellectual property are documented. Do not create or attribute a license without an express decision.  
-**Dependencies:** WP-0.3 and WP-0.4.
+**Dependencies:** WP-0.3 and WP-0.4. Formal WP-0.5 execution remains blocked until both dependencies are completed and expressly approved.
 
 ### WP-0.6 — Master Index and Document Register
 **Status:** NOT_STARTED

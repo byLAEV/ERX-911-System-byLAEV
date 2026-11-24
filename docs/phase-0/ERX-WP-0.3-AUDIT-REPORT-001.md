@@ -60,10 +60,11 @@ This post-approval discovery does not revoke or reopen WP-0.2. It is a supplemen
 ## 6. WP-0.3 technical review conclusions
 - The three communication-stage descriptions in Protocol, Atlas and UTXO-911 have broad correspondence.
 - UTXO-911's request/acceptance detail is more granular; no final output/sub-state mapping is established.
-- UTXO-911 describes a separate agent-availability UTXO cycle; its formal placement in the ERX architecture remains undecided.
+- UTXO-911 describes a separate agent-availability UTXO cycle. Roadmap Section 3.1 expressly adopts two related but independent cycles and the Technical Response supports that separation; only detailed state-machine formalization remains.
 - Atlas expressly identifies Protocol as its related normative document; the handling of a particular diagram/text divergence still needs a controlled rule.
 - The Technical Response is not shown by the supplied evidence to be an approved Roadmap amendment.
 - The candidate consensus PDF cannot yet be equated to the Roadmap's ERX-CONSENSUS-001 v0.1 citation.
+- UTXO-911's separate call-acceptance output is a structural difference from Protocol/Atlas's explicit three-output chain; LAEV must decide whether it is an independent spendable output or an acceptance sub-state/event.
 
 No direct contradiction is declared solely from different levels of detail. The open matters are scoped as identity, authority, granularity, and documentary-effect decisions.
 

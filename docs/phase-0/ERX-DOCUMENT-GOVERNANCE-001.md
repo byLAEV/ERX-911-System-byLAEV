@@ -61,7 +61,7 @@ The comparison identifies:
 - A distinct agent-availability UTXO state machine in UTXO-911 requiring scope allocation.
 - An explicit Atlas-to-Protocol normative relationship.
 - A Technical Response whose formal amendment effect on the Roadmap is not evidenced.
-- Two cited sources whose contents remain unavailable and unverified.
+- One cited source has a candidate PDF in the repository whose identity/content remain unverified; the other cited source remains not located.
 
 These are documented scope and authority questions; no direct contradiction is declared without incompatible statements in the same scope.
 

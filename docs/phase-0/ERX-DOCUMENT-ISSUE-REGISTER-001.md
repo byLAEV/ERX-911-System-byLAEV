@@ -1,67 +1,70 @@
 # ERX-DOCUMENT-ISSUE-REGISTER-001
-## Preliminary Documentary Ambiguities and Open Issues — Phase 0
+## Documentary Ambiguities, Missing Sources and Open Decisions — Phase 0
 
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-ISSUE-REGISTER-001 |
-| Version | 0.1.0 |
-| Status | PREPARATORY REGISTER — NOT APPROVED |
-| Work Package | WP-0.3 preparation; WP-0.2 dependencies |
+| Version | 0.2.0 |
+| Status | WORKING REGISTER — PENDING LAEV REVIEW |
+| Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
-| Date | 2026-11-23 |
 | Authority | LAEV |
+| Updated | 2026-11-24 |
 
-## 1. Purpose
+## 1. Purpose and status boundary
+This register tracks metadata discrepancies, missing-source conditions, authority questions, scope differences, and possible contradictions. It is not itself an approval or adjudication. A difference in granularity is not automatically a contradiction.
 
-This register records documentary ambiguities, missing-source conditions, metadata issues, and unresolved authority questions identified from the five supplied foundational PDFs and the repository inspection recorded in the foundational materials register and source cross-reference map.
+The machine-readable companion is `registers/document-issue-register.csv`.
 
-It is an issue log, not a final contradiction determination. An ambiguity is not automatically a contradiction. No issue is resolved by this register, and no proposed treatment becomes binding without the applicable review and approval.
+## 2. Evidence updates
+- DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
+- DOC-ISS-009 and DOC-ISS-010 were added after direct comparison of ERX-PROT-001 v1.1 Sections 5–10, UTXO-911-001 v1.0 Sections 2–6, and ERX-ATLAS-001 v1.1 Plates 01–08 and its correspondence table.
+- The comparison found a broad three-stage communication lifecycle correspondence, alongside a more granular call-request/acceptance description and a distinct agent-availability UTXO in UTXO-911-001. These are unresolved scope/mapping questions, not proven contradictions.
+- DOC-ISS-002 and DOC-ISS-003 remain references to sources not located in the inspected source set/repository. Their content and provenance remain unverified.
 
-## 2. Classification
+## 3. Current issue status
 
-- VERSION_METADATA — discrepancy between supplied filename and internal version metadata.
-- MISSING_SOURCE — a referenced source was not present in the inspected source set.
-- IDENTITY_METADATA — document identity/version metadata is absent or incomplete.
-- AUTHORITY_AMBIGUITY — subject-matter authority or precedence is not established.
-- DIAGRAM_AUTHORITY — relationship between graphical and textual normative content requires determination.
-- RESPONSE_EFFECT — whether a response formally changes another document is not established.
-- ARCHIVE_INTEGRITY — original binary custody and repository integrity evidence remain incomplete.
-
-## 3. Issue Register
-
-See the machine-readable companion: `registers/document-issue-register.csv`.
-
-Current evidence update (2026-11-23): DOC-ISS-008 is **RESOLVED_EVIDENCE**. The five original PDFs were located in `docs/` on `main`; their local SHA-256 checksums match the foundational register and their Git blob SHA-1 values match the GitHub repository objects. The evidence is recorded in `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. The remaining seven issues are OPEN and retain their existing work-package assignments.
-
-| ID | Issue | Current status | Responsible authority |
+| ID | Issue | Status | Work Package |
 |---|---|---|---|
-| DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | LAEV |
-| DOC-ISS-002 | ERX-CONSENSUS-001 v0.1 not located | OPEN | LAEV |
-| DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | LAEV |
-| DOC-ISS-004 | Technical Response lacks formal identifier/version/date | OPEN | LAEV |
-| DOC-ISS-005 | UTXO-911-001 / ERX-PROT-001 authority relationship | OPEN | LAEV |
-| DOC-ISS-006 | Normative force of Atlas diagrams | OPEN | LAEV |
-| DOC-ISS-007 | Whether Technical Response amends Roadmap | OPEN | LAEV |
-| DOC-ISS-008 | Original PDF archival and post-commit hash verification | RESOLVED_EVIDENCE | LAEV |
+| DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | WP-0.3 |
+| DOC-ISS-002 | ERX-CONSENSUS-001 v0.1 not located | OPEN | WP-0.2 carry-forward |
+| DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | WP-0.2 carry-forward |
+| DOC-ISS-004 | Technical Response lacks formal ID/version/date | OPEN | WP-0.3 |
+| DOC-ISS-005 | UTXO-911 / Protocol authority relationship | OPEN | WP-0.3 |
+| DOC-ISS-006 | Normative force and divergence handling for Atlas plates | OPEN | WP-0.3 |
+| DOC-ISS-007 | Whether Technical Response amends Roadmap | OPEN | WP-0.3 |
+| DOC-ISS-008 | Original PDF archival and hash verification | RESOLVED_EVIDENCE | WP-0.2 |
+| DOC-ISS-009 | Mapping of call-request and call-acceptance states | OPEN | WP-0.3 |
+| DOC-ISS-010 | Separate agent-availability UTXO lifecycle | OPEN | WP-0.3 |
 
-## 4. Handling Rules
+The exact evidence, impact, required disposition, owner and status are maintained in the CSV companion.
 
-1. Preserve each supplied original unchanged.
-2. Cite internal document identifiers and versions where stated; preserve the original supplied filename separately.
-3. Do not infer that a missing source does not exist outside inspected locations.
-4. Do not convert a technical recommendation into an approved requirement or amendment without approval evidence.
-5. Do not infer universal precedence from document date, directory location, or a related-document label.
-6. Resolve authority questions only after complete source comparison and explicit approval.
-7. Record every disposition with rationale, evidence, approver, and date.
-8. Keep unresolved items open and visible in the master index and Workplan.
+## 4. Issue classes
+- VERSION_METADATA — supplied filename and internal version differ.
+- MISSING_SOURCE — a cited source was not located in the inspected source set.
+- IDENTITY_METADATA — formal identifier, version or date is absent.
+- AUTHORITY_AMBIGUITY — subject-matter authority is unresolved.
+- DIAGRAM_AUTHORITY — graphical/normative relationship requires a rule.
+- RESPONSE_EFFECT — formal effect of a response on its target is not evidenced.
+- ARCHIVE_INTEGRITY — source identity and repository preservation evidence.
+- SCOPE_GRANULARITY — related sources model the same process at different state granularity.
+- ADDITIONAL_STATE_MACHINE — a source describes a linked state lifecycle not fully specified in another source.
 
-## 5. Dependencies and Status
+## 5. Handling rules
+1. Preserve every supplied original unchanged.
+2. Cite exact document IDs, versions, sections, pages and plate numbers where available.
+3. Do not infer missing source contents.
+4. Do not treat a recommendation as an approved requirement or amendment without approval evidence.
+5. Do not infer universal precedence from date, filename or repository location.
+6. Do not label a scope difference a contradiction without incompatible propositions in the same scope and conditions.
+7. Record every disposition with rationale, evidence, approver and date.
+8. Keep unresolved issues visible in the master index and Workplan.
+9. Where an issue could affect emergency handling, unique call admission, agent availability, double-spend prevention, evidence integrity, privacy or security, no implementation assumption is approved by this register.
 
-DOC-ISS-002 and DOC-ISS-003 remain WP-0.2 source-location/provenance matters. DOC-ISS-008 has been resolved by repository byte-identity evidence and is retained as a closed audit item. The remaining issues are prepared for WP-0.3 review but must not be treated as formally adjudicated until WP-0.2 is accepted and WP-0.3 is authorized.
+## 6. Dependencies and next action
+DOC-ISS-002 and DOC-ISS-003 remain source-location/provenance limitations. DOC-ISS-005, DOC-ISS-006, DOC-ISS-009 and DOC-ISS-010 require LAEV decisions after review of the source alignment report. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
-**Status: PREPARATORY — NOT APPROVED.**
-
-This register does not close WP-0.2, approve WP-0.3, establish the final hierarchy, or authorize Phase 1.
+**Status: WORKING REGISTER — PENDING LAEV REVIEW.** This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
 
 ---
 End of ERX-DOCUMENT-ISSUE-REGISTER-001

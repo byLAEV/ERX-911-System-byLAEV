@@ -5,7 +5,7 @@
 |---|---|
 | Document ID | ERX-DOCUMENT-ISSUE-REGISTER-001 |
 | Version | 1.0.0 |
-| Status | WORKING REGISTER — PENDING LAEV REVIEW |
+| Status | APPROVED DISPOSITION REGISTER — WP-0.3 |
 | Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Authority | LAEV |
@@ -69,7 +69,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 ## 6. Dependencies and next action
 DOC-ISS-002 identity/content is evidence-confirmed from the text source; its proposal lifecycle and operational completion/authority are tracked in DOC-ISS-011. DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; WP-0.3 must record whether detailed state-machine specification is deferred, its target package, owner, impact and interim control. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
-**Status: WORKING REGISTER — PENDING LAEV REVIEW.** This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
+**Status: APPROVED DISPOSITION REGISTER — WP-0.3.** All WP-0.3 dispositions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. DOC-ISS-003, 010 and 011 remain bounded/deferred follow-ups, not falsely represented as source-resolved. This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
 
 ---
 End of ERX-DOCUMENT-ISSUE-REGISTER-001

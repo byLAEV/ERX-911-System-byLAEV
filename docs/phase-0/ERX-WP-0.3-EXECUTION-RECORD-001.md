@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 0.8.0 |
+| Version | 0.9.0 |
 | Status | IN_PROGRESS — EVIDENCE UPDATED; LAEV DECISIONS PENDING |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -27,14 +27,14 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 | 0.3.8 Approve evolution rules | Evolution/supersession policy v0.1.0 published as draft | PENDING LAEV |
 
 ## 3. Evidence produced
-- ERX-DOCUMENT-HIERARCHY-MATRIX-001.
-- ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.
-- ERX-DOCUMENT-RELATIONSHIP-MAP-001.
+- ERX-DOCUMENT-HIERARCHY-MATRIX-001 v0.2.0.
+- ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 v0.3.0.
+- ERX-DOCUMENT-RELATIONSHIP-MAP-001 v0.3.0.
 - ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.
 - ERX-DOCUMENT-ISSUE-REGISTER-001 v0.9.0 and CSV companion.
 - ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v0.1.0.
 - ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0.
-- ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.
+- ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 v0.8.0.
 - ERX-DOCUMENT-GOVERNANCE-001.
 - ERX-CONSENSUS-001 v0.1 text source directly inspected; ID/version/status/author confirmed against Roadmap citation; DOC-ISS-002 identity gap resolved. `ERX-CONSENSUS-SOURCE-INSPECTION-001.md` records section-by-section scope and deferrals; DOC-ISS-011 records operational completeness and authority requirements.
 - ERX-WP-0.3-AUDIT-REPORT-001 v0.7.0 — second-pass documentary consistency audit.

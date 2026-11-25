@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 0.5.0 |
+| Version | 0.6.0 |
 | Status | IN_PROGRESS — EVIDENCE UPDATED; LAEV DECISIONS PENDING |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -46,7 +46,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 3. ERX-ROADMAP-001 Section 3.1 (PDF p.3) expressly establishes a related-but-independent agent-availability cycle. UTXO-911 Sections 4.5–5 and Technical Response p.1 support this architecture. DOC-ISS-010 is narrowed to detailed state-machine specification and formal work-package assignment.
 4. Atlas identifies Protocol as its related normative document and provides a plate correspondence table. A rule for specific diagram/text divergence remains to be approved.
 5. The Technical Response is not evidenced as an approved amendment to the Roadmap.
-6. A candidate `Consenso ERX byLAEV.pdf` is present in `docs/`; its equivalence to Roadmap-cited ERX-CONSENSUS-001 v0.1 is not established. ERX-IMPL-PROPOSAL-001 remains not located. Neither source's contents are inferred without inspection.
+6. Repository main confirms `docs/Consenso ERX byLAEV.pdf` (157,848 bytes; Git Blob SHA-1 c2f965c9bf455506571ac4c1635b4fb47af34216). The binary's internal control data/content could not be inspected through the available connector, so equivalence to Roadmap-cited ERX-CONSENSUS-001 v0.1 remains unverified. The file is not missing. ERX-IMPL-PROPOSAL-001 remains not located. Neither source's contents are inferred without inspection.
 
 No direct contradiction between the inspected passages is declared by the source alignment review. The unresolved matters are scope, granularity, authority and documentary effect.
 
@@ -58,7 +58,7 @@ No direct contradiction between the inspected passages is declared by the source
 - Decide normative treatment of Atlas plates.
 - Decide treatment of the Technical Response as recommendation or approved Roadmap amendment.
 - Approve, revise or reject the contradiction-handling and document-evolution procedures.
-- Decide disposition of the two unavailable referenced sources when required.
+- Decide disposition of DOC-ISS-002 after internal source inspection; DOC-ISS-003 remains not located and requires separate disposition.
 
 ## 6. Acceptance gate
 WP-0.3 is not yet eligible for approval. Completion requires express LAEV decisions for hierarchy and subject authority; all material issues must be decided or formally deferred/accepted with impact and mitigation; both procedures must be approved; and all registers and records must be consistent.

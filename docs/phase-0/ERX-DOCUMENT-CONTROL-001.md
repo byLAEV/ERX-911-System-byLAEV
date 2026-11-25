@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-CONTROL-001 |
-| Version | 0.4.2 |
-| Status | IN_REVIEW — CONSOLIDATED CANDIDATE; LAEV FINAL APPROVAL PENDING |
+| Version | 1.0.0 |
+| Status | APPROVED — LAEV |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design and approval authority | LAEV |
@@ -208,7 +208,7 @@ Each controlled document maintains an append-only revision history:
 | 0.3.1 | 2026-11-24 | Technical clarification / metadata correction | Separated lifecycle status from evidence verification and archival-copy tracking; clarified draft version progression and independent review | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
 | 0.4.0 | 2026-11-24 | Decision incorporation / consolidated candidate | Incorporated LAEV-approved DC-01–DC-09; independent external review initially listed as a pending gate | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
 | 0.4.1 | 2026-11-24 | Governance clarification | Defers independent external review/audit until after planned project work; preserves internal review and LAEV exact-version approval | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
-| 0.4.2 | 2026-11-24 | Internal-review correction | Resolves review-timing contradictions; aligns review roles with LAEV decision record v1.2.0 Addendum B | Project drafting record | NOT_RECORDED | PENDING_LAEV_EXACT_VERSION_APPROVAL | IN_REVIEW |
+| 0.4.2 | 2026-11-24 | Internal-review correction | Resolves review-timing contradictions; aligns review roles with LAEV decision record v1.2.0 Addendum B | Project drafting record | INTERNAL_REVIEW-001 v0.2.0 | APPROVED — LAEV; see APPROVAL-RECORD-001 v1.0.0 | APPROVED RELEASE BASIS |\n| 1.0.0 | 2026-11-24 | First approved baseline | LAEV approved exact candidate v0.4.2 (blob SHA-1 7cde15d1776ed913c3136f8116f8eb3912b302f1) as the first approved policy baseline; substantive policy content unchanged | LAEV approval recorded in project conversation | INTERNAL REVIEW v0.2.0 | ERX-WP-0.4-APPROVAL-RECORD-001 v1.0.0 | APPROVED |
 
 Every material change also links to a change record containing:
 - Change ID.
@@ -315,9 +315,9 @@ These decisions authorize the policy content. LAEV's `ERX-WP-0.4-LAEV-DECISION-R
 
 ## 14. WP-0.4 execution and acceptance
 
-**Current status: IN_REVIEW — INTERNALLY REVIEWED CANDIDATE; LAEV EXACT-VERSION APPROVAL PENDING.**
+**Current status: APPROVED — LAEV; first approved baseline v1.0.0.**
 
-Activities 0.4.1–0.4.9 have been developed. LAEV has approved DC-01–DC-09 and clarified that independent external review is deferred until after planned project work. Internal review is recorded in `ERX-WP-0.4-INTERNAL-REVIEW-001` v0.1.0. The final policy release gate remains open pending LAEV's approval of this exact version.
+Activities 0.4.1–0.4.9 have been developed. LAEV has approved DC-01–DC-09 and clarified that independent external review is deferred until after planned project work. Internal review is recorded in `ERX-WP-0.4-INTERNAL-REVIEW-001` v0.2.0. LAEV approved exact candidate v0.4.2, blob SHA-1 `7cde15d1776ed913c3136f8116f8eb3912b302f1`, as the first approved baseline v1.0.0; see `ERX-WP-0.4-APPROVAL-RECORD-001` v1.0.0.
 
 Acceptance requires:
 1. A unique, non-reusable identifier rule and allocation method.

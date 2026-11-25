@@ -30,7 +30,7 @@ A file's presence or a Git commit does not establish correctness, approval, or a
 3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
 4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
 5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; GitHub reported `truncated=false` and 71 repository files.
-6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 80 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.1; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 80 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.2; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
 
 ## 3. Foundational source baseline
 
@@ -47,7 +47,7 @@ ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supp
 
 ## 4. Phase 0 document and artifact coverage
 
-The verified live repository path inventory is the recursive tree snapshot recorded above, immediately before this index refresh (`truncated=false`, 73 files). The CSV includes 80 catalogue records: 79 live paths plus one NOT_LOCATED referenced source. All 73 live paths are represented exactly once; no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths or malformed CSV rows were detected. Catalogue IDs (IDX-xxx) remain separate from formal document IDs.
+The snapshot SHA in the header is a historical pre-refresh baseline, not a claim of the current tree. A read-only recursive-tree check after the latest WP-0.7 entries and register reconciliation returned `truncated=false`, 79 live paths. The current CSV has 80 catalogue records (79 PRESENT live paths plus one NOT_LOCATED reference-only source), 16 columns, full 79/79 live-path coverage, zero duplicate catalogue IDs or paths, zero stale paths, and no malformed row widths. Catalogue IDs (IDX-xxx) remain separate from formal document IDs. The CSV register lifecycle is now COMPLETED / ACCEPTED — WP-0.6 CURRENT REGISTER (v1.2.2).
 
 Current accepted package states:
 - WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.
@@ -77,7 +77,7 @@ For each entry, preserve the exact source-native title, document ID and version 
 
 Document lifecycle status is taken from the exact controlled document and its decision/approval record. Historical headers are not overwritten by later approvals; instead, the index records the current disposition and points to the controlling approval/closeout record.
 
-The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). Internal review findings are recorded in [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.8](ERX-WP-0.6-INTERNAL-REVIEW-001.md); that review concludes NOT READY FOR ACCEPTANCE. It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
+The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). The final internal review is recorded in [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.3.2](ERX-WP-0.6-INTERNAL-REVIEW-001.md), with post-acceptance register/tree synchronization findings and no reopening of the acceptance decision. It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
 - cites / referenced by;
 - graphically represents;
 - derived from / supporting evidence for;
@@ -113,7 +113,7 @@ Remaining WP-0.6 work:
 
 ## 9. WP-0.6 status
 
-**WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.2.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
+**WP-0.6: COMPLETED / ACCEPTED — conditional acceptance recorded 2026-11-25. This v1.4.7 reconciliation updates the post-acceptance catalogue/tree figures and removes stale execution blockers; it does not reopen the accepted package.**
 
 The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.4.4 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 
@@ -126,7 +126,7 @@ End of ERX-MASTER-DOCUMENT-INDEX-001
 
 ## 10. WP-0.6 acceptance and WP-0.7 execution update
 
-WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.1](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.1, internal review v0.3.1, and synchronized CSV catalogue.
+WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.1](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.2, internal review v0.3.2, and synchronized CSV catalogue.
 
 WP-0.7 is now formally initiated under its previously approved scope. [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md) records dependency release; [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md) records direct inspection of the five accepted PDFs; [ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001 v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) documents the first 15 candidate requirements, still pending technical review and approval. The controlled requirements method is ERX-REQUIREMENTS-METHOD-001 v1.0.0.
 

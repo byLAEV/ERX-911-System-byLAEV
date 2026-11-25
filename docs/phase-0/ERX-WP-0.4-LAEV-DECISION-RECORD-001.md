@@ -4,14 +4,14 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.4-LAEV-DECISION-RECORD-001 |
-| Version | 1.1.0 |
+| Version | 1.2.0 |
 | Status | APPROVED — LAEV DECISION RECORDED |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Decision authority | LAEV |
 | Decision date | 2026-11-24 (Costa Rica, UTC−06:00) |
 | Decision evidence | Explicit LAEV instruction in project conversation |
-| Decision subject | DC-01 through DC-09 in ERX-DOCUMENT-CONTROL-001 v0.3.1 |
+| Decision subject | DC-01 through DC-09; Addendum A and Addendum B clarify review timing |
 
 ## 1. Formal decision
 
@@ -35,7 +35,7 @@ This record approves the policy choices listed below. It does not, by itself, ap
 
 ## 3. Conditions and interpretation
 
-1. The corrections in v0.3.1 are retained: lifecycle status is distinct from evidence verification; archive custody is a preservation attribute; draft progression is explicit; and substantive technical/normative review requires reviewer independence from the author unless a justified exception is expressly approved.
+1. The corrections in v0.3.1 are retained: lifecycle status is distinct from evidence verification; archive custody is a preservation attribute; draft progression is explicit; and review/approval roles remain distinct. The timing and nature of independent external review are clarified by Addendum A and superseding Addendum B.
 2. Existing foundational documents retain their source-native identifiers, versions, filenames, and original bytes.
 3. ERX-ATLAS-001's supplied filename/internal version discrepancy remains visible.
 4. The technical response to ERX-ROADMAP-001 retains unstated source-native metadata; no metadata is invented.
@@ -45,7 +45,7 @@ This record approves the policy choices listed below. It does not, by itself, ap
 
 ## 4. Approval boundary
 
-This record is the formal approval of the nine policy decisions only. The final consolidated policy document must still be prepared as an exact candidate version, reviewed, and approved by an explicit exact-version approval record. The independent-review requirement adopted in DC-06/Section 8 must not be represented as satisfied without evidence.
+This record is the formal approval of the nine policy decisions only. The final consolidated policy document must still be prepared as an exact candidate version, reviewed, and approved by an explicit exact-version approval record. Internal exact-version review and LAEV approval are required for WP-0.4. Independent external review/audit is deferred until after completion of planned project work and is not a WP-0.4 or inter-work-package gate.
 
 This decision does not close WP-0.4, approve WP-0.5, complete Phase 0, or authorize Phase 1, implementation, deployment, or institutional operation.
 
@@ -70,3 +70,22 @@ This addendum amends the timing of independent external review only. It does not
 
 ---
 End of Addendum A
+
+
+## Addendum B — Superseding clarification of review timing
+
+| Field | Value |
+|---|---|
+| Addendum date | 2026-11-24 (Costa Rica, UTC−06:00) |
+| Decision authority | LAEV |
+| Decision evidence | Explicit instruction: “Evita el revisor independiente. Porque un revisor independiente va estar después de terminar todo” |
+| Supersedes | Any inconsistent wording in Sections 3.1 and 4 of this decision record and any earlier draft that makes independent external review a WP-0.4 or pre-project-completion prerequisite |
+
+**Binding clarification:** The independent external reviewer/auditor will be engaged after the planned project work is complete. Independent external review is not a prerequisite for closing WP-0.4, beginning WP-0.5, or progressing through the remaining Phase 0 work packages. It is a later assurance activity.
+
+For each work package, the project may perform internal review and consistency checks appropriate to its acceptance criteria. The reviewer must be identified truthfully; internal review must not be labelled independent external review. LAEV retains express approval authority for the exact final document version wherever the work package requires it.
+
+Addendum B supersedes any conflicting wording in the earlier decision record and Addendum A. It does not remove internal review, technical verification, evidence completion, LAEV approval, or any substantive acceptance criterion.
+
+---
+End of Addendum B

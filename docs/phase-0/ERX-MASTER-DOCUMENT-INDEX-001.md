@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.0.7 |
+| Version | 1.0.8 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -50,7 +50,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-013 | ERX-DOCUMENT-CONTROL-001 | Document Identification and Control | 0.2.0 | WP-0.4 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` | Formal WP-0.4 blocked by WP-0.3 |
 | IDX-014 | ERX-REPOSITORY-GOVERNANCE-001 | Repository Identity, Structure and Governance | 0.1.0 | WP-0.5 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md` | Formal WP-0.5 blocked by WP-0.3 and WP-0.4 |
 | IDX-016 | ERX-CONSENSUS-001 | | ERX byLAEV — Documento normativo, Protocolo de Consenso | 0.1 — Propuesta normativa | Referenced foundational source / consensus framework | SOURCE IDENTITY CONFIRMED — PROPOSAL FOR REVIEW | `docs/Consenso ERX byLAEV` | | Text source directly declares ID/version/status/authorship and matches Roadmap citation; contents inspected. PDF counterpart also present; DOC-ISS-011 governs completeness/authority |
-| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 1.0.7 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | Current provisional register; WP-0.6 acceptance pending |
+| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 1.0.8 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | Current provisional register; WP-0.6 acceptance pending |
 
 | IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.2.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
 | IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.9.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eleven issues tracked; DOC-ISS-002 and DOC-ISS-008 evidence-resolved; DOC-ISS-011 tracks consensus proposal completion/authority |
@@ -64,7 +64,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Consensus Source Identity and Status | 0.2.0 | Supplemental evidence note | PUBLISHED — IDENTITY CONFIRMED; PROPOSAL STATUS | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Text source `docs/Consenso ERX byLAEV` confirms Roadmap-cited ERX-CONSENSUS-001 v0.1; proposal lifecycle remains | 
  
 | IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.7.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
-| IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.8.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; source-confirmed availability separation; DOC-ISS-009 structural mapping; consensus source confirmed; LAEV hierarchy/authority decisions pending |
+| IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.9.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; source-confirmed availability separation; DOC-ISS-009 structural mapping; consensus source confirmed; LAEV hierarchy/authority decisions pending |
 | IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.8.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
 | IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.7.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Source text confirms ERX-CONSENSUS-001 identity/content; DOC-ISS-009 structural divergence; DOC-ISS-010 detail pending; DOC-ISS-011 operational consensus completion |
 
@@ -73,7 +73,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-032 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | Preparatory Issue Analysis — Document Hierarchy and Authority | 0.4.0 | WP-0.3 issue analysis | FORMAL WP-0.3 AUTHORIZED; MATRIX NOT APPROVED | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Corrected gate; not a decision record |
 | IDX-033 | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 | Subject-Matter Authority and Scope Matrix | 0.3.0 | WP-0.3 authority proposal | PENDING LAEV APPROVAL | `docs/phase-0/ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.md` | Refined with exact source-page evidence |
 
-| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.4.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
+| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.5.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
 
 | IDX-036 | ERX-CONSENSUS-SOURCE-INSPECTION-001 | Consensus Source Inspection and Scope Record | 0.1.0 | WP-0.3 source inspection evidence | PREPARATORY — PENDING LAEV DISPOSITION | `docs/phase-0/ERX-CONSENSUS-SOURCE-INSPECTION-001.md` | Direct text review confirms source identity, Triple Consensus content, explicit exclusions and DOC-ISS-011 scope |
 

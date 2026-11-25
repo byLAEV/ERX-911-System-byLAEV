@@ -1,0 +1,2105 @@
+ERX-ATLAS-001 v1.1
+
+Atlas institucional de diagramas de flujo y funcionamiento del protocolo ERX byLAEV
+
+Documento: ERX-ATLAS-001
+Versión: 1.1
+Documento normativo relacionado: ERX-PROT-001 v1.1
+Autoría y diseño: LAEV / byLAEV
+Categoría: Representación gráfica del protocolo institucional
+Estado: Especificación gráfica para implementación, evaluación y homologación institucional.
+
+OBJETIVO DEL ATLAS
+
+Este documento representa gráficamente el funcionamiento integral del protocolo ERX byLAEV, desde el ingreso de una comunicación de emergencia hasta la generación del expediente final y sus evidencias criptográficas verificables.
+
+Los diagramas representan las operaciones institucionales, los estados transaccionales, las condiciones de validación, las excepciones y los mecanismos de continuidad.
+
+La arquitectura se compone de:
+
+Tres documentos JSON independientes.
+
+Tres estados transaccionales UTXO.
+
+Tres compromisos y evidencias OpenTimestamps.
+
+Una identidad única de llamada.
+
+Una secuencia verificable de transiciones.
+
+Un expediente institucional conservado bajo custodia del centro 911.
+
+Regla fundamental: los UTXO controlan la unicidad de las transiciones institucionales. Los OTS proporcionan evidencia temporal independiente de los documentos. Ninguno sustituye la autenticación institucional ni demuestra por sí solo la veracidad material de una conversación.
+
+LÁMINA 01 — ARQUITECTURA GENERAL DEL PROTOCOLO ERX
+
+Objetivo
+
+Representar el ciclo completo de una llamada de emergencia, desde el dispositivo móvil hasta el cierre institucional.
+
+Diagrama general
+
+             PERSONA SOLICITANTE
+
+                       |
+
+                       v
+
+              DISPOSITIVO MÓVIL
+
+                       |
+
+                       v
+
+              LLAMADA AL 911
+
+                       |
+
+                       v
+
+             RED DE TELECOMUNICACIONES
+
+                       |
+
+                       v
+
+             INFRAESTRUCTURA RECEPTORA
+
+                       |
+
+                       v
+
+                MÓDULO ERX
+
+                       |
+
+                       v
+
+          VALIDACIÓN INSTITUCIONAL
+
+                       |
+
+             +---------+---------+
+
+             |                   |
+
+          VÁLIDA             NO VÁLIDA
+
+             |                   |
+
+             v                   v
+
+       ADMISIÓN ERX       REGISTRO DE OBSERVACIÓN
+
+             |            O RECHAZO DOCUMENTADO
+
+             v
+
+    ┌──────────────────────┐
+
+    │    PRIMERA ETAPA     │
+
+    │                      │
+
+    │ JSON 01              │
+
+    │ UTXO 01              │
+
+    │ OTS 01               │
+
+    │                      │
+
+    │ Origen, recepción,   │
+
+    │ localización y ruta  │
+
+    └──────────┬───────────┘
+
+               |
+
+               v
+
+    ┌──────────────────────┐
+
+    │   SEGUNDA ETAPA      │
+
+    │                      │
+
+    │ JSON 02              │
+
+    │ UTXO 02              │
+
+    │ OTS 02               │
+
+    │                      │
+
+    │ Contacto institucional│
+
+    │ e identidad del agente│
+
+    └──────────┬───────────┘
+
+               |
+
+               v
+
+    ┌──────────────────────┐
+
+    │    TERCERA ETAPA     │
+
+    │                      │
+
+    │ JSON 03              │
+
+    │ UTXO 03              │
+
+    │ OTS 03               │
+
+    │                      │
+
+    │ Comunicación,       │
+
+    │ acontecimientos y   │
+
+    │ cierre               │
+
+    └──────────┬───────────┘
+
+               |
+
+               v
+
+       EXPEDIENTE ERX FINAL
+
+               |
+
+               v
+
+       VERIFICACIÓN INDEPENDIENTE
+
+
+Secuencia funcional
+
+01. Origen: la persona realiza la llamada desde su dispositivo.
+
+02. Transporte: la infraestructura telefónica conduce la comunicación.
+
+03. Recepción: el evento alcanza un punto integrado con ERX.
+
+04. Identificación: ERX comprueba la identidad institucional del centro receptor.
+
+05. Primera transacción: se documentan el origen, la localización disponible y el enrutamiento.
+
+06. Segunda transacción: se documentan el establecimiento del contacto y la identidad del agente.
+
+07. Tercera transacción: se documenta el desarrollo y el cierre de la comunicación.
+
+08. Verificación: los documentos, firmas, transiciones y pruebas temporales pueden examinarse independientemente.
+
+Resultado
+
+Una comunicación admitida produce un expediente con tres registros independientes y relacionados.
+
+La atención de emergencia no depende de la confirmación de Bitcoin ni de la disponibilidad de OpenTimestamps.
+
+LÁMINA 02 — RECEPCIÓN, LOCALIZACIÓN Y ENRUTAMIENTO
+
+Objetivo
+
+Representar el proceso de recepción institucional y generación de la primera transacción.
+
+Diagrama de flujo
+
+      DISPOSITIVO MÓVIL
+
+               |
+
+               v
+
+        LLAMADA AL 911
+
+               |
+
+               v
+
+       RED TELEFÓNICA
+
+               |
+
+               v
+
+       EVENTO DE INGRESO
+
+               |
+
+               v
+
+        MÓDULO ERX
+
+               |
+
+               v
+
+      IDENTIFICACIÓN DEL GATEWAY
+
+               |
+
+               v
+
+       VALIDACIÓN INSTITUCIONAL
+
+               |
+
+        +------+------+
+
+        |             |
+
+      VÁLIDA       NO VÁLIDA
+
+        |             |
+
+        v             v
+
+ IDENTIFICAR       REGISTRAR
+
+ LLAMADA           OBSERVACIÓN
+
+        |             |
+
+        v             v
+
+ IDENTIFICAR       FIRMA DEL
+
+ CONEXIÓN          REGISTRO
+
+        |             |
+
+        v             v
+
+ CONSULTAR         EVIDENCIA
+
+ LOCALIZACIÓN      OTS DE OBSERVACIÓN
+
+        |
+
+        v
+
+ CLASIFICAR UBICACIÓN
+
+        |
+
+   +----+----------------------+
+
+   |       |        |          |
+
+   v       v        v          v
+
+ DISP.  APROX.   PENDIENTE  NO DISP.
+
+   |       |        |          |
+
+   +-------+--------+----------+
+
+               |
+
+               v
+
+       DETERMINAR CENTRO
+
+          RECEPTOR 911
+
+               |
+
+               v
+
+       VERIFICAR JURISDICCIÓN
+
+               |
+
+               v
+
+       CREAR DOCUMENTO JSON 01
+
+               |
+
+               v
+
+       FIRMAR DOCUMENTO
+
+               |
+
+               v
+
+       GENERAR HASH SHA-256
+
+               |
+
+               v
+
+          EMITIR UTXO 01
+
+               |
+
+               v
+
+          SOLICITAR OTS 01
+
+               |
+
+               v
+
+       CONSERVAR EXPEDIENTE
+
+               |
+
+               v
+
+       CONTINUAR ATENCIÓN
+
+
+Información que interviene
+
+JSON 01 incorpora:
+
+Identificador único de llamada.
+
+Identificador de sesión telefónica.
+
+Fuente de recepción.
+
+Identidad del gateway.
+
+Referencias técnicas de conexión.
+
+Información de origen disponible.
+
+Operadora de telecomunicaciones, cuando esté disponible.
+
+Información de localización y procedencia.
+
+Hora de observación.
+
+Precisión estimada.
+
+Centro receptor.
+
+Jurisdicción aplicable.
+
+Resultado de validación institucional.
+
+Firma institucional.
+
+Regla transaccional
+
+UTXO 01 es la primera emisión de la secuencia.
+
+No consume un UTXO anterior, porque todavía no existe un estado transaccional previo de esa llamada.
+
+Su creación requiere:
+
+Evento de ingreso identificable.
+
+Identidad de infraestructura autorizada.
+
+Identificador único.
+
+Control de duplicaciones.
+
+Registro institucional firmado.
+
+El mismo evento retransmitido no debe generar una segunda admisión válida.
+
+Regla de continuidad
+
+La ausencia de localización precisa no impide continuar.
+
+La ausencia de una validación ERX tampoco debe bloquear la ruta telefónica de emergencia.
+
+Resultado
+
+Se establece el primer estado institucional verificable de la comunicación:
+
+UTXO 01 — Recepción, origen, localización disponible y enrutamiento.
+
+LÁMINA 03 — ESTABLECIMIENTO DEL CONTACTO Y AUTENTICACIÓN DEL AGENTE
+
+Objetivo
+
+Representar el proceso que determina qué centro institucional recibió efectivamente la comunicación y qué agente humano la atendió.
+
+Diagrama de flujo
+
+            UTXO 01 ACTIVO
+
+                    |
+
+                    v
+
+          CENTRO 911 IDENTIFICADO
+
+                    |
+
+                    v
+
+          EVENTO DE CONEXIÓN
+
+                    |
+
+                    v
+
+          CENTRO EFECTIVAMENTE
+
+               CONECTADO
+
+                    |
+
+                    v
+
+           REGISTRAR RESPUESTA
+
+                    |
+
+                    v
+
+          ¿RESPONDIÓ UN AGENTE?
+
+                    |
+
+             +------+------+
+
+             |             |
+
+            SÍ             NO
+
+             |             |
+
+             v             v
+
+       IDENTIFICAR      REGISTRAR
+
+       AGENTE           NO RESPUESTA
+
+             |             |
+
+             v             |
+
+       VALIDAR CREDENCIAL   |
+
+             |             |
+
+        +----+----+        |
+
+        |         |        |
+
+      VÁLIDA   NO VERIF.   |
+
+        |         |        |
+
+        v         v        |
+
+    REGISTRAR  REGISTRAR   |
+
+    IDENTIDAD  EXCEPCIÓN   |
+
+        |         |        |
+
+        +----+----+--------+
+
+             |
+
+             v
+
+       EJECUTAR PROTOCOLO
+
+          INICIAL APLICABLE
+
+             |
+
+             v
+
+       REGISTRAR RESULTADO
+
+             |
+
+             v
+
+       CREAR DOCUMENTO JSON 02
+
+             |
+
+             v
+
+       FIRMAR DOCUMENTO
+
+             |
+
+             v
+
+       REFERENCIAR JSON 01
+
+             |
+
+             v
+
+       VERIFICAR UTXO 01 ACTIVO
+
+             |
+
+             v
+
+       CONSUMIR UTXO 01
+
+             |
+
+             v
+
+       CREAR UTXO 02
+
+             |
+
+             v
+
+       GENERAR HASH JSON 02
+
+             |
+
+             v
+
+       SOLICITAR OTS 02
+
+             |
+
+             v
+
+       CONTINUAR ATENCIÓN
+
+
+Información que interviene
+
+JSON 02 incorpora:
+
+Identificador único de llamada.
+
+Referencia criptográfica a JSON 01.
+
+Identidad del centro efectivamente conectado.
+
+Identidad institucional.
+
+Hora de respuesta.
+
+Identificador del puesto o extensión, cuando corresponda.
+
+Identidad profesional del agente.
+
+Resultado de autenticación.
+
+Versión del protocolo inicial.
+
+Resultado de su ejecución.
+
+Incidencias y excepciones.
+
+Referencia al UTXO 01 consumido.
+
+Regla de autenticación
+
+La identidad del centro y la identidad del agente son dos validaciones diferentes.
+
+La autenticación del centro no implica automáticamente la autenticación del profesional que responde.
+
+Si la identidad profesional no puede comprobarse, se registra como no verificada o pendiente.
+
+La atención no debe detenerse por esa circunstancia.
+
+Regla especial: ausencia de respuesta humana
+
+Si ningún agente responde:
+
+No se inventa una identidad profesional.
+
+No se registra una conversación inexistente.
+
+Se documenta el intento de contacto.
+
+Se registra la condición de no respuesta.
+
+Se conserva la secuencia transaccional mediante el estado correspondiente.
+
+En este caso, JSON 02 representa el resultado del intento de contacto, no una conversación humana.
+
+Resultado
+
+UTXO 02 — Contacto institucional y resultado de autenticación y protocolo inicial.
+
+LÁMINA 04 — DESARROLLO INTEGRAL Y CIERRE DE LA COMUNICACIÓN
+
+Objetivo
+
+Representar la documentación cronológica de los acontecimientos durante la llamada y la generación del expediente final.
+
+Diagrama de flujo
+
+             UTXO 02 ACTIVO
+
+                     |
+
+                     v
+
+             INICIO DE ATENCIÓN
+
+                     |
+
+                     v
+
+             ABRIR REGISTRO
+
+             CRONOLÓGICO
+
+                     |
+
+                     v
+
+           REGISTRAR ACONTECIMIENTOS
+
+                     |
+
+          +----------+----------+
+
+          |          |          |
+
+          v          v          v
+
+       AGENTE     CIUDADANO   SISTEMA
+
+          |          |          |
+
+          +----------+----------+
+
+                     |
+
+                     v
+
+          REGISTRAR EVENTOS
+
+          Y SUS PROCEDENCIAS
+
+                     |
+
+                     v
+
+          ¿HAY TRANSFERENCIAS?
+
+                     |
+
+               +-----+-----+
+
+               |           |
+
+              SÍ           NO
+
+               |           |
+
+               v           |
+
+        IDENTIFICAR        |
+
+        NUEVO AGENTE       |
+
+        O CENTRO           |
+
+               |           |
+
+               v           |
+
+        REGISTRAR          |
+
+        CONTINUIDAD        |
+
+               |           |
+
+               +-----+-----+
+
+                     |
+
+                     v
+
+          ¿EXISTE GRABACIÓN?
+
+                     |
+
+               +-----+-----+
+
+               |           |
+
+              SÍ           NO
+
+               |           |
+
+               v           v
+
+        CONSERVAR AUDIO  REGISTRAR
+
+        ORIGINAL         AUSENCIA
+
+               |           |
+
+               v           |
+
+        CALCULAR HASH       |
+
+               |           |
+
+               +-----+-----+
+
+                     |
+
+                     v
+
+             EVENTO DE CIERRE
+
+                     |
+
+                     v
+
+          CLASIFICAR FINALIZACIÓN
+
+                     |
+
+       +-------------+-------------+
+
+       |             |             |
+
+       v             v             v
+
+    NORMAL       DESCONEXIÓN    INTERRUPCIÓN
+
+       |             |             |
+
+       +-------------+-------------+
+
+                     |
+
+                     v
+
+          CREAR DOCUMENTO JSON 03
+
+                     |
+
+                     v
+
+          INCLUIR REFERENCIAS
+
+          JSON 01 Y JSON 02
+
+                     |
+
+                     v
+
+          FIRMAR DOCUMENTO
+
+                     |
+
+                     v
+
+          VERIFICAR UTXO 02
+
+                     |
+
+                     v
+
+          CONSUMIR UTXO 02
+
+                     |
+
+                     v
+
+          CREAR UTXO 03
+
+                     |
+
+                     v
+
+          GENERAR HASH FINAL
+
+                     |
+
+                     v
+
+          SOLICITAR OTS 03
+
+                     |
+
+                     v
+
+          CONSERVAR EXPEDIENTE
+
+                     |
+
+                     v
+
+             CIERRE ERX
+
+
+Información que interviene
+
+JSON 03 incorpora:
+
+Identificador de llamada.
+
+Referencias a JSON 01 y JSON 02.
+
+Hashes de los documentos anteriores.
+
+Identidad institucional.
+
+Agentes participantes.
+
+Secuencia cronológica.
+
+Acontecimientos registrados.
+
+Cambios de localización.
+
+Transferencias.
+
+Incidencias.
+
+Referencias a grabaciones.
+
+Hashes de archivos originales.
+
+Transcripción, cuando corresponda.
+
+Hora de inicio y cierre.
+
+Motivo de finalización.
+
+Firma institucional.
+
+Regla de cierre
+
+El cierre telefónico no significa necesariamente que la emergencia esté resuelta.
+
+ERX documenta el final de la comunicación, no la resolución completa del incidente.
+
+Una desconexión no debe clasificarse artificialmente como despedida normal.
+
+Resultado
+
+UTXO 03 — Comunicación documentada y cierre institucional registrado.
+
+LÁMINA 05 — MOTOR UTXO Y PREVENCIÓN DEL DOBLE GASTO
+
+Objetivo
+
+Representar la lógica transaccional que impide utilizar dos veces un mismo estado institucional.
+
+Diagrama de estados
+
+        EVENTO DE LLAMADA
+
+                 |
+
+                 v
+
+          IDENTIDAD ÚNICA
+
+                 |
+
+                 v
+
+           CREAR UTXO 01
+
+                 |
+
+                 v
+
+          ESTADO DISPONIBLE
+
+                 |
+
+                 v
+
+          SOLICITUD DE TRANSICIÓN
+
+                 |
+
+                 v
+
+         VERIFICAR UTXO 01
+
+                 |
+
+          +------+------+
+
+          |             |
+
+       DISPONIBLE    CONSUMIDO
+
+          |             |
+
+          v             v
+
+      TRANSICIÓN      RECHAZAR
+
+       ATÓMICA        DUPLICADO
+
+          |
+
+          v
+
+      CONSUMIR UTXO 01
+
+          |
+
+          v
+
+      CREAR UTXO 02
+
+          |
+
+          v
+
+      ESTADO DISPONIBLE
+
+          |
+
+          v
+
+      SOLICITUD DE TRANSICIÓN
+
+          |
+
+          v
+
+      VERIFICAR UTXO 02
+
+          |
+
+     +----+----+
+
+     |         |
+
+  DISPONIBLE CONSUMIDO
+
+     |         |
+
+     v         v
+
+ TRANSICIÓN  RECHAZAR
+
+  ATÓMICA    DUPLICADO
+
+     |
+
+     v
+
+ CONSUMIR UTXO 02
+
+     |
+
+     v
+
+ CREAR UTXO 03
+
+     |
+
+     v
+
+ ESTADO FINAL
+
+
+Representación de la cadena
+
+      EMISIÓN INICIAL
+
+             |
+
+             v
+
+          UTXO 01
+
+             |
+
+             | CONSUMO ÚNICO
+
+             v
+
+          UTXO 02
+
+             |
+
+             | CONSUMO ÚNICO
+
+             v
+
+          UTXO 03
+
+             |
+
+             v
+
+        ESTADO FINAL
+
+
+Regla de doble gasto
+
+Un mismo UTXO no puede ser consumido dos veces para producir dos transiciones válidas.
+
+Escenario de concurrencia
+
+            UTXO 01
+
+                 |
+
+          +------+------+
+
+          |             |
+
+          v             v
+
+      PROCESO A      PROCESO B
+
+          |             |
+
+          v             v
+
+       SOLICITA       SOLICITA
+
+       CONSUMO        CONSUMO
+
+          |             |
+
+          +------+------+
+
+                 |
+
+                 v
+
+          CONTROL ATÓMICO
+
+                 |
+
+          +------+------+
+
+          |             |
+
+          v             v
+
+      AUTORIZADO     RECHAZADO
+
+          |             |
+
+          v             v
+
+       UTXO 02      DUPLICADO
+
+          |
+
+          v
+
+      HISTORIAL ÚNICO
+
+
+Reglas obligatorias del motor
+
+Identidad única de llamada.
+
+Identificación inequívoca del estado.
+
+Consumo único.
+
+Operaciones atómicas.
+
+Idempotencia.
+
+Control de concurrencia.
+
+Protección contra reproducción de eventos.
+
+Historial permanente de transiciones.
+
+Correcciones mediante registros complementarios.
+
+Separación entre estado transaccional y estado OTS.
+
+Diferencia fundamental
+
+UTXO 01 se emite inicialmente sin consumir otro UTXO.
+
+UTXO 02 consume UTXO 01.
+
+UTXO 03 consume UTXO 02.
+
+Los registros consumidos permanecen disponibles para auditoría, aunque dejan de estar disponibles para nuevas transiciones.
+
+Importante: la unicidad se garantiza dentro del ámbito de coordinación transaccional de la instalación o infraestructura compartida. No implica automáticamente consenso global entre todas las instituciones 911 del mundo.
+
+LÁMINA 06 — OPEN TIMESTAMPS, ANCLAJE Y VERIFICACIÓN TEMPORAL
+
+Objetivo
+
+Representar la generación de las tres evidencias temporales y su independencia respecto al funcionamiento operativo de la llamada.
+
+Diagrama de flujo
+
+             DOCUMENTO JSON 01
+
+                      |
+
+                      v
+
+                CONGELAR JSON
+
+                      |
+
+                      v
+
+                FIRMAR DOCUMENTO
+
+                      |
+
+                      v
+
+                 HASH SHA-256
+
+                      |
+
+                      v
+
+                 SOLICITAR OTS 01
+
+                      |
+
+                      v
+
+               CONSERVAR PRUEBA
+
+                      |
+
+                      v
+
+                ACTUALIZACIÓN
+
+                 POSTERIOR
+
+                      |
+
+                      v
+
+                VERIFICACIÓN
+
+
+             DOCUMENTO JSON 02
+
+                      |
+
+                      v
+
+                CONGELAR JSON
+
+                      |
+
+                      v
+
+                FIRMAR DOCUMENTO
+
+                      |
+
+                      v
+
+                 HASH SHA-256
+
+                      |
+
+                      v
+
+                 SOLICITAR OTS 02
+
+                      |
+
+                      v
+
+               CONSERVAR PRUEBA
+
+                      |
+
+                      v
+
+                ACTUALIZACIÓN
+
+                 POSTERIOR
+
+                      |
+
+                      v
+
+                VERIFICACIÓN
+
+
+             DOCUMENTO JSON 03
+
+                      |
+
+                      v
+
+                CONGELAR JSON
+
+                      |
+
+                      v
+
+                FIRMAR DOCUMENTO
+
+                      |
+
+                      v
+
+                 HASH SHA-256
+
+                      |
+
+                      v
+
+                 SOLICITAR OTS 03
+
+                      |
+
+                      v
+
+               CONSERVAR PRUEBA
+
+                      |
+
+                      v
+
+                ACTUALIZACIÓN
+
+                 POSTERIOR
+
+                      |
+
+                      v
+
+                VERIFICACIÓN
+
+
+Relación de las tres evidencias
+
+            JSON 01
+
+                |
+
+                v
+
+              OTS 01
+
+                |
+
+                | REFERENCIA DOCUMENTAL
+
+                |
+
+             JSON 02
+
+                |
+
+                v
+
+              OTS 02
+
+                |
+
+                | REFERENCIA DOCUMENTAL
+
+                |
+
+             JSON 03
+
+                |
+
+                v
+
+              OTS 03
+
+
+Las tres solicitudes OTS son independientes.
+
+No es necesario esperar a que OTS 01 quede anclado para solicitar OTS 02.
+
+Tampoco es necesario esperar a OTS 02 para solicitar OTS 03.
+
+La relación cronológica y documental se conserva mediante las referencias criptográficas entre los JSON.
+
+Funcionamiento de OpenTimestamps
+
+      COMPROMISO CRIPTOGRÁFICO
+
+                  |
+
+                  v
+
+          SERVICIO OTS
+
+                  |
+
+                  v
+
+        AGRUPACIÓN DE HASHES
+
+                  |
+
+                  v
+
+         COMPROMISO RAÍZ
+
+                  |
+
+                  v
+
+          ANCLAJE BITCOIN
+
+                  |
+
+                  v
+
+         ACTUALIZACIÓN OTS
+
+                  |
+
+                  v
+
+       VERIFICACIÓN INDEPENDIENTE
+
+
+Estados de evidencia
+
+Cada OTS debe distinguir entre:
+
+Solicitud no enviada.
+
+Solicitud enviada.
+
+Prueba pendiente.
+
+Prueba actualizable.
+
+Prueba anclada.
+
+Prueba verificable.
+
+Error de generación o actualización.
+
+Una prueba pendiente nunca debe presentarse como prueba anclada.
+
+Alcance probatorio
+
+OTS permite comprobar la existencia previa del compromiso criptográfico respecto del punto temporal respaldado por su anclaje.
+
+No demuestra por sí solo que:
+
+La llamada ocurrió realmente.
+
+La identidad declarada sea verdadera.
+
+El agente actuó correctamente.
+
+La ubicación sea exacta.
+
+El contenido del audio sea auténtico.
+
+La institución tenga autoridad legal.
+
+La autenticidad institucional se establece mediante credenciales, firmas y registros de confianza.
+
+LÁMINA 07 — EXCEPCIONES, CONTINUIDAD Y RECUPERACIÓN
+
+Objetivo
+
+Representar el funcionamiento de ERX cuando la llamada no sigue el recorrido ideal o existen fallos técnicos.
+
+Diagrama general de excepciones
+
+             EVENTO DE LLAMADA
+
+                      |
+
+                      v
+
+                MÓDULO ERX
+
+                      |
+
+                      v
+
+              ¿OPERACIÓN NORMAL?
+
+                      |
+
+                +-----+-----+
+
+                |           |
+
+               SÍ           NO
+
+                |           |
+
+                v           v
+
+          FLUJO NORMAL   IDENTIFICAR FALLA
+
+                            |
+
+             +--------------+--------------+
+
+             |              |              |
+
+             v              v              v
+
+        SIN UBICACIÓN   SIN RESPUESTA   ERX CAÍDO
+
+             |              |              |
+
+             v              v              v
+
+       REGISTRAR ESTADO  REGISTRAR       CONTINUAR
+
+       NO DISPONIBLE     NO RESPUESTA    TELEFONÍA
+
+             |              |              |
+
+             v              v              v
+
+       CONTINUAR        CERRAR INTENTO   COLA LOCAL
+
+       ATENCIÓN         DOCUMENTADO     DURADERA
+
+             |              |              |
+
+             v              v              v
+
+       ACTUALIZAR       JSON 02         RECUPERAR
+
+       SI APARECE       SIN AGENTE      EVENTOS
+
+       INFORMACIÓN          |              |
+
+             |              v              v
+
+             |          JSON 03       RECONCILIAR
+
+             |              |          IDENTIDADES
+
+             |              |              |
+
+             +--------------+--------------+
+
+                            |
+
+                            v
+
+                    CONSERVAR EVIDENCIA
+
+                            |
+
+                            v
+
+                     VERIFICAR ESTADOS
+
+
+Escenario A — No existe localización
+
+LLAMADA RECIBIDA
+
+       |
+
+       v
+
+CONSULTAR UBICACIÓN
+
+       |
+
+       v
+
+NO DISPONIBLE
+
+       |
+
+       v
+
+REGISTRAR ESTADO
+
+       |
+
+       v
+
+CONTINUAR LLAMADA
+
+       |
+
+       v
+
+LOCALIZACIÓN POSTERIOR
+
+       |
+
+       v
+
+REGISTRO COMPLEMENTARIO
+
+
+La información posterior no modifica retroactivamente JSON 01.
+
+Escenario B — El centro no responde
+
+LLAMADA ENRUTADA
+
+       |
+
+       v
+
+CENTRO RECEPTOR
+
+       |
+
+       v
+
+ESPERA DE RESPUESTA
+
+       |
+
+       v
+
+NO RESPUESTA HUMANA
+
+       |
+
+       v
+
+DOCUMENTAR RESULTADO
+
+       |
+
+       v
+
+JSON 02
+
+       |
+
+       v
+
+UTXO 02
+
+       |
+
+       v
+
+OTS 02
+
+       |
+
+       v
+
+DOCUMENTAR FINALIZACIÓN
+
+       |
+
+       v
+
+JSON 03
+
+       |
+
+       v
+
+UTXO 03
+
+       |
+
+       v
+
+OTS 03
+
+
+No se atribuye la atención a un agente inexistente.
+
+Escenario C — Desconexión durante la atención
+
+COMUNICACIÓN ACTIVA
+
+       |
+
+       v
+
+PÉRDIDA DE CONEXIÓN
+
+       |
+
+       v
+
+REGISTRAR EVENTO
+
+       |
+
+       v
+
+¿SE RESTABLECE LA MISMA SESIÓN?
+
+       |
+
+       +----------------+
+
+       |                |
+
+      SÍ                NO
+
+       |                |
+
+       v                v
+
+CONTINUAR          CERRAR SESIÓN
+
+MISMA LLAMADA      ORIGINAL
+
+       |                |
+
+       v                v
+
+MISMO EXPEDIENTE   NUEVA IDENTIDAD
+
+                        |
+
+                        v
+
+                  NUEVA SECUENCIA
+
+
+Una nueva llamada recibe una nueva identidad transaccional y puede vincularse con el incidente anterior.
+
+Escenario D — OpenTimestamps no disponible
+
+DOCUMENTO GENERADO
+
+       |
+
+       v
+
+HASH CALCULADO
+
+       |
+
+       v
+
+SOLICITUD OTS
+
+       |
+
+       v
+
+SERVICIO NO DISPONIBLE
+
+       |
+
+       v
+
+CONSERVAR ESTADO PENDIENTE
+
+       |
+
+       v
+
+CONTINUAR ATENCIÓN
+
+       |
+
+       v
+
+RECUPERAR SERVICIO
+
+       |
+
+       v
+
+REINTENTAR SOLICITUD
+
+       |
+
+       v
+
+ACTUALIZAR PRUEBA
+
+
+Escenario E — Indisponibilidad de ERX
+
+EVENTO TELEFÓNICO
+
+       |
+
+       v
+
+ERX NO DISPONIBLE
+
+       |
+
+       v
+
+SISTEMA 911 CONTINÚA
+
+ATENDIENDO
+
+       |
+
+       v
+
+CONSERVACIÓN LOCAL
+
+CUANDO SEA POSIBLE
+
+       |
+
+       v
+
+RECUPERACIÓN DE ERX
+
+       |
+
+       v
+
+RECONCILIAR EVENTOS
+
+       |
+
+       v
+
+VERIFICAR IDENTIFICADORES
+
+       |
+
+       v
+
+PROCESAR SIN DUPLICAR
+
+       |
+
+       v
+
+GENERAR REGISTROS
+
+Y EVIDENCIAS
+
+
+Las horas originales de los acontecimientos deben diferenciarse de las horas de recuperación y procesamiento posterior.
+
+LÁMINA 08 — PROTECCIÓN DE DATOS Y VERIFICACIÓN INDEPENDIENTE
+
+Objetivo
+
+Representar cómo ERX conserva la información sensible bajo custodia institucional y permite verificar posteriormente la integridad del expediente.
+
+Diagrama de separación de información
+
+            COMUNICACIÓN 911
+
+                     |
+
+                     v
+
+              MÓDULO ERX
+
+                     |
+
+          +----------+----------+
+
+          |                     |
+
+          v                     v
+
+    INFORMACIÓN PRIVADA    COMPROMISOS
+
+          |                CRIPTOGRÁFICOS
+
+          v                     |
+
+    DOCUMENTOS JSON             v
+
+    Y ARCHIVOS ORIGINALES   OPEN TIMESTAMPS
+
+          |                     |
+
+          v                     v
+
+    ALMACENAMIENTO           RED BITCOIN
+
+    INSTITUCIONAL                |
+
+          |                     |
+
+          v                     v
+
+    CIFRADO Y CONTROL       ANCLAJE TEMPORAL
+
+    DE ACCESO                   |
+
+          |                     v
+
+          |                 PRUEBA OTS
+
+          |                     |
+
+          +----------+----------+
+
+                     |
+
+                     v
+
+             VERIFICADOR ERX
+
+                     |
+
+                     v
+
+            AUDITORÍA INDEPENDIENTE
+
+
+Información privada
+
+Permanece bajo custodia de la institución:
+
+Identidad de la persona solicitante.
+
+Número telefónico.
+
+Coordenadas.
+
+Audio.
+
+Transcripciones.
+
+Información médica.
+
+Identidad profesional de los agentes.
+
+Documentos JSON originales.
+
+Archivos asociados.
+
+Registros internos del centro.
+
+Información pública
+
+Se limita a los compromisos criptográficos y los datos estrictamente necesarios para comprobar las pruebas temporales.
+
+No se publica el contenido de las llamadas en Bitcoin.
+
+Diagrama de verificación independiente
+
+         EXPEDIENTE INSTITUCIONAL
+
+                     |
+
+                     v
+
+              VERIFICADOR ERX
+
+                     |
+
+          +----------+----------+
+
+          |          |          |
+
+          v          v          v
+
+       JSON 01    JSON 02    JSON 03
+
+          |          |          |
+
+          v          v          v
+
+       VALIDAR    VALIDAR    VALIDAR
+
+       FIRMA      FIRMA      FIRMA
+
+          |          |          |
+
+          +----------+----------+
+
+                     |
+
+                     v
+
+           VERIFICAR REFERENCIAS
+
+              CRIPTOGRÁFICAS
+
+                     |
+
+                     v
+
+           VERIFICAR CADENA UTXO
+
+                     |
+
+                     v
+
+           COMPROBAR CONSUMOS
+
+                     |
+
+                     v
+
+           VERIFICAR PRUEBAS OTS
+
+                     |
+
+                     v
+
+           VERIFICAR HASHES DE
+
+           ARCHIVOS ASOCIADOS
+
+                     |
+
+                     v
+
+           COMPROBAR CRONOLOGÍA
+
+                     |
+
+                     v
+
+             INFORME DE AUDITORÍA
+
+
+Categorías de verificación
+
+El verificador debe producir resultados separados:
+
+1. Integridad documental: comprueba que los documentos coinciden con sus compromisos criptográficos.
+
+2. Autenticidad institucional: comprueba las firmas y la relación de las claves con la institución autorizada.
+
+3. Identidad profesional: comprueba la credencial y su vigencia histórica.
+
+4. Continuidad transaccional: comprueba la relación entre los tres UTXO.
+
+5. Ausencia de doble consumo: comprueba que cada estado de origen fue consumido como máximo una vez.
+
+6. Evidencia temporal: comprueba las pruebas OTS y sus anclajes.
+
+7. Integridad de archivos: comprueba los hashes de audio y otros archivos asociados.
+
+8. Coherencia cronológica: examina la compatibilidad temporal de los acontecimientos y registros.
+
+Resultado final
+
+El expediente puede ser examinado por:
+
+La institución receptora.
+
+Autoridades competentes.
+
+Auditores autorizados.
+
+Terceros independientes con acceso legítimo a la documentación.
+
+La existencia de una prueba criptográfica no convierte automáticamente el contenido en verdadero. El verificador debe identificar qué propiedad demuestra cada evidencia y cuáles permanecen sujetas a comprobación material.
+
+MATRIZ DE CORRESPONDENCIA ENTRE PROTOCOLO Y ATLAS
+
+Documento normativo ERX-PROT-001 v1.1
+
+Lámina correspondiente
+
+Propósito y arquitectura general
+
+01
+
+Participantes y requisitos institucionales
+
+01 y 02
+
+Primera transacción: recepción y localización
+
+02
+
+Segunda transacción: contacto y autenticación
+
+03
+
+Tercera transacción: comunicación y cierre
+
+04
+
+Unicidad y prevención del doble gasto
+
+05
+
+OpenTimestamps y evidencia temporal
+
+06
+
+Excepciones y continuidad
+
+07
+
+Protección de datos y verificación
+
+08
+
+Resultado institucional y auditoría
+
+08
+
+REGLAS DE COORDINACIÓN DOCUMENTAL
+
+Los dos documentos deben conservar exactamente las siguientes reglas:
+
+Una llamada admitida tiene una identidad transaccional única.
+
+La primera emisión UTXO no consume un estado anterior.
+
+UTXO 02 consume UTXO 01.
+
+UTXO 03 consume UTXO 02.
+
+Cada etapa produce un JSON independiente.
+
+Cada JSON tiene su propio compromiso OTS.
+
+Las solicitudes OTS son independientes y asíncronas.
+
+La atención de emergencia no depende de la disponibilidad de OTS o Bitcoin.
+
+La ausencia de respuesta humana no permite inventar una identidad ni una conversación.
+
+Las transferencias deben conservar la continuidad documental.
+
+Las correcciones no modifican retroactivamente documentos sellados.
+
+Los archivos privados permanecen bajo custodia institucional.
+
+La verificación criptográfica no equivale automáticamente a veracidad material.
+
+La indisponibilidad de ERX no debe bloquear la infraestructura telefónica de emergencias.
+
+DEFINICIÓN FINAL
+
+ERX-ATLAS-001 v1.1 representa gráficamente el funcionamiento institucional del protocolo ERX byLAEV mediante ocho láminas que describen el ciclo completo de una comunicación de emergencia.
+
+Su finalidad es permitir que ingenieros, desarrolladores, operadores de telecomunicaciones, responsables de centros 911, auditores y autoridades institucionales puedan comprender la arquitectura y las operaciones del módulo sin depender exclusivamente de la interpretación del documento normativo.
+
+Los diagramas establecen una representación común para la implementación, integración, evaluación y homologación del sistema.
+
+ERX byLAEV: una comunicación, una identidad transaccional, tres estados verificables y un expediente institucional trazable.
+
+Documento: ERX-ATLAS-001
+Versión: 1.1
+Documento normativo asociado: ERX-PROT-001 v1.1
+Autoría y diseño: LAEV / byLAEV
+Ámbito: Infraestructuras institucionales de atención de emergencias 911
+Estado: Especificación gráfica de diseño pendiente de implementación, pruebas independientes y homologación institucional.
+
+FIN DEL DOCUMENTO
+
+

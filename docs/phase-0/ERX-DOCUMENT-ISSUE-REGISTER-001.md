@@ -19,7 +19,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 ## 2. Evidence updates
 - DOC-ISS-002 identity is CONFIRMED by the UTF-8 text source `docs/Consenso ERX byLAEV` (15,237 bytes; Git Blob SHA-1 64154f504b0a1ac48f76a438cf60f368e062eab6). Its control block states `ERX-CONSENSUS-001`, `0.1 — Propuesta normativa`, `Documento de diseño para revisión`, and `LAEV / byLAEV`; the full text was read and compared with the Roadmap citation. This closes the source-identity gap. The PDF counterpart is also present, but its binary need not be used to establish the identity because the canonical text source is accessible.
 - DOC-ISS-011 added: the consensus document is a review proposal and explicitly leaves quorum, validator independence/count, conflict resolution, detailed UTXO binding and derived specifications for later work. Its status/authority and completion criteria require controlled disposition; do not present it as an approved operational consensus. The direct source inspection record is `docs/phase-0/ERX-CONSENSUS-SOURCE-INSPECTION-001.md`.
-- DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
+- DOC-ISS-003 remains NOT LOCATED / UNVERIFIED; the bounded source-location limitation is accepted under DP-09 for WP-0.3.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
 - DOC-ISS-009 and DOC-ISS-010 were refined after direct page-level inspection of ERX-PROT-001 v1.1 Step 15 (PDF p.13), UTXO-911-001 v1.0 Sections 2.1–3.1 and 4.5–5 (PDF pp.2–4, 8–9), ERX-ATLAS-001 v1.1 Plate 03, and ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3).
 - DOC-ISS-009 is closed by DP-02: acceptance is an authenticated, uniquely identified event/sub-state in the atomic UTXO 01→02 transition, not a fourth spendable output in the approved profile.
@@ -31,7 +31,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 |---|---|---|---|
 | DOC-ISS-001 | Atlas filename/internal version discrepancy | ACCEPTED_LIMITATION | WP-0.3 |
 | DOC-ISS-002 | ERX-CONSENSUS-001 v0.1 source identity/content confirmed from text; lifecycle is proposal for review | RESOLVED_EVIDENCE | WP-0.3 source verification |
-| DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | ACCEPTED_LIMITATION | WP-0.2 carry-forward |
+| DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | ACCEPTED_LIMITATION | WP-0.3 disposition; later requirements/intake follow-up |
 | DOC-ISS-004 | Technical Response lacks formal ID/version/date | ACCEPTED_LIMITATION | WP-0.3 |
 | DOC-ISS-005 | UTXO-911 / Protocol authority relationship | CLOSED | WP-0.3 |
 | DOC-ISS-006 | Normative force and divergence handling for Atlas plates | CLOSED | WP-0.3 |

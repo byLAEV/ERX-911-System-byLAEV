@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | PREPARATORY REVIEW — NOT SUBMITTED FOR APPROVAL |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -31,7 +31,7 @@ WP-0.2 remains APPROVED. The Workplan itself remains DRAFT / PENDING APPROVAL. W
 | 0.3.3 Hierarchy | Hierarchy proposal, decision package DP-01 | NOT ACCEPTED | Express LAEV decision |
 | 0.3.4 Subject-matter authority | Authority matrix v0.2.0, DP-01/DP-04/DP-05 | NOT ACCEPTED | Express LAEV decision |
 | 0.3.5 Relationships/dependencies | Relationship map v0.2.0; Workplan dependency map | EVIDENCE PREPARED | Review and acceptance of bounded relationships |
-| 0.3.6 Contradictions/ambiguities | Source alignment v0.3.0; issue register v0.6.0; audit v0.3.0 | ANALYSIS PREPARED; DISPOSITION OPEN | LAEV disposition of material issues; exact source-gap handling |
+| 0.3.6 Contradictions/ambiguities | Source alignment v0.5.0; issue register v0.8.0; audit updated; consensus source identity/content reviewed | ANALYSIS PREPARED; DISPOSITION OPEN | LAEV disposition of material issues; exact source-gap handling |
 | 0.3.7 Contradiction handling | Procedure v0.1.0 | DRAFT | LAEV approve/revise |
 | 0.3.8 Evolution/supersession | Policy v0.1.0 | DRAFT | LAEV approve/revise |
 
@@ -53,19 +53,25 @@ ERX-ROADMAP-001 v1.0 Section 3.1 expressly establishes a separate, related-but-i
 
 LAEV may accept the architectural separation as source-aligned and assign the detailed specification to a later work package. This should not be recorded as an unresolved question about whether the cycle is independent.
 
-### RG-03 — Consensus source located; identity/content verification pending (DOC-ISS-002 / DP-08)
+### RG-03 — Consensus source identity verified; approval/completion remains a separate gate (DOC-ISS-002 / DP-08)
 
-Repository inspection confirmed the exact file at `docs/Consenso ERX byLAEV.pdf` on branch `main`: 157,848 bytes; Git Blob SHA-1 `c2f965c9bf455506571ac4c1635b4fb47af34216`. This is positive evidence of existence and location; it was not part of the five-file WP-0.2 accepted baseline.
+The repository's plain-text source `docs/Consenso ERX byLAEV` was read directly (15,237 bytes; Git Blob SHA-1 `64154f504b0a1ac48f76a438cf60f368e062eab6`). Its control block states `ERX-CONSENSUS-001`, `0.1 — Propuesta normativa`, `Documento de diseño para revisión`, and `LAEV / byLAEV`. This exactly matches the Roadmap citation. The PDF counterpart is also present but is not needed to establish identity.
 
-The PDF binary could not be opened through the available GitHub text connector, and the corresponding local binary was not available in the mounted source files. Therefore its internal title, document ID, version, date, authorship/provenance and contents have not yet been inspected. Equivalence to Roadmap-cited `ERX-CONSENSUS-001 v0.1` remains UNVERIFIED—not because the file is missing, but because its internal identity/content comparison is pending.
+DOC-ISS-002's identity-verification component is evidence-resolved. The source is not, however, an approved/complete operational consensus: it is expressly a proposal for review and defers quorum, validator independence/count, conflict resolution, final UTXO/JSON structures and derived specifications. Roadmap §1 and §11.3 require the consensus framework to be completed and independently specified before multi-institutional implementation.
 
-Required action: inspect the repository PDF using a binary-capable source/materialization route, record its internal control data and content, compare it with the Roadmap citation, and then update DOC-ISS-002. Do not infer equivalence from filename alone.
+Required action: LAEV disposition of its status and authority; define the detailed consensus specification, approval route and acceptance criteria under DOC-ISS-011.
+
+### RG-06 — Consensus operational completeness and authority (DOC-ISS-011)
+
+The consensus source defines the Triple Consensus and essential invariants: independent consensus results, verifiable evidence, preservation of individual call records, and no blocking of emergency care. It does not yet provide the complete operational rules for validator authorization/independence, quorum, conflict resolution, final consensus-linked UTXO/JSON structures or derived technical specifications. Roadmap §11.3 calls for these matters to be developed independently.
+
+This is a documented scope/dependency, not a reason to mark the source missing and not a direct contradiction. LAEV must assign and approve the completion package and its acceptance criteria before multi-institutional implementation.
 
 ### RG-04 — Implementation proposal (DOC-ISS-003 / DP-09)
 
 `ERX-IMPL-PROPOSAL-001` remains not located in the inspected repository tree or supplied PDFs. LAEV must provide it or explicitly accept/defer the bounded source limitation with impact, owner and target package.
 
-### RG-05 — Remaining authority and document controls (DOC-ISS-001, 004–007)
+### RG-05 — Remaining authority and document controls (DOC-ISS-001, 004–007 and 011)
 
 LAEV disposition remains required for:
 - Atlas supplied filename versus internal v1.1 citation;

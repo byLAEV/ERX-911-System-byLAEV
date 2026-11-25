@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-GOVERNANCE-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | WORKING DRAFT — PENDING LAEV APPROVAL |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -72,12 +72,12 @@ The controlled draft procedure is ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001.m
 The controlled draft policy is ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001.md. It requires baseline preservation, explicit change classification, impact review, competent approval, traceable publication and retention of prior versions. It remains pending approval.
 
 ## 9. Issue control
-The current issue register is ERX-DOCUMENT-ISSUE-REGISTER-001.md and registers/document-issue-register.csv. It contains DOC-ISS-001 through DOC-ISS-010. DOC-ISS-008 is RESOLVED_EVIDENCE; DOC-ISS-009 remains a material structural mapping decision; DOC-ISS-010 is source-alignment-confirmed with detailed specification pending. Other entries remain pending disposition.
+The current issue register is ERX-DOCUMENT-ISSUE-REGISTER-001 v0.6.0 and registers/document-issue-register.csv. It contains DOC-ISS-001 through DOC-ISS-010. DOC-ISS-008 is RESOLVED_EVIDENCE; DOC-ISS-009 remains a material structural mapping decision; DOC-ISS-010 is source-alignment-confirmed with detailed specification and target-WP disposition pending. Other entries remain pending disposition.
 
 ## 10. Approval and limits
 This document and its referenced matrices are drafts/proposals. LAEV retains design and approval authority. Independent technical review evaluates consistency and evidence but does not replace LAEV approval. No source is amended or superseded by this proposal.
 
-WP-0.3 remains IN_PROGRESS. WP-0.4 and WP-0.5 remain blocked until WP-0.3 is expressly completed and approved. No implementation, deployment, institutional operation or Phase 1 authorization is granted.
+WP-0.3 remains IN_PROGRESS and is not ready for acceptance, as documented in ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 v0.1.0. WP-0.4 and WP-0.5 remain blocked until WP-0.3 is expressly completed and approved. Their drafts are preparatory only. No implementation, deployment, institutional operation or Phase 1 authorization is granted.
 
 ---
 END

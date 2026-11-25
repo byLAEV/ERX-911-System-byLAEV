@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | PREPARATORY REVIEW — NOT SUBMITTED FOR APPROVAL |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -53,11 +53,13 @@ ERX-ROADMAP-001 v1.0 Section 3.1 expressly establishes a separate, related-but-i
 
 LAEV may accept the architectural separation as source-aligned and assign the detailed specification to a later work package. This should not be recorded as an unresolved question about whether the cycle is independent.
 
-### RG-03 — Candidate consensus source (DOC-ISS-002 / DP-08)
+### RG-03 — Consensus source located; identity/content verification pending (DOC-ISS-002 / DP-08)
 
-A candidate file named `docs/Consenso ERX byLAEV.pdf` exists in the repository, but its internal title/identifier/version and content could not be directly inspected through the available text-only repository connector in this review. Its equivalence to Roadmap-cited `ERX-CONSENSUS-001 v0.1` therefore remains UNVERIFIED.
+Repository inspection confirmed the exact file at `docs/Consenso ERX byLAEV.pdf` on branch `main`: 157,848 bytes; Git Blob SHA-1 `c2f965c9bf455506571ac4c1635b4fb47af34216`. This is positive evidence of existence and location; it was not part of the five-file WP-0.2 accepted baseline.
 
-Required action: obtain a direct copy/materialization for inspection, verify its control page and contents, and then update the source identity record. Do not infer its content from filename.
+The PDF binary could not be opened through the available GitHub text connector, and the corresponding local binary was not available in the mounted source files. Therefore its internal title, document ID, version, date, authorship/provenance and contents have not yet been inspected. Equivalence to Roadmap-cited `ERX-CONSENSUS-001 v0.1` remains UNVERIFIED—not because the file is missing, but because its internal identity/content comparison is pending.
+
+Required action: inspect the repository PDF using a binary-capable source/materialization route, record its internal control data and content, compare it with the Roadmap citation, and then update DOC-ISS-002. Do not infer equivalence from filename alone.
 
 ### RG-04 — Implementation proposal (DOC-ISS-003 / DP-09)
 

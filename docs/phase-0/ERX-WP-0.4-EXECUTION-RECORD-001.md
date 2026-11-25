@@ -19,7 +19,8 @@
 3. Clarified draft version progression, lifecycle/evidence separation, and deferred independent external review until after planned project work per LAEV Addendum B.
 4. Recorded LAEV's formal approval of DC-01 through DC-09 in ERX-WP-0.4-LAEV-DECISION-RECORD-001 v1.2.0.
 5. Prepared a closeout audit identifying remaining evidence gates.
-6. Recorded LAEV's exact-version approval of candidate v0.4.2 and released the approved policy baseline as v1.0.0.\n7. Updated the closeout audit, execution record, Workplan, and register; WP-0.4 accepted.
+6. Recorded LAEV's exact-version approval of candidate v0.4.2 and released the approved policy baseline as v1.0.0.
+7. Updated the closeout audit, execution record, Workplan, and register; WP-0.4 accepted.
 
 ## 2. Decisions and evidence
 
@@ -29,11 +30,9 @@
 - Workplan: WORKPLAN-PHASE-0.md v1.2.5.
 - Register: registers/document-register.csv; IDX-013 points to approved policy v1.0.0; IDX-038–IDX-042 cover decision, audit, execution, internal review, and exact-version approval records.
 
-## 3. Outstanding actions
+## 3. Closeout result
 
-1. Obtain LAEV approval of exact candidate v0.4.2.
-2. Record the exact approval evidence and synchronize all controlled registers.
-3. Re-run final audit and close WP-0.4 only after all acceptance conditions are met. Independent external review remains deferred until after planned project work.
+All WP-0.4 acceptance conditions are satisfied. LAEV's exact-version approval is recorded; policy v1.0.0 is released; the internal review findings are dispositioned; the closeout audit is complete; and the Workplan and document register are synchronized. WP-0.4 is COMPLETED / ACCEPTED. WP-0.5 dependency gate is released but WP-0.5 has not been started by this record. Independent external review remains deferred until after planned project work.
 
 ## 4. Boundary
 

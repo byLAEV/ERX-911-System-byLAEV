@@ -4,12 +4,12 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-CONTROL-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | PREPARATORY WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design and approval authority | LAEV |
-| Date | 2026-11-23 |
+| Date | 2026-11-24 |
 | Dependencies | WP-0.1 approved; WP-0.3 formal approval pending |
 
 ## 1. Purpose
@@ -195,9 +195,11 @@ This template is illustrative until WP-0.4 is formally executed and approved. Ex
 The initial application must preserve current evidence:
 
 - The Phase 0 Charter remains `ERX-PHASE-0-CHARTER-001`, version 1.0.0, APPROVED, with its existing express approval record.
-- The Workplan remains `ERX-WP-PHASE-0-001`, version 1.0.0, DRAFT / PENDING APPROVAL.
-- `ERX-DOCUMENT-GOVERNANCE-001` remains version 0.1.0, WORKING DRAFT — NOT APPROVED.
-- `ERX-FOUNDATIONAL-MATERIAL-REGISTER-001` remains a working inventory baseline until WP-0.2 is reviewed and approved.
+- The Workplan remains `ERX-WP-PHASE-0-001`, currently version 1.0.5, DRAFT / PENDING APPROVAL. Its current version does not mean the Workplan itself is approved.
+- `ERX-DOCUMENT-GOVERNANCE-001` is currently version 0.3.0, WORKING DRAFT — PENDING LAEV APPROVAL.
+- `ERX-FOUNDATIONAL-MATERIAL-REGISTER-001` records the five-source baseline accepted by LAEV under WP-0.2 on 2026-11-23; supplemental candidate discovery remains separately tracked and does not retroactively alter the accepted baseline.
+- `ERX-WP-0.3-EXECUTION-RECORD-001` is currently v0.5.0, IN_PROGRESS; WP-0.3 has not been approved.
+- The provisional master index is currently v0.9.0 and remains NOT APPROVED because its formal dependencies are incomplete.
 - Original source document IDs, filenames, versions, and hashes are preserved as recorded; unresolved metadata remains visible.
 
 This list reflects the repository records inspected while preparing this draft and must be rechecked during formal WP-0.4 execution.

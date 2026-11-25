@@ -58,7 +58,7 @@ No direct contradiction between the inspected passages is declared by the source
 - Decide normative treatment of Atlas plates.
 - Decide treatment of the Technical Response as recommendation or approved Roadmap amendment.
 - Approve, revise or reject the contradiction-handling and document-evolution procedures.
-- Decide disposition of DOC-ISS-002 after internal source inspection; DOC-ISS-003 remains not located and requires separate disposition.
+- DOC-ISS-002 identity/content is confirmed by text-source evidence. LAEV must disposition proposal status and operational completion under DOC-ISS-011; DOC-ISS-003 remains not located and requires separate disposition.
 
 ## 6. Acceptance gate
 WP-0.3 is not yet eligible for approval. Completion requires express LAEV decisions for hierarchy and subject authority; all material issues must be decided or formally deferred/accepted with impact and mitigation; both procedures must be approved; and all registers and records must be consistent.

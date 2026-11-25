@@ -77,7 +77,7 @@ For each entry, preserve the exact source-native title, document ID and version 
 
 Document lifecycle status is taken from the exact controlled document and its decision/approval record. Historical headers are not overwritten by later approvals; instead, the index records the current disposition and points to the controlling approval/closeout record.
 
-The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.1.0](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
+The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.1.0](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). Internal review findings are recorded in [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.1.0](ERX-WP-0.6-INTERNAL-REVIEW-001.md); that review concludes NOT READY FOR ACCEPTANCE. It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
 - cites / referenced by;
 - graphically represents;
 - derived from / supporting evidence for;
@@ -113,7 +113,7 @@ Remaining WP-0.6 work:
 
 ## 9. WP-0.6 status
 
-**WP-0.6: IN_PROGRESS — formally initiated; structural inventory and first/second-pass metadata corrections recorded; semantic relationship review and closeout evidence remain.**
+**WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.1.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
 
 The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.2.0 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 

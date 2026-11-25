@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.0.2 |
+| Version | 1.0.3 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -60,7 +60,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-024 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | WP-0.3 Preparatory Issue Review Matrix | 0.1.0 | Preparatory analysis artifact | NOT_APPROVED — WP-0.3 FORMAL EXECUTION AUTHORIZED — DECISIONS PENDING | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Source issues organized; formal WP-0.2 acceptance recorded; LAEV decisions remain required |
 
 | IDX-025 | ERX-WP-0.2-APPROVAL-RECORD-001 | Formal Acceptance of Foundational Materials | 1.0.0 | Approval record | APPROVED — LAEV 2026-11-23 | `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` | Authoritative record of WP-0.2 acceptance | 
-| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Potential Consensus Source | 0.1.0 | Supplemental evidence note | PUBLISHED — IDENTITY CONFIRMED; PROPOSAL STATUS | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Text source `docs/Consenso ERX byLAEV` confirms Roadmap-cited ERX-CONSENSUS-001 v0.1; proposal lifecycle remains | 
+| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Consensus Source Identity and Status | 0.2.0 | Supplemental evidence note | PUBLISHED — IDENTITY CONFIRMED; PROPOSAL STATUS | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Text source `docs/Consenso ERX byLAEV` confirms Roadmap-cited ERX-CONSENSUS-001 v0.1; proposal lifecycle remains | 
  
 | IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.5.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
 | IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.7.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; source-confirmed availability separation; DOC-ISS-009 structural mapping and LAEV hierarchy/authority decisions pending |

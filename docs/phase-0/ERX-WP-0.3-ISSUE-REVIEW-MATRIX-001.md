@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | FORMAL WP-0.3 AUTHORIZED; REVIEW MATRIX WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.3 preparation |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,14 +13,14 @@
 
 ## 1. Purpose and gate
 
-This matrix organizes documentary issues for the formally authorized WP-0.3 execution. It is an analysis artifact, not an approved hierarchy or decision record. WP-0.2 was expressly accepted by LAEV on 2026-11-23. DOC-ISS-002 and DOC-ISS-003 remain bounded source-identity/availability follow-ups from that accepted baseline; they do not reverse the WP-0.2 approval.
+This matrix organizes documentary issues for the formally authorized WP-0.3 execution. It is an analysis artifact, not an approved hierarchy or decision record. WP-0.2 was expressly accepted by LAEV on 2026-11-23. DOC-ISS-002 identity is now confirmed by supplemental text-source evidence; DOC-ISS-011 carries forward its proposal status and operational-completion question. DOC-ISS-003 remains the bounded source-availability follow-up. Neither changes the WP-0.2 accepted baseline.
 
 ## 2. Preparatory review matrix
 
 | Issue | Evidence currently recorded | Question requiring determination | Non-binding handling options | Decision authority / gate |
 |---|---|---|---|---|
 | DOC-ISS-001 — Atlas filename/version | Supplied filename says v1; internal title/control says v1.1 | What canonical citation and repository display name should be used? | Preserve supplied filename and cite internal v1.1; or approve a controlled rename/alias that retains original checksum and provenance | LAEV; document control under WP-0.4 |
-| DOC-ISS-002 — Consensus source identity | Repository main contains `docs/Consenso ERX byLAEV.pdf` (157,848 bytes; Git Blob SHA-1 recorded in issue register); internal control/content not inspected through the available connector | Is this file the Roadmap-cited ERX-CONSENSUS-001 v0.1, and what scope/authority does it have? | Inspect PDF control page/content and provenance; compare exact identifier/version; or formally record the binary-inspection limitation without calling the file absent | LAEV; bounded source follow-up / WP-0.3 disposition |
+| DOC-ISS-002 — Consensus source identity | Text source `docs/Consenso ERX byLAEV` declares ERX-CONSENSUS-001 v0.1, proposal for review, LAEV/byLAEV; matches Roadmap citation | Identity is confirmed; what source status/scope is adopted, and what completion package is required? | Close identity gap; retain proposal status; decide authority and assign operational consensus specification under DOC-ISS-011 | LAEV; WP-0.3 source disposition |
 | DOC-ISS-003 — Implementation proposal missing | Roadmap cites ERX-IMPL-PROPOSAL-001; not located in inspected set/repository | Is this source needed to determine foundational hierarchy or may it be deferred with impact documented? | Locate and inspect; or record not located/unverified with explicit deferral/impact | LAEV; first disposition WP-0.2, hierarchy analysis WP-0.3 after gate |
 | DOC-ISS-004 — Response metadata absent | FND-005 supplied title/control lacks formal ID, version, date | How should it be catalogued without inventing original metadata? | Keep source metadata “not stated”; optionally assign a clearly labelled repository/catalogue ID via controlled process | LAEV; document control WP-0.4 |
 | DOC-ISS-005 — UTXO vs Protocol authority | Protocol/Atlas/Roadmap define three communication outputs; UTXO-911 adds a separate acceptance output | Define scoped authority and mapping without silently changing sources | Scoped subject authority plus formal decision on DOC-ISS-009 | LAEV; WP-0.3 |
@@ -29,7 +29,7 @@ This matrix organizes documentary issues for the formally authorized WP-0.3 exec
 
 ## 3. Required evidence for WP-0.3 acceptance
 
-- WP-0.2 acceptance and recorded dispositions for DOC-ISS-002 and DOC-ISS-003.
+- WP-0.2 acceptance; DOC-ISS-002 source identity confirmed and proposal/completeness carried under DOC-ISS-011; DOC-ISS-003 source disposition remains pending.
 - Full source references with exact sections/pages/diagram identifiers for each material issue.
 - A clause-to-plate cross-reference for Protocol and Atlas.
 - A subject-matter scope comparison between ERX-PROT-001 v1.1 and UTXO-911-001 v1.0.

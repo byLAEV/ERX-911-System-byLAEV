@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.2.6
+- **Version:** 1.2.7
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 
@@ -171,7 +171,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. Both dependency gates are satisfied. WP-0.4 is COMPLETED / ACCEPTED; the WP-0.5 dependency gate is released. WP-0.5 remains NOT_STARTED until formally initiated.
 
 ### WP-0.5 — ERX Repository Creation and Organization
-**Status:** NOT_STARTED — DEPENDENCY GATES RELEASED; PREPARATORY DRAFT ONLY
+**Status:** IN_PROGRESS — DEPENDENCY GATES RELEASED; CONTROLLED WORKING DRAFT
 
 **Activities**
 - [ ] 0.5.1 Repository identity.
@@ -203,7 +203,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 └── templates/
 ```
 
-**Preparatory draft:** [`docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md`](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) v0.1.0 — NOT APPROVED. Existing repository configuration remains to be inspected. 
+**Working deliverable:** [`docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md`](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) v0.2.0 — IN_PROGRESS / NOT APPROVED. Repository metadata has been inspected; branch protection, collaborator roster, required reviews, signed-commit policy, and full tree inventory remain to be verified. 
 **Acceptance:** locations, access, branches, change control, and intellectual property are documented. Do not create or attribute a license without an express decision.  
 **Dependencies:** WP-0.3 and WP-0.4. Formal WP-0.5 execution may begin because WP-0.3 and WP-0.4 dependency gates are satisfied; its own scope and approval controls still apply.
 

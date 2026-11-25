@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-AUDIT-REPORT-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | FINAL INTERNAL DOCUMENTARY AUDIT — WP-0.3 CLOSEOUT |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -14,7 +14,9 @@
 ## 1. Purpose and audit boundary
 This report records a second-pass review of the Phase 0 Workplan, WP-0.2 approval evidence, WP-0.3 working documents, master index, Markdown/CSV registers, and repository source tree.
 
-This is an internal documentary consistency review. It is not an independent external audit, legal opinion, implementation test, or approval of WP-0.3. It does not change foundational PDFs or LAEV approval authority.
+This is an internal documentary consistency review, not an independent external audit, legal opinion, implementation test, or independent approval instrument. LAEV's design decisions and approval evidence are recorded separately in ERX-WP-0.3-LAEV-DECISION-RECORD-001. This report assesses documentary evidence and consistency; it does not substitute for LAEV's authority or alter the foundational PDFs.
+
+**Reading rule:** Sections 2–8 below are the preserved historical second-pass snapshot, recorded before the closeout decisions/actions. They are not the current status. Section 9 is the final closeout verification and supersedes conflicting provisional statuses in Sections 2–8. Section 10 records the current classification of residual limitations versus defects.
 
 ## 2. Confirmed baseline
 1. WP-0.2 is APPROVED by LAEV on 2026-11-23 under ERX-WP-0.2-APPROVAL-RECORD-001 v1.0.0.
@@ -87,9 +89,9 @@ The second-pass review found and corrected material documentary status and consi
 - consensus text source identity/content confirmed; approval/completeness remains separately pending;
 - implementation proposal still not located.
 
-## 9. Final closeout verification — 2026-11-24
+## 9. FINAL RESULT — closeout verification — 2026-11-24
 
-This section supersedes the provisional/pending findings in Sections 2–8, which are retained as the historical second-pass audit snapshot before LAEV's final decisions and closeout actions.
+This section is the controlling final result and supersedes the provisional/pending findings in Sections 2–8. Those earlier sections remain unchanged as historical evidence of the audit sequence; they must not be read as current open acceptance conditions.
 
 The following controlled records were updated on the WP-0.3 closeout branch:
 - LAEV decision record DP-01 through DP-09, v1.0.0.
@@ -101,7 +103,22 @@ The following controlled records were updated on the WP-0.3 closeout branch:
 
 The key structural divergence is resolved for the current profile by adopting Option B: acceptance is an authenticated, uniquely identified event/sub-state within the atomic UTXO 01→02 transition, not a fourth spendable output. The separate agent-availability cycle is accepted and its detailed state machine deferred. ERX-CONSENSUS-001 remains a proposal pending an operational specification. ERX-IMPL-PROPOSAL-001 remains a bounded not-located limitation. The five original PDFs remain unchanged.
 
-**Final internal audit conclusion: WP-0.3 documentary acceptance criteria are satisfied on the closeout branch, subject to merge and post-merge verification.** This is not an independent external audit, legal opinion, implementation/security test, institutional homologation or authorization for production/Phase 1.
+**Final internal audit conclusion: WP-0.3 documentary acceptance criteria are satisfied on the closeout branch, subject to merge and post-merge verification.** LAEV's decision record is the separate authority record; this audit does not claim to be LAEV's approval or an independent external review. This conclusion is not a legal opinion, implementation/security test, institutional homologation or authorization for production/Phase 1.
+
+## 10. Current classification — residual limitations versus defects
+
+The final closeout distinguishes the following categories:
+
+| Item | Evidence-based status | Classification | Effect on WP-0.3 |
+|---|---|---|---|
+| ERX-IMPL-PROPOSAL-001 / DOC-ISS-003 | Not located / unverified in the inspected baseline; no contents inferred; bounded limitation adopted by DP-09 | ACCEPTED SOURCE-LOCATION LIMITATION | Does not block the bounded documentary acceptance of WP-0.3; revisit if a dependent requirement needs it |
+| ERX-CONSENSUS-001 v0.1 / DOC-ISS-011 | Source identity/content confirmed; source itself labels its status as proposal for review; operational quorum/validator/conflict and detailed structures remain incomplete | ACCEPTED DEFERRED SPECIFICATION / NOT OPERATIONALLY APPROVED | Does not block WP-0.3 documentary acceptance; blocks any claim of approved operational or multi-institutional consensus |
+| Independent external review | No independent external review record is produced or claimed; LAEV decision record exists separately | NOT PERFORMED / NOT CLAIMED | Must not be mislabeled as completed; does not invalidate the expressly bounded internal documentary acceptance |
+| Historical provisional findings in Sections 2–8 | Superseded by the final disposition in Section 9 | AUDIT HISTORY, NOT CURRENT OPEN FINDINGS | Preserve for traceability; do not count as unresolved acceptance failures |
+
+A residual limitation is not a defect merely because the source is missing or a proposal remains a proposal. It becomes a blocking defect only where the approved scope or a dependent decision requires that source or capability and no accepted waiver, deferral or interim control exists. Conversely, an accepted limitation must never be described as source-resolved, operationally approved or implemented.
+
+The completion matrix and decision record are the controlling evidence for the final WP-0.3 disposition. The Workplan and all dependent registers must reflect the same status. Any later discovery or change must be handled through controlled document evolution, not by rewriting this audit history.
 
 ---
 END

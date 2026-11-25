@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.3.3 |
+| Version | 0.3.4 |
 | Status | COMPLETED — FINAL SYNCHRONIZATION REVIEW |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -100,11 +100,11 @@ No classification change or source amendment was necessary to pass this consiste
 ### 2.8 Synchronization state
 
 The following controlled documents now reflect the final WP-0.6 closeout evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.6.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.9.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
-- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.2.
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.5.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2.
-- WORKPLAN-PHASE-0.md v1.4.5.
+- WORKPLAN-PHASE-0.md v1.4.7.
 - This review v0.3.2.
 
 POST-ACCEPTANCE SYNCHRONIZATION CHECK (2026-11-25): the live recursive Git tree was queried after WP-0.7 initiation and register updates. GitHub returned `truncated=false`, 79 live paths. The current CSV v1.2.2 has 80 catalogue records and 16 columns; all 79 live paths occur exactly once, with one NOT_LOCATED reference-only source. Checks: zero duplicate catalogue IDs; zero duplicate paths; zero missing live paths; zero stale paths; zero malformed CSV row widths. This synchronization check corrects earlier copied figures (73/74 and 76/77) that no longer represented the current tree. It does not invalidate the historical baseline checks or reopen the recorded WP-0.6 acceptance.

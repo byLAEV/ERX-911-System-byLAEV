@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.4.3
+- **Version:** 1.4.4
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -220,37 +220,31 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 ### WP-0.6 — Master Index and Document Register
 **Approval status:** APPROVED — LAEV, 2026-11-24
-**Execution status:** IN_PROGRESS — formally initiated 2026-11-24; dependency gate satisfied.
+**Execution status:** COMPLETED / ACCEPTED — 2026-11-25.
+**Acceptance evidence:** ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.0; readiness report v1.0.0; closeout audit v1.0.0.
 
 **Activities**
-- [ ] 0.6.1 General document register — 74 catalogue records, 16 columns, formal register ID ERX-DOCUMENT-REGISTER-001 v1.2.1; 73 live repository paths plus one NOT_LOCATED referenced source; structural checks pass.
-- [ ] 0.6.2 Identify foundational documents — accepted five-PDF baseline, ERX-CONSENSUS-001 proposal and ERX-IMPL-PROPOSAL-001 limitation explicitly recorded; derivative/provenance checks remain.
-- [ ] 0.6.3 Identify development documents — 73/73 current live paths represented in the CSV at the recorded baseline tree snapshot; final path check after remaining writes required.
-- [ ] 0.6.4 Record versions — known source-native versions retained; 74 catalogue rows semantically cross-checked against available source/header and controlling-record evidence; source-native unknowns remain NOT_STATED/NOT_VERIFIED where evidence does not support a value.
-- [ ] 0.6.5 Classify documents — 74 entries classified by source/artifact function; originals and text derivatives distinguished; final class-to-hierarchy sign-off remains.
-- [ ] 0.6.6 Record each document's status — source-declared status is preserved separately from conservative lifecycle mapping, evidence verification, custody and repository presence; historical headers and bounded unknowns remain unchanged.
-- [ ] 0.6.7 Record relationships between documents — approved WP-0.3 relationship map preserved and WP-0.6 typed relationship supplement v0.2.0 cross-checked against DP-01–DP-09, DOC-ISS-001–011, DC-01–DC-09, WP-0.5 acceptance and Workplan dependencies; final closeout review remains.
-- [ ] 0.6.8 Identify pending documents — DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011, source metadata gaps and historical drafts explicitly retained.
-- [ ] 0.6.9 Consolidate the master index — Master index v1.4.3 and ERX-DOCUMENT-REGISTER-001 v1.2.1 (74 records, 16 columns) aligned as working baseline; post-index structural verification PASSED; formal-ID namespace uniqueness, readiness report and closeout remain.
+- [x] 0.6.1 General document register — ERX-DOCUMENT-REGISTER-001 v1.2.1; final catalogue currently 80 records, 16 columns, 79 live paths plus one NOT_LOCATED reference.
+- [x] 0.6.2 Identify foundational documents — five accepted originals and supplemental consensus source identified; missing implementation proposal bounded under DOC-ISS-003.
+- [x] 0.6.3 Identify development documents — recursive-tree inventory and path coverage completed.
+- [x] 0.6.4 Record versions — source-native versions, formal IDs and NOT_STATED exceptions reconciled.
+- [x] 0.6.5 Classify documents — classifications checked against approved WP-0.3 hierarchy and WP-0.4 document control.
+- [x] 0.6.6 Record each document's status — lifecycle, source status, acceptance, evidence, custody and presence separated.
+- [x] 0.6.7 Record relationships — approved WP-0.3 baseline preserved; typed supplement reconciled.
+- [x] 0.6.8 Identify pending documents — missing, proposal, deferred and metadata gaps recorded without inference.
+- [x] 0.6.9 Consolidate master index — index and CSV synchronized; final structural checks and closeout passed.
 
-**Execution deliverables and evidence:**
-- [`ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0`](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) — RECORDED — EXECUTION INITIATED.
-- [`ERX-MASTER-DOCUMENT-INDEX-001 v1.4.4`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
-- [`registers/document-register.csv`](registers/document-register.csv) — ERX-DOCUMENT-REGISTER-001 v1.2.1; 74 catalogue records, 16 columns; 73 live paths plus one NOT_LOCATED referenced source; baseline structural checks found no duplicate catalogue IDs/paths, missing live paths or stale paths.
-- [`ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2`](docs/phase-0/ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md) — IN_PROGRESS — second-pass relationship cross-check recorded; package closeout pending.
-- [`ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.8`](docs/phase-0/ERX-WP-0.6-INTERNAL-REVIEW-001.md) — FINDINGS RECORDED — NOT READY FOR ACCEPTANCE.
-- [`ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.8`](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) — IN_PROGRESS.
-
-**Acceptance:** all documents identified and created during Phase 0 appear with consistent IDs, versions, classifications, statuses, and references. This criterion remains NOT YET SATISFIED until the final post-write tree snapshot, formal-ID uniqueness verification, synchronized index/CSV/matrix/Workplan check, readiness report and closeout audit are complete.
-**Dependencies:** WP-0.2 through WP-0.5 — SATISFIED. WP-0.6 execution is authorized under the existing scope approval. WP-0.7 remains blocked until WP-0.6 is completed and accepted.
+**Controlled deliverables:** Master index; ERX-DOCUMENT-REGISTER-001 CSV; activity matrix v0.5.1; relationship register v0.2.2; internal review v0.3.1; readiness report v1.0.0; closeout audit v1.0.0; acceptance record v1.0.0.
+**Accepted limitation:** ERX-IMPL-PROPOSAL-001 remains NOT_LOCATED / UNVERIFIED under DOC-ISS-003. This is explicitly recorded and does not invalidate the completed inventory.
+**Dependency release:** WP-0.7 may proceed under its previously approved scope. This acceptance does not authorize Phase 1, implementation or institutional operation.
 
 ### WP-0.7 — Requirements Identification and Classification
 **Approval status:** APPROVED — LAEV, 2026-11-24
-**Execution status:** BLOCKED — methodology only; execution awaits WP-0.3 and WP-0.6 dependency conditions.
+**Execution status:** IN_PROGRESS — formally initiated 2026-11-25 following WP-0.3 and WP-0.6 acceptance.
 
 **Activities**
-- [ ] 0.7.1 Identification methodology.
-- [ ] 0.7.2 Extract existing requirements.
+- [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
+- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; first 15 source-derived candidate requirements recorded; extraction continues.
 - [ ] 0.7.3 Individually identify each requirement.
 - [ ] 0.7.4 Classify requirements.
 - [ ] 0.7.5 Identify mandatory requirements.
@@ -261,9 +255,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases.
 - [ ] 0.7.11 Build the traceability matrix.
 
-**Preparatory deliverables:** [`registers/requirements-traceability.csv`](registers/requirements-traceability.csv) (schema only; no extracted requirements) and [`docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md`](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) v0.1.0 — NOT APPROVED. 
-**Acceptance:** each requirement has an ID, verifiable statement, type, source, status, assigned phase, and verification criterion. Inferred requirements are distinguished from extracted requirements.  
-**Dependencies:** WP-0.3 and WP-0.6. Formal WP-0.7 execution remains blocked until both dependencies are completed and accepted; source extraction also requires direct inspection of exact foundational source versions.
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; controlled method v1.0.0; machine-readable traceability register currently 15 candidate records (EXTRACTED — REVIEW PENDING).
+**Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP.
+**Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; requirements approval and implementation remain separate gates.
 
 ### WP-0.8 — Architecture Decision Register (ADR)
 **Approval status:** APPROVED — LAEV, 2026-11-24

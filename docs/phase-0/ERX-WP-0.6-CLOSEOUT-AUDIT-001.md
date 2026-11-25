@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-CLOSEOUT-AUDIT-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | COMPLETED — ACCEPTANCE CRITERIA VERIFIED |
 | Work Package | WP-0.6 |
 | Audit type | Internal documentary, metadata and repository-consistency closeout |
@@ -23,8 +23,8 @@ This closeout audit verifies the documentary outputs and the WP-0.6 acceptance c
 |---|---|---|
 | Approved scope and dependencies | WP-0.6 initiation record; WP-0.2 through WP-0.5 acceptance records | PASS |
 | Nine activities evidenced | WP-0.6 completion matrix v0.5.0; readiness report v1.0.0 | PASS |
-| Register structure | 74 CSV records, 16 columns; valid row widths | PASS |
-| Repository coverage | 73 live paths; all represented once; one NOT_LOCATED reference-only record | PASS |
+| Register structure | 80 CSV records, 16 columns; valid row widths | PASS |
+| Repository coverage | 79 live paths; all represented once; one NOT_LOCATED reference-only record | PASS |
 | Catalogue uniqueness | No duplicate IDX IDs or paths | PASS |
 | Formal document ID namespace | No unresolved collision; original/derivative reuse documented; NOT_STATED exceptions preserved | PASS |
 | Classification and status semantics | Cross-checked against approved WP-0.3 hierarchy/authority and WP-0.4 control policy | PASS |
@@ -48,7 +48,7 @@ These limitations are bounded, traceable and consistent with the accepted WP-0.2
 
 The final acceptance-readiness report confirms that all nine activities are complete and evidence-supported. The structural audit found no catalogue/path defect, unresolved formal-ID collision, classification inconsistency or broken local reference in the inspected control documents.
 
-This audit recommends applying LAEV's standing conditional acceptance to WP-0.6. The formal acceptance record is separate and does not authorize Phase 1, implementation, deployment, institutional operation, or work beyond the approved dependency gate.
+LAEV's standing conditional acceptance has been applied in ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.1. The formal acceptance record is separate and does not authorize Phase 1, implementation, deployment, institutional operation, or work beyond the approved dependency gate.
 
 ## 5. Tree snapshot note
 

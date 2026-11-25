@@ -26,8 +26,8 @@ This report records the final acceptance-readiness disposition after LAEV author
 | Disposition for each DOC-ISS-001–011 | Decision record DP-01–DP-09 and synchronized CSV | SATISFIED — including bounded deferrals |
 | Contradiction/ambiguity handling | Approved procedure v1.0.0 | SATISFIED |
 | Evolution/amendment/supersession | Approved policy v1.0.0 | SATISFIED |
-| Execution and deliverable evidence | Execution record v1.0.1 and completion matrix v1.0.1 | SATISFIED |
-| Audit and acceptance record | Final internal audit v1.0.2 and this report | SATISFIED |
+| Execution and deliverable evidence | Execution record v1.0.1 and completion matrix v1.0.2 | SATISFIED |
+| Audit and acceptance record | Final internal audit v1.0.3 and this report | SATISFIED |
 
 ## 3. Accepted residual matters — not hidden or treated as resolved
 1. DOC-ISS-003 / ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED in the inspected source baseline and repository. This limitation is accepted for WP-0.3 only. No content is inferred. Revisit if it materially affects requirements or institutional implementation.
@@ -44,7 +44,7 @@ WP-0.3 activities 0.3.1–0.3.8 have documentary evidence and approved dispositi
 **WP-0.3: COMPLETED / ACCEPTED — 2026-11-24**, subject to merge of the closeout branch and post-merge integrity verification.
 
 ## 5. Dependency and scope boundary
-WP-0.3 acceptance releases the Workplan dependency gate for WP-0.4 and enables its formal execution under its own acceptance criteria. WP-0.5 remains dependent on WP-0.4. This report does not complete any other Phase 0 work package, approve the entire Workplan, authorize Phase 1, or permit implementation, deployment or live institutional operation.
+WP-0.3 acceptance releases the Workplan dependency gate for WP-0.4 and enables its formal execution under its own acceptance criteria. WP-0.5 prerequisites WP-0.3 and WP-0.4 are satisfied; WP-0.5 remains NOT_STARTED pending formal initiation and its own authorization. This report does not complete any other Phase 0 work package, approve the entire Workplan, authorize Phase 1, or permit implementation, deployment or live institutional operation.
 
 ---
 End of ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.3.0 |
+| Version | 1.3.1 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `ad950abf9fe1e8bbaa79bbbb63c54b1122723f38` (`truncated=false`, 72 files; snapshot before this index refresh) |
+| Live tree snapshot | `a03e0cf62c43f3a23a77c9faab54bd5e44084bcb` (`truncated=false`, 73 files; snapshot immediately before this index refresh) |
 
 ## 1. Purpose and control boundary
 
@@ -47,7 +47,7 @@ ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supp
 
 ## 4. Phase 0 document and artifact coverage
 
-The verified live repository path inventory is the recursive tree snapshot `ad950abf9fe1e8bbaa79bbbb63c54b1122723f38` (`truncated=false`, 72 files). The CSV includes 73 catalogue records: 72 live paths plus one NOT_LOCATED referenced source; no duplicate IDs/paths, missing live paths or stale paths were detected. The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
+The verified live repository path inventory is the recursive tree snapshot `a03e0cf62c43f3a23a77c9faab54bd5e44084bcb` (`truncated=false`, 73 files). The CSV includes 74 catalogue records: 73 live paths plus one NOT_LOCATED referenced source; no duplicate IDs/paths, missing live paths or stale paths were detected. The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
 
 Current accepted package states:
 - WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.

@@ -4,161 +4,123 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.0.9 |
-| Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
+| Version | 1.1.0 |
+| Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Repository | https://github.com/byLAEV/ERX-911-System-byLAEV |
-| Prepared | 2026-11-23 |
+| Prepared | 2026-11-24 |
 | Authority | LAEV |
-| Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5; formal acceptance remains pending |
+| Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
+| Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
+| Live tree snapshot | `f65683b5926cb8e53cb2ab6b75be810dd28a5fe6` (`truncated=false`) |
 
-## 1. Purpose and Control Boundary
+## 1. Purpose and control boundary
 
-This index is a provisional register of the ERX source documents and Phase 0 artifacts identifiable from the repository records inspected for this preparation activity. It consolidates document identifiers, versions, classifications, lifecycle states, repository locations, relationships, and pending-source references.
+This controlled working revision advances the provisional v1.0.9 index after formal WP-0.6 initiation. It reconciles the current repository inventory against the approved document-control policy and accepted WP-0.2 through WP-0.5 evidence. It is not yet the final accepted master index.
 
-The index is not a final or approved master register. WP-0.2 is APPROVED by LAEV on 2026-11-23. WP-0.3 is IN_PROGRESS. WP-0.4 and WP-0.5 remain blocked pending WP-0.3 and applicable dependencies. Accordingly, classifications, hierarchy relationships, and proposed lifecycle labels in this index remain provisional wherever the governing policies have not been approved.
+The index distinguishes: (a) source-native identity and version; (b) catalogue Index ID; (c) document lifecycle; (d) work-package execution/acceptance; (e) repository presence; and (f) evidence-verification status. These fields are not interchangeable.
 
-Publication or a Git commit is not approval. This document does not complete WP-0.6, approve the Workplan, or authorize Phase 1.
+A file's presence or a Git commit does not establish correctness, approval, or acceptance. Unknown source metadata remains NOT_STATED, NOT_VERIFIED, or NOT_RECORDED. No missing source is reconstructed by inference.
 
-## 2. Register Method
+## 2. Governing records and method
 
-Records are drawn from:
-- The five-source baseline in ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 v0.1.0.
-- The current Phase 0 Workplan and repository file records.
-- The preparatory governance, document-control, repository-governance, and archival-procedure drafts.
-- The source cross-reference map and documentary issue register, both working drafts.
+1. [ERX-DOCUMENT-CONTROL-001 v1.0.0](ERX-DOCUMENT-CONTROL-001.md) controls persistent IDs, versions, lifecycle states, metadata, authorship/review/approval and traceability.
+2. WP-0.3 accepted decision record controls hierarchy, subject-matter authority, issue dispositions and source relationships.
+3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
+4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
+5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; the response reported `truncated=false`.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It preserves existing catalogue IDs and adds inventory entries for paths absent from the previous CSV. Newly added records explicitly mark header/version/lifecycle reconciliation pending rather than inventing those values.
 
-Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original filenames are retained. Source-file presence in the repository is distinguished from the existence of an inventory record.
+## 3. Foundational source baseline
 
-## 3. Master Document Register
+| Index ID | Source ID | Title | Source version | Repository path | Evidence/status |
+|---|---|---|---|---|---|
+| IDX-001 | ERX-PROT-001 / FND-001 | ERX byLAEV Institutional Protocol | 1.1 | `docs/ERX byLAEV 1.pdf` | Original archived; byte identity accepted under WP-0.2 dossier |
+| IDX-002 | ERX-ATLAS-001 / FND-002 | Institutional Atlas of ERX byLAEV Flow Diagrams and Operation | 1.1 | `docs/ERX-ATLAS-001 v1.pdf` | Internal v1.1; supplied filename retained; byte identity accepted |
+| IDX-003 | UTXO-911-001 / FND-003 | UTXO de Comunicación 911 byLAEV | 1.0 | `docs/UTXO DE COMUNICACIÓN 911 byLAEV.pdf` | Original archived; byte identity accepted |
+| IDX-004 | ERX-ROADMAP-001 / FND-004 | Master Phase Plan for ERX Development, Implementation and Institutional Homologation | 1.0 | `docs/### ERX-ROADMAP-001.pdf` | Original archived; byte identity accepted |
+| IDX-005 | NOT_STATED / FND-005 | Technical Response to the Observations on ERX-ROADMAP-001 | NOT_STATED | `docs/Respuesta técnica a las observaciones de ERX-ROADMAP-001.pdf` | Supplied response; source does not state formal ID/version; byte identity accepted |
+| IDX-016 | ERX-CONSENSUS-001 | ERX byLAEV — Documento normativo, Protocolo de Consenso | 0.1 — Propuesta normativa | `docs/Consenso ERX byLAEV` and PDF counterpart | Identity/content confirmed; remains proposal for review; DOC-ISS-011 controls operational completeness/authority |
 
-| Index ID | Document ID / Source ID | Title / description | Version | Class | Lifecycle / control status | Canonical path / source location | Notes |
-|---|---|---|---|---|---|---|---|
-| IDX-001 | FND-001 / ERX-PROT-001 | ERX byLAEV Institutional Protocol | 1.1 | Foundational source | ARCHIVED_HASH_VERIFIED | `docs/ERX byLAEV 1.pdf` | SHA-256 and Git blob identity verified; see WP-0.2 dossier |
-| IDX-002 | FND-002 / ERX-ATLAS-001 | Institutional Atlas of ERX byLAEV Flow Diagrams and Operation | 1.1 | Foundational source | ARCHIVED_HASH_VERIFIED | `docs/ERX-ATLAS-001 v1.pdf` | Internal version 1.1; filename says v1; byte identity verified |
-| IDX-003 | FND-003 / UTXO-911-001 | UTXO de Comunicación 911 byLAEV | 1.0 | Foundational source | ARCHIVED_HASH_VERIFIED | `docs/UTXO DE COMUNICACIÓN 911 byLAEV.pdf` | Three-stage communication UTXO cycle; byte identity verified |
-| IDX-004 | FND-004 / ERX-ROADMAP-001 | Master Phase Plan for ERX Development, Implementation and Institutional Homologation | 1.0 | Foundational planning source | ARCHIVED_HASH_VERIFIED | `docs/### ERX-ROADMAP-001.pdf` | Roadmap references additional sources; byte identity verified |
-| IDX-005 | FND-005 / ID NOT STATED | Technical Response to the Observations on ERX-ROADMAP-001 | NOT_STATED | Response / review artifact | ARCHIVED_HASH_VERIFIED | `docs/Respuesta técnica a las observaciones de ERX-ROADMAP-001.pdf` | Formal identifier/version not stated; byte identity verified |
-| IDX-006 | ERX-PHASE-0-CHARTER-001 | Phase 0 Charter | 1.0.0 | Governance artifact | APPROVED by LAEV | `docs/phase-0/ERX-PHASE-0-CHARTER-001.md` | WP-0.1 approval; not equivalent to Phase 0 closure |
-| IDX-007 | ERX-WP-PHASE-0-001 | WORKPLAN-PHASE-0 | 1.0.4 | Governance / planning artifact | DRAFT / PENDING APPROVAL | `WORKPLAN-PHASE-0.md` | Workplan is a tracking instrument, not an approval record |
-| IDX-008 | ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 | Foundational Source Inventory | 0.3.0 | Register / WP-0.2 artifact | WP-0.2 BASELINE APPROVED | `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md` | Five-source baseline accepted by LAEV 2026-11-23; later discoveries tracked separately |
-| IDX-009 | ID NOT STATED | Foundational materials README / custody guidance | NOT_STATED | Repository support artifact | NOT_VERIFIED | `docs/foundational/README.md` | Existing file referenced by Workplan |
-| IDX-010 | ID NOT STATED | Foundational material CSV register | NOT_STATED | Machine-readable register | NOT_VERIFIED | `registers/foundational-material-register.csv` | Existing file referenced by Workplan |
-| IDX-011 | ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001 | Exact-Byte Preservation Procedure for Foundational PDF Sources | 0.1.0 | WP-0.2 working procedure | WORKING PROCEDURE — NOT APPROVED | `docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md` | Procedure applied; exact-byte verification evidenced in WP-0.2 dossier |
-| IDX-012 | ERX-DOCUMENT-GOVERNANCE-001 | Document Organization and Hierarchy | 0.5.0 | WP-0.3 development artifact | WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-GOVERNANCE-001.md` | WP-0.3 proposal; LAEV hierarchy decision pending |
-| IDX-013 | ERX-DOCUMENT-CONTROL-001 | Document Identification and Control | 0.2.0 | WP-0.4 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` | Formal WP-0.4 blocked by WP-0.3 |
-| IDX-014 | ERX-REPOSITORY-GOVERNANCE-001 | Repository Identity, Structure and Governance | 0.1.0 | WP-0.5 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md` | Formal WP-0.5 blocked by WP-0.3 and WP-0.4 |
-| IDX-016 | ERX-CONSENSUS-001 | | ERX byLAEV — Documento normativo, Protocolo de Consenso | 0.1 — Propuesta normativa | Referenced foundational source / consensus framework | SOURCE IDENTITY CONFIRMED — PROPOSAL FOR REVIEW | `docs/Consenso ERX byLAEV` | | Text source directly declares ID/version/status/authorship and matches Roadmap citation; contents inspected. PDF counterpart also present; DOC-ISS-011 governs completeness/authority |
-| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 1.0.9 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | Current provisional register; WP-0.6 acceptance pending |
+ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supplied sources and repository evidence (DOC-ISS-003). This does not establish that it does not exist elsewhere.
 
-| IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.2.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
-| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.9.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eleven issues tracked; DOC-ISS-002 and DOC-ISS-008 evidence-resolved; DOC-ISS-011 tracks consensus proposal completion/authority |
-| IDX-020 | NOT_STATED | Machine-readable documentary issue register | NOT_STATED | WP-0.3 supporting register | WORKING REGISTER — NOT APPROVED | `registers/document-issue-register.csv` | Companion to ERX-DOCUMENT-ISSUE-REGISTER-001 |
-| IDX-021 | ERX-WP-0.2-COMPLETION-DOSSIER-001 | WP-0.2 Foundational Materials Completion Dossier | 0.2.0 | Phase 0 evidence dossier | EVIDENCE ACCEPTED UNDER WP-0.2 | `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md` | Header records historical submission status; approval is in separate approval record |
-| IDX-022 | ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001 | WP-0.2 Source Inspection and Bounded Comparison | 0.1.0 | Working evidence record | ACCEPTED AS WP-0.2 BASELINE EVIDENCE | `docs/phase-0/ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001.md` | Bounded comparison only; no hierarchy or conflict adjudication |
-| IDX-023 | ERX-WP-0.2-LAEV-REVIEW-AND-DISPOSITION-001 | WP-0.2 LAEV Review and Disposition Record | 0.1.0 | Historical decision form | HISTORICAL — SUPERSEDED BY APPROVAL RECORD | `docs/phase-0/ERX-WP-0.2-LAEV-REVIEW-AND-DISPOSITION-001.md` | Retained as original pending form; formal approval is ERX-WP-0.2-APPROVAL-RECORD-001 |
-| IDX-024 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | WP-0.3 Preparatory Issue Review Matrix | 0.1.0 | Preparatory analysis artifact | NOT_APPROVED — WP-0.3 FORMAL EXECUTION AUTHORIZED — DECISIONS PENDING | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Source issues organized; formal WP-0.2 acceptance recorded; LAEV decisions remain required |
+## 4. Phase 0 document and artifact coverage
 
-| IDX-025 | ERX-WP-0.2-APPROVAL-RECORD-001 | Formal Acceptance of Foundational Materials | 1.0.0 | Approval record | APPROVED — LAEV 2026-11-23 | `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` | Authoritative record of WP-0.2 acceptance | 
-| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Consensus Source Identity and Status | 0.2.0 | Supplemental evidence note | PUBLISHED — IDENTITY CONFIRMED; PROPOSAL STATUS | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Text source `docs/Consenso ERX byLAEV` confirms Roadmap-cited ERX-CONSENSUS-001 v0.1; proposal lifecycle remains | 
- 
-| IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.7.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
-| IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.9.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; source-confirmed availability separation; DOC-ISS-009 structural mapping; consensus source confirmed; LAEV hierarchy/authority decisions pending |
-| IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.8.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
-| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.7.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Source text confirms ERX-CONSENSUS-001 identity/content; DOC-ISS-009 structural divergence; DOC-ISS-010 detail pending; DOC-ISS-011 operational consensus completion |
+The complete live repository path inventory is the recursive tree snapshot `f65683b5926cb8e53cb2ab6b75be810dd28a5fe6` (`truncated=false`). The CSV companion contains the path-level inventory, including previously unindexed Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs.
 
-| IDX-031 | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 | Documentary Authority, UTXO Mapping and Open Source Dispositions | 0.3.0 | Decision proposal package | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-PACKAGE-001.md` | Options and recommendations only; no decisions approved |
+Current accepted package states:
+- WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.
+- WP-0.3: COMPLETED / ACCEPTED; decision record `ERX-WP-0.3-LAEV-DECISION-RECORD-001`; DOC-ISS-003 remains bounded limitation, DOC-ISS-010/011 deferred.
+- WP-0.4: COMPLETED / ACCEPTED; `ERX-DOCUMENT-CONTROL-001` v1.0.0 approved.
+- WP-0.5: COMPLETED / ACCEPTED; `ERX-WP-0.5-ACCEPTANCE-RECORD-001` v1.0.0.
 
-| IDX-032 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | Preparatory Issue Analysis — Document Hierarchy and Authority | 0.4.0 | WP-0.3 issue analysis | FORMAL WP-0.3 AUTHORIZED; MATRIX NOT APPROVED | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Corrected gate; not a decision record |
-| IDX-033 | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 | Subject-Matter Authority and Scope Matrix | 0.3.0 | WP-0.3 authority proposal | PENDING LAEV APPROVAL | `docs/phase-0/ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.md` | Refined with exact source-page evidence |
+Current WP-0.6 execution artifacts:
+- `ERX-WP-0.6-INITIATION-RECORD-001` v1.0.0 — EXECUTION INITIATED.
+- `ERX-MASTER-DOCUMENT-INDEX-001` v1.1.0 — controlled reconciliation draft.
+- `registers/document-register.csv` — synchronized inventory extension; records with METADATA_RECONCILIATION_PENDING remain open work, not accepted metadata.
 
-| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.5.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
+## 5. Classification model
 
-| IDX-036 | ERX-CONSENSUS-SOURCE-INSPECTION-001 | Consensus Source Inspection and Scope Record | 0.1.0 | WP-0.3 source inspection evidence | PREPARATORY — PENDING LAEV DISPOSITION | `docs/phase-0/ERX-CONSENSUS-SOURCE-INSPECTION-001.md` | Direct text review confirms source identity, Triple Consensus content, explicit exclusions and DOC-ISS-011 scope |
+Apply the approved document-control and hierarchy policies:
+- Foundational source / planning source.
+- Controlled governance or normative document.
+- Work-package execution, decision, approval, acceptance, review, audit or evidence record.
+- Register / machine-readable register.
+- Supporting procedure, map, matrix or methodology.
+- Historical draft / superseded / withdrawn artifact.
+- Source derivative or extracted text; never silently substitute for the supplied original.
 
-## 4. Referenced Sources and Identity Status
+For each entry, preserve the exact source-native title, document ID and version when stated. A catalogue-only Index ID is used where a source has no formal identifier. The CSV's pending metadata state is intentionally explicit pending reconciliation of the full headers and governing approval records.
 
-| Reference | Description in ERX-ROADMAP-001 | Version | Current status | Required action |
-|---|---|---|---|---|
-| ERX-CONSENSUS-001 | Consensus framework | 0.1 | SOURCE IDENTITY CONFIRMED — PROPOSAL FOR REVIEW | Text source matches Roadmap; LAEV disposition and operational specification/acceptance criteria tracked DOC-ISS-011 |
-| ERX-IMPL-PROPOSAL-001 | Institutional implementation proposal | NOT_STATED | NOT LOCATED / UNVERIFIED | Locate original; inspect identity, version, provenance, contents, and status |
+## 6. Status and relationship controls
 
-For ERX-IMPL-PROPOSAL-001, NOT LOCATED is bounded to the five supplied PDFs and repository tree/search results inspected; it does not establish non-existence elsewhere. ERX-CONSENSUS-001 v0.1 is confirmed by direct text-source inspection; its proposal status and operational completion are distinct from source identity.
+Document lifecycle status is taken from the exact controlled document and its decision/approval record. Historical headers are not overwritten by later approvals; instead, the index records the current disposition and points to the controlling approval/closeout record.
 
-## 5. Document Classifications
+Relationships must be source-backed and typed, including:
+- cites / referenced by;
+- graphically represents;
+- derived from / supporting evidence for;
+- approves / accepts / closes;
+- supersedes / superseded by;
+- companion register for;
+- dependency of / prerequisite for.
 
-The following classifications are provisional and based on the foundational inventory and currently observed repository records:
+A relationship does not itself imply normative precedence. WP-0.3's subject-matter authority rules remain controlling.
 
-- **Foundational sources:** original protocol, Atlas, UTXO communication specification and Roadmap (FND-001–FND-004).
-- **Supporting response/review artifact:** Technical Response to ERX-ROADMAP-001 (FND-005); it is not a normative source or Roadmap amendment absent express approval.
-- **Governance artifacts:** Phase 0 Charter and Workplan.
-- **Registers:** foundational material register, CSV register, and this provisional master index.
-- **Working procedures:** foundational archive procedure.
-- **Development artifacts:** document governance, document control, and repository governance drafts.
-- **Unverified support artifacts:** foundational README and CSV metadata not yet re-inspected in this index activity.
+## 7. Pending-source and metadata register
 
-Final classification and subject-matter authority remain subject to WP-0.3 approval.
-
-## 6. Version and Status Rules Applied in This Baseline
-
-This index preserves versions and statuses as recorded in the inspected source documents and repository records. It does not retroactively impose the proposed versioning convention in ERX-DOCUMENT-CONTROL-001.
-
-Distinguish:
-- Document lifecycle status (for example APPROVED, DRAFT, NOT_APPROVED).
-- Work package execution status (for example IN_PROGRESS, BLOCKED, NOT_STARTED).
-- Repository presence or archival status.
-- Source verification status.
-
-These dimensions are not interchangeable. In particular, a source may be inventoried while its repository archival is pending; a draft may be published while remaining unapproved.
-
-## 7. Known Relationships
-
-| Source / artifact | Relationship | Target |
+| Item | Current status | Required handling |
 |---|---|---|
-| ERX-ATLAS-001 v1.1 | Graphically represents / relates to | ERX-PROT-001 v1.1 |
-| UTXO-911-001 v1.0 | Foundational functional source cited by | ERX-ROADMAP-001 v1.0 |
-| ERX-PROT-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
-| ERX-ATLAS-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
-| `Consenso ERX byLAEV` (text) and PDF counterpart | Text source directly confirms cited ERX-CONSENSUS-001 v0.1; proposal for review; operational completion DOC-ISS-011 | ERX-ROADMAP-001 v1.0 |
-| ERX-IMPL-PROPOSAL-001 | Referenced source; not located | ERX-ROADMAP-001 v1.0 |
-| Technical Response to ERX-ROADMAP-001 | Responds to observations concerning | ERX-ROADMAP-001 v1.0 |
-| ERX-PHASE-0-CHARTER-001 v1.0.0 | Authorizes Phase 0 governance and preparation scope | FASE 0 |
-| ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 v0.1.0 | Inventories | FND-001 through FND-005 |
-| ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001 v0.1.0 | Defines preservation method for | FND-001 through FND-005 |
-| ERX-DOCUMENT-GOVERNANCE-001 v0.2.0 | Proposes hierarchy and document authority rules | ERX document set |
-| ERX-DOCUMENT-CONTROL-001 v0.1.0 | Proposes identifiers, versions, statuses, metadata and approval records | ERX controlled documents |
-| ERX-REPOSITORY-GOVERNANCE-001 v0.1.0 | Proposes repository organization and governance | ERX GitHub repository |
+| ERX-IMPL-PROPOSAL-001 | NOT LOCATED / UNVERIFIED (DOC-ISS-003) | Retain as missing referenced source; obtain original or formal disposition before dependent institutional decision |
+| ERX-CONSENSUS-001 v0.1 | Identity confirmed; proposal for review (DOC-ISS-011) | Do not label approved/operational; preserve unresolved quorum, validator, conflict and detailed UTXO rules |
+| FND-005 formal ID/version/date | NOT_STATED in supplied source | Preserve unknown values; catalogue separately |
+| Legacy WP-0.3 draft headers | Historical versions/statuses | Link to accepted decision and closeout records; do not rewrite historical artifacts |
+| Newly inventoried repository paths | METADATA_RECONCILIATION_PENDING where marked in CSV | Inspect exact headers and approval records; update entries only with evidence |
+| Root LICENSE/COPYRIGHT | Not present in WP-0.5 verified tree; no license assigned | Do not infer a reuse grant |
 
-Relationships above reflect explicit source references or clearly stated document purpose. They do not constitute a final precedence hierarchy.
+## 8. Reconciliation controls and open work
 
-## 8. Pending and Unresolved Records
+The previous v1.0.9 draft and CSV were not internally consistent with the current repository and accepted WP-0.3–WP-0.5 status records. This revision preserves historical catalogue IDs and expands path coverage, but does not falsely claim final metadata reconciliation.
 
-1. LAEV disposition of consensus source proposal status and DOC-ISS-011 operational completion/authority; DOC-ISS-002 identity is evidence-confirmed.
-2. Locate and inspect or formally disposition ERX-IMPL-PROPOSAL-001 (DOC-ISS-003).
-3. Complete and approve WP-0.3 hierarchy and subject-matter authority.
-4. Complete and approve WP-0.4 document identification and control.
-5. Inspect and approve repository settings and governance under WP-0.5.
-6. Reconcile document classification and status after governing policies are approved.
-7. Verify README and CSV register metadata and contents against canonical records.
+Remaining WP-0.6 work:
+1. Inspect each newly inventoried controlled Markdown artifact's exact header and revision history; record its actual version and lifecycle status.
+2. Reconcile historical WP-0.3 and WP-0.4 draft versions against their controlling acceptance/decision records.
+3. Ensure every file path has exactly one catalogue entry and every formal ID is unique; resolve duplicate/stale catalogue IDs without deleting history.
+4. Reconcile titles, classifications, source locations, and typed relationships across Markdown and CSV.
+5. Verify all cross-references and canonical paths against the live tree.
+6. Review the final consolidated index and CSV for consistency, missing records and unsupported status claims.
+7. Produce WP-0.6 completion matrix, internal review, readiness report, closeout audit and LAEV conditional acceptance record.
 
-| IDX-037 | ERX-WP-0.3-LAEV-DECISION-RECORD-001 | Formal Disposition of WP-0.3 Documentary and Architectural Decisions | 1.0.0 | LAEV decision / approval record | APPROVED — LAEV 2026-11-24 | `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-RECORD-001.md` | DP-01–DP-09 and DOC-ISS-001–011 dispositions; WP-0.3 closeout authority |
+## 9. WP-0.6 status
 
-## 9. WP-0.6 Status and Acceptance
+**WP-0.6: IN_PROGRESS — formally initiated.**
 
-**Status: BLOCKED — PROVISIONAL PREPARATORY DRAFT ONLY.**
+The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.1.0 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain in progress until the metadata and consistency checks above have evidence.
 
-This index establishes an initial, traceable baseline but does not satisfy final WP-0.6 acceptance.
+LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 
-Formal completion requires:
-1. WP-0.2 through WP-0.5 to be completed and accepted under their applicable approval gates.
-2. All documents and source artifacts to be reconciled against the approved classification and document-control rules.
-3. Missing and unverified sources to be located or formally dispositioned.
-4. Every controlled document to have consistent identifier, version, class, status, location, and relationships.
-5. The CSV and Markdown registers to be reconciled.
-6. LAEV to review and expressly approve the consolidated master index.
-
-**This document does not close WP-0.3 through WP-0.6, approve the Workplan, or authorize Phase 1. WP-0.2 remains APPROVED under its separate approval record.**
+WP-0.7 remains blocked until WP-0.6 is completed and accepted. Phase 0 remains OPEN; Phase 1 is NOT AUTHORIZED.
 
 ---
 End of ERX-MASTER-DOCUMENT-INDEX-001

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-RELATIONSHIP-MAP-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | WORKING EVIDENCE — PENDING REVIEW |
 | Work Package | WP-0.3 / Activity 0.3.5 |
 | Project | ERX-911-System-byLAEV |
@@ -31,12 +31,12 @@ Record relationships supported by direct source references and content inspectio
 | ERX-ROADMAP-001 v1.0 | ERX-PROT-001 v1.1 | Foundational reference | Roadmap Section 1 foundation | Does not mean Roadmap rewrites Protocol |
 | ERX-ROADMAP-001 v1.0 | ERX-ATLAS-001 v1.1 | Foundational reference | Roadmap Section 1 foundation | Atlas remains its own source |
 | ERX-ROADMAP-001 v1.0 | UTXO-911-001 v1.0 | Foundational reference | Roadmap Section 1 foundation | Functional relationship needs detailed alignment |
-| ERX-ROADMAP-001 v1.0 | ERX-CONSENSUS-001 v0.1 | Unverified reference | Roadmap cites source | Content and provenance unavailable |
+| ERX-ROADMAP-001 v1.0 | ERX-CONSENSUS-001 v0.1 | Cited reference with candidate located | Roadmap citation; candidate `docs/Consenso ERX byLAEV.pdf` located after WP-0.2 approval | Candidate internal identity, version and contents not yet verified against the Roadmap reference |
 | ERX-ROADMAP-001 v1.0 | ERX-IMPL-PROPOSAL-001 | Unverified reference | Roadmap cites source | Content and provenance unavailable |
 | FND-005 Technical Response | ERX-ROADMAP-001 v1.0 | Response/review | Title and two-page content | Not an amendment without express approval evidence |
 | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1 | Graphical representation | Protocol three-transaction lifecycle; Atlas Plates 01–04 and 05–08 | Exact clause-to-plate verification remains bounded by the Atlas correspondence table |
-| UTXO-911-001 v1.0 | ERX-PROT-001 v1.1 | Functional elaboration / overlapping scope | UTXO Sections 1–8 and Protocol Sections 5–10 | UTXO request/acceptance and agent-availability states require explicit mapping; no contradiction or precedence is presumed |
-| WP-0.2 | WP-0.3 | Governance dependency | Workplan Section 4 and WP-0.3 dependency | WP-0.2 acceptance authorizes WP-0.3 |
+| UTXO-911-001 v1.0 | ERX-PROT-001 v1.1 / ERX-ATLAS-001 v1.1 | Structural state-model divergence requiring disposition | UTXO Sections 2.1–2.5 and 3.1; Protocol Step 15 (PDF p.13); Atlas Plates 02–03 | UTXO-911 creates a separate call-acceptance UTXO before the initial-protocol UTXO; Protocol/Atlas create UTXO 02 directly from UTXO 01 with contact and initial-protocol result. LAEV must decide separate spendable output vs acceptance event/sub-state; see DOC-ISS-009 / DP-02 |
+| UTXO-911-001 v1.0 | ERX-ROADMAP-001 v1.0 / Technical Response FND-005 | Functional support for an independently linked agent-availability cycle | UTXO Sections 4.5–5 (PDF pp.8–9); Roadmap Section 3.1 (PDF p.3); Technical Response p.1 | Roadmap expressly establishes two related but independent cycles; the unresolved work is detailed state-machine specification, not architectural separation |\n| WP-0.2 | WP-0.3 | Governance dependency | Workplan Section 4 and WP-0.3 dependency | WP-0.2 acceptance authorizes WP-0.3 |
 | WP-0.3 | WP-0.4 | Governance dependency | Workplan WP-0.4 dependency | WP-0.4 formal execution remains blocked until WP-0.3 is completed and approved |
 | WP-0.3 | WP-0.5 | Governance dependency | Workplan WP-0.5 dependency | WP-0.5 formal execution remains blocked until WP-0.3 and WP-0.4 are approved |
 | WP-0.2 through WP-0.5 | WP-0.6 | Governance dependency | Workplan WP-0.6 dependency | Master index formal acceptance requires these packages |
@@ -44,12 +44,13 @@ Record relationships supported by direct source references and content inspectio
 ## 4. Functional alignment observations
 - ERX-PROT-001 v1.1 Sections 1–9 define three communication transactions and their institutional purpose.
 - ERX-PROT-001 v1.1 Section 10 defines mandatory uniqueness and double-spend prevention properties.
-- UTXO-911-001 v1.0 Sections 2–4 describe call request/acceptance, operator protocol, closure and new availability state.
-- UTXO-911-001 v1.0 Sections 4.5–6 explicitly describe an agent-availability UTXO and prevention of simultaneous incompatible acceptances.
+- UTXO-911-001 v1.0 Sections 2.1–2.5 describe call request and a separate call-acceptance UTXO; Section 3.1 describes a further initial-protocol UTXO; Sections 4.1–4.5 describe communication closure and a new agent-availability output.
+- ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3) expressly adopts Cycle A — three communication UTXOs — and Cycle B — the separate agent-availability state cycle.
+- Technical Response to ERX-ROADMAP-001, page 1, supports independent cycles for 911 communication and agent availability.
 - ERX-ATLAS-001 v1.1 Plates 02–04 correspond to the three communication stages; Plate 05 depicts the UTXO double-spend engine; Plate 06 depicts OTS; Plates 07–08 depict exception/continuity and verification/privacy.
 - Atlas's own correspondence table maps Protocol purpose/architecture to Plate 01; participants and prerequisites to Plates 01–02; transaction 1 to Plate 02; transaction 2 to Plate 03; transaction 3 to Plate 04; uniqueness to Plate 05; OTS to Plate 06; exceptions and continuity to Plate 07; privacy and verification to Plate 08.
 
-These are source-derived observations. They do not decide whether UTXO-911's additional availability state is an independent sub-system, an extension, or a required component of the ERX protocol.
+These are source-derived observations. The independence of the agent-availability cycle is expressly stated in Roadmap 3.1. The remaining structural question is the representation of call acceptance in UTXO-911 versus the direct UTXO 01 → UTXO 02 transition in Protocol/Atlas.
 
 ## 5. Work package dependencies
 The official Workplan dependency chain is:
@@ -65,11 +66,11 @@ The official Workplan dependency chain is:
 - WP-0.1 through WP-0.11 feed WP-0.12.
 
 ## 6. Open relationships
-1. Exact mapping of UTXO-911 request and acceptance states to ERX-PROT UTXO 01–03.
-2. Scope and lifecycle of the separate agent-availability UTXO.
+1. Exact mapping of UTXO-911's separate call-acceptance output to Protocol UTXO 01 → UTXO 02 (DOC-ISS-009).
+2. Detailed transitions, permissions, release and recovery conditions for the Roadmap's independent agent-availability cycle (DOC-ISS-010; architectural separation already source-confirmed).
 3. Normative force of each Atlas plate in the event of textual divergence.
 4. Formal effect, if any, of the Technical Response on Roadmap.
-5. Role of the two cited but unavailable sources.
+5. Identity of the candidate consensus PDF and the still-unlocated implementation proposal.
 
 ## 7. Status
 **WORKING EVIDENCE — PENDING REVIEW.** This map supports WP-0.3.5 and the issue register. It does not approve a hierarchy, settle subject authority, or release downstream work packages.

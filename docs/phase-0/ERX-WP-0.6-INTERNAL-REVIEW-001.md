@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.3.0 |
-| Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
+| Version | 0.3.1 |
+| Status | COMPLETED — ACCEPTANCE EVIDENCE REVIEWED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
 | Date | 2026-11-24 |
@@ -99,13 +99,13 @@ No classification change or source amendment was necessary to pass this consiste
 
 ### 2.8 Synchronization state
 
-The following controlled documents were updated to reflect the second-pass evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.4.
+The following controlled documents now reflect the final WP-0.6 closeout evidence:
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.5.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
-- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.8.
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.1.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2.
-- WORKPLAN-PHASE-0.md v1.4.3.
-- This review v0.3.0.
+- WORKPLAN-PHASE-0.md v1.4.4.
+- This review v0.3.1.
 
 The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA verified in this review was `8e739a344d72cd15b7e702a9ea719de228054735`; the index baseline SHA remains a historical pre-refresh snapshot by design.
 
@@ -121,15 +121,13 @@ The Master Index records the immediately pre-index-refresh baseline tree. A sepa
 | IR-0.6-06 | Earlier index/matrix/Workplan snapshots used stale counts and versions. | Updated the controlled working documents; final post-write snapshot synchronization remains. |
 | IR-0.6-07 | The CSV register itself previously lacked its formal identity/version/status in the current catalogue. | Restored ERX-DOCUMENT-REGISTER-001 identity and v1.2.1 register metadata in the machine-readable companion; final schema check remains. |
 
-## 4. Remaining acceptance blockers
+## 4. Closeout disposition
 
-1. Prepare the final acceptance-readiness report against the nine activities and the Workplan acceptance criterion.
-2. Run the final post-write recursive-tree/CSV synchronization check after the readiness and closeout artifacts are published.
-3. Prepare the closeout audit and record conditional acceptance only if the final synchronization and all acceptance criteria pass.
+The readiness report v1.0.0 and closeout audit v1.0.0 were completed. LAEV's standing conditional acceptance was applied in ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.0 after the nine activities and Workplan criterion were verified. WP-0.6 is COMPLETED / ACCEPTED; WP-0.7 dependency gate is released. No implementation or Phase 1 authorization is implied.
 
 ## 5. Review conclusion
 
-**WP-0.6 remains IN_PROGRESS — NOT READY FOR ACCEPTANCE.**
+**WP-0.6 is COMPLETED / ACCEPTED** under the recorded conditional acceptance.
 
 The semantic catalogue review, formal-ID namespace check, classification-to-hierarchy check, relationship cross-check and structural/path audit have passed with documented limitations. The readiness report, final post-write synchronization and closeout audit remain outstanding.
 

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.2.8 |
+| Version | 0.3.0 |
 | Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -58,7 +58,7 @@ The five original PDFs remain the accepted WP-0.2 baseline FND-001–FND-005. Th
 
 ### 2.4 Relationships and cross-references
 
-The derivative relationship supplement ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.1 was cross-checked against:
+The derivative relationship supplement ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2 was cross-checked against:
 - The approved WP-0.3 relationship baseline.
 - DP-01–DP-09 and DOC-ISS-001–011 dispositions.
 - The approved WP-0.4 document-control baseline and DC-01–DC-09.
@@ -69,7 +69,35 @@ The relationship types remain descriptive and do not create precedence. The miss
 
 Explicit Markdown hyperlinks in the Workplan, master index, WP-0.6 completion matrix and WP-0.2 completion dossier were checked against repository paths or external-target form. No broken local Markdown hyperlink was found in the inspected linked documents. The Workplan and index links to WP-0.6 deliverables resolve to live repository paths. This statement is limited to explicit Markdown hyperlinks inspected; it is not a claim that every prose code-formatted reference in every historical file has been exhaustively parsed.
 
-### 2.5 Synchronization state
+
+### 2.6 Formal document identifier namespace — final cross-check
+
+A repository-wide pass inspected the opening metadata/header of all 56 Markdown files on the recursive main-branch tree and compared controlled document IDs with the catalogue's formal-ID field and the register's own identity.
+
+Results:
+- No duplicate catalogue IDs (IDX-xxx) and no duplicate repository paths.
+- The formal register identity ERX-DOCUMENT-REGISTER-001 v1.2.1 is unique among the controlled current register/document identities; it is not reused by another controlled document.
+- Three source-native IDs appear twice in the catalogue by design: ERX-PROT-001, ERX-ATLAS-001 and UTXO-911-001 each identify an immutable original PDF and its separately classified plain-text companion. Each pair has a distinct IDX key and path, and the derivative/source relationship is explicit. These are not collisions between two independently assigned controlled-document IDs.
+- Ten catalogue rows retain NOT_STATED for source-native ID because the item is a response without a stated ID, README/navigation artifact, machine-readable register, or source companion whose opening metadata does not assign one. No ID was fabricated. For controlled Markdown documents, the declared Document ID/Identifier in the opening control block matches its document identity; Workplan uses its separately stated identifier ERX-WP-PHASE-0-001.
+- The unlocated ERX-IMPL-PROPOSAL-001 remains a reference-only identifier under DOC-ISS-003, not a locally controlled document whose header can be validated.
+
+**Result: PASS with explicitly documented source/derivative reuse and NOT_STATED exceptions; no unresolved formal-ID collision found.**
+
+### 2.7 Classification-to-hierarchy consistency — final cross-check
+
+The 74 catalogue classifications were compared with the approved ERX-DOCUMENT-HIERARCHY-MATRIX-001 v1.0.0, ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 v1.0.0, ERX-DOCUMENT-CONTROL-001 v1.0.0, and the accepted WP-0.3 DP-01–DP-09 dispositions.
+
+- FND-001–FND-004 remain separately classified foundational protocol, graphical, functional and planning sources; FND-005 remains a technical response/review artifact with its source-native metadata gaps preserved.
+- ERX-CONSENSUS-001 v0.1 remains a proposal for review, not an approved operational protocol. ERX-IMPL-PROPOSAL-001 remains a NOT_LOCATED reference.
+- Original PDFs and text companions remain distinct source/artifact classes with traceable relationships; companion identity does not replace the original source.
+- WP-0.2 through WP-0.6 governance, decision, audit, approval, register and execution artifacts are classified by their documentary function and work-package role. Machine-readable CSVs and README/navigation artifacts are not misclassified as normative protocol sources.
+- Source-declared statuses, lifecycle statuses, evidence verification, archival custody and repository presence remain separate; NOT_STATED and NOT_VERIFIED values are retained where source evidence does not support a stronger assertion.
+
+No classification change or source amendment was necessary to pass this consistency check. The approved WP-0.3 hierarchy remains unchanged.
+
+**Result: PASS — catalogue classification is consistent with the approved hierarchy/authority framework within its scoped functions and recorded limitations.**
+
+### 2.8 Synchronization state
 
 The following controlled documents were updated to reflect the second-pass evidence:
 - ERX-MASTER-DOCUMENT-INDEX-001 v1.4.4.
@@ -77,9 +105,9 @@ The following controlled documents were updated to reflect the second-pass evide
 - ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.8.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2.
 - WORKPLAN-PHASE-0.md v1.4.3.
-- This review v0.2.8.
+- This review v0.3.0.
 
-The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA is retained in the current review execution evidence; the index baseline SHA remains a historical pre-refresh snapshot by design.
+The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA verified in this review was `8e739a344d72cd15b7e702a9ea719de228054735`; the index baseline SHA remains a historical pre-refresh snapshot by design.
 
 ## 3. Findings
 
@@ -95,15 +123,15 @@ The Master Index records the immediately pre-index-refresh baseline tree. A sepa
 
 ## 4. Remaining acceptance blockers
 
-1. Complete a final formal source-ID uniqueness check across all controlled Markdown headers, including verification that ERX-DOCUMENT-REGISTER-001 is not reused by another current controlled document. Repeated IDs on source derivatives remain permitted only where the derivative classification and source relationship make that reuse explicit; any ambiguous case must be resolved before acceptance.
-2. Complete the final class-to-hierarchy consistency check against the approved WP-0.3 hierarchy and WP-0.4 document-control policy, preserving source/derivative distinctions and NOT_STATED values.
-3. Complete a final acceptance-readiness assessment and closeout audit against all nine WP-0.6 activities and the Workplan acceptance criterion.
+1. Prepare the final acceptance-readiness report against the nine activities and the Workplan acceptance criterion.
+2. Run the final post-write recursive-tree/CSV synchronization check after the readiness and closeout artifacts are published.
+3. Prepare the closeout audit and record conditional acceptance only if the final synchronization and all acceptance criteria pass.
 
 ## 5. Review conclusion
 
 **WP-0.6 remains IN_PROGRESS — NOT READY FOR ACCEPTANCE.**
 
-The second-pass semantic catalogue review, baseline structural checks, relationship cross-check and explicit Markdown hyperlink checks have materially advanced. The post-index structural verification, 74-row/16-column CSV validation, path coverage, duplicate checks, relationship cross-check, explicit Markdown hyperlink checks and version synchronization have passed. Final formal-ID namespace uniqueness, final classification-to-hierarchy consistency, readiness report and closeout audit remain outstanding.
+The semantic catalogue review, formal-ID namespace check, classification-to-hierarchy check, relationship cross-check and structural/path audit have passed with documented limitations. The readiness report, final post-write synchronization and closeout audit remain outstanding.
 
 No activity is declared complete solely because a file was published. No WP-0.6 acceptance is recorded by this review. WP-0.7 remains blocked until WP-0.6 is completed and accepted.
 

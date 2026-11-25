@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.3.7 |
+| Version | 1.3.8 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `a08ef850c7936e7ee3e7aa84b62a099c3b013cbc` (`truncated=false`, 73 live paths; immediately pre-index-refresh snapshot) |
+| Live tree snapshot | `a7c071a9c6e5d30d5f83edd2e4fa633023758f5e` (`truncated=false`, 73 live paths; immediately pre-index-refresh snapshot) |
 
 ## 1. Purpose and control boundary
 
@@ -57,7 +57,7 @@ Current accepted package states:
 
 Current WP-0.6 execution artifacts:
 - `ERX-WP-0.6-INITIATION-RECORD-001` v1.0.0 — EXECUTION INITIATED.
-- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.7 — controlled reconciliation draft.
+- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.8 — controlled reconciliation draft.
 - `registers/document-register.csv` — 73 catalogue records planned after adding IDX-076: 72 live repository paths plus one NOT_LOCATED referenced source. Last verified pre-addition tree check found no duplicate IDs/paths, missing live paths or stale paths; final recheck pending.
 
 ## 5. Classification model
@@ -115,7 +115,7 @@ Remaining WP-0.6 work:
 
 **WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.2.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
 
-The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.7 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
+The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.8 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 

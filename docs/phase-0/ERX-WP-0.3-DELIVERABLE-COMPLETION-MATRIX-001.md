@@ -39,7 +39,7 @@
 
 ## 3. Outstanding acceptance conditions
 - LAEV must decide hierarchy and subject-matter authority.
-- DOC-ISS-001–007 and DOC-ISS-009 require documented disposition. DOC-ISS-008 is RESOLVED_EVIDENCE. DOC-ISS-002 source identity and contents are confirmed by the repository's plain-text `docs/Consenso ERX byLAEV`; the source declares ERX-CONSENSUS-001 v0.1 and proposal-for-review status. DOC-ISS-011 tracks remaining operational consensus completion/authority. DOC-ISS-003 remains not located. DOC-ISS-010's independent-cycle architecture is confirmed by Roadmap §3.1 and the Technical Response; detailed state-machine formalization and its target WP remain subject to LAEV disposition.
+- DOC-ISS-001–007, DOC-ISS-009 and DOC-ISS-011 require documented disposition. DOC-ISS-008 is RESOLVED_EVIDENCE. DOC-ISS-002 source identity and contents are confirmed by the repository's plain-text `docs/Consenso ERX byLAEV`; the source declares ERX-CONSENSUS-001 v0.1 and proposal-for-review status. DOC-ISS-011 tracks remaining operational consensus completion/authority. DOC-ISS-003 remains not located. DOC-ISS-010's independent-cycle architecture is confirmed by Roadmap §3.1 and the Technical Response; detailed state-machine formalization and its target WP remain subject to LAEV disposition.
 - DOC-ISS-008 is RESOLVED_EVIDENCE.
 - The contradiction-handling procedure and evolution/supersession policy require review and approval.
 - Execution record, Workplan, register and linked documents must agree.

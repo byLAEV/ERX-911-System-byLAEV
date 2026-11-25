@@ -5,7 +5,7 @@
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
 - **Version:** 1.2.7
-- **Status:** DRAFT / PENDING APPROVAL
+- **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
 ## 1. Purpose and Nature
@@ -430,7 +430,7 @@ This Workplan does not execute or declare complete detailed design or software i
 
 This approval authorizes the defined scope and planned deliverables of each work package, subject to the dependency sequence and execution controls in this Workplan. It does not mark unexecuted work as completed, accepted, verified, or independently reviewed.
 
-Adding this file to the repository makes the Workplan available as a tracking instrument. Approval of the WP-0.1 Charter does not approve this Workplan as a whole, does not declare Phase 0 complete, and does not authorize the start of Phase 1.
+LAEV approved the scope and planned deliverables of WP-0.1 through WP-0.12 on 2026-11-24, as recorded in ERX-PHASE-0-WORK-PACKAGE-APPROVAL-RECORD-001. This approval does not declare every WP executed or completed, does not waive dependency gates, does not close Phase 0, and does not authorize Phase 1.
 
 ---
 **End of WORKPLAN-PHASE-0 — ERX byLAEV**

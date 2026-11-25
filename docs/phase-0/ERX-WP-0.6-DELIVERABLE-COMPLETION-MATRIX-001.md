@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | IN_PROGRESS — INITIAL BASELINE |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -20,7 +20,7 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 
 | Activity | Required result | Current evidence | Status |
 |---|---|---|---|
-| 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 72 catalogue records: 71 live repository paths plus one referenced missing source (ERX-IMPL-PROPOSAL-001); 25 rows remain explicitly pending metadata reconciliation | IN_PROGRESS |
+| 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 72 catalogue records: 71 live repository paths plus one referenced missing source (ERX-IMPL-PROPOSAL-001); 0 rows remain in the explicit METADATA_RECONCILIATION_PENDING state; remaining NOT_VERIFIED and content-review statuses are retained as actual limitations | IN_PROGRESS |
 | 0.6.2 Identify foundational documents | All supplied originals and referenced sources identified with bounded provenance | FND-001–FND-005; ERX-CONSENSUS-001 identity confirmed; ERX-IMPL-PROPOSAL-001 NOT LOCATED (DOC-ISS-003) | IN_PROGRESS — source baseline exists; verify all derivatives and source relationships |
 | 0.6.3 Identify development documents | All Phase 0 development and governance artifacts included | Live recursive tree snapshot; 26 paths added to CSV after prior inventory | IN_PROGRESS — metadata not yet reconciled |
 | 0.6.4 Record versions | Source-native/current document versions correctly recorded | Existing records retain known values; 26 new entries explicitly NOT_VERIFIED | IN_PROGRESS |
@@ -37,12 +37,12 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 - Duplicate catalogue IDs: none detected in the 66-row check.
 - Duplicate repository paths: none detected in the 66-row check.
 - One blank line between historical records was detected and removed; the final newline is normal CSV termination.
-- 25 records retain METADATA_RECONCILIATION_PENDING. Six text companions are explicitly classified as companions/derivatives with content review still open; the missing ERX-IMPL-PROPOSAL-001 record has no repository path by design.
+- No records remain in METADATA_RECONCILIATION_PENDING. Two older foundational support files remain NOT_VERIFIED; text companions retain source-accurate lifecycle/content qualifications; the missing ERX-IMPL-PROPOSAL-001 record has no repository path by design.
 - The current CSV and index must be rechecked after every subsequent commit because the live tree changes.
 
 ## 4. Open work and acceptance gates
 
-1. Inspect the exact header and revision history of every newly inventoried Markdown artifact and correct title, version, lifecycle status and class using source evidence.
+1. Second-pass historical reconciliation remains for older WP-0.3/WP-0.4 artifacts and source-content relationships; all 25 newly inventoried metadata-pending rows were directly inspected and reclassified.
 2. Resolve historical catalogue rows that refer to obsolete versions/statuses by recording current disposition and linking exact approval/closeout records; preserve history.
 3. Verify every path against the current live tree and remove stale or duplicate path records only through controlled reconciliation.
 4. Ensure each source-native formal ID is unique; distinguish catalogue-only IDs from formal IDs.

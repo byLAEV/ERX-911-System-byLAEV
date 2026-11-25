@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-SOURCE-CROSS-REFERENCE-MAP-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.2 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -118,6 +118,9 @@ The inspected opening identifies the Roadmap's purpose as defining development o
 
 The complete Roadmap contains 37 pages. This map does not reproduce its entire phase breakdown; the original PDF remains the source for detailed phase activities, dependencies, deliverables, and acceptance criteria.
 
+### Supplemental source identity — ERX-CONSENSUS-001 v0.1
+The Roadmap cites ERX-CONSENSUS-001 v0.1 as a coordination reference. The post-approval repository text source `docs/Consenso ERX byLAEV` directly declares that identifier/version, proposal-for-review status, and LAEV/byLAEV authorship; it matches the Roadmap citation. The source defines Triple Consensus and evidence/traceability principles but defers quorum, validator rules, conflict resolution, and detailed consensus UTXO/JSON and derived specifications. Source identity is confirmed; DOC-ISS-011 tracks authority and operational completion. This supplemental finding does not alter the five-PDF WP-0.2 acceptance baseline.
+
 ### FND-005 — Technical Response
 
 The response discusses:
@@ -148,7 +151,7 @@ These matters require a formal document hierarchy, subject-matter authority rule
 
 Activity 0.2.8 — Record references between sources: **PREPARED — WORKING DRAFT**.
 
-This map provides an auditable first-pass relationship inventory based on direct source inspection. The five original PDFs have now been located in `docs/` on `main`; their SHA-256 checksums match the foundational register, and their Git blob identities match the repository objects. See `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. The two referenced sources remain NOT LOCATED / UNVERIFIED. Final register review and express LAEV approval remain outstanding.
+This map provides an auditable first-pass relationship inventory based on direct source inspection. The five original PDFs have now been located in `docs/` on `main`; their SHA-256 checksums match the foundational register, and their Git blob identities match the repository objects. See `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md`. ERX-CONSENSUS-001 v0.1 identity is now confirmed by supplemental text evidence; ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED. Final register review and express LAEV approval remain outstanding.
 
 ---
 End of ERX-SOURCE-CROSS-REFERENCE-MAP-001

@@ -71,7 +71,7 @@ This is a documented scope/dependency, not a reason to mark the source missing a
 
 `ERX-IMPL-PROPOSAL-001` remains not located in the inspected repository tree or supplied PDFs. LAEV must provide it or explicitly accept/defer the bounded source limitation with impact, owner and target package.
 
-### RG-05 — Remaining authority and document controls (DOC-ISS-001, 004–007 and 011)
+### RG-05 — Remaining authority and document controls (DOC-ISS-001, 004–007, 009–011)
 
 LAEV disposition remains required for:
 - Atlas supplied filename versus internal v1.1 citation;
@@ -86,7 +86,7 @@ LAEV disposition remains required for:
 2. Approve/revise the hierarchy and subject-matter authority matrices.
 3. Approve/revise the contradiction-handling and evolution/supersession procedures.
 4. Confirm DOC-ISS-010 disposition: source-confirmed architecture, detailed state-machine work assigned to a later package.
-5. Resolve or formally accept the limitations for DOC-ISS-002 and DOC-ISS-003.
+5. Record LAEV disposition of DOC-ISS-011 (consensus proposal authority/completion) and resolve or formally accept the bounded limitation for DOC-ISS-003. DOC-ISS-002 identity is evidence-resolved.
 6. Synchronize Workplan, execution record, completion matrix, issue CSV/Markdown, master index and document register.
 7. Record the technical review separately from LAEV's approval.
 8. Only then submit WP-0.3 for formal acceptance and release WP-0.4/WP-0.5 according to the approved dependency gates.

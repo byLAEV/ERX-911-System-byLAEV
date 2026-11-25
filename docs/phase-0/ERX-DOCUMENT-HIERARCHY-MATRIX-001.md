@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-HIERARCHY-MATRIX-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | PROPOSAL — PENDING LAEV APPROVAL |
 | Work Package | WP-0.3 / Activities 0.3.1–0.3.3 |
 | Project | ERX-911-System-byLAEV |
@@ -24,7 +24,7 @@ This matrix consolidates the provisional document classification and presents a 
 | FND-003 | UTXO-911-001 — UTXO de Comunicación 911 | 1.0 | Foundational functional UTXO source | Sections 1–8; describes communication UTXO stages and an additional agent-availability state cycle |
 | FND-004 | ERX-ROADMAP-001 — Master Phase Plan | 1.0 | Foundational project planning source | 37-page roadmap; phase sequence, dependencies, deliverables and gates |
 | FND-005 | Response to observations on ERX-ROADMAP-001 | Not stated | Technical response / review artifact | Two-page response; no formal ID, version or issue date stated in inspected control information |
-| REF-001 | ERX-CONSENSUS-001 | 0.1 cited | Identity confirmed from repository text source; proposal for review | `docs/Consenso ERX byLAEV` (text) and PDF counterpart after WP-0.2 approval; internal identity/version and equivalence to Roadmap citation unverified |
+| REF-001 | ERX-CONSENSUS-001 | 0.1 | Identity/content confirmed from text source; proposal for review | `docs/Consenso ERX byLAEV` text source directly matches Roadmap citation; operational completeness and authority are DOC-ISS-011 |
 | REF-002 | ERX-IMPL-PROPOSAL-001 | Not stated | Referenced but not located | Roadmap reference only; content and provenance unverified |
 
 ## 3. Proposed governance hierarchy — decision required
@@ -50,7 +50,7 @@ This matrix consolidates the provisional document classification and presents a 
 - LAEV decision adopting, revising or rejecting the proposed hierarchy.
 - Consistent classification in the master document register.
 - Explicit treatment of FND-005 as response/review unless amendment approval is evidenced.
-- Explicit treatment of REF-001 candidate identity and REF-002 missing source.
+- REF-001 identity confirmed; separate DOC-ISS-011 controls proposal status/completeness. REF-002 remains not located.
 - Consistent status and version references across Workplan, execution record and registers.
 
 ## 6. Current disposition

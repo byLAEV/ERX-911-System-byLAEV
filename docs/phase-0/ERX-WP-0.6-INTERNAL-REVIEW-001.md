@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.2.3 |
+| Version | 0.2.4 |
 | Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -72,7 +72,7 @@ Explicit Markdown hyperlinks in the Workplan, master index, WP-0.6 completion ma
 ### 2.5 Synchronization state
 
 The following controlled documents were updated to reflect the second-pass evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.3.4.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.3.9.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
 - ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.1.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0.
@@ -91,12 +91,12 @@ The tree snapshot is recorded in the Master Index as the immediately pre-index-r
 | IR-0.6-04 | Source derivatives can repeat the source-native ID of the original. | Keep distinct catalogue IDs, paths and derivative classifications; do not falsely count them as duplicate catalogue records. |
 | IR-0.6-05 | FND-005 and some registers/README artifacts do not state formal ID/version/lifecycle metadata. | Preserve NOT_STATED where source evidence is absent; do not invent source-native metadata. |
 | IR-0.6-06 | Earlier index/matrix/Workplan snapshots used stale counts and versions. | Updated the controlled working documents; final post-write snapshot synchronization remains. |
-| IR-0.6-07 | The CSV register itself previously lacked its formal identity/version/status in the current catalogue. | Restored ERX-DOCUMENT-REGISTER-001 identity and v1.2.0 register metadata in the machine-readable companion; final schema check remains. |
+| IR-0.6-07 | The CSV register itself previously lacked its formal identity/version/status in the current catalogue. | Restored ERX-DOCUMENT-REGISTER-001 identity and v1.2.1 register metadata in the machine-readable companion; final schema check remains. |
 
 ## 4. Remaining acceptance blockers
 
 1. Re-fetch the main tree after the index refresh and verify 73 live paths, 74 catalogue records, 16 columns, 73/73 path coverage, one NOT_LOCATED source, unique catalogue IDs/paths and valid row widths.
-2. Verify that ERX-DOCUMENT-REGISTER-001 v1.2.0 metadata is consistent in every CSV row and the index, and that its formal ID is not reused by another current controlled document.
+2. Verify that ERX-DOCUMENT-REGISTER-001 v1.2.1 metadata is consistent in every CSV row and the index, and that its formal ID is not reused by another current controlled document.
 3. Complete a final formal source-ID uniqueness check across all controlled Markdown headers. Repeated IDs on source derivatives remain permitted only where the derivative classification and source relationship make that reuse explicit; any ambiguous case must be resolved before acceptance.
 4. Re-fetch the index, CSV, completion matrix and Workplan after the index refresh and ensure their versions/counts/snapshot description agree.
 5. Complete a final acceptance-readiness assessment and closeout audit against all nine WP-0.6 activities and the Workplan acceptance criterion.

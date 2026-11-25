@@ -64,15 +64,15 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
  
 | IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.3.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
 | IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.5.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; source-confirmed availability separation; DOC-ISS-009 structural mapping and LAEV hierarchy/authority decisions pending |
-| IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.5.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
-| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.3.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Page-level source comparison; DOC-ISS-009 structural divergence and DOC-ISS-010 detail-only pending |
+| IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.6.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
+| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.4.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Page-level source comparison; DOC-ISS-009 structural divergence; DOC-ISS-010 detail pending; consensus-named PDF repository object confirmed, internal identity still pending |
 
 | IDX-031 | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 | Documentary Authority, UTXO Mapping and Open Source Dispositions | 0.2.0 | Decision proposal package | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-PACKAGE-001.md` | Options and recommendations only; no decisions approved |
 
-| IDX-032 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | Preparatory Issue Analysis — Document Hierarchy and Authority | 0.2.0 | WP-0.3 issue analysis | FORMAL WP-0.3 AUTHORIZED; MATRIX NOT APPROVED | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Corrected gate; not a decision record |
+| IDX-032 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | Preparatory Issue Analysis — Document Hierarchy and Authority | 0.3.0 | WP-0.3 issue analysis | FORMAL WP-0.3 AUTHORIZED; MATRIX NOT APPROVED | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Corrected gate; not a decision record |
 | IDX-033 | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 | Subject-Matter Authority and Scope Matrix | 0.2.0 | WP-0.3 authority proposal | PENDING LAEV APPROVAL | `docs/phase-0/ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.md` | Refined with exact source-page evidence |
 
-| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.1.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
+| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.2.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
 
 ## 4. Referenced Sources and Identity Status
 
@@ -117,7 +117,7 @@ These dimensions are not interchangeable. In particular, a source may be invento
 | UTXO-911-001 v1.0 | Foundational functional source cited by | ERX-ROADMAP-001 v1.0 |
 | ERX-PROT-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
 | ERX-ATLAS-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
-| `Consenso ERX byLAEV.pdf` | Candidate for cited ERX-CONSENSUS-001 v0.1; identity unverified | ERX-ROADMAP-001 v1.0 |
+| `Consenso ERX byLAEV.pdf` | Repository path/object confirmed; internal metadata/content not inspected; equivalence to cited ERX-CONSENSUS-001 v0.1 unverified | ERX-ROADMAP-001 v1.0 |
 | ERX-IMPL-PROPOSAL-001 | Referenced source; not located | ERX-ROADMAP-001 v1.0 |
 | Technical Response to ERX-ROADMAP-001 | Responds to observations concerning | ERX-ROADMAP-001 v1.0 |
 | ERX-PHASE-0-CHARTER-001 v1.0.0 | Authorizes Phase 0 governance and preparation scope | FASE 0 |

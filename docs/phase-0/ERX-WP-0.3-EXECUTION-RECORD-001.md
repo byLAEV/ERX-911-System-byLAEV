@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | COMPLETED — WP-0.3 ACCEPTED BY LAEV |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -16,7 +16,7 @@
 LAEV authorized correction, evidence completion and closure of WP-0.3 on 2026-11-24. The resulting decisions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0.
 WP-0.2 was expressly accepted by LAEV. WP-0.3 decisions and approval are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. This record closes the documentary work package only; it does not authorize implementation or Phase 1.
 
-## 2. Current activity status
+## 2. Final activity status
 | Activity | Evidence / result | Status |
 |---|---|---|
 | 0.3.1 Classify documents | Approved classification in ERX-DOCUMENT-HIERARCHY-MATRIX-001 v1.0.0 | COMPLETED |
@@ -28,49 +28,48 @@ WP-0.2 was expressly accepted by LAEV. WP-0.3 decisions and approval are recorde
 | 0.3.7 Approve handling procedure | Approved procedure v1.0.0 | COMPLETED |
 | 0.3.8 Approve evolution rules | Approved policy v1.0.0 | COMPLETED |
 
-## 3. Evidence produced
-- ERX-DOCUMENT-HIERARCHY-MATRIX-001 v0.2.0.
-- ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 v0.3.0.
-- ERX-DOCUMENT-RELATIONSHIP-MAP-001 v0.3.0.
-- ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.
-- ERX-DOCUMENT-ISSUE-REGISTER-001 v0.9.0 and CSV companion.
-- ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v0.1.0.
-- ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0.
-- ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 v0.8.0.
-- ERX-DOCUMENT-GOVERNANCE-001.
-- ERX-CONSENSUS-001 v0.1 text source directly inspected; ID/version/status/author confirmed against Roadmap citation; DOC-ISS-002 identity gap resolved. `ERX-CONSENSUS-SOURCE-INSPECTION-001.md` records section-by-section scope and deferrals; DOC-ISS-011 records operational completeness and authority requirements.
-- ERX-WP-0.3-AUDIT-REPORT-001 v0.7.0 — second-pass documentary consistency audit.
-- ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.3.0 — options and recommendations for outstanding LAEV decisions.
+## 3. Controlling evidence — current versions
+- ERX-DOCUMENT-HIERARCHY-MATRIX-001 v1.0.0 — APPROVED.
+- ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 v1.0.0 — APPROVED.
+- ERX-DOCUMENT-RELATIONSHIP-MAP-001 v1.0.0 — APPROVED.
+- ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 — source comparison completed.
+- ERX-DOCUMENT-ISSUE-REGISTER-001 v1.0.0 and registers/document-issue-register.csv — DOC-ISS-001–011 dispositioned; Markdown and CSV statuses synchronized.
+- ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v1.0.0 — APPROVED.
+- ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v1.0.0 — APPROVED.
+- ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 v1.0.1 — COMPLETED / ACCEPTED.
+- ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0 — APPROVED; DP-01–DP-09.
+- ERX-WP-0.3-AUDIT-REPORT-001 v1.0.1 — FINAL INTERNAL DOCUMENTARY AUDIT.
+- ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 v1.0.0 — ACCEPTED.
 
-## 4. Material source-alignment findings
-1. ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1 and UTXO-911-001 v1.0 broadly correspond on a three-stage communication lifecycle.
-2. UTXO-911-001 Sections 2.1–2.5 explicitly consume a request UTXO and create a distinct acceptance UTXO; Section 3.1 then describes a further initial-protocol UTXO. ERX-PROT-001 Step 15 (PDF p.13) and Atlas Plate 03 instead consume UTXO 01 and create UTXO 02 containing contact and initial-protocol results. This is the structural mapping decision DOC-ISS-009.
-3. ERX-ROADMAP-001 Section 3.1 (PDF p.3) expressly establishes a related-but-independent agent-availability cycle. UTXO-911 Sections 4.5–5 and Technical Response p.1 support this architecture. DOC-ISS-010 is narrowed to detailed state-machine specification and formal work-package assignment.
-4. Atlas identifies Protocol as its related normative document and provides a plate correspondence table. A rule for specific diagram/text divergence remains to be approved.
-5. The Technical Response is not evidenced as an approved amendment to the Roadmap.
-6. The text source `docs/Consenso ERX byLAEV` directly confirms ERX-CONSENSUS-001 v0.1 and was read for content. Its status is proposal for review; operational quorum, validator rules, conflict resolution and consensus-linked UTXO/JSON specifications remain deferred under DOC-ISS-011. ERX-IMPL-PROPOSAL-001 remains not located; its contents are not inferred.
+## 4. Final source-alignment dispositions
+1. DP-01 adopts scoped subject-matter authority.
+2. DP-02 adopts Option B: acceptance is an authenticated, uniquely identified event/sub-state in the atomic UTXO 01→02 transition, not a fourth spendable output in the current three-output profile.
+3. DP-03 accepts the independent agent-availability cycle; detailed state-machine specification is deferred.
+4. DP-04 establishes Protocol text as the textual normative reference and Atlas as controlled graphical representation, with divergence handled through the approved procedure.
+5. DP-05 classifies the Technical Response as response/recommendation only, not a Roadmap amendment absent controlled approval.
+6. DP-06 preserves the supplied Atlas filename while citing its internal v1.1 identity.
+7. DP-07 does not invent source-native metadata for the Technical Response.
+8. DP-08 retains ERX-CONSENSUS-001 v0.1 as a proposal for review; operational consensus specification/approval is deferred.
+9. DP-09 accepts ERX-IMPL-PROPOSAL-001 as a bounded not-located limitation; no contents are inferred.
 
-No direct contradiction between the inspected passages is declared by the source alignment review. The unresolved matters are scope, granularity, authority and documentary effect.
+## 5. Issue disposition summary
+- DOC-ISS-001 and DOC-ISS-004: ACCEPTED_LIMITATION.
+- DOC-ISS-002 and DOC-ISS-008: RESOLVED_EVIDENCE.
+- DOC-ISS-003: ACCEPTED_LIMITATION.
+- DOC-ISS-005, DOC-ISS-006, DOC-ISS-007 and DOC-ISS-009: CLOSED.
+- DOC-ISS-010 and DOC-ISS-011: DEFERRED.
+- DOC-ISS-001–011 are recorded in both Markdown and CSV registers. DOC-ISS-003 is a source-location limitation, DOC-ISS-010 a deferred detailed state machine, and DOC-ISS-011 a deferred operational consensus specification; none is misrepresented as source-resolved or implemented.
 
-## 5. LAEV decisions and bounded deferrals
-
-All DP-01–DP-09 decisions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011 are accepted limitations/deferred specifications with owners, impacts and interim controls; they do not block WP-0.3 closure.
-- Adopt, revise or reject the proposed hierarchy.
-- Adopt, revise or reject the subject-matter authority allocations.
-- Decide the structural divergence between UTXO-911's separate call-acceptance output and the Protocol/Atlas three-output chain.
-- Confirm disposition of the source-confirmed independent agent-availability cycle and assign detailed state-machine specification, release/recovery and verification to a later package.
-- Decide normative treatment of Atlas plates.
-- Decide treatment of the Technical Response as recommendation or approved Roadmap amendment.
-- Approve, revise or reject the contradiction-handling and document-evolution procedures.
-- DOC-ISS-002 identity/content is confirmed by text-source evidence. LAEV must disposition proposal status and operational completion under DOC-ISS-011; DOC-ISS-003 remains not located and requires separate disposition.
+## 5A. Historical pre-decision record
+Earlier versions of this execution record listed draft deliverable versions and decisions still awaiting LAEV disposition. Those entries describe the work sequence before the final decision record and are superseded by Sections 2–5 above and the controlling DP-01–DP-09 record. They are retained in repository history; they are not current pending actions.
 
 ## 6. Acceptance and closure
-All eight activities 0.3.1–0.3.8 have evidence and approved disposition. The hierarchy, subject authority, issue handling, evolution rules and bounded source limitations are recorded. The issue register, decision package, matrices and procedures are synchronized. WP-0.3 is COMPLETED / ACCEPTED under LAEV's 2026-11-24 closeout authorization. This is documentary work-package acceptance only; it is not independent external audit, software verification, institutional homologation or production authorization.
+All eight activities 0.3.1–0.3.8 have evidence and approved disposition. The hierarchy, subject authority, issue handling, evolution rules and bounded source limitations are recorded. The issue register (Markdown and CSV), decision record, matrices, procedures, Workplan and audit records are synchronized at the current controlled versions. WP-0.3 is COMPLETED / ACCEPTED under LAEV's 2026-11-24 closeout authorization. This is documentary work-package acceptance only; it is not independent external audit, software verification, institutional homologation or production authorization.
 
 ## 7. Downstream controls
 WP-0.3 completion releases its dependency gate. WP-0.4 may now begin formal execution under its own acceptance criteria. WP-0.5 remains dependent on WP-0.4. WP-0.6 and later packages remain subject to their stated dependencies.
 
-**Current status: WP-0.3 COMPLETED. WP-0.4/WP-0.5 dependency gate is released for their separately controlled execution. No Phase 1 or operational authorization is granted.**
+**Current status: WP-0.3 COMPLETED / ACCEPTED — 2026-11-24. WP-0.4 retains its separate accepted baseline. WP-0.5 remains NOT_STARTED pending formal initiation and its own authorization. No Phase 1 or operational authorization is granted.**
 
 ---
 END

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.3.1 |
+| Version | 1.3.2 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `a03e0cf62c43f3a23a77c9faab54bd5e44084bcb` (`truncated=false`, 73 files; snapshot immediately before this index refresh) |
+| Live tree snapshot | `299a655ced7f3ed2d0070cacdbc0e048344970b9` (`truncated=false`, 73 live paths; snapshot before the synchronized index/matrix/Workplan refresh) |
 
 ## 1. Purpose and control boundary
 
@@ -30,7 +30,7 @@ A file's presence or a Git commit does not establish correctness, approval, or a
 3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
 4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
 5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; GitHub reported `truncated=false` and 71 repository files.
-6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It preserves existing catalogue IDs and adds inventory entries for paths absent from the previous CSV. The CSV includes 72 catalogue records: 71 paths present in the live tree plus one NOT_LOCATED referenced source. The latest check found no duplicate catalogue IDs, no duplicate paths, no missing live paths, and no stale paths. All previously marked metadata-reconciliation-pending rows were directly inspected and reclassified; two older foundational support files remain NOT_VERIFIED.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 74 catalogue records across 14 columns: catalogue identity, source identity, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, and notes. The CSV has 73 PRESENT paths and one NOT_LOCATED referenced source. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
 
 ## 3. Foundational source baseline
 
@@ -57,7 +57,7 @@ Current accepted package states:
 
 Current WP-0.6 execution artifacts:
 - `ERX-WP-0.6-INITIATION-RECORD-001` v1.0.0 — EXECUTION INITIATED.
-- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.0 — controlled reconciliation draft.
+- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.2 — controlled reconciliation draft.
 - `registers/document-register.csv` — 73 catalogue records planned after adding IDX-076: 72 live repository paths plus one NOT_LOCATED referenced source. Last verified pre-addition tree check found no duplicate IDs/paths, missing live paths or stale paths; final recheck pending.
 
 ## 5. Classification model
@@ -113,9 +113,9 @@ Remaining WP-0.6 work:
 
 ## 9. WP-0.6 status
 
-**WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.1.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
+**WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.2.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
 
-The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.2.0 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
+The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.2 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 

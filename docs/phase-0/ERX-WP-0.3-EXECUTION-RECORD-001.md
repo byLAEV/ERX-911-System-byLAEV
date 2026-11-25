@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | IN_PROGRESS — EVIDENCE UPDATED; LAEV DECISIONS PENDING |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -42,8 +42,8 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 
 ## 4. Material source-alignment findings
 1. ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1 and UTXO-911-001 v1.0 broadly correspond on a three-stage communication lifecycle.
-2. UTXO-911-001 Sections 2–3 describe more granular call-request and call-acceptance states. Their exact mapping to Protocol UTXO 01 and UTXO 02 remains undecided (DOC-ISS-009).
-3. UTXO-911-001 Sections 4.5–6 define an agent-availability UTXO distinct from each call's communication states. Its place in ERX architecture remains undecided (DOC-ISS-010).
+2. UTXO-911-001 Sections 2.1–2.5 explicitly consume a request UTXO and create a distinct acceptance UTXO; Section 3.1 then describes a further initial-protocol UTXO. ERX-PROT-001 Step 15 (PDF p.13) and Atlas Plate 03 instead consume UTXO 01 and create UTXO 02 containing contact and initial-protocol results. This is the structural mapping decision DOC-ISS-009.
+3. ERX-ROADMAP-001 Section 3.1 (PDF p.3) expressly establishes a related-but-independent agent-availability cycle. UTXO-911 Sections 4.5–5 and Technical Response p.1 support this architecture. DOC-ISS-010 is narrowed to detailed state-machine specification and formal work-package assignment.
 4. Atlas identifies Protocol as its related normative document and provides a plate correspondence table. A rule for specific diagram/text divergence remains to be approved.
 5. The Technical Response is not evidenced as an approved amendment to the Roadmap.
 6. A candidate `Consenso ERX byLAEV.pdf` is present in `docs/`; its equivalence to Roadmap-cited ERX-CONSENSUS-001 v0.1 is not established. ERX-IMPL-PROPOSAL-001 remains not located. Neither source's contents are inferred without inspection.
@@ -54,7 +54,7 @@ No direct contradiction between the inspected passages is declared by the source
 - Adopt, revise or reject the proposed hierarchy.
 - Adopt, revise or reject the subject-matter authority allocations.
 - Decide the structural divergence between UTXO-911's separate call-acceptance output and the Protocol/Atlas three-output chain.
-- Accept the source-confirmed independent agent-availability cycle and assign detailed state-machine specification to a later package.
+- Confirm disposition of the source-confirmed independent agent-availability cycle and assign detailed state-machine specification, release/recovery and verification to a later package.
 - Decide normative treatment of Atlas plates.
 - Decide treatment of the Technical Response as recommendation or approved Roadmap amendment.
 - Approve, revise or reject the contradiction-handling and document-evolution procedures.

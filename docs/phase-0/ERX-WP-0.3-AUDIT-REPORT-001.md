@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-AUDIT-REPORT-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | INTERNAL AUDIT EVIDENCE — PENDING LAEV REVIEW |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |

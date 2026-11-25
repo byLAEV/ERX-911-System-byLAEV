@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.0.3 |
+| Version | 1.0.4 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -73,7 +73,9 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-032 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | Preparatory Issue Analysis — Document Hierarchy and Authority | 0.4.0 | WP-0.3 issue analysis | FORMAL WP-0.3 AUTHORIZED; MATRIX NOT APPROVED | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Corrected gate; not a decision record |
 | IDX-033 | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 | Subject-Matter Authority and Scope Matrix | 0.2.0 | WP-0.3 authority proposal | PENDING LAEV APPROVAL | `docs/phase-0/ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.md` | Refined with exact source-page evidence |
 
-| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.3.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
+| IDX-034 | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 | WP-0.3 Acceptance Readiness and Residual Gates | 0.4.0 | Acceptance readiness review | PREPARATORY — NOT SUBMITTED FOR APPROVAL | `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` | Identifies evidence-complete activities and explicit LAEV/source blockers |
+
+| IDX-036 | ERX-CONSENSUS-SOURCE-INSPECTION-001 | Consensus Source Inspection and Scope Record | 0.1.0 | WP-0.3 source inspection evidence | PREPARATORY — PENDING LAEV DISPOSITION | `docs/phase-0/ERX-CONSENSUS-SOURCE-INSPECTION-001.md` | Direct text review confirms source identity, Triple Consensus content, explicit exclusions and DOC-ISS-011 scope |
 
 ## 4. Referenced Sources and Identity Status
 

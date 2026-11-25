@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | IN_PROGRESS — SECOND-PASS RECONCILIATION |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -20,42 +20,44 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 
 | Activity | Required result | Current evidence | Status |
 |---|---|---|---|
-| 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 72 catalogue records: 71 live repository paths plus one referenced missing source (ERX-IMPL-PROPOSAL-001); 0 rows remain in the explicit METADATA_RECONCILIATION_PENDING state; remaining NOT_VERIFIED and content-review statuses are retained as actual limitations | IN_PROGRESS |
-| 0.6.2 Identify foundational documents | All supplied originals and referenced sources identified with bounded provenance | FND-001–FND-005; ERX-CONSENSUS-001 identity confirmed; ERX-IMPL-PROPOSAL-001 NOT LOCATED (DOC-ISS-003) | IN_PROGRESS — source baseline exists; verify all derivatives and source relationships |
-| 0.6.3 Identify development documents | All Phase 0 development and governance artifacts included | Live recursive tree snapshot; 72/72 live paths in the latest verified tree snapshot mapped to catalogue entries; one additional NOT_LOCATED source retained | STRUCTURAL CHECK PASS — recheck after closeout edits |
-| 0.6.4 Record versions | Source-native/current document versions correctly recorded | Known source-native versions recorded; unknowns explicitly NOT_STATED; sampled WP-0.3/WP-0.4 historical statuses linked to controlling decisions | IN_PROGRESS — full semantic audit |
-| 0.6.5 Classify documents | Classifications consistent with WP-0.3 hierarchy and WP-0.4 control | Current catalogue classes aligned to approved WP-0.3 hierarchy; final semantic review remains | IN_PROGRESS |
-| 0.6.6 Record each document's status | Lifecycle, acceptance, archival and evidence states distinguished | WP-0.2–WP-0.5 controlling approval/acceptance records cross-referenced; historical document headers retained unchanged | IN_PROGRESS — whole-catalogue check |
-| 0.6.7 Record relationships | Source-backed typed relationships and dependency links | Approved WP-0.3 relationship map preserved; typed supplement v0.1.0 published; semantic and local-link audit remains | IN_PROGRESS |
-| 0.6.8 Identify pending documents | Missing, unverified, proposal and deferred items explicitly recorded | DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011; ERX-CONSENSUS-001 proposal status; NOT_STATED metadata; historical drafts and deferred matters | IN_PROGRESS — verify all rows |
-| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.3.0; CSV 73 records and 72 live paths; no duplicate IDs/paths, missing live paths or stale paths in latest check; final consistency check pending | IN_PROGRESS |
+| 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 74 catalogue records, 14 columns; 73 live paths plus one NOT_LOCATED referenced source; no duplicate catalogue IDs/paths, missing live paths, stale paths or malformed rows. Lifecycle, source-declared status, evidence, custody and presence are separate fields | IN_PROGRESS |
+| 0.6.2 Identify foundational documents | Five accepted originals and supplemental consensus source identified; implementation proposal bounded as missing | FND-001–FND-005; ERX-CONSENSUS-001 source identity confirmed; ERX-IMPL-PROPOSAL-001 NOT LOCATED (DOC-ISS-003) | IN_PROGRESS — provenance baseline verified; remaining missing-source limitation explicitly retained |
+| 0.6.3 Identify development documents | All Phase 0 development and governance artifacts included | Live recursive tree snapshot `299a655ced7f3ed2d0070cacdbc0e048344970b9`; 73/73 live paths mapped; one additional NOT_LOCATED source retained | STRUCTURAL CHECK PASS — snapshot predates synchronized index/matrix/Workplan refresh |
+| 0.6.4 Record versions | Source-native/current document versions correctly recorded | 74 records checked against source-native headers and control records; unknown versions retained NOT_STATED; formal IDs distinguished from catalogue IDs | IN_PROGRESS — semantic cross-check completed; final independent ID namespace validation remains |
+| 0.6.5 Classify documents | Classifications consistent with WP-0.3 hierarchy and WP-0.4 control | 74 entries classified by source/artifact function, including source derivatives and machine-readable registers; repeated source IDs correctly distinguish original/derivative | IN_PROGRESS — final class-to-hierarchy review remains |
+| 0.6.6 Record each document's status | Lifecycle, acceptance, archival and evidence states distinguished | Source-declared status preserved verbatim; lifecycle status conservatively mapped; evidence, custody and presence independently recorded; historical headers unchanged | IN_PROGRESS — package acceptance and document lifecycle remain distinct |
+| 0.6.7 Record relationships | Source-backed typed relationships and dependency links | Approved WP-0.3 map preserved; typed supplement v0.2.0 cross-checked against DP/DC/issue decisions and Workplan dependency chain | IN_PROGRESS — relationship baseline reviewed; final closeout review remains |
+| 0.6.8 Identify pending documents | Missing, unverified, proposal and deferred items explicitly recorded | DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011, FND-005 NOT_STATED metadata, unassigned IDs/versions and historical drafts retained without inference | IN_PROGRESS — limitations explicitly represented |
+| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.3.2; CSV 74 records/14 columns; tree 73 live paths; 73/73 mapped plus one NOT_LOCATED source; links checked | IN_PROGRESS — synchronized final post-write snapshot and closeout still required |
 
-## 3. Initial structural validation
+## 3. Second-pass semantic and structural validation
 
-- Live recursive Git tree snapshot before register writes: `f65683b5926cb8e53cb2ab6b75be810dd28a5fe6`, `truncated=false`.
-- Prior CSV had 42 records; The last verified tree snapshot contained 71 files. CSV held 72 catalogue records: 71 live paths plus one NOT_LOCATED ERX-IMPL-PROPOSAL-001. The WP-0.6 relationship register was added after that snapshot and must be added as IDX-076 before final tree/CSV reconciliation.
-- Duplicate catalogue IDs: none detected in the 72-record check before IDX-076.
-- Duplicate repository paths: none detected in the 72-record check before IDX-076.
+- Live recursive Git tree snapshot at second-pass baseline: `299a655ced7f3ed2d0070cacdbc0e048344970b9`, `truncated=false`, 73 live paths. This snapshot predates the final synchronized edits to index, matrix, Workplan and this review; a new final tree snapshot is still required.
+- Current CSV contains 74 records and 14 columns. The live tree snapshot contains 73 paths; all 73 are represented once, plus one NOT_LOCATED ERX-IMPL-PROPOSAL-001 entry.
+- Duplicate catalogue Index IDs: none. Duplicate repository paths: none. Missing live paths: none. Stale paths: none. Malformed column counts: none.
 - One blank line between historical records was detected and removed; the final newline is normal CSV termination.
-- No rows remain in METADATA_RECONCILIATION_PENDING. Source-native unknowns remain NOT_STATED/NOT_VERIFIED where evidence does not support a value. README contradiction is being corrected. Historical snapshots remain preserved and are not silently promoted.
+- The three repeated formal source IDs (ERX-PROT-001, ERX-ATLAS-001, UTXO-911-001) are each used by an original PDF and a text derivative; these are not duplicate catalogue IDs and must be represented as source/derivative pairs. Catalogue IDs and source-native IDs are separate namespaces.
+- FND-005 has no stated formal ID or version. Multiple repository guidance/register files also have no source-native document ID/version. These remain NOT_STATED; no formal IDs are invented.
+- README custody statement now correctly locates the five original PDFs under `docs/` root; WP-0.2 dossier remains controlling hash evidence.
 - The current CSV and index must be rechecked after every subsequent commit because the live tree changes.
 
-## 4. Internal review and acceptance gates
+## 4. Markdown link and relationship cross-check
 
-Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.1.0](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
+The explicit Markdown hyperlinks in WORKPLAN-PHASE-0.md, ERX-MASTER-DOCUMENT-INDEX-001.md, the WP-0.6 matrix and the WP-0.2 dossier were checked against the live tree or their external target form. No broken local Markdown hyperlink was found in the inspected linked files. The typed relationship supplement v0.2.0 was cross-checked against the source identities, approved DP-01–DP-09 decisions, DOC-ISS-001–011 dispositions, DC-01–DC-09 document-control baseline, WP-0.5 acceptance and current Workplan dependency chain. The approved WP-0.3 relationship map was not modified.
 
-## 5. Open work and acceptance gates
+## 5. Internal review and acceptance gates
 
-1. Re-snapshot live tree after the relationship register and README correction; reconcile every path with one catalogue entry and no stale entries.
-2. Verify unique source-native IDs and preserve catalogue IDs as separate fields.
-3. Complete semantic/header review of all controlled Markdown artifacts, especially legacy WP-0.3/WP-0.4 snapshots and the Workplan cross-references.
-4. Validate the relationship supplement against the approved WP-0.3 relationship baseline and current DP/DC decisions.
-5. Verify Markdown/CSV/index consistency, canonical paths and all local links.
-6. Inspect the foundational binary PDF inventory and README custody claims; original byte-identity evidence remains WP-0.2 dossier authority.
-7. Conduct internal consistency review and produce readiness report and closeout audit.
-8. Record automatic conditional acceptance only if all nine activities and the Workplan criterion pass; otherwise keep WP-0.6 IN_PROGRESS with explicit findings.
+Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.0](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
 
-## 6. Conditional acceptance rule
+## 6. Open work and acceptance gates
+
+1. Re-snapshot live tree after the synchronized control-document edits; reconcile every live path against exactly one catalogue path.
+2. Complete final formal source-ID uniqueness check against all document headers, preserving source/derivative pairs and NOT_STATED cases.
+3. Confirm index, CSV, matrix and Workplan all cite the same final tree snapshot and exact current versions.
+4. Conduct final readiness review and closeout audit against the nine activities and Workplan acceptance criterion.
+5. Record automatic conditional acceptance only if all criteria pass; otherwise keep WP-0.6 IN_PROGRESS with explicit findings.
+
+## 7. Conditional acceptance rule
 
 LAEV's standing instruction applies to each in-scope deliverable only when complete, correct and supported by verifiable evidence. Scope approval and execution authorization do not constitute acceptance. No repeated approval of WP-0.6 scope is required.
 

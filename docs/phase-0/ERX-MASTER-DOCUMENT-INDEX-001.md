@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.5 |
+| Version | 1.5.6 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -148,3 +148,8 @@ The controlled requirements register now contains 56 source-derived candidate re
 ## 14. WP-0.7 individual classification review — 2026-11-25
 
 [ERX-WP-0.7-INDIVIDUAL-CLASSIFICATION-REVIEW-001 v0.1.0](ERX-WP-0.7-INDIVIDUAL-CLASSIFICATION-REVIEW-001.md) records a proposed primary-type classification for all 56 candidate requirements using the controlled taxonomy in ERX-REQUIREMENTS-METHOD-001 §5. The traceability CSV now contains one primary type per record and a separate `secondary_tags` field preserving prior additional labels. This is a working classification proposal; it does not approve requirements, resolve normative modality, close source conflicts, complete verification criteria or allocate phases. All 56 records remain EXTRACTED — REVIEW PENDING. WP-0.7 remains IN_PROGRESS; Phase 0 remains OPEN and Phase 1 is NOT AUTHORIZED.
+
+
+## 15. WP-0.7 / WP-0.8 entry-gate assessment — 2026-11-25
+
+[ERX-WP-0.7-TO-WP-0.8-ENTRY-GATE-ASSESSMENT-001 v0.1.0](ERX-WP-0.7-TO-WP-0.8-ENTRY-GATE-ASSESSMENT-001.md) evaluates the WP-0.7 acceptance criteria and the dependency gate for WP-0.8. It confirms WP-0.3 and WP-0.6 are satisfied, WP-0.7 remains IN_PROGRESS, and WP-0.8 is already scope-approved but NOT_STARTED. It identifies remaining work across extraction completeness, individual classification review, mandatory/design/pending-specification/open-decision disposition, source locator audit, phase allocation, matrix validation and LAEV's express WP-0.7 acceptance. This assessment is not a WP-0.7 acceptance or WP-0.8 execution authorization.

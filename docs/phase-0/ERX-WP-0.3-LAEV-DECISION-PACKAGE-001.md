@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | DECISION PROPOSALS — PENDING LAEV REVIEW |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -108,10 +108,12 @@ The supplied response does not state a formal document identifier, version or is
 
 LAEV decision: PENDING — ACCEPT CATALOGUE-ONLY IDENTIFICATION / OTHER.
 
-### DP-08 — ERX-CONSENSUS-001 v0.1 candidate
-A file named docs/Consenso ERX byLAEV.pdf exists in the repository. The file's internal title, identifier, version, authorship, provenance and contents have not yet been inspected in this decision package. The filename alone does not prove that it is the Roadmap-cited ERX-CONSENSUS-001 v0.1.
+### DP-08 — ERX-CONSENSUS-001 v0.1: identity confirmed; proposal status and operational completion
+The repository text source `docs/Consenso ERX byLAEV` directly declares identifier ERX-CONSENSUS-001, version 0.1 — Propuesta normativa, status Documento de diseño para revisión, and authorship LAEV/byLAEV. This matches ERX-ROADMAP-001 v1.0 §1; identity is confirmed from content, not filename.
 
-Options: (A) confirm candidate identity after direct inspection; (B) register as a separate supplemental source; (C) retain Roadmap citation as unverified and defer. No source content is inferred.
+Decision options: (A) retain as a source-level proposal/reference pending express approval; (B) approve its conceptual framework with defined scope and separately commission the missing operational specification; (C) revise or reject it through a controlled LAEV decision. The source itself defers quorum, validator count/independence, conflict resolution, detailed consensus UTXO/JSON structures and derived specifications. See DOC-ISS-011.
+
+Recommendation: do not treat the source identity check as approval or operational completeness. Assign a consensus completion package and acceptance criteria before multi-institutional use.
 
 LAEV decision: PENDING — A / B / C.
 

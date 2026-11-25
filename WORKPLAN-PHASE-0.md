@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.2.1
+- **Version:** 1.2.2
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 
@@ -151,7 +151,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependency:** WP-0.2 APPROVED. WP-0.3 acceptance releases the dependency gate for formal WP-0.4 and WP-0.5 execution, subject to their separate scope and approval controls. No Phase 1 authorization is implied.
 
 ### WP-0.4 — Document Identification and Control
-**Status:** IN_PROGRESS — FORMAL EXECUTION OPEN; POLICY NOT APPROVED
+**Status:** IN_PROGRESS — LAEV POLICY DECISIONS APPROVED; FINAL POLICY REVIEW PENDING
 
 **Activities**
 - [x] 0.4.1 Develop ERX identifier system proposal.
@@ -164,9 +164,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.4.8 Define revision history and change traceability.
 - [x] 0.4.9 Define cross-reference and provenance rules.
 
-**Candidate deliverable:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.3.1 — IN_REVIEW; working proposal, not approved.
-**Execution evidence:** candidate v0.3.1 prepared on branch `wp-0.4-document-control`; WP-0.3 approved hierarchy and subject-matter authority were used as governing inputs. The former v0.2.0 preparatory draft was reconciled rather than treated as an approved policy.
-**Remaining work:** LAEV review and disposition of DC-01–DC-09; incorporate authorized changes; verify metadata/status transitions and migration controls; prepare final acceptance evidence and approved baseline.
+**Candidate deliverable:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.4.0 — IN_REVIEW; consolidated candidate, independent review pending.
+**Execution evidence:** candidate v0.4.0 prepared on branch `wp-0.4-document-control`; LAEV approved DC-01–DC-09 in `ERX-WP-0.4-LAEV-DECISION-RECORD-001` v1.0.0. The former v0.2.0 preparatory draft and v0.3.1 review candidate were reconciled; neither was treated as an approved policy baseline.
+**Remaining work:** obtain independent review of exact candidate v0.4.0; resolve findings; obtain LAEV's express approval of the reviewed exact version (release v1.0.0 unless otherwise decided); synchronize final evidence and register; re-run closeout audit.
 **Acceptance:** unique non-reusable identifiers; canonical naming with original-source preservation; versioning; document lifecycle statuses distinct from work-package statuses; metadata by document class; separate authorship/review/approval; reconstructable revision history; exact cross-references; controlled migration; express LAEV approval of the exact final version.
 **Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. Both dependency gates are satisfied. WP-0.4 remains IN_PROGRESS until its own acceptance; WP-0.5 remains dependent on WP-0.4.
 

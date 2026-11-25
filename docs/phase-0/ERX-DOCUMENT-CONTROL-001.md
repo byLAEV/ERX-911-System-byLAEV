@@ -102,9 +102,10 @@ Examples: `1.0.0 → 2.0.0`; `1.0.0 → 1.1.0`; `1.0.0 → 1.0.1`.
 
 ### 5.2 Draft versions and release baseline
 
-- Working drafts use `0.x.y`.
+- Working drafts use `0.x.y`; the minor component advances for a substantive proposal revision and the patch component for editorial or metadata corrections that do not alter meaning.
 - The first formally approved baseline is `1.0.0`, unless the approving decision explicitly records another starting point.
-- A new draft derived from an approved baseline increments the appropriate component and remains unapproved until expressly accepted.
+- A draft derived from an approved baseline remains a `0.x.y` candidate until approval; the approval decision establishes the approved release version.
+- For revisions after an approved baseline exists, prepare a new candidate version and record its intended MAJOR/MINOR/PATCH impact. The approved version changes only after express approval.
 - A version increment does not itself indicate approval.
 - Version changes require a short rationale in the revision history/change record.
 - Do not retroactively renumber foundational originals or their source-stated versions.

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.8.0 |
+| Version | 0.9.0 |
 | Status | WORKING REGISTER — PENDING LAEV DECISIONS |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -16,9 +16,9 @@
 |---|---|---|---|
 | 0.3.1 Classification | Source-grounded classes | ERX-DOCUMENT-HIERARCHY-MATRIX-001 | EVIDENCE PREPARED |
 | 0.3.2 Source/artifact separation | Distinction and rationale | Hierarchy matrix and ERX-DOCUMENT-GOVERNANCE-001 | EVIDENCE PREPARED |
-| 0.3.3 Hierarchy decision | Explicit LAEV adoption/revision/rejection | Hierarchy matrix v0.1.0 | PENDING LAEV |
-| 0.3.4 Subject authority | Explicit LAEV decision and scoped matrix | Subject-Matter Authority Matrix v0.1.0 | PENDING LAEV |
-| 0.3.5 Relationships/dependencies | Source-backed map | ERX-DOCUMENT-RELATIONSHIP-MAP-001 v0.1.0 | EVIDENCE PREPARED |
+| 0.3.3 Hierarchy decision | Explicit LAEV adoption/revision/rejection | Hierarchy matrix v0.2.0 | PENDING LAEV |
+| 0.3.4 Subject authority | Explicit LAEV decision and scoped matrix | Subject-Matter Authority Matrix v0.3.0 | PENDING LAEV |
+| 0.3.5 Relationships/dependencies | Source-backed map | ERX-DOCUMENT-RELATIONSHIP-MAP-001 v0.3.0 | EVIDENCE PREPARED |
 | 0.3.6 Contradictions/ambiguities | Exact comparison, impact, owner and disposition | Source Alignment Review; issue register DOC-ISS-001–011 | REVIEW COMPLETED; DISPOSITIONS PENDING |
 | 0.3.7 Handling procedure | Approved procedure | ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v0.1.0 | PENDING LAEV |
 | 0.3.8 Evolution/supersession | Approved policy | ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0 | PENDING LAEV |

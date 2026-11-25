@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.3.7 |
+| Version | 0.3.8 |
 | Status | COMPLETED — FINAL SYNCHRONIZATION REVIEW |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -100,9 +100,9 @@ No classification change or source amendment was necessary to pass this consiste
 ### 2.8 Synchronization state
 
 The following controlled documents now reflect the final WP-0.6 closeout evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.5.1.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.5.2.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
-- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.8.
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.9.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2.
 - WORKPLAN-PHASE-0.md v1.4.9.
 - This review v0.3.2.

@@ -1,70 +1,86 @@
 # ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001
-## Repository Access and Responsibility Matrix
+## Repository Access, Responsibility and Branch Modification Matrix
 
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | PROPOSED — NOT APPROVED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design and approval authority | LAEV |
 | Date | 2026-11-24 |
 
-## 1. Purpose
+## 1. Purpose and boundary
 
-This matrix separates repository responsibility decisions from actual GitHub permission grants. It records the express DP-ACCESS-01 decision without implying that live GitHub settings have been changed or reconciled.
+This matrix defines a proposed least-privilege model for repository administration, maintenance, review, contribution and modification of `main`. It distinguishes governance authority from GitHub technical permissions. It records DP-ACCESS-01 (LAEV as sole repository administrator) but does not implement or approve any new permission grant or repository control.
 
-## 2. Role model and decision status
+## 2. Controlling decisions
 
-| Role | Responsibility | Conceptual access | Assignment / status |
-|---|---|---|---|
-| Design and approval authority | Defines and approves project design and controlled policy decisions | Approval authority; technical GitHub permission is separate | LAEV |
-| Repository administrator | Controls repository administration, access settings and recovery | Admin | **LAEV — sole administrator by express DP-ACCESS-01 decision**; live permission configuration NOT_RECONCILED |
-| Maintainer | Maintains approved repository structure and operational configuration | Maintain | NOT_ASSIGNED |
-| Document author | Prepares controlled documents and records | Write only where needed | Named per artifact; no general roster supplied |
-| Technical reviewer | Reviews technical correctness and consistency | Read; write only if assigned | NOT_ASSIGNED |
-| Independent reviewer | Performs independent review when commissioned | Read-only by default; scoped access if needed | NOT_ASSIGNED; no independent review claimed |
-| Contributor | Submits changes within assigned scope | Read and proposed changes through approved process | NOT_ASSIGNED |
+- **DP-ACCESS-01 — RECORDED:** LAEV is the sole repository administrator. No other administrator is designated. See `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0.
+- **Repository visibility — RECORDED:** KEEP PUBLIC. See `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0.
+- **This matrix — NOT APPROVED:** all role mappings and branch rules below are proposals awaiting LAEV's express decision.
 
-## 3. DP-ACCESS-01 — recorded decision
+## 3. Proposed role-to-permission model
 
-LAEV selected `sole`: LAEV is the sole repository administrator. No additional administrator is designated by this decision. The controlling record is `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0.
+| Role | Proposed GitHub permission | Permitted activity | Restrictions | Current assignment |
+|---|---|---|---|---|
+| LAEV — repository administrator and design/approval authority | Admin | Repository settings, access administration, policy decisions, final merge authority | Sole administrator; no other Admin role | LAEV; live sole-admin condition NOT_VERIFIED across all users |
+| Maintainer | Maintain | Maintain repository content, triage work, manage ordinary repository maintenance | No Admin; no changes to access policy or protected-branch rules; no bypass of required reviews | NONE_ASSIGNED |
+| Technical reviewer | Read (or Triage only if issue/PR triage is needed) | Inspect diffs, comment, submit PR review | No direct push; review does not itself constitute LAEV design approval unless expressly delegated for a defined scope | NONE_ASSIGNED |
+| Document author / contributor | Read; contribute through fork and pull request | Read public content, prepare proposed changes in a fork, submit PR | No direct write to upstream `main`; no settings access | Open public contribution path; no named collaborators assigned |
+| CI automation identity | No standing human role; minimum workflow token permissions only | Execute approved checks | Read-only by default; write scopes only when a specific workflow requires them | Workflow permissions NOT_AUDITED |
 
-The decision resolves repository-administration responsibility only. It does not automatically resolve maintainer, author, reviewer, contributor, merge, branch protection, recovery, or other access roles.
+**Interpretation:** GitHub's `Admin`, `Maintain`, `Write`, `Triage`, and `Read` are technical permission levels. They do not automatically confer ERX design authority, authorship, document approval, or institutional authority.
 
-## 4. Permission principles
+## 4. Proposed rules for `main`
 
-1. Apply least privilege and grant only the access needed for an assigned function.
-2. Separate repository administration, authorship, review and approval.
-3. Do not treat technical ability to push as substantive document approval.
-4. Use named, individually accountable accounts; do not share credentials.
-5. Review and revoke access when a role ends or changes.
-6. Do not publish confidential personal or institutional data without authorization.
-7. Preserve an auditable record of permission changes.
-8. Keep external independent review separate from LAEV's design approval.
+1. `main` is the canonical controlled branch.
+2. No collaborator other than LAEV receives direct push permission to `main) under this proposal.
+3. External and ordinary contributor changes enter through fork-based pull requests.
+4. Maintainers, if later appointed, work through pull requests; Maintain permission must not imply permission to alter repository administration or protection policy.
+5. LAEV retains final authority to approve and merge changes to `main`.
+6. A pull request authored by LAEV cannot be approved by LAEV as an independent reviewer. If independent review is required for that change, a separately appointed reviewer must review it. No reviewer is appointed by this matrix.
+7. Until branch rules are expressly approved and technically configured, these are proposed governance rules only, not enforced controls.
+8. Force-push and branch deletion on `main) should be disabled when protection is configured.
+9. Required CI/status checks must not be named until the actual workflow checks exist and have been verified.
+10. Emergency exceptions, if any, must be separately authorized and recorded by LAEV with scope, reason, commit and retrospective review requirement.
 
-## 5. Current evidence boundary
+## 5. Live configuration verification — 2026-11-24
 
-GitHub repository metadata returned admin, maintain, push, pull and triage permissions for the connected integration identity. This confirms only the connected identity's reported permission. The complete collaborator/team roster and individual permission levels were not retrieved. A request to read classic branch protection returned 403 FORBIDDEN (Resource not accessible by integration); repository rulesets endpoint returned an empty list. These observations do not prove that no classic or inherited protection exists.
+| Check | Result | Evidence and limitation |
+|---|---|---|
+| Repository identity | byLAEV/ERX-911-System-byLAEV | GitHub repository metadata |
+| Default branch | `main` | GitHub repository metadata |
+| Connected integration identity | Admin permission object | Repository metadata reports admin=true, maintain=true, push=true, pull=true, triage=true for the connected identity only |
+| Owner account `byLAEV` | `admin` | Collaborator-permission lookup for username `byLAEV` returned `admin` |
+| `main` protected flag | `false` | Branch endpoint returned `protected:false`, protection enabled=false, required status-check enforcement off |
+| Repository rulesets | Empty list | Rulesets query with includes_parents=true returned `[]`; does not prove absence of every possible organization-level or other control |
+| Complete collaborator roster | NOT_VERIFIED | Available fetch interface rejected the collaborators-list endpoint; no complete user/team roster was returned |
+| Other users with Admin | NOT_VERIFIED | Cannot confirm sole live administrator without complete collaborator/team and inherited-access inspection |
+| Required reviews/status checks | NOT_CONFIGURED on returned `main` branch object | No protection shown; no checks listed/enforced |
+| Workflow token permissions | NOT_AUDITED | Requires separate workflow and Actions settings inspection |
 
-## 6. Implementation boundary
+The owner lookup confirms `byLAEV` as Admin, but does not prove that no other user or inherited principal has Admin-equivalent access. The live repository is currently not protected on `main` according to the branch endpoint response. No configuration was changed.
 
-No GitHub permission, collaborator, team membership, token, branch protection, or repository setting was changed as part of DP-ACCESS-01. Any future permission modification requires separate, explicit authorization from LAEV. First inspect and reconcile the live access configuration with the recorded sole-administrator decision.
+## 6. Required reconciliation before implementation
 
-## 7. Remaining decisions and work
+1. Obtain an authorized, complete collaborator and inherited-access roster.
+2. Identify every account/team with Admin, Maintain, Write, Triage or Read.
+3. Confirm whether any additional Admin grant conflicts with DP-ACCESS-01.
+4. Decide whether to remove/reduce any conflicting grant; this requires separate explicit authorization from LAEV.
+5. Approve the proposed role mapping and the `main` workflow.
+6. Decide how LAEV-authored changes are reviewed, given that the author cannot independently approve their own PR.
+7. Approve the required review count, bypass policy, force-push/deletion restrictions and any status checks.
+8. Only after express authorization, configure GitHub settings and verify the effective result.
 
-- Verify the collaborator and team roster and identify any live admin grants.
-- Define maintainer, reviewer, contributor and merge authority.
-- Define required review count and reviewer independence.
-- Define external pull-request policy.
-- Define emergency correction access and retrospective review.
-- Define periodic access review and account-recovery procedure.
-- Verify branch protection and inherited organization rules where access permits.
+## 7. Implementation boundary
+
+No GitHub permissions, collaborators, teams, tokens, branch protection, rulesets, workflow permissions, or repository settings were modified during this review. This document is a proposal, not an authorization to change them. Do not claim the sole-administrator decision is technically enforced until all effective access paths have been inspected and reconciled.
 
 ## 8. Status and acceptance boundary
 
-This matrix remains PROPOSED — NOT APPROVED. DP-ACCESS-01 is an express decision recorded by LAEV; it does not grant, revoke or alter GitHub permissions. It does not assert that branch protection or mandatory reviews are configured, and it does not complete WP-0.5.
+This matrix remains **PROPOSED — NOT APPROVED**. DP-ACCESS-01 remains a recorded governance decision. The live `main` branch is observed as unprotected; the complete collaborator roster and inherited access remain NOT_VERIFIED. WP-0.5 remains IN_PROGRESS and is not accepted or closed by this update.
 
 ---
 End of ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.2 |
+| Version | 1.5.3 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -133,3 +133,8 @@ WP-0.7 is now formally initiated under its previously approved scope. [ERX-WP-0.
 ## 11. WP-0.7 execution snapshot
 
 WP-0.7 is IN_PROGRESS under the previously approved scope and the released dependency gate. Its formal initiation is [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md). Activity 0.7.1 is controlled by [ERX-REQUIREMENTS-METHOD-001 v1.0.0](ERX-REQUIREMENTS-METHOD-001.md). The five foundational PDFs were directly inspected and recorded in [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md). The first extraction batch [v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) and `registers/requirements-traceability.csv` contain 15 source-derived candidates; they remain EXTRACTED — REVIEW PENDING, not approved requirements. Activity 0.7.2 continues; activities 0.7.3–0.7.11 remain open.
+
+
+## 12. WP-0.7 extraction update — 2026-11-25
+
+The controlled requirements register now contains 56 source-derived candidate records across extraction batches 001–004. Batch 004 is [ERX-WP-0.7-REQUIREMENT-EXTRACTION-BATCH-004 v0.1.0](ERX-WP-0.7-REQUIREMENT-EXTRACTION-BATCH-004.md) and adds 11 candidates covering local queue and recovery behavior, storage failure, interface security, component separation, pre-implementation test coverage, institutional privacy custody, limits of cryptographic verification, independent agent availability, non-resurrection of consumed states and OTS evidence retention. All 56 candidates remain EXTRACTED — REVIEW PENDING; none is approved by extraction. Verification criteria and phase assignments remain incomplete where not specified. WP-0.7 remains IN_PROGRESS; Phase 0 remains OPEN and Phase 1 is NOT AUTHORIZED.

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -78,10 +78,10 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 
 | Reference | Description in ERX-ROADMAP-001 | Version | Current status | Required action |
 |---|---|---|---|---|
-| ERX-CONSENSUS-001 | Consensus framework | 0.1 | CANDIDATE LOCATED — IDENTITY UNVERIFIED | Inspect `docs/Consenso ERX byLAEV.pdf`; confirm internal ID/version and compare with Roadmap citation |
+| ERX-CONSENSUS-001 | Consensus framework | 0.1 | REPOSITORY FILE LOCATED — INTERNAL IDENTITY/CONTENT UNVERIFIED | Inspect the PDF control page/content via binary-capable access; compare internal ID/version with Roadmap citation |
 | ERX-IMPL-PROPOSAL-001 | Institutional implementation proposal | NOT_STATED | NOT LOCATED / UNVERIFIED | Locate original; inspect identity, version, provenance, contents, and status |
 
-For ERX-IMPL-PROPOSAL-001, NOT LOCATED is bounded to the five supplied PDFs and repository tree/search results inspected; it does not establish non-existence elsewhere. The consensus candidate is separately marked CANDIDATE LOCATED — IDENTITY UNVERIFIED.
+For ERX-IMPL-PROPOSAL-001, NOT LOCATED is bounded to the five supplied PDFs and repository tree/search results inspected; it does not establish non-existence elsewhere. The consensus candidate is separately marked REPOSITORY FILE LOCATED — INTERNAL IDENTITY/CONTENT UNVERIFIED.
 
 ## 5. Document Classifications
 

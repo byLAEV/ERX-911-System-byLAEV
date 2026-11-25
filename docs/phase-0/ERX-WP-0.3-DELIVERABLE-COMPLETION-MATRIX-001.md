@@ -14,11 +14,11 @@
 ## 1. Activity and evidence matrix
 | Activity | Required evidence | Current evidence | Status |
 |---|---|---|---|
-| 0.3.1 Classification | Source-grounded classes | ERX-DOCUMENT-HIERARCHY-MATRIX-001 | EVIDENCE PREPARED |
-| 0.3.2 Source/artifact separation | Distinction and rationale | Hierarchy matrix and ERX-DOCUMENT-GOVERNANCE-001 | EVIDENCE PREPARED |
+| 0.3.1 Classification | Source-grounded classes | Approved ERX-DOCUMENT-HIERARCHY-MATRIX-001 v1.0.0 | COMPLETED |
+| 0.3.2 Source/artifact separation | Distinction and rationale | Approved hierarchy matrix v1.0.0 | COMPLETED |
 | 0.3.3 Hierarchy decision | Explicit LAEV adoption/revision/rejection | Hierarchy matrix v1.0.0; decision record v1.0.0 | COMPLETED |
 | 0.3.4 Subject authority | Explicit LAEV decision and scoped matrix | Subject-Matter Authority Matrix v1.0.0; decision record v1.0.0 | COMPLETED |
-| 0.3.5 Relationships/dependencies | Source-backed map | ERX-DOCUMENT-RELATIONSHIP-MAP-001 v0.3.0 | EVIDENCE PREPARED |
+| 0.3.5 Relationships/dependencies | Source-backed map | ERX-DOCUMENT-RELATIONSHIP-MAP-001 v1.0.0 | COMPLETED |
 | 0.3.6 Contradictions/ambiguities | Exact comparison, impact, owner and disposition | Source Alignment Review; approved issue register v1.0.0; decision record | COMPLETED — dispositions and bounded deferrals recorded |
 | 0.3.7 Handling procedure | Approved procedure | ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v1.0.0 | COMPLETED |
 | 0.3.8 Evolution/supersession | Approved policy | ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v1.0.0 | COMPLETED |

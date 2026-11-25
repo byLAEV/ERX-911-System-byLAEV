@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.1 |
+| Version | 1.5.2 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `486a14bd6ec3edd040dd046fa04140631d149904` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
+| Live tree snapshot | `5f54a1573984ec5ccb4f0d2a1477c0f271d87fb8` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
 
 ## 1. Purpose and control boundary
 

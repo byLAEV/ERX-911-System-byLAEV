@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `4260d26699b0be66bc0899d3276aa077ec072806` (`truncated=false`, 71 files before the relationship-register addition) |
+| Live tree snapshot | `ad950abf9fe1e8bbaa79bbbb63c54b1122723f38` (`truncated=false`, 72 files; snapshot before this index refresh) |
 
 ## 1. Purpose and control boundary
 
@@ -47,7 +47,7 @@ ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supp
 
 ## 4. Phase 0 document and artifact coverage
 
-The verified pre-relationship-register live repository path inventory is the recursive tree snapshot `4260d26699b0be66bc0899d3276aa077ec072806` (`truncated=false`, 71 files). The relationship register added afterward is recorded as IDX-076; the tree must be re-snapshotted after all WP-0.6 writes. The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
+The verified live repository path inventory is the recursive tree snapshot `ad950abf9fe1e8bbaa79bbbb63c54b1122723f38` (`truncated=false`, 72 files). The CSV includes 73 catalogue records: 72 live paths plus one NOT_LOCATED referenced source; no duplicate IDs/paths, missing live paths or stale paths were detected. The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
 
 Current accepted package states:
 - WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.
@@ -113,9 +113,9 @@ Remaining WP-0.6 work:
 
 ## 9. WP-0.6 status
 
-**WP-0.6: IN_PROGRESS — formally initiated; initial path and metadata reconciliation completed, second-pass semantic/status validation remains.**
+**WP-0.6: IN_PROGRESS — formally initiated; structural inventory and first/second-pass metadata corrections recorded; semantic relationship review and closeout evidence remain.**
 
-The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.2.0 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain in progress until second-pass semantic, relationship and consistency checks above have evidence.
+The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.2.0 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 

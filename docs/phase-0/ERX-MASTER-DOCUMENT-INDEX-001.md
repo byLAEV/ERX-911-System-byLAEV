@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.2.0 |
+| Version | 1.3.0 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,11 +13,11 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `196110185ca0f9e3a43dcfc25747abcb3b46a5ee` (`truncated=false`) |
+| Live tree snapshot | `4260d26699b0be66bc0899d3276aa077ec072806` (`truncated=false`, 71 files before the relationship-register addition) |
 
 ## 1. Purpose and control boundary
 
-This controlled working revision advances the v1.1.0 reconciliation baseline after direct inspection of the remaining metadata entries. It reconciles the current repository inventory against the approved document-control policy and accepted WP-0.2 through WP-0.5 evidence. It is not yet the final accepted master index.
+This controlled working revision advances v1.2.0 after direct metadata reconciliation and a second-pass review of controlling WP-0.3/WP-0.4 decisions and WP-0.5 acceptance evidence. It reconciles the current repository inventory against the approved document-control policy and accepted WP-0.2 through WP-0.5 evidence. It is not yet the final accepted master index.
 
 The index distinguishes: (a) source-native identity and version; (b) catalogue Index ID; (c) document lifecycle; (d) work-package execution/acceptance; (e) repository presence; and (f) evidence-verification status. These fields are not interchangeable.
 
@@ -47,7 +47,7 @@ ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supp
 
 ## 4. Phase 0 document and artifact coverage
 
-The complete live repository path inventory is the recursive tree snapshot `f65683b5926cb8e53cb2ab6b75be810dd28a5fe6` (`truncated=false`). The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
+The verified pre-relationship-register live repository path inventory is the recursive tree snapshot `4260d26699b0be66bc0899d3276aa077ec072806` (`truncated=false`, 71 files). The relationship register added afterward is recorded as IDX-076; the tree must be re-snapshotted after all WP-0.6 writes. The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
 
 Current accepted package states:
 - WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.
@@ -57,8 +57,8 @@ Current accepted package states:
 
 Current WP-0.6 execution artifacts:
 - `ERX-WP-0.6-INITIATION-RECORD-001` v1.0.0 — EXECUTION INITIATED.
-- `ERX-MASTER-DOCUMENT-INDEX-001` v1.1.0 — controlled reconciliation draft.
-- `registers/document-register.csv` — 72-record reconciled inventory; all 71 live paths represented, one referenced missing source retained, no duplicate/stale/missing paths. Some records correctly remain NOT_VERIFIED, NOT_APPROVED, historical, or content-not-reviewed; these are source/document statuses, not missing catalogue fields.
+- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.0 — controlled reconciliation draft.
+- `registers/document-register.csv` — 73 catalogue records planned after adding IDX-076: 72 live repository paths plus one NOT_LOCATED referenced source. Last verified pre-addition tree check found no duplicate IDs/paths, missing live paths or stale paths; final recheck pending.
 
 ## 5. Classification model
 
@@ -77,7 +77,7 @@ For each entry, preserve the exact source-native title, document ID and version 
 
 Document lifecycle status is taken from the exact controlled document and its decision/approval record. Historical headers are not overwritten by later approvals; instead, the index records the current disposition and points to the controlling approval/closeout record.
 
-Relationships must be source-backed and typed, including:
+The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.1.0](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
 - cites / referenced by;
 - graphically represents;
 - derived from / supporting evidence for;
@@ -96,7 +96,7 @@ A relationship does not itself imply normative precedence. WP-0.3's subject-matt
 | ERX-CONSENSUS-001 v0.1 | Identity confirmed; proposal for review (DOC-ISS-011) | Do not label approved/operational; preserve unresolved quorum, validator, conflict and detailed UTXO rules |
 | FND-005 formal ID/version/date | NOT_STATED in supplied source | Preserve unknown values; catalogue separately |
 | Legacy WP-0.3 draft headers | Historical versions/statuses | Link to accepted decision and closeout records; do not rewrite historical artifacts |
-| Newly inventoried repository paths | METADATA_RECONCILIATION_PENDING where marked in CSV | Inspect exact headers and approval records; update entries only with evidence |
+| ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.1.0 | IN_PROGRESS | Typed supplement; validate links against approved decisions and live paths |
 | Root LICENSE/COPYRIGHT | Not present in WP-0.5 verified tree; no license assigned | Do not infer a reuse grant |
 
 ## 8. Reconciliation controls and open work
@@ -104,13 +104,12 @@ A relationship does not itself imply normative precedence. WP-0.3's subject-matt
 The previous v1.0.9 draft and CSV were not internally consistent with the current repository and accepted WP-0.3–WP-0.5 status records. This v1.2.0 revision preserves historical catalogue IDs, reconciles the 71 live paths and the missing referenced source, and records direct metadata inspections. It does not claim that every listed document is approved or substantively reviewed.
 
 Remaining WP-0.6 work:
-1. Inspect each newly inventoried controlled Markdown artifact's exact header and revision history; record its actual version and lifecycle status.
-2. Reconcile historical WP-0.3 and WP-0.4 draft versions against their controlling acceptance/decision records.
-3. Ensure every file path has exactly one catalogue entry and every formal ID is unique; resolve duplicate/stale catalogue IDs without deleting history.
-4. Reconcile titles, classifications, source locations, and typed relationships across Markdown and CSV.
-5. Verify all cross-references and canonical paths against the live tree.
-6. Review the final consolidated index and CSV for consistency, missing records and unsupported status claims.
-7. Produce WP-0.6 completion matrix, internal review, readiness report, closeout audit and LAEV conditional acceptance record.
+1. Complete semantic review of all remaining controlled Markdown artifacts and exact current headers; preserve source-native historical headers.
+2. Resolve the README custody-location contradiction by stating that original PDFs are stored under docs/ root, not docs/foundational/.
+3. Validate all typed relationships in the WP-0.6 relationship register against approved DP-01–DP-09, DC-01–DC-09, WP-0.2–WP-0.5 acceptance records and current Workplan.
+4. Verify every live path, formal ID uniqueness, CSV/Markdown row consistency and all canonical cross-references after final commits.
+5. Review all pending source and deferred issue entries, ensuring DOC-ISS-003 and DOC-ISS-011 remain visible.
+6. Produce internal review, readiness report, closeout audit and conditional acceptance record only after every activity passes.
 
 ## 9. WP-0.6 status
 

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-AUDIT-REPORT-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | INTERNAL AUDIT EVIDENCE — PENDING LAEV REVIEW |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -60,11 +60,11 @@ This post-approval discovery does not revoke or reopen WP-0.2. It is a supplemen
 ## 6. WP-0.3 technical review conclusions
 - The three communication-stage descriptions in Protocol, Atlas and UTXO-911 have broad correspondence.
 - UTXO-911's request/acceptance detail is more granular; no final output/sub-state mapping is established.
-- UTXO-911 describes a separate agent-availability UTXO cycle. Roadmap Section 3.1 expressly adopts two related but independent cycles and the Technical Response supports that separation; only detailed state-machine formalization remains.
+- UTXO-911 describes a separate agent-availability UTXO cycle. Roadmap Section 3.1 (PDF p.3) expressly adopts two related but independent cycles and the Technical Response p.1 supports that separation; DOC-ISS-010 is narrowed to detailed state-machine formalization and assignment.
 - Atlas expressly identifies Protocol as its related normative document; the handling of a particular diagram/text divergence still needs a controlled rule.
 - The Technical Response is not shown by the supplied evidence to be an approved Roadmap amendment.
 - The candidate consensus PDF cannot yet be equated to the Roadmap's ERX-CONSENSUS-001 v0.1 citation.
-- UTXO-911's separate call-acceptance output is a structural difference from Protocol/Atlas's explicit three-output chain; LAEV must decide whether it is an independent spendable output or an acceptance sub-state/event.
+- UTXO-911's separate call-acceptance output is a structural difference from Protocol/Atlas's explicit three-output chain. Verified references: UTXO-911 §§2.1–2.5 and 3.1; Protocol Step 15 (PDF p.13); Atlas Plate 03. LAEV must decide whether acceptance is an independent spendable output or an acceptance event/sub-state within UTXO 01→02.
 
 No direct contradiction is declared solely from different levels of detail. The open matters are scoped as identity, authority, granularity, and documentary-effect decisions.
 

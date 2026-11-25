@@ -244,7 +244,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Activities**
 - [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
-- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 64 source-derived candidate records across batches 001–004 at review branch snapshot; extraction completeness remains subject to source coverage review.
+- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 65 source-derived candidate records across batches 001–004 at review branch snapshot; extraction completeness remains subject to source coverage review.
 - [ ] 0.7.3 Individually identify each requirement — candidate inventory expanded; record-level semantic validation and overlap disposition pending.
 - [ ] 0.7.4 Classify requirements — preliminary types present; taxonomy normalization and individual classification review pending.
 - [ ] 0.7.5 Identify mandatory requirements — explicit normative modality review pending; recommendations remain non-mandatory unless separately approved.
@@ -255,7 +255,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases — not started; assignments remain unallocated pending source-backed lifecycle mapping.
 - [ ] 0.7.11 Build the traceability matrix — machine-readable register extended; consolidated matrix and end-to-end trace audit pending.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; extraction batches 002 and 003 v0.1.0; batch 004 v0.1.0; controlled method v1.0.0; requirements-linked open-decision candidate register v0.1.0; preliminary structural review v0.1.0; machine-readable traceability register at review branch snapshot: 64 candidate rows, 19 columns. Structural checks on this branch snapshot: 64 data rows, 19 columns, zero duplicate IDs and zero malformed-width rows. These checks do not establish semantic correctness or acceptance.
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; extraction batches 002 and 003 v0.1.0; batch 004 v0.1.0; controlled method v1.0.0; requirements-linked open-decision candidate register v0.1.0; preliminary structural review v0.1.0; machine-readable traceability register at review branch snapshot: 65 candidate rows, 19 columns. Structural checks on this branch snapshot: 65 data rows, 19 columns, zero duplicate IDs and zero malformed-width rows. These checks do not establish semantic correctness or acceptance.
 
 **Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP. Requirements approval and implementation remain separate gates.
 

@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.2.7
+- **Version:** 1.2.8
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -181,7 +181,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 ### WP-0.5 — ERX Repository Creation and Organization
 **Approval status:** APPROVED — LAEV, 2026-11-24
-**Execution status:** NOT_STARTED — formal execution not yet initiated; preparatory draft only.
+**Execution status:** IN_PROGRESS — formal initiation authorized by LAEV on 2026-11-24; repository audit and governance deliverables underway on `main`. No WP-0.5 acceptance or closure is implied.
 
 **Activities**
 - [ ] 0.5.1 Repository identity.
@@ -213,9 +213,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 └── templates/
 ```
 
-**Preparatory draft:** [`docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md`](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) v0.1.0 — NOT APPROVED. Existing repository configuration remains to be inspected. 
+**Execution artifacts:** `ERX-WP-0.5-INITIATION-RECORD-001` v1.0.0 — RECORDED; `ERX-WP-0.5-REPOSITORY-AUDIT-001` v0.1.0 — PRELIMINARY / IN PROGRESS; `ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001` v0.1.0 — PROPOSED / NOT APPROVED; `ERX-REPOSITORY-GOVERNANCE-001` v0.2.0 — IN REVIEW / NOT APPROVED; and `registers/repository-governance-evidence.csv`. Audit gaps and decisions are expressly recorded; see the initiation and audit records.
 **Acceptance:** locations, access, branches, change control, and intellectual property are documented. Do not create or attribute a license without an express decision.  
-**Dependencies:** WP-0.3 and WP-0.4 — both COMPLETED / ACCEPTED. Dependency prerequisites are satisfied. WP-0.5 remains NOT_STARTED because formal initiation and its own scope authorization have not yet been given; this is not a dependency block. Preparatory draft work is not execution or approval.
+**Dependencies:** WP-0.3 and WP-0.4 — both COMPLETED / ACCEPTED, as evidenced by their controlling decision/closeout records. Prerequisites are satisfied. LAEV expressly authorized WP-0.5 execution on 2026-11-24 in the project conversation; execution is IN_PROGRESS. Publication of these artifacts does not constitute approval of repository policy, completion of WP-0.5, or authorization of WP-0.6 before WP-0.5 acceptance.
 
 ### WP-0.6 — Master Index and Document Register
 **Approval status:** APPROVED — LAEV, 2026-11-24
@@ -391,7 +391,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 | WP-0.2 | Foundational Materials | APPROVED | LAEV | [Source inventory](docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md) · [CSV register](registers/foundational-material-register.csv) · [Cross-reference map](docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md) · [Archive procedure](docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md) · [Completion dossier](docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md) | Five originals archived in `docs/` and byte-identity verified; DOC-ISS-008 resolved; LAEV expressly accepted WP-0.2 baseline on 2026-11-23. A post-approval text source `docs/Consenso ERX byLAEV` confirms ERX-CONSENSUS-001 v0.1 identity/content; DOC-ISS-011 tracks proposal status and operational completeness; ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED (DOC-ISS-003). |
 | WP-0.3 | Document Hierarchy | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Decision record v1.0.0](docs/phase-0/ERX-WP-0.3-LAEV-DECISION-RECORD-001.md) · [Completion matrix v1.0.2](docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md) · [Execution record v1.0.1](docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md) · [Acceptance readiness v1.0.0](docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md) · [Final internal audit v1.0.3](docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md) · [Issue register](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) · [CSV](registers/document-issue-register.csv) | DP-01–DP-09 recorded; DOC-ISS-001–011 dispositioned; DOC-ISS-003 bounded limitation; DOC-ISS-010/011 deferred; ERX-CONSENSUS-001 remains proposal; no external audit or operational approval claimed. |
 | WP-0.4 | Document Control | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Approved baseline](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) · [Approval record](docs/phase-0/ERX-WP-0.4-APPROVAL-RECORD-001.md) · [Closeout audit](docs/phase-0/ERX-WP-0.4-CLOSEOUT-AUDIT-001.md) | WP-0.4 has its own approval/closeout record; WP-0.3 is now accepted. External independent review remains deferred under WP-0.4's approved record, not represented as performed. |
-| WP-0.5 | ERX Repository | APPROVED — execution NOT_STARTED | LAEV / to be assigned | [Preparatory draft](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) | WP-0.3 and WP-0.4 acceptance prerequisites are satisfied; WP-0.5 remains NOT_STARTED pending formal initiation and its own authorization. |
+| WP-0.5 | ERX Repository | APPROVED — execution IN_PROGRESS | LAEV | [Initiation record](docs/phase-0/ERX-WP-0.5-INITIATION-RECORD-001.md) · [Preliminary repository audit](docs/phase-0/ERX-WP-0.5-REPOSITORY-AUDIT-001.md) · [Governance draft](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) · [Access matrix](docs/phase-0/ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001.md) · [Evidence register](registers/repository-governance-evidence.csv) | LAEV formally initiated WP-0.5 on 2026-11-24. Work is on `main` by explicit instruction. Repository policy remains under review; no license, branch protection, collaborator permissions, or final policy approval is inferred. |
 | WP-0.6 | Master Index | APPROVED — execution BLOCKED pending dependencies | To be assigned | [Provisional index](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [CSV register](registers/document-register.csv) | Preparatory draft only; depends on WP-0.2 through WP-0.5 acceptance. |
 | WP-0.7 | Requirements | APPROVED — execution BLOCKED pending dependencies | To be assigned | [Preparatory method](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) · [Traceability schema](registers/requirements-traceability.csv) | No substantive extracted requirements yet; depends on WP-0.3 and WP-0.6 acceptance. |
 | WP-0.8 | ADR Decisions | APPROVED — execution NOT_STARTED | LAEV / to be assigned | — | — |

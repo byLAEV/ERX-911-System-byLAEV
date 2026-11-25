@@ -55,7 +55,7 @@ The two-page technical response was inspected separately. Its statements are tre
 
 ## 4. Result
 
-Batch 004 adds 20 rows to the prior 45-row register, yielding 64 candidate records at this branch snapshot. This count is an extraction inventory only; it is not a count of approved or fully validated requirements.
+Batch 004 adds 20 rows to the prior 45-row register, yielding 65 candidate records at this branch snapshot. This count is an extraction inventory only; it is not a count of approved or fully validated requirements.
 
 ## 5. Required next actions
 

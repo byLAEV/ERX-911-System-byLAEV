@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.4.1 |
+| Version | 0.4.2 |
 | Status | IN_PROGRESS — SECOND-PASS RECONCILIATION |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -47,11 +47,11 @@ The explicit Markdown hyperlinks in WORKPLAN-PHASE-0.md, ERX-MASTER-DOCUMENT-IND
 
 ## 5. Internal review and acceptance gates
 
-Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.0](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
+Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.2](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
 
 ## 6. Open work and acceptance gates
 
-1. Re-snapshot live tree after the synchronized control-document edits; reconcile every live path against exactly one catalogue path.
+1. Re-fetch main tree after the index refresh and verify 73 live paths, 74 catalogue records, 16 columns, exact path coverage and uniqueness.
 2. Complete final formal source-ID uniqueness check against all document headers, preserving source/derivative pairs and NOT_STATED cases.
 3. Confirm index, CSV, matrix and Workplan all cite the same final tree snapshot and exact current versions.
 4. Conduct final readiness review and closeout audit against the nine activities and Workplan acceptance criterion.

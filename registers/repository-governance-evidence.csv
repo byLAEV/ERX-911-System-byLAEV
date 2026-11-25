@@ -1,0 +1,24 @@
+evidence_id,subject,evidence_type,observed_value_or_reference,status,limitations
+RGE-001,Repository identity,GitHub repository metadata,byLAEV/ERX-911-System-byLAEV,VERIFIED,Repository exists; this WP is organization and governance
+RGE-002,Default branch,GitHub repository metadata,main,VERIFIED,Observed default branch
+RGE-003,Visibility,GitHub repository metadata,public,VERIFIED,Current observed state; no visibility change authorized
+RGE-004,Repository archived flag,GitHub repository metadata,false,VERIFIED,Metadata only
+RGE-005,Connected integration permissions,GitHub repository metadata,"admin maintain push pull triage",VERIFIED_BOUNDED,Applies only to connected identity; does not enumerate other collaborators
+RGE-006,Merge configuration,GitHub repository metadata,"merge rebase squash enabled; auto-merge disabled; update-branch disabled",VERIFIED,Does not establish branch protection or review requirements
+RGE-007,Branch names,GitHub branch search,"main; wp-0.3-controlled-closeout; wp-0.4-document-control; wp-0.5-repository-governance",VERIFIED_BOUNDED,Returned branch list at audit time; does not establish branch protection
+RGE-008,README.md,GitHub file fetch,Present on main,VERIFIED,Only exact path inspected
+RGE-009,WORKPLAN-PHASE-0.md,GitHub file fetch,"v1.2.7 at start of WP-0.5 execution",VERIFIED,Updated separately to v1.2.8 to record initiation
+RGE-010,WP-0.3 decision record,GitHub file fetch,"ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0 APPROVED",VERIFIED,Document's stated approval and scope apply
+RGE-011,WP-0.4 approval record,GitHub file fetch,"ERX-WP-0.4-APPROVAL-RECORD-001 v1.0.0 APPROVED",VERIFIED,Exact-version approval applies to WP-0.4 baseline only
+RGE-012,WP-0.4 closeout audit,GitHub file fetch,"ERX-WP-0.4-CLOSEOUT-AUDIT-001 v0.5.0 COMPLETED / ACCEPTED",VERIFIED,Internal documentary audit; external review deferred
+RGE-013,WP-0.2 source register,GitHub file fetch,"ERX-FOUNDATIONAL-MATERIAL-REGISTER-001 v0.3.0",VERIFIED,Five-PDF source baseline; source archival evidence referenced to completion dossier
+RGE-014,Governance draft v0.1.0,GitHub file fetch,"ERX-REPOSITORY-GOVERNANCE-001 v0.1.0",VERIFIED,Preparatory draft; replaced by derivative v0.2.0 in review; history preserved
+RGE-015,LICENSE exact path,GitHub file fetch,NOT_FOUND,NOT_VERIFIED_ABSENT,Only exact root path queried
+RGE-016,COPYRIGHT.md exact path,GitHub file fetch,NOT_FOUND,NOT_VERIFIED_ABSENT,Only exact root path queried
+RGE-017,.github/CODEOWNERS exact path,GitHub file fetch,NOT_FOUND,NOT_VERIFIED_ABSENT,Only exact path queried
+RGE-018,.github/PULL_REQUEST_TEMPLATE.md exact path,GitHub file fetch,NOT_FOUND,NOT_VERIFIED_ABSENT,Only exact path queried
+RGE-019,Branch protection and rulesets,Not inspected,NOT_VERIFIED,OPEN,No conclusion about current enforcement
+RGE-020,Collaborator/team roster,Not inspected,NOT_VERIFIED,OPEN,No conclusion about other users' access
+RGE-021,Full repository tree,Not inspected completely,NOT_VERIFIED,OPEN,Audit remains preliminary
+RGE-022,Original PDF byte-identity evidence,WP-0.2 completion dossier,Prior accepted verification referenced,REFERENCED,Not re-performed in WP-0.5 preliminary audit
+RGE-023,LAEV WP-0.5 initiation,Project conversation authorization,"2026-11-24; main branch requested",RECORDED,Initiation does not approve final repository policy

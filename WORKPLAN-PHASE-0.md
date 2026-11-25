@@ -171,7 +171,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. Both dependency gates are satisfied. WP-0.4 is COMPLETED / ACCEPTED; the WP-0.5 dependency gate is released. WP-0.5 remains NOT_STARTED until formally initiated.
 
 ### WP-0.5 — ERX Repository Creation and Organization
-**Status:** BLOCKED — PREPARATORY DRAFT ONLY
+**Status:** NOT_STARTED — DEPENDENCY GATES RELEASED; PREPARATORY DRAFT ONLY
 
 **Activities**
 - [ ] 0.5.1 Repository identity.

@@ -89,6 +89,8 @@ The second-pass review found and corrected material documentary status and consi
 
 ## 9. Final closeout verification — 2026-11-24
 
+This section supersedes the provisional/pending findings in Sections 2–8, which are retained as the historical second-pass audit snapshot before LAEV's final decisions and closeout actions.
+
 The following controlled records were updated on the WP-0.3 closeout branch:
 - LAEV decision record DP-01 through DP-09, v1.0.0.
 - Hierarchy matrix and subject-matter authority matrix, both v1.0.0 APPROVED.

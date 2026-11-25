@@ -30,7 +30,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | ID | Issue | Status | Work Package |
 |---|---|---|---|
 | DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | WP-0.3 |
-| DOC-ISS-002 | Consensus source identity confirmed in text; its status is proposal for review | IDENTITY_CONFIRMED_CONTENT_REVIEWED_STATUS_PROPOSAL | WP-0.3 |
+| DOC-ISS-002 | ERX-CONSENSUS-001 v0.1 source identity/content confirmed from text; lifecycle is proposal for review | RESOLVED_EVIDENCE | WP-0.3 source verification |
 | DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | WP-0.2 carry-forward |
 | DOC-ISS-004 | Technical Response lacks formal ID/version/date | OPEN | WP-0.3 |
 | DOC-ISS-005 | UTXO-911 / Protocol authority relationship | OPEN | WP-0.3 |

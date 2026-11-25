@@ -1,0 +1,464 @@
+UTXO DE COMUNICACIÓN 911 byLAEV
+
+Especificación funcional de las tres etapas del ciclo de comunicación de emergencia
+
+Autor: LAEV / byLAEV
+Proyecto: 911 — Sistema de Doble Gasto
+Documento: UTXO-911-001
+Versión: 1.0
+Naturaleza: Documento conceptual y funcional de protocolo.
+
+1. CONCEPTO GENERAL
+
+El sistema UTXO de comunicación 911 byLAEV propone organizar el ciclo de vida de una llamada de emergencia mediante unidades de estado de gasto único (UTXO), vinculadas a evidencias temporales OTS (OpenTimestamps).
+
+El propósito es establecer una secuencia verificable de acontecimientos desde que un dispositivo móvil solicita una comunicación con el servicio 911, hasta que un agente operador recibe, desarrolla y finaliza dicha comunicación.
+
+La arquitectura divide la comunicación en tres etapas independientes, pero enlazadas mediante entradas y salidas UTXO.
+
+Cada etapa consume un estado anterior y produce un nuevo estado que representa el resultado de la operación realizada.
+
+De esta manera, una misma solicitud, aceptación, sesión de comunicación o cierre no puede reutilizarse como si fuera un acontecimiento nuevo.
+
+El sistema no pretende sustituir la infraestructura telefónica del 911 ni las funciones operativas de sus agentes. Su finalidad es proporcionar una estructura de registro, identificación, continuidad y evidencia de las comunicaciones.
+
+2. PRIMERA ETAPA: SOLICITUD Y ENTRADA DE LLAMADA AL 911
+
+2.1. Definición
+
+La primera etapa comienza cuando una persona utiliza un dispositivo móvil para marcar el número 911 y solicitar comunicación con el servicio de emergencias.
+
+Esta acción genera una solicitud de comunicación que debe ser identificada como un acontecimiento único.
+
+El sistema recibe dicha solicitud mediante un UTXO de entrada de llamada, cuya finalidad es registrar la existencia de una nueva comunicación solicitada y establecer su identidad dentro del protocolo.
+
+Este primer UTXO representa la solicitud de llamada al 911, no la aceptación de la llamada por parte de un operador.
+
+2.2. Recepción de la solicitud
+
+Cuando el dispositivo móvil inicia la llamada, la infraestructura de recepción del 911 identifica la entrada de comunicación.
+
+En ese momento, el protocolo registra la información técnica disponible y necesaria para identificar el acontecimiento inicial.
+
+El registro puede comprender:
+
+Identificador único de la solicitud.
+
+Fecha y hora de recepción.
+
+Identificación técnica disponible del origen.
+
+Identificación del dispositivo o terminal, cuando esté disponible y autorizado.
+
+Información de encaminamiento de la llamada.
+
+Identificador del sistema receptor.
+
+Estado inicial de la comunicación.
+
+Referencia de la solicitud dentro del protocolo.
+
+La información registrada debe distinguir entre los datos efectivamente disponibles y aquellos que todavía no han sido identificados.
+
+2.3. Generación del primer UTXO
+
+La recepción de la solicitud produce el UTXO de entrada de llamada 911.
+
+Este UTXO representa el derecho operativo de continuar procesando una solicitud específica dentro del sistema.
+
+Su creación establece que existe una llamada recibida que todavía necesita ser aceptada y asignada a un agente operador.
+
+La salida UTXO contiene la referencia a la solicitud y su estado correspondiente.
+
+No representa todavía una comunicación atendida ni una sesión operativa iniciada.
+
+2.4. Generación de evidencia OTS
+
+Después de registrar la información inicial se genera un compromiso criptográfico de la evidencia correspondiente.
+
+Este compromiso se utiliza para producir una referencia temporal OTS.
+
+Su finalidad es permitir demostrar posteriormente que el conjunto de información correspondiente a la entrada de llamada ya existía en un determinado momento.
+
+La evidencia temporal queda asociada al identificador del UTXO de entrada.
+
+De esta forma, la solicitud de comunicación obtiene una referencia verificable que permite relacionar su recepción con las etapas posteriores.
+
+2.5. Enlace con el operador
+
+Una vez registrada la solicitud, el sistema procede a buscar y asignar un agente operador disponible.
+
+Cuando un operador recibe la solicitud y acepta atenderla, se produce la siguiente transición:
+
+El UTXO de solicitud de llamada se consume mediante una operación válida de aceptación.
+
+Como resultado se genera un nuevo UTXO: UTXO de aceptación de llamada al 911.
+
+Este segundo estado representa que la solicitud inicial ha sido recibida y aceptada por un agente operador identificado.
+
+La solicitud original no puede volver a utilizarse para producir una segunda aceptación independiente.
+
+La nueva salida queda vinculada a la solicitud inicial y a su evidencia OTS.
+
+Resultado de la primera etapa:
+
+Existe una solicitud de llamada identificada, registrada temporalmente y enlazada con un agente operador que ha aceptado atenderla.
+
+3. SEGUNDA ETAPA: PROTOCOLO INICIAL DE COMUNICACIÓN DEL OPERADOR 911
+
+3.1. Definición
+
+La segunda etapa comienza cuando el agente operador recibe y acepta la llamada.
+
+Su finalidad es registrar el establecimiento de la comunicación operativa inicial entre la persona que solicita asistencia y el agente responsable de atenderla.
+
+En esta etapa se produce un nuevo UTXO, denominado:
+
+UTXO de protocolo inicial del operador 911.
+
+Este UTXO representa el inicio formal de la atención de una llamada específica por parte de un agente operador determinado.
+
+Su función es establecer una identidad verificable para la sesión de comunicación y registrar las instrucciones y actuaciones iniciales del protocolo de atención.
+
+3.2. Identificación del agente operador
+
+La aceptación de la llamada debe quedar relacionada con la identidad operativa del agente que la recibe.
+
+El registro debe permitir identificar:
+
+Identificador del agente operador.
+
+Identificador de su posición o terminal de trabajo.
+
+Identificador de la central u operadora.
+
+Identificador de la llamada recibida.
+
+Referencia del UTXO de aceptación.
+
+Fecha y hora de inicio de la atención.
+
+Identificador de la sesión de comunicación.
+
+Esta relación permite diferenciar al agente responsable de una llamada de otros agentes que puedan intervenir posteriormente.
+
+La identidad del agente debe corresponder a una identidad operativa autenticada por el sistema de la institución.
+
+3.3. Inicio del protocolo de atención
+
+Una vez establecida la comunicación, el agente comienza el protocolo inicial de atención.
+
+Este comprende las instrucciones, preguntas y procedimientos necesarios para determinar la finalidad de la llamada.
+
+Aquí comienza la utilización del formulario o guía de atención correspondiente.
+
+El sistema registra la secuencia de acontecimientos relacionados con la comunicación inicial.
+
+Entre ellos pueden encontrarse:
+
+Inicio efectivo de la comunicación.
+
+Identificación inicial de la finalidad de la llamada.
+
+Preguntas de orientación realizadas por el operador.
+
+Respuestas recibidas.
+
+Información inicial sobre el acontecimiento.
+
+Identificación preliminar de la ubicación.
+
+Clasificación inicial de la emergencia.
+
+Instrucciones proporcionadas.
+
+Cambios de estado de la atención.
+
+Referencias a procedimientos operativos utilizados.
+
+El contenido del formulario dependerá del protocolo institucional aplicable.
+
+El UTXO no determina por sí mismo la clasificación de una emergencia ni sustituye el criterio profesional del agente.
+
+3.4. Registro de la evidencia de comunicación
+
+Durante esta etapa se construye el conjunto de evidencias correspondientes al protocolo inicial.
+
+La finalidad es conservar una secuencia verificable de las acciones que se realizaron desde que el agente aceptó la llamada hasta que comenzó a desarrollar formalmente su atención.
+
+El conjunto de evidencia puede incorporar:
+
+Registro de aceptación.
+
+Identidad del agente responsable.
+
+Referencia temporal del inicio de la sesión.
+
+Secuencia de instrucciones.
+
+Registro de respuestas y acontecimientos.
+
+Referencias a los campos del formulario.
+
+Cambios de clasificación.
+
+Eventos de transferencia, cuando existan.
+
+Referencias a los sistemas operativos utilizados.
+
+Los registros deben conservar su relación cronológica y su procedencia.
+
+Cuando se requiera almacenar audio, transcripciones u otros datos personales, deberán aplicarse controles institucionales de autorización, privacidad, acceso y conservación.
+
+3.5. Generación del segundo UTXO y OTS
+
+Una vez establecido el protocolo inicial, se genera el compromiso criptográfico correspondiente a esta etapa.
+
+Este compromiso produce una nueva referencia OTS asociada al UTXO de protocolo inicial del operador.
+
+La evidencia temporal permite verificar posteriormente la existencia del conjunto de registros comprometidos y su relación con la sesión de comunicación.
+
+El segundo OTS debe quedar relacionado con:
+
+El UTXO de aceptación de llamada.
+
+El UTXO de protocolo inicial.
+
+El identificador de la llamada.
+
+La identidad del agente operador.
+
+El conjunto de evidencias de la comunicación inicial.
+
+La referencia temporal de la operación.
+
+El OTS no sustituye el registro de los acontecimientos ni certifica que las instrucciones fueran correctas. Aporta evidencia temporal sobre el compromiso criptográfico de los datos registrados.
+
+Resultado de la segunda etapa:
+
+Existe una sesión de comunicación identificada, aceptada por un agente específico y respaldada por evidencias del protocolo inicial de atención.
+
+4. TERCERA ETAPA: CIERRE DE COMUNICACIÓN Y GENERACIÓN DE UN NUEVO ESTADO DE DISPONIBILIDAD
+
+4.1. Definición
+
+La tercera etapa corresponde a la finalización de la comunicación entre la persona que solicitó asistencia y el agente operador.
+
+Su finalidad es cerrar el ciclo de vida de esa llamada específica, consolidar las evidencias correspondientes y producir un nuevo estado UTXO.
+
+Este estado representa que la comunicación ha finalizado y que el agente operador puede volver a recibir una nueva solicitud de llamada.
+
+La tercera etapa se identifica como:
+
+UTXO de cierre de comunicación 911.
+
+4.2. Registro de los acontecimientos finales
+
+Antes de cerrar la sesión, el sistema reúne los registros correspondientes al desarrollo de la comunicación.
+
+El conjunto de información debe permitir reconstruir qué ocurrió durante la llamada.
+
+Puede comprender:
+
+Identificador de la llamada.
+
+Identidad del agente operador.
+
+Fecha y hora de aceptación.
+
+Fecha y hora de finalización.
+
+Duración de la comunicación.
+
+Finalidad identificada de la llamada.
+
+Información registrada en el formulario.
+
+Instrucciones proporcionadas.
+
+Acciones realizadas durante la atención.
+
+Clasificaciones y modificaciones.
+
+Derivaciones o transferencias.
+
+Recursos de emergencia solicitados o despachados, cuando corresponda.
+
+Estado final de la atención.
+
+Motivo de finalización.
+
+Incidencias técnicas.
+
+Referencias a evidencias adicionales.
+
+El cierre debe diferenciar entre la finalización de la comunicación telefónica y la finalización de las actuaciones posteriores relacionadas con la emergencia.
+
+Una llamada puede terminar mientras una intervención institucional continúa activa.
+
+Por lo tanto, el cierre de la sesión no debe interpretarse automáticamente como el cierre del incidente operativo.
+
+4.3. Consumo del UTXO de comunicación
+
+Cuando se produce el cierre de la comunicación, el sistema consume el estado UTXO correspondiente a la sesión activa.
+
+Este consumo representa que la sesión identificada ha finalizado y que ya no puede utilizarse como una comunicación activa.
+
+La operación de cierre debe estar vinculada a la identidad del agente responsable y a la sesión que se está finalizando.
+
+No se permite consumir dos veces el mismo estado de comunicación para generar dos cierres independientes.
+
+De esta manera, el sistema evita la duplicación de cierres y mantiene la continuidad entre la aceptación, el protocolo inicial y la finalización de la llamada.
+
+4.4. Generación del tercer OTS
+
+Una vez consolidado el conjunto de evidencias de la llamada, se genera un nuevo compromiso criptográfico.
+
+Este compromiso produce el OTS de cierre.
+
+Su finalidad es establecer una referencia temporal verificable del conjunto de información correspondiente al desarrollo y finalización de la comunicación.
+
+Este tercer OTS queda relacionado con:
+
+La solicitud inicial.
+
+La aceptación del agente.
+
+El protocolo inicial de atención.
+
+Los registros del desarrollo de la llamada.
+
+Los acontecimientos finales.
+
+El identificador del agente operador.
+
+El identificador de la sesión.
+
+El estado final de la comunicación.
+
+La cadena de evidencias permite relacionar los tres momentos fundamentales de la llamada sin confundirlos como un único acontecimiento.
+
+4.5. Generación del nuevo UTXO de disponibilidad del agente
+
+Una vez cerrada la sesión, el sistema genera una nueva salida UTXO correspondiente al estado de disponibilidad del agente operador.
+
+Este nuevo estado representa que el agente ha terminado la comunicación anterior y puede recibir una nueva solicitud.
+
+Se identifica como:
+
+UTXO de disponibilidad del agente operador 911.
+
+Este UTXO se relaciona con la identidad operativa específica del agente y con el cierre de su comunicación anterior.
+
+Su finalidad es impedir que el mismo estado de disponibilidad sea utilizado para aceptar simultáneamente varias llamadas independientes.
+
+Cuando llega una nueva solicitud, el sistema puede utilizar este estado como referencia para comprobar la disponibilidad del agente.
+
+Si el agente acepta una nueva llamada, el UTXO de disponibilidad se consume y se produce una nueva transición hacia un UTXO de aceptación de llamada.
+
+El ciclo comienza nuevamente sin reutilizar los estados correspondientes a comunicaciones anteriores.
+
+La disponibilidad debe reflejar el estado real del agente y del sistema de distribución de llamadas. No debe generarse una salida de disponibilidad si el agente continúa ocupado, está en pausa o tiene otra condición operativa que impida recibir llamadas.
+
+Resultado de la tercera etapa:
+
+La comunicación anterior queda cerrada, sus evidencias quedan relacionadas mediante OTS y el agente obtiene un nuevo estado de disponibilidad para una futura llamada.
+
+5. CONTINUIDAD DEL CICLO UTXO DE UN AGENTE OPERADOR
+
+Las tres etapas constituyen un ciclo de comunicación completo.
+
+Sin embargo, la identidad del agente operador permanece como referencia de continuidad entre diferentes llamadas.
+
+Cada comunicación tiene su propio identificador, sus propios estados UTXO y sus propias evidencias OTS.
+
+La disponibilidad del agente constituye un estado independiente de las llamadas que ha atendido anteriormente.
+
+Esto permite mantener una separación entre:
+
+La identidad permanente del agente.
+
+El estado de disponibilidad del agente.
+
+Cada solicitud individual de llamada.
+
+Cada aceptación de llamada.
+
+Cada sesión de comunicación.
+
+Cada cierre de comunicación.
+
+Cada conjunto de evidencias temporales.
+
+La continuidad no significa reutilizar los UTXO anteriores.
+
+Significa producir nuevos estados que mantienen referencias verificables a los acontecimientos precedentes.
+
+Cada nueva llamada representa un nuevo ciclo y debe generar su propia secuencia de estados y evidencias.
+
+6. PRINCIPIO DE GASTO ÚNICO APLICADO A LA COMUNICACIÓN 911
+
+El principio fundamental del protocolo consiste en que cada estado UTXO solamente puede consumirse una vez.
+
+Una solicitud inicial no puede producir dos aceptaciones independientes.
+
+Una aceptación no puede iniciar dos sesiones diferentes bajo el mismo estado de entrada.
+
+Una sesión cerrada no puede volver a considerarse activa.
+
+Un estado de disponibilidad no puede utilizarse simultáneamente para aceptar varias llamadas incompatibles.
+
+Cada transición debe producir una nueva salida UTXO, vinculada criptográficamente con la entrada consumida y con las evidencias correspondientes.
+
+La validación de cada transición debe comprobar la existencia del UTXO de entrada, su estado vigente, la autorización de quien ejecuta la operación y la ausencia de un consumo anterior.
+
+La actualización del estado debe realizarse de forma atómica para impedir que dos procesos concurrentes consuman simultáneamente la misma salida.
+
+El sistema debe conservar la posibilidad de reconstruir la secuencia histórica de cada llamada.
+
+7. FUNCIÓN DE OPEN TIMESTAMPS DENTRO DEL PROTOCOLO
+
+OpenTimestamps cumple una función de evidencia temporal.
+
+Cada una de las tres etapas produce un compromiso criptográfico asociado a su conjunto de registros.
+
+El primer OTS corresponde a la recepción de la solicitud.
+
+El segundo OTS corresponde a la aceptación y al protocolo inicial de atención del agente.
+
+El tercer OTS corresponde al cierre y al conjunto de acontecimientos registrados durante la comunicación.
+
+Las tres evidencias permiten establecer referencias temporales independientes y relacionables.
+
+El sistema debe conservar los compromisos, sus pruebas OTS y los datos necesarios para verificarlos.
+
+La obtención de una prueba OTS puede completarse posteriormente, dependiendo de la disponibilidad del servicio de anclaje. Por esta razón, la generación de evidencia no debe retrasar ni bloquear la recepción, aceptación o atención de una emergencia.
+
+8. RESULTADO ARQUITECTÓNICO
+
+El protocolo UTXO de comunicación 911 byLAEV establece una estructura de tres etapas:
+
+Primera etapa: Solicitud y entrada de llamada.
+
+Identifica la llamada que entra desde un dispositivo móvil, registra su recepción, genera su primer UTXO y establece su primera evidencia OTS.
+
+Segunda etapa: Aceptación y protocolo inicial del operador.
+
+Identifica al agente que acepta la comunicación, registra el comienzo de la atención, establece la relación con el formulario o guía de actuación y produce un segundo UTXO y OTS.
+
+Tercera etapa: Cierre y disponibilidad del agente.
+
+Consolida los acontecimientos de la llamada, consume el estado de comunicación, genera el tercer OTS y produce un nuevo UTXO de disponibilidad del agente para futuras llamadas.
+
+El resultado es un modelo de comunicación en el que cada llamada posee un ciclo de vida individual, cada transición consume un estado anterior y cada nuevo estado conserva una relación verificable con su procedencia.
+
+La propuesta transforma la atención telefónica del 911 en una secuencia de acontecimientos identificables, no reutilizables y respaldados por evidencias temporales.
+
+Principio rector del protocolo:
+
+Una llamada es un ciclo único de comunicación. Su solicitud, aceptación, atención y cierre constituyen estados diferentes. Ningún estado consumido puede reutilizarse para representar una segunda operación, y cada nueva operación debe producir su propio estado y evidencia.
+
+LAEV / byLAEV
+911 — Sistema de Doble Gasto
+
+

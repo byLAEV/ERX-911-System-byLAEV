@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.5.0 |
+| Version | 0.6.0 |
 | Status | WORKING REGISTER — PENDING LAEV DECISIONS |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -39,7 +39,7 @@
 
 ## 3. Outstanding acceptance conditions
 - LAEV must decide hierarchy and subject-matter authority.
-- DOC-ISS-001–007 and DOC-ISS-009 require documented disposition. DOC-ISS-008 is RESOLVED_EVIDENCE. DOC-ISS-002 has a candidate PDF whose identity is unverified; DOC-ISS-003 remains not located. DOC-ISS-010's independent-cycle architecture is confirmed by Roadmap §3.1 and the Technical Response; detailed state-machine formalization and its target WP remain subject to LAEV disposition.
+- DOC-ISS-001–007 and DOC-ISS-009 require documented disposition. DOC-ISS-008 is RESOLVED_EVIDENCE. DOC-ISS-002 has a repository-confirmed PDF path/object identity; internal document identity and contents remain unverified due to binary access limitation. DOC-ISS-003 remains not located. DOC-ISS-010's independent-cycle architecture is confirmed by Roadmap §3.1 and the Technical Response; detailed state-machine formalization and its target WP remain subject to LAEV disposition.
 - DOC-ISS-008 is RESOLVED_EVIDENCE.
 - The contradiction-handling procedure and evolution/supersession policy require review and approval.
 - Execution record, Workplan, register and linked documents must agree.

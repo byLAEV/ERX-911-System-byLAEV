@@ -14,7 +14,7 @@
 
 ## 1. Scope and extraction boundary
 
-This batch adds 19 candidate records from direct inspection of ERX-ROADMAP-001 v1.0, PDF pages 11–29. It supplements batches 001–003. It does not replace, merge or approve any existing requirement.
+This batch adds 20 candidate records from direct inspection of ERX-ROADMAP-001 v1.0, PDF pages 11–29. It supplements batches 001–003. It does not replace, merge or approve any existing requirement.
 
 The two-page technical response was inspected separately. Its statements are treated as response positions/recommendations and are not used to strengthen normative modality in this batch. In particular, recommended technologies, HSM, database choices, distributed coordination alternatives and consensus avoidance are not recorded as binding requirements merely because they are recommended.
 
@@ -55,7 +55,7 @@ The two-page technical response was inspected separately. Its statements are tre
 
 ## 4. Result
 
-Batch 004 adds 19 rows to the prior 45-row register, yielding 64 candidate records at this branch snapshot. This count is an extraction inventory only; it is not a count of approved or fully validated requirements.
+Batch 004 adds 20 rows to the prior 45-row register, yielding 64 candidate records at this branch snapshot. This count is an extraction inventory only; it is not a count of approved or fully validated requirements.
 
 ## 5. Required next actions
 

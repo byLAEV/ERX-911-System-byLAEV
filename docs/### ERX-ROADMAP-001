@@ -1,0 +1,2559 @@
+### ERX-ROADMAP-001
+
+
+### Plan maestro de fases para el desarrollo, implementación y homologación de ERX byLAEV
+
+
+Documento de planificación técnica, arquitectura de software, ingeniería de protocolos y adopción institucional.
+
+
+Documento de desarrolloBasado en documentación ERX existenteVersión 1.0
+
+
+Autoría de referencia: LAEV / byLAEV Proyecto: 911 — Sistema de Doble Gasto byLAEV Sistema: ERX byLAEV Fecha: 23 de noviembre de 2026 Hora local de referencia: 21:06 UTC−6 Localización de referencia: San Ramón, Costa Rica (aproximada).
+
+
+### 1\. Propósito del documento
+
+
+El presente documento establece la ruta oficial de desarrollo de ERX byLAEV, desde la arquitectura normativa existente hasta la construcción de un paquete de software funcional, verificable, seguro e integrable en infraestructuras institucionales de servicios de emergencia 911.
+
+
+Su finalidad es establecer:
+
+
+* El orden correcto de desarrollo.
+
+
+* Las fases necesarias para construir el sistema.
+
+
+* La arquitectura de software que debe utilizarse.
+
+
+* La separación de responsabilidades entre componentes.
+
+
+* Las dependencias técnicas entre fases.
+
+
+* Los entregables documentales y de software.
+
+
+* Los mecanismos de validación y pruebas.
+
+
+* Los criterios para avanzar de una fase a otra.
+
+
+* Los requisitos para llegar a una implementación institucional.
+
+
+Este plan toma como fundamento:
+
+
+* ERX-PROT-001 v1.1 — Protocolo institucional.
+
+
+* ERX-ATLAS-001 v1.1 — Atlas de arquitectura y diagramas.
+
+
+* UTXO-911-001 v1.0 — UTXO de comunicación 911.
+
+
+* ERX-CONSENSUS-001 v0.1 — Marco de consenso, como referencia de coordinación que deberá completarse antes de incorporarse a una implementación multiinstitucional.
+
+
+* ERX-IMPL-PROPOSAL-001 — Propuesta de implementación institucional.
+
+
+Principio rector: no desarrollar funcionalidades independientes antes de establecer las reglas que determinan cómo se relacionan, autorizan, consumen y verifican los estados transaccionales de ERX.
+
+
+### 2\. Objetivo final del desarrollo
+
+
+Construir un paquete institucional compuesto por cuatro componentes:
+
+
+### ERX byLAEV — Arquitectura de producto
+
+
+ERX Protocol
+
+
+Capa normativa: define reglas, estados, transiciones, identidades y condiciones de validez.
+
+
+ERX Core
+
+
+Motor transaccional: ejecuta las reglas, gestiona UTXO, atomicidad, idempotencia, firmas y persistencia.
+
+
+ERX Institutional Module
+
+
+Integración institucional: conecta telefonía, localización, CAD, agentes, almacenamiento y OTS.
+
+
+ERX Verifier
+
+
+Verificación independiente: comprueba documentos, firmas, transiciones, archivos y pruebas temporales.
+
+
+Los cuatro componentes comparten especificaciones, pero mantienen responsabilidades y límites de autoridad independientes.
+
+
+El resultado debe permitir que una institución instale ERX sin tener que reemplazar su infraestructura telefónica, su sistema CAD, sus procedimientos de despacho ni sus autoridades operativas.
+
+
+### 3\. Principios obligatorios de desarrollo
+
+
+Todas las fases deberán respetar estos principios.
+
+
+| Principio                | Condición                                                            |
+
+| ------------------------ | -------------------------------------------------------------------- |
+
+| No interferencia         | ERX nunca condiciona la atención de emergencias                      |
+
+| Gasto único              | Ningún estado puede consumirse dos veces                             |
+
+| Atomicidad               | Consumo y creación de estados deben ser coherentes                   |
+
+| Idempotencia             | Repetir una solicitud no duplica sus efectos                         |
+
+| Historial                | Los acontecimientos anteriores no se eliminan por una transición     |
+
+| Identidad                | Toda transición debe tener un emisor y una autorización verificables |
+
+| Privacidad               | Los datos sensibles permanecen bajo custodia institucional           |
+
+| Independencia temporal   | OTS no condiciona el cierre ni la atención                           |
+
+| Recuperación             | Las interrupciones no deben resucitar estados consumidos             |
+
+| Verificación             | La evidencia debe poder comprobarse independientemente               |
+
+| Separación institucional | Cada centro conserva su autoridad y responsabilidad                  |
+
+
+### 3.1. Regla de separación entre los ciclos UTXO
+
+
+Se establece como decisión arquitectónica fundamental mantener dos ciclos relacionados, pero independientes.
+
+
+Ciclo A — Comunicación 911
+
+
+### UTXO 01
+
+
+Recepción
+
+
+### UTXO 02
+
+
+Contacto y protocolo inicial
+
+
+### UTXO 03
+
+
+Desarrollo y cierre
+
+
+Cada llamada posee su propio ciclo y expediente.
+
+
+Ciclo B — Disponibilidad del agente
+
+
+DISPONIBLE
+
+
+ASIGNADO / ACEPTADO
+
+
+OCUPADO
+
+
+LIBERACIÓN Y NUEVA DISPONIBILIDAD
+
+
+El ciclo del agente tiene estados propios y no reutiliza los UTXO de la llamada.
+
+
+La relación entre ambos ciclos se establece mediante referencias de identidad, asignación y sesión.
+
+
+El UTXO 03 no debe utilizarse como sustituto del UTXO de disponibilidad del agente.
+
+
+Tampoco debe emitirse una nueva disponibilidad si el agente continúa ocupado, está en pausa o tiene otra condición que impide recibir solicitudes.
+
+
+Esta separación respeta el fundamento expresado en UTXO-911-001 v1.0, especialmente sus apartados 4.5, 5 y 6, y lo desarrolla dentro de la arquitectura modular de ERX.
+
+
+### 4\. Plan general de desarrollo por fases
+
+
+Se establecen once fases principales, más una fase inicial de gobierno y preparación.
+
+
+El orden es secuencial en cuanto a dependencias: algunas actividades pueden ejecutarse en paralelo, pero ninguna fase puede declararse completada sin cumplir sus condiciones de aceptación.
+
+
+### Mapa general de desarrollo
+
+
+* Fase 0 — Gobierno y preparación del proyecto
+
+
+* Fase 1 — Cierre normativo y modelo de estados
+
+
+* Fase 2 — Especificación formal de datos y criptografía
+
+
+* Fase 3 — Arquitectura de software e infraestructura
+
+
+* Fase 4 — Desarrollo del ERX Core
+
+
+* Fase 5 — Identidad, confianza y seguridad
+
+
+* Fase 6 — Evidencia documental y OpenTimestamps
+
+
+* Fase 7 — Desarrollo del ERX Verifier
+
+
+* Fase 8 — Integración institucional
+
+
+* Fase 9 — Pruebas, auditoría y recuperación
+
+
+* Fase 10 — Piloto y operación en modo sombra
+
+
+* Fase 11 — Homologación y expansión institucional
+
+
+### FASE 0 — Gobierno y preparación del proyecto
+
+
+Primera fase
+
+
+Objetivo: establecer la estructura de trabajo, el control documental y las reglas para desarrollar ERX sin perder continuidad entre versiones.
+
+
+### Actividades
+
+
+* Consolidar los documentos normativos existentes.
+
+
+* Establecer la jerarquía documental.
+
+
+* Definir el identificador y versión de cada documento.
+
+
+* Establecer un repositorio de desarrollo.
+
+
+* Crear el registro de decisiones arquitectónicas.
+
+
+* Definir responsables de protocolo, software, seguridad y validación.
+
+
+* Separar requisitos obligatorios de decisiones todavía abiertas.
+
+
+* Crear un registro de riesgos y dependencias.
+
+
+### Estructura documental
+
+
+| Documento         | Función                                |
+
+| ----------------- | -------------------------------------- |
+
+| ERX-PROT-001      | Norma institucional                    |
+
+| ERX-ATLAS-001     | Diagramas y representación             |
+
+| UTXO-911-001      | Fundamento del ciclo UTXO              |
+
+| ERX-CONSENSUS-001 | Referencia de coordinación             |
+
+| ERX-ROADMAP-001   | Plan de desarrollo                     |
+
+| ERX-ADR-001       | Registro de decisiones arquitectónicas |
+
+
+Los documentos nuevos deberán complementar, no reemplazar silenciosamente, las versiones anteriores.
+
+
+### Entregables
+
+
+* Repositorio ERX.
+
+
+* Índice maestro de documentación.
+
+
+* Registro de decisiones.
+
+
+* Matriz de requisitos.
+
+
+* Registro de riesgos.
+
+
+* Plan de versiones.
+
+
+### Criterio para avanzar
+
+
+Todos los requisitos existentes deben estar identificados, clasificados y vinculados a una fuente documental o a una decisión nueva claramente señalada.
+
+
+### FASE 1 — Cierre normativo y modelo de estados
+
+
+Prioridad crítica
+
+
+Objetivo: definir de forma inequívoca cómo funciona el sistema de gasto único antes de desarrollar el motor.
+
+
+Esta es la fase más importante de todo el proyecto.
+
+
+### 1.1. Definir formalmente el UTXO institucional
+
+
+Cada UTXO debe especificar:
+
+
+* UTXO_ID.
+
+
+* CALL_ID o identificador de entidad correspondiente.
+
+
+* STAGE_ID.
+
+
+* OUTPUT_TYPE.
+
+
+* PREVIOUS_UTXO_ID, cuando corresponda.
+
+
+* DOCUMENT_HASH.
+
+
+* ISSUER_ID.
+
+
+* AUTHORIZATION_REFERENCE.
+
+
+* CREATION_EVENT.
+
+
+* CONSUMPTION_STATUS.
+
+
+* CREATION_TIME.
+
+
+* CONSUMPTION_REFERENCE.
+
+
+También se debe determinar qué campos pertenecen al documento de acontecimiento y cuáles al registro transaccional.
+
+
+### 1.2. Definir las máquinas de estados
+
+
+Se deben documentar dos máquinas independientes:
+
+
+Máquina de comunicación
+
+
+* Recepción.
+
+
+* Contacto.
+
+
+* Desarrollo.
+
+
+* Cierre.
+
+
+* Excepciones.
+
+
+* Correcciones complementarias.
+
+
+Máquina de disponibilidad del agente
+
+
+* Disponible.
+
+
+* Reservado o asignado.
+
+
+* Aceptado.
+
+
+* Ocupado.
+
+
+* Liberación pendiente.
+
+
+* Disponible nuevamente.
+
+
+* Pausa o no disponible.
+
+
+* Estado desconocido o pendiente.
+
+
+Los nombres y las transiciones definitivas deben aprobarse en el protocolo.
+
+
+### 1.3. Definir todas las transiciones válidas
+
+
+Para cada transición se documentará:
+
+
+| Elemento  | Pregunta que debe resolver                        |
+
+| --------- | ------------------------------------------------- |
+
+| Entrada   | ¿Qué estado se consume?                           |
+
+| Autoridad | ¿Quién puede realizar la operación?               |
+
+| Condición | ¿Qué debe cumplirse?                              |
+
+| Acción    | ¿Qué acontecimiento ocurre?                       |
+
+| Salida    | ¿Qué UTXO se crea?                                |
+
+| Evidencia | ¿Qué documento se genera?                         |
+
+| Fallo     | ¿Qué sucede si la operación no puede completarse? |
+
+
+### 1.4. Resolver los escenarios especiales
+
+
+* Dos agentes intentan aceptar una misma llamada.
+
+
+* Un agente recibe dos asignaciones simultáneas.
+
+
+* Una llamada se transfiere a otro centro.
+
+
+* Se produce una desconexión.
+
+
+* El centro no responde.
+
+
+* ERX queda indisponible.
+
+
+* Se recupera un respaldo antiguo.
+
+
+* Se reciben retransmisiones.
+
+
+* Una llamada tiene múltiples acontecimientos complementarios.
+
+
+### 1.5. Formalizar las invariantes
+
+
+Como mínimo:
+
+
+* Un estado solo puede consumirse una vez.
+
+
+* Una transición válida debe tener un estado de entrada vigente.
+
+
+* El estado consumido permanece en el historial.
+
+
+* Una operación repetida no produce una segunda transición.
+
+
+* Una sesión cerrada no vuelve a estar activa.
+
+
+* Una disponibilidad no puede utilizarse en dos asignaciones incompatibles.
+
+
+* Ninguna corrección modifica retroactivamente un documento sellado.
+
+
+* Las transiciones deben conservar su procedencia.
+
+
+* Una operación sin autoridad no puede crear un estado válido.
+
+
+* Una recuperación no puede resucitar estados consumidos o credenciales revocadas.
+
+
+### Entregables
+
+
+* ERX-UTXO-ENGINE-001.
+
+
+* ERX-STATE-MACHINES-001.
+
+
+* ERX-TRANSITIONS-001.
+
+
+* ERX-INVARIANTS-001.
+
+
+* ERX-EXCEPTIONS-001.
+
+
+* Diagramas definitivos de estados y transiciones.
+
+
+### Criterio para avanzar
+
+
+No debe quedar ninguna transición crítica sin definición de entrada, autorización, resultado y tratamiento de fallos.
+
+
+### FASE 2 — Especificación formal de datos y criptografía
+
+
+Objetivo: convertir las reglas normativas en estructuras que puedan procesar diferentes implementaciones de software sin ambigüedad.
+
+
+### 2.1. Esquemas JSON
+
+
+Se deben desarrollar:
+
+
+* JSON 01 — Recepción.
+
+
+* JSON 02 — Contacto.
+
+
+* JSON 03 — Desarrollo y cierre.
+
+
+* JSON de disponibilidad del agente.
+
+
+* JSON de transferencia.
+
+
+* JSON de excepción.
+
+
+* JSON de corrección complementaria.
+
+
+* JSON de identidad institucional.
+
+
+* JSON de credenciales profesionales.
+
+
+* Manifiesto de archivos originales.
+
+
+Cada estructura deberá tener un esquema formal, versión y reglas de validación.
+
+
+### 2.2. Canonicalización y hash
+
+
+Se establecerá un procedimiento único:
+
+
+* Validación del documento.
+
+
+* Normalización de los datos según el perfil aprobado.
+
+
+* Canonicalización JSON.
+
+
+* Cálculo SHA-256.
+
+
+* Identificación de la versión del esquema.
+
+
+* Preparación del compromiso criptográfico.
+
+
+Se propone adoptar RFC 8785 como perfil de canonicalización, sujeto a pruebas de interoperabilidad.
+
+
+### 2.3. Firma digital
+
+
+Definir:
+
+
+* Algoritmo de firma.
+
+
+* Formato de firma.
+
+
+* Identidad del firmante.
+
+
+* Certificado asociado.
+
+
+* Referencia de la cadena de confianza.
+
+
+* Momento de firma.
+
+
+* Validación histórica.
+
+
+* Tratamiento de revocación.
+
+
+* Rotación de claves.
+
+
+### 2.4. Relación criptográfica entre documentos y UTXO
+
+
+Debe quedar definido cómo se vinculan los documentos 01, 02 y 03 sin producir dependencias circulares.
+
+
+Se recomienda separar el documento de acontecimiento del registro de transición UTXO.
+
+
+### Entregables
+
+
+* ERX-DATA-001.
+
+
+* ERX-CRYPTO-001.
+
+
+* JSON Schema de todas las estructuras.
+
+
+* Vectores de prueba criptográficos.
+
+
+* Ejemplos de expedientes.
+
+
+* Especificación de serialización.
+
+
+### Criterio para avanzar
+
+
+Dos implementaciones independientes deben poder procesar los mismos documentos y obtener los mismos resultados de validación, canonicalización y hash.
+
+
+### FASE 3 — Arquitectura de software e infraestructura
+
+
+Objetivo: diseñar cómo se construirá y ejecutará el sistema, antes de comenzar a implementar sus componentes principales.
+
+
+### 3.1. Arquitectura lógica
+
+
+Se propone organizar ERX mediante módulos independientes y contratos de comunicación definidos.
+
+
+### Arquitectura interna propuesta
+
+
+Interfaces institucionales
+
+
+Telefonía · CAD · Localización · Identidad · Grabación
+
+
+API / Adaptadores / Gateway
+
+
+Autenticación · Validación · Recepción de eventos
+
+
+ERX Core
+
+
+Identity Engine
+
+
+UTXO Engine
+
+
+State Engine
+
+
+Evidence Engine
+
+
+Signature Engine
+
+
+Recovery Engine
+
+
+Transactional Storage
+
+
+Evidence Storage
+
+
+Durable Event Queue
+
+
+Audit History
+
+
+Workers asíncronos
+
+
+OTS · Recuperación · Sincronización · Verificación
+
+
+ERX Verifier opera como componente independiente de comprobación, no como una extensión privilegiada del motor productor.
+
+
+### 3.2. Decisiones tecnológicas
+
+
+La selección tecnológica debe documentarse mediante pruebas y decisiones de arquitectura.
+
+
+Como orientación inicial:
+
+
+| Área                       | Enfoque recomendado                                  |
+
+| -------------------------- | ---------------------------------------------------- |
+
+| Lenguaje del núcleo        | Lenguaje tipado con soporte sólido para concurrencia |
+
+| Persistencia transaccional | PostgreSQL o equivalente ACID                        |
+
+| Restricciones de unicidad  | Índices únicos y transacciones                       |
+
+| Interfaces                 | API versionada y adaptadores desacoplados            |
+
+| Transporte                 | TLS y autenticación mutua                            |
+
+| Eventos                    | Cola duradera y patrón transactional outbox          |
+
+| Firmas                     | Criptografía estándar y almacén seguro de claves     |
+
+| OTS                        | Cliente oficial o implementación interoperable       |
+
+| Archivos                   | Almacenamiento cifrado y manifiestos                 |
+
+| Pruebas                    | Automatizadas, de integración y adversariales        |
+
+| Distribución               | Paquetes reproducibles y despliegues controlados     |
+
+
+Estas tecnologías son propuestas de ingeniería, no decisiones ya contenidas en los documentos normativos.
+
+
+### 3.3. Persistencia y atomicidad
+
+
+Se debe diseñar una estructura que permita realizar el consumo de un UTXO y la creación del siguiente dentro de una operación transaccional.
+
+
+El patrón recomendado es:
+
+
+* Validar la entrada.
+
+
+* Verificar autoridad.
+
+
+* Verificar que el estado no esté consumido.
+
+
+* Registrar el consumo.
+
+
+* Crear la salida.
+
+
+* Registrar la operación.
+
+
+* Registrar el evento pendiente de procesamiento externo.
+
+
+* Confirmar la transacción.
+
+
+El envío OTS y otros procesos externos no deben formar parte de la transacción que condiciona la atención.
+
+
+### Entregables
+
+
+* ERX-TECH-001.
+
+
+* Diagramas de arquitectura.
+
+
+* Modelo de base de datos.
+
+
+* Contratos de API.
+
+
+* Modelo de despliegue.
+
+
+* Registro de decisiones tecnológicas.
+
+
+* Entorno de desarrollo y pruebas.
+
+
+### Criterio para avanzar
+
+
+Debe existir una arquitectura aprobada, con interfaces y dependencias definidas, que permita desarrollar los módulos sin acoplamiento innecesario.
+
+
+### FASE 4 — Desarrollo del ERX Core
+
+
+Núcleo funcional prioritario
+
+
+Objetivo: construir el motor que ejecuta las reglas del protocolo.
+
+
+No se debe comenzar integrando telefonía ni OTS. Primero debe funcionar correctamente el motor de gasto único en un entorno controlado.
+
+
+### 4.1. Módulos de desarrollo
+
+
+| Módulo                 | Responsabilidad                      |
+
+| ---------------------- | ------------------------------------ |
+
+| Event Intake           | Recibir acontecimientos              |
+
+| Identity Engine        | Identificar emisores y participantes |
+
+| Admission Engine       | Determinar admisión institucional    |
+
+| UTXO Engine            | Crear, consumir y verificar estados  |
+
+| State Engine           | Controlar transiciones               |
+
+| Idempotency Engine     | Evitar efectos duplicados            |
+
+| Concurrency Controller | Controlar operaciones simultáneas    |
+
+| Document Engine        | Construir expedientes JSON           |
+
+| Signature Engine       | Firmar documentos y operaciones      |
+
+| Audit Engine           | Mantener historial                   |
+
+| Recovery Engine        | Reconstruir operaciones pendientes   |
+
+
+### 4.2. Orden de implementación
+
+
+* Identificación de eventos.
+
+
+* Registro de admisión.
+
+
+* Generación de UTXO 01.
+
+
+* Consumo de UTXO 01.
+
+
+* Generación de UTXO 02.
+
+
+* Consumo de UTXO 02.
+
+
+* Generación de UTXO 03.
+
+
+* Control del ciclo de disponibilidad del agente.
+
+
+* Historial de transacciones.
+
+
+* Recuperación después de interrupciones.
+
+
+### 4.3. Primera demostración funcional
+
+
+Se debe construir un simulador que reproduzca una llamada completa.
+
+
+Escenario de prueba inicial
+
+
+* Una llamada ingresa al sistema.
+
+
+* Se crea JSON 01 y UTXO 01.
+
+
+* Un agente acepta la llamada.
+
+
+* Se consume UTXO 01 y se crea UTXO 02.
+
+
+* Se registra el desarrollo.
+
+
+* Se consume UTXO 02 y se crea UTXO 03.
+
+
+* Se cierra el expediente.
+
+
+* El agente obtiene una nueva disponibilidad si corresponde operativamente.
+
+
+Resultado esperado: un único ciclo válido
+
+
+### 4.4. Pruebas obligatorias del núcleo
+
+
+* Dos procesos intentando consumir el mismo UTXO.
+
+
+* Dos solicitudes idénticas.
+
+
+* Reintentos después de un timeout.
+
+
+* Retransmisión de eventos.
+
+
+* Reproducción de operaciones antiguas.
+
+
+* Caída durante una transición.
+
+
+* Restauración de respaldo.
+
+
+* Estado de salida creado sin consumo confirmado.
+
+
+* Consumo confirmado sin registro de salida.
+
+
+* Dos centros intentando ejecutar una transición incompatible.
+
+
+El resultado esperado de las operaciones concurrentes debe ser inequívoco: solo una transición puede ganar sobre una misma salida de entrada.
+
+
+### Entregables
+
+
+* ERX Core ejecutable.
+
+
+* Motor UTXO.
+
+
+* Motor de estados.
+
+
+* Persistencia transaccional.
+
+
+* Historial de acontecimientos.
+
+
+* Simulador 911.
+
+
+* Suite inicial de pruebas automatizadas.
+
+
+### Criterio para avanzar
+
+
+El motor debe demostrar el consumo único bajo concurrencia, persistencia y recuperación, sin depender de Bitcoin ni de OTS.
+
+
+### FASE 5 — Identidad, confianza y seguridad institucional
+
+
+Objetivo: establecer cómo se identifican, autorizan y verifican las entidades que participan en ERX.
+
+
+### 5.1. Identidades
+
+
+Se deben implementar registros independientes para:
+
+
+* Institución.
+
+
+* Centro PSAP.
+
+
+* Gateway.
+
+
+* Agente profesional.
+
+
+* Dispositivo o componente autorizado.
+
+
+* Autoridad de confianza.
+
+
+* Emisor de certificados.
+
+
+### 5.2. Credenciales
+
+
+El sistema debe reconocer los siguientes estados:
+
+
+* Válida.
+
+
+* Vencida.
+
+
+* Revocada.
+
+
+* No autorizada territorialmente.
+
+
+* No autorizada funcionalmente.
+
+
+* Desconocida.
+
+
+* Pendiente de verificación.
+
+
+Una validación pendiente nunca debe convertirse en una autenticación válida por defecto.
+
+
+### 5.3. Gestión de claves
+
+
+Se implementará:
+
+
+* Generación segura.
+
+
+* Registro de claves públicas.
+
+
+* Custodia de claves privadas.
+
+
+* Firma institucional.
+
+
+* Rotación.
+
+
+* Revocación.
+
+
+* Verificación histórica.
+
+
+* Auditoría de utilización.
+
+
+Se recomienda HSM o almacén criptográfico protegido equivalente, de acuerdo con la infraestructura disponible.
+
+
+### 5.4. Seguridad de interfaces
+
+
+* Autenticación mutua.
+
+
+* Autorización por funciones.
+
+
+* Cifrado en tránsito.
+
+
+* Cifrado en reposo.
+
+
+* Protección contra replay.
+
+
+* Control de sesiones.
+
+
+* Gestión de secretos.
+
+
+* Registros de seguridad.
+
+
+* Separación de privilegios.
+
+
+### Entregables
+
+
+* ERX-IDENTITY-001.
+
+
+* ERX-SEC-001.
+
+
+* Registro de instituciones.
+
+
+* Registro de credenciales.
+
+
+* Servicio de validación.
+
+
+* Gestión de claves.
+
+
+* Pruebas de autenticación y autorización.
+
+
+### Criterio para avanzar
+
+
+Las operaciones institucionales deben poder atribuirse a emisores identificados, con autorización verificable y vigencia histórica comprobable.
+
+
+### FASE 6 — Evidencia documental y OpenTimestamps
+
+
+Objetivo: implementar el sistema de evidencia criptográfica y temporal sin convertirlo en una dependencia de la operación 911.
+
+
+### 6.1. Motor de evidencia
+
+
+Se desarrollará un proceso para:
+
+
+* Recibir el documento definitivo.
+
+
+* Verificar su esquema.
+
+
+* Canonicalizarlo.
+
+
+* Calcular su hash.
+
+
+* Vincularlo con su transición UTXO.
+
+
+* Obtener la firma institucional.
+
+
+* Generar el compromiso temporal.
+
+
+* Conservar el archivo de prueba.
+
+
+* Actualizar y verificar la prueba posteriormente.
+
+
+### 6.2. Integración OTS
+
+
+Cada etapa tendrá su evidencia correspondiente:
+
+
+| Etapa               | Compromiso |
+
+| ------------------- | ---------- |
+
+| Recepción           | OTS 01     |
+
+| Contacto            | OTS 02     |
+
+| Desarrollo y cierre | OTS 03     |
+
+
+El sistema deberá gestionar los estados:
+
+
+* NO_REQUESTED.
+
+
+* SUBMITTED.
+
+
+* PENDING.
+
+
+* UPGRADABLE.
+
+
+* ANCHORED.
+
+
+* VERIFIED.
+
+
+* FAILED.
+
+
+Estos valores son identificadores técnicos propuestos; sus equivalentes normativos deberán mantenerse coherentes con ERX-PROT-001.
+
+
+### 6.3. Arquitectura asíncrona
+
+
+JSON firmado y comprometido
+
+
+Cola duradera de evidencias
+
+
+Worker OTS
+
+
+Red Bitcoin / anclaje
+
+
+Prueba OTS conservada y verificable
+
+
+La atención humana y el cierre operativo siguen su propio flujo, independientemente de esta secuencia.
+
+
+### 6.4. Seguridad y privacidad de evidencias
+
+
+Los audios y archivos originales no deben enviarse a Bitcoin.
+
+
+Se conservarán bajo custodia institucional con:
+
+
+* Identificadores.
+
+
+* Hashes.
+
+
+* Manifiestos.
+
+
+* Referencias a los documentos.
+
+
+* Ubicación lógica protegida.
+
+
+* Política de conservación.
+
+
+* Evidencia de acceso.
+
+
+* Pruebas de recuperación.
+
+
+### Entregables
+
+
+* ERX-OTS-001.
+
+
+* Evidence Engine.
+
+
+* Worker OTS.
+
+
+* Gestión de pruebas.
+
+
+* Manifiestos de archivos.
+
+
+* Políticas de custodia.
+
+
+* Pruebas de indisponibilidad y recuperación.
+
+
+### Criterio para avanzar
+
+
+Los compromisos y pruebas deben poder generarse, conservarse, actualizarse y verificarse sin introducir esperas en la atención.
+
+
+### FASE 7 — Desarrollo del ERX Verifier
+
+
+Componente independiente
+
+
+Objetivo: construir una herramienta externa capaz de comprobar la validez estructural, criptográfica y transaccional de los expedientes.
+
+
+El verificador debe ser desarrollado con independencia suficiente del ERX Core para que un fallo o manipulación del sistema productor no se convierta automáticamente en un fallo de la auditoría.
+
+
+### 7.1. Funciones
+
+
+| Verificación            | Resultado                                   |
+
+| ----------------------- | ------------------------------------------- |
+
+| Esquema JSON            | Válido / inválido                           |
+
+| Hash documental         | Coincide / no coincide                      |
+
+| Firma                   | Válida / inválida                           |
+
+| Identidad institucional | Reconocida / desconocida                    |
+
+| Vigencia histórica      | Válida / vencida / revocada / indeterminada |
+
+| UTXO                    | Continuidad válida / inconsistencia         |
+
+| Consumo                 | Único / doble consumo detectado             |
+
+| OTS                     | Verificado / pendiente / fallido            |
+
+| Archivos                | Integridad comprobada / no comprobada       |
+
+| Cronología              | Coherente / contradictoria                  |
+
+
+### 7.2. Entrada del verificador
+
+
+El verificador deberá recibir un expediente exportado que contenga:
+
+
+* JSON 01.
+
+
+* JSON 02.
+
+
+* JSON 03.
+
+
+* Registros de transiciones.
+
+
+* Certificados y referencias de confianza.
+
+
+* Firmas.
+
+
+* Pruebas OTS.
+
+
+* Manifiestos de archivos.
+
+
+* Referencias de identidad y vigencia histórica.
+
+
+No debe necesitar acceso directo a la base de datos de producción para verificar un expediente exportado.
+
+
+### 7.3. Informe de salida
+
+
+El informe deberá distinguir entre:
+
+
+* Verificación satisfactoria.
+
+
+* Verificación fallida.
+
+
+* Evidencia incompleta.
+
+
+* Evidencia pendiente.
+
+
+* Resultado no determinable.
+
+
+Un dato que no se pudo comprobar nunca debe mostrarse como satisfactorio.
+
+
+### Entregables
+
+
+* ERX-VERIFY-001.
+
+
+* ERX Verifier ejecutable.
+
+
+* Formato de exportación.
+
+
+* Formato de informe.
+
+
+* Vectores de expedientes válidos e inválidos.
+
+
+* Pruebas de independencia.
+
+
+### Criterio para avanzar
+
+
+Una instalación de verificación separada debe poder comprobar expedientes generados por ERX sin confiar ciegamente en el productor.
+
+
+### FASE 8 — Integración institucional
+
+
+Objetivo: conectar ERX Core con los sistemas reales de una institución mediante adaptadores autorizados.
+
+
+La integración no debe comenzar hasta que el núcleo haya demostrado sus reglas transaccionales en laboratorio.
+
+
+### 8.1. Orden de integración
+
+
+| Adaptador         | Función                                |
+
+| ----------------- | -------------------------------------- |
+
+| 1. Telefonía      | Detectar ingreso y eventos de conexión |
+
+| 2. Enrutamiento   | Identificar destino institucional      |
+
+| 3. Localización   | Recibir información geográfica         |
+
+| 4. Identidad      | Consultar instituciones y agentes      |
+
+| 5. Grabación      | Asociar audios originales              |
+
+| 6. CAD            | Relacionar llamada con incidente       |
+
+| 7. Almacenamiento | Custodiar documentos y archivos        |
+
+| 8. OTS            | Gestionar compromisos y pruebas        |
+
+
+Cada adaptador deberá tener su propia especificación de entradas, salidas, autenticación, errores, reintentos y tratamiento de duplicados.
+
+
+### 8.2. Transferencias interinstitucionales
+
+
+Se debe desarrollar un protocolo específico que defina:
+
+
+* Centro de origen.
+
+
+* Centro receptor.
+
+
+* Autoridad de transferencia.
+
+
+* Identidad de la llamada.
+
+
+* Estado de la transferencia.
+
+
+* Confirmación de recepción.
+
+
+* Responsabilidad de la transición.
+
+
+* Tratamiento de interrupciones.
+
+
+* Reconciliación posterior.
+
+
+El centro A no debe poder producir un cierre incompatible con el centro B sobre el mismo estado de entrada.
+
+
+La solución puede requerir coordinación transaccional distribuida o una autoridad de transición delegada, según el modelo institucional aprobado. No se debe asumir que una simple sincronización entre bases de datos resuelve el problema.
+
+
+### Entregables
+
+
+* ERX-INTEGRATION-001.
+
+
+* ERX-TRANSFER-001.
+
+
+* Adaptadores institucionales.
+
+
+* Contratos de API.
+
+
+* Simuladores de sistemas externos.
+
+
+* Pruebas de interoperabilidad.
+
+
+### Criterio para avanzar
+
+
+Los adaptadores deben intercambiar acontecimientos de forma autenticada, recuperable e idempotente, sin introducir dependencias que bloqueen la atención.
+
+
+### FASE 9 — Pruebas, auditoría y recuperación
+
+
+Objetivo: demostrar que el sistema se comporta correctamente bajo condiciones normales, fallos, concurrencia y ataques.
+
+
+### 9.1. Matriz de pruebas
+
+
+Se agruparán las pruebas en seis categorías.
+
+
+| Categoría         | Casos                                             |
+
+| ----------------- | ------------------------------------------------- |
+
+| Funcionales       | Recepción, contacto, cierre, transferencia        |
+
+| Transaccionales   | Doble consumo, atomicidad, idempotencia           |
+
+| Criptográficas    | Hash, firma, certificados y OTS                   |
+
+| Adversariales     | Replay, suplantación, manipulación                |
+
+| Operativas        | Desconexión, caída, almacenamiento y recuperación |
+
+| Interoperabilidad | Adaptadores y múltiples centros                   |
+
+
+Se deberán incluir las veinte pruebas obligatorias establecidas en ERX-PROT-001, apartado 19.1.
+
+
+### 9.2. Pruebas de recuperación
+
+
+Se deben simular situaciones como:
+
+
+* Corte eléctrico.
+
+
+* Caída de la base de datos.
+
+
+* Pérdida de conectividad.
+
+
+* OTS fuera de servicio.
+
+
+* Bitcoin inaccesible.
+
+
+* Pérdida de un almacenamiento.
+
+
+* Restauración de respaldo antiguo.
+
+
+* Reinicio de workers.
+
+
+* Reprocesamiento de colas.
+
+
+* Caída durante una transferencia.
+
+
+### 9.3. Métricas de aceptación
+
+
+No se deben utilizar promesas de latencia cero.
+
+
+Se medirán:
+
+
+* Latencia añadida por ERX.
+
+
+* Tiempo de procesamiento.
+
+
+* Tasa de operaciones duplicadas aceptadas.
+
+
+* Tiempo de recuperación.
+
+
+* Integridad de expedientes.
+
+
+* Porcentaje de pruebas verificables.
+
+
+* Pérdida de eventos.
+
+
+* Capacidad de reconciliación.
+
+
+Las pruebas deben establecer objetivos numéricos antes de ejecutarse y comparar los resultados contra esos objetivos.
+
+
+### Entregables
+
+
+* ERX-TEST-001.
+
+
+* Informe de pruebas.
+
+
+* Informe de seguridad.
+
+
+* Informe de rendimiento.
+
+
+* Informe de recuperación.
+
+
+* Registro de defectos.
+
+
+* Evidencias reproducibles.
+
+
+### Criterio para avanzar
+
+
+Todas las pruebas críticas deben pasar. Las excepciones no resueltas deben estar documentadas y no pueden comprometer la unicidad, integridad o continuidad de la atención.
+
+
+### FASE 10 — Piloto institucional y operación en modo sombra
+
+
+Validación en entorno real
+
+
+Objetivo: comprobar que ERX puede convivir con una infraestructura 911 real sin modificar ni condicionar la atención.
+
+
+### 10.1. Preparación del piloto
+
+
+Seleccionar un centro institucional que permita:
+
+
+* Acceso autorizado a eventos de telefonía.
+
+
+* Integración de lectura con los sistemas existentes.
+
+
+* Entorno de pruebas.
+
+
+* Personal técnico responsable.
+
+
+* Supervisión institucional.
+
+
+* Procedimientos de protección de datos.
+
+
+### 10.2. Operación en modo sombra
+
+
+Durante esta fase:
+
+
+* La infraestructura oficial recibe la llamada.
+
+
+* El sistema oficial continúa atendiendo.
+
+
+* ERX recibe los acontecimientos autorizados.
+
+
+* ERX genera los registros correspondientes.
+
+
+* Se producen los estados UTXO.
+
+
+* Se generan las firmas.
+
+
+* Se envían los compromisos OTS.
+
+
+* Se verifica el expediente.
+
+
+* Se comparan los registros con la operación oficial.
+
+
+ERX no toma decisiones de despacho ni controla la asignación de llamadas.
+
+
+### 10.3. Evaluación
+
+
+Se deben comparar:
+
+
+* Eventos detectados por el sistema oficial.
+
+
+* Eventos registrados por ERX.
+
+
+* Correspondencia de identificadores.
+
+
+* Diferencias temporales.
+
+
+* Transferencias.
+
+
+* Desconexiones.
+
+
+* Errores de integración.
+
+
+* Operaciones duplicadas.
+
+
+* Recuperaciones.
+
+
+* Evidencias generadas.
+
+
+### Entregables
+
+
+* ERX-PILOT-001.
+
+
+* Informe de operación en sombra.
+
+
+* Informe de compatibilidad.
+
+
+* Informe de rendimiento.
+
+
+* Registro de incidencias.
+
+
+* Recomendaciones de corrección.
+
+
+### Criterio para avanzar
+
+
+La institución debe confirmar que ERX no introduce interferencias en la atención y que los resultados del piloto son técnicamente satisfactorios.
+
+
+### FASE 11 — Homologación y expansión institucional
+
+
+Objetivo: convertir la implementación validada en una instalación institucional autorizada y preparar su extensión a otros centros.
+
+
+### 11.1. Homologación individual
+
+
+Cada centro deberá demostrar:
+
+
+* Identidad institucional.
+
+
+* Autoridad territorial.
+
+
+* Credenciales autorizadas.
+
+
+* Configuración de adaptadores.
+
+
+* Seguridad de interfaces.
+
+
+* Integridad transaccional.
+
+
+* Funcionamiento de los UTXO.
+
+
+* Continuidad operativa.
+
+
+* Protección de datos.
+
+
+* Recuperación.
+
+
+* Verificación independiente.
+
+
+La homologación técnica no sustituye la autorización legal o administrativa necesaria para operar.
+
+
+### 11.2. Expansión multi-centro
+
+
+La incorporación de nuevos centros requerirá:
+
+
+* Registro institucional.
+
+
+* Identidad y certificados.
+
+
+* Configuración territorial.
+
+
+* Reglas de autoridad.
+
+
+* Identificadores correlacionables.
+
+
+* Protocolos de transferencia.
+
+
+* Coordinación de transacciones.
+
+
+* Pruebas de interoperabilidad.
+
+
+* Auditoría independiente.
+
+
+* Aprobación institucional.
+
+
+### 11.3. Consenso y coordinación
+
+
+ERX-CONSENSUS-001 v0.1 debe evolucionar mediante una especificación independiente antes de utilizarse como fundamento de coordinación multiinstitucional.
+
+
+Se deben determinar:
+
+
+* Qué entidades participan.
+
+
+* Qué función cumple cada participante.
+
+
+* Quién valida cada tipo de transición.
+
+
+* Qué autoridad tiene cada centro.
+
+
+* Qué significa una aceptación válida.
+
+
+* Qué ocurre ante desacuerdos.
+
+
+* Cómo se determina un estado definitivo.
+
+
+* Cómo se correlacionan incidentes entre centros.
+
+
+No se debe imponer un consenso distribuido innecesario a operaciones que pueden resolverse mediante autoridad institucional y transacciones atómicas locales.
+
+
+La descentralización debe responder a una necesidad de coordinación demostrada, no convertirse en un requisito artificial del producto.
+
+
+### Entregables
+
+
+* ERX-HOMOLOGATION-001.
+
+
+* ERX-DEPLOY-001.
+
+
+* Manual de instalación.
+
+
+* Manual de administración.
+
+
+* Manual de recuperación.
+
+
+* Política de versiones.
+
+
+* Certificado o informe de conformidad técnica.
+
+
+* Procedimiento de incorporación de nuevas instituciones.
+
+
+### Criterio de finalización
+
+
+El sistema debe disponer de una implementación demostrada, documentada, auditada y autorizada por las instituciones correspondientes.
+
+
+### 5\. Estructura definitiva del repositorio de desarrollo
+
+
+Para evitar que los documentos, el código y las pruebas terminen mezclados, recomiendo organizar el repositorio principal de la siguiente manera:
+
+
+ERX-byLAEV
+
+
+Estructura propuesta
+
+
+Árbol lógico del repositorio de desarrollo.
+
+
+```text
+
+
+ERX-byLAEV/
+
+│
+
+├── README.md
+
+├── LICENSE
+
+├── COPYRIGHT.md
+
+├── CHANGELOG.md
+
+│
+
+├── documentation/
+
+│   ├── normative/
+
+│   │   ├── ERX-PROT-001/
+
+│   │   ├── UTXO-911-001/
+
+│   │   └── ERX-CONSENSUS-001/
+
+│   │
+
+│   ├── architecture/
+
+│   │   ├── ERX-ATLAS-001/
+
+│   │   ├── ERX-TECH-001/
+
+│   │   └── ERX-STATE-MACHINES-001/
+
+│   │
+
+│   ├── implementation/
+
+│   │   ├── ERX-ROADMAP-001/
+
+│   │   ├── ERX-UTXO-ENGINE-001/
+
+│   │   └── ERX-INTEGRATION-001/
+
+│   │
+
+│   ├── security/
+
+│   ├── identity/
+
+│   ├── verification/
+
+│   └── deployment/
+
+│
+
+├── schemas/
+
+│   ├── json01/
+
+│   ├── json02/
+
+│   ├── json03/
+
+│   ├── utxo/
+
+│   ├── identity/
+
+│   ├── credentials/
+
+│   ├── transfers/
+
+│   └── evidence/
+
+│
+
+├── erx-protocol/
+
+│
+
+├── erx-core/
+
+│   ├── identity/
+
+│   ├── admission/
+
+│   ├── utxo-engine/
+
+│   ├── state-engine/
+
+│   ├── idempotency/
+
+│   ├── concurrency/
+
+│   ├── documents/
+
+│   ├── signatures/
+
+│   ├── audit/
+
+│   └── recovery/
+
+│
+
+├── erx-institutional-module/
+
+│   ├── api/
+
+│   ├── adapters/
+
+│   │   ├── telephony/
+
+│   │   ├── routing/
+
+│   │   ├── location/
+
+│   │   ├── identity/
+
+│   │   ├── cad/
+
+│   │   ├── recording/
+
+│   │   └── storage/
+
+│   ├── event-queue/
+
+│   └── ots-worker/
+
+│
+
+├── erx-verifier/
+
+│   ├── documents/
+
+│   ├── signatures/
+
+│   ├── utxo/
+
+│   ├── ots/
+
+│   ├── files/
+
+│   └── reports/
+
+│
+
+├── tests/
+
+│   ├── unit/
+
+│   ├── integration/
+
+│   ├── concurrency/
+
+│   ├── adversarial/
+
+│   ├── recovery/
+
+│   └── interoperability/
+
+│
+
+├── simulator/
+
+│
+
+├── deployment/
+
+│
+
+└── .github/
+
+    └── workflows/
+
+
+```
+
+
+La estructura es una propuesta inicial. Los módulos y directorios se crearán progresivamente según las fases, no todos desde el primer commit.
+
+
+### 5.1. Política de desarrollo del repositorio
+
+
+Se recomienda:
+
+
+* GitHub como repositorio de control de versiones.
+
+
+* GitHub Actions para integración y pruebas continuas.
+
+
+* Pull requests para incorporar cambios.
+
+
+* Versionado semántico del software cuando corresponda.
+
+
+* Versionado independiente de los documentos normativos.
+
+
+* Registro de decisiones arquitectónicas.
+
+
+* Pruebas obligatorias antes de aceptar cambios.
+
+
+* Separación entre entornos de laboratorio y producción.
+
+
+Los documentos normativos aprobados no deben modificarse automáticamente por cambios de código.
+
+
+### 6\. Relación entre las fases y los componentes del producto
+
+
+Esta matriz permite comprobar qué componente se desarrolla en cada etapa.
+
+
+| Fase                     | Protocol | Core   | Institutional | Verifier |
+
+| ------------------------ | -------- | ------ | ------------- | -------- |
+
+| 0. Preparación           | ●        |        |               |          |
+
+| 1. Estados y reglas      | ●        | Diseño |               |          |
+
+| 2. Datos y criptografía  | ●        | Diseño |               | Diseño   |
+
+| 3. Arquitectura          | Diseño   | Diseño | Diseño        | Diseño   |
+
+| 4. Motor transaccional   |          | ●      |               |          |
+
+| 5. Identidad y seguridad | ●        | ●      | ●             | ●        |
+
+| 6. OTS y evidencias      | ●        | ●      | ●             | ●        |
+
+| 7. Verificador           |          |        |               | ●        |
+
+| 8. Integración           |          | ●      | ●             |          |
+
+| 9. Pruebas y auditoría   | ●        | ●      | ●             | ●        |
+
+| 10. Piloto               |          | ●      | ●             | ●        |
+
+| 11. Homologación         | ●        | ●      | ●             | ●        |
+
+
+● Desarrollo o validación directa. Diseño: especificación y preparación.
+
+
+### 7\. Sistema de control de avance
+
+
+Cada fase debe tener un estado de desarrollo independiente.
+
+
+Propongo utilizar cinco estados:
+
+
+NOT STARTED
+
+
+No iniciada.
+
+
+IN PROGRESS
+
+
+En desarrollo.
+
+
+UNDER REVIEW
+
+
+En revisión y pruebas.
+
+
+APPROVED
+
+
+Aprobada mediante criterios documentados.
+
+
+BLOCKED
+
+
+Bloqueada por una dependencia o defecto.
+
+
+Una fase no se considera aprobada simplemente porque sus documentos estén escritos o su código compile.
+
+
+Se requieren evidencias de cumplimiento.
+
+
+### Registro de aprobación
+
+
+Cada fase deberá producir:
+
+
+* Identificador de fase.
+
+
+* Versión.
+
+
+* Fecha.
+
+
+* Responsable.
+
+
+* Requisitos cumplidos.
+
+
+* Pruebas ejecutadas.
+
+
+* Resultados.
+
+
+* Defectos pendientes.
+
+
+* Evidencia de aprobación.
+
+
+### 8\. Distribución de responsabilidades
+
+
+El desarrollo debe separar cuatro responsabilidades fundamentales:
+
+
+| Área                   | Responsabilidad                |
+
+| ---------------------- | ------------------------------ |
+
+| Diseño del protocolo   | Reglas e invariantes de ERX    |
+
+| Ingeniería de software | Implementación de las reglas   |
+
+| Seguridad y auditoría  | Comprobación independiente     |
+
+| Institución 911        | Autorización operativa y legal |
+
+
+LAEV/byLAEV figura como autoría de referencia y diseñador del sistema.
+
+
+La aprobación de las reglas de software no sustituye la validación independiente de seguridad ni la aprobación institucional.
+
+
+### 9\. Condiciones de finalización del proyecto
+
+
+ERX no se considerará terminado hasta cumplir estas condiciones:
+
+
+### Criterios de aceptación global
+
+
+Seguimiento de aceptación
+
+
+### 0/15
+
+
+Las reglas UTXO están formalizadas y no presentan transiciones ambiguas.
+
+
+Los ciclos de llamada y disponibilidad del agente están separados.
+
+
+El consumo único está demostrado bajo concurrencia.
+
+
+Las operaciones son idempotentes y recuperables.
+
+
+Los documentos JSON tienen esquemas y versiones definitivos.
+
+
+Las firmas y credenciales pueden verificarse históricamente.
+
+
+OTS funciona de manera asíncrona.
+
+
+Los archivos originales tienen custodia y recuperación comprobables.
+
+
+ERX Verifier funciona independientemente.
+
+
+Los adaptadores no bloquean la atención 911.
+
+
+Las transferencias institucionales tienen reglas de autoridad.
+
+
+Las veinte pruebas normativas y las pruebas adicionales críticas están aprobadas.
+
+
+La implementación ha superado una auditoría de seguridad.
+
+
+El piloto institucional ha demostrado compatibilidad operativa.
+
+
+Existe un procedimiento de homologación y mantenimiento.
+
+
+Lista interactiva de control. Marcar un elemento aquí no constituye una certificación ni demuestra por sí mismo su cumplimiento.
+
+
+### 10\. Dictamen y orden de ejecución recomendado
+
+
+La arquitectura de desarrollo debe construirse de dentro hacia fuera:
+
+
+* Primero se define qué significa una transición válida.
+
+
+* Después se define cómo se representa documentalmente.
+
+
+* Luego se construye el motor que ejecuta esas reglas.
+
+
+* Se incorpora la identidad y la seguridad.
+
+
+* Se incorpora la evidencia temporal.
+
+
+* Se construye el verificador independiente.
+
+
+* Se conectan los sistemas institucionales.
+
+
+* Se demuestra el comportamiento mediante pruebas.
+
+
+* Se integra en modo sombra.
+
+
+* Se homologa.
+
+
+* Se extiende a otros centros.
+
+
+La decisión técnica más importante es no empezar por los adaptadores de telefonía ni por la integración Bitcoin. El primer producto que debemos construir es el motor UTXO institucional, acompañado de un simulador de llamadas 911.
+
+
+Eso permite comprobar el fundamento de ERX sin depender de proveedores telefónicos, redes externas, autoridades certificadoras o infraestructura Bitcoin.
+
+
+### 11\. Primera unidad de trabajo: iniciar el desarrollo
+
+
+La primera ejecución práctica debe ser la Fase 0 y, a continuación, la Fase 1.
+
+
+El primer paquete de trabajo debe producir cinco resultados:
+
+
+Primer paquete de desarrollo
+
+
+ERX Foundation Package
+
+
+* ERX-STATE-MACHINES-001.
+
+
+* ERX-UTXO-ENGINE-001.
+
+
+* ERX-TRANSITIONS-001.
+
+
+* ERX-INVARIANTS-001.
+
+
+* ERX-EXCEPTIONS-001.
+
+
+Resultado esperado:
+
+
+Una especificación completa que permita a un desarrollador implementar el motor de gasto único sin tener que interpretar o inventar reglas fundamentales del protocolo.
+
+
+Conclusión: ERX byLAEV debe desarrollarse como un protocolo institucional con un núcleo transaccional independiente, adaptadores desacoplados, evidencia criptográfica asíncrona y verificación externa. Esta organización conserva el principio original de gasto único, respeta la operación crítica del 911 y permite evolucionar desde un piloto individual hacia una infraestructura multiinstitucional sin imponer una blockchain propia.
+
+
+Documento: ERX-ROADMAP-001 · Versión 1.0 · Fecha: 23-11-2026 · 21:06 UTC−6 · Localización aproximada: San Ramon, Costa Rica. Documento de planificación propuesto; no constituye certificación de implementación ni aprobación institucional.
+
+

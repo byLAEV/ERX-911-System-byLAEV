@@ -4,18 +4,18 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-REPOSITORY-GOVERNANCE-001 |
-| Version | 0.1.0 |
-| Status | PREPARATORY WORKING DRAFT — NOT APPROVED |
+| Version | 0.2.0 |
+| Status | IN REVIEW — NOT APPROVED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Repository | byLAEV/ERX-911-System-byLAEV |
 | Design and approval authority | LAEV |
-| Date | 2026-11-23 |
-| Dependencies | WP-0.3 and WP-0.4; both remain pending formal acceptance |
+| Date | 2026-11-24 |
+| Dependencies | WP-0.3 and WP-0.4 — COMPLETED / ACCEPTED; see controlling records |
 
 ## 1. Purpose
 
-This draft proposes governance rules for the ERX GitHub repository, including repository identity, purpose, directory organization, foundational-source custody, Phase 0 documentation, access, branches, modification control, Git history, and intellectual property.
+This version is a controlled derivative of v0.1.0 prepared after formal WP-0.5 initiation. It incorporates the preliminary repository observations and corrects the now-stale dependency statement. It proposes governance rules for repository identity, purpose, directory organization, foundational-source custody, Phase 0 documentation, access, branches, modification control, Git history, and intellectual property. It remains under review and is not approved.
 
 The repository already exists. This document does not claim to have created it, does not approve its current configuration, and does not grant permissions or change repository settings. It is a preparation artifact for WP-0.5 only.
 
@@ -92,7 +92,7 @@ No directory's existence alone means its policy or contents are approved.
 - Record the commit containing each archived original.
 - Do not mark a source as archived until repository-side verification succeeds.
 
-The current five-source inventory and the archival procedure remain working artifacts. This draft does not claim that the five original PDFs have been committed to the repository.
+The approved WP-0.2 foundational register and completion dossier state that the five exact original PDFs are archived under `docs/` and their SHA-256 and Git blob identities were verified. This v0.2.0 draft references that prior evidence; WP-0.5's preliminary audit did not re-download and re-hash the five PDFs.
 
 ## 6. Access and Permissions
 
@@ -167,11 +167,9 @@ A copyright notice may identify authorship or rights claims but does not itself 
 
 ## 12. Current Repository Observations and Limitations
 
-The repository has been used to publish Phase 0 working documents, including the Workplan, Charter, foundational register, and preparatory governance drafts.
+The preliminary audit recorded the repository as public, not archived, with default branch `main`. GitHub metadata returned admin/maintain/push/pull/triage permissions for the connected integration identity only. A branch search returned `main`, `wp-0.3-controlled-closeout`, `wp-0.4-document-control`, and `wp-0.5-repository-governance`. Exact root paths `LICENSE` and `COPYRIGHT.md`, and exact paths `.github/CODEOWNERS` and `.github/PULL_REQUEST_TEMPLATE.md`, returned NOT_FOUND. These are bounded observations, not a complete tree or legal review.
 
-The repository tree inspection previously recorded that the five original PDF binaries were not present in the inspected default-branch tree. The current inventory therefore does not claim repository custody of those original files.
-
-The repository's live visibility, branch protections, collaborator permissions, required reviews, signed-commit policy, and license configuration have not been independently verified in preparing this draft.
+The five original PDF binaries are recorded by the approved WP-0.2 inventory and completion dossier as present under `docs/` with integrity evidence. WP-0.5 did not repeat the byte-identity test. Branch protections/rulesets, complete collaborator/team roster, required reviews, signed-commit policy, full workflow/security settings, backups and any alternative license or notice paths remain NOT_VERIFIED. See `ERX-WP-0.5-REPOSITORY-AUDIT-001` v0.1.0 and `registers/repository-governance-evidence.csv`.
 
 ## 13. Open Decisions
 
@@ -190,16 +188,31 @@ No open decision is considered resolved by publication of this draft.
 
 ## 14. WP-0.5 Status and Acceptance
 
-**Status: BLOCKED — PREPARATORY DRAFT ONLY.**
+**Status: IN REVIEW — NOT APPROVED. WP-0.5 execution is IN_PROGRESS.**
 
-The draft is prepared to support later review. Formal WP-0.5 execution and acceptance depend on:
-1. WP-0.3 document hierarchy being completed and expressly approved.
-2. WP-0.4 document identification and control policy being completed and expressly approved.
-3. Actual repository configuration being inspected.
-4. Access, branches, change control, custody, history, and intellectual property decisions being made by the authorized authority.
-5. The final repository governance document being reviewed and approved.
+The dependency prerequisites are satisfied: WP-0.3 and WP-0.4 are COMPLETED / ACCEPTED under their respective controlling records. LAEV formally initiated WP-0.5 on 2026-11-24 and expressly selected `main` as the execution branch.
 
-**This draft does not change repository settings, create a license, close WP-0.2, approve WP-0.3 or WP-0.4, complete WP-0.5, or authorize Phase 1.**
+Remaining acceptance work includes completing the repository structure inspection; verifying actual access and branch controls; resolving repository access, review, change, backup and intellectual-property decisions; and producing a final evidence-linked closeout audit. See the initiation record, preliminary audit, proposed access matrix and evidence register.
+
+**This v0.2.0 draft does not change repository settings, create a license, assign unverified collaborators, approve itself, close WP-0.5, authorize WP-0.6, close Phase 0, or authorize Phase 1.**
 
 ---
 End of ERX-REPOSITORY-GOVERNANCE-001
+
+
+## 15. Decisions and evidence status at v0.2.0
+
+| Matter | Current status | Required next step |
+|---|---|---|
+| Repository identity, public visibility, default branch | OBSERVED | Retain as baseline unless LAEV authorizes a change |
+| Work branch | LAEV AUTHORIZED: main | Execute WP-0.5 documentation work on main |
+| Directory structure | PROPOSED | Complete full tree inventory and agree final organization |
+| Foundational originals | PRIOR WP-0.2 INTEGRITY EVIDENCE REFERENCED | Preserve exact binaries; do not re-upload or alter |
+| Access policy and role assignments | PROPOSED / PARTIALLY UNVERIFIED | Inspect collaborator roster and decide administrator/reviewer assignments |
+| Branch protections and review rules | NOT_VERIFIED | Inspect actual rulesets and decide controls |
+| Change-control policy | PROPOSED | Align with approved ERX-DOCUMENT-CONTROL-001 and record operational repository procedure |
+| Git history preservation | PROPOSED | Verify available history/backup approach and adopt procedure |
+| License and IP scope | OPEN — NO LICENSE DECISION | Obtain express LAEV decision; do not create or imply a license |
+| External/independent review | NOT PERFORMED | Do not claim it; commission separately if required |
+
+Publication of this version records a review draft only. Each matter must retain its stated status until evidence and, where required, express approval exist.

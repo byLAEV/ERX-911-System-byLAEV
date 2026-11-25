@@ -73,7 +73,7 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Disposition: treat as response/review artifact unless an express approval record is produced.
 - Related issue: DOC-ISS-007.
 
-### F-08 — Cited sources and supplemental candidate status
+### F-08 — Cited sources and supplemental consensus text source
 - Evidence: ERX-ROADMAP-001 v1.0 cites ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001.
 - Supplemental discovery: a PDF named `Consenso ERX byLAEV.pdf` is present at `docs/Consenso ERX byLAEV.pdf` on `main` (Git blob SHA `c2f965c9bf455506571ac4c1635b4fb47af34216`). The filename alone does not establish that it is ERX-CONSENSUS-001 v0.1. Its internal identity, version, provenance and content have not yet been verified.
 - ERX-IMPL-PROPOSAL-001 was not located in the inspected repository tree.
@@ -91,7 +91,7 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Consensus source identity confirmed; consensus operational completeness/authority remains DOC-ISS-011; missing-source limitation remains DOC-ISS-003.
 - Metadata discrepancy: DOC-ISS-001 and DOC-ISS-004.
 
-A structural state-model divergence remains open in DOC-ISS-009. The independent agent-availability cycle is confirmed by Roadmap Section 3.1 and the Technical Response; DOC-ISS-010 is narrowed to detailed state-machine formalization and acceptance. Other authority and response-effect matters remain pending LAEV disposition.
+A structural state-model divergence remains open in DOC-ISS-009. The independent agent-availability cycle is confirmed by Roadmap Section 3.1 and the Technical Response; DOC-ISS-010 is narrowed to detailed state-machine formalization, ownership and acceptance. Other authority and response-effect matters remain pending LAEV disposition.
 
 ## 4. WP-0.3.6 result
 The activity has produced a source-grounded issue classification and comparison record. It is not fully closed because the material scope questions and authority questions require express LAEV dispositions. The issues may be formally deferred with documented impact and mitigation if LAEV decides that their resolution belongs to a later package, but they may not be silently ignored.

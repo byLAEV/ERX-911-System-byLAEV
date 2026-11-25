@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.1.0
+- **Version:** 1.2.0
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 
@@ -151,22 +151,24 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependency:** WP-0.2 APPROVED. WP-0.3 acceptance releases the dependency gate for formal WP-0.4 and WP-0.5 execution, subject to their separate scope and approval controls. No Phase 1 authorization is implied.
 
 ### WP-0.4 — Document Identification and Control
-**Status:** NOT_STARTED — DEPENDENCY GATE RELEASED; PREPARATORY DRAFT ONLY
+**Status:** IN_PROGRESS — FORMAL EXECUTION OPEN; POLICY NOT APPROVED
 
 **Activities**
-- [ ] 0.4.1 ERX identifier system.
-- [ ] 0.4.2 Document naming.
-- [ ] 0.4.3 Versioning system.
-- [ ] 0.4.4 Document statuses.
-- [ ] 0.4.5 Required metadata.
-- [ ] 0.4.6 Authorship record.
-- [ ] 0.4.7 Approval record.
-- [ ] 0.4.8 Modification history.
-- [ ] 0.4.9 Cross-references.
+- [x] 0.4.1 Develop ERX identifier system proposal.
+- [x] 0.4.2 Develop canonical document naming proposal.
+- [x] 0.4.3 Develop versioning proposal.
+- [x] 0.4.4 Define proposed document lifecycle statuses and transitions.
+- [x] 0.4.5 Define required metadata by document class.
+- [x] 0.4.6 Define separate authorship and design-authority records.
+- [x] 0.4.7 Define review and approval record requirements.
+- [x] 0.4.8 Define revision history and change traceability.
+- [x] 0.4.9 Define cross-reference and provenance rules.
 
-**Preparatory draft:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.1.0 — NOT APPROVED; includes a proposed document header template. 
-**Acceptance:** every document can be uniquely identified; draft, review, and approved statuses are distinguished; history can be reconstructed.  
-**Dependencies:** WP-0.1 and WP-0.3. Formal WP-0.4 execution remains blocked until WP-0.3 is completed and expressly approved. This preparatory draft does not change the dependency gate.
+**Candidate deliverable:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.3.0 — IN_REVIEW; working proposal, not approved.
+**Execution evidence:** candidate v0.3.0 prepared on branch `wp-0.4-document-control`; WP-0.3 approved hierarchy and subject-matter authority were used as governing inputs. The former v0.2.0 preparatory draft was reconciled rather than treated as an approved policy.
+**Remaining work:** LAEV review and disposition of DC-01–DC-09; incorporate authorized changes; verify metadata/status transitions and migration controls; prepare final acceptance evidence and approved baseline.
+**Acceptance:** unique non-reusable identifiers; canonical naming with original-source preservation; versioning; document lifecycle statuses distinct from work-package statuses; metadata by document class; separate authorship/review/approval; reconstructable revision history; exact cross-references; controlled migration; express LAEV approval of the exact final version.
+**Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. Both dependency gates are satisfied. WP-0.4 remains IN_PROGRESS until its own acceptance; WP-0.5 remains dependent on WP-0.4.
 
 ### WP-0.5 — ERX Repository Creation and Organization
 **Status:** BLOCKED — PREPARATORY DRAFT ONLY

@@ -1,0 +1,1472 @@
+ERX byLAEV
+
+Protocolo institucional de admisión, comunicación, unicidad transaccional y evidencia verificable para llamadas de emergencia 911
+
+Documento: ERX-PROT-001
+Versión: 1.1 — Actualización técnica
+Versión anterior: 1.0
+Autoría y diseño: LAEV / byLAEV
+Categoría: Protocolo de funcionamiento institucional
+Estado: Especificación de diseño para implementación, evaluación y homologación institucional.
+
+Control de versiones
+
+Versión
+
+Descripción
+
+1.0
+
+Arquitectura inicial de tres documentos JSON, tres transiciones UTXO y tres evidencias OTS.
+
+1.1
+
+Fortalecimiento de identidad institucional, unicidad transaccional, concurrencia, continuidad operativa, privacidad, auditoría y verificación independiente.
+
+La versión 1.1 conserva la arquitectura fundamental y amplía las condiciones necesarias para su implementación segura en infraestructuras internacionales de atención de emergencias.
+
+1. Propósito del protocolo
+
+ERX byLAEV es un paquete de software institucional diseñado para integrarse en las infraestructuras de atención de emergencias 911.
+
+Su propósito es incorporar un mecanismo de control transaccional de registros basado en las propiedades funcionales del modelo UTXO, junto con la generación de evidencias criptográficas verificables mediante OpenTimestamps (OTS).
+
+El protocolo documenta el ciclo de una comunicación entre una persona que solicita asistencia desde un dispositivo móvil y un centro institucional autorizado para recibir comunicaciones de emergencia.
+
+ERX establece tres etapas fundamentales:
+
+Registro de origen, recepción, localización y enrutamiento.
+
+Registro de establecimiento del contacto y autenticación del agente receptor.
+
+Registro integral del desarrollo y cierre de la comunicación.
+
+Cada etapa genera:
+
+Un documento JSON independiente.
+
+Una transición de estado UTXO.
+
+Un compromiso criptográfico.
+
+Una evidencia OpenTimestamps.
+
+Una relación verificable con las etapas anteriores.
+
+Por tanto, el expediente básico de una comunicación queda constituido por tres documentos JSON, tres transiciones UTXO y tres evidencias OTS.
+
+Los archivos institucionales originales, como audios y transcripciones, permanecen bajo custodia de la institución y se vinculan mediante referencias criptográficas.
+
+ERX no crea monedas, no utiliza tokens, no necesita una cadena de bloques propia y no sustituye la infraestructura telefónica de emergencias.
+
+El modelo UTXO se aplica al control de admisión, consumo y transición de estados de los registros institucionales.
+
+2. Principio fundamental: una comunicación, una secuencia transaccional
+
+El principio central es impedir que un mismo evento de comunicación produzca múltiples admisiones institucionales válidas por duplicaciones, reintentos, retransmisiones o concurrencia.
+
+Cada llamada admitida recibe una identidad transaccional propia.
+
+La secuencia básica es:
+
+UTXO 01 → UTXO 02 → UTXO 03
+
+UTXO 01: recepción, origen, localización disponible y enrutamiento.
+
+UTXO 02: resultado del establecimiento del contacto y protocolo inicial.
+
+UTXO 03: desarrollo integral y cierre de la comunicación.
+
+Una transición válida consume un estado anterior y crea el siguiente. El estado consumido deja de estar disponible para otra transición, pero permanece en el historial institucional.
+
+2.1. Naturaleza del UTXO institucional
+
+El UTXO de ERX es una unidad lógica de estado transaccional.
+
+Cada unidad debe tener:
+
+Identificador único del estado.
+
+Identificador de la llamada.
+
+Identificador de la etapa.
+
+Referencia criptográfica al documento correspondiente.
+
+Identificador del estado anterior, cuando exista.
+
+Estado de consumo.
+
+Identidad del proceso que realizó la transición.
+
+Fecha y hora de observación y procesamiento.
+
+Firma institucional de la operación.
+
+El identificador de estado debe permitir distinguir inequívocamente una salida transaccional de otra.
+
+Una transición debe registrar qué estado consumió y cuál produjo.
+
+La implementación debe impedir que dos procesos consuman el mismo estado válido.
+
+2.2. Alcance de la unicidad
+
+La unicidad se garantiza dentro del ámbito de coordinación transaccional autorizado de cada instalación o grupo institucional integrado.
+
+No se presupone que dos bases de datos independientes compartan automáticamente un estado global.
+
+Cuando varias instalaciones participan en una misma llamada, deben utilizar identificadores correlacionables, reglas de autoridad y mecanismos de coordinación definidos.
+
+La garantía de unicidad debe sustentarse en:
+
+Identificadores deterministas o persistentes de eventos.
+
+Restricciones de unicidad en almacenamiento.
+
+Operaciones atómicas.
+
+Control de concurrencia.
+
+Idempotencia.
+
+Registro de transiciones.
+
+Recuperación segura después de interrupciones.
+
+La red telefónica puede retransmitir eventos. ERX debe impedir que esas retransmisiones produzcan efectos institucionales duplicados.
+
+3. Participantes y responsabilidades
+
+3.1. Persona solicitante
+
+Origina la llamada. No necesita instalar ERX, crear una cuenta, administrar claves ni realizar operaciones criptográficas.
+
+3.2. Dispositivo móvil
+
+Origina la comunicación y puede proporcionar identificadores de sesión y datos de localización mediante los mecanismos disponibles.
+
+3.3. Operadora de telecomunicaciones
+
+Transporta la comunicación mediante su infraestructura y puede aportar datos técnicos de red y localización cuando esté autorizada.
+
+No debe confundirse con el centro receptor de emergencias.
+
+3.4. Servicios de localización
+
+Proporcionan información de ubicación del dispositivo o conexión. Pueden utilizar servicios del dispositivo, localización de emergencia, datos de red o antenas y sectores celulares.
+
+3.5. Centro receptor 911 o PSAP
+
+Es la institución autorizada para recibir y atender comunicaciones de emergencia dentro de su jurisdicción.
+
+3.6. Agente humano
+
+Es la persona profesional que atiende la llamada. Su identidad y credenciales deben poder verificarse conforme a las reglas institucionales.
+
+3.7. Módulo ERX institucional
+
+Es el paquete de software instalado en la infraestructura autorizada del centro 911.
+
+Administra:
+
+Admisión transaccional.
+
+Identidad institucional.
+
+Identificación profesional.
+
+Transiciones UTXO.
+
+Documentos JSON.
+
+Firmas.
+
+Compromisos OTS.
+
+Auditoría.
+
+Recuperación.
+
+Verificación.
+
+3.8. OpenTimestamps
+
+Proporciona evidencia temporal criptográfica sobre los compromisos de los documentos.
+
+3.9. Red Bitcoin
+
+Permite anclar compromisos criptográficos mediante el mecanismo utilizado por OpenTimestamps. No recibe el contenido privado de las llamadas.
+
+3.10. Autoridad de confianza institucional
+
+Es la entidad o infraestructura previamente establecida que permite comprobar qué centros, instituciones, certificados y credenciales están autorizados.
+
+Su función es distinguir una identidad criptográfica válida de una identidad institucional legítima.
+
+4. Requisitos institucionales previos
+
+Cada instalación debe contar con una configuración institucional validada.
+
+La configuración comprende:
+
+Identidad única de la institución.
+
+Identidad de cada centro autorizado.
+
+Jurisdicción y territorio de competencia.
+
+Certificados institucionales.
+
+Claves públicas de verificación.
+
+Claves privadas protegidas.
+
+Registro de agentes autorizados.
+
+Fuentes de localización admitidas.
+
+Integraciones telefónicas.
+
+Sistemas de gestión de incidentes.
+
+Políticas de almacenamiento y conservación.
+
+Política de grabación.
+
+Política de privacidad.
+
+Configuración OTS.
+
+Reglas de recuperación.
+
+Procedimientos de auditoría.
+
+Configuración de continuidad operativa.
+
+4.1. Identidad institucional y autorización territorial
+
+Instalar ERX no convierte a una entidad en una operadora 911 autorizada.
+
+La identidad institucional debe estar vinculada a una autoridad de confianza previamente establecida.
+
+El sistema debe distinguir:
+
+Institución reconocida y autorizada.
+
+Institución reconocida, pero no autorizada para una jurisdicción.
+
+Identidad criptográfica válida sin autorización institucional comprobada.
+
+Certificado vencido.
+
+Certificado revocado.
+
+Identidad desconocida.
+
+Estado de validación pendiente por indisponibilidad de la autoridad de confianza.
+
+La configuración territorial debe definir las jurisdicciones, centros, áreas de servicio, reglas de encaminamiento y fuentes autorizadas.
+
+Los límites de cobertura no deben deducirse únicamente de la ubicación de una antena. Deben proceder de reglas y datos oficiales de encaminamiento y jurisdicción.
+
+4.2. Gestión de claves y credenciales
+
+Las claves privadas institucionales deben permanecer bajo control de la institución.
+
+Se recomienda su protección mediante hardware de seguridad cuando esté disponible.
+
+ERX debe definir:
+
+Generación segura de claves.
+
+Custodia.
+
+Rotación.
+
+Revocación.
+
+Renovación.
+
+Recuperación.
+
+Registro de utilización.
+
+Separación de funciones.
+
+Verificación histórica de firmas.
+
+La rotación de una clave no debe invalidar automáticamente documentos firmados anteriormente.
+
+El verificador debe poder consultar qué clave estaba autorizada en el momento de emisión, así como sus períodos de vigencia y posibles revocaciones.
+
+Los registros de agentes deben incluir el período de vigencia de la credencial y su relación con el centro y la función autorizada.
+
+4.3. Adaptadores institucionales
+
+El núcleo ERX debe ser común.
+
+Las diferencias entre países y centros se resuelven mediante adaptadores específicos para:
+
+Telefonía.
+
+Enrutamiento.
+
+Localización.
+
+Identidad.
+
+Gestión de incidentes.
+
+Grabación.
+
+Almacenamiento.
+
+Servicios OTS.
+
+Los adaptadores no deben modificar las reglas fundamentales de consumo único y continuidad transaccional.
+
+5. Arquitectura integral de funcionamiento
+
+El recorrido comprende cuatro momentos operativos:
+
+Origen y transporte telefónico.
+
+Recepción y primera transacción.
+
+Establecimiento del contacto y segunda transacción.
+
+Desarrollo, cierre y tercera transacción.
+
+La atención telefónica es prioritaria y el registro ERX es una capa complementaria.
+
+5.1. Fase previa: origen de la llamada
+
+La persona marca el número de emergencias desde su dispositivo móvil.
+
+La red telefónica intenta alcanzar el servicio de emergencia correspondiente.
+
+El dispositivo no necesita conocer ERX ni realizar operaciones UTXO u OTS.
+
+Si no existe ninguna red ni vía alternativa de comunicación, ERX no puede crear conectividad inexistente.
+
+La red transporta la llamada hacia un centro receptor.
+
+Cuando el evento alcanza una infraestructura integrada con ERX, el módulo recibe una señal institucional de ingreso.
+
+Este es el primer momento en que ERX puede afirmar que observó una comunicación en su infraestructura.
+
+6. PRIMERA TRANSACCIÓN: recepción, origen, localización y enrutamiento
+
+Documento: JSON 01
+Transacción: UTXO 01
+Evidencia: OTS 01
+
+La primera etapa se registra antes de que un agente humano conteste.
+
+Paso 1. Recepción del evento
+
+ERX recibe el evento de ingreso desde un gateway o componente autorizado.
+
+Registra:
+
+Identificador único de evento.
+
+Identificador de llamada.
+
+Identificador de sesión telefónica.
+
+Gateway receptor.
+
+Fuente de recepción.
+
+Hora de observación.
+
+Referencias técnicas disponibles.
+
+Información de origen disponible.
+
+La intención de llamar no equivale a una llamada recibida.
+
+Paso 2. Comprobación institucional
+
+ERX comprueba la identidad del gateway y su relación con la institución autorizada.
+
+Verifica credenciales, vigencia, autorización y jurisdicción.
+
+El resultado debe incluir el estado de validación y la fuente de confianza consultada.
+
+Una indisponibilidad temporal de la fuente de confianza debe diferenciarse de una credencial inválida.
+
+La validación ERX nunca debe retrasar ni bloquear la atención telefónica.
+
+Paso 3. Identificación del origen técnico
+
+Se registra la información disponible:
+
+Referencia protegida del origen telefónico.
+
+Operadora móvil, cuando esté disponible.
+
+Identificador de sesión.
+
+Información técnica de red.
+
+Referencia de devolución de llamada, cuando proceda.
+
+Identificadores adicionales autorizados.
+
+Los datos sensibles, como IMEI, IMSI o números telefónicos, solo se incorporan cuando exista justificación legal y operativa.
+
+Paso 4. Determinación de ubicación
+
+ERX recibe la ubicación disponible antes de la respuesta del agente.
+
+Cada dato debe identificar:
+
+Fuente.
+
+Hora de observación.
+
+Coordenadas, cuando existan.
+
+Precisión estimada.
+
+Método de localización.
+
+Estado de validación.
+
+Se admiten los estados:
+
+Disponible.
+
+Aproximada.
+
+Pendiente.
+
+No disponible.
+
+Contradictoria.
+
+La ausencia de ubicación no bloquea la llamada.
+
+Los cambios posteriores se registran como nuevos acontecimientos, sin modificar el JSON 01 original.
+
+Paso 5. Determinación del centro de destino
+
+ERX registra el centro al que la infraestructura autorizada encaminó la llamada.
+
+Se documentan jurisdicción, centro de destino, fuente de enrutamiento y resultado de la comprobación institucional.
+
+ERX no sustituye arbitrariamente a la autoridad de encaminamiento del país.
+
+Paso 6. Creación del JSON 01
+
+Se congela el primer documento.
+
+Incluye la identidad del evento, origen técnico disponible, localización, recepción institucional y destino.
+
+Se utiliza una representación canónica del JSON para obtener un hash reproducible.
+
+La implementación debe adoptar una especificación de canonicalización documentada, como JSON Canonicalization Scheme (RFC 8785), o una alternativa formalmente especificada y compatible.
+
+Se firma el documento mediante una clave institucional autorizada.
+
+Paso 7. Creación del UTXO 01
+
+Se crea el primer estado transaccional.
+
+Representa:
+
+Comunicación recibida, origen registrado, localización disponible y centro institucional de destino identificado.
+
+El estado debe estar vinculado al evento original y a una regla de unicidad.
+
+La creación debe ejecutarse de manera atómica.
+
+Paso 8. Generación del OTS 01
+
+Se calcula el compromiso criptográfico del JSON 01 y se solicita su estampado.
+
+Se conserva el archivo de prueba y su estado.
+
+Los estados de OTS deben distinguir:
+
+No solicitado.
+
+Enviado.
+
+Pendiente.
+
+Actualizable.
+
+Anclado.
+
+Verificado.
+
+Fallido.
+
+La atención continúa independientemente de la confirmación OTS.
+
+Resultado: existe un registro verificable de la recepción, la ubicación disponible antes de la respuesta y el centro de destino.
+
+7. SEGUNDA TRANSACCIÓN: establecimiento del contacto y protocolo inicial
+
+Documento: JSON 02
+Transacción: UTXO 02
+Evidencia: OTS 02
+
+Esta etapa documenta el establecimiento del contacto o el resultado del intento de contacto.
+
+Paso 9. Enlace con el centro
+
+La llamada alcanza el centro registrado.
+
+ERX recibe el evento de conexión y comprueba que la institución efectivamente conectada coincide con la ruta autorizada o registra la excepción.
+
+Si existe una transferencia, conserva las identidades de los centros participantes.
+
+Paso 10. Respuesta del agente
+
+Cuando un agente contesta, se registra:
+
+Hora de respuesta.
+
+Centro receptor.
+
+Sesión.
+
+Puesto o extensión.
+
+Identidad profesional disponible.
+
+Inicio del contacto.
+
+La hora de recepción inicial y la hora de respuesta son eventos diferentes.
+
+Paso 11. Verificación profesional
+
+ERX verifica:
+
+Identificador profesional.
+
+Institución.
+
+Credencial.
+
+Vigencia.
+
+Autorización funcional.
+
+Relación entre el agente y la sesión.
+
+El resultado debe ser explícito:
+
+Verificado.
+
+No verificado.
+
+Pendiente.
+
+Credencial vencida.
+
+Credencial revocada.
+
+Identidad no disponible.
+
+La falta de autenticación no detiene la atención de emergencia.
+
+Una identidad pendiente nunca debe presentarse como una identidad verificada.
+
+Paso 12. Protocolo inicial
+
+El agente aplica el procedimiento institucional correspondiente.
+
+Puede comprender presentación, identificación funcional, confirmación del contacto, accesibilidad, idioma y determinación del inicio de la atención sustantiva.
+
+ERX registra la versión del procedimiento y los resultados observables.
+
+No impone un guion universal ni sustituye el criterio del agente.
+
+Paso 13. Resultado del contacto
+
+El sistema determina si:
+
+Se estableció contacto humano.
+
+Hubo respuesta sin autenticación verificable.
+
+No hubo respuesta.
+
+Se produjo una transferencia.
+
+La llamada terminó antes de la respuesta.
+
+Existió una excepción técnica.
+
+El protocolo debe poder representar estos resultados sin inventar una atención humana que no ocurrió.
+
+Paso 14. Creación del JSON 02
+
+El documento incorpora:
+
+Identificador de llamada.
+
+Referencia criptográfica al JSON 01.
+
+Identidad del centro conectado.
+
+Resultado de autenticación institucional.
+
+Identidad del agente, cuando corresponda.
+
+Resultado de autenticación profesional.
+
+Versión del protocolo inicial.
+
+Hora de respuesta.
+
+Inicio de atención sustantiva, si existió.
+
+Incidencias.
+
+Estado del contacto.
+
+Referencia al UTXO 01 consumido.
+
+Se firma y congela.
+
+Paso 15. Consumo del UTXO 01 y creación del UTXO 02
+
+ERX comprueba que UTXO 01 existe y no ha sido consumido.
+
+El consumo y la creación del nuevo estado se realizan en una operación atómica.
+
+UTXO 01 queda consumido y se genera UTXO 02.
+
+Representa:
+
+Resultado del contacto institucional y protocolo inicial documentado.
+
+El estado puede representar un contacto humano verificado, un contacto no verificado o un intento sin respuesta, según los acontecimientos reales.
+
+Paso 16. Generación del OTS 02
+
+Se calcula el compromiso del JSON 02 y se solicita su evidencia OTS.
+
+La atención sustantiva no espera el anclaje.
+
+Resultado: queda documentado quién recibió la comunicación, qué institución intervino y si la identidad profesional pudo verificarse.
+
+8. TERCERA TRANSACCIÓN: desarrollo integral y cierre
+
+Documento: JSON 03
+Transacción: UTXO 03
+Evidencia: OTS 03
+
+Paso 17. Inicio del registro integral
+
+ERX abre el registro cronológico de los acontecimientos de la comunicación.
+
+Se documentan, según disponibilidad y autorización:
+
+Preguntas y respuestas.
+
+Información proporcionada.
+
+Cambios de ubicación.
+
+Instrucciones.
+
+Actuaciones.
+
+Transferencias.
+
+Interrupciones.
+
+Incidencias.
+
+Referencias al despacho.
+
+Eventos de finalización.
+
+El registro no sustituye el expediente operativo del incidente.
+
+Paso 18. Grabación y archivos originales
+
+Cuando la institución está autorizada para grabar, conserva el audio original en almacenamiento institucional protegido.
+
+Se registra:
+
+Referencia del archivo.
+
+Hash.
+
+Formato.
+
+Duración.
+
+Hora de inicio y finalización.
+
+Sistema de origen.
+
+Estado de conservación.
+
+Política de retención.
+
+El audio no se publica en Bitcoin ni se envía como contenido a OTS.
+
+Las transcripciones se identifican como documentos derivados.
+
+Una transcripción posterior al cierre debe agregarse como evidencia complementaria, sin modificar el JSON 03 sellado.
+
+Paso 19. Identificación de participantes y transferencias
+
+Cada agente interviniente debe identificarse por separado.
+
+En una transferencia se registran:
+
+Centro de origen.
+
+Centro de destino.
+
+Agente que entrega.
+
+Agente que recibe.
+
+Hora.
+
+Motivo.
+
+Continuidad o interrupción.
+
+La transferencia no debe crear una admisión duplicada cuando se trate de la misma comunicación institucional.
+
+Paso 20. Cierre de la comunicación
+
+Se registra la condición real:
+
+Despedida y cierre normal.
+
+Finalización por el ciudadano.
+
+Finalización por el agente.
+
+Desconexión accidental.
+
+Pérdida de señal.
+
+Interrupción técnica.
+
+Transferencia que finaliza la sesión original.
+
+No se debe registrar consentimiento o despedida si solo existió una desconexión.
+
+El cierre telefónico no implica necesariamente que la emergencia esté resuelta.
+
+Paso 21. Consolidación del JSON 03
+
+El documento contiene:
+
+Identificador de llamada.
+
+Referencias a JSON 01 y JSON 02.
+
+Hashes anteriores.
+
+Identidad institucional.
+
+Agentes participantes.
+
+Secuencia cronológica.
+
+Horas de atención y cierre.
+
+Duración calculada.
+
+Referencias a audios.
+
+Hashes de archivos originales.
+
+Transcripciones, cuando corresponda.
+
+Cambios de localización.
+
+Actuaciones.
+
+Transferencias.
+
+Incidencias.
+
+Motivo de finalización.
+
+Resultado del contacto.
+
+Referencia al UTXO 02 consumido.
+
+Firma institucional.
+
+Los documentos anteriores permanecen inalterados.
+
+Paso 22. Consumo del UTXO 02 y creación del UTXO 03
+
+ERX comprueba que UTXO 02 existe y no ha sido consumido.
+
+La transición se ejecuta atómicamente.
+
+UTXO 02 queda consumido y se genera UTXO 03.
+
+Representa:
+
+Comunicación documentada, cierre registrado y expediente integral disponible para auditoría.
+
+Paso 23. Generación del OTS 03
+
+Se calcula el compromiso del JSON 03 y del manifiesto de archivos asociados.
+
+Se solicita la tercera evidencia OTS.
+
+Se conserva el archivo de prueba y su estado de actualización.
+
+Resultado: la institución conserva el expediente integral de la llamada y sus tres evidencias temporales.
+
+9. Estructura de los tres documentos
+
+Los documentos deben compartir un identificador de llamada y referencias criptográficas.
+
+Documento
+
+Contenido principal
+
+Estado UTXO
+
+JSON 01
+
+Origen, recepción, localización y enrutamiento
+
+UTXO 01
+
+JSON 02
+
+Contacto, institución, agente y protocolo inicial
+
+UTXO 02
+
+JSON 03
+
+Desarrollo, participantes, archivos y cierre
+
+UTXO 03
+
+Cada JSON debe incorporar metadatos de esquema:
+
+Identificador de esquema.
+
+Versión.
+
+Identificador de llamada.
+
+Identificador de documento.
+
+Etapa.
+
+Identificador institucional.
+
+Fecha y hora de observación.
+
+Fecha y hora de emisión.
+
+Referencias anteriores.
+
+Hashes.
+
+Firma.
+
+Estado de validación.
+
+La versión del esquema debe quedar identificada para que los verificadores futuros puedan interpretar correctamente documentos históricos.
+
+10. Reglas de unicidad y prevención del doble gasto
+
+Las siguientes reglas son obligatorias.
+
+10.1. Identidad única
+
+Cada evento de llamada debe recibir una identidad persistente.
+
+10.2. Admisión única
+
+Las retransmisiones del mismo evento no deben generar nuevas admisiones.
+
+10.3. Consumo único
+
+Un UTXO válido puede consumirse una sola vez.
+
+10.4. Atomicidad
+
+El consumo y la creación de estados deben confirmarse conjuntamente.
+
+No puede quedar una transición parcialmente aplicada.
+
+10.5. Idempotencia
+
+Un reintento debe devolver el resultado de la operación original cuando corresponda.
+
+La clave de idempotencia debe estar asociada a una identidad de evento y a un contexto institucional.
+
+10.6. Concurrencia
+
+Dos procesos que intenten consumir el mismo estado no pueden completar dos transiciones válidas.
+
+La base de datos debe implementar restricciones y mecanismos de concurrencia verificables, como bloqueo transaccional, control de versiones o compare-and-swap, según la tecnología elegida.
+
+10.7. Reproducción de eventos
+
+Los eventos antiguos deben identificarse mediante referencias persistentes y reglas de vigencia.
+
+La reutilización de un identificador no puede crear una nueva admisión.
+
+10.8. Historial
+
+Los estados consumidos permanecen disponibles para auditoría.
+
+10.9. Correcciones
+
+Los registros sellados no se editan silenciosamente.
+
+Las correcciones generan documentos complementarios firmados, con referencia al original y justificación.
+
+10.10. Separación de estados
+
+El estado UTXO de la llamada y el estado OTS son independientes.
+
+Una llamada puede estar cerrada aunque sus pruebas sigan pendientes.
+
+10.11. Coordinación entre instalaciones
+
+Cuando una llamada involucra varias instalaciones, ERX debe identificar qué instalación tiene autoridad para emitir cada transición.
+
+Una base de datos local no puede garantizar por sí sola unicidad global frente a instalaciones independientes desconectadas.
+
+La coordinación debe definirse explícitamente, sin prometer una garantía global inexistente.
+
+11. Protección temporal y orden cronológico
+
+La hora de un acontecimiento y la hora de su registro criptográfico son conceptos diferentes.
+
+ERX debe distinguir:
+
+Hora declarada por el dispositivo.
+
+Hora observada por el gateway.
+
+Hora recibida por el sistema institucional.
+
+Hora de procesamiento.
+
+Hora de firma.
+
+Hora de envío a OTS.
+
+Hora de anclaje verificable.
+
+Las horas deben conservarse en UTC con su precisión y fuente.
+
+Cuando sea posible, se utilizarán fuentes institucionales de tiempo sincronizadas y auditables.
+
+Los procesos locales deben registrar también una referencia temporal monotónica para ordenar acontecimientos dentro de una sesión, cuando la plataforma lo permita.
+
+Una discrepancia horaria debe documentarse, no corregirse silenciosamente.
+
+OTS no certifica el segundo exacto de la llamada. Proporciona evidencia de que un compromiso criptográfico existía antes del punto temporal respaldado por el anclaje.
+
+12. OpenTimestamps y evidencia temporal
+
+Cada documento JSON produce un compromiso criptográfico independiente.
+
+El proceso comprende:
+
+Completar el documento.
+
+Congelar su contenido.
+
+Canonicalizarlo.
+
+Firmarlo institucionalmente.
+
+Calcular su compromiso criptográfico.
+
+Solicitar el estampado OTS.
+
+Conservar el archivo de prueba.
+
+Actualizar la prueba posteriormente.
+
+Verificarla contra el documento y la cadena Bitcoin.
+
+Las tres evidencias son:
+
+OTS 01: recepción y origen.
+
+OTS 02: contacto institucional.
+
+OTS 03: desarrollo y cierre.
+
+12.1. Independencia de la atención
+
+La disponibilidad de OTS y Bitcoin no condiciona la atención de emergencia.
+
+Las solicitudes pueden quedar pendientes y procesarse posteriormente.
+
+12.2. Anclaje agrupado
+
+OTS puede agrupar compromisos criptográficos y anclar una raíz común.
+
+No es necesario generar una transacción Bitcoin por cada llamada.
+
+12.3. Límites probatorios
+
+OTS no demuestra por sí solo:
+
+Que el contenido sea verdadero.
+
+Que la persona sea quien afirma ser.
+
+Que el agente actuó correctamente.
+
+Que la ubicación sea exacta.
+
+Que el audio sea completo.
+
+Que el centro esté autorizado.
+
+Que el acontecimiento ocurrió exactamente en el segundo indicado.
+
+Estas propiedades requieren otras evidencias.
+
+13. Protección de datos y privacidad
+
+ERX maneja información altamente sensible.
+
+Los documentos originales y archivos se conservan en infraestructura institucional protegida.
+
+Bitcoin y OTS reciben compromisos criptográficos, no el contenido privado de las llamadas.
+
+No se publican:
+
+Audios.
+
+Transcripciones.
+
+Nombres.
+
+Números telefónicos.
+
+Coordenadas.
+
+Documentos de identidad.
+
+Credenciales profesionales.
+
+Información médica.
+
+Identificadores personales directos.
+
+Los datos deben cifrarse en reposo y durante la transmisión.
+
+El acceso debe ser autorizado, limitado y auditado.
+
+13.1. Protección contra correlación
+
+Un hash no equivale automáticamente a anonimización.
+
+Un tercero podría intentar relacionar compromisos con documentos conocidos o correlacionar registros públicos.
+
+Por tanto, ERX debe evitar exponer identificadores directos, hashes de datos personales aislados y metadatos innecesarios.
+
+Cuando corresponda, se deben utilizar compromisos con valores aleatorios de alta entropía, protegidos dentro del expediente institucional, o estructuras criptográficas equivalentes que impidan ataques de enumeración.
+
+La información necesaria para verificar el compromiso debe permanecer bajo control autorizado.
+
+13.2. Conservación y eliminación
+
+La institución debe definir períodos de conservación y procedimientos de eliminación conforme a la legislación aplicable.
+
+La eliminación autorizada del contenido no debe presentarse como eliminación de un anclaje Bitcoin ya publicado.
+
+Debe conservarse la información mínima necesaria para explicar qué evidencia existió, qué política se aplicó y qué contenido dejó de estar disponible.
+
+14. Correcciones, auditoría y trazabilidad
+
+Los documentos 01, 02 y 03 son inmutables una vez firmados y comprometidos.
+
+Si existe un error o una información posterior:
+
+Se identifica el documento original.
+
+Se describe el dato incorrecto o incompleto.
+
+Se registra la causa.
+
+Se identifica quién autoriza la corrección.
+
+Se genera un documento complementario.
+
+Se firma.
+
+Se calcula su compromiso.
+
+Se solicita una evidencia temporal.
+
+Se vincula al expediente original.
+
+La corrección no elimina el registro histórico.
+
+El verificador debe poder reconstruir la secuencia original y sus complementos.
+
+15. Verificación independiente
+
+El expediente debe poder verificarse sin depender exclusivamente de la interfaz o base de datos operativa del centro.
+
+La verificación comprende:
+
+15.1. Integridad documental
+
+Comprobar que los JSON coinciden con los compromisos criptográficos.
+
+15.2. Autenticidad institucional
+
+Comprobar que las firmas corresponden a claves institucionales autorizadas durante el período correspondiente.
+
+15.3. Vigencia histórica
+
+Comprobar el estado de certificados y credenciales al momento de emisión.
+
+15.4. Identidad profesional
+
+Comprobar la credencial del agente y su relación con el centro y la sesión.
+
+15.5. Continuidad UTXO
+
+Comprobar que JSON 02 corresponde al consumo de UTXO 01 y que JSON 03 corresponde al consumo de UTXO 02.
+
+15.6. Ausencia de doble consumo
+
+Comprobar que el historial no contiene dos transiciones válidas que consuman el mismo estado.
+
+15.7. Evidencia temporal
+
+Comprobar cada prueba OTS y su anclaje.
+
+15.8. Integridad de archivos
+
+Comprobar los hashes de audios y otros archivos disponibles.
+
+15.9. Coherencia cronológica
+
+Comprobar la compatibilidad entre los acontecimientos, las firmas, los estados y los compromisos temporales.
+
+El resultado de cada comprobación debe ser independiente y explícito.
+
+El verificador debe diferenciar:
+
+Integridad criptográfica.
+
+Autenticidad institucional.
+
+Autenticidad profesional.
+
+Continuidad transaccional.
+
+Evidencia temporal.
+
+Veracidad material.
+
+No debe convertir una propiedad en prueba automática de otra.
+
+16. Tratamiento de excepciones
+
+16.1. Localización ausente
+
+Se registra como pendiente o no disponible. La llamada continúa.
+
+16.2. Identidad institucional no reconocida
+
+Se genera un registro de observación o rechazo, firmado por la infraestructura que detectó el evento.
+
+Debe diferenciarse entre:
+
+Identidad desconocida.
+
+Certificado inválido.
+
+Certificado vencido.
+
+Institución no autorizada.
+
+Posible suplantación.
+
+Validación temporalmente indisponible.
+
+Un fallo no demuestra automáticamente fraude.
+
+Este registro de seguridad es independiente de los tres UTXO de una llamada institucional admitida.
+
+16.3. Centro sin respuesta
+
+JSON 02 documenta el intento sin respuesta humana.
+
+JSON 03 documenta su terminación y las acciones posteriores.
+
+16.4. Ciudadano desconectado antes de hablar
+
+Se registra que no existió contacto humano.
+
+No se atribuye atención a ningún agente.
+
+16.5. Desconexión durante la atención
+
+Se registra la desconexión y las acciones de recuperación.
+
+Una nueva llamada telefónica constituye una nueva identidad transaccional, vinculada al incidente anterior cuando corresponda.
+
+16.6. Transferencia
+
+Se conserva la identidad de la llamada y se documentan los centros y agentes participantes.
+
+Cuando una transferencia produzca una sesión independiente, se documentará su relación con la sesión anterior.
+
+16.7. Indisponibilidad OTS o Bitcoin
+
+Los documentos, firmas y compromisos se conservan.
+
+Las pruebas se actualizan posteriormente.
+
+16.8. Indisponibilidad de ERX
+
+La telefonía institucional debe continuar atendiendo.
+
+Cuando sea técnicamente posible, los eventos se almacenan en una cola local duradera y protegida.
+
+Se conservan por separado la hora original del acontecimiento, la hora de recuperación y la hora de generación del compromiso.
+
+16.9. Fallo de almacenamiento
+
+La infraestructura debe disponer de mecanismos de persistencia, respaldo y recuperación.
+
+Un evento no debe presentarse como registrado permanentemente si su almacenamiento no ha sido confirmado.
+
+16.10. Indisponibilidad de servicios de identidad
+
+La llamada continúa.
+
+La identidad queda pendiente o no verificada hasta que pueda comprobarse.
+
+No se permite convertir una validación pendiente en una autenticación satisfactoria por defecto.
+
+17. Continuidad operativa y seguridad
+
+ERX debe operar como una capa complementaria y no como un punto único de fallo de la atención de emergencias.
+
+Su diseño debe contemplar:
+
+Modo normal.
+
+Modo degradado.
+
+Modo de contingencia.
+
+Recuperación.
+
+Sincronización posterior.
+
+Verificación de integridad.
+
+Reconciliación de eventos.
+
+17.1. Principio de no interferencia
+
+Si ERX falla, el centro debe continuar recibiendo y atendiendo llamadas mediante su infraestructura oficial.
+
+La validación, firma, almacenamiento y envío OTS no deben introducir esperas que condicionen la atención humana.
+
+17.2. Recuperación
+
+Al recuperar el servicio, ERX debe:
+
+Leer los eventos pendientes.
+
+Verificar su integridad.
+
+Identificar duplicaciones.
+
+Comprobar su identidad y orden.
+
+Procesar las operaciones pendientes de forma idempotente.
+
+Reconstruir los estados válidos.
+
+Registrar las horas de recuperación.
+
+Generar las evidencias pendientes.
+
+Conservar las incidencias.
+
+17.3. Seguridad de las interfaces
+
+Las conexiones entre ERX y los sistemas institucionales deben utilizar autenticación mutua o mecanismos equivalentes apropiados, protección de transporte, autorización por función y validación de mensajes.
+
+Las interfaces deben impedir que un componente no autorizado emita transiciones institucionales.
+
+18. Justificación de la arquitectura
+
+ERX utiliza tres mecanismos complementarios:
+
+UTXO institucional: controla el consumo único y la continuidad de los estados.
+
+OpenTimestamps: aporta evidencia temporal criptográfica de los compromisos.
+
+Firmas institucionales: permiten atribuir la emisión de los documentos a una identidad criptográfica determinada.
+
+Los JSON describen los acontecimientos estructurados.
+
+Los archivos originales permanecen bajo custodia institucional.
+
+El verificador independiente permite comprobar las relaciones entre todos los elementos.
+
+La arquitectura evita depender exclusivamente de una base de datos editable o de la declaración unilateral de un operador.
+
+Su finalidad no es impedir toda mentira o manipulación. Es hacer posible detectar inconsistencias, alteraciones, duplicaciones y contradicciones, y conservar evidencia verificable para su investigación.
+
+19. Requisitos de implementación y conformidad
+
+El paquete ERX debe estar organizado en cuatro componentes:
+
+ERX Protocol
+
+Define reglas, estados, transiciones, documentos y evidencias.
+
+ERX Core
+
+Ejecuta las reglas de identidad, unicidad, consumo, creación y validación de estados.
+
+ERX Institutional Module
+
+Permite configurar e integrar el protocolo en cada centro 911.
+
+ERX Verifier
+
+Permite comprobar documentos, firmas, transiciones y evidencias OTS independientemente.
+
+19.1. Pruebas obligatorias
+
+Antes de una implementación institucional deben realizarse pruebas de:
+
+Doble consumo.
+
+Concurrencia.
+
+Retransmisión de eventos.
+
+Reproducción de eventos antiguos.
+
+Alteración de JSON.
+
+Firmas inválidas.
+
+Certificados vencidos y revocados.
+
+Identidad profesional no verificable.
+
+Localización ausente o contradictoria.
+
+Transferencias.
+
+Desconexiones.
+
+Indisponibilidad de OTS.
+
+Indisponibilidad de Bitcoin.
+
+Indisponibilidad de ERX.
+
+Recuperación de almacenamiento.
+
+Correcciones complementarias.
+
+Protección de datos.
+
+Verificación independiente.
+
+Recuperación después de fallos concurrentes.
+
+Compatibilidad entre adaptadores institucionales.
+
+19.2. Homologación
+
+Cada instalación debe demostrar que respeta las reglas comunes del protocolo.
+
+La homologación debe comprobar:
+
+Identidad institucional.
+
+Configuración territorial.
+
+Compatibilidad de interfaces.
+
+Integridad transaccional.
+
+Continuidad operativa.
+
+Protección de datos.
+
+Verificación independiente.
+
+Capacidad de recuperación.
+
+La instalación del software no equivale a una autorización legal para recibir llamadas de emergencia.
+
+20. Delimitación del producto
+
+ERX byLAEV no reemplaza el número de emergencias, la red telefónica, el sistema de despacho, el criterio de los agentes ni las competencias de la autoridad pública.
+
+Es un módulo institucional que incorpora una capa de control transaccional y evidencia verificable.
+
+Su objetivo comercial es proporcionar un núcleo común que las instituciones puedan configurar mediante sus datos, credenciales, jurisdicciones y adaptadores autorizados.
+
+Cada instalación debe conservar su independencia institucional y sus responsabilidades legales.
+
+La compatibilidad internacional se consigue mediante interfaces y reglas comunes, no suponiendo que todas las infraestructuras 911 son idénticas.
+
+21. Definición final del protocolo
+
+ERX byLAEV establece un procedimiento institucional de registro único, continuidad transaccional y evidencia verificable para cada comunicación de emergencia recibida por una infraestructura autorizada.
+
+Desde el ingreso de la llamada hasta su terminación, el módulo documenta tres momentos:
+
+Recepción, origen, localización disponible y enrutamiento.
+
+Establecimiento del contacto, identidad institucional y resultado de la autenticación profesional.
+
+Desarrollo integral, participantes, acontecimientos y cierre.
+
+Cada momento genera un documento JSON independiente, una transición UTXO y un compromiso OTS.
+
+Las tres transiciones están relacionadas mediante reglas de consumo único y creación de estados.
+
+Las evidencias temporales permiten verificar la existencia de los compromisos criptográficos dentro de los límites de OpenTimestamps.
+
+El contenido original permanece bajo custodia institucional.
+
+La verificación puede realizarse independientemente mediante los documentos, firmas, referencias transaccionales y pruebas OTS.
+
+La atención de emergencias nunca debe depender de la disponibilidad de ERX, OTS o Bitcoin.
+
+La finalidad última de ERX es que una llamada al 911 no sea solamente una comunicación atendida por una institución, sino también un acontecimiento institucional con identidad transaccional única, historial íntegro, atribución verificable y evidencia criptográfica auditable desde su recepción hasta su cierre.
+
+Documento: ERX-PROT-001
+Versión: 1.1 — Actualización técnica propuesta
+Autoría y diseño: LAEV / byLAEV
+Ámbito: Instituciones receptoras de comunicaciones de emergencia 911
+Estado: Pendiente de implementación, pruebas independientes, revisión jurídica y validación institucional.
+
+

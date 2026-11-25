@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | IN_PROGRESS — CONTROLLED RELATIONSHIP REGISTER |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -66,7 +66,13 @@ Relationship labels are descriptive. A relationship does not create normative pr
 4. The WP-0.3 audit/execution records contain historical downstream statuses in earlier snapshots. Later controlling WP-0.4/WP-0.5 acceptance and current Workplan tracking supersede those snapshots; historical files remain unchanged.
 5. DOC-ISS-003 and DOC-ISS-011 remain open/deferred limitations in the project baseline. Their existence does not prevent WP-0.6 inventory acceptance if recorded accurately and bounded, but no dependent technical or institutional decision may infer their contents or approval.
 
-## 6. Acceptance tests for this register
+## 6. Relationship validation record
+
+The relationship rows above were cross-checked against the named source identities, WP-0.3 DP-01–DP-09 decision record, DOC-ISS-001–011 issue register, WP-0.4 DC-01–DC-09 control record, WP-0.5 acceptance record, and current Workplan dependency chain. The original/derivative relationships were checked against the corresponding catalogue entries IDX-001–005 and IDX-069–074. The missing-source edge to ERX-IMPL-PROPOSAL-001 remains explicitly unverified and is not represented as a resolved target. The governance dependencies remain one-way gates; WP-0.7 is not enabled until WP-0.6 acceptance.
+
+The approved WP-0.3 relationship map remains unchanged. This supplement records the post-decision interpretation and does not rewrite or silently repair that approved historical artifact.
+
+## 7. Acceptance tests for this register
 
 - Each relationship has a source, target, typed relation and evidence/boundary.
 - No relation is used to imply unapproved precedence.
@@ -74,7 +80,7 @@ Relationship labels are descriptive. A relationship does not create normative pr
 - Issue states agree with the approved WP-0.3 decision record and issue register.
 - The master index and CSV cite this register without circular or unsupported claims.
 
-**Current status: IN_PROGRESS.** Internal review and cross-reference validation remain part of WP-0.6; publication is not acceptance.
+**Current status: IN_PROGRESS.** Relationship semantics and named control references have received a second-pass documentary cross-check. The register is still a derivative WP-0.6 work product and is not itself accepted; final package-level readiness and closeout remain.
 
 ---
 End of ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001

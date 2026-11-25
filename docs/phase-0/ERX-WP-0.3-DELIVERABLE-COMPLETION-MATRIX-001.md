@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 1.0.1 |
+| Version | 1.0.2 |
 | Status | COMPLETED — WP-0.3 ACCEPTED |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -46,7 +46,7 @@
 - DOC-ISS-010's separate agent-availability cycle is accepted; detailed state-machine specification is deferred under DP-03.
 - DOC-ISS-011 / ERX-CONSENSUS-001 v0.1 remains a proposal, not an approved operational consensus standard; operational completion and multi-institutional approval are deferred under DP-08.
 - The contradiction-handling procedure and evolution/supersession policy are approved under the decision record.
-- Workplan tracking, Markdown issue register, CSV, execution record v1.0.1, audit report v1.0.2 and acceptance-readiness report v1.0.0 were cross-checked against the controlling decision record and synchronized as of 2026-11-24. Future changes must use controlled document evolution.
+- Workplan tracking, Markdown issue register, CSV, execution record v1.0.1, audit report v1.0.3 and acceptance-readiness report v1.0.0 were cross-checked against the controlling decision record and synchronized as of 2026-11-24. WP-0.5 is NOT_STARTED — NOT FORMALLY INITIATED; its WP-0.3 and WP-0.4 prerequisites are satisfied. Future changes must use controlled document evolution.
 - No independent external review is claimed. It is distinct from LAEV's decision record and from this internal documentary acceptance.
 
 ## 4. Work Package acceptance gate — final determination

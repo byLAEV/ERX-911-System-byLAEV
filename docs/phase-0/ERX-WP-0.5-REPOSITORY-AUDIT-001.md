@@ -103,11 +103,15 @@ These are NOT_VERIFIED, not assumed absent or configured.
 | AUD-07 | WP-0.2 dossier provides original-source integrity evidence | Preserve originals; reference prior evidence, do not claim this audit reran it |
 | AUD-08 | Complete repository tree not yet examined | Keep audit preliminary until full structure and relevant settings are checked |
 
-## 9. Audit conclusion
+## 9. Follow-up decision — repository visibility
+
+After the preliminary audit, LAEV expressly decided on 2026-11-24 to retain the repository's current public visibility. The exact decision is recorded in `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0. The repository was already observed as public; no visibility-setting change was required or performed. This decision resolves visibility only and does not imply a license, blanket approval of future publication, or approval of other repository controls.
+
+## 10. Audit conclusion
 
 The repository identity, visibility, default branch, selected metadata and a set of controlling Phase 0 documents have been directly verified. WP-0.3 and WP-0.4 dependency acceptance is supported by their current records. The repository is not yet demonstrated to satisfy all WP-0.5 acceptance criteria.
 
-**WP-0.5 remains IN_PROGRESS. This report is preliminary and is not a final acceptance or closeout audit.**
+**WP-0.5 remains IN_PROGRESS. This report is preliminary and is not a final acceptance or closeout audit.** The visibility question is now RESOLVED by LAEV's express decision; other audit gaps remain open.
 
 ---
 End of ERX-WP-0.5-REPOSITORY-AUDIT-001

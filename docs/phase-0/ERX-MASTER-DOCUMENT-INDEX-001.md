@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.4.9 |
+| Version | 1.5.0 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `044fc05b7bed7639ac7d4f0438c51a06d090eafb` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
+| Live tree snapshot | `486a14bd6ec3edd040dd046fa04140631d149904` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
 
 ## 1. Purpose and control boundary
 
@@ -30,7 +30,7 @@ A file's presence or a Git commit does not establish correctness, approval, or a
 3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
 4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
 5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; GitHub reported `truncated=false` and 71 repository files.
-6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 80 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.3; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 80 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.4; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
 
 ## 3. Foundational source baseline
 
@@ -77,7 +77,7 @@ For each entry, preserve the exact source-native title, document ID and version 
 
 Document lifecycle status is taken from the exact controlled document and its decision/approval record. Historical headers are not overwritten by later approvals; instead, the index records the current disposition and points to the controlling approval/closeout record.
 
-The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). The final internal review is recorded in [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.3.4](ERX-WP-0.6-INTERNAL-REVIEW-001.md), with post-acceptance register/tree synchronization findings and no reopening of the acceptance decision. It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
+The WP-0.6 typed relationship supplement is [ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2](ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md). The final internal review is recorded in [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.3.5](ERX-WP-0.6-INTERNAL-REVIEW-001.md), with post-acceptance register/tree synchronization findings and no reopening of the acceptance decision. It supplements, and does not replace, the approved WP-0.3 relationship baseline. Relationships must be source-backed and typed, including:
 - cites / referenced by;
 - graphically represents;
 - derived from / supporting evidence for;

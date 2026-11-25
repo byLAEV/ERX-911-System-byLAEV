@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-ISSUE-REGISTER-001 |
-| Version | 0.5.0 |
+| Version | 0.6.0 |
 | Status | WORKING REGISTER — PENDING LAEV REVIEW |
 | Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -20,8 +20,9 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 - DOC-ISS-002 is no longer described simply as not located: a candidate named `Consenso ERX byLAEV.pdf` was discovered in `docs/` on 2026-11-24. Its internal identity/version and equivalence to Roadmap reference `ERX-CONSENSUS-001 v0.1` remain unverified. See `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`.
 - DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
-- DOC-ISS-009 and DOC-ISS-010 were added after direct comparison of ERX-PROT-001 v1.1 Sections 5–10, UTXO-911-001 v1.0 Sections 2–6, and ERX-ATLAS-001 v1.1 Plates 01–08 and its correspondence table.
-- The comparison found a broad three-stage communication lifecycle correspondence, alongside a more granular call-request/acceptance description and a distinct agent-availability UTXO in UTXO-911-001. These are unresolved scope/mapping questions, not proven contradictions.
+- DOC-ISS-009 and DOC-ISS-010 were refined after direct page-level inspection of ERX-PROT-001 v1.1 Step 15 (PDF p.13), UTXO-911-001 v1.0 Sections 2.1–3.1 and 4.5–5 (PDF pp.2–4, 8–9), ERX-ATLAS-001 v1.1 Plate 03, and ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3).
+- DOC-ISS-009 is a specific structural divergence: UTXO-911 creates a separate call-acceptance output before its initial-protocol output; Protocol/Atlas transition UTXO 01 directly to UTXO 02 containing contact and initial protocol. LAEV must decide the mapping.
+- DOC-ISS-010 is narrowed: Roadmap §3.1 expressly confirms the independent agent-availability cycle. Detailed transition, release/recovery, authority and verification rules remain pending.
 
 ## 3. Current issue status
 

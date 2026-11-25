@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.6.0 |
+| Version | 0.7.0 |
 | Status | WORKING REGISTER — PENDING LAEV DECISIONS |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -19,7 +19,7 @@
 | 0.3.3 Hierarchy decision | Explicit LAEV adoption/revision/rejection | Hierarchy matrix v0.1.0 | PENDING LAEV |
 | 0.3.4 Subject authority | Explicit LAEV decision and scoped matrix | Subject-Matter Authority Matrix v0.1.0 | PENDING LAEV |
 | 0.3.5 Relationships/dependencies | Source-backed map | ERX-DOCUMENT-RELATIONSHIP-MAP-001 v0.1.0 | EVIDENCE PREPARED |
-| 0.3.6 Contradictions/ambiguities | Exact comparison, impact, owner and disposition | Source Alignment Review; issue register DOC-ISS-001–010 | REVIEW COMPLETED; DISPOSITIONS PENDING |
+| 0.3.6 Contradictions/ambiguities | Exact comparison, impact, owner and disposition | Source Alignment Review; issue register DOC-ISS-001–011 | REVIEW COMPLETED; DISPOSITIONS PENDING |
 | 0.3.7 Handling procedure | Approved procedure | ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v0.1.0 | PENDING LAEV |
 | 0.3.8 Evolution/supersession | Approved policy | ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0 | PENDING LAEV |
 
@@ -39,7 +39,7 @@
 
 ## 3. Outstanding acceptance conditions
 - LAEV must decide hierarchy and subject-matter authority.
-- DOC-ISS-001–007 and DOC-ISS-009 require documented disposition. DOC-ISS-008 is RESOLVED_EVIDENCE. DOC-ISS-002 has a repository-confirmed PDF path/object identity; internal document identity and contents remain unverified due to binary access limitation. DOC-ISS-003 remains not located. DOC-ISS-010's independent-cycle architecture is confirmed by Roadmap §3.1 and the Technical Response; detailed state-machine formalization and its target WP remain subject to LAEV disposition.
+- DOC-ISS-001–007 and DOC-ISS-009 require documented disposition. DOC-ISS-008 is RESOLVED_EVIDENCE. DOC-ISS-002 source identity and contents are confirmed by the repository's plain-text `docs/Consenso ERX byLAEV`; the source declares ERX-CONSENSUS-001 v0.1 and proposal-for-review status. DOC-ISS-011 tracks remaining operational consensus completion/authority. DOC-ISS-003 remains not located. DOC-ISS-010's independent-cycle architecture is confirmed by Roadmap §3.1 and the Technical Response; detailed state-machine formalization and its target WP remain subject to LAEV disposition.
 - DOC-ISS-008 is RESOLVED_EVIDENCE.
 - The contradiction-handling procedure and evolution/supersession policy require review and approval.
 - Execution record, Workplan, register and linked documents must agree.

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-CONTROL-001 |
-| Version | 0.3.0 |
+| Version | 0.3.1 |
 | Status | IN_REVIEW — WORKING PROPOSAL; NOT APPROVED |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -123,14 +123,14 @@ These statuses apply to documents, not work packages.
 | SUPERSEDED | Replaced within an expressly defined scope | Replacement ID/version and supersession decision required |
 | WITHDRAWN | Removed from current use without direct replacement | Authority, reason, effective date, and impact recorded |
 | ARCHIVED | Retained for reference/history; not represented as current | Archive location and provenance retained |
-| NOT_VERIFIED | Status, identity, provenance, or integrity cannot be established | Uncertainty and verification action recorded |
+| ARCHIVED | Historical copy retained and not represented as the current working copy | Archive location and provenance retained; prior lifecycle status preserved in history |
 
 Transition controls:
 - DRAFT → IN_REVIEW: author submits a specific immutable review candidate.
 - IN_REVIEW → APPROVED or REJECTED: competent authority records an explicit decision against that exact version.
 - APPROVED → SUPERSEDED or WITHDRAWN: requires a separate controlled decision; approval history is retained.
-- Any status → ARCHIVED: requires an archival action and must not erase the historical lifecycle state.
-- NOT_VERIFIED is an evidence condition, not a substitute for review or approval.
+- Any lifecycle status may acquire an archival-copy record; archiving does not replace or erase the document's lifecycle status.
+- Evidence verification is tracked separately from lifecycle status using values such as VERIFIED, NOT_VERIFIED, NOT_LOCATED, or NOT_ASSESSED. These values describe evidence, not approval or document lifecycle.
 - Revisions to an approved document create a new draft version; they do not mutate the approved baseline in place.
 
 ## 7. Required metadata by document class
@@ -176,7 +176,7 @@ Conditional fields:
 These roles must be recorded separately:
 - **Author:** responsible for preparing the content.
 - **Design authority:** responsible for design decisions within an assigned subject.
-- **Reviewer:** evaluates the submitted version against a stated scope/criteria.
+- **Reviewer:** evaluates the submitted version against a stated scope/criteria. For substantive technical or normative changes, the reviewer must be independent of the author; any exception requires explicit justification and approval by the competent authority.
 - **Approver:** exercises the formal authority to accept or reject that exact version.
 - **Repository contributor:** account/person that commits or uploads content; this role alone does not prove authorship or approval.
 
@@ -205,7 +205,8 @@ Each controlled document maintains an append-only revision history:
 
 | Version | Date | Change class | Summary | Author | Reviewer | Approval reference | Status |
 |---|---|---|---|---|---|---|---|
-| 0.3.0 | 2026-11-24 | Consolidation / substantive draft | Reconciled preparatory draft with WP-0.3 accepted governance and opened WP-0.4 review | Project drafting record | NOT_RECORDED | NOT_APPROVED | IN_REVIEW |
+| 0.3.0 | 2026-11-24 | Consolidation / substantive draft | Reconciled preparatory draft with WP-0.3 accepted governance and opened WP-0.4 review | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
+| 0.3.1 | 2026-11-24 | Technical clarification / metadata correction | Separated lifecycle status from evidence verification and archival-copy tracking; clarified draft version progression and independent review | Project drafting record | NOT_RECORDED | NOT_APPROVED | IN_REVIEW |
 
 Every material change also links to a change record containing:
 - Change ID.

@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.2.6
+- **Version:** 1.2.7
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 
@@ -169,10 +169,10 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Execution evidence:** candidate v0.4.2 prepared on branch `wp-0.4-document-control`; LAEV approved DC-01–DC-09 and issued Addendum B deferring independent external review/audit until after planned project work, recorded in `ERX-WP-0.4-LAEV-DECISION-RECORD-001` v1.2.0. Internal consistency review is recorded in `ERX-WP-0.4-INTERNAL-REVIEW-001` v0.2.0; LAEV exact-version approval is recorded in `ERX-WP-0.4-APPROVAL-RECORD-001` v1.0.0; closeout audit is `ERX-WP-0.4-CLOSEOUT-AUDIT-001` v0.5.0. The former v0.2.0, v0.3.1, and v0.4.0 candidates were reconciled; none was treated as an approved policy baseline.
 **Closeout:** LAEV approved exact candidate v0.4.2 (blob SHA-1 `7cde15d1776ed913c3136f8116f8eb3912b302f1`) as baseline v1.0.0. Approval, internal review, closeout audit, execution record, and register are synchronized. WP-0.4 is COMPLETED / ACCEPTED. Independent external review/audit is deferred until after planned project work and is not an inter-work-package gate.
 **Acceptance:** unique non-reusable identifiers; canonical naming with original-source preservation; versioning; document lifecycle statuses distinct from work-package statuses; metadata by document class; separate authorship/review/approval; reconstructable revision history; exact cross-references; controlled migration; express LAEV approval of the exact final version.
-**Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. Both dependency gates are satisfied. WP-0.4 is COMPLETED / ACCEPTED; the WP-0.5 dependency gate is released. WP-0.5 remains NOT_STARTED until formally initiated.
+**Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. WP-0.4 has a separate approval/closeout record, but this audit has returned WP-0.3 to IN_PROGRESS because the cited evidence does not yet establish express approval of DP-01–DP-09. Therefore WP-0.4's recorded completion is retained as a historical/independently approved package result, while its sequencing conformity is a documented dependency deviation pending review. WP-0.5 must remain BLOCKED until WP-0.3 is validly accepted and WP-0.4's dependency deviation is dispositioned.
 
 ### WP-0.5 — ERX Repository Creation and Organization
-**Status:** NOT_STARTED — DEPENDENCY GATES RELEASED; PREPARATORY DRAFT ONLY
+**Status:** NOT_STARTED — BLOCKED; PREPARATORY DRAFT ONLY
 
 **Activities**
 - [ ] 0.5.1 Repository identity.
@@ -206,7 +206,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Preparatory draft:** [`docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md`](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) v0.1.0 — NOT APPROVED. Existing repository configuration remains to be inspected. 
 **Acceptance:** locations, access, branches, change control, and intellectual property are documented. Do not create or attribute a license without an express decision.  
-**Dependencies:** WP-0.3 and WP-0.4. Formal WP-0.5 execution may begin because WP-0.3 and WP-0.4 dependency gates are satisfied; its own scope and approval controls still apply.
+**Dependencies:** WP-0.3 and WP-0.4. WP-0.4 has a completion record, but WP-0.3 is IN_PROGRESS and the WP-0.4 sequencing deviation remains under review. Formal WP-0.5 execution is BLOCKED; preparatory draft work must not be treated as execution or approval.
 
 ### WP-0.6 — Master Index and Document Register
 **Status:** BLOCKED — PROVISIONAL PREPARATORY DRAFT ONLY

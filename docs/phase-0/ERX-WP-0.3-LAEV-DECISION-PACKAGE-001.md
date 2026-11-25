@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | DECISION PROPOSALS — PENDING LAEV REVIEW |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -132,7 +132,7 @@ LAEV decision: PENDING — LOCATE / ACCEPT LIMITATION / DEFER.
 | DP-05 | Technical Response | Response/recommendation, not automatic Roadmap amendment | PENDING |
 | DP-06 | Atlas filename/version | Preserve filename; cite internal v1.1 | PENDING |
 | DP-07 | Technical Response metadata | Keep source fields unstated; catalogue-only ID if approved | PENDING |
-| DP-08 | Consensus source candidate | Inspect identity before accepting as cited source | PENDING |
+| DP-08 | Consensus source identity confirmed; proposal status/completeness | Retain proposal status pending express approval; separately assign operational completion criteria | PENDING |
 | DP-09 | Implementation proposal | Locate or formally accept limitation/deferment | PENDING |
 
 ## 9. Acceptance boundary

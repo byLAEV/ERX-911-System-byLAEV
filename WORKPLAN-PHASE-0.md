@@ -244,18 +244,18 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Activities**
 - [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
-- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 65 source-derived candidate records across batches 001–004 at review branch snapshot; extraction completeness remains subject to source coverage review.
-- [ ] 0.7.3 Individually identify each requirement — candidate inventory expanded; record-level semantic validation and overlap disposition pending.
-- [ ] 0.7.4 Classify requirements — preliminary types present; taxonomy normalization and individual classification review pending.
-- [ ] 0.7.5 Identify mandatory requirements — explicit normative modality review pending; recommendations remain non-mandatory unless separately approved.
-- [ ] 0.7.6 Identify design requirements — explicit design constraints to be separated from proposed implementation choices.
-- [ ] 0.7.7 Record requirements pending specification — candidate gaps retained; consolidated specification-gap register pending.
-- [ ] 0.7.8 Record open decisions — eight requirements-linked decision candidates recorded; final completeness and linkage review pending.
-- [ ] 0.7.9 Link requirements to sources — source IDs and page locators recorded; all 64 locators require controlled verification.
-- [ ] 0.7.10 Assign requirements to phases — not started; assignments remain unallocated pending source-backed lifecycle mapping.
-- [ ] 0.7.11 Build the traceability matrix — machine-readable register extended; consolidated matrix and end-to-end trace audit pending.
+- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 65 candidate records across batches 001–004 at review branch snapshot; completeness and clause-level source validation remain open.
+- [ ] 0.7.3 Individually identify each requirement — 65 unique candidate records exist; semantic scope, atomicity and overlap dispositions remain pending.
+- [ ] 0.7.4 Classify requirements — preliminary primary taxonomy and secondary tags applied to all 65 records; individual semantic validation remains pending.
+- [ ] 0.7.5 Identify mandatory requirements — source pages contain normative language; exact clause-to-candidate matching and mandatory/prohibitory/recommendatory disposition remain pending.
+- [ ] 0.7.6 Identify design requirements — preliminary design assessments recorded for all 65 candidates; source-defined constraints remain to be distinguished from recommendations and implementation options.
+- [ ] 0.7.7 Record requirements pending specification — working gap register created with 63 candidate gaps; closure criteria and authorized decisions remain pending.
+- [ ] 0.7.8 Record open decisions — eight requirements-linked decision candidates recorded; completeness and impact review remain pending.
+- [ ] 0.7.9 Link requirements to sources — all 65 records carry source ID/version and page/section locator; exact clause-level locator verification remains pending.
+- [ ] 0.7.10 Assign requirements to phases — not started; assignments remain unallocated pending justified mapping to the approved Roadmap lifecycle.
+- [ ] 0.7.11 Build the traceability matrix — machine-readable register expanded to 28 columns; consolidated matrix and end-to-end referential audit remain pending.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; extraction batches 002 and 003 v0.1.0; batch 004 v0.1.0; controlled method v1.0.0; requirements-linked open-decision candidate register v0.1.0; preliminary structural review v0.1.0; machine-readable traceability register at review branch snapshot: 65 candidate rows, 19 columns. Structural checks on this branch snapshot: 65 data rows, 19 columns, zero duplicate IDs and zero malformed-width rows. These checks do not establish semantic correctness or acceptance.
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; extraction batches 002 and 003 v0.1.0; batch 004 v0.1.0; controlled method v1.0.0; requirements-linked open-decision candidate register v0.1.0; preliminary structural review v0.1.0; classification register v0.1.0; pending-specification register v0.1.0; review report v0.1.0; machine-readable traceability register at review branch snapshot: 65 candidate rows, 28 columns. All remain EXTRACTED — REVIEW PENDING. No requirement has been approved by this update.
 
 **Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP. Requirements approval and implementation remain separate gates.
 

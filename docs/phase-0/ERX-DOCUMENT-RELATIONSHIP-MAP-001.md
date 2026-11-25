@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-RELATIONSHIP-MAP-001 |
-| Version | 0.3.0 |
-| Status | WORKING EVIDENCE — PENDING REVIEW |
+| Version | 1.0.0 |
+| Status | APPROVED WP-0.3 RELATIONSHIP BASELINE |
 | Work Package | WP-0.3 / Activity 0.3.5 |
 | Project | ERX-911-System-byLAEV |
 | Authority | LAEV |
@@ -73,7 +73,7 @@ The official Workplan dependency chain is:
 5. DOC-ISS-011 consensus proposal status/completeness; ERX-IMPL-PROPOSAL-001 remains not located (DOC-ISS-003).
 
 ## 7. Status
-**WORKING EVIDENCE — PENDING REVIEW.** This map supports WP-0.3.5 and the issue register. It does not approve a hierarchy, settle subject authority, or release downstream work packages.
+**APPROVED WP-0.3 RELATIONSHIP BASELINE.** The source relationships and scoped dispositions are approved by ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. The map remains descriptive and does not create precedence beyond the approved subject-matter matrix.
 
 ---
 END

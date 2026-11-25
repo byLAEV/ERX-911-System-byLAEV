@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-ISSUE-REGISTER-001 |
-| Version | 0.7.0 |
+| Version | 0.8.0 |
 | Status | WORKING REGISTER — PENDING LAEV REVIEW |
 | Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -17,7 +17,8 @@ This register tracks metadata discrepancies, missing-source conditions, authorit
 The machine-readable companion is `registers/document-issue-register.csv`.
 
 ## 2. Evidence updates
-- DOC-ISS-002 is now repository-presence confirmed: `docs/Consenso ERX byLAEV.pdf` on main, 157,848 bytes, Git Blob SHA-1 c2f965c9bf455506571ac4c1635b4fb47af34216. The current connector cannot inspect the PDF binary; internal identity/version/content and equivalence to Roadmap reference ERX-CONSENSUS-001 v0.1 remain unverified. See `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`.
+- DOC-ISS-002 identity is CONFIRMED by the UTF-8 text source `docs/Consenso ERX byLAEV` (15,237 bytes; Git Blob SHA-1 64154f504b0a1ac48f76a438cf60f368e062eab6). Its control block states `ERX-CONSENSUS-001`, `0.1 — Propuesta normativa`, `Documento de diseño para revisión`, and `LAEV / byLAEV`; the full text was read and compared with the Roadmap citation. This closes the source-identity gap. The PDF counterpart is also present, but its binary need not be used to establish the identity because the canonical text source is accessible.
+- DOC-ISS-011 added: the consensus document is a review proposal and explicitly leaves quorum, validator independence/count, conflict resolution, detailed UTXO binding and derived specifications for later work. Its status/authority and completion criteria require controlled disposition; do not present it as an approved operational consensus.
 - DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
 - DOC-ISS-009 and DOC-ISS-010 were refined after direct page-level inspection of ERX-PROT-001 v1.1 Step 15 (PDF p.13), UTXO-911-001 v1.0 Sections 2.1–3.1 and 4.5–5 (PDF pp.2–4, 8–9), ERX-ATLAS-001 v1.1 Plate 03, and ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3).
@@ -29,7 +30,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | ID | Issue | Status | Work Package |
 |---|---|---|---|
 | DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | WP-0.3 |
-| DOC-ISS-002 | Repository file `Consenso ERX byLAEV.pdf` located; internal identity/content and equivalence to ERX-CONSENSUS-001 v0.1 unverified | REPOSITORY_FILE_LOCATED_INTERNAL_IDENTITY_UNVERIFIED | WP-0.2 carry-forward / WP-0.3 |
+| DOC-ISS-002 | Consensus source identity confirmed in text; its status is proposal for review | IDENTITY_CONFIRMED_CONTENT_REVIEWED_STATUS_PROPOSAL | WP-0.3 |
 | DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | WP-0.2 carry-forward |
 | DOC-ISS-004 | Technical Response lacks formal ID/version/date | OPEN | WP-0.3 |
 | DOC-ISS-005 | UTXO-911 / Protocol authority relationship | OPEN | WP-0.3 |
@@ -37,6 +38,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | DOC-ISS-007 | Whether Technical Response amends Roadmap | OPEN | WP-0.3 |
 | DOC-ISS-008 | Original PDF archival and hash verification | RESOLVED_EVIDENCE | WP-0.2 |
 | DOC-ISS-009 | Structural divergence: UTXO-911 call-acceptance output vs Protocol/Atlas three-output chain | OPEN | WP-0.3 |
+| DOC-ISS-011 | Consensus proposal status/completion and operational authority | OPEN | WP-0.3 disposition; later technical specification |
 | DOC-ISS-010 | Formal detail of independent agent-availability state machine | SOURCE_ALIGNMENT_CONFIRMED_DETAIL_PENDING | WP-0.3 / later detailed specification |
 
 The exact evidence, impact, required disposition, owner and status are maintained in the CSV companion.

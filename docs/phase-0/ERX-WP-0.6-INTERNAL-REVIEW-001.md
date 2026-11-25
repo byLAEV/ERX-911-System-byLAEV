@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.2.6 |
+| Version | 0.2.7 |
 | Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -72,10 +72,10 @@ Explicit Markdown hyperlinks in the Workplan, master index, WP-0.6 completion ma
 ### 2.5 Synchronization state
 
 The following controlled documents were updated to reflect the second-pass evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.0.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.3.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
-- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.1.
-- ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0.
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.7.
+- ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2.
 - WORKPLAN-PHASE-0.md v1.3.5.
 - This review v0.2.0.
 

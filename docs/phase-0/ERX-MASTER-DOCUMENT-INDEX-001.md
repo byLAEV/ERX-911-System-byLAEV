@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.3.5 |
+| Version | 1.3.6 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -47,7 +47,7 @@ ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supp
 
 ## 4. Phase 0 document and artifact coverage
 
-The verified live repository path inventory is the recursive tree snapshot `a03e0cf62c43f3a23a77c9faab54bd5e44084bcb` (`truncated=false`, 73 files). The CSV includes 74 catalogue records: 73 live paths plus one NOT_LOCATED referenced source; no duplicate IDs/paths, missing live paths or stale paths were detected. The CSV companion contains the path-level inventory, including Phase 0 and supporting files. Catalogue IDs (IDX-xxx) are not formal document IDs. Current validation: 71/71 live paths represented; one additional NOT_LOCATED referenced source; no duplicate IDs or paths.
+The verified live repository path inventory is the recursive tree snapshot recorded above, immediately before this index refresh (`truncated=false`, 73 files). The CSV includes 74 catalogue records: 73 live paths plus one NOT_LOCATED referenced source. All 73 live paths are represented exactly once; no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths or malformed CSV rows were detected. Catalogue IDs (IDX-xxx) remain separate from formal document IDs.
 
 Current accepted package states:
 - WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.
@@ -57,7 +57,7 @@ Current accepted package states:
 
 Current WP-0.6 execution artifacts:
 - `ERX-WP-0.6-INITIATION-RECORD-001` v1.0.0 — EXECUTION INITIATED.
-- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.5 — controlled reconciliation draft.
+- `ERX-MASTER-DOCUMENT-INDEX-001` v1.3.6 — controlled reconciliation draft.
 - `registers/document-register.csv` — 73 catalogue records planned after adding IDX-076: 72 live repository paths plus one NOT_LOCATED referenced source. Last verified pre-addition tree check found no duplicate IDs/paths, missing live paths or stale paths; final recheck pending.
 
 ## 5. Classification model
@@ -96,7 +96,7 @@ A relationship does not itself imply normative precedence. WP-0.3's subject-matt
 | ERX-CONSENSUS-001 v0.1 | Identity confirmed; proposal for review (DOC-ISS-011) | Do not label approved/operational; preserve unresolved quorum, validator, conflict and detailed UTXO rules |
 | FND-005 formal ID/version/date | NOT_STATED in supplied source | Preserve unknown values; catalogue separately |
 | Legacy WP-0.3 draft headers | Historical versions/statuses | Link to accepted decision and closeout records; do not rewrite historical artifacts |
-| ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.1.0 | IN_PROGRESS | Typed supplement; validate links against approved decisions and live paths |
+| ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0 | IN_PROGRESS | Second-pass typed relationship cross-check recorded; package closeout remains |
 | Root LICENSE/COPYRIGHT | Not present in WP-0.5 verified tree; no license assigned | Do not infer a reuse grant |
 
 ## 8. Reconciliation controls and open work
@@ -115,7 +115,7 @@ Remaining WP-0.6 work:
 
 **WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.2.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
 
-The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.5 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
+The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.6 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 

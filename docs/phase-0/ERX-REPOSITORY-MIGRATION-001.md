@@ -174,7 +174,7 @@ For every one of the twelve files:
 7. Update the foundational material register and any relevant supplemental source record with the approved destination path.
 8. Verify all links and cross-reference targets after the migration commit.
 
-The five baseline PDF SHA-256 values are recorded in Section 3 and the approved WP-0.2 register. SHA-256 for the five text companions and both supplemental consensus files must be calculated before migration. A Git blob SHA-1 is not a substitute for this SHA-256 requirement.
+The five baseline PDF SHA-256 values are recorded in Section 3 and the approved WP-0.2 register. SHA-256 for all five text companions and both supplemental consensus files has now been calculated from the exact GitHub file bytes in base64 mode and independently validated by recomputing one baseline PDF hash against the registered SHA-256. See Appendix A. A Git blob SHA-1 is not a substitute for this SHA-256 requirement.
 
 ## 7. Controlled migration procedure
 
@@ -224,9 +224,9 @@ Rollback is required if any file is missing, any SHA-256 differs, a link/referen
 - [x] Proposed destination path recorded for every source and companion.
 - [x] Supplemental consensus source kept distinct from the original five-file baseline.
 - [x] No unstated document IDs or versions invented.
-- [ ] SHA-256 calculated for five text companions and two supplemental consensus files.
+- [x] SHA-256 calculated for five text companions and two supplemental consensus files.
 - [ ] Derivative provenance/subtype verified or explicitly accepted as unknown.
-- [ ] Complete repository-wide path/reference scan attached.
+- [ ] Exhaustive repository-wide path/reference scan attached (targeted scan of principal control records completed; broader scan remains).
 - [ ] Architecture ERX-REPOSITORY-ARCHITECTURE-001 approved by LAEV.
 - [ ] This manifest approved by LAEV.
 - [ ] Migration branch and rollback point recorded.
@@ -236,7 +236,70 @@ Rollback is required if any file is missing, any SHA-256 differs, a link/referen
 
 **PREPARATORY MANIFEST COMPLETE FOR REVIEW; NOT APPROVED. NO FILE MOVES AUTHORIZED.**
 
-The current paths remain authoritative until the architecture and this manifest are both expressly approved by LAEV. The next action is to complete missing SHA-256 values and the exhaustive reference scan, then submit the architecture and manifest for approval. Only after both approvals may a migration PR be executed.
+The current paths remain authoritative until the architecture and this manifest are both expressly approved by LAEV. The next action is to finish the repository-wide reference scan and confirm the derivative-provenance disposition, then submit the architecture and manifest for approval. Only after both approvals may a migration PR be executed.
+
+
+## Appendix A — Calculated SHA-256 values for text companions and supplemental consensus
+
+Calculation basis: exact file bytes fetched from the `main` branch using GitHub's base64 content representation and decoded without text normalization. Byte counts and Git blob SHA-1 values match the audited tree. The SHA-256 implementation was validated by hashing `docs/ERX byLAEV 1.pdf` and reproducing the registered value `5e1647c30f1aae77726619272c7730306b2e7c138e920cf8be91542e1ee77fbd` exactly.
+
+| File | Bytes | Git blob SHA-1 | SHA-256 |
+|---|---:|---|---|
+| `docs/ERX byLAEV 1.1` | 38,619 | `23dd2774c44ec2c686c6dd37b36986b2d0715360` | `1570122c6d41c6a47f18360344cd8f2adf0c4b9805e9994048cf5c286974e43b` |
+| `docs/ERX-ATLAS-001 v1` | 44,217 | `334890b2a861d9911a72d6aaf90f5179acaac5eb` | `85c63f75fd876b6e0619640d4a3da720d43a23a5f0bf00ca9550d2caf53893f7` |
+| `docs/UTXO DE COMUNICACIÓN 911 byLAEV` | 18,837 | `6f911a6754645f287ae6b6c1816c7e53f3fa2a73` | `0c38f24fab18cd7d66234f1f327dfb874088c4692fb0f2508a0d9b30348d1c6f` |
+| `docs/### ERX-ROADMAP-001` | 45,838 | `5668a1acff4864d1f4723f0d5a6b9d0f8f9d775f` | `33c40308cd34c4945db91ccc58fcadf4d0b1d3d26e8c88f1bb0d9af29302d123` |
+| `docs/Respuesta técnica a las observaciones de ERX-ROADMAP-001` | 3,443 | `8bc0ca82d1ffedf178eec562a6e7e1d44344dba5` | `1473604c643af4e750da45d30a223c91cdc5d46a3524821b3fd02d2e2e208bd4` |
+| `docs/Consenso ERX byLAEV` | 15,237 | `64154f504b0a1ac48f76a438cf60f368e062eab6` | `7f7f647c44fe246e96c8532d45aa110907a6bca12a0293cea39cbdbe7c69a930` |
+| `docs/Consenso ERX byLAEV.pdf` | 157,848 | `c2f965c9bf455506571ac4c1635b4fb47af34216` | `afcc2708c02d98fdb486ab0a667cbed37b3bb1429a0c6a7563a9af334a1d89fc` |
+
+## Appendix B — Text-companion content inspection and provenance disposition
+
+Direct inspection of the opening/control content of all six text companions confirms they contain readable, structured text corresponding to their associated document topics and, where declared, document IDs and versions. This supports classifying them as text companions/readable renditions. It does **not** establish whether they were produced by OCR, PDF text extraction, manual transcription, or exported from a source-native document. No extraction log, tool name, generation date, or signed provenance record was found in the inspected content.
+
+Accordingly:
+- Classification: `TEXT_COMPANION — DERIVATIVE SUBTYPE NOT VERIFIED`.
+- Authority: non-authoritative for migration planning unless an existing approved governance record states otherwise.
+- Retention: preserve exact bytes and original current path until migration approval.
+- Required follow-up: LAEV may accept the subtype as unknown for archival purposes, or request a provenance investigation before approving migration.
+- The Atlas text companion is explicitly not a replacement for the PDF's graphical plates and diagrams.
+
+The supplemental consensus text directly declares:
+- Identifier: `ERX-CONSENSUS-001`.
+- Version: `0.1 — Propuesta normativa`.
+- Status: `Documento de diseño para revisión`.
+- Authorship: `LAEV / byLAEV`.
+
+The consensus PDF counterpart is present in the same repository directory and its bytes have now been hashed. The PDF's full internal metadata/control-page equivalence to the text companion has not been separately established by a page-by-page comparison. The pair remains supplemental and does not modify the accepted five-source WP-0.2 baseline.
+
+## Appendix C — Targeted reference trace completed
+
+The following principal controlled records were directly inspected on `main` and contain references to the source IDs, filenames, or source relationships:
+
+| Controlled record | Confirmed trace |
+|---|---|
+| `WORKPLAN-PHASE-0.md` | Five-PDF WP-0.2 baseline, supplemental consensus source, acceptance record, and source-status caveats |
+| `docs/foundational/ERX-FOUNDATIONAL-MATERIAL-REGISTER-001.md` | FND-001–FND-005, filenames, SHA-256, source relations, supplemental consensus discovery |
+| `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | Source filenames/IDs, document relationships and consensus status |
+| `docs/foundational/ERX-FOUNDATIONAL-ARCHIVE-PROCEDURE-001.md` | Proposed destination paths for five original PDFs and verification instructions |
+| `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | Current source paths, source identities, statuses and relationships |
+| `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Supplemental consensus text/PDF paths and discovery evidence |
+| `registers/foundational-material-register.csv` | Five baseline source rows, identifiers, current filenames, registered SHA-256 values and archive status |
+
+This is a **targeted trace of the principal controlled records**, not yet a claim of exhaustive search across every repository file. A full-repository path/reference scan remains a pre-migration gate. The archive procedure already contains proposed future PDF paths; these are planned destinations, not evidence that files have moved. The migration must reconcile and update that procedure together with the register, cross-reference map, master index, discovery record, workplan, CSV register, and any additional references found in the exhaustive scan.
+
+## Appendix D — Updated readiness
+
+- [x] SHA-256 recorded for all twelve source/companion files (five baseline PDF hashes from accepted register; five text companions and two consensus files calculated in Appendix A).
+- [x] Hash calculation cross-checked against one known baseline PDF SHA-256.
+- [x] Readable text content inspected for all six companions.
+- [x] Companion subtype honestly bounded as unverified provenance.
+- [x] Principal controlled-record references traced.
+- [ ] Exhaustive full-repository path/reference scan.
+- [ ] Decide whether LAEV accepts unknown derivative provenance or requires further investigation.
+- [ ] LAEV approval of architecture and manifest.
+- [ ] Migration execution, still prohibited until all gates pass.
+
 
 ---
 

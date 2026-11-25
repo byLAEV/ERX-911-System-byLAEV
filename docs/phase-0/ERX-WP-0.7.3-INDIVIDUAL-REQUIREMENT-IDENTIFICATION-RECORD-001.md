@@ -6,7 +6,7 @@
 |---|---|
 | Document ID | ERX-WP-0.7.3-INDIVIDUAL-REQUIREMENT-IDENTIFICATION-RECORD-001 |
 | Version | 1.0.1 |
-| Status | EXECUTION COMPLETE — SUBMITTED FOR LAEV ACCEPTANCE |
+| Status | COMPLETED / ACCEPTED — LAEV, 2026-11-25 |
 | Work Package | WP-0.7 / Activity 0.7.3 |
 | Date | 2026-11-25 |
 | Branch | wp-0.7-requirements-review |
@@ -97,7 +97,7 @@ This activity identifies and relates requirements. It does not perform WP-0.7.4 
 
 ## 7. Completion and acceptance
 
-The identification, decomposition, atomicity-disposition, overlap-disposition, parent-reconciliation and structural-audit tasks for Activity 0.7.3 are complete. This record is submitted to LAEV for formal acceptance. Until express acceptance is recorded, Workplan status is **EXECUTION COMPLETE — ACCEPTANCE PENDING**, not COMPLETED / ACCEPTED.
+The identification, decomposition, atomicity-disposition, overlap-disposition, parent-reconciliation and structural-audit tasks for Activity 0.7.3 are complete and accepted by LAEV on 2026-11-25. Acceptance evidence: ERX-WP-0.7.3-ACCEPTANCE-RECORD-001 v1.0.0. WP-0.7.3 is **COMPLETED / ACCEPTED**.
 
 ---
 End of record.

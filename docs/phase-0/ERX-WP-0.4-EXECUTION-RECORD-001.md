@@ -24,7 +24,7 @@
 ## 2. Decisions and evidence
 
 - DC-01 through DC-09: APPROVED by LAEV; see ERX-WP-0.4-LAEV-DECISION-RECORD-001 v1.0.0.
-- Consolidated policy candidate: ERX-DOCUMENT-CONTROL-001 v0.4.2; internal review ERX-WP-0.4-INTERNAL-REVIEW-001 v0.1.0 recorded; LAEV exact-version approval pending.
+- Consolidated policy candidate: ERX-DOCUMENT-CONTROL-001 v0.4.2; internal review ERX-WP-0.4-INTERNAL-REVIEW-001 v0.2.0 recorded against exact candidate v0.4.2; LAEV exact-version approval pending. Candidate blob SHA: `7cde15d1776ed913c3136f8116f8eb3912b302f1`.
 - Closeout audit: ERX-WP-0.4-CLOSEOUT-AUDIT-001 v0.4.0.
 - Workplan: WORKPLAN-PHASE-0.md v1.2.4.
 - Register: registers/document-register.csv; IDX-013 points to candidate v0.4.2; IDX-038–IDX-041 cover decision, audit, execution, and internal review records.

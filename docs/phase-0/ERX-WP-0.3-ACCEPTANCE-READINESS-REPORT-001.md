@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | PREPARATORY REVIEW — NOT SUBMITTED FOR APPROVAL |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -63,7 +63,7 @@ Required action: LAEV disposition of its status and authority; define the detail
 
 ### RG-06 — Consensus operational completeness and authority (DOC-ISS-011)
 
-The consensus source defines the Triple Consensus and essential invariants: independent consensus results, verifiable evidence, preservation of individual call records, and no blocking of emergency care. It does not yet provide the complete operational rules for validator authorization/independence, quorum, conflict resolution, final consensus-linked UTXO/JSON structures or derived technical specifications. Roadmap §11.3 calls for these matters to be developed independently.
+The source inspection record `ERX-CONSENSUS-SOURCE-INSPECTION-001.md` documents the Triple Consensus and essential invariants: independent consensus results, verifiable evidence, preservation of individual call records, and no blocking of emergency care. It does not yet provide the complete operational rules for validator authorization/independence, quorum, conflict resolution, final consensus-linked UTXO/JSON structures or derived technical specifications. Roadmap §11.3 calls for these matters to be developed independently.
 
 This is a documented scope/dependency, not a reason to mark the source missing and not a direct contradiction. LAEV must assign and approve the completion package and its acceptance criteria before multi-institutional implementation.
 

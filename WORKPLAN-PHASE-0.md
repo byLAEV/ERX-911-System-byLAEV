@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.3.9
+- **Version:** 1.4.0
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -235,7 +235,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Execution deliverables and evidence:**
 - [`ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0`](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) — RECORDED — EXECUTION INITIATED.
-- [`ERX-MASTER-DOCUMENT-INDEX-001 v1.3.9`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
+- [`ERX-MASTER-DOCUMENT-INDEX-001 v1.4.0`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
 - [`registers/document-register.csv`](registers/document-register.csv) — ERX-DOCUMENT-REGISTER-001 v1.2.1; 74 catalogue records, 16 columns; 73 live paths plus one NOT_LOCATED referenced source; baseline structural checks found no duplicate catalogue IDs/paths, missing live paths or stale paths.
 - [`ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0`](docs/phase-0/ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md) — IN_PROGRESS — internal review pending.
 - [`ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.5`](docs/phase-0/ERX-WP-0.6-INTERNAL-REVIEW-001.md) — FINDINGS RECORDED — NOT READY FOR ACCEPTANCE.

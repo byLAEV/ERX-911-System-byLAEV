@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.3 |
+| Version | 1.5.4 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -138,3 +138,8 @@ WP-0.7 is IN_PROGRESS under the previously approved scope and the released depen
 ## 12. WP-0.7 extraction update — 2026-11-25
 
 The controlled requirements register now contains 56 source-derived candidate records across extraction batches 001–004. Batch 004 is [ERX-WP-0.7-REQUIREMENT-EXTRACTION-BATCH-004 v0.1.0](ERX-WP-0.7-REQUIREMENT-EXTRACTION-BATCH-004.md) and adds 11 candidates covering local queue and recovery behavior, storage failure, interface security, component separation, pre-implementation test coverage, institutional privacy custody, limits of cryptographic verification, independent agent availability, non-resurrection of consumed states and OTS evidence retention. All 56 candidates remain EXTRACTED — REVIEW PENDING; none is approved by extraction. Verification criteria and phase assignments remain incomplete where not specified. WP-0.7 remains IN_PROGRESS; Phase 0 remains OPEN and Phase 1 is NOT AUTHORIZED.
+
+
+## 13. WP-0.7 preliminary candidate review — 2026-11-25
+
+[ERX-WP-0.7-CANDIDATE-REVIEW-001 v0.1.0](ERX-WP-0.7-CANDIDATE-REVIEW-001.md) records a preliminary reconciliation of the 56 candidate requirements. It identifies overlapping scopes (single consumption/concurrency, replay/recovery, OTS, storage, privacy, verifier, availability, transfers, tests and architecture) and a taxonomy normalization issue: the CSV should contain one primary type from the controlled method's taxonomy, with secondary tags separated. This review makes no approvals, rejections or merges. Activities 0.7.3–0.7.4 remain open.

@@ -255,7 +255,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases.
 - [ ] 0.7.11 Build the traceability matrix.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; controlled method v1.0.0; machine-readable traceability register currently 15 candidate records (EXTRACTED — REVIEW PENDING).
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; controlled method v1.0.0; machine-readable traceability register currently 33 candidate records (EXTRACTED — REVIEW PENDING); extraction batches 001 and 002 recorded.
 **Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP.
 **Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; requirements approval and implementation remain separate gates.
 

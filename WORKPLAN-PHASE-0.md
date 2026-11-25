@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.2.3
+- **Version:** 1.2.4
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 
@@ -164,9 +164,9 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.4.8 Define revision history and change traceability.
 - [x] 0.4.9 Define cross-reference and provenance rules.
 
-**Candidate deliverable:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.4.1 — IN_REVIEW; consolidated candidate, internal review and LAEV exact-version approval pending.
-**Execution evidence:** candidate v0.4.1 prepared on branch `wp-0.4-document-control`; LAEV approved DC-01–DC-09 and issued Addendum A deferring independent external review/audit until after planned project work, recorded in `ERX-WP-0.4-LAEV-DECISION-RECORD-001` v1.1.0. The former v0.2.0, v0.3.1, and v0.4.0 candidates were reconciled; none was treated as an approved policy baseline.
-**Remaining work:** conduct documented internal consistency/technical review of exact candidate v0.4.1; resolve findings; obtain LAEV's express approval of the exact version (release v1.0.0 unless otherwise decided); synchronize final evidence and register; re-run closeout audit. Independent external review/audit is deferred until after planned project work and is not a WP-0.4 gate.
+**Candidate deliverable:** [`docs/phase-0/ERX-DOCUMENT-CONTROL-001.md`](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) v0.4.2 — IN_REVIEW; consolidated candidate, internal review recorded, LAEV exact-version approval pending.
+**Execution evidence:** candidate v0.4.2 prepared on branch `wp-0.4-document-control`; LAEV approved DC-01–DC-09 and issued Addendum B deferring independent external review/audit until after planned project work, recorded in `ERX-WP-0.4-LAEV-DECISION-RECORD-001` v1.2.0. Internal consistency review is recorded in `ERX-WP-0.4-INTERNAL-REVIEW-001` v0.1.0. The former v0.2.0, v0.3.1, and v0.4.0 candidates were reconciled; none was treated as an approved policy baseline.
+**Remaining work:** obtain LAEV's express approval of exact candidate v0.4.2 (release v1.0.0 unless otherwise decided); synchronize final evidence and register; re-run closeout audit. Independent external review/audit is deferred until after planned project work and is not a WP-0.4 or inter-work-package gate. Independent external review/audit is deferred until after planned project work and is not a WP-0.4 gate.
 **Acceptance:** unique non-reusable identifiers; canonical naming with original-source preservation; versioning; document lifecycle statuses distinct from work-package statuses; metadata by document class; separate authorship/review/approval; reconstructable revision history; exact cross-references; controlled migration; express LAEV approval of the exact final version.
 **Dependencies:** WP-0.1 APPROVED and WP-0.3 COMPLETED / ACCEPTED. Both dependency gates are satisfied. WP-0.4 remains IN_PROGRESS until its own acceptance; WP-0.5 remains dependent on WP-0.4.
 

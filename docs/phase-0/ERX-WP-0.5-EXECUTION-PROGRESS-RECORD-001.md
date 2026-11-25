@@ -4,8 +4,8 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.5-EXECUTION-PROGRESS-RECORD-001 |
-| Version | 1.0.1 |
-| Status | RECORDED — IN PROGRESS |
+| Version | 1.0.2 |
+| Status | COMPLETED / ACCEPTED |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Work Package | WP-0.5 — ERX Repository Creation and Organization |
 | Authority | LAEV |
@@ -24,11 +24,11 @@ This record supplements, and does not replace, WORKPLAN-PHASE-0.md, the WP-0.5 i
 
 - WP-0.3: COMPLETED / ACCEPTED.
 - WP-0.4: COMPLETED / ACCEPTED.
-- WP-0.5: APPROVED — IN_PROGRESS.
-- WP-0.6: APPROVED in scope; execution BLOCKED pending WP-0.5 acceptance.
+- WP-0.5: COMPLETED / ACCEPTED — see ERX-WP-0.5-ACCEPTANCE-RECORD-001 v1.0.0.
+- WP-0.6: APPROVED in scope; WP-0.5 dependency gate SATISFIED; formal initiation may proceed.
 - WP-0.7: APPROVED in scope; execution BLOCKED pending dependencies.
 - WP-0.8–WP-0.12: scope approved; execution statuses remain as stated in WORKPLAN-PHASE-0.md v1.3.1.
-- Phase 0: OPEN; WP-0.12 and Phase 0 closure conditions remain incomplete.
+- Phase 0: OPEN; WP-0.6 through WP-0.12 and Phase 0 closure conditions remain incomplete.
 
 Scope approval is distinct from execution, completion, acceptance, dependency release and Phase 0 closure.
 
@@ -85,7 +85,7 @@ These decisions do not prove the live configuration already conforms to the inte
 | 0.5.9 Git change history | PARTIALLY DOCUMENTED | Commit/tree SHAs provide traceability; backup/restore procedure and evidence remain open |
 | 0.5.10 Intellectual property and license | OPEN | Metadata license=null; no LICENSE/COPYRIGHT paths in inspected tree; no rights decision; do not invent a license |
 
-The detailed activity assessment and acceptance rule are in `ERX-WP-0.5-DELIVERABLE-COMPLETION-MATRIX-001.md` v1.0.1.
+The final activity assessment is in `ERX-WP-0.5-DELIVERABLE-COMPLETION-MATRIX-001.md` v1.0.2. Acceptance evidence: `ERX-WP-0.5-ACCEPTANCE-READINESS-REPORT-001.md` v1.0.0, `ERX-WP-0.5-CLOSEOUT-AUDIT-001.md` v1.0.0, and `ERX-WP-0.5-ACCEPTANCE-RECORD-001.md` v1.0.0.
 
 ## 7. Remaining execution sequence
 
@@ -105,10 +105,10 @@ LAEV's standing conditional approval applies to in-scope work. An item may be re
 
 **WP-0.3: COMPLETED / ACCEPTED.**  
 **WP-0.4: COMPLETED / ACCEPTED.**  
-**WP-0.5: APPROVED — IN_PROGRESS.**  
+**WP-0.5: COMPLETED / ACCEPTED — see ERX-WP-0.5-ACCEPTANCE-RECORD-001 v1.0.0.**  
 **WP-0.5 activities 0.5.3 and 0.5.5: VERIFIED SNAPSHOT.**  
 **WP-0.5 activity 0.5.4: VERIFIED BY CROSS-REFERENCE to accepted WP-0.2 evidence.**  
-**WP-0.6: APPROVED IN SCOPE — EXECUTION BLOCKED pending WP-0.5 acceptance.**  
+**WP-0.6: APPROVED IN SCOPE — WP-0.5 dependency gate SATISFIED; formal initiation pending.**  
 **Phase 0: OPEN — NOT CLOSED.**
 
 ---

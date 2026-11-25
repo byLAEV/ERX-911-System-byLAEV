@@ -4,8 +4,8 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001 |
-| Version | 0.3.0 |
-| Status | PROPOSED — NOT APPROVED |
+| Version | 0.4.0 |
+| Status | APPROVED — DP-ACCESS-02 |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design and approval authority | LAEV |
@@ -19,9 +19,9 @@ This matrix defines a proposed least-privilege model for repository administrati
 
 - **DP-ACCESS-01 — RECORDED:** LAEV is the sole repository administrator. No other administrator is designated. See `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0.
 - **Repository visibility — RECORDED:** KEEP PUBLIC. See `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0.
-- **This matrix — NOT APPROVED:** all role mappings and branch rules below are proposals awaiting LAEV's express decision.
+- **DP-ACCESS-02 — APPROVED:** LAEV approved this matrix's role/responsibility model and main-branch governance rules, with one independent technical review when available and assigned. See `ERX-WP-0.5-ACCESS-DECISION-002` v1.0.0.
 
-## 3. Proposed role-to-permission model
+## 3. Approved role-to-permission model
 
 | Role | Proposed GitHub permission | Permitted activity | Restrictions | Current assignment |
 |---|---|---|---|---|
@@ -33,16 +33,16 @@ This matrix defines a proposed least-privilege model for repository administrati
 
 **Interpretation:** GitHub's `Admin`, `Maintain`, `Write`, `Triage`, and `Read` are technical permission levels. They do not automatically confer ERX design authority, authorship, document approval, or institutional authority.
 
-## 4. Proposed rules for `main`
+## 4. Approved governance rules for `main`
 
 1. `main` is the canonical controlled branch.
-2. No collaborator other than LAEV receives direct push permission to `main) under this proposal.
+2. No collaborator other than LAEV receives direct push permission to `main` under this approved governance model.
 3. External and ordinary contributor changes enter through fork-based pull requests.
 4. Maintainers, if later appointed, work through pull requests; Maintain permission must not imply permission to alter repository administration or protection policy.
 5. LAEV retains final authority to approve and merge changes to `main`.
 6. A pull request authored by LAEV cannot be approved by LAEV as an independent reviewer. If independent review is required for that change, a separately appointed reviewer must review it. No reviewer is appointed by this matrix.
-7. Until branch rules are expressly approved and technically configured, these are proposed governance rules only, not enforced controls.
-8. Force-push and branch deletion on `main) should be disabled when protection is configured.
+7. These are approved governance rules, but they are not technically enforced until GitHub branch controls are separately configured under explicit implementation authorization.
+8. Force-push and branch deletion on `main` should be disabled when protection is configured.
 9. Required CI/status checks must not be named until the actual workflow checks exist and have been verified.
 10. Emergency exceptions, if any, must be separately authorized and recorded by LAEV with scope, reason, commit and retrospective review requirement.
 
@@ -69,18 +69,18 @@ The owner lookup confirms `byLAEV` as Admin, but does not prove that no other us
 2. Identify every account/team with Admin, Maintain, Write, Triage or Read.
 3. Confirm whether any additional Admin grant conflicts with DP-ACCESS-01.
 4. Decide whether to remove/reduce any conflicting grant; this requires separate explicit authorization from LAEV.
-5. Approve the proposed role mapping and the `main` workflow.
-6. Decide how LAEV-authored changes are reviewed, given that the author cannot independently approve their own PR.
-7. Approve the required review count, bypass policy, force-push/deletion restrictions and any status checks.
+5. Implement the approved role mapping and `main` workflow only after separate express authorization.
+6. For LAEV-authored changes, obtain the one independent technical review when an independent reviewer is available and assigned; LAEV retains final approval authority.
+7. The approved review count is one independent technical review when available and assigned. Bypass policy and any status checks remain to be specified before implementation.
 8. Only after express authorization, configure GitHub settings and verify the effective result.
 
 ## 7. Implementation boundary
 
-No GitHub permissions, collaborators, teams, tokens, branch protection, rulesets, workflow permissions, or repository settings were modified during this review. This document is a proposal, not an authorization to change them. Do not claim the sole-administrator decision is technically enforced until all effective access paths have been inspected and reconciled.
+No GitHub permissions, collaborators, teams, tokens, branch protection, rulesets, workflow permissions, or repository settings were modified. This approval is not an authorization to change them. Do not claim the sole-administrator decision is technically enforced until all effective access paths have been inspected and reconciled.
 
 ## 8. Status and acceptance boundary
 
-This matrix remains **PROPOSED — NOT APPROVED**. DP-ACCESS-01 remains a recorded governance decision. The live `main` branch is observed as unprotected; the complete collaborator roster and inherited access remain NOT_VERIFIED. WP-0.5 remains IN_PROGRESS and is not accepted or closed by this update.
+This matrix is **APPROVED by DP-ACCESS-02** as a governance model. Its GitHub technical implementation remains pending separate express authorization. DP-ACCESS-01 and DP-ACCESS-02 are recorded governance decisions. The live `main` branch is observed as unprotected; the complete collaborator roster and inherited access remain NOT_VERIFIED. WP-0.5 remains IN_PROGRESS and is not accepted or closed by this update.
 
 ---
 End of ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001

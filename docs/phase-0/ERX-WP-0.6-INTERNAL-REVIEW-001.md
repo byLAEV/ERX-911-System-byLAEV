@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.2.5 |
+| Version | 0.2.6 |
 | Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -58,7 +58,7 @@ The five original PDFs remain the accepted WP-0.2 baseline FND-001–FND-005. Th
 
 ### 2.4 Relationships and cross-references
 
-The derivative relationship supplement ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0 was cross-checked against:
+The derivative relationship supplement ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.1 was cross-checked against:
 - The approved WP-0.3 relationship baseline.
 - DP-01–DP-09 and DOC-ISS-001–011 dispositions.
 - The approved WP-0.4 document-control baseline and DC-01–DC-09.

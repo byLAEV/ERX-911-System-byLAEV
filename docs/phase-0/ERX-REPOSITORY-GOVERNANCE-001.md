@@ -4,14 +4,14 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-REPOSITORY-GOVERNANCE-001 |
-| Version | 0.1.0 |
-| Status | PREPARATORY WORKING DRAFT — NOT APPROVED |
+| Version | 0.2.0 |
+| Status | IN_PROGRESS — CONTROLLED WORKING DRAFT; NOT APPROVED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Repository | byLAEV/ERX-911-System-byLAEV |
 | Design and approval authority | LAEV |
 | Date | 2026-11-23 |
-| Dependencies | WP-0.3 and WP-0.4; both remain pending formal acceptance |
+| Dependencies | WP-0.3 COMPLETED / ACCEPTED; WP-0.4 COMPLETED / ACCEPTED; gates released |
 
 ## 1. Purpose
 
@@ -171,7 +171,7 @@ The repository has been used to publish Phase 0 working documents, including the
 
 The repository tree inspection previously recorded that the five original PDF binaries were not present in the inspected default-branch tree. The current inventory therefore does not claim repository custody of those original files.
 
-The repository's live visibility, branch protections, collaborator permissions, required reviews, signed-commit policy, and license configuration have not been independently verified in preparing this draft.
+The following live repository metadata was inspected for WP-0.5 on 2026-11-24 (Costa Rica, UTC−06:00): repository `byLAEV/ERX-911-System-byLAEV`; visibility `public`; default branch `main`; repository not archived; merge commits, squash merges and rebase merges enabled; auto-merge disabled; update-branch option disabled; authenticated integration reports admin/maintain/push/pull/triage permissions. These metadata do not establish branch protection, required status checks, collaborator roster, signed-commit enforcement, backup policy, or the complete repository tree. Those items remain NOT_VERIFIED pending direct inspection. The five original PDF binaries are recorded in the WP-0.2 register as present on `main` with byte-identity verification; the earlier statement that they were absent is historical and must not be carried forward as current fact.
 
 ## 13. Open Decisions
 
@@ -190,16 +190,19 @@ No open decision is considered resolved by publication of this draft.
 
 ## 14. WP-0.5 Status and Acceptance
 
-**Status: BLOCKED — PREPARATORY DRAFT ONLY.**
+**Status: IN_PROGRESS — CONTROLLED WORKING DRAFT; NOT APPROVED.**
 
-The draft is prepared to support later review. Formal WP-0.5 execution and acceptance depend on:
-1. WP-0.3 document hierarchy being completed and expressly approved.
-2. WP-0.4 document identification and control policy being completed and expressly approved.
-3. Actual repository configuration being inspected.
-4. Access, branches, change control, custody, history, and intellectual property decisions being made by the authorized authority.
-5. The final repository governance document being reviewed and approved.
+WP-0.3 and WP-0.4 dependency gates are satisfied. WP-0.5 execution is initiated on branch `wp-0.5-repository-governance`. Initial repository metadata inspection is recorded in Section 12. The following remain open for this work package:
+1. Complete repository tree and directory inventory.
+2. Verify branch list and protection/rulesets, required reviews and status checks.
+3. Verify collaborator/access model and administrative recovery responsibilities.
+4. Decide and document branch model, change-control path, and commit-signing requirements.
+5. Confirm foundational source custody and retention/backup controls.
+6. Decide intellectual-property and licensing scope; no license may be created or implied without express LAEV approval.
+7. Resolve open decisions in Section 13 and update the final governance baseline.
+8. Verify acceptance criteria and prepare the WP-0.5 closeout evidence.
 
-**This draft does not change repository settings, create a license, close WP-0.2, approve WP-0.3 or WP-0.4, complete WP-0.5, or authorize Phase 1.**
+**This update initiates WP-0.5 but does not approve repository settings, create a license, complete WP-0.5, close Phase 0, or authorize Phase 1.**
 
 ---
 End of ERX-REPOSITORY-GOVERNANCE-001

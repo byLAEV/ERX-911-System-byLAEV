@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.3.2 |
+| Version | 1.3.3 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -30,7 +30,7 @@ A file's presence or a Git commit does not establish correctness, approval, or a
 3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
 4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
 5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; GitHub reported `truncated=false` and 71 repository files.
-6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 74 catalogue records across 14 columns: catalogue identity, source identity, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, and notes. The CSV has 73 PRESENT paths and one NOT_LOCATED referenced source. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 74 catalogue records across 16 columns: catalogue identity, source identity, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, and notes. The CSV has 73 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.0; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
 
 ## 3. Foundational source baseline
 
@@ -115,7 +115,7 @@ Remaining WP-0.6 work:
 
 **WP-0.6: IN_PROGRESS — formally initiated; structural inventory passes at prior snapshot; internal review v0.2.0 records NOT READY FOR ACCEPTANCE; semantic relationship, link validation and closeout evidence remain.**
 
-The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.2 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
+The dependency gate is satisfied and execution is authorized under the existing scope approval. This v1.3.3 revision is an intermediate reconciliation baseline, not final acceptance. Activities 0.6.1–0.6.9 remain subject to final semantic, relationship, cross-reference and internal consistency evidence.
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 

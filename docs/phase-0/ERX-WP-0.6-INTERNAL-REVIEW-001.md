@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.2.4 |
+| Version | 0.2.5 |
 | Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -72,14 +72,14 @@ Explicit Markdown hyperlinks in the Workplan, master index, WP-0.6 completion ma
 ### 2.5 Synchronization state
 
 The following controlled documents were updated to reflect the second-pass evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.3.9.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.0.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
 - ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.1.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0.
 - WORKPLAN-PHASE-0.md v1.3.5.
 - This review v0.2.0.
 
-The tree snapshot is recorded in the Master Index as the immediately pre-index-refresh baseline. Because updating the index itself creates a new Git tree, the index identifies the baseline timing explicitly; a post-index read-only tree/CSV verification is required after that refresh.
+The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA is retained in the current review execution evidence; the index baseline SHA remains a historical pre-refresh snapshot by design.
 
 ## 3. Findings
 
@@ -95,7 +95,7 @@ The tree snapshot is recorded in the Master Index as the immediately pre-index-r
 
 ## 4. Remaining acceptance blockers
 
-1. Re-fetch the main tree after the index refresh and verify 73 live paths, 74 catalogue records, 16 columns, 73/73 path coverage, one NOT_LOCATED source, unique catalogue IDs/paths and valid row widths.
+1. Post-index main-tree and CSV structural verification PASSED: 73 live paths, 74 catalogue records, 16 columns, 73/73 path coverage, one NOT_LOCATED source, unique catalogue IDs/paths and valid row widths.
 2. Verify that ERX-DOCUMENT-REGISTER-001 v1.2.1 metadata is consistent in every CSV row and the index, and that its formal ID is not reused by another current controlled document.
 3. Complete a final formal source-ID uniqueness check across all controlled Markdown headers. Repeated IDs on source derivatives remain permitted only where the derivative classification and source relationship make that reuse explicit; any ambiguous case must be resolved before acceptance.
 4. Re-fetch the index, CSV, completion matrix and Workplan after the index refresh and ensure their versions/counts/snapshot description agree.
@@ -105,7 +105,7 @@ The tree snapshot is recorded in the Master Index as the immediately pre-index-r
 
 **WP-0.6 remains IN_PROGRESS — NOT READY FOR ACCEPTANCE.**
 
-The second-pass semantic catalogue review, baseline structural checks, relationship cross-check and explicit Markdown hyperlink checks have materially advanced. The post-index read-only verification, final formal-ID uniqueness verification, synchronized evidence check, readiness report and closeout audit remain outstanding.
+The second-pass semantic catalogue review, baseline structural checks, relationship cross-check and explicit Markdown hyperlink checks have materially advanced. The post-index structural verification and synchronized count/path check have passed. Final formal-ID namespace uniqueness review, readiness report and closeout audit remain outstanding.
 
 No activity is declared complete solely because a file was published. No WP-0.6 acceptance is recorded by this review. WP-0.7 remains blocked until WP-0.6 is completed and accepted.
 

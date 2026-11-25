@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-ISSUE-REGISTER-001 |
-| Version | 0.9.0 |
+| Version | 1.0.0 |
 | Status | WORKING REGISTER — PENDING LAEV REVIEW |
 | Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -39,7 +39,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | DOC-ISS-008 | Original PDF archival and hash verification | RESOLVED_EVIDENCE | WP-0.2 |
 | DOC-ISS-009 | Structural divergence: UTXO-911 call-acceptance output vs Protocol/Atlas three-output chain | OPEN | WP-0.3 |
 | DOC-ISS-011 | Consensus proposal status/completion and operational authority | OPEN | WP-0.3 disposition; later technical specification |
-| DOC-ISS-010 | Formal detail of independent agent-availability state machine | SOURCE_ALIGNMENT_CONFIRMED_DETAIL_PENDING | WP-0.3 / later detailed specification |
+| DOC-ISS-010 | Formal detail, owner and target package for independent agent-availability state machine | SOURCE_ALIGNMENT_CONFIRMED_DETAIL_PENDING | WP-0.3 disposition / later detailed specification |
 
 The exact evidence, impact, required disposition, owner and status are maintained in the CSV companion.
 
@@ -67,7 +67,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 9. Where an issue could affect emergency handling, unique call admission, agent availability, double-spend prevention, evidence integrity, privacy or security, no implementation assumption is approved by this register.
 
 ## 6. Dependencies and next action
-DOC-ISS-002 identity/content is evidence-confirmed from the text source; its proposal lifecycle and operational completion/authority are tracked in DOC-ISS-011. DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; its detailed state machine must be assigned and specified. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
+DOC-ISS-002 identity/content is evidence-confirmed from the text source; its proposal lifecycle and operational completion/authority are tracked in DOC-ISS-011. DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; WP-0.3 must record whether detailed state-machine specification is deferred, its target package, owner, impact and interim control. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
 **Status: WORKING REGISTER — PENDING LAEV REVIEW.** This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
 

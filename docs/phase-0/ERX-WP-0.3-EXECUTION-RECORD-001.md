@@ -37,7 +37,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 - ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.
 - ERX-DOCUMENT-GOVERNANCE-001.
 - ERX-CONSENSUS-001 v0.1 text source directly inspected; ID/version/status/author confirmed against Roadmap citation; DOC-ISS-002 identity gap resolved; DOC-ISS-011 records operational completeness and authority requirements.
-- ERX-WP-0.3-AUDIT-REPORT-001 v0.6.0 — second-pass documentary consistency audit.
+- ERX-WP-0.3-AUDIT-REPORT-001 v0.7.0 — second-pass documentary consistency audit.
 - ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.3.0 — options and recommendations for outstanding LAEV decisions.
 
 ## 4. Material source-alignment findings

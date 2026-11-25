@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 |
-| Version | 0.1.0 |
-| Status | DRAFT — PENDING LAEV APPROVAL |
+| Version | 1.0.0 |
+| Status | APPROVED — WP-0.3 |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Owner / Approval Authority | LAEV |
@@ -60,7 +60,7 @@ Detailed version syntax, document metadata, and status transitions are governed 
 Approval requires: defined change classes; baseline preservation; minimum change record; review and approval path; explicit supersession semantics; historical retention; and synchronized register updates.
 
 ## 9. Status
-DRAFT — PENDING LAEV APPROVAL. No existing document is amended or superseded by this draft.
+APPROVED for WP-0.3 by ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. No existing document is amended or superseded merely by approval of this policy.
 
 ---
 END

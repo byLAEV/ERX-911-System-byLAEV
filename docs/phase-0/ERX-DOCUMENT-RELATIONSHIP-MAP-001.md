@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-RELATIONSHIP-MAP-001 |
-| Version | 0.3.0 |
-| Status | WORKING EVIDENCE — PENDING REVIEW |
+| Version | 1.0.0 |
+| Status | APPROVED WP-0.3 RELATIONSHIP BASELINE |
 | Work Package | WP-0.3 / Activity 0.3.5 |
 | Project | ERX-911-System-byLAEV |
 | Authority | LAEV |
@@ -65,15 +65,15 @@ The official Workplan dependency chain is:
 - WP-0.4 through WP-0.6 and WP-0.10 enable WP-0.11.
 - WP-0.1 through WP-0.11 feed WP-0.12.
 
-## 6. Open relationships
-1. Exact mapping of UTXO-911's separate call-acceptance output to Protocol UTXO 01 → UTXO 02 (DOC-ISS-009).
-2. Detailed transitions, permissions, release and recovery conditions for the Roadmap's independent agent-availability cycle (DOC-ISS-010; architectural separation already source-confirmed).
-3. Normative force of each Atlas plate in the event of textual divergence.
-4. Formal effect, if any, of the Technical Response on Roadmap.
-5. DOC-ISS-011 consensus proposal status/completeness; ERX-IMPL-PROPOSAL-001 remains not located (DOC-ISS-003).
+## 6. Controlled residual relationships
+1. DOC-ISS-009 mapping is resolved by DP-02: acceptance is an event/sub-state in UTXO 01→02, not a separate spendable output in the approved profile.
+2. DOC-ISS-010: independent agent-availability cycle accepted; detailed transitions, permissions, release and recovery are deferred.
+3. Atlas/text divergence is governed by DP-04 and the approved contradiction-handling procedure.
+4. Technical Response remains a response/review artifact under DP-05, not a Roadmap amendment.
+5. ERX-CONSENSUS-001 remains a proposal pending operational completion (DOC-ISS-011); ERX-IMPL-PROPOSAL-001 remains a bounded not-located limitation (DOC-ISS-003).
 
 ## 7. Status
-**WORKING EVIDENCE — PENDING REVIEW.** This map supports WP-0.3.5 and the issue register. It does not approve a hierarchy, settle subject authority, or release downstream work packages.
+**APPROVED WP-0.3 RELATIONSHIP BASELINE.** The source relationships and scoped dispositions are approved by ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. The map remains descriptive and does not create precedence beyond the approved subject-matter matrix.
 
 ---
 END

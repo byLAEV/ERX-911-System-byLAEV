@@ -4,27 +4,29 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 0.9.0 |
-| Status | IN_PROGRESS — EVIDENCE UPDATED; LAEV DECISIONS PENDING |
+| Version | 1.0.0 |
+| Status | COMPLETED — WP-0.3 ACCEPTED BY LAEV |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Authority | LAEV |
 | Updated | 2026-11-24 |
 
 ## 1. Authorization and boundary
-WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. Formal WP-0.3 execution is authorized. This record reports evidence and outstanding decisions; it does not approve the proposed hierarchy or subject-matter authority and does not authorize implementation or Phase 1.
+
+LAEV authorized correction, evidence completion and closure of WP-0.3 on 2026-11-24. The resulting decisions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0.
+WP-0.2 was expressly accepted by LAEV. WP-0.3 decisions and approval are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. This record closes the documentary work package only; it does not authorize implementation or Phase 1.
 
 ## 2. Current activity status
 | Activity | Evidence / result | Status |
 |---|---|---|
-| 0.3.1 Classify documents | Classification in ERX-DOCUMENT-HIERARCHY-MATRIX-001 | EVIDENCE PREPARED |
-| 0.3.2 Separate sources from development artifacts | Classes and boundaries in hierarchy matrix and governance policy | EVIDENCE PREPARED |
-| 0.3.3 Approve hierarchy | Four-level candidate matrix published; LAEV decision not recorded | PENDING LAEV |
-| 0.3.4 Approve subject authority | Source-grounded authority matrix published; LAEV decision not recorded | PENDING LAEV |
-| 0.3.5 Record relationships | Detailed relationship map published | EVIDENCE PREPARED |
-| 0.3.6 Identify/adjudicate issues | Source alignment review completed; DOC-ISS-009 and 010 added; no direct contradiction asserted without evidence | PARTIALLY COMPLETE — DISPOSITIONS PENDING |
-| 0.3.7 Approve handling procedure | Procedure v0.1.0 published as draft | PENDING LAEV |
-| 0.3.8 Approve evolution rules | Evolution/supersession policy v0.1.0 published as draft | PENDING LAEV |
+| 0.3.1 Classify documents | Approved classification in ERX-DOCUMENT-HIERARCHY-MATRIX-001 v1.0.0 | COMPLETED |
+| 0.3.2 Separate sources from development artifacts | Approved classes and boundaries in hierarchy matrix v1.0.0 | COMPLETED |
+| 0.3.3 Approve hierarchy | Approved hierarchy matrix v1.0.0 and LAEV decision record | COMPLETED |
+| 0.3.4 Approve subject authority | Approved authority matrix v1.0.0 and LAEV decision record | COMPLETED |
+| 0.3.5 Record relationships | Approved relationship map v1.0.0 | COMPLETED |
+| 0.3.6 Identify/adjudicate issues | Issue register v1.0.0 and approved dispositions DP-01–DP-09 | COMPLETED — bounded deferrals retained |
+| 0.3.7 Approve handling procedure | Approved procedure v1.0.0 | COMPLETED |
+| 0.3.8 Approve evolution rules | Approved policy v1.0.0 | COMPLETED |
 
 ## 3. Evidence produced
 - ERX-DOCUMENT-HIERARCHY-MATRIX-001 v0.2.0.
@@ -50,7 +52,9 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 
 No direct contradiction between the inspected passages is declared by the source alignment review. The unresolved matters are scope, granularity, authority and documentary effect.
 
-## 5. Outstanding LAEV decisions
+## 5. LAEV decisions and bounded deferrals
+
+All DP-01–DP-09 decisions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011 are accepted limitations/deferred specifications with owners, impacts and interim controls; they do not block WP-0.3 closure.
 - Adopt, revise or reject the proposed hierarchy.
 - Adopt, revise or reject the subject-matter authority allocations.
 - Decide the structural divergence between UTXO-911's separate call-acceptance output and the Protocol/Atlas three-output chain.
@@ -60,13 +64,13 @@ No direct contradiction between the inspected passages is declared by the source
 - Approve, revise or reject the contradiction-handling and document-evolution procedures.
 - DOC-ISS-002 identity/content is confirmed by text-source evidence. LAEV must disposition proposal status and operational completion under DOC-ISS-011; DOC-ISS-003 remains not located and requires separate disposition.
 
-## 6. Acceptance gate
-WP-0.3 is not yet eligible for approval. Completion requires express LAEV decisions for hierarchy and subject authority; all material issues must be decided or formally deferred/accepted with impact and mitigation; both procedures must be approved; and all registers and records must be consistent.
+## 6. Acceptance and closure
+All eight activities 0.3.1–0.3.8 have evidence and approved disposition. The hierarchy, subject authority, issue handling, evolution rules and bounded source limitations are recorded. The issue register, decision package, matrices and procedures are synchronized. WP-0.3 is COMPLETED / ACCEPTED under LAEV's 2026-11-24 closeout authorization. This is documentary work-package acceptance only; it is not independent external audit, software verification, institutional homologation or production authorization.
 
 ## 7. Downstream controls
-WP-0.4 and WP-0.5 remain blocked under the official Workplan until WP-0.3 is completed and approved. Preparatory drafts in those packages do not release the gate. WP-0.6 and later packages remain subject to their stated dependencies.
+WP-0.3 completion releases its dependency gate. WP-0.4 may now begin formal execution under its own acceptance criteria. WP-0.5 remains dependent on WP-0.4. WP-0.6 and later packages remain subject to their stated dependencies.
 
-**Current status: WP-0.3 IN_PROGRESS. No Phase 1 authorization.**
+**Current status: WP-0.3 COMPLETED. WP-0.4/WP-0.5 dependency gate is released for their separately controlled execution. No Phase 1 or operational authorization is granted.**
 
 ---
 END

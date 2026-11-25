@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-HIERARCHY-MATRIX-001 |
-| Version | 0.2.0 |
-| Status | PROPOSAL — PENDING LAEV APPROVAL |
+| Version | 1.0.0 |
+| Status | APPROVED — WP-0.3 |
 | Work Package | WP-0.3 / Activities 0.3.1–0.3.3 |
 | Project | ERX-911-System-byLAEV |
 | Design and Approval Authority | LAEV |
@@ -13,7 +13,7 @@
 | Date | 2026-11-24 |
 
 ## 1. Purpose and limits
-This matrix consolidates the provisional document classification and presents a hierarchy proposal for LAEV decision. It is not an approved precedence rule. A hierarchy level describes governance function and control, not an automatic power to override every document in a lower level.
+This matrix records the approved document classification and scoped governance hierarchy adopted by LAEV under decision record v1.0.0. It is not a universal precedence rule. A hierarchy level describes governance function and control, not an automatic power to override every document in a lower level.
 
 ## 2. Classification of the current source set
 
@@ -46,15 +46,11 @@ This matrix consolidates the provisional document classification and presents a 
 5. A technical response is not an amendment unless an approval record explicitly makes it one.
 6. The Atlas filename/internal version discrepancy must be preserved as metadata, not silently normalized here.
 
-## 5. Acceptance evidence required
-- LAEV decision adopting, revising or rejecting the proposed hierarchy.
-- Consistent classification in the master document register.
-- Explicit treatment of FND-005 as response/review unless amendment approval is evidenced.
-- REF-001 identity confirmed; separate DOC-ISS-011 controls proposal status/completeness. REF-002 remains not located.
-- Consistent status and version references across Workplan, execution record and registers.
+## 5. Approval and maintenance evidence
+The hierarchy was adopted by LAEV in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. The master index and document register shall be reconciled during WP-0.6. FND-005 remains a response/review artifact; REF-001 remains a proposal; REF-002 remains a bounded not-located reference.
 
 ## 6. Current disposition
-**PROPOSED — NOT APPROVED.** Activities 0.3.1 and 0.3.2 have initial evidence in the WP-0.3 execution record. Activity 0.3.3 remains pending LAEV decision. This matrix does not authorize WP-0.4, WP-0.5 or Phase 1.
+**APPROVED — WP-0.3.** LAEV adopted the scoped hierarchy and classification in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0 (2026-11-24). This approval does not authorize Phase 1, implementation, or production operation.
 
 ---
 END

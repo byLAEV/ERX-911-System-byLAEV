@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 |
-| Version | 0.7.0 |
-| Status | TECHNICAL REVIEW — PENDING LAEV DISPOSITION |
+| Version | 1.0.0 |
+| Status | COMPLETED TECHNICAL SOURCE ALIGNMENT — DISPOSITIONS APPROVED |
 | Work Package | WP-0.3 / Activity 0.3.6 |
 | Sources | FND-001, FND-002, FND-003, FND-004, FND-005 |
 | Date | 2026-11-24 |
@@ -91,10 +91,10 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 - Consensus source identity confirmed; consensus operational completeness/authority remains DOC-ISS-011; missing-source limitation remains DOC-ISS-003.
 - Metadata discrepancy: DOC-ISS-001 and DOC-ISS-004.
 
-A structural state-model divergence remains open in DOC-ISS-009. The independent agent-availability cycle is confirmed by Roadmap Section 3.1 and the Technical Response; DOC-ISS-010 is narrowed to detailed state-machine formalization, ownership and acceptance. Other authority and response-effect matters remain pending LAEV disposition.
+The structural state-model divergence DOC-ISS-009 is resolved by DP-02 (acceptance event/sub-state within UTXO 01→02). The independent agent-availability cycle is confirmed and accepted; detailed state-machine formalization is deferred under DOC-ISS-010. Subject authority, Atlas treatment and Technical Response effect are disposed by DP-01, DP-04 and DP-05. Source metadata limitations and missing ERX-IMPL-PROPOSAL-001 are accepted/deferred under DP-06, DP-07 and DP-09. Consensus operational completeness remains deferred under DP-08 / DOC-ISS-011.
 
 ## 4. WP-0.3.6 result
-The activity has produced a source-grounded issue classification and comparison record. It is not fully closed because the material scope questions and authority questions require express LAEV dispositions. The issues may be formally deferred with documented impact and mitigation if LAEV decides that their resolution belongs to a later package, but they may not be silently ignored.
+The activity produced a source-grounded issue classification and comparison record. All WP-0.3 material issues have now received a decision or bounded deferral in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. The dispositions are reflected in the issue register and CSV companion. Detailed deferred specifications remain visible and must be completed before their respective later uses.
 
 ---
 END

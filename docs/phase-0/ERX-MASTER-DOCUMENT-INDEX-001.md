@@ -142,6 +142,8 @@ Relationships above reflect explicit source references or clearly stated documen
 6. Reconcile document classification and status after governing policies are approved.
 7. Verify README and CSV register metadata and contents against canonical records.
 
+| IDX-037 | ERX-WP-0.3-LAEV-DECISION-RECORD-001 | Formal Disposition of WP-0.3 Documentary and Architectural Decisions | 1.0.0 | LAEV decision / approval record | APPROVED — LAEV 2026-11-24 | `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-RECORD-001.md` | DP-01–DP-09 and DOC-ISS-001–011 dispositions; WP-0.3 closeout authority |
+
 ## 9. WP-0.6 Status and Acceptance
 
 **Status: BLOCKED — PROVISIONAL PREPARATORY DRAFT ONLY.**

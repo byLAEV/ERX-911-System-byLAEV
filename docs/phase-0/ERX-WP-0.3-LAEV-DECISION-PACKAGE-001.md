@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 |
-| Version | 0.4.0 |
-| Status | DECISION PROPOSALS — PENDING LAEV REVIEW |
+| Version | 0.5.0 |
+| Status | DISPOSITIONED — SEE APPROVED LAEV DECISION RECORD |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Decision authority | LAEV |
@@ -136,7 +136,7 @@ LAEV decision: PENDING — LOCATE / ACCEPT LIMITATION / DEFER.
 | DP-09 | Implementation proposal | Locate or formally accept limitation/deferment | PENDING |
 
 ## 9. Acceptance boundary
-These are proposed decisions, not approved decisions. No item becomes binding until LAEV records an express decision with date and rationale. A decision affecting source meaning must be implemented through controlled derivative documentation and synchronized registers. DOC-ISS-010 may be dispositioned as source-alignment-confirmed with detailed specification assigned to a later package, provided LAEV accepts that scope and target. WP-0.3 remains IN_PROGRESS until its acceptance criteria are met.
+The proposals DP-01 through DP-09 have been dispositioned by LAEV in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0 dated 2026-11-24. That record is controlling for the decisions and issue dispositions. This package remains the preserved evidence/options record; the decision record supplies the approved outcomes. WP-0.3 closure is recorded in the execution, audit, and acceptance records.
 
 ---
 END

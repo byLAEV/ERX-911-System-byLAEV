@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.0.5 |
+| Version | 1.0.6 |
 | Status | PROVISIONAL WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -50,7 +50,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-013 | ERX-DOCUMENT-CONTROL-001 | Document Identification and Control | 0.2.0 | WP-0.4 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-DOCUMENT-CONTROL-001.md` | Formal WP-0.4 blocked by WP-0.3 |
 | IDX-014 | ERX-REPOSITORY-GOVERNANCE-001 | Repository Identity, Structure and Governance | 0.1.0 | WP-0.5 development artifact | PREPARATORY WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md` | Formal WP-0.5 blocked by WP-0.3 and WP-0.4 |
 | IDX-016 | ERX-CONSENSUS-001 | | ERX byLAEV — Documento normativo, Protocolo de Consenso | 0.1 — Propuesta normativa | Referenced foundational source / consensus framework | SOURCE IDENTITY CONFIRMED — PROPOSAL FOR REVIEW | `docs/Consenso ERX byLAEV` | | Text source directly declares ID/version/status/authorship and matches Roadmap citation; contents inspected. PDF counterpart also present; DOC-ISS-011 governs completeness/authority |
-| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 1.0.5 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | Current provisional register; WP-0.6 acceptance pending |
+| IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 1.0.6 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | Current provisional register; WP-0.6 acceptance pending |
 
 | IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.2.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
 | IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.9.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eleven issues tracked; DOC-ISS-002 and DOC-ISS-008 evidence-resolved; DOC-ISS-011 tracks consensus proposal completion/authority |

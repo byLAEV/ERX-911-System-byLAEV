@@ -64,7 +64,7 @@ The working source cross-reference map records explicit references and subject-m
 The preliminary issue register remains the controlled list of matters reserved for WP-0.3:
 `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` and `registers/document-issue-register.csv`.
 
-DOC-ISS-008 (repository archival and post-commit integrity) is supported as resolved by this dossier. DOC-ISS-002 and DOC-ISS-003 remain open as source-location/provenance matters, with their current unlocated status explicitly recorded. Other authority and metadata issues remain assigned to WP-0.3.
+DOC-ISS-008 (repository archival and post-commit integrity) is supported as resolved by this dossier. DOC-ISS-002's identity was subsequently confirmed by direct inspection of the repository text source `docs/Consenso ERX byLAEV`; its proposal status and operational completeness are separately tracked as DOC-ISS-011. DOC-ISS-003 remains not located. Other authority and metadata issues remain assigned to WP-0.3.
 
 ## 6. Supplementary source-inspection evidence
 
@@ -102,4 +102,4 @@ End of ERX-WP-0.2-COMPLETION-DOSSIER-001
 
 ## 9. Subsequent approval status
 
-WP-0.2 was expressly accepted by LAEV on 2026-11-23. The authoritative decision is `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` v1.0.0. This dossier remains the evidence submission and is not itself the approval instrument. A later-discovered candidate consensus PDF is recorded separately in `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`; it does not retroactively alter the accepted five-file baseline.
+WP-0.2 was expressly accepted by LAEV on 2026-11-23. The authoritative decision is `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` v1.0.0. This dossier remains the evidence submission and is not itself the approval instrument. A later-discovered consensus text source and PDF counterpart are recorded in `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`; the text source confirms the Roadmap-cited identity. This supplemental discovery does not retroactively alter the accepted five-file baseline.

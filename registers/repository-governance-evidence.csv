@@ -22,3 +22,4 @@ RGE-020,Collaborator/team roster,Not inspected,NOT_VERIFIED,OPEN,No conclusion a
 RGE-021,Full repository tree,Not inspected completely,NOT_VERIFIED,OPEN,Audit remains preliminary
 RGE-022,Original PDF byte-identity evidence,WP-0.2 completion dossier,Prior accepted verification referenced,REFERENCED,Not re-performed in WP-0.5 preliminary audit
 RGE-023,LAEV WP-0.5 initiation,Project conversation authorization,"2026-11-24; main branch requested",RECORDED,Initiation does not approve final repository policy
+RGE-024,Repository visibility decision,LAEV express decision record,"KEEP PUBLIC; current visibility observed as public",RECORDED_DECISION,"Visibility only; no license grant or blanket publication approval; no setting change was necessary or performed; see ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001 v1.0.0"

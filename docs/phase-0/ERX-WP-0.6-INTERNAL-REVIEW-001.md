@@ -1,88 +1,113 @@
 # ERX-WP-0.6-INTERNAL-REVIEW-001
-## Internal Consistency and Technical Review — WP-0.6
+## Second-Pass Internal Documentary, Metadata and Cross-Reference Review
 
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.1.0 |
-| Status | IN_PROGRESS — FINDINGS RECORDED |
+| Version | 0.2.0 |
+| Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
-| Review type | Internal documentary, metadata and cross-reference review |
+| Review type | Internal documentary, metadata, register-structure and cross-reference review |
 | Date | 2026-11-24 |
 | Reviewer | Project drafting/review process; not independent external review |
 | Repository | byLAEV/ERX-911-System-byLAEV |
+| Branch | main |
 
-## 1. Scope and evidence examined
+## 1. Scope and limits
 
-This review checks the WP-0.6 register, current master index, Workplan, accepted document-control policy, WP-0.2 source inventory and acceptance dossier, WP-0.3 decision/relationship/authority records, WP-0.4 decision/closeout records, and WP-0.5 acceptance/closeout evidence.
+This second-pass review checks the 74 catalogue records, the 73 live repository paths, source-native metadata available from the source documents and controlling records, the WP-0.6 relationship supplement, explicit Markdown hyperlinks in the principal control documents, and synchronization among the master index, CSV, completion matrix and Workplan.
 
-It is an internal documentary review. It is not an independent external audit, legal opinion, technical security audit, or source-content revalidation of all five binary PDFs. The accepted WP-0.2 completion dossier remains the authority for the original five-PDF SHA-256 and Git blob identity checks.
+This is an internal documentary review. It is not an independent external audit, legal opinion, security audit, implementation test, or revalidation of the five original PDF binaries. The accepted WP-0.2 completion dossier remains the controlling evidence for their SHA-256 and Git blob identity checks. The review does not infer metadata absent from a source.
 
-## 2. Tests and results
+## 2. Second-pass results
 
-| Test | Result | Evidence / limitation |
+### 2.1 Catalogue and repository structure
+
+Baseline Git tree: `299a655ced7f3ed2d0070cacdbc0e048344970b9`; GitHub reported `truncated=false`; 73 live paths.
+
+At that baseline, the document register contained 74 catalogue rows:
+- 73 rows with repository paths present in the tree.
+- One referenced source, ERX-IMPL-PROPOSAL-001, explicitly NOT_LOCATED / UNVERIFIED and without a repository path.
+- No duplicate catalogue Index IDs.
+- No duplicate repository paths.
+- No missing live repository paths.
+- No stale repository paths.
+- No malformed row widths in the then-current CSV.
+
+The register has since been assigned the formal identity ERX-DOCUMENT-REGISTER-001 v1.2.0. The machine-readable companion now uses 16 columns, including catalogue/source identity, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version and register status. Register metadata is repeated on each row to keep the CSV machine-readable without a non-record metadata preamble.
+
+### 2.2 Semantic review of 74 catalogue records
+
+All 74 catalogue rows were reviewed for title, catalogue ID, source ID, version, classification, source-declared status, path, source location and notes against the repository inventory and the available controlling source/decision evidence.
+
+Controls confirmed:
+- Catalogue IDs (IDX-xxx) are separate from source-native document IDs.
+- Repeated source IDs ERX-PROT-001, ERX-ATLAS-001 and UTXO-911-001 occur on original PDF entries and corresponding plain-text derivatives. They are source/derivative pairs, not duplicate catalogue IDs or duplicate repository paths.
+- FND-005 has no stated formal document ID or version. The value remains NOT_STATED.
+- ERX-IMPL-PROPOSAL-001 remains NOT_LOCATED / UNVERIFIED under DOC-ISS-003; no content or version is inferred.
+- ERX-CONSENSUS-001 v0.1 identity is confirmed, but the source remains a proposal for review; DOC-ISS-011 controls its deferred operational specification/authority.
+- Historical WP-0.3/WP-0.4 headers remain unchanged. Current package acceptance is established by the controlling decision, closeout and acceptance records, not by rewriting older snapshots.
+- The source-declared status/disposition is preserved separately from lifecycle status. A package completion state, audit result, readiness recommendation, archive verification, or repository presence is not automatically a document lifecycle state.
+- Lifecycle status is mapped conservatively. Where the source does not explicitly support a lifecycle value, NOT_STATED is retained.
+
+The catalogue is a metadata and inventory instrument; row review does not constitute substantive technical reapproval of every source.
+
+### 2.3 Foundational provenance and custody
+
+The five original PDFs remain the accepted WP-0.2 baseline FND-001–FND-005. The custody README correctly locates them under `docs/` root, not `docs/foundational/`. Their byte-integrity evidence is not recalculated here; the accepted WP-0.2 completion dossier remains authoritative. Plain-text companions are classified as derivatives/extractions and are not substitutes for the original PDFs.
+
+### 2.4 Relationships and cross-references
+
+The derivative relationship supplement ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0 was cross-checked against:
+- The approved WP-0.3 relationship baseline.
+- DP-01–DP-09 and DOC-ISS-001–011 dispositions.
+- The approved WP-0.4 document-control baseline and DC-01–DC-09.
+- WP-0.5 repository governance and acceptance records.
+- The current Workplan dependency chain.
+
+The relationship types remain descriptive and do not create precedence. The missing implementation proposal is retained as an unverified edge. The independent agent-availability cycle and operational consensus specification remain deferred as recorded in DOC-ISS-010 and DOC-ISS-011.
+
+Explicit Markdown hyperlinks in the Workplan, master index, WP-0.6 completion matrix and WP-0.2 completion dossier were checked against repository paths or external-target form. No broken local Markdown hyperlink was found in the inspected linked documents. The Workplan and index links to WP-0.6 deliverables resolve to live repository paths. This statement is limited to explicit Markdown hyperlinks inspected; it is not a claim that every prose code-formatted reference in every historical file has been exhaustively parsed.
+
+### 2.5 Synchronization state
+
+The following controlled documents were updated to reflect the second-pass evidence:
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.3.3.
+- ERX-DOCUMENT-REGISTER-001 v1.2.0 (CSV companion).
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.0.
+- ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0.
+- WORKPLAN-PHASE-0.md v1.3.2.
+- This review v0.2.0.
+
+The baseline tree SHA above predates these synchronized updates. A new post-write tree snapshot and final verification of all four control documents against that exact snapshot remain mandatory. No self-referential claim is made that the baseline SHA is the final tree.
+
+## 3. Findings
+
+| Finding | Description | Disposition |
 |---|---|---|
-| Live tree completeness | PASS — snapshot | Recursive Git tree ad950abf9fe1e8bbaa79bbbb63c54b1122723f38, truncated=false, 72 files at snapshot time |
-| CSV structure | PASS — snapshot | 73 catalogue rows; 10 columns per row; no duplicate Index IDs or repository paths; all 72 live paths represented; one additional NOT_LOCATED source record |
-| Missing/stale repository paths | PASS — snapshot | No missing live paths and no stale repository paths at snapshot time |
-| Explicit metadata-pending placeholders | PASS | Zero rows with METADATA_RECONCILIATION_PENDING; unknown native metadata remains NOT_STATED/NOT_VERIFIED where unsupported |
-| WP-0.2 source provenance | PASS BY CROSS-REFERENCE | Five original PDFs and byte-identity evidence accepted in WP-0.2 completion dossier; FND-005 native ID/version/date remain NOT_STATED |
-| Consensus source | PASS — BOUNDED | ERX-CONSENSUS-001 v0.1 identity/content confirmed; remains proposal for review under DOC-ISS-011 |
-| Missing implementation proposal | OPEN / ACCEPTED LIMITATION | ERX-IMPL-PROPOSAL-001 NOT LOCATED / UNVERIFIED under DOC-ISS-003 |
-| WP-0.3 historical status | PASS — CONTROLLING RECORDS IDENTIFIED | DP-01–DP-09 decision record and accepted execution/audit/matrix establish final package state; older audit/execution snapshots contain historical downstream statuses |
-| WP-0.4 historical status | PASS — CONTROLLING RECORDS IDENTIFIED | DC-01–DC-09 decision record, exact-version approval record, closeout audit and execution record establish accepted policy baseline |
-| WP-0.5 current status | PASS | Acceptance record v1.0.0 and closeout audit v1.0.0 establish COMPLETED / ACCEPTED |
-| Typed document relationships | PARTIAL | WP-0.6 relationship register v0.1.0 published; local-link and whole-catalogue semantic validation not yet complete |
-| README custody statement | CORRECTED | Previous README incorrectly stated original PDFs were not committed; updated README states actual PDFs are in docs/ root and references WP-0.2 evidence |
-| Markdown index/CSV synchronization | PARTIAL | Current version entries updated; final all-record semantic and link reconciliation remains |
-| WP-0.6 acceptance evidence | NOT READY | Nine activity criteria have not yet all passed; no readiness report, closeout audit or acceptance record is issued |
+| IR-0.6-01 | Historical WP-0.3/WP-0.4 records contain earlier downstream status snapshots. | Preserve historical text; use later controlling decision/acceptance records and current Workplan. |
+| IR-0.6-02 | Approved WP-0.3 relationship map has a formatting defect and pre-DP-02 wording. | Preserve approved historical artifact; derivative relationship supplement v0.2.0 records current interpretation. |
+| IR-0.6-03 | Approved hierarchy and authority matrices retain historical heading language. | Their approval is established by their control blocks/final sections and WP-0.3 decision record; no silent edits. |
+| IR-0.6-04 | Source derivatives can repeat the source-native ID of the original. | Keep distinct catalogue IDs, paths and derivative classifications; do not falsely count them as duplicate catalogue records. |
+| IR-0.6-05 | FND-005 and some registers/README artifacts do not state formal ID/version/lifecycle metadata. | Preserve NOT_STATED where source evidence is absent; do not invent source-native metadata. |
+| IR-0.6-06 | Earlier index/matrix/Workplan snapshots used stale counts and versions. | Updated the controlled working documents; final post-write snapshot synchronization remains. |
+| IR-0.6-07 | The CSV register itself previously lacked its formal identity/version/status in the current catalogue. | Restored ERX-DOCUMENT-REGISTER-001 identity and v1.2.0 register metadata in the machine-readable companion; final schema check remains. |
 
-## 3. Findings requiring resolution or explicit bounded disposition
+## 4. Remaining acceptance blockers
 
-### IR-0.6-01 — Historical status snapshots
-
-Some WP-0.3 audit/execution/readiness documents contain earlier downstream package statuses (for example WP-0.5 NOT_STARTED) in historical sections. Their current controlling status is established by later WP-0.4 and WP-0.5 acceptance evidence and current Workplan tracking. Preserve those historical documents; catalogue notes and the master index must identify the superseding controlling records.
-
-**Disposition:** controlled by current catalogue notes and master-index status rules. Verify every remaining historical entry before closeout.
-
-### IR-0.6-02 — Approved WP-0.3 relationship-map formatting and pre-decision wording
-
-The approved ERX-DOCUMENT-RELATIONSHIP-MAP-001 v1.0.0 includes a malformed escaped newline in a table row and historical pre-DP-02 wording about the acceptance-output divergence.
-
-**Disposition:** do not edit the approved historical artifact in place. The derivative ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.1.0 states the approved DP-02 result and provides a normalized typed relationship record. Final cross-reference validation remains.
-
-### IR-0.6-03 — Approved hierarchy/authority matrix legacy wording
-
-The approved hierarchy matrix retains a historical heading “decision required” although its final section and WP-0.3 decision record establish approval. The subject-matter matrix also has legacy “proposed” wording in a column heading although its status and final section establish approval.
-
-**Disposition:** approved decision record and document status control. Preserve historical content; master index must not classify these artifacts as pending approval.
-
-### IR-0.6-04 — Source derivative boundaries
-
-Plain-text companions are repository artifacts and must not be mistaken for original PDFs. They require explicit derivative/source links and must not replace source originals. FND-005 formal ID/version/date remain NOT_STATED.
-
-**Disposition:** preserve companion classifications and exact source relationships; final path/relationship audit remains.
-
-### IR-0.6-05 — Workplan and package-status historical references
-
-The Workplan's WP-0.6 section has been synchronized to current versions and activity evidence. Older records may contain earlier package states as contemporaneous history.
-
-**Disposition:** Workplan Section 5 and Tracking Register Section 7 are current tracking authority. Verify that all internal references point to current controlled versions.
-
-## 4. Acceptance blockers
-
-1. Complete semantic reconciliation of all 73 catalogue records against exact headers, approval records and current disposition evidence.
-2. Verify all formal source IDs for uniqueness separately from catalogue Index IDs.
-3. Validate every local Markdown cross-reference and every typed relationship.
-4. Re-snapshot the live Git tree after final document creation and confirm CSV path coverage and uniqueness.
-5. Synchronize master index, CSV, completion matrix and Workplan to the final same-snapshot counts and exact versions.
-6. Conduct final acceptance-readiness review and closeout audit.
+1. Re-fetch the final main tree after the latest control-document writes and verify 100% path coverage, unique catalogue IDs/paths and valid 16-column CSV rows.
+2. Verify that ERX-DOCUMENT-REGISTER-001 v1.2.0 metadata is consistent in every CSV row and the index, and that its formal ID is not reused by another current controlled document.
+3. Complete a final formal source-ID uniqueness check across all controlled Markdown headers. Repeated IDs on source derivatives remain permitted only where the derivative classification and source relationship make that reuse explicit; any ambiguous case must be resolved before acceptance.
+4. Re-fetch the index, CSV, completion matrix and Workplan after the final tree snapshot and ensure their versions/counts/snapshot description agree.
+5. Complete a final acceptance-readiness assessment and closeout audit against all nine WP-0.6 activities and the Workplan acceptance criterion.
 
 ## 5. Review conclusion
 
-**WP-0.6 is NOT READY FOR ACCEPTANCE.** Structural coverage has passed at the recorded snapshot, and several important metadata/history corrections have been made. Semantic review, relationship/link validation, final synchronized snapshot, readiness assessment and closeout audit remain.
+**WP-0.6 remains IN_PROGRESS — NOT READY FOR ACCEPTANCE.**
 
-No activity is declared complete solely because a file was published. No WP-0.6 acceptance is recorded by this review.
+The second-pass semantic catalogue review, baseline structural checks, relationship cross-check and explicit Markdown hyperlink checks have materially advanced. The final post-write tree snapshot, final formal-ID uniqueness verification, synchronized evidence check, readiness report and closeout audit remain outstanding.
+
+No activity is declared complete solely because a file was published. No WP-0.6 acceptance is recorded by this review. WP-0.7 remains blocked until WP-0.6 is completed and accepted.
 
 ---
 End of ERX-WP-0.6-INTERNAL-REVIEW-001

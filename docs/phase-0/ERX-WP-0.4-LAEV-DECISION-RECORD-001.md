@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.4-LAEV-DECISION-RECORD-001 |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Status | APPROVED — LAEV DECISION RECORDED |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -51,3 +51,22 @@ This decision does not close WP-0.4, approve WP-0.5, complete Phase 0, or author
 
 ---
 End of ERX-WP-0.4-LAEV-DECISION-RECORD-001
+
+
+## Addendum A — LAEV clarification on independent review
+
+| Field | Value |
+|---|---|
+| Addendum date | 2026-11-24 (Costa Rica, UTC−06:00) |
+| Decision authority | LAEV |
+| Decision evidence | Explicit LAEV instruction in project conversation |
+| Effect | Clarifies DC-06 and the WP-0.4 closeout sequence prospectively |
+
+LAEV instructs that an independent reviewer must not be required as a prerequisite to completing WP-0.4 or the planned project work. Independent external review/audit is to take place after the planned project work is completed, under the appropriate later verification/audit activity.
+
+For WP-0.4, the required controls remain: (1) documented internal consistency/technical review of the exact candidate version; (2) disposition of findings; and (3) LAEV's express approval of the exact version. The internal reviewer must be identified truthfully; no claim of independence is made unless supported. This addendum does not remove the reviewer role or the need for exact-version review and approval.
+
+This addendum amends the timing of independent external review only. It does not waive any substantive acceptance criterion, authorize implementation/deployment, or itself close WP-0.4.
+
+---
+End of Addendum A

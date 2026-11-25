@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 |
-| Version | 0.3.0 |
-| Status | PROPOSAL — PENDING LAEV APPROVAL |
+| Version | 1.0.0 |
+| Status | APPROVED — WP-0.3 |
 | Work Package | WP-0.3 / Activity 0.3.4 |
 | Project | ERX-911-System-byLAEV |
 | Design and Approval Authority | LAEV |
@@ -64,7 +64,7 @@ LAEV must:
 6. Record whether the two unavailable cited sources remain accepted limitations or must be supplied before later requirements work.
 
 ## 6. Current status
-**PROPOSED — NOT APPROVED.** The source mapping is now more precisely bounded: DOC-ISS-009 remains a material structural decision; DOC-ISS-010 has source-confirmed architectural separation and requires only detailed formalization and an approved work-package assignment. Activity 0.3.4 remains pending LAEV approval. No technical requirement, implementation behavior, or universal document precedence is approved by this matrix.
+**APPROVED — WP-0.3.** Subject-matter allocations and the specific UTXO/agent-cycle dispositions are approved by ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0 (2026-11-24). Detailed agent-availability state-machine requirements remain deferred; consensus remains a proposal pending a separate operational specification. This matrix establishes no universal precedence outside its stated scopes.
 
 ---
 END

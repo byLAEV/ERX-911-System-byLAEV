@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.4-CLOSEOUT-AUDIT-001 |
-| Version | 0.1.0 |
-| Status | IN_REVIEW — CLOSEOUT GATE NOT YET SATISFIED |
+| Version | 0.2.0 |
+| Status | IN_REVIEW — FINAL REVIEW GATE NOT YET SATISFIED |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Audit date | 2026-11-24 |
@@ -28,9 +28,9 @@ Check the WP-0.4 deliverable against the approved DC-01–DC-09 decisions, WP-0.
 | DC-07 exact-version approval | PASS — DECIDED | LAEV decision record DC-07 |
 | DC-08 revision history/provenance | PASS — DECIDED | LAEV decision record DC-08 |
 | DC-09 source migration | PASS — DECIDED | LAEV decision record DC-09; master index deferred to WP-0.6 |
-| Final policy baseline | PENDING | Exact consolidated candidate and its approval record still required |
+| Final policy baseline | PENDING | Consolidated candidate ERX-DOCUMENT-CONTROL-001 v0.4.0 exists; exact-version approval remains pending |
 | Independent review | PENDING | No independent reviewer identity, scope, date, findings, or disposition recorded |
-| Register synchronization | PENDING | IDX-013 and new decision/audit records must be reconciled and verified |
+| Register synchronization | PENDING | IDX-013 and records IDX-038–IDX-040 have been synchronized on the execution branch; final re-verification remains |
 | Workplan closeout | PENDING | WP-0.4 must remain IN_PROGRESS until the above gates are satisfied |
 
 ## 3. Material control observations
@@ -43,16 +43,15 @@ Check the WP-0.4 deliverable against the approved DC-01–DC-09 decisions, WP-0.
 
 ## 4. Required remaining actions
 
-1. Consolidate the adopted decisions and technical corrections into a final review candidate.
-2. Obtain and record an independent review of the exact candidate version, including scope, reviewer, date, findings, and disposition.
-3. Resolve review findings, if any, and freeze the exact candidate.
-4. Obtain LAEV's explicit approval of that exact version.
-5. Update document register and Workplan with the final evidence.
-6. Re-run the closeout audit and only then recommend WP-0.4 COMPLETED / ACCEPTED.
+1. Obtain and record an independent review of exact candidate v0.4.0, including scope, reviewer, date, findings, and disposition.
+2. Resolve review findings, if any, and freeze the exact candidate.
+3. Obtain LAEV's explicit approval of that exact version; then release v1.0.0 unless otherwise stated.
+4. Update document register and Workplan with final approval evidence.
+5. Re-run the closeout audit and only then recommend WP-0.4 COMPLETED / ACCEPTED.
 
 ## 5. Audit conclusion
 
-**WP-0.4 remains IN_PROGRESS.** The nine policy decisions have been approved by LAEV, but final policy approval and closeout evidence are not yet complete. This is a controlled pending state, not a rejection or a failure of the package.
+**WP-0.4 remains IN_PROGRESS.** The nine policy decisions have been approved by LAEV. Consolidated candidate v0.4.0 and register entries IDX-013 and IDX-038–IDX-040 are now recorded on the execution branch. Independent review and exact-version approval remain outstanding. This is a controlled pending state, not a rejection or a failure of the package.
 
 ---
 End of ERX-WP-0.4-CLOSEOUT-AUDIT-001

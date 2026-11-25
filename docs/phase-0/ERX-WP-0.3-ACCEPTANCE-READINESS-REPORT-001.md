@@ -13,29 +13,29 @@
 | Basis | Current Workplan, execution record, completion matrix, issue register, source-alignment review, hierarchy/authority proposals, decision package, and original PDFs available in this session |
 
 ## 1. Purpose
-This report determines whether WP-0.3 is ready to be formally submitted for LAEV acceptance. It is a readiness check, not the acceptance record. It does not approve hierarchy, subject authority, source interpretation, or downstream work packages.
+This report records the final readiness and acceptance disposition for WP-0.3, based on LAEV decision record v1.0.0 and synchronized closeout evidence.
 
 ## 2. Gate status
 **WP-0.3: COMPLETED / ACCEPTED — 2026-11-24.**
 
-The documentary evidence has materially advanced. Activities 0.3.1, 0.3.2 and 0.3.5 have prepared evidence. Activity 0.3.6 has a page-level source comparison and issue classifications, but material dispositions remain. Activities 0.3.3, 0.3.4, 0.3.7 and 0.3.8 require LAEV decisions/approval.
+Activities 0.3.1–0.3.8 are completed. Hierarchy and authority are approved; issues have closed dispositions or explicit bounded deferrals; both governance procedures are approved. WP-0.4/WP-0.5 dependency gates are released only as specified by the Workplan.
 
 WP-0.2 remains APPROVED. The Workplan itself remains DRAFT / PENDING APPROVAL. WP-0.4 and WP-0.5 remain blocked under the Workplan.
 
-## 3. Readiness matrix
+## 3. Final acceptance matrix
 
 | WP-0.3 activity | Evidence | Readiness | Remaining condition |
 |---|---|---|---|
 | 0.3.1 Document classification | ERX-DOCUMENT-HIERARCHY-MATRIX-001 | EVIDENCE PREPARED | LAEV confirms/revises classification within hierarchy decision |
 | 0.3.2 Source vs development artifacts | Hierarchy matrix and governance proposal | EVIDENCE PREPARED | LAEV disposition |
-| 0.3.3 Hierarchy | Hierarchy proposal, decision package DP-01 | NOT ACCEPTED | Express LAEV decision |
-| 0.3.4 Subject-matter authority | Authority matrix v0.3.0, DP-01/DP-04/DP-05 | NOT ACCEPTED | Express LAEV decision |
+| 0.3.3 Hierarchy | Hierarchy proposal, decision package DP-01 | ACCEPTED | DP-01 |
+| 0.3.4 Subject-matter authority | Authority matrix v0.3.0, DP-01/DP-04/DP-05 | ACCEPTED | DP-01 |
 | 0.3.5 Relationships/dependencies | Relationship map v0.3.0; Workplan dependency map | EVIDENCE PREPARED | Review and acceptance of bounded relationships |
-| 0.3.6 Contradictions/ambiguities | Source alignment v0.7.0; issue register v0.9.0; audit v0.7.0; consensus source inspection record v0.1.0 | ANALYSIS PREPARED; DISPOSITION OPEN | LAEV disposition of material issues; exact source-gap handling |
-| 0.3.7 Contradiction handling | Procedure v0.1.0 | DRAFT | LAEV approve/revise |
-| 0.3.8 Evolution/supersession | Policy v0.1.0 | DRAFT | LAEV approve/revise |
+| 0.3.6 Contradictions/ambiguities | Source alignment v0.7.0; issue register v0.9.0; audit v0.7.0; consensus source inspection record v0.1.0 | ACCEPTED WITH BOUNDED DEFERRALS | Decision record DP-01–DP-09; issue register v1.0.0 |
+| 0.3.7 Contradiction handling | Procedure v0.1.0 | APPROVED | v1.0.0 |
+| 0.3.8 Evolution/supersession | Policy v0.1.0 | APPROVED | v1.0.0 |
 
-## 4. Material residual gates
+## 4. Accepted residual matters and controls
 
 ### RG-01 — UTXO acceptance output (DOC-ISS-009 / DP-02)
 
@@ -80,7 +80,7 @@ LAEV disposition remains required for:
 - Atlas plate/text divergence handling;
 - whether the Technical Response remains a response/recommendation or has an approved amendment effect.
 
-## 5. Recommended acceptance path
+## 5. Closure determination
 
 1. LAEV records DP-01 through DP-09 decisions or explicitly defers selected items with scope, impact, mitigation, owner and target WP.
 2. Approve/revise the hierarchy and subject-matter authority matrices.

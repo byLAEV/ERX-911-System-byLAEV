@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.4.4 |
+| Version | 1.4.6 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `14f29ed7e49ac1f8a14808124c8235ddf79eb02d` (`truncated=false`, 73 live paths; immediately pre-index-refresh snapshot) |
+| Live tree snapshot | `0e36bcb2d54387deff76cb39161f96f703142d0e` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
 
 ## 1. Purpose and control boundary
 
@@ -30,7 +30,7 @@ A file's presence or a Git commit does not establish correctness, approval, or a
 3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
 4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
 5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; GitHub reported `truncated=false` and 71 repository files.
-6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 74 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 73 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.1; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 80 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.1; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
 
 ## 3. Foundational source baseline
 
@@ -47,7 +47,7 @@ ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED within the inspected supp
 
 ## 4. Phase 0 document and artifact coverage
 
-The verified live repository path inventory is the recursive tree snapshot recorded above, immediately before this index refresh (`truncated=false`, 73 files). The CSV includes 74 catalogue records: 73 live paths plus one NOT_LOCATED referenced source. All 73 live paths are represented exactly once; no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths or malformed CSV rows were detected. Catalogue IDs (IDX-xxx) remain separate from formal document IDs.
+The verified live repository path inventory is the recursive tree snapshot recorded above, immediately before this index refresh (`truncated=false`, 73 files). The CSV includes 80 catalogue records: 79 live paths plus one NOT_LOCATED referenced source. All 73 live paths are represented exactly once; no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths or malformed CSV rows were detected. Catalogue IDs (IDX-xxx) remain separate from formal document IDs.
 
 Current accepted package states:
 - WP-0.2: accepted under `ERX-WP-0.2-APPROVAL-RECORD-001`.
@@ -96,7 +96,7 @@ A relationship does not itself imply normative precedence. WP-0.3's subject-matt
 | ERX-CONSENSUS-001 v0.1 | Identity confirmed; proposal for review (DOC-ISS-011) | Do not label approved/operational; preserve unresolved quorum, validator, conflict and detailed UTXO rules |
 | FND-005 formal ID/version/date | NOT_STATED in supplied source | Preserve unknown values; catalogue separately |
 | Legacy WP-0.3 draft headers | Historical versions/statuses | Link to accepted decision and closeout records; do not rewrite historical artifacts |
-| ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0 | IN_PROGRESS | Second-pass typed relationship cross-check recorded; package closeout remains |
+| ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2 | IN_PROGRESS | Second-pass typed relationship cross-check recorded; package closeout remains |
 | Root LICENSE/COPYRIGHT | Not present in WP-0.5 verified tree; no license assigned | Do not infer a reuse grant |
 
 ## 8. Reconciliation controls and open work
@@ -119,7 +119,13 @@ The dependency gate is satisfied and execution is authorized under the existing 
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 
-WP-0.7 remains blocked until WP-0.6 is completed and accepted. Phase 0 remains OPEN; Phase 1 is NOT AUTHORIZED.
+WP-0.7 formally initiated after dependency release until WP-0.6 is completed and accepted. Phase 0 remains OPEN; Phase 1 is NOT AUTHORIZED.
 
 ---
 End of ERX-MASTER-DOCUMENT-INDEX-001
+
+## 10. WP-0.6 acceptance and WP-0.7 execution update
+
+WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.0](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.1, internal review v0.3.1, and synchronized CSV catalogue.
+
+WP-0.7 is now formally initiated under its previously approved scope. [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md) records dependency release; [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md) records direct inspection of the five accepted PDFs; [ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001 v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) documents the first 15 candidate requirements, still pending technical review and approval. The controlled requirements method is ERX-REQUIREMENTS-METHOD-001 v1.0.0.

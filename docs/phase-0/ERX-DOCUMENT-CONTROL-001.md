@@ -103,7 +103,7 @@ Examples: `1.0.0 → 2.0.0`; `1.0.0 → 1.1.0`; `1.0.0 → 1.0.1`.
 ### 5.2 Draft versions and release baseline
 
 - Working drafts use `0.x.y`.
-- The first formally approved baseline is `1.0.0), unless the approving decision explicitly records another starting point.
+- The first formally approved baseline is `1.0.0`, unless the approving decision explicitly records another starting point.
 - A new draft derived from an approved baseline increments the appropriate component and remains unapproved until expressly accepted.
 - A version increment does not itself indicate approval.
 - Version changes require a short rationale in the revision history/change record.
@@ -122,14 +122,12 @@ These statuses apply to documents, not work packages.
 | REJECTED | Reviewed and not accepted | Decision, rationale, and review evidence retained |
 | SUPERSEDED | Replaced within an expressly defined scope | Replacement ID/version and supersession decision required |
 | WITHDRAWN | Removed from current use without direct replacement | Authority, reason, effective date, and impact recorded |
-| ARCHIVED | Retained for reference/history; not represented as current | Archive location and provenance retained |
-| ARCHIVED | Historical copy retained and not represented as the current working copy | Archive location and provenance retained; prior lifecycle status preserved in history |
 
 Transition controls:
 - DRAFT → IN_REVIEW: author submits a specific immutable review candidate.
 - IN_REVIEW → APPROVED or REJECTED: competent authority records an explicit decision against that exact version.
 - APPROVED → SUPERSEDED or WITHDRAWN: requires a separate controlled decision; approval history is retained.
-- Any lifecycle status may acquire an archival-copy record; archiving does not replace or erase the document's lifecycle status.
+- Any lifecycle status may acquire an archival-copy record; archiving does not replace or erase the document's lifecycle status. Archive custody is a preservation attribute, not a lifecycle status.
 - Evidence verification is tracked separately from lifecycle status using values such as VERIFIED, NOT_VERIFIED, NOT_LOCATED, or NOT_ASSESSED. These values describe evidence, not approval or document lifecycle.
 - Revisions to an approved document create a new draft version; they do not mutate the approved baseline in place.
 

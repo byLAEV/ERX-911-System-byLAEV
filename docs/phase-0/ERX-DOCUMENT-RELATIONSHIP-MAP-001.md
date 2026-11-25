@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-RELATIONSHIP-MAP-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | WORKING EVIDENCE — PENDING REVIEW |
 | Work Package | WP-0.3 / Activity 0.3.5 |
 | Project | ERX-911-System-byLAEV |
@@ -31,7 +31,7 @@ Record relationships supported by direct source references and content inspectio
 | ERX-ROADMAP-001 v1.0 | ERX-PROT-001 v1.1 | Foundational reference | Roadmap Section 1 foundation | Does not mean Roadmap rewrites Protocol |
 | ERX-ROADMAP-001 v1.0 | ERX-ATLAS-001 v1.1 | Foundational reference | Roadmap Section 1 foundation | Atlas remains its own source |
 | ERX-ROADMAP-001 v1.0 | UTXO-911-001 v1.0 | Foundational reference | Roadmap Section 1 foundation | Functional relationship needs detailed alignment |
-| ERX-ROADMAP-001 v1.0 | ERX-CONSENSUS-001 v0.1 | Cited reference; text source identity confirmed, proposal for review | Roadmap citation; candidate `docs/Consenso ERX byLAEV.pdf` located after WP-0.2 approval | Candidate internal identity, version and contents not yet verified against the Roadmap reference |
+| ERX-ROADMAP-001 v1.0 | ERX-CONSENSUS-001 v0.1 | Cited coordination reference; source identity/content confirmed; proposal for review | Roadmap §1; text source `docs/Consenso ERX byLAEV`; PDF counterpart | Direct text-source comparison confirms ID/version and substantive framework; DOC-ISS-011 tracks operational completeness and authority |
 | ERX-ROADMAP-001 v1.0 | ERX-IMPL-PROPOSAL-001 | Unverified reference | Roadmap cites source | Content and provenance unavailable |
 | FND-005 Technical Response | ERX-ROADMAP-001 v1.0 | Response/review | Title and two-page content | Not an amendment without express approval evidence |
 | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1 | Graphical representation | Protocol three-transaction lifecycle; Atlas Plates 01–04 and 05–08 | Exact clause-to-plate verification remains bounded by the Atlas correspondence table |
@@ -70,7 +70,7 @@ The official Workplan dependency chain is:
 2. Detailed transitions, permissions, release and recovery conditions for the Roadmap's independent agent-availability cycle (DOC-ISS-010; architectural separation already source-confirmed).
 3. Normative force of each Atlas plate in the event of textual divergence.
 4. Formal effect, if any, of the Technical Response on Roadmap.
-5. Identity of the candidate consensus PDF and the still-unlocated implementation proposal.
+5. DOC-ISS-011 consensus proposal status/completeness; ERX-IMPL-PROPOSAL-001 remains not located (DOC-ISS-003).
 
 ## 7. Status
 **WORKING EVIDENCE — PENDING REVIEW.** This map supports WP-0.3.5 and the issue register. It does not approve a hierarchy, settle subject authority, or release downstream work packages.

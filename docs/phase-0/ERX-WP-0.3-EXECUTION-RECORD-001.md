@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-EXECUTION-RECORD-001 |
-| Version | 0.7.0 |
+| Version | 0.8.0 |
 | Status | IN_PROGRESS — EVIDENCE UPDATED; LAEV DECISIONS PENDING |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -36,7 +36,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 - ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0.
 - ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.
 - ERX-DOCUMENT-GOVERNANCE-001.
-- ERX-CONSENSUS-001 v0.1 text source directly inspected; ID/version/status/author confirmed against Roadmap citation; DOC-ISS-002 identity gap resolved; DOC-ISS-011 records operational completeness and authority requirements.
+- ERX-CONSENSUS-001 v0.1 text source directly inspected; ID/version/status/author confirmed against Roadmap citation; DOC-ISS-002 identity gap resolved. `ERX-CONSENSUS-SOURCE-INSPECTION-001.md` records section-by-section scope and deferrals; DOC-ISS-011 records operational completeness and authority requirements.
 - ERX-WP-0.3-AUDIT-REPORT-001 v0.7.0 — second-pass documentary consistency audit.
 - ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.3.0 — options and recommendations for outstanding LAEV decisions.
 

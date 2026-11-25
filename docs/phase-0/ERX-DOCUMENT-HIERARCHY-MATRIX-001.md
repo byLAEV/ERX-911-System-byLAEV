@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-HIERARCHY-MATRIX-001 |
-| Version | 0.2.0 |
-| Status | PROPOSAL — PENDING LAEV APPROVAL |
+| Version | 1.0.0 |
+| Status | APPROVED — WP-0.3 |
 | Work Package | WP-0.3 / Activities 0.3.1–0.3.3 |
 | Project | ERX-911-System-byLAEV |
 | Design and Approval Authority | LAEV |
@@ -54,7 +54,7 @@ This matrix consolidates the provisional document classification and presents a 
 - Consistent status and version references across Workplan, execution record and registers.
 
 ## 6. Current disposition
-**PROPOSED — NOT APPROVED.** Activities 0.3.1 and 0.3.2 have initial evidence in the WP-0.3 execution record. Activity 0.3.3 remains pending LAEV decision. This matrix does not authorize WP-0.4, WP-0.5 or Phase 1.
+**APPROVED — WP-0.3.** LAEV adopted the scoped hierarchy and classification in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0 (2026-11-24). This approval does not authorize Phase 1, implementation, or production operation.
 
 ---
 END

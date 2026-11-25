@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | DECISION PROPOSALS — PENDING LAEV REVIEW |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -73,7 +73,7 @@ The independence of the agent-availability cycle is already an explicit Roadmap 
 
 **Recommendation:** accept the two-cycle architecture as the Roadmap baseline. Carry detailed state-transition specification, edge cases and verification criteria into WP-0.7/WP-0.8 or the applicable later normative package. Do not collapse agent availability into UTXO 01–03 or permit an availability output to be reused.
 
-LAEV decision: PENDING — ACCEPT ROADMAP 3.1 / REVISE / DEFER DETAIL WITH TARGET WP.
+LAEV decision: PENDING — ACCEPT SOURCE-CONFIRMED SEPARATION / REVISE / ASSIGN DETAIL TO WP.
 
 ## 5. Atlas normative treatment
 
@@ -134,7 +134,7 @@ LAEV decision: PENDING — LOCATE / ACCEPT LIMITATION / DEFER.
 | DP-09 | Implementation proposal | Locate or formally accept limitation/deferment | PENDING |
 
 ## 9. Acceptance boundary
-These are proposed decisions, not approved decisions. No item becomes binding until LAEV records an express decision with date and rationale. A decision affecting source meaning must be implemented through controlled derivative documentation and synchronized registers. WP-0.3 remains IN_PROGRESS until its acceptance criteria are met.
+These are proposed decisions, not approved decisions. No item becomes binding until LAEV records an express decision with date and rationale. A decision affecting source meaning must be implemented through controlled derivative documentation and synchronized registers. DOC-ISS-010 may be dispositioned as source-alignment-confirmed with detailed specification assigned to a later package, provided LAEV accepts that scope and target. WP-0.3 remains IN_PROGRESS until its acceptance criteria are met.
 
 ---
 END

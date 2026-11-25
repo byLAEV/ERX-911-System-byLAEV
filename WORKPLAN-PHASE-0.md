@@ -244,7 +244,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Activities**
 - [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
-- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 45 source-derived candidate records across batches 001, 002 and 003; extraction continues.
+- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 56 source-derived candidate records across batches 001–004; extraction continues.
 - [ ] 0.7.3 Individually identify each requirement.
 - [ ] 0.7.4 Classify requirements.
 - [ ] 0.7.5 Identify mandatory requirements.

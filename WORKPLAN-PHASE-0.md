@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.3.3
+- **Version:** 1.3.4
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -223,7 +223,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Execution status:** IN_PROGRESS — formally initiated 2026-11-24; dependency gate satisfied.
 
 **Activities**
-- [ ] 0.6.1 General document register — 74 catalogue records, 16 columns, formal register ID ERX-DOCUMENT-REGISTER-001 v1.2.0; 73 live repository paths plus one NOT_LOCATED referenced source; structural checks pass.
+- [ ] 0.6.1 General document register — 74 catalogue records, 16 columns, formal register ID ERX-DOCUMENT-REGISTER-001 v1.2.1; 73 live repository paths plus one NOT_LOCATED referenced source; structural checks pass.
 - [ ] 0.6.2 Identify foundational documents — accepted five-PDF baseline, ERX-CONSENSUS-001 proposal and ERX-IMPL-PROPOSAL-001 limitation explicitly recorded; derivative/provenance checks remain.
 - [ ] 0.6.3 Identify development documents — 73/73 current live paths represented in the CSV at the recorded baseline tree snapshot; final path check after remaining writes required.
 - [ ] 0.6.4 Record versions — known source-native versions retained; 74 catalogue rows semantically cross-checked against available source/header and controlling-record evidence; source-native unknowns remain NOT_STATED/NOT_VERIFIED where evidence does not support a value.
@@ -235,11 +235,11 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Execution deliverables and evidence:**
 - [`ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0`](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) — RECORDED — EXECUTION INITIATED.
-- [`ERX-MASTER-DOCUMENT-INDEX-001 v1.3.3`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
+- [`ERX-MASTER-DOCUMENT-INDEX-001 v1.3.4`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
 - [`registers/document-register.csv`](registers/document-register.csv) — ERX-DOCUMENT-REGISTER-001 v1.2.0; 74 catalogue records, 16 columns; 73 live paths plus one NOT_LOCATED referenced source; baseline structural checks found no duplicate catalogue IDs/paths, missing live paths or stale paths.
 - [`ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0`](docs/phase-0/ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md) — IN_PROGRESS — internal review pending.
 - [`ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.0`](docs/phase-0/ERX-WP-0.6-INTERNAL-REVIEW-001.md) — FINDINGS RECORDED — NOT READY FOR ACCEPTANCE.
-- [`ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.0`](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) — IN_PROGRESS.
+- [`ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.1`](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) — IN_PROGRESS.
 
 **Acceptance:** all documents identified and created during Phase 0 appear with consistent IDs, versions, classifications, statuses, and references. This criterion remains NOT YET SATISFIED until the final post-write tree snapshot, formal-ID uniqueness verification, synchronized index/CSV/matrix/Workplan check, readiness report and closeout audit are complete.
 **Dependencies:** WP-0.2 through WP-0.5 — SATISFIED. WP-0.6 execution is authorized under the existing scope approval. WP-0.7 remains blocked until WP-0.6 is completed and accepted.

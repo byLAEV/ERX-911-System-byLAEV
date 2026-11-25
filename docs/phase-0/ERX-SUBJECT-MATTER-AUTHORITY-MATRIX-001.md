@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | PROPOSAL — PENDING LAEV APPROVAL |
 | Work Package | WP-0.3 / Activity 0.3.4 |
 | Project | ERX-911-System-byLAEV |
@@ -29,7 +29,7 @@ This matrix identifies the source most directly relevant to each subject, the co
 | Exception handling, continuity and verification | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1 | Protocol Sections 14–16; Atlas Plates 07–08 | Text and diagrams must be mapped at clause/plate level; no silent diagram override |
 | Project phase sequence, dependencies, deliverables and acceptance gates | ERX-ROADMAP-001 v1.0 | Technical Response FND-005 | Roadmap full 37-page source; response pages 1–2 | Roadmap is the planning source; response remains a response/recommendation absent explicit amendment approval |
 | Project scope, authorization and approval | Approved Phase 0 Charter and express LAEV decisions | Workplan and approval records | Charter and Workplan repository records | Governance authority within the exact scope approved by LAEV; Workplan itself remains DRAFT / PENDING APPROVAL |
-| Consensus architecture | ERX-CONSENSUS-001 v0.1 cited; candidate `docs/Consenso ERX byLAEV.pdf` located, identity unverified | Roadmap; candidate PDF pending inspection | Roadmap citation and candidate filename only; no internal identity/content verification yet | No substantive authority or content can be inferred until candidate identity and contents are verified or an explicit alternative is approved |
+| Consensus architecture | ERX-CONSENSUS-001 v0.1 identity/content confirmed; source is a proposal for review | Roadmap §1; text source `docs/Consenso ERX byLAEV`; source inspection record | Direct title/control and substantive text inspected; Roadmap identity confirmed. Source explicitly defers operational quorum, validator rules, conflict handling and consensus UTXO/JSON specifications | Source is the identified consensus proposal/reference. LAEV must approve/revise its authority/status and assign completion criteria under DOC-ISS-011 before multi-institutional implementation |
 | Institutional implementation proposal | ERX-IMPL-PROPOSAL-001 cited, not located | Roadmap | Roadmap reference only | No substantive authority or content can be inferred until the source is located or an explicit alternative is approved |
 
 ## 3. Specific alignment finding: communication acceptance output and independent agent availability

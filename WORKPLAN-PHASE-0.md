@@ -236,7 +236,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Execution deliverables and evidence:**
 - [`ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0`](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) — RECORDED — EXECUTION INITIATED.
 - [`ERX-MASTER-DOCUMENT-INDEX-001 v1.1.0`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
-- [`registers/document-register.csv`](registers/document-register.csv) — 68 catalogue records intended; 26 added path records explicitly marked METADATA_RECONCILIATION_PENDING; current row count/consistency check remains part of execution.
+- [`registers/document-register.csv`](registers/document-register.csv) — 72 catalogue records: 71 live repository paths plus one NOT_LOCATED referenced source record; 25 records remain METADATA_RECONCILIATION_PENDING. Duplicate catalogue IDs and live paths were not detected in the latest check.
 - [`ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.1.0`](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) — IN_PROGRESS.
 
 **Acceptance:** all documents identified and created during Phase 0 appear with consistent IDs, versions, classifications, statuses, and references. This criterion is NOT YET SATISFIED; initial path coverage is not equivalent to metadata reconciliation.

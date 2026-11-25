@@ -44,10 +44,10 @@ Check the WP-0.4 deliverable against the approved DC-01–DC-09 decisions, WP-0.
 
 ## 4. Required remaining actions
 
-1. Re-verify synchronization of the current candidate, decision record, internal review, execution record, Workplan, and register.
-2. Obtain LAEV's explicit approval of exact candidate v0.4.2; then release v1.0.0 unless otherwise stated.
-3. Record the exact approval evidence, update the register, and re-run the closeout audit.
-4. Recommend WP-0.4 COMPLETED / ACCEPTED only after LAEV exact-version approval. Independent external review/audit is deferred until after planned project work.
+1. Record exact-version LAEV approval and release the approved baseline v1.0.0. — COMPLETED.
+2. Synchronize approval, execution, Workplan, and register evidence. — COMPLETED.
+3. Re-run closeout audit against the released baseline. — COMPLETED.
+4. Record WP-0.4 as COMPLETED / ACCEPTED. — COMPLETED. Independent external review/audit remains deferred until after planned project work.
 
 ## 5. Audit conclusion
 

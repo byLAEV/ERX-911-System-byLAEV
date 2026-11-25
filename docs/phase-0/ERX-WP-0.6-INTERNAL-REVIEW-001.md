@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.3.1 |
-| Status | COMPLETED — ACCEPTANCE EVIDENCE REVIEWED |
+| Version | 0.3.2 |
+| Status | COMPLETED — FINAL SYNCHRONIZATION REVIEW |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
 | Date | 2026-11-24 |
@@ -100,14 +100,14 @@ No classification change or source amendment was necessary to pass this consiste
 ### 2.8 Synchronization state
 
 The following controlled documents now reflect the final WP-0.6 closeout evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.5.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.4.6.
 - ERX-DOCUMENT-REGISTER-001 v1.2.1 (CSV companion).
-- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.1.
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.2.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.2.
-- WORKPLAN-PHASE-0.md v1.4.4.
-- This review v0.3.1.
+- WORKPLAN-PHASE-0.md v1.4.5.
+- This review v0.3.2.
 
-The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA verified in this review was `8e739a344d72cd15b7e702a9ea719de228054735`; the index baseline SHA remains a historical pre-refresh snapshot by design.
+The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA verified in this review was updated after final WP-0.7 initiation and source-extraction catalogue synchronization; the index baseline SHA remains a historical pre-refresh snapshot by design.
 
 ## 3. Findings
 
@@ -123,7 +123,7 @@ The Master Index records the immediately pre-index-refresh baseline tree. A sepa
 
 ## 4. Closeout disposition
 
-The readiness report v1.0.0 and closeout audit v1.0.0 were completed. LAEV's standing conditional acceptance was applied in ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.0 after the nine activities and Workplan criterion were verified. WP-0.6 is COMPLETED / ACCEPTED; WP-0.7 dependency gate is released. No implementation or Phase 1 authorization is implied.
+The readiness report v1.0.0 and closeout audit v1.0.0 were completed. LAEV's standing conditional acceptance was applied in ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.0 after the nine activities and Workplan criterion were verified. WP-0.6 is COMPLETED / ACCEPTED; WP-0.7 dependency gate is released and formal WP-0.7 execution has begun under ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0. No implementation or Phase 1 authorization is implied.
 
 ## 5. Review conclusion
 

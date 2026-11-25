@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 |
-| Version | 0.4.0 |
+| Version | 0.5.0 |
 | Status | PREPARATORY REVIEW — NOT SUBMITTED FOR APPROVAL |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -29,9 +29,9 @@ WP-0.2 remains APPROVED. The Workplan itself remains DRAFT / PENDING APPROVAL. W
 | 0.3.1 Document classification | ERX-DOCUMENT-HIERARCHY-MATRIX-001 | EVIDENCE PREPARED | LAEV confirms/revises classification within hierarchy decision |
 | 0.3.2 Source vs development artifacts | Hierarchy matrix and governance proposal | EVIDENCE PREPARED | LAEV disposition |
 | 0.3.3 Hierarchy | Hierarchy proposal, decision package DP-01 | NOT ACCEPTED | Express LAEV decision |
-| 0.3.4 Subject-matter authority | Authority matrix v0.2.0, DP-01/DP-04/DP-05 | NOT ACCEPTED | Express LAEV decision |
-| 0.3.5 Relationships/dependencies | Relationship map v0.2.0; Workplan dependency map | EVIDENCE PREPARED | Review and acceptance of bounded relationships |
-| 0.3.6 Contradictions/ambiguities | Source alignment v0.5.0; issue register v0.8.0; audit updated; consensus source identity/content reviewed | ANALYSIS PREPARED; DISPOSITION OPEN | LAEV disposition of material issues; exact source-gap handling |
+| 0.3.4 Subject-matter authority | Authority matrix v0.3.0, DP-01/DP-04/DP-05 | NOT ACCEPTED | Express LAEV decision |
+| 0.3.5 Relationships/dependencies | Relationship map v0.3.0; Workplan dependency map | EVIDENCE PREPARED | Review and acceptance of bounded relationships |
+| 0.3.6 Contradictions/ambiguities | Source alignment v0.7.0; issue register v0.9.0; audit v0.7.0; consensus source inspection record v0.1.0 | ANALYSIS PREPARED; DISPOSITION OPEN | LAEV disposition of material issues; exact source-gap handling |
 | 0.3.7 Contradiction handling | Procedure v0.1.0 | DRAFT | LAEV approve/revise |
 | 0.3.8 Evolution/supersession | Policy v0.1.0 | DRAFT | LAEV approve/revise |
 

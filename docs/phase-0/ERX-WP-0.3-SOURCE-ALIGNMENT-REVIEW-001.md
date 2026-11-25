@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 |
-| Version | 0.4.0 |
+| Version | 0.5.0 |
 | Status | TECHNICAL REVIEW — PENDING LAEV DISPOSITION |
 | Work Package | WP-0.3 / Activity 0.3.6 |
 | Sources | FND-001, FND-002, FND-003, FND-004, FND-005 |
@@ -16,11 +16,11 @@ The five supplied PDFs were inspected directly. Findings below cite document sec
 
 ## 2. Findings
 
-### F-00 — Supplemental consensus-named PDF repository presence
-- Evidence: GitHub repository `main` contains `docs/Consenso ERX byLAEV.pdf`; file size 157,848 bytes; Git Blob SHA-1 `c2f965c9bf455506571ac4c1635b4fb47af34216`.
-- Boundary: this verifies repository path and object identity, but the PDF binary was not readable through the current text-only connector and was not available as a mounted local PDF for extraction. Its internal title/identifier/version/date, authorship/provenance and content have not been directly inspected.
-- Assessment: do not mark the source as missing. Do not equate it to Roadmap-cited ERX-CONSENSUS-001 v0.1 until internal metadata/content are compared.
-- Disposition: DOC-ISS-002 remains OPEN for identity/content inspection and LAEV disposition; the repository-existence component is evidence-confirmed.
+### F-00 — Consensus source identity and repository evidence (DOC-ISS-002)
+- Primary text source: `docs/Consenso ERX byLAEV`, 15,237 bytes, Git Blob SHA-1 `64154f504b0a1ac48f76a438cf60f368e062eab6`.
+- The source control block directly states: Document ID `ERX-CONSENSUS-001`; version `0.1 — Propuesta normativa`; status `Documento de diseño para revisión`; authorship `LAEV / byLAEV`; scope ERX 911 communication and emergency record system.
+- Roadmap §1 cites `ERX-CONSENSUS-001 v0.1` as a coordination reference; identity is therefore confirmed by the actual text, not inferred from filename. The PDF counterpart is also present in `docs/`.
+- Disposition: close DOC-ISS-002 identity-verification component. Keep source lifecycle/status distinct: proposal for review is not evidence of express approval.
 
 
 

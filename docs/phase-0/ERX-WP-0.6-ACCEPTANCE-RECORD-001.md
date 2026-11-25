@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-ACCEPTANCE-RECORD-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | RECORDED — COMPLETED / ACCEPTED |
 | Work Package | WP-0.6 — Master Index and Document Register |
 | Decision authority | LAEV |
@@ -18,7 +18,7 @@
 
 LAEV's standing instruction is to automatically accept each in-scope deliverable when it is complete, correct, and supported by verifiable evidence, without repeated approval requests. This record applies that already-authorized conditional acceptance rule to WP-0.6 after the nine activities and the Workplan acceptance criterion were verified.
 
-This record does not invent a new approval or repeat scope approval. Scope authorization and execution initiation were previously recorded in ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0.
+This record does not invent a new approval or repeat scope approval. Its version 1.0.1 revision synchronizes the accepted catalogue and post-acceptance WP-0.7 execution state. Scope authorization and execution initiation were previously recorded in ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0.
 
 ## 2. Acceptance decision
 
@@ -26,8 +26,8 @@ This record does not invent a new approval or repeat scope approval. Scope autho
 
 Basis:
 - Nine activities completed and evidenced in ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.5.0.
-- 74 catalogue records at the semantic review baseline; two newly published closeout artifacts added as IDX-078 and IDX-079, bringing the current catalogue to 76 records before this acceptance record is catalogued.
-- The current CSV has 16 columns; the repository inventory is non-truncated and the live paths are represented exactly once, with the single DOC-ISS-003 NOT_LOCATED source retained as a reference-only catalogue record.
+- 74 catalogue records were semantically reviewed at the baseline. Readiness, closeout, acceptance and WP-0.7 initiation/source-inspection/extraction evidence were then catalogued; the synchronized register now contains 80 records and 16 columns.
+- The final CSV has 16 columns; the latest recursive repository tree is non-truncated and its 79 live paths are each represented once, with the single DOC-ISS-003 NOT_LOCATED source retained as a reference-only catalogue record.
 - No duplicate catalogue IDs or paths, no missing live paths, no stale paths, and no malformed row widths were found in the structural verification.
 - Formal source-ID namespace check passed with explicitly documented original/derivative reuse and NOT_STATED exceptions.
 - Classification-to-hierarchy check passed against the approved WP-0.3 hierarchy/authority framework and WP-0.4 document-control policy.
@@ -50,12 +50,7 @@ WP-0.6 is now COMPLETED / ACCEPTED. The Workplan dependency gate for WP-0.7 is s
 
 ## 5. Repository evidence snapshot
 
-Immediately before publishing this acceptance record, GitHub's recursive tree for `main` returned:
-- Tree SHA: `a4d628d70f001150121aefa64ddb92163ffc6706`
-- `truncated=false`
-- 75 live repository paths.
-
-This is a pre-acceptance-record snapshot. The tree necessarily changes when this record and subsequent synchronized control documents are committed; the final post-acceptance tree is recorded in the subsequent synchronization audit. No self-referential tree hash is claimed.
+The index records the recursive tree immediately before its own refresh. A post-synchronization recursive tree was independently checked after cataloguing the WP-0.7 initiation, source-inspection and extraction records: 79 live paths, `truncated=false`; the CSV has 80 catalogue records (79 PRESENT plus one NOT_LOCATED reference). Tree SHA immediately before the final index refresh: `7766049b630301db68f01cb6ef37e53997737af9`. The index commit changes the tree; this snapshot timing is explicit and non-self-referential.
 
 ---
 End of ERX-WP-0.6-ACCEPTANCE-RECORD-001

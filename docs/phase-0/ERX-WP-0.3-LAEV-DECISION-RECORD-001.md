@@ -10,8 +10,8 @@
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Decision authority | LAEV |
 | Decision date | 2026-11-24 |
-| Evidence | LAEV instruction: “Corregir las inconsistencias, completar las evidencias y cerrar w0-0.3”, preceded by authorization to proceed with necessary closure actions. |
-| Decision basis | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.4.0; source originals; WP-0.3 registers and reviews. |
+| Evidence | LAEV's explicit instruction to continue auditing Phase 0, correct errors and advance within Phase 0; prior recorded authorization to correct inconsistencies, complete evidence and close WP-0.3. The substantive DP-01–DP-09 dispositions are the controlled technical record; this document does not infer approval of unrelated implementation work. |
+| Decision basis | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.5.0; source originals; WP-0.3 registers and reviews. |
 
 ## 1. Authority and scope
 LAEV authorized completion of WP-0.3, including correction of documentary inconsistencies, completion of evidence, and closure. This record formalizes the technical dispositions below within WP-0.3. It does not approve operational implementation, production deployment, institutional use, Phase 1, or any unverified external source. It does not claim an independent external audit.

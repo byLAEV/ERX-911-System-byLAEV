@@ -26,8 +26,8 @@ This report records the final acceptance-readiness disposition after LAEV author
 | Disposition for each DOC-ISS-001–011 | Decision record DP-01–DP-09 and synchronized CSV | SATISFIED — including bounded deferrals |
 | Contradiction/ambiguity handling | Approved procedure v1.0.0 | SATISFIED |
 | Evolution/amendment/supersession | Approved policy v1.0.0 | SATISFIED |
-| Execution and deliverable evidence | Execution record and completion matrix v1.0.0 | SATISFIED |
-| Audit and acceptance record | Final internal audit v1.0.0 and this report | SATISFIED |
+| Execution and deliverable evidence | Execution record v1.0.1 and completion matrix v1.0.1 | SATISFIED |
+| Audit and acceptance record | Final internal audit v1.0.2 and this report | SATISFIED |
 
 ## 3. Accepted residual matters — not hidden or treated as resolved
 1. DOC-ISS-003 / ERX-IMPL-PROPOSAL-001 remains NOT LOCATED / UNVERIFIED in the inspected source baseline and repository. This limitation is accepted for WP-0.3 only. No content is inferred. Revisit if it materially affects requirements or institutional implementation.

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.7 |
+| Version | 1.5.8 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -160,3 +160,8 @@ The controlled requirements register now contains 56 source-derived candidate re
 - [ERX-WP-0.7-NORMATIVE-DISPOSITION-REVIEW-001 v0.1.0](ERX-WP-0.7-NORMATIVE-DISPOSITION-REVIEW-001.md) records source-based working dispositions for all 56 candidates: 49 MANDATORY, 4 DESIGN, 2 CONDITIONAL_MANDATORY and 1 PENDING_SPECIFICATION. These labels do not constitute approval of the requirements baseline.
 - [ERX-WP-0.7-OPEN-DECISION-CANDIDATES-001 v0.1.0](ERX-WP-0.7-OPEN-DECISION-CANDIDATES-001.md) identifies 10 preliminary decision topics, none adopted. They may be transferred into WP-0.8 only after its formal initiation.
 - The traceability CSV schema is 23 columns and retains all 56 lifecycle states as EXTRACTED — REVIEW PENDING; no phase assignment has been made.
+
+
+## 17. WP-0.7 source locator bounds audit — 2026-11-25
+
+[ERX-WP-0.7-SOURCE-LOCATOR-BOUNDS-AUDIT-001 v0.1.0](ERX-WP-0.7-SOURCE-LOCATOR-BOUNDS-AUDIT-001.md) checks all 56 candidate locators against the physical page counts of their mapped inspected PDFs. All 56 page references fall within the mapped PDF bounds. This is only a page-bounds check; exact clause, section, diagram and normative support verification remains open. No requirement status or approval was changed.

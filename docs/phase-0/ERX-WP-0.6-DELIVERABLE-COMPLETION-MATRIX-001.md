@@ -40,7 +40,11 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 - No rows remain in METADATA_RECONCILIATION_PENDING. Source-native unknowns remain NOT_STATED/NOT_VERIFIED where evidence does not support a value. README contradiction is being corrected. Historical snapshots remain preserved and are not silently promoted.
 - The current CSV and index must be rechecked after every subsequent commit because the live tree changes.
 
-## 4. Open work and acceptance gates
+## 4. Internal review and acceptance gates
+
+Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.1.0](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
+
+## 5. Open work and acceptance gates
 
 1. Re-snapshot live tree after the relationship register and README correction; reconcile every path with one catalogue entry and no stale entries.
 2. Verify unique source-native IDs and preserve catalogue IDs as separate fields.
@@ -51,7 +55,7 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 7. Conduct internal consistency review and produce readiness report and closeout audit.
 8. Record automatic conditional acceptance only if all nine activities and the Workplan criterion pass; otherwise keep WP-0.6 IN_PROGRESS with explicit findings.
 
-## 5. Conditional acceptance rule
+## 6. Conditional acceptance rule
 
 LAEV's standing instruction applies to each in-scope deliverable only when complete, correct and supported by verifiable evidence. Scope approval and execution authorization do not constitute acceptance. No repeated approval of WP-0.6 scope is required.
 

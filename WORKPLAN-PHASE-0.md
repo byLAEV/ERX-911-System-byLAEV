@@ -220,22 +220,27 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 ### WP-0.6 — Master Index and Document Register
 **Approval status:** APPROVED — LAEV, 2026-11-24
-**Execution status:** BLOCKED — provisional preparatory draft only; execution awaits WP-0.5 and the stated dependencies.
+**Execution status:** IN_PROGRESS — formally initiated 2026-11-24; dependency gate satisfied.
 
 **Activities**
-- [ ] 0.6.1 General document register.
-- [ ] 0.6.2 Identify foundational documents.
-- [ ] 0.6.3 Identify development documents.
-- [ ] 0.6.4 Record versions.
-- [ ] 0.6.5 Classify documents.
-- [ ] 0.6.6 Record each document's status.
-- [ ] 0.6.7 Record relationships between documents.
-- [ ] 0.6.8 Identify pending documents.
-- [ ] 0.6.9 Consolidate the master index.
+- [ ] 0.6.1 General document register — initial CSV baseline updated; metadata reconciliation remains.
+- [ ] 0.6.2 Identify foundational documents — five-source baseline and referenced consensus/missing source statuses carried forward; cross-reference validation remains.
+- [ ] 0.6.3 Identify development documents — live tree inventory extended into the CSV; exact metadata review remains.
+- [ ] 0.6.4 Record versions — known source-native versions retained; newly inventoried rows marked NOT_VERIFIED pending direct inspection.
+- [ ] 0.6.5 Classify documents — existing classifications retained; new broad classes are provisional pending exact-header reconciliation.
+- [ ] 0.6.6 Record each document's status — WP-0.2 through WP-0.5 acceptance records linked; newly inventoried metadata remains pending.
+- [ ] 0.6.7 Record relationships between documents — initial source relationships retained; typed cross-reference reconciliation remains.
+- [ ] 0.6.8 Identify pending documents — DOC-ISS-003, DOC-ISS-011 and metadata-pending records explicitly retained.
+- [ ] 0.6.9 Consolidate the master index — v1.1.0 and CSV updated as an intermediate baseline; final reconciliation and internal review remain.
 
-**Preparatory deliverables:** [`registers/document-register.csv`](registers/document-register.csv) and [`docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md), both provisional and NOT APPROVED. 
-**Acceptance:** all documents identified and created during Phase 0 appear with consistent IDs, versions, classifications, statuses, and references.  
-**Dependencies:** WP-0.2 through WP-0.5. Formal WP-0.6 acceptance remains blocked until these dependencies are completed and accepted; this provisional index does not satisfy the gate.
+**Execution deliverables and evidence:**
+- [`ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0`](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) — RECORDED — EXECUTION INITIATED.
+- [`ERX-MASTER-DOCUMENT-INDEX-001 v1.1.0`](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) — IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT.
+- [`registers/document-register.csv`](registers/document-register.csv) — 68 catalogue records intended; 26 added path records explicitly marked METADATA_RECONCILIATION_PENDING; current row count/consistency check remains part of execution.
+- [`ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.1.0`](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) — IN_PROGRESS.
+
+**Acceptance:** all documents identified and created during Phase 0 appear with consistent IDs, versions, classifications, statuses, and references. This criterion is NOT YET SATISFIED; initial path coverage is not equivalent to metadata reconciliation.
+**Dependencies:** WP-0.2 through WP-0.5 — SATISFIED. WP-0.6 execution is authorized under the existing scope approval. WP-0.7 remains blocked until WP-0.6 is completed and accepted.
 
 ### WP-0.7 — Requirements Identification and Classification
 **Approval status:** APPROVED — LAEV, 2026-11-24
@@ -393,7 +398,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 | WP-0.3 | Document Hierarchy | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Decision record v1.0.0](docs/phase-0/ERX-WP-0.3-LAEV-DECISION-RECORD-001.md) · [Completion matrix v1.0.2](docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md) · [Execution record v1.0.1](docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md) · [Acceptance readiness v1.0.0](docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md) · [Final internal audit v1.0.3](docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md) · [Issue register](docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md) · [CSV](registers/document-issue-register.csv) | DP-01–DP-09 recorded; DOC-ISS-001–011 dispositioned; DOC-ISS-003 bounded limitation; DOC-ISS-010/011 deferred; ERX-CONSENSUS-001 remains proposal; no external audit or operational approval claimed. |
 | WP-0.4 | Document Control | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Approved baseline](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) · [Approval record](docs/phase-0/ERX-WP-0.4-APPROVAL-RECORD-001.md) · [Closeout audit](docs/phase-0/ERX-WP-0.4-CLOSEOUT-AUDIT-001.md) | WP-0.4 has its own approval/closeout record; WP-0.3 is now accepted. External independent review remains deferred under WP-0.4's approved record, not represented as performed. |
 | WP-0.5 | ERX Repository | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Governance v1.0.0](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) · [Tree inventory](docs/phase-0/ERX-WP-0.5-REPOSITORY-TREE-INVENTORY-001.md) · [Acceptance readiness](docs/phase-0/ERX-WP-0.5-ACCEPTANCE-READINESS-REPORT-001.md) · [Closeout audit](docs/phase-0/ERX-WP-0.5-CLOSEOUT-AUDIT-001.md) · [Acceptance record](docs/phase-0/ERX-WP-0.5-ACCEPTANCE-RECORD-001.md) · [Access matrix](docs/phase-0/ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001.md) · [Evidence register](registers/repository-governance-evidence.csv) | All ten documentary activities accepted. Residual limitations remain explicit: full access roster NOT_VERIFIED; main unprotected; no license assigned; independent backup/restore and reviewer not verified/assigned. WP-0.6 dependency gate SATISFIED. No Phase 1 authorization. |
-| WP-0.6 | Master Index | APPROVED — execution NOT_STARTED; dependencies SATISFIED | To be assigned | [Provisional index](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [CSV register](registers/document-register.csv) · WP-0.5 acceptance record | Preparatory draft only; WP-0.2 through WP-0.5 dependencies are now accepted. Formal WP-0.6 initiation and execution record required before work begins. |
+| WP-0.6 | Master Index | APPROVED — execution IN_PROGRESS; dependencies SATISFIED | LAEV / project drafting | [Initiation](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) · [Master index v1.1.0](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [Completion matrix v0.1.0](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) · [CSV register](registers/document-register.csv) | Formal initiation recorded. Initial live-tree path coverage added; 26 records await exact metadata reconciliation. No WP-0.6 acceptance yet. WP-0.7 remains blocked. |
 | WP-0.7 | Requirements | APPROVED — execution BLOCKED pending dependencies | To be assigned | [Preparatory method](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) · [Traceability schema](registers/requirements-traceability.csv) | No substantive extracted requirements yet; depends on WP-0.3 and WP-0.6 acceptance. |
 | WP-0.8 | ADR Decisions | APPROVED — execution NOT_STARTED | LAEV / to be assigned | — | — |
 | WP-0.9 | Risks and Dependencies | APPROVED — execution NOT_STARTED | To be assigned | — | — |

@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.4.7 |
+| Version | 0.4.8 |
 | Status | IN_PROGRESS — SECOND-PASS RECONCILIATION |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -24,11 +24,11 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 | 0.6.2 Identify foundational documents | Five accepted originals and supplemental consensus source identified; implementation proposal bounded as missing | FND-001–FND-005; ERX-CONSENSUS-001 source identity confirmed; ERX-IMPL-PROPOSAL-001 NOT LOCATED (DOC-ISS-003) | IN_PROGRESS — provenance baseline verified; remaining missing-source limitation explicitly retained |
 | 0.6.3 Identify development documents | All Phase 0 development and governance artifacts included | Post-index read-only recursive tree verification; 73/73 live paths mapped; one additional NOT_LOCATED source retained | STRUCTURAL CHECK PASS — post-write tree verification confirms 73 live paths and 73/73 coverage |
 | 0.6.4 Record versions | Source-native/current document versions correctly recorded | 74 records checked against source-native headers and control records; unknown versions retained NOT_STATED; formal IDs distinguished from catalogue IDs | IN_PROGRESS — semantic cross-check completed; final independent ID namespace validation remains |
-| 0.6.5 Classify documents | Classifications consistent with WP-0.3 hierarchy and WP-0.4 control | 74 entries classified by source/artifact function, including source derivatives and machine-readable registers; repeated source IDs correctly distinguish original/derivative | IN_PROGRESS — final class-to-hierarchy review remains |
+| 0.6.5 Classify documents | Classifications consistent with WP-0.3 hierarchy and WP-0.4 control | 74 entries classified by source/artifact function, including source derivatives and machine-readable registers; repeated source IDs correctly distinguish original/derivative | IN_PROGRESS — final class-to-hierarchy check remains |
 | 0.6.6 Record each document's status | Lifecycle, acceptance, archival and evidence states distinguished | Source-declared status preserved verbatim; lifecycle status conservatively mapped; evidence, custody and presence independently recorded; historical headers unchanged | IN_PROGRESS — package acceptance and document lifecycle remain distinct |
 | 0.6.7 Record relationships | Source-backed typed relationships and dependency links | Approved WP-0.3 map preserved; typed supplement v0.2.0 cross-checked against DP/DC/issue decisions and Workplan dependency chain | IN_PROGRESS — relationship baseline reviewed; final closeout review remains |
 | 0.6.8 Identify pending documents | Missing, unverified, proposal and deferred items explicitly recorded | DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011, FND-005 NOT_STATED metadata, unassigned IDs/versions and historical drafts retained without inference | IN_PROGRESS — limitations explicitly represented |
-| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.4.3; ERX-DOCUMENT-REGISTER-001 v1.2.1; CSV 74 records/16 columns; tree 73 live paths; 73/73 mapped plus one NOT_LOCATED source; links checked | IN_PROGRESS — formal-ID namespace uniqueness, readiness and closeout remain |
+| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.4.4; ERX-DOCUMENT-REGISTER-001 v1.2.1; CSV 74 records/16 columns; tree 73 live paths; 73/73 mapped plus one NOT_LOCATED source; links checked | IN_PROGRESS — formal-ID uniqueness, final class-to-hierarchy check, readiness and closeout remain |
 
 ## 3. Second-pass semantic and structural validation
 
@@ -47,7 +47,7 @@ The explicit Markdown hyperlinks in WORKPLAN-PHASE-0.md, ERX-MASTER-DOCUMENT-IND
 
 ## 5. Internal review and acceptance gates
 
-Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.7](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / SECOND-PASS FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
+Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.8](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / SECOND-PASS FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
 
 ## 6. Open work and acceptance gates
 

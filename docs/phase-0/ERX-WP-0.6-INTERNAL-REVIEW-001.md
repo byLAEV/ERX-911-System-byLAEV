@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.3.2 |
+| Version | 0.3.3 |
 | Status | COMPLETED — FINAL SYNCHRONIZATION REVIEW |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -15,7 +15,7 @@
 
 ## 1. Scope and limits
 
-This second-pass review checks the 74 catalogue records, the 73 live repository paths, source-native metadata available from the source documents and controlling records, the WP-0.6 relationship supplement, explicit Markdown hyperlinks in the principal control documents, and synchronization among the master index, CSV, completion matrix and Workplan.
+This review preserves the original second-pass baseline and adds a post-acceptance synchronization check covering the current 80 catalogue records and 79 live repository paths; the original semantic review covered 74 baseline catalogue records and 73 paths, source-native metadata available from the source documents and controlling records, the WP-0.6 relationship supplement, explicit Markdown hyperlinks in the principal control documents, and synchronization among the master index, CSV, completion matrix and Workplan.
 
 This is an internal documentary review. It is not an independent external audit, legal opinion, security audit, implementation test, or revalidation of the five original PDF binaries. The accepted WP-0.2 completion dossier remains the controlling evidence for their SHA-256 and Git blob identity checks. The review does not infer metadata absent from a source.
 
@@ -107,7 +107,7 @@ The following controlled documents now reflect the final WP-0.6 closeout evidenc
 - WORKPLAN-PHASE-0.md v1.4.5.
 - This review v0.3.2.
 
-The Master Index records the immediately pre-index-refresh baseline tree. A separate post-index read-only verification was then performed against the current main tree; it confirmed 73 live paths, 74 CSV records, 16 columns, 73/73 path coverage, no duplicate catalogue IDs or paths, no stale or missing paths, and one explicitly NOT_LOCATED source. The post-index tree SHA verified in this review was updated after final WP-0.7 initiation and source-extraction catalogue synchronization; the index baseline SHA remains a historical pre-refresh snapshot by design.
+POST-ACCEPTANCE SYNCHRONIZATION CHECK (2026-11-25): the live recursive Git tree was queried after WP-0.7 initiation and register updates. GitHub returned `truncated=false`, 79 live paths. The current CSV v1.2.2 has 80 catalogue records and 16 columns; all 79 live paths occur exactly once, with one NOT_LOCATED reference-only source. Checks: zero duplicate catalogue IDs; zero duplicate paths; zero missing live paths; zero stale paths; zero malformed CSV row widths. This synchronization check corrects earlier copied figures (73/74 and 76/77) that no longer represented the current tree. It does not invalidate the historical baseline checks or reopen the recorded WP-0.6 acceptance.
 
 ## 3. Findings
 

@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.5-REPOSITORY-AUDIT-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | PRELIMINARY — IN PROGRESS |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -124,3 +124,23 @@ LAEV expressly selected `sole`: LAEV is to be the sole repository administrator.
 No GitHub permissions, collaborator or team memberships, tokens, branch protections, or repository settings were changed. The connected integration identity was previously reported with admin/maintain/push/pull/triage permissions; that result is bounded to the connected identity. The complete collaborator/team roster remains NOT_VERIFIED. The classic branch-protection request returned 403 FORBIDDEN (Resource not accessible by integration), so its state remains NOT_VERIFIED. The repository rulesets endpoint returned an empty list at the time queried; this does not rule out classic branch protection or inherited organization controls.
 
 **Required follow-up:** obtain sufficient read access to inspect the complete live access roster and branch controls, compare them against the sole-administrator decision, and seek separate explicit authorization before changing any permission. Audit status remains PRELIMINARY — IN PROGRESS.
+
+
+## 11. Follow-up — access, permissions and main branch verification (2026-11-24, approx. 21:55 UTC−06:00)
+
+Read-only checks performed after DP-ACCESS-01:
+
+| Check | Result | Limitation |
+|---|---|---|
+| Repository metadata | Connected integration permission object: admin=true, maintain=true, push=true, pull=true, triage=true | Applies to the connected identity only |
+| Collaborator permission lookup for `byLAEV` | `admin` | Confirms owner account permission; not a full collaborator roster |
+| Collaborators-list endpoint | NOT_VERIFIED | Available GitHub fetch interface rejected the collaborators-list endpoint as unsupported; no complete roster returned |
+| Branch endpoint for `main` | `protected=false`; protection enabled=false; required status-check enforcement off | Direct branch response; indicates no branch protection returned for main at query time |
+| Repository rulesets with `includes_parents=true` | Empty list `[]` | Does not prove absence of every other possible access path or external policy |
+| Branch-protection detail endpoint | 403 FORBIDDEN — Resource not accessible by integration | The branch endpoint itself nevertheless returned `protected=false` |
+
+**Finding:** `main` is currently reported as unprotected. Required pull-request reviews and status checks are not shown as enforced. The sole-administrator intention from DP-ACCESS-01 is not yet reconciled against every user/team because a complete collaborator and inherited-access roster could not be retrieved. The `byLAEV` account is confirmed Admin, but that does not establish it is the only Admin.
+
+A proposed role and branch-permission model is recorded in `ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001` v0.3.0. It remains PROPOSED — NOT APPROVED. No permission, collaborator, team, token, branch protection, ruleset, workflow permission or repository setting was modified. Implementation requires separate express authorization from LAEV.
+
+**WP-0.5 remains IN_PROGRESS.**

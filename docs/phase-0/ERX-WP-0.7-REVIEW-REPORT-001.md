@@ -92,7 +92,19 @@ These are candidate relationships, not decisions to merge. The next review must 
 7. Generate the traceability matrix and execute referential-integrity checks.
 8. Submit a readiness report to LAEV; do not mark WP-0.7 COMPLETED until the stated acceptance criterion is met.
 
-## 7. Approval boundary
+## 7. Supplemental evidence added — 2026-11-25
+
+The following working artifacts were added after reopening all five supplied PDFs in the active project workspace:
+- `ERX-WP-0.7-SOURCE-COVERAGE-AUDIT-001` v0.1.0 records PDF page counts, source distribution, structural reference checks and limitations of the locator audit.
+- `ERX-WP-0.7-SEMANTIC-REVIEW-REGISTER-001` v0.1.0 enumerates all 65 candidate IDs and ten overlap clusters; every semantic disposition remains pending rather than being guessed by automation.
+- `ERX-WP-0.7-VERIFICATION-CRITERIA-PROPOSAL-001` v0.1.0 proposes requirement-level criteria while preserving existing candidate criteria and explicitly avoiding unapproved numeric targets.
+- `ERX-WP-0.7-LAEV-BASELINE-DECISION-PACK-001` v0.1.0 presents the remaining gates and approval boundary.
+
+Structural audit of the current canonical CSV: 65 rows, 25 unique columns, zero duplicate IDs, all 65 primary types in the controlled taxonomy, all 65 source locators non-empty, no first cited page beyond the source PDF page count, and no dangling ERX-REQ dependency IDs. Eight secondary-tag cells are empty and are not automatically errors; their semantic justification must be reviewed. Fifteen rows still had no criterion in the canonical CSV at the time of audit; the separate criteria proposal supplies candidate wording for those records, but the canonical CSV has not yet been updated and the criteria remain unapproved.
+
+The PR snapshot is open and unmerged. The current comparison against `main` reports 23 commits ahead and zero behind. The pull request reports mergeable=true in its latest fetched metadata; this is a repository mergeability signal only, not a review approval or permission to merge.
+
+## 8. Approval boundary
 
 This report and its branch changes are working artifacts. They do not approve requirements, amend foundational sources, authorize implementation, approve institutional consensus, authorize deployment, or close WP-0.7.
 

@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.5-REPOSITORY-AUDIT-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | PRELIMINARY — IN PROGRESS |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -144,3 +144,12 @@ Read-only checks performed after DP-ACCESS-01:
 A proposed role and branch-permission model is recorded in `ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001` v0.3.0. It remains PROPOSED — NOT APPROVED. No permission, collaborator, team, token, branch protection, ruleset, workflow permission or repository setting was modified. Implementation requires separate express authorization from LAEV.
 
 **WP-0.5 remains IN_PROGRESS.**
+
+
+## 12. Follow-up — DP-ACCESS-02 (2026-11-24)
+
+LAEV expressly approved the repository access and responsibility matrix v0.3.0 and selected the one-review model: one independent technical review is required when an independent reviewer is available and assigned. The decision is recorded in `ERX-WP-0.5-ACCESS-DECISION-002` v1.0.0. The matrix is now v0.4.0 — APPROVED.
+
+This approval is a governance decision only. No reviewer or maintainer was appointed. LAEV retains sole-administrator status under DP-ACCESS-01 and final approval/merge authority. The prior read-only audit finding remains: `main` was returned as unprotected; complete collaborator and inherited-access roster remains NOT_VERIFIED.
+
+No GitHub permissions, collaborators, teams, tokens, branch protection, rulesets, required-review settings, status checks, or repository settings were modified. Separate explicit implementation authorization is still required. WP-0.5 remains IN_PROGRESS.

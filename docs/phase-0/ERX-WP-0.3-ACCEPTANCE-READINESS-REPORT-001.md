@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001 |
-| Version | 0.5.0 |
-| Status | PREPARATORY REVIEW — NOT SUBMITTED FOR APPROVAL |
+| Version | 1.0.0 |
+| Status | ACCEPTED — WP-0.3 CLOSEOUT RECORDED |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design and approval authority | LAEV |
@@ -16,7 +16,7 @@
 This report determines whether WP-0.3 is ready to be formally submitted for LAEV acceptance. It is a readiness check, not the acceptance record. It does not approve hierarchy, subject authority, source interpretation, or downstream work packages.
 
 ## 2. Gate status
-**WP-0.3: IN_PROGRESS — NOT READY FOR APPROVAL.**
+**WP-0.3: COMPLETED / ACCEPTED — 2026-11-24.**
 
 The documentary evidence has materially advanced. Activities 0.3.1, 0.3.2 and 0.3.5 have prepared evidence. Activity 0.3.6 has a page-level source comparison and issue classifications, but material dispositions remain. Activities 0.3.3, 0.3.4, 0.3.7 and 0.3.8 require LAEV decisions/approval.
 
@@ -93,7 +93,7 @@ LAEV disposition remains required for:
 
 ## 6. Approval boundary
 
-This report is a preparatory readiness artifact. It does not mark any activity APPROVED or COMPLETED. LAEV remains the design and approval authority. No Phase 1, implementation, deployment, or institutional operation is authorized.
+This report is the final acceptance-readiness disposition for WP-0.3. LAEV's decisions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. WP-0.3 is accepted as a documentary work package on the closeout branch, subject to merge and post-merge verification. WP-0.4 and WP-0.5 dependency gates are released for their own controlled execution. This does not authorize Phase 1, implementation, deployment, or institutional operation.
 
 ---
 END

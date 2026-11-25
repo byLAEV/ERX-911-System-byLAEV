@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.5.3 |
+| Version | 0.5.4 |
 | Status | COMPLETED — CONDITIONAL ACCEPTANCE RECORDED |
 | Work Package | WP-0.6 |
 | Authority | LAEV |

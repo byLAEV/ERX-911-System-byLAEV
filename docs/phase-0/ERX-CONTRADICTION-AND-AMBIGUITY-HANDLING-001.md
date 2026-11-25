@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 |
-| Version | 0.1.0 |
-| Status | DRAFT — PENDING LAEV APPROVAL |
+| Version | 1.0.0 |
+| Status | APPROVED — WP-0.3 |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Owner / Approval Authority | LAEV |
@@ -57,7 +57,7 @@ OPEN; UNDER_REVIEW; DECIDED; DEFERRED; CLOSED; ACCEPTED_LIMITATION. The status m
 LAEV retains design and approval authority. The issue owner performs analysis. The independent reviewer assesses evidence and technical coherence but does not replace LAEV approval. The document maintainer updates controlled records only after approval.
 
 ## 10. Relationship to other controls
-This procedure is subordinate to the approved project governance and document-control policy. Detailed identifiers, metadata, and version rules are subject to WP-0.4 and WP-0.11. This draft does not adjudicate any existing issue or amend any foundational source.
+This procedure is subordinate to the approved project governance and document-control policy. Detailed identifiers, metadata, and version rules are subject to WP-0.4 and WP-0.11. Approved for WP-0.3 by the LAEV decision record ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. It governs future issue handling; it does not itself amend foundational sources.
 
 ## 11. Acceptance criteria
 Approval requires: complete issue fields; explicit classification rules; impact and interim controls; defined review and approval responsibilities; auditable disposition and closure; and consistency with the approved document hierarchy.

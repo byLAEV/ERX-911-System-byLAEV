@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.4.6 |
+| Version | 0.4.7 |
 | Status | IN_PROGRESS — SECOND-PASS RECONCILIATION |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -28,7 +28,7 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 | 0.6.6 Record each document's status | Lifecycle, acceptance, archival and evidence states distinguished | Source-declared status preserved verbatim; lifecycle status conservatively mapped; evidence, custody and presence independently recorded; historical headers unchanged | IN_PROGRESS — package acceptance and document lifecycle remain distinct |
 | 0.6.7 Record relationships | Source-backed typed relationships and dependency links | Approved WP-0.3 map preserved; typed supplement v0.2.0 cross-checked against DP/DC/issue decisions and Workplan dependency chain | IN_PROGRESS — relationship baseline reviewed; final closeout review remains |
 | 0.6.8 Identify pending documents | Missing, unverified, proposal and deferred items explicitly recorded | DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011, FND-005 NOT_STATED metadata, unassigned IDs/versions and historical drafts retained without inference | IN_PROGRESS — limitations explicitly represented |
-| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.4.0; ERX-DOCUMENT-REGISTER-001 v1.2.1; CSV 74 records/16 columns; tree 73 live paths; 73/73 mapped plus one NOT_LOCATED source; links checked | IN_PROGRESS — formal-ID namespace uniqueness, readiness and closeout remain |
+| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.4.3; ERX-DOCUMENT-REGISTER-001 v1.2.1; CSV 74 records/16 columns; tree 73 live paths; 73/73 mapped plus one NOT_LOCATED source; links checked | IN_PROGRESS — formal-ID namespace uniqueness, readiness and closeout remain |
 
 ## 3. Second-pass semantic and structural validation
 
@@ -47,7 +47,7 @@ The explicit Markdown hyperlinks in WORKPLAN-PHASE-0.md, ERX-MASTER-DOCUMENT-IND
 
 ## 5. Internal review and acceptance gates
 
-Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.2](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
+Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.2.7](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — IN_PROGRESS / SECOND-PASS FINDINGS RECORDED; conclusion NOT READY FOR ACCEPTANCE.
 
 ## 6. Open work and acceptance gates
 

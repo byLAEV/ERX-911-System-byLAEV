@@ -27,7 +27,7 @@ This is an internal documentary consistency review. It is not an independent ext
 - Updated the WP-0.2 completion dossier to identify the separate approval record as the authoritative acceptance instrument, while preserving the original submission history.
 - Updated the master document index and machine-readable document register to reflect actual repository paths, verified archival status, current WP-0.2 approval, WP-0.3 working documents and the approval record.
 - Updated the issue register, readiness report and WP-0.3 matrices after directly reading the plain-text consensus source and confirming its internal ID/version/status against the Roadmap.
-- Corrected the subject-matter and hierarchy proposals so the candidate PDF is not misrepresented as the Roadmap-cited consensus source before identity verification.
+- Corrected the subject-matter and hierarchy proposals to record the consensus source identity confirmed by text evidence and distinguish proposal status from operational approval.
 - Clarified that the Workplan can enter the proposed highest governance level only after its own express approval.
 - Normalized CSV quoting and repaired DOC-ISS-009 and DOC-ISS-010 column alignment so each issue record has the same eleven fields.
 - Updated WP-0.3 execution and completion records to include the supplemental discovery and retain pending LAEV decisions.

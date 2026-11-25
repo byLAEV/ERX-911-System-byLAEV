@@ -52,7 +52,7 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-015 | ERX-MASTER-DOCUMENT-INDEX-001 | Master Document Index | 1.0.0 | WP-0.6 register / development artifact | PROVISIONAL WORKING DRAFT — NOT APPROVED | `docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md` | This document; WP-0.6 acceptance pending |
 
 | IDX-018 | ERX-SOURCE-CROSS-REFERENCE-MAP-001 | Foundational Source Relationships and Inspection Map | 0.1.0 | WP-0.2 working artifact | WORKING DRAFT — NOT APPROVED | `docs/foundational/ERX-SOURCE-CROSS-REFERENCE-MAP-001.md` | First-pass explicit and subject-matter relationships; no final hierarchy inferred |
-| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.6.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Ten issues tracked; DOC-ISS-008 resolved; DOC-ISS-002 candidate source identity unverified |
+| IDX-019 | ERX-DOCUMENT-ISSUE-REGISTER-001 | Documentary Ambiguities and Open Issues | 0.8.0 | WP-0.3 issue register | WORKING REGISTER — PENDING LAEV REVIEW | `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` | Eleven issues tracked; DOC-ISS-008 resolved; DOC-ISS-002 identity confirmed; DOC-ISS-011 tracks consensus proposal completion/authority |
 | IDX-020 | NOT_STATED | Machine-readable documentary issue register | NOT_STATED | WP-0.3 supporting register | WORKING REGISTER — NOT APPROVED | `registers/document-issue-register.csv` | Companion to ERX-DOCUMENT-ISSUE-REGISTER-001 |
 | IDX-021 | ERX-WP-0.2-COMPLETION-DOSSIER-001 | WP-0.2 Foundational Materials Completion Dossier | 0.2.0 | Phase 0 evidence dossier | EVIDENCE ACCEPTED UNDER WP-0.2 | `docs/phase-0/ERX-WP-0.2-COMPLETION-DOSSIER-001.md` | Header records historical submission status; approval is in separate approval record |
 | IDX-022 | ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001 | WP-0.2 Source Inspection and Bounded Comparison | 0.1.0 | Working evidence record | ACCEPTED AS WP-0.2 BASELINE EVIDENCE | `docs/phase-0/ERX-WP-0.2-SOURCE-INSPECTION-AND-COMPARISON-001.md` | Bounded comparison only; no hierarchy or conflict adjudication |
@@ -60,12 +60,12 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 | IDX-024 | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 | WP-0.3 Preparatory Issue Review Matrix | 0.1.0 | Preparatory analysis artifact | NOT_APPROVED — WP-0.3 FORMAL EXECUTION AUTHORIZED — DECISIONS PENDING | `docs/phase-0/ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001.md` | Source issues organized; formal WP-0.2 acceptance recorded; LAEV decisions remain required |
 
 | IDX-025 | ERX-WP-0.2-APPROVAL-RECORD-001 | Formal Acceptance of Foundational Materials | 1.0.0 | Approval record | APPROVED — LAEV 2026-11-23 | `docs/phase-0/ERX-WP-0.2-APPROVAL-RECORD-001.md` | Authoritative record of WP-0.2 acceptance | 
-| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Potential Consensus Source | 0.1.0 | Supplemental evidence note | PUBLISHED — IDENTITY UNVERIFIED | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Candidate `docs/Consenso ERX byLAEV.pdf`; not confirmed as Roadmap-cited source | 
+| IDX-026 | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 | Supplemental Repository Discovery — Potential Consensus Source | 0.1.0 | Supplemental evidence note | PUBLISHED — IDENTITY CONFIRMED; PROPOSAL STATUS | `docs/phase-0/ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md` | Text source `docs/Consenso ERX byLAEV` confirms Roadmap-cited ERX-CONSENSUS-001 v0.1; proposal lifecycle remains | 
  
 | IDX-027 | ERX-WP-0.3-AUDIT-REPORT-001 | Second-Pass Documentary Consistency Audit — Phase 0 | 0.5.0 | Internal audit evidence | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` | Internal consistency audit; not external independent audit or approval |
 | IDX-028 | ERX-WP-0.3-EXECUTION-RECORD-001 | WP-0.3 Formal Execution Record | 0.7.0 | Work package execution record | IN_PROGRESS | `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` | Evidence updated; source-confirmed availability separation; DOC-ISS-009 structural mapping and LAEV hierarchy/authority decisions pending |
 | IDX-029 | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 | WP-0.3 Deliverable and Evidence Control Matrix | 0.7.0 | Work package completion matrix | WORKING REGISTER — PENDING LAEV DECISIONS | `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` | Acceptance criteria not yet satisfied |
-| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.5.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Page-level source comparison; DOC-ISS-009 structural divergence; DOC-ISS-010 detail pending; consensus-named PDF repository object confirmed, internal identity still pending |
+| IDX-030 | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 | Evidence-Based Comparison of Foundational Sources | 0.5.0 | Technical review artifact | PENDING LAEV DISPOSITION | `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` | Source text confirms ERX-CONSENSUS-001 identity/content; DOC-ISS-009 structural divergence; DOC-ISS-010 detail pending; DOC-ISS-011 operational consensus completion |
 
 | IDX-031 | ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 | Documentary Authority, UTXO Mapping and Open Source Dispositions | 0.3.0 | Decision proposal package | PENDING LAEV REVIEW | `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-PACKAGE-001.md` | Options and recommendations only; no decisions approved |
 
@@ -78,10 +78,10 @@ Unknown metadata is marked NOT_STATED or NOT_VERIFIED. The supplied original fil
 
 | Reference | Description in ERX-ROADMAP-001 | Version | Current status | Required action |
 |---|---|---|---|---|
-| ERX-CONSENSUS-001 | Consensus framework | 0.1 | REPOSITORY FILE LOCATED — INTERNAL IDENTITY/CONTENT UNVERIFIED | Inspect the PDF control page/content via binary-capable access; compare internal ID/version with Roadmap citation |
+| ERX-CONSENSUS-001 | Consensus framework | 0.1 | SOURCE IDENTITY CONFIRMED — PROPOSAL FOR REVIEW | Text source matches Roadmap; LAEV disposition and operational specification/acceptance criteria tracked DOC-ISS-011 |
 | ERX-IMPL-PROPOSAL-001 | Institutional implementation proposal | NOT_STATED | NOT LOCATED / UNVERIFIED | Locate original; inspect identity, version, provenance, contents, and status |
 
-For ERX-IMPL-PROPOSAL-001, NOT LOCATED is bounded to the five supplied PDFs and repository tree/search results inspected; it does not establish non-existence elsewhere. The consensus candidate is separately marked REPOSITORY FILE LOCATED — INTERNAL IDENTITY/CONTENT UNVERIFIED.
+For ERX-IMPL-PROPOSAL-001, NOT LOCATED is bounded to the five supplied PDFs and repository tree/search results inspected; it does not establish non-existence elsewhere. ERX-CONSENSUS-001 v0.1 is confirmed by direct text-source inspection; its proposal status and operational completion are distinct from source identity.
 
 ## 5. Document Classifications
 
@@ -117,7 +117,7 @@ These dimensions are not interchangeable. In particular, a source may be invento
 | UTXO-911-001 v1.0 | Foundational functional source cited by | ERX-ROADMAP-001 v1.0 |
 | ERX-PROT-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
 | ERX-ATLAS-001 v1.1 | Foundational source cited by | ERX-ROADMAP-001 v1.0 |
-| `Consenso ERX byLAEV.pdf` | Repository path/object confirmed; internal metadata/content not inspected; equivalence to cited ERX-CONSENSUS-001 v0.1 unverified | ERX-ROADMAP-001 v1.0 |
+| `Consenso ERX byLAEV` (text) and PDF counterpart | Text source directly confirms cited ERX-CONSENSUS-001 v0.1; proposal for review; operational completion DOC-ISS-011 | ERX-ROADMAP-001 v1.0 |
 | ERX-IMPL-PROPOSAL-001 | Referenced source; not located | ERX-ROADMAP-001 v1.0 |
 | Technical Response to ERX-ROADMAP-001 | Responds to observations concerning | ERX-ROADMAP-001 v1.0 |
 | ERX-PHASE-0-CHARTER-001 v1.0.0 | Authorizes Phase 0 governance and preparation scope | FASE 0 |

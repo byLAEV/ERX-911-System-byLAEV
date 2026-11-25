@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.5.1 |
+| Version | 0.5.2 |
 | Status | COMPLETED — CONDITIONAL ACCEPTANCE RECORDED |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -23,8 +23,8 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 | 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 77 catalogue records, 16 columns; 73 live paths plus one NOT_LOCATED referenced source; no duplicate catalogue IDs/paths, missing live paths, stale paths or malformed rows. Lifecycle, source-declared status, evidence, custody and presence are separate fields | COMPLETED |
 | 0.6.2 Identify foundational documents | Five accepted originals and supplemental consensus source identified; implementation proposal bounded as missing | FND-001–FND-005; ERX-CONSENSUS-001 source identity confirmed; ERX-IMPL-PROPOSAL-001 NOT LOCATED (DOC-ISS-003) | COMPLETED WITH RECORDED LIMITATION — DOC-ISS-003 remains NOT_LOCATED; source baseline and limitation recorded as required |
 | 0.6.3 Identify development documents | All Phase 0 development and governance artifacts included | Post-index read-only recursive tree verification; 73/73 live paths mapped; one additional NOT_LOCATED source retained | COMPLETED — 73/73 live paths mapped in final tree; one NOT_LOCATED referenced source retained |
-| 0.6.4 Record versions | Source-native/current document versions correctly recorded | 74 baseline records semantically checked; three closeout records subsequently catalogued against source-native headers and control records; unknown versions retained NOT_STATED; formal IDs distinguished from catalogue IDs | COMPLETED — source-native metadata checked; documented derivative ID reuse and NOT_STATED exceptions; no unresolved formal-ID collision |
-| 0.6.5 Classify documents | Classifications consistent with WP-0.3 hierarchy and WP-0.4 control | 74 baseline entries classified; later closeout evidence entries classified by function by source/artifact function, including source derivatives and machine-readable registers; repeated source IDs correctly distinguish original/derivative | COMPLETED — classification cross-checked against approved WP-0.3 hierarchy and WP-0.4 document control |
+| 0.6.4 Record versions | Source-native/current document versions correctly recorded | 74 original baseline records semantically checked; closeout and WP-0.7 control artifacts added afterward; three closeout records subsequently catalogued against source-native headers and control records; unknown versions retained NOT_STATED; formal IDs distinguished from catalogue IDs | COMPLETED — source-native metadata checked; documented derivative ID reuse and NOT_STATED exceptions; no unresolved formal-ID collision |
+| 0.6.5 Classify documents | Classifications consistent with WP-0.3 hierarchy and WP-0.4 control | 74 baseline entries classified; new control artifacts assigned their document classes; later closeout evidence entries classified by function by source/artifact function, including source derivatives and machine-readable registers; repeated source IDs correctly distinguish original/derivative | COMPLETED — classification cross-checked against approved WP-0.3 hierarchy and WP-0.4 document control |
 | 0.6.6 Record each document's status | Lifecycle, acceptance, archival and evidence states distinguished | Source-declared status preserved verbatim; lifecycle status conservatively mapped; evidence, custody and presence independently recorded; historical headers unchanged | COMPLETED — lifecycle, source status, acceptance, evidence, custody and presence kept distinct |
 | 0.6.7 Record relationships | Source-backed typed relationships and dependency links | Approved WP-0.3 map preserved; typed supplement v0.2.2 cross-checked against DP/DC/issue decisions and Workplan dependency chain | COMPLETED — approved baseline preserved; derivative typed relationship register reconciled |
 | 0.6.8 Identify pending documents | Missing, unverified, proposal and deferred items explicitly recorded | DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011, FND-005 NOT_STATED metadata, unassigned IDs/versions and historical drafts retained without inference | COMPLETED — missing, proposal, deferred and NOT_STATED items recorded without inference |
@@ -47,7 +47,7 @@ The explicit Markdown hyperlinks in WORKPLAN-PHASE-0.md, ERX-MASTER-DOCUMENT-IND
 
 ## 5. Internal review and acceptance gates
 
-Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.3.0](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — formal-ID namespace and hierarchy classification checks passed; findings bounded and dispositioned.
+Internal review: [ERX-WP-0.6-INTERNAL-REVIEW-001 v0.3.2](ERX-WP-0.6-INTERNAL-REVIEW-001.md) — formal-ID namespace and hierarchy classification checks passed; findings bounded and dispositioned.
 
 ## 6. Final acceptance disposition
 

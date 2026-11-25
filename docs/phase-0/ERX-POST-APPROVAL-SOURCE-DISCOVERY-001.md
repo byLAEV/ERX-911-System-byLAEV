@@ -5,7 +5,7 @@
 |---|---|
 | Document ID | ERX-POST-APPROVAL-SOURCE-DISCOVERY-001 |
 | Version | 0.2.0 |
-| Status | EVIDENCE NOTE — IDENTITY AND CONTENT VERIFICATION PENDING |
+| Status | SUPPLEMENTAL EVIDENCE — SOURCE IDENTITY CONFIRMED; PROPOSAL STATUS |
 | Related Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Discovery date | 2026-11-24 |
@@ -29,19 +29,18 @@ A re-inspection of the GitHub repository default branch `main`, directory `docs/
 The Roadmap cites `ERX-CONSENSUS-001 v0.1`. The repository also contains the plain-text source `docs/Consenso ERX byLAEV` (15,237 bytes; Git Blob SHA-1 `64154f504b0a1ac48f76a438cf60f368e062eab6`). Direct inspection confirms the internal identifier ERX-CONSENSUS-001, version 0.1 — Propuesta normativa, status Documento de diseño para revisión, and authorship LAEV/byLAEV. The content and identity match the Roadmap citation. The PDF counterpart is separately present.
 
 Therefore:
-- Do not yet rename or assign the identifier ERX-CONSENSUS-001 to this PDF.
-- Do not treat it as the Roadmap's cited source until identity is confirmed.
-- Preserve the repository object unchanged.
-- Update DOC-ISS-002 to IDENTITY CONFIRMED / CONTENT REVIEWED. Keep proposal approval and operational completeness separate under DOC-ISS-011.
-- Keep the Roadmap reference and the candidate file as separate records pending comparison.
+- The plain-text source is confirmed as the Roadmap-cited ERX-CONSENSUS-001 v0.1; DOC-ISS-002 identity/content verification is resolved by direct evidence.
+- Preserve the original text and PDF repository objects unchanged; this record does not rename or rewrite either file.
+- The PDF binary has not been byte-compared against the text source or a separately supplied canonical PDF; the confirmed identity applies to the directly inspected text document.
+- The document's stated lifecycle remains `Propuesta normativa / Documento de diseño para revisión`; this is not evidence of express approval.
+- DOC-ISS-011 tracks LAEV disposition of status/authority and the operational completion package.
 
 ## 4. Required verification
-1. Inspect the candidate PDF's cover, internal document control, version, date and authorship.
-2. Inspect its table of contents and substantive sections.
-3. Record the direct source comparison and close the identity-verification component; review the source's proposal status and remaining operational specification requirements under DOC-ISS-011.
-4. Verify byte-level identity against any separately supplied canonical original, if available.
-5. LAEV decides whether to accept it as the cited source, register it as a distinct supplementary source, or retain the citation as unresolved.
-6. Update the master index, document register, issue register and source cross-reference map after identity is established.
+1. Identity and contents of the plain-text source were inspected; the direct comparison with Roadmap §1 is recorded.
+2. DOC-ISS-002 identity is closed by evidence.
+3. If LAEV requires the PDF to be the canonical deliverable, perform a separate binary/text or PDF/PDF integrity comparison; do not assume format equivalence from matching names.
+4. LAEV disposition of proposal status and authority, and assignment of the missing operational specification, remain under DOC-ISS-011.
+5. The master index, document register, issue register, source alignment review and source inspection record have been updated to reflect the confirmed text-source identity.
 
 ## 5. Effect on WP-0.2 approval
 This later discovery does not revoke or silently reopen the express WP-0.2 approval dated 2026-11-23. WP-0.2 accepted the five supplied originals and the bounded not-located status based on the source set and repository search then inspected. The new candidate is a post-approval discovery requiring controlled supplemental verification.

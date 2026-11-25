@@ -243,23 +243,23 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Execution status:** IN_PROGRESS — formally initiated 2026-11-25 following WP-0.3 and WP-0.6 acceptance.
 
 **Activities**
-- [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
-- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 65 candidate records across batches 001–004 at review branch snapshot; completeness and clause-level source validation remain open.
-- [ ] 0.7.3 Individually identify each requirement — 65 unique candidate records exist; semantic scope, atomicity and overlap dispositions remain pending.
-- [ ] 0.7.4 Classify requirements — preliminary primary taxonomy and secondary tags applied to all 65 records; individual semantic validation remains pending.
-- [ ] 0.7.5 Identify mandatory requirements — source pages contain normative language; exact clause-to-candidate matching and mandatory/prohibitory/recommendatory disposition remain pending.
-- [ ] 0.7.6 Identify design requirements — preliminary design assessments recorded for all 65 candidates; source-defined constraints remain to be distinguished from recommendations and implementation options.
-- [ ] 0.7.7 Record requirements pending specification — working gap register created with 63 candidate gaps; closure criteria and authorized decisions remain pending.
-- [ ] 0.7.8 Record open decisions — eight requirements-linked decision candidates recorded; completeness and impact review remain pending.
-- [ ] 0.7.9 Link requirements to sources — all 65 records carry source ID/version and page/section locator; exact clause-level locator verification remains pending.
-- [ ] 0.7.10 Assign requirements to phases — not started; assignments remain unallocated pending justified mapping to the approved Roadmap lifecycle.
-- [ ] 0.7.11 Build the traceability matrix — machine-readable register expanded to 28 columns; consolidated matrix and end-to-end referential audit remain pending.
+- [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled.
+- [x] 0.7.2 Extract existing requirements — 65 candidate records across batches 001–004; extraction baseline and batch coverage recorded. Final completeness/source fidelity review remains part of acceptance.
+- [ ] 0.7.3 Individually identify each requirement — 65 unique IDs and candidate statements recorded; semantic atomicity, compound decomposition and overlap disposition remain pending.
+- [ ] 0.7.4 Classify requirements — canonical register normalized to 25 unique columns with one primary taxonomy type and secondary tags; semantic validation remains pending.
+- [ ] 0.7.5 Identify mandatory requirements — preliminary modal-language screening recorded; exact clause-level mandatory/prohibitory/recommendatory determination remains pending.
+- [ ] 0.7.6 Identify design requirements — preliminary design-domain assessments recorded; source constraints must still be distinguished from recommendations and options.
+- [x] 0.7.7 Record requirements pending specification — 63 candidate gaps recorded in the working gap register; gaps are not closed.
+- [ ] 0.7.8 Record open decisions — eight decision candidates recorded; impact and completeness review remains pending.
+- [ ] 0.7.9 Link requirements to sources — all 65 records have source ID/version and page/section locator; exact clause verification remains pending.
+- [x] 0.7.10 Assign requirements to phases — preliminary primary phase assigned to all 65 candidates across Roadmap Phases 1–11; allocation register created. Dependency and governance review remains pending.
+- [x] 0.7.11 Build the traceability matrix — preliminary 65-row matrix regenerated from canonical CSV; referential and semantic acceptance audit remains pending.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; extraction batches 002 and 003 v0.1.0; batch 004 v0.1.0; controlled method v1.0.0; requirements-linked open-decision candidate register v0.1.0; preliminary structural review v0.1.0; classification register v0.1.0; pending-specification register v0.1.0; review report v0.1.0; machine-readable traceability register at review branch snapshot: 65 candidate rows, 28 columns. All remain EXTRACTED — REVIEW PENDING. No requirement has been approved by this update.
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; extraction batches 001–004; controlled method v1.0.0; requirements-linked open-decision candidate register v0.1.0; structural review v0.1.0; classification register v0.1.0; pending-specification register v0.1.0; phase-allocation register v0.1.0; preliminary traceability matrix v0.2.0; review report v0.1.0; canonical machine-readable register: 65 candidate rows, 25 unique columns. All requirements remain EXTRACTED — REVIEW PENDING.
 
-**Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP. Requirements approval and implementation remain separate gates.
+**Acceptance:** each requirement must have a unique ID, verifiable atomic statement, correct type, exact source locator, justified status, justified phase assignment and objective verification criterion; extracted, derived and proposed requirements must remain distinct. This acceptance criterion is not yet satisfied for the full WP. Requirements approval and implementation remain separate gates.
 
-**Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; no Phase 1, implementation, deployment or institutional operation is authorized by this work.
+**Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; no Phase 1 execution, implementation, deployment or institutional operation is authorized by this work.
 
 ### WP-0.8 — Architecture Decision Register (ADR)
 **Approval status:** APPROVED — LAEV, 2026-11-24

@@ -71,7 +71,7 @@ The source statements generally support the subject matter of the candidates, bu
 | ERX-REQ-AVAIL-0003 | ERX-ROADMAP-001 pp.4–5, §3.1 | The independent communication/agent-availability cycle rule begins on physical p.3 and continues on p.4. | ERX-ROADMAP-001 pp.3–4, §3.1 |
 | ERX-REQ-INT-0001 | ERX-ROADMAP-001 p.23, §8.1 | The adapter-specific input/output/authentication/error/retry/duplicate contract is in the body of §8.1 on p.23; the §8.1 heading and integration context begin on p.22. | ERX-ROADMAP-001 pp.22–23, §8.1 |
 
-All other candidate source mappings were checked against the cited passage or the corresponding source section in this pass. This is a working source-support finding, not a final approval. The corrections above are not yet applied to the canonical CSV.
+The remaining candidate mappings have not yet all received a complete row-by-row exact-passage audit in this pass. Their existing source IDs, versions and page bounds are present, but they must remain SOURCE REVIEW PENDING until each passage, modality and scope is checked. This working paper therefore does not claim 56/56 exact-source verification. The corrections above are not yet applied to the canonical CSV.
 
 ## 4. Additional source links required
 

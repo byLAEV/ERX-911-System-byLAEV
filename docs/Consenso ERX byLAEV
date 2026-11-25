@@ -1,0 +1,457 @@
+ERX byLAEV
+
+DOCUMENTO NORMATIVO — PROTOCOLO DE CONSENSO
+
+Definición, principios, objetivos y funcionamiento del triple consenso en el sistema de comunicación 911
+
+Identificador: ERX-CONSENSUS-001
+Versión: 0.1 — Propuesta normativa
+Estado: Documento de diseño para revisión
+Autoría: LAEV / byLAEV
+Ámbito: Sistema ERX de comunicación y registro de emergencias 911
+
+1. OBJETO DEL DOCUMENTO
+
+Este documento establece la definición, los principios, las responsabilidades y las reglas funcionales del mecanismo de consenso del protocolo ERX byLAEV.
+
+El consenso constituye un mecanismo de verificación distribuida que permite establecer la legitimidad institucional de las comunicaciones, verificar la conformidad de los procedimientos aplicados por los operadores y determinar la correspondencia entre diferentes llamadas que reportan un mismo acontecimiento.
+
+El sistema establece tres objetivos de consenso independientes y complementarios:
+
+Verificar la oficialidad de las comunicaciones recibidas.
+
+Verificar la conformidad del protocolo aplicado por los operadores.
+
+Determinar la cantidad de comunicaciones correspondientes a un mismo acontecimiento.
+
+Los tres objetivos conforman el modelo de Triple Consenso ERX.
+
+2. DEFINICIÓN DEL CONSENSO ERX
+
+Se define el consenso ERX como el procedimiento mediante el cual diferentes participantes institucionalmente autorizados verifican evidencias, registros y actuaciones relacionadas con las comunicaciones 911, con el propósito de alcanzar una determinación verificable sobre aspectos específicos del funcionamiento del sistema.
+
+El consenso no representa una votación genérica sobre la validez de una llamada.
+
+Cada consenso tiene un objeto de verificación determinado, entradas documentales específicas, participantes autorizados, criterios de evaluación y resultados independientes.
+
+El resultado de cada consenso debe conservar evidencia suficiente para permitir su auditoría y reconstrucción posterior.
+
+3. PRINCIPIOS GENERALES
+
+3.1. Independencia de las comunicaciones
+
+Cada llamada constituye una comunicación individual y conserva su propia identidad transaccional.
+
+La existencia de otras llamadas relacionadas no elimina, sustituye ni invalida su registro individual.
+
+3.2. Independencia de los consensos
+
+Los tres consensos verifican propiedades diferentes.
+
+La aprobación de un consenso no implica automáticamente la aprobación de los demás.
+
+3.3. Evidencia verificable
+
+Toda determinación debe fundamentarse en registros, identificaciones, firmas, referencias técnicas y evidencias documentales verificables.
+
+3.4. Trazabilidad
+
+Cada resultado debe poder relacionarse con las comunicaciones, operadores, instituciones y documentos que participaron en su determinación.
+
+3.5. No eliminación de registros
+
+Un resultado negativo, una discrepancia o una falta de consenso no autoriza la eliminación de las comunicaciones originales.
+
+3.6. Independencia de la atención de emergencia
+
+El funcionamiento del consenso no debe impedir que una persona reciba atención de emergencia.
+
+La verificación institucional y documental debe operar sin convertirse en una condición que retrase injustificadamente la atención.
+
+3.7. Responsabilidad institucional
+
+Las instituciones responden por la autenticidad de sus canales, las credenciales de sus operadores y el cumplimiento de sus procedimientos.
+
+3.8. Separación entre coincidencia y duplicidad
+
+Dos llamadas relacionadas con un mismo acontecimiento no son necesariamente comunicaciones duplicadas.
+
+Cada llamada representa un reporte independiente, aunque posteriormente se determine que pertenece al mismo caso.
+
+4. ESTRUCTURA DEL TRIPLE CONSENSO
+
+4.1. CONSENSO 01 — OFICIALIDAD DE LA COMUNICACIÓN
+
+Objetivo: determinar si una comunicación ingresó mediante canales oficiales y autorizados del sistema de atención 911.
+
+Pregunta fundamental:
+
+¿La comunicación fue recibida efectivamente mediante una infraestructura institucional oficial y verificable?
+
+Aspectos que debe verificar
+
+Identidad de la institución receptora.
+
+Identidad de la central receptora.
+
+Autorización del canal de comunicación.
+
+Identidad de la instalación ERX.
+
+Vigencia y autenticidad de los certificados institucionales.
+
+Evidencia técnica de recepción.
+
+Correspondencia entre el registro y la infraestructura oficial.
+
+Trazabilidad del ingreso de la comunicación.
+
+Resultado esperado
+
+Determinar si la comunicación tiene procedencia institucional verificable.
+
+Estados propuestos
+
+OFFICIAL_VERIFIED: oficialidad verificada.
+
+OFFICIAL_PENDING: verificación pendiente.
+
+OFFICIAL_DISPUTED: existen discrepancias.
+
+OFFICIAL_REJECTED: procedencia institucional no acreditada.
+
+Una comunicación cuya oficialidad no pueda acreditarse debe conservar su registro y quedar identificada como pendiente o no verificada.
+
+El resultado no determina la veracidad de la denuncia ni la gravedad de la emergencia.
+
+4.2. CONSENSO 02 — CONFORMIDAD DEL PROTOCOLO DE RECEPCIÓN
+
+Objetivo: determinar si los operadores que participaron en la recepción de las denuncias aplicaron el protocolo institucional establecido para iniciar y desarrollar la recepción.
+
+Pregunta fundamental:
+
+¿Los operadores involucrados utilizaron el mismo protocolo institucional aplicable para comenzar a recibir y registrar las denuncias?
+
+Aspectos que debe verificar
+
+Identidad del operador.
+
+Autorización para atender comunicaciones.
+
+Identificación de la versión del protocolo.
+
+Registro del inicio de atención.
+
+Secuencia de actuaciones obligatorias.
+
+Registro de las preguntas y respuestas requeridas.
+
+Evidencia de las acciones realizadas.
+
+Correspondencia entre el procedimiento ejecutado y el procedimiento establecido.
+
+Resultado esperado
+
+Determinar si los operadores realizaron la recepción conforme al protocolo institucional aplicable.
+
+Estados propuestos
+
+PROTOCOL_VERIFIED: conformidad verificada.
+
+PROTOCOL_PENDING: información pendiente.
+
+PROTOCOL_DISPUTED: existen diferencias o contradicciones.
+
+PROTOCOL_NONCOMPLIANT: incumplimiento identificado.
+
+PROTOCOL_EXCEPTION: excepción operativa documentada.
+
+La conformidad no exige que todas las llamadas contengan respuestas idénticas ni que los operadores realicen actuaciones idénticas cuando las circunstancias sean diferentes.
+
+Lo que debe verificarse es la aplicación del mismo marco procedimental y el cumplimiento de las obligaciones correspondientes a cada situación.
+
+4.3. CONSENSO 03 — CORRELACIÓN DE ACONTECIMIENTOS
+
+Objetivo: determinar cuántas comunicaciones individuales corresponden a un mismo acontecimiento reportado al sistema 911.
+
+Pregunta fundamental:
+
+¿Cuántas llamadas independientes describen el mismo acontecimiento?
+
+Aspectos que debe verificar
+
+Coincidencia geográfica.
+
+Correspondencia temporal.
+
+Naturaleza del acontecimiento.
+
+Descripción de los hechos.
+
+Información proporcionada por cada reportante.
+
+Evidencias disponibles.
+
+Relaciones entre las comunicaciones.
+
+Identificación de contradicciones.
+
+Posibilidad de que existan varios acontecimientos diferentes.
+
+Resultado esperado
+
+Establecer una relación verificable entre las llamadas correspondientes a un mismo acontecimiento y determinar la cantidad de comunicaciones relacionadas.
+
+Estados propuestos
+
+EVENT_CORRELATION_CONFIRMED: correspondencia confirmada.
+
+EVENT_CORRELATION_PENDING: correlación pendiente.
+
+EVENT_CORRELATION_DISPUTED: correspondencia discutida.
+
+EVENT_SEPARATED: comunicaciones correspondientes a acontecimientos diferentes.
+
+EVENT_CORRELATION_REVIEW: requiere revisión adicional.
+
+La correlación no elimina las identidades individuales de las llamadas.
+
+Cada comunicación conserva su registro, sus evidencias, su operador y su historial.
+
+El consenso crea una relación entre ellas y permite construir una identidad común del acontecimiento.
+
+5. PARTICIPANTES DEL CONSENSO
+
+El sistema debe distinguir entre los participantes que producen evidencias y los participantes autorizados para validar resultados.
+
+Se identifican las siguientes funciones:
+
+A. Infraestructura institucional
+
+Acredita la procedencia de las comunicaciones y proporciona evidencias técnicas de recepción.
+
+B. Operadores
+
+Producen los registros de atención y las evidencias de los procedimientos realizados.
+
+C. Centrales receptoras
+
+Representan las instalaciones institucionales participantes y sus respectivas responsabilidades.
+
+D. Sistema ERX
+
+Organiza los registros, verifica las condiciones técnicas, establece las relaciones transaccionales y conserva los resultados.
+
+E. Participantes validadores
+
+Ejecutan las verificaciones autorizadas y participan en las determinaciones de consenso correspondientes.
+
+La cantidad de participantes necesaria, las reglas de independencia, el quórum y los mecanismos de resolución de conflictos deberán especificarse en una sección técnica posterior.
+
+No se establece todavía una regla de mayoría simple ni se presupone que todos los operadores tengan el mismo peso institucional.
+
+6. SEPARACIÓN DEL CONSENSO POR ETAPAS
+
+El consenso no es una condición para crear una comunicación individual.
+
+La arquitectura establece la siguiente separación:
+
+ETAPA 1 — RECEPCIÓN INDIVIDUAL
+
+La infraestructura detecta la comunicación.
+
+ERX genera su identidad individual y registra la recepción.
+
+Se construye el JSON 01 y su correspondiente UTXO 01.
+
+Esta etapa no necesita alcanzar un consenso entre operadores para reconocer la existencia del registro individual.
+
+ETAPA 2 — CONTACTO Y RECEPCIÓN DE LA DENUNCIA
+
+Se establece el contacto entre el reportante y el operador.
+
+Se identifica al operador que atiende y se documenta el procedimiento de recepción.
+
+En esta etapa se incorporan las evidencias necesarias para evaluar el Consenso 01 y el Consenso 02.
+
+ETAPA 3 — CORRELACIÓN Y CONSENSO DE ACONTECIMIENTOS
+
+Se relacionan las comunicaciones individuales.
+
+Se comparan los reportes y sus evidencias.
+
+Se ejecuta el Consenso 03 para determinar cuáles comunicaciones pertenecen al mismo acontecimiento.
+
+Los resultados de los tres consensos se conservan de manera independiente.
+
+7. RESULTADOS Y REGISTRO DE CONSENSO
+
+Cada ejecución de consenso debe generar un registro documental independiente.
+
+Este registro deberá permitir identificar:
+
+Identificador del consenso.
+
+Tipo de consenso.
+
+Comunicaciones examinadas.
+
+Instituciones participantes.
+
+Operadores involucrados, cuando corresponda.
+
+Evidencias examinadas.
+
+Criterios de evaluación.
+
+Versión de las reglas aplicadas.
+
+Resultado.
+
+Fecha y hora.
+
+Firmas o referencias de autenticación.
+
+Discrepancias identificadas.
+
+Referencias a decisiones anteriores.
+
+Posibilidad de revisión.
+
+Los registros de consenso deben ser inmutables en cuanto a su historial.
+
+Una revisión posterior debe generar una nueva evidencia y una nueva determinación vinculada a la anterior, sin borrar el resultado histórico.
+
+8. RELACIÓN ENTRE CONSENSO Y UTXO
+
+El mecanismo UTXO constituye el modelo de control de estados y transiciones del protocolo ERX.
+
+El consenso constituye el mecanismo de verificación de las condiciones que permiten reconocer determinadas relaciones y transiciones.
+
+Ambos mecanismos son complementarios, pero no equivalentes.
+
+El UTXO individual representa la identidad y continuidad transaccional de una comunicación.
+
+Los registros de consenso documentan las determinaciones alcanzadas.
+
+Las relaciones entre comunicaciones y acontecimientos deben conservar referencias verificables hacia sus registros originales.
+
+El diseño detallado de las unidades UTXO asociadas a cada consenso será desarrollado en las especificaciones técnicas correspondientes.
+
+9. DISCREPANCIAS Y AUSENCIA DE CONSENSO
+
+La ausencia de consenso no equivale automáticamente a una determinación negativa.
+
+El sistema debe diferenciar:
+
+Falta de información.
+
+Evidencia insuficiente.
+
+Conflicto entre participantes.
+
+Incumplimiento de protocolo.
+
+Falta de autenticidad institucional.
+
+Imposibilidad de establecer una correlación.
+
+Cuando existan discrepancias:
+
+Se conservan todos los registros originales.
+
+Se identifican las evidencias contradictorias.
+
+Se registra el motivo de la discrepancia.
+
+Se mantiene el estado pendiente o disputado.
+
+Se permite una revisión autorizada.
+
+Se documenta cualquier determinación posterior.
+
+La atención de emergencia no debe quedar suspendida por una discrepancia documental o por la falta de consenso.
+
+10. INVARIANTES DEL MODELO
+
+El protocolo de consenso debe preservar las siguientes propiedades:
+
+Una comunicación individual conserva su identidad.
+
+Una comunicación no necesita consenso colectivo para existir como registro de recepción.
+
+La oficialidad institucional debe verificarse independientemente del contenido de la denuncia.
+
+El cumplimiento del protocolo debe verificarse independientemente de la oficialidad del canal.
+
+La correlación de acontecimientos debe verificarse independientemente de la identidad individual de las llamadas.
+
+Varias llamadas pueden pertenecer a un mismo acontecimiento.
+
+Una llamada no debe desaparecer por quedar relacionada con otra.
+
+Un consenso puede quedar pendiente o disputado.
+
+Cada resultado debe conservar su evidencia y trazabilidad.
+
+Las decisiones posteriores no deben borrar el historial anterior.
+
+11. ALCANCE DE ESTE DOCUMENTO
+
+Este documento establece la definición normativa general del consenso ERX.
+
+No desarrolla todavía:
+
+Código de implementación.
+
+Algoritmos criptográficos específicos.
+
+Estructuras JSON definitivas.
+
+Estructuras UTXO definitivas.
+
+Reglas matemáticas de quórum.
+
+Número mínimo de operadores validadores.
+
+Protocolos de comunicación entre centrales.
+
+Algoritmos de correlación automática.
+
+Procedimientos completos de auditoría.
+
+Estos elementos deberán desarrollarse en documentos subordinados sin contradecir los principios aquí establecidos.
+
+12. DOCUMENTOS DERIVADOS
+
+Una vez aprobada esta especificación, deberán desarrollarse:
+
+ERX-CONSENSUS-TECH-001 — Arquitectura técnica del consenso.
+
+ERX-CONSENSUS-01 — Especificación de oficialidad institucional.
+
+ERX-CONSENSUS-02 — Especificación de conformidad del protocolo.
+
+ERX-CONSENSUS-03 — Especificación de correlación de acontecimientos.
+
+ERX-PHASE-01 — Recepción individual.
+
+ERX-PHASE-02 — Contacto y recepción de denuncia.
+
+ERX-PHASE-03 — Correlación y consenso de acontecimientos.
+
+DECLARACIÓN FUNDAMENTAL
+
+El sistema ERX byLAEV establece que una comunicación 911 constituye una unidad individual de información y evidencia.
+
+El consenso permite verificar su procedencia institucional, la conformidad del procedimiento mediante el cual fue recibida y su correspondencia con otros reportes de un mismo acontecimiento.
+
+La existencia de múltiples comunicaciones sobre un mismo acontecimiento no constituye por sí misma un doble gasto ni una duplicación inválida.
+
+El objetivo del protocolo es preservar cada comunicación individual, verificar sus condiciones institucionales y procedimentales y establecer relaciones únicas, trazables y verificables entre los acontecimientos reportados.
+
+ERX byLAEV — Sistema de Triple Consenso para la Integridad de las Comunicaciones de Emergencia 911.
+
+Autoría conceptual: LAEV / byLAEV.
+
+

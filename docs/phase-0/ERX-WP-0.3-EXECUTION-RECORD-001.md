@@ -46,7 +46,7 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 3. ERX-ROADMAP-001 Section 3.1 (PDF p.3) expressly establishes a related-but-independent agent-availability cycle. UTXO-911 Sections 4.5–5 and Technical Response p.1 support this architecture. DOC-ISS-010 is narrowed to detailed state-machine specification and formal work-package assignment.
 4. Atlas identifies Protocol as its related normative document and provides a plate correspondence table. A rule for specific diagram/text divergence remains to be approved.
 5. The Technical Response is not evidenced as an approved amendment to the Roadmap.
-6. Repository main confirms `docs/Consenso ERX byLAEV.pdf` (157,848 bytes; Git Blob SHA-1 c2f965c9bf455506571ac4c1635b4fb47af34216). The binary's internal control data/content could not be inspected through the available connector, so equivalence to Roadmap-cited ERX-CONSENSUS-001 v0.1 remains unverified. The file is not missing. ERX-IMPL-PROPOSAL-001 remains not located. Neither source's contents are inferred without inspection.
+6. The text source `docs/Consenso ERX byLAEV` directly confirms ERX-CONSENSUS-001 v0.1 and was read for content. Its status is proposal for review; operational quorum, validator rules, conflict resolution and consensus-linked UTXO/JSON specifications remain deferred under DOC-ISS-011. ERX-IMPL-PROPOSAL-001 remains not located; its contents are not inferred.
 
 No direct contradiction between the inspected passages is declared by the source alignment review. The unresolved matters are scope, granularity, authority and documentary effect.
 

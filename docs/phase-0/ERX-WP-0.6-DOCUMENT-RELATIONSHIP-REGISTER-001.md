@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 |
-| Version | 0.2.0 |
+| Version | 0.2.1 |
 | Status | IN_PROGRESS — CONTROLLED RELATIONSHIP REGISTER |
 | Work Package | WP-0.6 |
 | Authority | LAEV |

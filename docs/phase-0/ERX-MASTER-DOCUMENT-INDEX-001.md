@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.4.6 |
+| Version | 1.4.7 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -13,7 +13,7 @@
 | Authority | LAEV |
 | Dependencies | WP-0.2, WP-0.3, WP-0.4 and WP-0.5 — SATISFIED |
 | Initiation | [ERX-WP-0.6-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.6-INITIATION-RECORD-001.md) |
-| Live tree snapshot | `0e36bcb2d54387deff76cb39161f96f703142d0e` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
+| Live tree snapshot | `d41c4053ba31131782154e5a06e75f269130b224` (`truncated=false`, 79 live paths; immediately pre-index-refresh snapshot) |
 
 ## 1. Purpose and control boundary
 
@@ -119,13 +119,17 @@ The dependency gate is satisfied and execution is authorized under the existing 
 
 LAEV's standing conditional acceptance instruction applies automatically to each completed in-scope deliverable once it is correct and evidence-supported. Scope approval is not completion; publication is not acceptance. No repeated scope approval is required.
 
-WP-0.7 formally initiated after dependency release until WP-0.6 is completed and accepted. Phase 0 remains OPEN; Phase 1 is NOT AUTHORIZED.
+WP-0.7 IN_PROGRESS — formal initiation recorded; 0.7.1 method controlled; first 15 source-derived candidates extracted for review until WP-0.6 is completed and accepted. Phase 0 remains OPEN; Phase 1 is NOT AUTHORIZED.
 
 ---
 End of ERX-MASTER-DOCUMENT-INDEX-001
 
 ## 10. WP-0.6 acceptance and WP-0.7 execution update
 
-WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.0](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.1, internal review v0.3.1, and synchronized CSV catalogue.
+WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.1](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.1, internal review v0.3.1, and synchronized CSV catalogue.
 
 WP-0.7 is now formally initiated under its previously approved scope. [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md) records dependency release; [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md) records direct inspection of the five accepted PDFs; [ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001 v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) documents the first 15 candidate requirements, still pending technical review and approval. The controlled requirements method is ERX-REQUIREMENTS-METHOD-001 v1.0.0.
+
+## 11. WP-0.7 execution snapshot
+
+WP-0.7 is IN_PROGRESS under the previously approved scope and the released dependency gate. Its formal initiation is [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md). Activity 0.7.1 is controlled by [ERX-REQUIREMENTS-METHOD-001 v1.0.0](ERX-REQUIREMENTS-METHOD-001.md). The five foundational PDFs were directly inspected and recorded in [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md). The first extraction batch [v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) and `registers/requirements-traceability.csv` contain 15 source-derived candidates; they remain EXTRACTED — REVIEW PENDING, not approved requirements. Activity 0.7.2 continues; activities 0.7.3–0.7.11 remain open.

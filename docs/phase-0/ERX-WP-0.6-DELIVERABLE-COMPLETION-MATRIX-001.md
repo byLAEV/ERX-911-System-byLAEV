@@ -20,7 +20,7 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 
 | Activity | Required result | Current evidence | Status |
 |---|---|---|---|
-| 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 66 entries currently; historical entries preserved; 26 added inventory rows marked pending metadata; blank line removed | IN_PROGRESS |
+| 0.6.1 General document register | One controlled register covering repository documents and source artifacts | registers/document-register.csv; 72 catalogue records: 71 live repository paths plus one referenced missing source (ERX-IMPL-PROPOSAL-001); 25 rows remain explicitly pending metadata reconciliation | IN_PROGRESS |
 | 0.6.2 Identify foundational documents | All supplied originals and referenced sources identified with bounded provenance | FND-001–FND-005; ERX-CONSENSUS-001 identity confirmed; ERX-IMPL-PROPOSAL-001 NOT LOCATED (DOC-ISS-003) | IN_PROGRESS — source baseline exists; verify all derivatives and source relationships |
 | 0.6.3 Identify development documents | All Phase 0 development and governance artifacts included | Live recursive tree snapshot; 26 paths added to CSV after prior inventory | IN_PROGRESS — metadata not yet reconciled |
 | 0.6.4 Record versions | Source-native/current document versions correctly recorded | Existing records retain known values; 26 new entries explicitly NOT_VERIFIED | IN_PROGRESS |
@@ -33,11 +33,11 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 ## 3. Initial structural validation
 
 - Live recursive Git tree snapshot before register writes: `f65683b5926cb8e53cb2ab6b75be810dd28a5fe6`, `truncated=false`.
-- Prior CSV had 42 records; 26 missing path entries were added, producing 68 data records before removal of one blank line; current record count is to be rechecked after this matrix publication.
+- Prior CSV had 42 records; 26 initial repository paths were added, then six source-text companion paths and this WP-0.6 matrix were added. Current CSV has 72 catalogue records: 71 live repository paths plus one NOT_LOCATED referenced source record (ERX-IMPL-PROPOSAL-001).
 - Duplicate catalogue IDs: none detected in the 66-row check.
 - Duplicate repository paths: none detected in the 66-row check.
-- One blank CSV line between historical records was detected and removed.
-- Newly added records use explicit METADATA_RECONCILIATION_PENDING. They are not treated as completed metadata.
+- One blank line between historical records was detected and removed; the final newline is normal CSV termination.
+- 25 records retain METADATA_RECONCILIATION_PENDING. Six text companions are explicitly classified as companions/derivatives with content review still open; the missing ERX-IMPL-PROPOSAL-001 record has no repository path by design.
 - The current CSV and index must be rechecked after every subsequent commit because the live tree changes.
 
 ## 4. Open work and acceptance gates

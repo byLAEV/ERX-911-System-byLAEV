@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-ISSUE-REGISTER-001 |
-| Version | 0.6.0 |
+| Version | 0.7.0 |
 | Status | WORKING REGISTER — PENDING LAEV REVIEW |
 | Work Package | WP-0.2 carry-forward / WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -17,7 +17,7 @@ This register tracks metadata discrepancies, missing-source conditions, authorit
 The machine-readable companion is `registers/document-issue-register.csv`.
 
 ## 2. Evidence updates
-- DOC-ISS-002 is no longer described simply as not located: a candidate named `Consenso ERX byLAEV.pdf` was discovered in `docs/` on 2026-11-24. Its internal identity/version and equivalence to Roadmap reference `ERX-CONSENSUS-001 v0.1` remain unverified. See `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`.
+- DOC-ISS-002 is now repository-presence confirmed: `docs/Consenso ERX byLAEV.pdf` on main, 157,848 bytes, Git Blob SHA-1 c2f965c9bf455506571ac4c1635b4fb47af34216. The current connector cannot inspect the PDF binary; internal identity/version/content and equivalence to Roadmap reference ERX-CONSENSUS-001 v0.1 remain unverified. See `ERX-POST-APPROVAL-SOURCE-DISCOVERY-001.md`.
 - DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
 - DOC-ISS-009 and DOC-ISS-010 were refined after direct page-level inspection of ERX-PROT-001 v1.1 Step 15 (PDF p.13), UTXO-911-001 v1.0 Sections 2.1–3.1 and 4.5–5 (PDF pp.2–4, 8–9), ERX-ATLAS-001 v1.1 Plate 03, and ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3).
@@ -29,7 +29,7 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 | ID | Issue | Status | Work Package |
 |---|---|---|---|
 | DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | WP-0.3 |
-| DOC-ISS-002 | Candidate `Consenso ERX byLAEV.pdf`; identity to ERX-CONSENSUS-001 v0.1 unverified | CANDIDATE_LOCATED_IDENTITY_UNVERIFIED | WP-0.2 carry-forward / WP-0.3 |
+| DOC-ISS-002 | Repository file `Consenso ERX byLAEV.pdf` located; internal identity/content and equivalence to ERX-CONSENSUS-001 v0.1 unverified | REPOSITORY_FILE_LOCATED_INTERNAL_IDENTITY_UNVERIFIED | WP-0.2 carry-forward / WP-0.3 |
 | DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | WP-0.2 carry-forward |
 | DOC-ISS-004 | Technical Response lacks formal ID/version/date | OPEN | WP-0.3 |
 | DOC-ISS-005 | UTXO-911 / Protocol authority relationship | OPEN | WP-0.3 |
@@ -65,7 +65,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 9. Where an issue could affect emergency handling, unique call admission, agent availability, double-spend prevention, evidence integrity, privacy or security, no implementation assumption is approved by this register.
 
 ## 6. Dependencies and next action
-DOC-ISS-002 requires identity/content verification of the candidate `docs/Consenso ERX byLAEV.pdf`; DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; its detailed state machine must be assigned and specified. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
+DOC-ISS-002 requires identity/content verification of the repository-confirmed file `docs/Consenso ERX byLAEV.pdf`; DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; its detailed state machine must be assigned and specified. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
 **Status: WORKING REGISTER — PENDING LAEV REVIEW.** This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
 

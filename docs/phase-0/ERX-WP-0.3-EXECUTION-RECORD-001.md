@@ -31,14 +31,14 @@ WP-0.2 was expressly accepted by LAEV and the Workplan records it as APPROVED. F
 - ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.
 - ERX-DOCUMENT-RELATIONSHIP-MAP-001.
 - ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.
-- ERX-DOCUMENT-ISSUE-REGISTER-001 v0.2.0 and CSV companion.
+- ERX-DOCUMENT-ISSUE-REGISTER-001 v0.8.0 and CSV companion.
 - ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001 v0.1.0.
 - ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001 v0.1.0.
 - ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.
 - ERX-DOCUMENT-GOVERNANCE-001.
 - ERX-CONSENSUS-001 v0.1 text source directly inspected; ID/version/status/author confirmed against Roadmap citation; DOC-ISS-002 identity gap resolved; DOC-ISS-011 records operational completeness and authority requirements.
-- ERX-WP-0.3-AUDIT-REPORT-001 v0.1.0 — second-pass documentary consistency audit.
-- ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.1.0 — options and recommendations for outstanding LAEV decisions.
+- ERX-WP-0.3-AUDIT-REPORT-001 v0.6.0 — second-pass documentary consistency audit.
+- ERX-WP-0.3-LAEV-DECISION-PACKAGE-001 v0.3.0 — options and recommendations for outstanding LAEV decisions.
 
 ## 4. Material source-alignment findings
 1. ERX-PROT-001 v1.1, ERX-ATLAS-001 v1.1 and UTXO-911-001 v1.0 broadly correspond on a three-stage communication lifecycle.

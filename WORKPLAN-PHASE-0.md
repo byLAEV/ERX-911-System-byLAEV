@@ -234,7 +234,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.6.8 Identify pending documents — missing, proposal, deferred and metadata gaps recorded without inference.
 - [x] 0.6.9 Consolidate master index — index and CSV synchronized; final structural checks and closeout passed.
 
-**Controlled deliverables:** Master index; ERX-DOCUMENT-REGISTER-001 CSV; activity matrix v0.5.2; relationship register v0.2.2; internal review v0.3.2; readiness report v1.0.0; closeout audit v1.0.0; acceptance record v1.0.1.
+**Controlled deliverables:** Master index; ERX-DOCUMENT-REGISTER-001 CSV; activity matrix v0.5.4; relationship register v0.2.2; internal review v0.3.3; readiness report v1.0.0; closeout audit v1.0.1; acceptance record v1.0.1.
 **Accepted limitation:** ERX-IMPL-PROPOSAL-001 remains NOT_LOCATED / UNVERIFIED under DOC-ISS-003. This is explicitly recorded and does not invalidate the completed inventory.
 **Dependency release:** WP-0.7 may proceed under its previously approved scope. This acceptance does not authorize Phase 1, implementation or institutional operation.
 

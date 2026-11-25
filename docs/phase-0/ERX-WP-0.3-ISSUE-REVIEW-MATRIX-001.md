@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-ISSUE-REVIEW-MATRIX-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | FORMAL WP-0.3 AUTHORIZED; REVIEW MATRIX WORKING DRAFT — NOT APPROVED |
 | Work Package | WP-0.3 preparation |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -20,7 +20,7 @@ This matrix organizes documentary issues for the formally authorized WP-0.3 exec
 | Issue | Evidence currently recorded | Question requiring determination | Non-binding handling options | Decision authority / gate |
 |---|---|---|---|---|
 | DOC-ISS-001 — Atlas filename/version | Supplied filename says v1; internal title/control says v1.1 | What canonical citation and repository display name should be used? | Preserve supplied filename and cite internal v1.1; or approve a controlled rename/alias that retains original checksum and provenance | LAEV; document control under WP-0.4 |
-| DOC-ISS-002 — Consensus source missing | Roadmap cites ERX-CONSENSUS-001 v0.1; not located in inspected set/repository | Can its contents be considered at all before the original is recovered? | Locate and inspect; or formally mark not located/unverified and restrict claims to the Roadmap's citation only | LAEV; first disposition WP-0.2, authority analysis WP-0.3 after gate |
+| DOC-ISS-002 — Consensus source identity | Repository main contains `docs/Consenso ERX byLAEV.pdf` (157,848 bytes; Git Blob SHA-1 recorded in issue register); internal control/content not inspected through the available connector | Is this file the Roadmap-cited ERX-CONSENSUS-001 v0.1, and what scope/authority does it have? | Inspect PDF control page/content and provenance; compare exact identifier/version; or formally record the binary-inspection limitation without calling the file absent | LAEV; bounded source follow-up / WP-0.3 disposition |
 | DOC-ISS-003 — Implementation proposal missing | Roadmap cites ERX-IMPL-PROPOSAL-001; not located in inspected set/repository | Is this source needed to determine foundational hierarchy or may it be deferred with impact documented? | Locate and inspect; or record not located/unverified with explicit deferral/impact | LAEV; first disposition WP-0.2, hierarchy analysis WP-0.3 after gate |
 | DOC-ISS-004 — Response metadata absent | FND-005 supplied title/control lacks formal ID, version, date | How should it be catalogued without inventing original metadata? | Keep source metadata “not stated”; optionally assign a clearly labelled repository/catalogue ID via controlled process | LAEV; document control WP-0.4 |
 | DOC-ISS-005 — UTXO vs Protocol authority | Protocol/Atlas/Roadmap define three communication outputs; UTXO-911 adds a separate acceptance output | Define scoped authority and mapping without silently changing sources | Scoped subject authority plus formal decision on DOC-ISS-009 | LAEV; WP-0.3 |

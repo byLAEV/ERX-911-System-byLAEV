@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.4.0 |
+| Version | 0.5.0 |
 | Status | WORKING REGISTER — PENDING LAEV DECISIONS |
 | Work Package | WP-0.3 |
 | Project | ERX byLAEV — 911 Double-Spend System |

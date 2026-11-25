@@ -4,8 +4,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.4-CLOSEOUT-AUDIT-001 |
-| Version | 0.4.0 |
-| Status | IN_REVIEW — INTERNAL REVIEW AND LAEV APPROVAL PENDING |
+| Version | 0.5.0 |
+| Status | COMPLETED — ACCEPTED BY LAEV |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Audit date | 2026-11-24 |
@@ -28,11 +28,11 @@ Check the WP-0.4 deliverable against the approved DC-01–DC-09 decisions, WP-0.
 | DC-07 exact-version approval | PASS — DECIDED | LAEV decision record DC-07 |
 | DC-08 revision history/provenance | PASS — DECIDED | LAEV decision record DC-08 |
 | DC-09 source migration | PASS — DECIDED | LAEV decision record DC-09; master index deferred to WP-0.6 |
-| Final policy baseline | PENDING | Consolidated candidate ERX-DOCUMENT-CONTROL-001 v0.4.2 exists; exact-version LAEV approval remains pending |
-| Independent external review | DEFERRED BY LAEV | To occur after planned project work; not a WP-0.4 closeout gate (Addendum A) |
-| Internal review | PENDING | Internal review ERX-WP-0.4-INTERNAL-REVIEW-001 v0.1.0 recorded; findings IR-01–IR-05 dispositioned, with synchronization evidence now required in this audit |
-| Register synchronization | PENDING | IDX-013 and IDX-038–IDX-041 synchronized to current versions on the execution branch; verify after update |
-| Workplan closeout | PENDING | WP-0.4 must remain IN_PROGRESS until the above gates are satisfied |
+| Final policy baseline | PENDING | PASS — APPROVED | ERX-DOCUMENT-CONTROL-001 v1.0.0; exact candidate v0.4.2 and blob SHA-1 recorded in LAEV approval record |
+| Independent external review | DEFERRED BY LAEV | DEFERRED BY LAEV | To occur after planned project work; not a WP-0.4 closeout gate (Addendum B) |
+| Internal review | PENDING | PASS | ERX-WP-0.4-INTERNAL-REVIEW-001 v0.2.0; findings IR-01–IR-05 dispositioned and exact candidate rechecked |
+| Register synchronization | PENDING | PASS | IDX-013 and IDX-038–IDX-042 updated to released policy and approval evidence; branch state verified |
+| Workplan closeout | PENDING | PASS | WP-0.4 acceptance conditions satisfied; Workplan updated to COMPLETED / ACCEPTED |
 
 ## 3. Material control observations
 
@@ -51,7 +51,7 @@ Check the WP-0.4 deliverable against the approved DC-01–DC-09 decisions, WP-0.
 
 ## 5. Audit conclusion
 
-**WP-0.4 remains IN_PROGRESS.** The nine policy decisions have been approved by LAEV. Consolidated candidate v0.4.2, internal review v0.1.0, and LAEV decision record v1.2.0 are recorded on the execution branch. LAEV exact-version approval of v0.4.2 and final evidence synchronization remain outstanding. Independent external review/audit is deferred by LAEV until after planned project work and is not a WP-0.4 gate. This is a controlled pending state, not a rejection or a failure of the package.
+**WP-0.4 is COMPLETED / ACCEPTED.** LAEV approved the exact candidate ERX-DOCUMENT-CONTROL-001 v0.4.2 (blob SHA-1 `7cde15d1776ed913c3136f8116f8eb3912b302f1`) as the first approved baseline v1.0.0. The exact-version approval is recorded in ERX-WP-0.4-APPROVAL-RECORD-001 v1.0.0. DC-01–DC-09 are approved; internal review v0.2.0 is recorded with findings IR-01–IR-05 dispositioned; the policy release, Workplan, execution record, and register are synchronized. Independent external review/audit is deferred until after planned project work and is not a WP-0.4 or inter-work-package gate. WP-0.5 dependency gate is therefore released; this does not itself start WP-0.5.
 
 ---
 End of ERX-WP-0.4-CLOSEOUT-AUDIT-001

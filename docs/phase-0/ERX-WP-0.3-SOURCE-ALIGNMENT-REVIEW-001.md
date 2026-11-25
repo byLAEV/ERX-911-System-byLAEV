@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | TECHNICAL REVIEW — PENDING LAEV DISPOSITION |
 | Work Package | WP-0.3 / Activity 0.3.6 |
 | Sources | FND-001, FND-002, FND-003, FND-004, FND-005 |
@@ -15,6 +15,14 @@
 The five supplied PDFs were inspected directly. Findings below cite document sections, plates, or control information. This is a documentary alignment review, not a legal opinion and not an implementation validation. A difference in granularity is not labeled a contradiction unless incompatible requirements in the same scope are demonstrated.
 
 ## 2. Findings
+
+### F-00 — Supplemental consensus-named PDF repository presence
+- Evidence: GitHub repository `main` contains `docs/Consenso ERX byLAEV.pdf`; file size 157,848 bytes; Git Blob SHA-1 `c2f965c9bf455506571ac4c1635b4fb47af34216`.
+- Boundary: this verifies repository path and object identity, but the PDF binary was not readable through the current text-only connector and was not available as a mounted local PDF for extraction. Its internal title/identifier/version/date, authorship/provenance and content have not been directly inspected.
+- Assessment: do not mark the source as missing. Do not equate it to Roadmap-cited ERX-CONSENSUS-001 v0.1 until internal metadata/content are compared.
+- Disposition: DOC-ISS-002 remains OPEN for identity/content inspection and LAEV disposition; the repository-existence component is evidence-confirmed.
+
+
 
 ### F-01 — Atlas identifies Protocol as its related normative document
 - Evidence: ERX-ATLAS-001 v1.1 control section, page 1, identifies ERX-PROT-001 v1.1 as “Documento normativo relacionado”.

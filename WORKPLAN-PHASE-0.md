@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.0.4
+- **Version:** 1.0.5
 - **Status:** DRAFT / PENDING APPROVAL
 - **Design and Approval Authority:** LAEV
 
@@ -134,7 +134,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.3.7 Approve contradiction-handling procedure.
 - [ ] 0.3.8 Approve document evolution and supersession rules.
 
-**Execution evidence:** [`docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md`](docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md) v0.5.0 — IN_PROGRESS; hierarchy matrix, subject-matter authority matrix v0.2.0, relationship map v0.2.0, source-alignment review v0.3.0, issue register v0.6.0 and CSV companion, contradiction-handling draft, evolution/supersession draft, second-pass audit v0.3.0, LAEV decision package v0.2.0, and completion matrix v0.5.0 published. Activities 0.3.1, 0.3.2 and 0.3.5 have evidence prepared; 0.3.6 has a source comparison with dispositions pending; 0.3.3, 0.3.4, 0.3.7 and 0.3.8 await LAEV approval. 
+**Execution evidence:** [`docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md`](docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md) v0.5.0 — IN_PROGRESS; hierarchy matrix, subject-matter authority matrix v0.2.0, relationship map v0.2.0, source-alignment review v0.3.0, issue register v0.6.0 and CSV companion, contradiction-handling draft, evolution/supersession draft, second-pass audit v0.3.0, LAEV decision package v0.2.0, completion matrix v0.5.0, and acceptance readiness report v0.1.0 published. WP-0.3 is not ready for approval because material LAEV/source decisions remain. Activities 0.3.1, 0.3.2 and 0.3.5 have evidence prepared; 0.3.6 has a source comparison with dispositions pending; 0.3.3, 0.3.4, 0.3.7 and 0.3.8 await LAEV approval. 
 **Acceptance:** hierarchy and subject-matter authority are explicitly approved; contradictions are recorded with exact source references, impact, owner, approved disposition, and status; evolution/supersession rules are approved. The acceptance criteria are not yet satisfied.  
 **Dependency:** WP-0.2 APPROVED. Formal WP-0.3 execution is authorized. The preparatory governance draft and issue matrix are inputs only; decisions and hierarchy require documented evidence and LAEV approval.
 

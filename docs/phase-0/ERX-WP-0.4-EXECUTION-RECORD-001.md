@@ -27,7 +27,7 @@
 - DC-01 through DC-09: APPROVED by LAEV; see ERX-WP-0.4-LAEV-DECISION-RECORD-001 v1.2.0.
 - Approved policy baseline: ERX-DOCUMENT-CONTROL-001 v1.0.0; approved exact candidate v0.4.2, blob SHA-1 `7cde15d1776ed913c3136f8116f8eb3912b302f1`. Approval: ERX-WP-0.4-APPROVAL-RECORD-001 v1.0.0. Released policy blob SHA is recorded in GitHub execution evidence.
 - Closeout audit: ERX-WP-0.4-CLOSEOUT-AUDIT-001 v0.5.0 — COMPLETED / ACCEPTED.
-- Workplan: WORKPLAN-PHASE-0.md v1.2.5.
+- Workplan: WORKPLAN-PHASE-0.md v1.2.6.
 - Register: registers/document-register.csv; IDX-013 points to approved policy v1.0.0; IDX-038–IDX-042 cover decision, audit, execution, internal review, and exact-version approval records.
 
 ## 3. Closeout result

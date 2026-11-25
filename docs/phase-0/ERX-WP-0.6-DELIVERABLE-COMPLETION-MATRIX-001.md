@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.5.7 |
+| Version | 0.5.8 |
 | Status | COMPLETED — CONDITIONAL ACCEPTANCE RECORDED |
 | Work Package | WP-0.6 |
 | Authority | LAEV |
@@ -28,7 +28,7 @@ Track the nine activities and acceptance criterion in WORKPLAN-PHASE-0.md. This 
 | 0.6.6 Record each document's status | Lifecycle, acceptance, archival and evidence states distinguished | Source-declared status preserved verbatim; lifecycle status conservatively mapped; evidence, custody and presence independently recorded; historical headers unchanged | COMPLETED — lifecycle, source status, acceptance, evidence, custody and presence kept distinct |
 | 0.6.7 Record relationships | Source-backed typed relationships and dependency links | Approved WP-0.3 map preserved; typed supplement v0.2.2 cross-checked against DP/DC/issue decisions and Workplan dependency chain | COMPLETED — approved baseline preserved; derivative typed relationship register reconciled |
 | 0.6.8 Identify pending documents | Missing, unverified, proposal and deferred items explicitly recorded | DOC-ISS-003, DOC-ISS-010 and DOC-ISS-011, FND-005 NOT_STATED metadata, unassigned IDs/versions and historical drafts retained without inference | COMPLETED — missing, proposal, deferred and NOT_STATED items recorded without inference |
-| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.5.0; ERX-DOCUMENT-REGISTER-001 v1.2.4; CSV 80 records/16 columns; latest read-only recursive tree contains 79 live paths plus one NOT_LOCATED reference-only source; all 79 live paths mapped exactly once; links checked | COMPLETED — index/CSV synchronized and post-write structural audit passed; readiness and closeout accepted |
+| 0.6.9 Consolidate master index | Markdown and CSV fully reconciled and consistent | Master index v1.5.1; ERX-DOCUMENT-REGISTER-001 v1.2.4; CSV 80 records/16 columns; latest read-only recursive tree contains 79 live paths plus one NOT_LOCATED reference-only source; all 79 live paths mapped exactly once; links checked | COMPLETED — index/CSV synchronized and post-write structural audit passed; readiness and closeout accepted |
 
 ## 3. Second-pass semantic and structural validation
 

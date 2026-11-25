@@ -22,24 +22,24 @@ The machine-readable companion is `registers/document-issue-register.csv`.
 - DOC-ISS-003 remains NOT LOCATED / UNVERIFIED.
 - DOC-ISS-008 is RESOLVED_EVIDENCE: all five original PDFs were located in `docs/`; the completion dossier records matching SHA-256 checksums and Git Blob SHA-1 identities.
 - DOC-ISS-009 and DOC-ISS-010 were refined after direct page-level inspection of ERX-PROT-001 v1.1 Step 15 (PDF p.13), UTXO-911-001 v1.0 Sections 2.1–3.1 and 4.5–5 (PDF pp.2–4, 8–9), ERX-ATLAS-001 v1.1 Plate 03, and ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3).
-- DOC-ISS-009 is a specific structural divergence: UTXO-911 creates a separate call-acceptance output before its initial-protocol output; Protocol/Atlas transition UTXO 01 directly to UTXO 02 containing contact and initial protocol. LAEV must decide the mapping.
-- DOC-ISS-010 is narrowed: Roadmap §3.1 expressly confirms the independent agent-availability cycle. Detailed transition, release/recovery, authority and verification rules remain pending.
+- DOC-ISS-009 is closed by DP-02: acceptance is an authenticated, uniquely identified event/sub-state in the atomic UTXO 01→02 transition, not a fourth spendable output in the approved profile.
+- DOC-ISS-010 is DEFERRED: Roadmap §3.1 confirms the independent agent-availability cycle; detailed transitions, release/recovery, authority and verification are assigned to later specification work.
 
 ## 3. Current issue status
 
 | ID | Issue | Status | Work Package |
 |---|---|---|---|
-| DOC-ISS-001 | Atlas filename/internal version discrepancy | OPEN | WP-0.3 |
+| DOC-ISS-001 | Atlas filename/internal version discrepancy | ACCEPTED_LIMITATION | WP-0.3 |
 | DOC-ISS-002 | ERX-CONSENSUS-001 v0.1 source identity/content confirmed from text; lifecycle is proposal for review | RESOLVED_EVIDENCE | WP-0.3 source verification |
-| DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | OPEN | WP-0.2 carry-forward |
-| DOC-ISS-004 | Technical Response lacks formal ID/version/date | OPEN | WP-0.3 |
-| DOC-ISS-005 | UTXO-911 / Protocol authority relationship | OPEN | WP-0.3 |
-| DOC-ISS-006 | Normative force and divergence handling for Atlas plates | OPEN | WP-0.3 |
-| DOC-ISS-007 | Whether Technical Response amends Roadmap | OPEN | WP-0.3 |
+| DOC-ISS-003 | ERX-IMPL-PROPOSAL-001 not located | ACCEPTED_LIMITATION | WP-0.2 carry-forward |
+| DOC-ISS-004 | Technical Response lacks formal ID/version/date | ACCEPTED_LIMITATION | WP-0.3 |
+| DOC-ISS-005 | UTXO-911 / Protocol authority relationship | CLOSED | WP-0.3 |
+| DOC-ISS-006 | Normative force and divergence handling for Atlas plates | CLOSED | WP-0.3 |
+| DOC-ISS-007 | Whether Technical Response amends Roadmap | CLOSED | WP-0.3 |
 | DOC-ISS-008 | Original PDF archival and hash verification | RESOLVED_EVIDENCE | WP-0.2 |
-| DOC-ISS-009 | Structural divergence: UTXO-911 call-acceptance output vs Protocol/Atlas three-output chain | OPEN | WP-0.3 |
-| DOC-ISS-011 | Consensus proposal status/completion and operational authority | OPEN | WP-0.3 disposition; later technical specification |
-| DOC-ISS-010 | Formal detail, owner and target package for independent agent-availability state machine | SOURCE_ALIGNMENT_CONFIRMED_DETAIL_PENDING | WP-0.3 disposition / later detailed specification |
+| DOC-ISS-009 | Structural divergence: UTXO-911 call-acceptance output vs Protocol/Atlas three-output chain | CLOSED | WP-0.3 |
+| DOC-ISS-011 | Consensus proposal status/completion and operational authority | DEFERRED | WP-0.3 disposition; later technical specification |
+| DOC-ISS-010 | Formal detail, owner and target package for independent agent-availability state machine | DEFERRED | WP-0.3 disposition / later detailed specification |
 
 The exact evidence, impact, required disposition, owner and status are maintained in the CSV companion.
 
@@ -69,7 +69,7 @@ The exact evidence, impact, required disposition, owner and status are maintaine
 ## 6. Dependencies and next action
 DOC-ISS-002 identity/content is evidence-confirmed from the text source; its proposal lifecycle and operational completion/authority are tracked in DOC-ISS-011. DOC-ISS-003 remains a source-location/provenance limitation. DOC-ISS-005, DOC-ISS-006 and DOC-ISS-009 require LAEV decisions after review of the source alignment report. DOC-ISS-010 has source alignment in Roadmap Section 3.1; WP-0.3 must record whether detailed state-machine specification is deferred, its target package, owner, impact and interim control. DOC-ISS-001 and DOC-ISS-004 can be handled through document identification/control in WP-0.4 without altering the originals. DOC-ISS-007 remains a response-effect question.
 
-**Status: APPROVED DISPOSITION REGISTER — WP-0.3.** All WP-0.3 dispositions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. DOC-ISS-003, 010 and 011 remain bounded/deferred follow-ups, not falsely represented as source-resolved. This update does not approve the hierarchy, subject-matter authority, or WP-0.3.
+**Status: APPROVED DISPOSITION REGISTER — WP-0.3.** All WP-0.3 dispositions are recorded in ERX-WP-0.3-LAEV-DECISION-RECORD-001 v1.0.0. DOC-ISS-003, 010 and 011 remain bounded/deferred follow-ups, not falsely represented as source-resolved. WP-0.3 is accepted as a documentary work package; residual items remain controlled for later work.
 
 ---
 End of ERX-DOCUMENT-ISSUE-REGISTER-001

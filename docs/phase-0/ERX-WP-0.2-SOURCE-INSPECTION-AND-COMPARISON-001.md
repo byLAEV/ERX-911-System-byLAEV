@@ -117,7 +117,7 @@ This is a recommendation/technical position. No approval or amendment record was
 ## 5. Source-dependent matters carried forward
 
 1. **DOC-ISS-001:** Atlas filename/internal version discrepancy — preserve filename; cite internal v1.1; canonical naming decision reserved for document control.
-2. **DOC-ISS-002:** ERX-CONSENSUS-001 v0.1 — NOT LOCATED / UNVERIFIED.
+2. **DOC-ISS-002:** ERX-CONSENSUS-001 v0.1 — identity/content subsequently confirmed from repository text source `docs/Consenso ERX byLAEV`; this is a post-approval supplemental discovery, not part of the accepted five-PDF baseline. Proposal status and operational completeness are DOC-ISS-011.
 3. **DOC-ISS-003:** ERX-IMPL-PROPOSAL-001 — NOT LOCATED / UNVERIFIED.
 4. **DOC-ISS-004:** Technical Response formal ID/version/date — not stated in supplied source.
 5. **DOC-ISS-005:** UTXO-911-001 and ERX-PROT-001 authority/scope relationship — not adjudicated.

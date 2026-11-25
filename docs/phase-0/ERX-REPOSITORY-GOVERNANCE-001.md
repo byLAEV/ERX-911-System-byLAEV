@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-REPOSITORY-GOVERNANCE-001 |
-| Version | 0.4.0 |
+| Version | 0.5.0 |
 | Status | IN REVIEW — NOT APPROVED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -229,3 +229,10 @@ LAEV expressly decided on 2026-11-24 to `keep` the repository visibility. In con
 ## 17. Recorded LAEV decision — repository administration (DP-ACCESS-01)
 
 On 2026-11-24, LAEV selected `sole` for DP-ACCESS-01. The decision means LAEV is the sole repository administrator; no other administrator is designated. The exact decision is recorded in `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0. This resolves the administration responsibility model only. No GitHub permission, collaborator, team membership, token, or setting was changed. The live collaborator roster and permission configuration remain NOT_VERIFIED / NOT_RECONCILED; separate explicit authorization is required before any permission modification. Maintainer, reviewer, contributor, merge, branch-protection, and recovery procedures remain open.
+
+
+## 18. Recorded LAEV decision — access matrix and review model (DP-ACCESS-02)
+
+On 2026-11-24, LAEV approved the role and responsibility matrix and the governance rules for modification of `main` in `ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001` v0.4.0. LAEV selected one independent technical review when an independent reviewer is available and assigned. The decision is recorded in `ERX-WP-0.5-ACCESS-DECISION-002` v1.0.0. No reviewer, maintainer or contributor was appointed by this decision. LAEV retains final approval/merge authority and remains the sole administrator under DP-ACCESS-01.
+
+This decision approves the governance model only. It does not approve this governance document, complete the live access audit, or authorize technical changes. No GitHub permissions, collaborators, teams, tokens, branch protection, rulesets, required-review settings, status checks or repository settings were modified. Separate express implementation authorization remains mandatory. This governance document remains IN REVIEW — NOT APPROVED; WP-0.5 remains IN_PROGRESS.

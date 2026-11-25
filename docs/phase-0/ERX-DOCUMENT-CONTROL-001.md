@@ -4,14 +4,14 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-CONTROL-001 |
-| Version | 0.3.1 |
-| Status | IN_REVIEW — WORKING PROPOSAL; NOT APPROVED |
+| Version | 0.4.0 |
+| Status | IN_REVIEW — CONSOLIDATED CANDIDATE; INDEPENDENT REVIEW PENDING |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Design and approval authority | LAEV |
 | Preparation date | 2026-11-24 |
 | Dependencies | WP-0.1 APPROVED; WP-0.3 COMPLETED / ACCEPTED |
-| Supersedes | Preparatory draft v0.2.0 for this controlled working line; no approved policy superseded |
+| Supersedes | Working candidates v0.2.0 and v0.3.1; no approved policy superseded |
 
 ## 1. Purpose and scope
 
@@ -205,7 +205,8 @@ Each controlled document maintains an append-only revision history:
 | Version | Date | Change class | Summary | Author | Reviewer | Approval reference | Status |
 |---|---|---|---|---|---|---|---|
 | 0.3.0 | 2026-11-24 | Consolidation / substantive draft | Reconciled preparatory draft with WP-0.3 accepted governance and opened WP-0.4 review | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
-| 0.3.1 | 2026-11-24 | Technical clarification / metadata correction | Separated lifecycle status from evidence verification and archival-copy tracking; clarified draft version progression and independent review | Project drafting record | NOT_RECORDED | NOT_APPROVED | IN_REVIEW |
+| 0.3.1 | 2026-11-24 | Technical clarification / metadata correction | Separated lifecycle status from evidence verification and archival-copy tracking; clarified draft version progression and independent review | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
+| 0.4.0 | 2026-11-24 | Decision incorporation / consolidated candidate | Incorporated LAEV-approved DC-01–DC-09; retained independent review and exact-version approval gates | Project drafting record | NOT_RECORDED | PENDING_EXACT_VERSION_APPROVAL | IN_REVIEW |
 
 Every material change also links to a change record containing:
 - Change ID.
@@ -293,27 +294,28 @@ Migration is a controlled metadata reconciliation, not a blanket rewrite.
 - ERX-IMPL-PROPOSAL-001: retain NOT_LOCATED / UNVERIFIED until the source is obtained or a separate approved disposition is made.
 - Workplan and master index statuses/versions must be taken from their actual controlled records and reconciled in their own work packages.
 
-## 13. Open decisions for LAEV review
+## 13. Approved policy decisions
 
-The following are proposals, not approved policy until LAEV expressly decides:
+LAEV approved DC-01 through DC-09 on 2026-11-24. The formal disposition is recorded in `ERX-WP-0.4-LAEV-DECISION-RECORD-001 v1.0.0`.
 
-- **DC-01:** Adopt the proposed ERX identifier pattern for new ERX-controlled documents, while preserving all established source IDs and recording catalogue-only IDs separately.
-- **DC-02:** Adopt stable canonical filenames `[DOCUMENT-ID].md`; keep versions in document metadata and exported snapshot filenames only.
-- **DC-03:** Adopt MAJOR.MINOR.PATCH versioning, with 0.x.y drafts and 1.0.0 as the first approved baseline.
-- **DC-04:** Adopt the lifecycle status set and transition controls in Section 6.
-- **DC-05:** Adopt the mandatory metadata set in Section 7, including explicit unknown-value tokens.
-- **DC-06:** Adopt the separation of author, design authority, reviewer, approver, and repository contributor.
-- **DC-07:** Require an exact-version review and approval record; a commit, merge, or CI result is not approval.
-- **DC-08:** Adopt append-only revision/change history and the cross-reference rules.
-- **DC-09:** Adopt prospective migration, preserving source originals and provenance; defer full master index acceptance to WP-0.6.
+The approved decisions are incorporated as follows:
+- **DC-01:** Identifier pattern `ERX-[DOCUMENT-FAMILY]-[SEQUENCE]` for new controlled documents; established source IDs remain unchanged; catalogue-only IDs are explicitly labelled.
+- **DC-02:** Stable canonical filename `[DOCUMENT-ID].md`; version is metadata, with versioned exports permitted.
+- **DC-03:** MAJOR.MINOR.PATCH versioning; 0.x.y for drafts; 1.0.0 for the first approved baseline unless expressly varied by the approval record.
+- **DC-04:** Document lifecycle states and transitions are distinct from work-package states; evidence verification and archive custody are separate attributes.
+- **DC-05:** Mandatory and conditional metadata by document class, with explicit unknown-value tokens.
+- **DC-06:** Author, design authority, reviewer, approver, and repository contributor are separate roles; substantive technical/normative review is independent of authorship unless a justified exception is expressly approved.
+- **DC-07:** Review and approval identify the exact version; commits, merges, and CI checks are not substantive approval.
+- **DC-08:** Append-only revision/change history and exact-version cross-reference/provenance controls.
+- **DC-09:** Prospective migration preserves originals and provenance; authoritative master-index acceptance remains in WP-0.6.
 
-LAEV may accept, reject, or amend each proposal. No proposal becomes approved merely by inclusion in this draft.
+These decisions authorize the policy content but do not waive the independent review and exact-version approval requirements.
 
 ## 14. WP-0.4 execution and acceptance
 
-**Current status: IN_REVIEW — WP-0.4 EXECUTION OPEN; POLICY NOT APPROVED.**
+**Current status: IN_REVIEW — CONSOLIDATED CANDIDATE; INDEPENDENT REVIEW AND EXACT-VERSION APPROVAL PENDING.**
 
-Activities 0.4.1–0.4.9 are developed in this candidate but remain subject to LAEV review and evidence completion.
+Activities 0.4.1–0.4.9 have been developed. LAEV has approved DC-01–DC-09; the final policy release gate remains open pending independent review of this exact candidate and LAEV's approval of the reviewed version.
 
 Acceptance requires:
 1. A unique, non-reusable identifier rule and allocation method.
@@ -325,8 +327,10 @@ Acceptance requires:
 7. Reconstructable revision history and change traceability.
 8. Exact, versioned cross-references and provenance rules.
 9. A migration plan that preserves original sources and does not imply retrospective approval.
-10. LAEV's express decision on DC-01–DC-09 and a final approved v1.0.0 or other explicitly authorized baseline.
-11. Updated execution/completion evidence and document register.
+10. LAEV's express decision on DC-01–DC-09 (recorded in the decision record).
+11. Independent review of the exact consolidated candidate, with reviewer, scope, date, findings, and disposition recorded.
+12. LAEV's express approval of the exact reviewed version; the first approved baseline is then released as v1.0.0 unless the approval decision explicitly states otherwise.
+13. Updated execution/completion evidence and document register.
 
 **Boundary:** WP-0.4 approval will not complete WP-0.5, WP-0.6, the whole Phase 0, or authorize Phase 1, implementation, deployment, or institutional operation.
 

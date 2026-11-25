@@ -28,7 +28,7 @@ The following WP-0.2 outputs are accepted as the foundational baseline:
 
 ## 3. Accepted bounded dispositions
 
-- `ERX-CONSENSUS-001 v0.1`: cited by ERX-ROADMAP-001; NOT LOCATED in the inspected source set/repository; content and provenance remain UNVERIFIED.
+- `ERX-CONSENSUS-001 v0.1`: at the time of WP-0.2 approval, it was recorded as not located in the five-file baseline and inspected repository set. Subsequent post-approval inspection of `docs/Consenso ERX byLAEV` confirms the text source's identifier/version and content identity with the Roadmap citation. This supplemental discovery does not retroactively change the five-file acceptance baseline or invalidate WP-0.2 approval; proposal status and operational completeness are tracked in DOC-ISS-011.
 - `ERX-IMPL-PROPOSAL-001`: cited by ERX-ROADMAP-001; NOT LOCATED in the inspected source set/repository; content and provenance remain UNVERIFIED.
 
 These dispositions mean that WP-0.2's inventory requirement is accepted with the source gaps explicitly recorded. They do not certify the contents, existence elsewhere, authority, or approval of either unavailable source. Any later receipt must be separately inventoried and reviewed.

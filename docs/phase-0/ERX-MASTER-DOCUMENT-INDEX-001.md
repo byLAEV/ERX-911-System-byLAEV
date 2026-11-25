@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.4.7 |
+| Version | 1.4.8 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -126,7 +126,7 @@ End of ERX-MASTER-DOCUMENT-INDEX-001
 
 ## 10. WP-0.6 acceptance and WP-0.7 execution update
 
-WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.1](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.2, internal review v0.3.2, and synchronized CSV catalogue.
+WP-0.6 is COMPLETED / ACCEPTED under [ERX-WP-0.6-ACCEPTANCE-RECORD-001 v1.0.1](ERX-WP-0.6-ACCEPTANCE-RECORD-001.md). The final closeout evidence comprises the readiness report v1.0.0, closeout audit v1.0.0, completion matrix v0.5.3, internal review v0.3.3, and synchronized CSV catalogue.
 
 WP-0.7 is now formally initiated under its previously approved scope. [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md) records dependency release; [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md) records direct inspection of the five accepted PDFs; [ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001 v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) documents the first 15 candidate requirements, still pending technical review and approval. The controlled requirements method is ERX-REQUIREMENTS-METHOD-001 v1.0.0.
 

@@ -122,34 +122,36 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Dependency:** WP-0.1.
 
 ### WP-0.3 — Document Organization and Hierarchy
-**Status:** IN_PROGRESS — DOCUMENTARY ANALYSIS RECORDED; LAEV DECISIONS PENDING
+**Status:** COMPLETED / ACCEPTED — 2026-11-24
 
 **Activities**
-- [x] 0.3.1 Prepare document classification.
-- [x] 0.3.2 Distinguish foundational sources from governance/development artifacts.
-- [ ] 0.3.3 Obtain LAEV decision and approval of document hierarchy.
-- [ ] 0.3.4 Obtain LAEV decision and approval of subject-matter authority.
-- [x] 0.3.5 Record known relationships and dependencies.
-- [x] 0.3.6 Complete evidence-based source comparison and identify material contradictions/ambiguities.
-- [ ] 0.3.6a Obtain LAEV dispositions for the identified material issues and synchronize registers.
-- [ ] 0.3.7 Obtain approval of contradiction/ambiguity handling procedure.
-- [ ] 0.3.8 Obtain approval of document evolution and supersession rules.
+- [x] 0.3.1 Classify documents and distinguish sources from project artifacts.
+- [x] 0.3.2 Establish source/artifact separation and rationale.
+- [x] 0.3.3 Approve document hierarchy (DP-01).
+- [x] 0.3.4 Approve subject-matter authority (DP-01).
+- [x] 0.3.5 Record source-backed relationships and dependencies.
+- [x] 0.3.6 Compare and disposition documentary issues DOC-ISS-001–011.
+- [x] 0.3.7 Approve contradiction/ambiguity handling procedure.
+- [x] 0.3.8 Approve document evolution and supersession policy.
 
-**Proposed deliverables — NOT YET APPROVED**
-- `docs/phase-0/ERX-DOCUMENT-HIERARCHY-MATRIX-001.md` v1.0.0 — PROPOSED / PENDING LAEV DECISION.
-- `docs/phase-0/ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001.md` v1.0.0 — PROPOSED / PENDING LAEV DECISION.
-- `docs/phase-0/ERX-DOCUMENT-RELATIONSHIP-MAP-001.md` v1.0.0 — EVIDENCE DRAFT / PENDING WP-0.3 ACCEPTANCE.
-- `docs/phase-0/ERX-WP-0.3-SOURCE-ALIGNMENT-REVIEW-001.md` — source comparison completed; substantive dispositions remain subject to LAEV approval.
-- `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` and `registers/document-issue-register.csv` — disposition statuses pending synchronization with express LAEV decisions.
-- `docs/phase-0/ERX-CONTRADICTION-AND-AMBIGUITY-HANDLING-001.md` v1.0.0 — PROPOSED / PENDING APPROVAL.
-- `docs/phase-0/ERX-DOCUMENT-EVOLUTION-AND-SUPERSESSION-001.md` v1.0.0 — PROPOSED / PENDING APPROVAL.
-- `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-PACKAGE-001.md` v0.5.0 — decision proposals and evidence.
-- `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-RECORD-001.md` v1.0.0 — DRAFT / NOT APPROVED; records proposed dispositions only.
-- Execution, completion, audit and acceptance-readiness records — working records; not evidence of accepted closeout.
+**Controlling evidence**
+- LAEV decision record: `docs/phase-0/ERX-WP-0.3-LAEV-DECISION-RECORD-001.md` v1.0.0 — APPROVED; DP-01–DP-09 and issue dispositions.
+- Deliverable matrix: `docs/phase-0/ERX-WP-0.3-DELIVERABLE-COMPLETION-MATRIX-001.md` v1.0.1 — COMPLETED / ACCEPTED.
+- Execution record: `docs/phase-0/ERX-WP-0.3-EXECUTION-RECORD-001.md` v1.0.0 — COMPLETED / ACCEPTED.
+- Acceptance readiness: `docs/phase-0/ERX-WP-0.3-ACCEPTANCE-READINESS-REPORT-001.md` v1.0.0 — ACCEPTED.
+- Internal audit: `docs/phase-0/ERX-WP-0.3-AUDIT-REPORT-001.md` v1.0.1 — final result in Section 9; Sections 2–8 are preserved historical snapshots.
+- Issue register: `docs/phase-0/ERX-DOCUMENT-ISSUE-REGISTER-001.md` v1.0.0 and `registers/document-issue-register.csv` — disposition states synchronized.
 
-**Acceptance:** WP-0.3 may be marked COMPLETED / ACCEPTED only after (a) LAEV expressly adopts, revises or rejects the material DP-01–DP-09 proposals; (b) hierarchy and subject-matter authority are approved; (c) each issue has an evidenced disposition or an explicitly accepted bounded limitation/deferment; (d) both governance procedures are expressly approved; (e) Markdown and CSV registers and all execution/acceptance records are synchronized; and (f) any required review is recorded separately from LAEV's design approval. Authorization to audit, correct or prepare closure is not itself approval of the substantive decisions. No implementation, external certification, institutional homologation or production readiness is implied.
+**Accepted residual controls**
+- DOC-ISS-003 / ERX-IMPL-PROPOSAL-001: NOT LOCATED / UNVERIFIED; accepted bounded source-location limitation. No content inferred.
+- DOC-ISS-010: independent agent-availability cycle accepted; detailed state-machine specification deferred.
+- DOC-ISS-011 / ERX-CONSENSUS-001 v0.1: remains a proposal for review; operational consensus specification/approval deferred. No operational or multi-institutional consensus authorization.
+- Independent external review: NOT PERFORMED / NOT CLAIMED; separate from LAEV approval and internal documentary acceptance.
+- DOC-ISS-001 and DOC-ISS-004 preserve source-native metadata limitations; catalogue treatment is controlled under WP-0.4.
 
-**Dependency:** WP-0.2 APPROVED. WP-0.3 remains the active work package. No downstream package is released for new execution by this status update.
+**Acceptance:** Activities 0.3.1–0.3.8 have evidence; DP-01–DP-09 are recorded in LAEV's approved decision record; all DOC-ISS-001–011 have a final disposition; Markdown and CSV issue registers are synchronized; governance procedures are approved; bounded limitations and deferred specifications are explicit. WP-0.3 documentary acceptance does not certify implementation, security, external audit, institutional homologation or production readiness.
+
+**Dependency:** WP-0.2 APPROVED. WP-0.3 COMPLETED / ACCEPTED. WP-0.4 retains its own separate approval and closeout evidence; WP-0.5 remains subject to its stated dependencies. No Phase 1 or production authorization is granted.
 
 ### WP-0.4 — Document Identification and Control
 **Status:** COMPLETED / ACCEPTED — LAEV APPROVED BASELINE v1.0.0

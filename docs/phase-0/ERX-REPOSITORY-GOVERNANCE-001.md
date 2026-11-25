@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-REPOSITORY-GOVERNANCE-001 |
-| Version | 0.3.0 |
+| Version | 0.4.0 |
 | Status | IN REVIEW — NOT APPROVED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -96,6 +96,8 @@ The approved WP-0.2 foundational register and completion dossier state that the 
 
 ## 6. Access and Permissions
 
+**Recorded decision DP-ACCESS-01:** LAEV is the sole repository administrator. The express decision is recorded in `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0. This establishes the intended responsibility model only; no GitHub permissions were changed, and live configuration has not been reconciled.
+
 Proposed access principles:
 - Grant only the minimum permissions necessary for a person's assigned role.
 - Distinguish read, write, review, and administrative permissions.
@@ -162,7 +164,7 @@ A copyright notice may identify authorship or rights claims but does not itself 
 | Document authorship | Named document author | Must be recorded per document |
 | Technical review | Assigned reviewer | Not yet assigned by this draft |
 | Approval | LAEV or expressly delegated authority | Must be recorded per artifact |
-| Repository administration | Authorized GitHub administrator | Current assignment/settings not verified |
+| Repository administration | LAEV — sole administrator by express decision DP-ACCESS-01 | Decision recorded; live GitHub grants not reconciled |
 | Independent validation | Independent reviewer when required | To be defined in WP-0.10 |
 
 ## 12. Current Repository Observations and Limitations
@@ -180,7 +182,7 @@ The five original PDF binaries are recorded by the approved WP-0.2 inventory and
 5. Approve source archival location and retention policy.
 6. Decide whether and how Git commits must be signed.
 7. Decide intellectual property and licensing scope.
-8. Define repository administration responsibility and recovery procedure.
+8. Repository administration responsibility: RESOLVED — LAEV is the sole repository administrator by DP-ACCESS-01; recovery procedure remains OPEN.
 9. Approve rules for third-party contributions and external pull requests.
 10. Define archival and backup policy beyond Git history.
 
@@ -209,7 +211,7 @@ End of ERX-REPOSITORY-GOVERNANCE-001
 | Work branch | LAEV AUTHORIZED: main | Execute WP-0.5 documentation work on main |
 | Directory structure | PROPOSED | Complete full tree inventory and agree final organization |
 | Foundational originals | PRIOR WP-0.2 INTEGRITY EVIDENCE REFERENCED | Preserve exact binaries; do not re-upload or alter |
-| Access policy and role assignments | PROPOSED / PARTIALLY UNVERIFIED | Inspect collaborator roster and decide administrator/reviewer assignments |
+| Access policy and role assignments | PARTIALLY DECIDED / LIVE CONFIGURATION NOT_VERIFIED | Sole administrator decision recorded; inspect collaborator roster and define non-admin roles |
 | Branch protections and review rules | NOT_VERIFIED | Inspect actual rulesets and decide controls |
 | Change-control policy | PROPOSED | Align with approved ERX-DOCUMENT-CONTROL-001 and record operational repository procedure |
 | Git history preservation | PROPOSED | Verify available history/backup approach and adopt procedure |
@@ -222,3 +224,8 @@ Publication of this version records a review draft only. The visibility decision
 ## 16. Recorded LAEV decision — repository visibility
 
 LAEV expressly decided on 2026-11-24 to `keep` the repository visibility. In context, this means retain the current public visibility. The decision is documented in `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0. The repository was already observed as public, so no setting change was necessary or performed. The decision does not approve this governance draft, grant a license, or resolve access, branch protection, collaborator, publication-review or intellectual-property matters.
+
+
+## 17. Recorded LAEV decision — repository administration (DP-ACCESS-01)
+
+On 2026-11-24, LAEV selected `sole` for DP-ACCESS-01. The decision means LAEV is the sole repository administrator; no other administrator is designated. The exact decision is recorded in `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0. This resolves the administration responsibility model only. No GitHub permission, collaborator, team membership, token, or setting was changed. The live collaborator roster and permission configuration remain NOT_VERIFIED / NOT_RECONCILED; separate explicit authorization is required before any permission modification. Maintainer, reviewer, contributor, merge, branch-protection, and recovery procedures remain open.

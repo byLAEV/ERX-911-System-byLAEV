@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 0.4.2 |
+| Version | 0.4.3 |
 | Status | IN_PROGRESS — SECOND-PASS RECONCILIATION |
 | Work Package | WP-0.6 |
 | Authority | LAEV |

@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-REPOSITORY-GOVERNANCE-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | IN REVIEW — NOT APPROVED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -174,7 +174,7 @@ The five original PDF binaries are recorded by the approved WP-0.2 inventory and
 ## 13. Open Decisions
 
 1. Approve the proposed directory structure or define changes.
-2. Confirm repository visibility and access policy.
+2. Repository visibility: RESOLVED — LAEV expressly decided to retain public visibility in `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0. This resolves visibility only; it does not approve publication of every future artifact or grant a license.
 3. Confirm branch model and protection requirements.
 4. Define mandatory review and approval paths.
 5. Approve source archival location and retention policy.
@@ -200,11 +200,12 @@ Remaining acceptance work includes completing the repository structure inspectio
 End of ERX-REPOSITORY-GOVERNANCE-001
 
 
-## 15. Decisions and evidence status at v0.2.0
+## 15. Decisions and evidence status at v0.3.0
 
 | Matter | Current status | Required next step |
 |---|---|---|
-| Repository identity, public visibility, default branch | OBSERVED | Retain as baseline unless LAEV authorizes a change |
+| Repository identity and default branch | OBSERVED | Retain as baseline unless LAEV authorizes a change |
+| Repository visibility | DECIDED — KEEP PUBLIC | LAEV decision recorded in ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001 v1.0.0; does not grant reuse rights or approve all content for publication |
 | Work branch | LAEV AUTHORIZED: main | Execute WP-0.5 documentation work on main |
 | Directory structure | PROPOSED | Complete full tree inventory and agree final organization |
 | Foundational originals | PRIOR WP-0.2 INTEGRITY EVIDENCE REFERENCED | Preserve exact binaries; do not re-upload or alter |
@@ -215,4 +216,9 @@ End of ERX-REPOSITORY-GOVERNANCE-001
 | License and IP scope | OPEN — NO LICENSE DECISION | Obtain express LAEV decision; do not create or imply a license |
 | External/independent review | NOT PERFORMED | Do not claim it; commission separately if required |
 
-Publication of this version records a review draft only. Each matter must retain its stated status until evidence and, where required, express approval exist.
+Publication of this version records a review draft only. The visibility decision is recorded as an express LAEV decision, while every other matter retains its stated status until evidence and, where required, express approval exist.
+
+
+## 16. Recorded LAEV decision — repository visibility
+
+LAEV expressly decided on 2026-11-24 to `keep` the repository visibility. In context, this means retain the current public visibility. The decision is documented in `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0. The repository was already observed as public, so no setting change was necessary or performed. The decision does not approve this governance draft, grant a license, or resolve access, branch protection, collaborator, publication-review or intellectual-property matters.

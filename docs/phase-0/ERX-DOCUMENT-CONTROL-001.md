@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-DOCUMENT-CONTROL-001 |
-| Version | 0.4.1 |
+| Version | 0.4.2 |
 | Status | IN_REVIEW — CONSOLIDATED CANDIDATE; LAEV FINAL APPROVAL PENDING |
 | Work Package | WP-0.4 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -175,7 +175,7 @@ Conditional fields:
 These roles must be recorded separately:
 - **Author:** responsible for preparing the content.
 - **Design authority:** responsible for design decisions within an assigned subject.
-- **Reviewer:** evaluates the submitted version against a stated scope/criteria. The reviewer performs a documented technical/consistency review against stated criteria. Independence is not a prerequisite for internal work-package completion or LAEV approval. Independent external review/audit is a later assurance activity to be scheduled after completion of the planned project work, under the applicable verification/audit work package; it must not be represented as completed before evidence exists.
+- **Reviewer:** evaluates the submitted version against a stated scope/criteria. The reviewer performs a documented technical/consistency review against stated criteria. Internal review may be performed within the project team and is not represented as independent external review. Independent external review/audit is deferred until after planned project work and is not a prerequisite for closing a work package or advancing to the next one; it must not be represented as completed before evidence exists.
 - **Approver:** exercises the formal authority to accept or reject that exact version.
 - **Repository contributor:** account/person that commits or uploads content; this role alone does not prove authorship or approval.
 
@@ -207,7 +207,8 @@ Each controlled document maintains an append-only revision history:
 | 0.3.0 | 2026-11-24 | Consolidation / substantive draft | Reconciled preparatory draft with WP-0.3 accepted governance and opened WP-0.4 review | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
 | 0.3.1 | 2026-11-24 | Technical clarification / metadata correction | Separated lifecycle status from evidence verification and archival-copy tracking; clarified draft version progression and independent review | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
 | 0.4.0 | 2026-11-24 | Decision incorporation / consolidated candidate | Incorporated LAEV-approved DC-01–DC-09; independent external review initially listed as a pending gate | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
-| 0.4.1 | 2026-11-24 | Governance clarification | Defers independent external review/audit until after planned project work; preserves internal review and LAEV exact-version approval | Project drafting record | NOT_RECORDED | PENDING_LAEV_EXACT_VERSION_APPROVAL | IN_REVIEW |
+| 0.4.1 | 2026-11-24 | Governance clarification | Defers independent external review/audit until after planned project work; preserves internal review and LAEV exact-version approval | Project drafting record | NOT_RECORDED | NOT_APPROVED | HISTORICAL_DRAFT |
+| 0.4.2 | 2026-11-24 | Internal-review correction | Resolves review-timing contradictions; aligns review roles with LAEV decision record v1.2.0 Addendum B | Project drafting record | NOT_RECORDED | PENDING_LAEV_EXACT_VERSION_APPROVAL | IN_REVIEW |
 
 Every material change also links to a change record containing:
 - Change ID.
@@ -297,7 +298,7 @@ Migration is a controlled metadata reconciliation, not a blanket rewrite.
 
 ## 13. Approved policy decisions
 
-LAEV approved DC-01 through DC-09 on 2026-11-24. The formal disposition is recorded in `ERX-WP-0.4-LAEV-DECISION-RECORD-001 v1.0.0`.
+LAEV approved DC-01 through DC-09 on 2026-11-24. The formal disposition is recorded in `ERX-WP-0.4-LAEV-DECISION-RECORD-001 v1.2.0`.
 
 The approved decisions are incorporated as follows:
 - **DC-01:** Identifier pattern `ERX-[DOCUMENT-FAMILY]-[SEQUENCE]` for new controlled documents; established source IDs remain unchanged; catalogue-only IDs are explicitly labelled.
@@ -310,13 +311,13 @@ The approved decisions are incorporated as follows:
 - **DC-08:** Append-only revision/change history and exact-version cross-reference/provenance controls.
 - **DC-09:** Prospective migration preserves originals and provenance; authoritative master-index acceptance remains in WP-0.6.
 
-These decisions authorize the policy content. LAEV's subsequent disposition `ERX-WP-0.4-LAEV-DECISION-RECORD-001` Addendum A clarifies that independent external review is deferred until after planned project completion; exact-version internal review and LAEV approval remain required.
+These decisions authorize the policy content. LAEV's `ERX-WP-0.4-LAEV-DECISION-RECORD-001` v1.2.0 Addendum B establishes that independent external review occurs after planned project work and is not a WP-0.4 or inter-work-package prerequisite; internal review and LAEV exact-version approval remain required.
 
 ## 14. WP-0.4 execution and acceptance
 
-**Current status: IN_REVIEW — CONSOLIDATED CANDIDATE; INTERNAL REVIEW AND LAEV EXACT-VERSION APPROVAL PENDING.**
+**Current status: IN_REVIEW — INTERNALLY REVIEWED CANDIDATE; LAEV EXACT-VERSION APPROVAL PENDING.**
 
-Activities 0.4.1–0.4.9 have been developed. LAEV has approved DC-01–DC-09; the final policy release gate remains open pending independent review of this exact candidate and LAEV's approval of the reviewed version.
+Activities 0.4.1–0.4.9 have been developed. LAEV has approved DC-01–DC-09 and clarified that independent external review is deferred until after planned project work. Internal review is recorded in `ERX-WP-0.4-INTERNAL-REVIEW-001` v0.1.0. The final policy release gate remains open pending LAEV's approval of this exact version.
 
 Acceptance requires:
 1. A unique, non-reusable identifier rule and allocation method.

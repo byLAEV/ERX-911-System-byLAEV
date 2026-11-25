@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.2.9
+- **Version:** 1.3.0
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -213,7 +213,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 └── templates/
 ```
 
-**Execution artifacts:** `ERX-WP-0.5-INITIATION-RECORD-001` v1.0.0 — RECORDED; `ERX-WP-0.5-REPOSITORY-AUDIT-001` v0.1.0 — PRELIMINARY / IN PROGRESS; `ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001` v0.2.0 — PROPOSED / NOT APPROVED; `ERX-REPOSITORY-GOVERNANCE-001` v0.4.0 — IN REVIEW / NOT APPROVED; `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0 — RECORDED EXPRESS DECISION; `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0 — RECORDED EXPRESS DECISION; and `registers/repository-governance-evidence.csv` (RGE-025). Audit gaps and decisions are expressly recorded; see the initiation, visibility decision and audit records. LAEV decided to KEEP PUBLIC and selected `sole` for DP-ACCESS-01 (LAEV as sole repository administrator). The administration decision does not change live GitHub permissions; separate authorization is required for any permission modification.
+**Execution artifacts:** `ERX-WP-0.5-INITIATION-RECORD-001` v1.0.0 — RECORDED; `ERX-WP-0.5-REPOSITORY-AUDIT-001` v0.1.0 — PRELIMINARY / IN PROGRESS; `ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001` v0.3.0 — PROPOSED / NOT APPROVED; `ERX-REPOSITORY-GOVERNANCE-001` v0.4.0 — IN REVIEW / NOT APPROVED; `ERX-WP-0.5-REPOSITORY-VISIBILITY-DECISION-001` v1.0.0 — RECORDED EXPRESS DECISION; `ERX-WP-0.5-REPOSITORY-ADMINISTRATION-DECISION-001` v1.0.0 — RECORDED EXPRESS DECISION; and `registers/repository-governance-evidence.csv` (RGE-025–RGE-030). Audit gaps and decisions are expressly recorded; see the initiation, visibility decision and audit records. LAEV decided to KEEP PUBLIC and selected `sole` for DP-ACCESS-01 (LAEV as sole repository administrator). The administration decision does not change live GitHub permissions; separate authorization is required for any permission modification. Read-only verification reports `main` as unprotected (`protected=false`; status-check enforcement off); the owner account `byLAEV` is Admin; complete collaborator/inherited access roster remains NOT_VERIFIED. The proposed role/branch model is in matrix v0.3.0 and remains NOT APPROVED.
 **Acceptance:** locations, access, branches, change control, and intellectual property are documented. Do not create or attribute a license without an express decision.  
 **Dependencies:** WP-0.3 and WP-0.4 — both COMPLETED / ACCEPTED, as evidenced by their controlling decision/closeout records. Prerequisites are satisfied. LAEV expressly authorized WP-0.5 execution on 2026-11-24 in the project conversation; execution is IN_PROGRESS. Publication of these artifacts does not constitute approval of repository policy, completion of WP-0.5, or authorization of WP-0.6 before WP-0.5 acceptance.
 

@@ -31,7 +31,7 @@ Record relationships supported by direct source references and content inspectio
 | ERX-ROADMAP-001 v1.0 | ERX-PROT-001 v1.1 | Foundational reference | Roadmap Section 1 foundation | Does not mean Roadmap rewrites Protocol |
 | ERX-ROADMAP-001 v1.0 | ERX-ATLAS-001 v1.1 | Foundational reference | Roadmap Section 1 foundation | Atlas remains its own source |
 | ERX-ROADMAP-001 v1.0 | UTXO-911-001 v1.0 | Foundational reference | Roadmap Section 1 foundation | Functional relationship needs detailed alignment |
-| ERX-ROADMAP-001 v1.0 | ERX-CONSENSUS-001 v0.1 | Cited reference with candidate located | Roadmap citation; candidate `docs/Consenso ERX byLAEV.pdf` located after WP-0.2 approval | Candidate internal identity, version and contents not yet verified against the Roadmap reference |
+| ERX-ROADMAP-001 v1.0 | ERX-CONSENSUS-001 v0.1 | Cited reference; text source identity confirmed, proposal for review | Roadmap citation; candidate `docs/Consenso ERX byLAEV.pdf` located after WP-0.2 approval | Candidate internal identity, version and contents not yet verified against the Roadmap reference |
 | ERX-ROADMAP-001 v1.0 | ERX-IMPL-PROPOSAL-001 | Unverified reference | Roadmap cites source | Content and provenance unavailable |
 | FND-005 Technical Response | ERX-ROADMAP-001 v1.0 | Response/review | Title and two-page content | Not an amendment without express approval evidence |
 | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1 | Graphical representation | Protocol three-transaction lifecycle; Atlas Plates 01–04 and 05–08 | Exact clause-to-plate verification remains bounded by the Atlas correspondence table |

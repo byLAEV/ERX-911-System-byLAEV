@@ -4,12 +4,12 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-SUBJECT-MATTER-AUTHORITY-MATRIX-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | PROPOSAL — PENDING LAEV APPROVAL |
 | Work Package | WP-0.3 / Activity 0.3.4 |
 | Project | ERX-911-System-byLAEV |
 | Design and Approval Authority | LAEV |
-| Evidence baseline | Direct inspection of FND-001, FND-002 and FND-003 PDFs |
+| Evidence baseline | Direct inspection of FND-001–FND-005, including page-level Protocol, UTXO-911 and Roadmap comparison |
 | Date | 2026-11-24 |
 
 ## 1. Purpose and rule
@@ -20,9 +20,9 @@ This matrix identifies the source most directly relevant to each subject, the co
 | Subject | Directly relevant source | Supporting / related source | Evidence inspected | Proposed authority boundary |
 |---|---|---|---|---|
 | Institutional 911 protocol purpose, participants, institutional prerequisites and lifecycle | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1 | Protocol Sections 1–5; Atlas control section and Plates 01–02 | Protocol is the direct textual protocol source; Atlas represents it graphically |
-| Three institutional communication transitions | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1; UTXO-911-001 v1.0 | Protocol Sections 5–9; Atlas Plates 01–04 and correspondence table; UTXO Sections 1–4 | Protocol describes three transactions; exact functional alignment with UTXO-911 requires a controlled mapping |
-| Initial call request, acceptance and operator protocol | UTXO-911-001 v1.0 | ERX-PROT-001 v1.1; Atlas Plates 02–03 | UTXO Sections 2–3; Protocol Sections 6–7 | UTXO-911 describes request/acceptance details; whether these are sub-states within Protocol UTXO 01/02 or separate outputs requires decision |
-| Agent availability and reuse prevention | UTXO-911-001 v1.0 | Atlas Plate 05 and operational flow plates | UTXO Sections 4.5–5; Atlas Plate 05 | UTXO-911 expressly describes an agent availability UTXO separate from the communication states; Protocol's three-stage chain does not fully define this agent lifecycle in the inspected sections |
+| Three institutional communication transactions | ERX-PROT-001 v1.1 | ERX-ATLAS-001 v1.1; ERX-ROADMAP-001 v1.0; UTXO-911-001 v1.0 | Protocol Sections 1–2, 6–8 and Step 15; Atlas Plates 02–04; Roadmap Section 3.1 | Protocol/Atlas/Roadmap define UTXO 01 reception, UTXO 02 contact and initial protocol, UTXO 03 development and closure; UTXO-911 has an additional separate acceptance output described in Sections 2.5 and 3.1, requiring the DP-02 mapping decision |
+| Call request and agent acceptance states | UTXO-911-001 v1.0 | ERX-PROT-001 v1.1; ERX-ATLAS-001 v1.1; ERX-ROADMAP-001 v1.0 | UTXO Sections 2.1–2.5 and 3.1; Protocol Step 15 (PDF p.13); Atlas Plate 03 | UTXO-911 explicitly consumes a request UTXO and generates a distinct acceptance UTXO before the initial-protocol UTXO. Protocol Step 15 instead consumes UTXO 01 and creates UTXO 02 representing contact and initial protocol result. This structural mapping requires LAEV decision; see DOC-ISS-009 / DP-02 |
+| Independent agent-availability cycle and reuse prevention | ERX-ROADMAP-001 v1.0 | UTXO-911-001 v1.0; Technical Response FND-005 | Roadmap Section 3.1 (PDF p.3); UTXO Sections 4.5–5 (PDF pp.8–9); Technical Response p.1 | The Roadmap expressly establishes Cycle B as related to but independent from the three communication UTXOs; UTXO-911 and FND-005 support this separation. Detailed transitions, authority and release conditions remain to be specified; the existence/independence of the cycle is not an unresolved question |
 | UTXO uniqueness, atomicity, idempotency, concurrency, replay and history | ERX-PROT-001 v1.1 | UTXO-911-001 v1.0; Atlas Plate 05 | Protocol Section 10.1–10.11; UTXO Section 6; Atlas Plate 05 | Shared subject matter; Protocol gives explicit mandatory rules; implementation mechanisms remain subject to later technical specifications |
 | OTS evidence and its independence from emergency handling | ERX-PROT-001 v1.1 | UTXO-911-001 v1.0; Atlas Plate 06 | Protocol Sections 11–12; UTXO Section 7; Atlas Plate 06 | OTS is temporal evidence, not call admission, institutional authentication or proof of content truth |
 | Privacy, protected data and access | ERX-PROT-001 v1.1 | Atlas Plate 08 | Protocol Section 13; Atlas verification/privacy representation | Protocol is the direct textual source; operational controls require detailed requirements later |
@@ -32,15 +32,19 @@ This matrix identifies the source most directly relevant to each subject, the co
 | Consensus architecture | ERX-CONSENSUS-001 v0.1 cited; candidate `docs/Consenso ERX byLAEV.pdf` located, identity unverified | Roadmap; candidate PDF pending inspection | Roadmap citation and candidate filename only; no internal identity/content verification yet | No substantive authority or content can be inferred until candidate identity and contents are verified or an explicit alternative is approved |
 | Institutional implementation proposal | ERX-IMPL-PROPOSAL-001 cited, not located | Roadmap | Roadmap reference only | No substantive authority or content can be inferred until the source is located or an explicit alternative is approved |
 
-## 3. Specific alignment finding: three communication UTXOs and agent availability
+## 3. Specific alignment finding: communication acceptance output and independent agent availability
 
 The inspected sources describe related but not identical levels of modeling:
 
 1. ERX-PROT-001 v1.1 describes a three-transaction communication chain: UTXO 01 for reception/origin/routing; UTXO 02 for contact establishment and initial protocol; UTXO 03 for development and closure. Section 10 defines mandatory uniqueness, atomicity, idempotency, concurrency, replay protection, history, corrections and coordination limits.
 2. ERX-ATLAS-001 v1.1 maps the three communication transactions to Plates 02–04 and represents the UTXO double-spend engine on Plate 05. Its correspondence table maps Protocol sections to plates 01–08.
-3. UTXO-911-001 v1.0 describes more granular request and acceptance states in Section 2, operator protocol in Section 3, communication closure in Section 4, and a distinct agent-availability UTXO in Sections 4.5–5. It expressly prevents one availability state from accepting multiple incompatible calls.
+3. UTXO-911-001 v1.0 Sections 2.1–2.5 describe a call-request UTXO, then an acceptance transition that consumes that request and creates a distinct acceptance UTXO. Section 3.1 then describes a further UTXO for the operator's initial communication protocol. Sections 4.1–4.5 address closure and the creation of a new agent-availability UTXO.
+4. ERX-ROADMAP-001 v1.0 Section 3.1 (PDF p.3) expressly adopts two related but independent cycles: Cycle A, communication UTXO 01–03; Cycle B, agent availability, with states AVAILABLE → ASSIGNED/ACCEPTED → BUSY → RELEASE AND NEW AVAILABILITY. It says the agent cycle has its own states and does not reuse call UTXOs; references between cycles use identity, assignment and session.
+5. The Technical Response to ERX-ROADMAP-001, page 1, supports separate UTXO cycles for communication and agent availability.
 
-This is not declared a contradiction. It is a scope/granularity and lifecycle-alignment question: the documents may describe different layers of one system, but the exact mapping of request, acceptance, communication lifecycle and agent availability must be expressly decided before requirements extraction or implementation.
+**Finding A — Structural mapping remains open:** UTXO-911 explicitly represents acceptance as a separate spendable UTXO before the initial-protocol UTXO. ERX-PROT-001 Step 15 and Atlas Plate 03 represent the transition from UTXO 01 directly to UTXO 02, where UTXO 02 records contact and initial protocol. Whether acceptance is a separate spendable output or a uniquely identified event/sub-state within the UTXO 01 → UTXO 02 transition requires LAEV decision. This is DOC-ISS-009, not a proven contradiction until the intended scopes are decided.
+
+**Finding B — Agent availability separation is source-confirmed:** the Roadmap has already adopted a separate, related-but-independent availability cycle. DOC-ISS-010 therefore concerns detailed state-machine formalization, transition permissions, release/recovery conditions and verification, not whether the cycle is independent.
 
 ## 4. Authority and interpretation rules proposed
 - Textual protocol requirements are traced to exact ERX-PROT clauses.
@@ -53,14 +57,14 @@ This is not declared a contradiction. It is a scope/granularity and lifecycle-al
 ## 5. Required decisions
 LAEV must:
 1. Adopt, revise or reject each proposed subject allocation.
-2. Decide the mapping of UTXO-911 request/acceptance states to ERX-PROT's three transaction states.
-3. Decide whether agent availability is a separate UTXO state machine linked to, but not part of, the three communication UTXOs.
+2. Decide the mapping of UTXO-911's separate acceptance output to ERX-PROT's UTXO 01 → UTXO 02 transition.
+3. Confirm acceptance of the already stated Roadmap two-cycle architecture and assign detailed agent-availability state-machine work to a later package; do not reopen the existence of the separate cycle as an unresolved source question.
 4. Decide the normative status of Atlas plates relative to the Protocol text.
 5. Decide treatment of the Roadmap technical response.
 6. Record whether the two unavailable cited sources remain accepted limitations or must be supplied before later requirements work.
 
 ## 6. Current status
-**PROPOSED — NOT APPROVED.** Exact source comparisons have identified the scope distinction above. Activity 0.3.4 remains pending LAEV approval. No technical requirement, implementation behavior, or universal document precedence is approved by this matrix.
+**PROPOSED — NOT APPROVED.** The source mapping is now more precisely bounded: DOC-ISS-009 remains a material structural decision; DOC-ISS-010 has source-confirmed architectural separation and requires only detailed formalization and an approved work-package assignment. Activity 0.3.4 remains pending LAEV approval. No technical requirement, implementation behavior, or universal document precedence is approved by this matrix.
 
 ---
 END

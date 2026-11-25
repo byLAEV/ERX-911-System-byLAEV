@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.6-INTERNAL-REVIEW-001 |
-| Version | 0.2.0 |
+| Version | 0.2.1 |
 | Status | IN_PROGRESS — SECOND-PASS FINDINGS RECORDED |
 | Work Package | WP-0.6 |
 | Review type | Internal documentary, metadata, register-structure and cross-reference review |
@@ -34,7 +34,7 @@ At that baseline, the document register contained 74 catalogue rows:
 - No stale repository paths.
 - No malformed row widths in the then-current CSV.
 
-The register has since been assigned the formal identity ERX-DOCUMENT-REGISTER-001 v1.2.0. The machine-readable companion now uses 16 columns, including catalogue/source identity, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version and register status. Register metadata is repeated on each row to keep the CSV machine-readable without a non-record metadata preamble.
+The register has since been assigned the formal identity ERX-DOCUMENT-REGISTER-001 v1.2.1. The machine-readable companion now uses 16 columns, including catalogue/source identity, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version and register status. Register metadata is repeated on each row to keep the CSV machine-readable without a non-record metadata preamble.
 
 ### 2.2 Semantic review of 74 catalogue records
 
@@ -72,9 +72,9 @@ Explicit Markdown hyperlinks in the Workplan, master index, WP-0.6 completion ma
 ### 2.5 Synchronization state
 
 The following controlled documents were updated to reflect the second-pass evidence:
-- ERX-MASTER-DOCUMENT-INDEX-001 v1.3.3.
+- ERX-MASTER-DOCUMENT-INDEX-001 v1.3.4.
 - ERX-DOCUMENT-REGISTER-001 v1.2.0 (CSV companion).
-- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.0.
+- ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001 v0.4.1.
 - ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001 v0.2.0.
 - WORKPLAN-PHASE-0.md v1.3.2.
 - This review v0.2.0.

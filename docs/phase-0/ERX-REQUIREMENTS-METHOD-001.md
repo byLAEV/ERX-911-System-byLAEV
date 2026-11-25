@@ -4,14 +4,14 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-REQUIREMENTS-METHOD-001 |
-| Version | 0.1.0 |
-| Status | PREPARATORY WORKING DRAFT — NOT APPROVED |
+| Version | 1.0.0 |
+| Status | CONTROLLED WP-0.7 METHOD — CONDITIONAL ACCEPTANCE APPLIED |
 | Work Package | WP-0.7 |
 | Project | ERX byLAEV — 911 Double-Spend System |
 | Repository | https://github.com/byLAEV/ERX-911-System-byLAEV |
-| Prepared | 2026-11-23 |
+| Prepared / controlled | 2026-11-25 |
 | Authority | LAEV |
-| Dependencies | WP-0.3 and WP-0.6; formal acceptance remains pending |
+| Dependencies | WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED |
 
 ## 1. Purpose
 
@@ -225,7 +225,7 @@ When two sources appear inconsistent:
 
 When a source changes, identify affected requirement records and downstream decisions, designs, tests, and reports.
 
-## 12. Initial Extraction Boundary and Current Evidence Gap
+## 12. Source Inspection Baseline and Extraction Boundary
 
 The provisional master index records five foundational source files:
 - ERX-PROT-001 v1.1 — supplied as `ERX byLAEV 1.pdf`.
@@ -236,14 +236,18 @@ The provisional master index records five foundational source files:
 
 The master index also records ERX-CONSENSUS-001 v0.1 and ERX-IMPL-PROPOSAL-001 as referenced but not located.
 
-The exact source contents of the five foundational PDFs have not been re-opened and verified in this preparation operation. Therefore:
-- This document does not publish extracted substantive ERX requirements.
-- The requirements CSV begins with its schema only.
-- No candidate requirement IDs are allocated yet.
-- The two missing references cannot be used as evidence.
-- The first source extraction pass remains pending direct inspection of each original.
+The five foundational PDFs were directly opened and text-extracted from the exact supplied files for the WP-0.7 source-inspection pass on 2026-11-25. The inspection set and source integrity metadata remain governed by the accepted WP-0.2 dossier. Their contents are now eligible for requirement extraction only with exact source/page/section locators and source-native wording.
 
-This limitation is deliberate: source fidelity takes precedence over filling a register with inferred statements.
+The inspection confirmed the following identity/control facts without substituting extraction for approval:
+- ERX-PROT-001 v1.1; 29 pages; source status describes a design specification for implementation/evaluation/institutional homologation.
+- ERX-ATLAS-001 v1.1; 29 pages; graphical representation related to ERX-PROT-001 v1.1.
+- UTXO-911-001 v1.0; 12 pages; conceptual and functional three-stage communication UTXO cycle.
+- ERX-ROADMAP-001 v1.0; 37 pages; development and phase-planning source.
+- Technical response to the Roadmap; 2 pages; formal ID/version not stated in source.
+
+ERX-CONSENSUS-001 v0.1 remains a proposal for review; ERX-IMPL-PROPOSAL-001 remains NOT_LOCATED. Neither may be used as an inspected requirement source.
+
+No requirement is approved merely by extraction. Source fidelity takes precedence over inferred completion.
 
 ## 13. Required Register and Matrix
 
@@ -256,11 +260,11 @@ The matrix must allow filtering by source, type, origin, status, phase, owner, a
 
 ## 14. WP-0.7 Acceptance and Dependency Gate
 
-**Status: BLOCKED — PREPARATORY METHODOLOGY ONLY.**
+**Status: WP-0.7 EXECUTION INITIATED — ACTIVITY 0.7.1 METHOD CONTROLLED.**
 
-The Workplan defines WP-0.7 dependencies as WP-0.3 and WP-0.6. Both remain formally unaccepted. This methodology can be prepared in advance, but formal WP-0.7 execution and acceptance must respect those gates.
+The Workplan dependencies WP-0.3 and WP-0.6 are COMPLETED / ACCEPTED. Formal execution is recorded in ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0. This controlled method fulfills the method deliverable for activity 0.7.1; the remaining activities are still open.
 
-Acceptance requires:
+Acceptance of the entire WP-0.7 requires:
 1. WP-0.3 hierarchy and subject-matter authority approved.
 2. WP-0.6 master index accepted and reconciled.
 3. Exact source versions inspected and locators recorded.
@@ -270,9 +274,9 @@ Acceptance requires:
 7. Every requirement linked to source evidence or clearly labelled DERIVED / PROPOSED.
 8. Phase assignments justified against the approved roadmap.
 9. Traceability matrix validated for completeness and consistency.
-10. LAEV review and express approval recorded.
+10. LAEV review and express approval recorded under the standing conditional acceptance instruction when the complete WP-0.7 evidence package is ready.
 
-**Publication of this method does not complete WP-0.7, approve any requirement, close prior work packages, approve the Workplan, or authorize Phase 1.**
+**Acceptance of this method closes only the method deliverable for activity 0.7.1. It does not complete WP-0.7, approve extracted requirements, or authorize Phase 1.**
 
 ---
 End of ERX-REQUIREMENTS-METHOD-001

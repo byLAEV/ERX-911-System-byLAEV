@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.5-DELIVERABLE-COMPLETION-MATRIX-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | WORKING CONTROL MATRIX — NOT ACCEPTED |
 | Work Package | WP-0.5 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -15,22 +15,22 @@
 
 ## 1. Purpose
 
-Track each of the ten WP-0.5 activities against the acceptance criterion in `WORKPLAN-PHASE-0.md`. This matrix records observed evidence and gaps; it does not change approved scope or declare WP-0.5 accepted.
+Track each of the ten WP-0.5 activities against the acceptance criteria in `WORKPLAN-PHASE-0.md`. This revision incorporates the complete, non-truncated recursive Git tree inspection and fresh read-only repository/branch/ruleset observations. It does not declare WP-0.5 accepted.
 
 ## 2. Activity-by-activity assessment
 
 | Activity | Required outcome | Evidence currently available | Status |
 |---|---|---|---|
-| 0.5.1 Repository identity | Canonical identity, owner, purpose and authority documented | GitHub metadata and README; governance draft v0.5.0 | PARTIALLY SATISFIED — identity observed; purpose/policy draft remains in review |
-| 0.5.2 Repository objective | Objective and boundaries documented | README and governance draft sections 1–3 | PARTIALLY SATISFIED — draft, not approved |
-| 0.5.3 Directory structure | Actual structure inspected and organized | Proposed tree in governance draft; audit says full tree not inspected | OPEN — full tree evidence required |
-| 0.5.4 Foundational materials location | Original sources located and custody documented | WP-0.2 completion dossier and foundational register; five PDF integrity evidence referenced | REFERENCED — WP-0.2 evidence accepted; WP-0.5 location reconciliation remains to be completed |
-| 0.5.5 Phase 0 documents location | Phase 0 artifacts located and traceable | Multiple controlling WP records fetched; no complete tree inventory | PARTIALLY SATISFIED — complete inventory still required |
-| 0.5.6 Access policy | Roles, access and actual effective permissions documented | DP-ACCESS-01/02; matrix v0.4.0 approved; byLAEV Admin observed; complete collaborators/teams/inherited access NOT_VERIFIED | PARTIALLY SATISFIED — live access reconciliation remains open |
-| 0.5.7 Branch organization | Branch model and actual controls documented | Branch names observed; main reported protected=false; rulesets query empty; branch-protection detail 403 | PARTIALLY SATISFIED — governance decision exists; enforcement not implemented or fully inspectable |
-| 0.5.8 Change control | Change process and review/approval controls documented | ERX-DOCUMENT-CONTROL-001 v1.0.0; governance draft; DP-ACCESS-02 one-review model | PARTIALLY SATISFIED — repository-specific final procedure not approved |
-| 0.5.9 Git change history | History and traceability procedure documented | Git commit history and prior WP evidence; progress record references commits | PARTIALLY SATISFIED — full change-history audit/backup procedure not complete |
-| 0.5.10 Intellectual property and license | Rights, scope and licensing accurately documented | Governance draft explicitly assigns no license; exact LICENSE/COPYRIGHT paths previously NOT_FOUND | OPEN — no license decision or complete rights review; do not invent a license |
+| 0.5.1 Repository identity | Canonical identity, owner, purpose and authority documented | GitHub metadata: byLAEV/ERX-911-System-byLAEV; owner byLAEV; public; main; README; governance draft | PARTIALLY SATISFIED — identity/owner/visibility/default branch observed; repository purpose and final policy still require controlled approval |
+| 0.5.2 Repository objective | Objective and boundaries documented | README and governance draft sections 1–3 | PARTIALLY SATISFIED — purpose described; governance document remains IN REVIEW |
+| 0.5.3 Directory structure | Actual structure inspected and organized | Recursive Git tree, tree SHA 4be78630ab694b1f2c970684e6b6db3f074b1e68, truncated=false; inventory ERX-WP-0.5-REPOSITORY-TREE-INVENTORY-001 | VERIFIED — actual structure inspected and recorded; final organization-policy acceptance remains part of WP-0.5 closeout |
+| 0.5.4 Foundational materials location | Original sources located and custody documented | Five source PDFs directly present under docs/; foundational register and archive procedure present; accepted WP-0.2 completion dossier contains SHA-256/Git blob identity checks | VERIFIED BY CROSS-REFERENCE — WP-0.2 byte-identity evidence remains controlling; this inspection did not re-hash binary files |
+| 0.5.5 Phase 0 documents location | Phase 0 artifacts located and traceable | Full docs/phase-0 tree recorded in ERX-WP-0.5-REPOSITORY-TREE-INVENTORY-001; register tree inventoried | VERIFIED — actual paths and file inventory recorded |
+| 0.5.6 Access policy | Roles, access and actual effective permissions documented | DP-ACCESS-01/02; matrix v0.4.0 approved; byLAEV account Admin; full collaborator/team/inherited roster NOT_VERIFIED | PARTIALLY SATISFIED — policy decisions recorded; cannot prove LAEV is the only effective Admin without full roster |
+| 0.5.7 Branch organization | Branch model and actual controls documented | main branch API reports protected=false; protection enabled=false; required status checks off; rulesets query [] with includes_parents=true; prior branch search listed main and WP branches | PARTIALLY SATISFIED — actual main control state documented; branch governance remains unenforced/unapproved |
+| 0.5.8 Change control | Change process and review/approval controls documented | ERX-DOCUMENT-CONTROL-001 v1.0.0; DP-ACCESS-02 one-independent-review model; governance draft v0.5.0 | PARTIALLY SATISFIED — baseline policy exists; repository-specific implementation and final governance acceptance remain open |
+| 0.5.9 Git change history | History and traceability procedure documented | Git commit history and immutable tree/commit SHAs; progress and inventory records | PARTIALLY SATISFIED — traceability evidence improved; backup/restore and final repository-specific history procedure remain open |
+| 0.5.10 Intellectual property and license | Rights, scope and licensing accurately documented | Repository metadata license=null; no root LICENSE/COPYRIGHT path in recursive tree; governance draft says no license assigned | OPEN — no license decision or complete rights review; do not invent a license |
 
 ## 3. Decisions already recorded and retained
 
@@ -41,18 +41,18 @@ Track each of the ten WP-0.5 activities against the acceptance criterion in `WOR
 - No reviewer or maintainer has been appointed.
 - No GitHub permissions, collaborators, teams, tokens, branch protection, rulesets, Actions settings or other repository settings have been changed.
 
-These decisions are not evidence that the live repository configuration already matches the intended model.
+These are governance decisions, not evidence that the live repository configuration already matches the intended model.
 
-## 4. Blocking and non-blocking evidence gaps
+## 4. Current observations and gaps
 
 | Gap | Impact on WP-0.5 | Handling |
 |---|---|---|
-| Full repository tree not inspected | Prevents claiming directory and document-location completeness | Obtain tree-level read evidence; if integration cannot provide it, record exact limitation and an approved alternative evidence method |
 | Full collaborator/team/inherited access roster unavailable | Cannot reconcile sole-admin decision against all effective grants | Keep NOT_VERIFIED; do not change permissions without separate express authorization |
-| Branch protection detail endpoint returned 403; main reported unprotected | Cannot claim required reviews/status checks are enforced | Document observed state; obtain sufficient read access; do not enable controls without explicit technical authorization |
+| main branch unprotected; required status checks off; rulesets query empty | Approved one-review model is not technically enforced on main | Record current state; do not enable protection or change settings without separate express implementation authorization |
 | License/IP rights scope unresolved | Cannot publish or claim a license | Preserve no-license status; prepare rights decision materials only |
 | Repository backup/restore evidence incomplete | Git history alone is not a demonstrated backup/restore plan | Define and test a bounded recovery procedure if required by acceptance |
-| Governance policy remains IN REVIEW | Cannot mark WP-0.5 accepted | Revise after evidence reconciliation and then apply conditional acceptance rule |
+| Governance policy remains IN REVIEW | Cannot mark WP-0.5 accepted | Revise after evidence reconciliation and apply conditional acceptance rule |
+| Independent reviewer not assigned | One-review control cannot yet be exercised by a named independent reviewer | Record as a limitation; do not invent an appointment |
 
 ## 5. Acceptance decision rule
 
@@ -60,18 +60,19 @@ WP-0.5 can be marked COMPLETED / ACCEPTED only when all ten activities are satis
 
 ## 6. Next actions
 
-1. Complete repository tree/path inventory using an available read-only GitHub method.
-2. Reconcile actual directories and foundational/Phase 0 document locations.
-3. Seek read-only evidence for effective collaborator/team access and branch rules; preserve NOT_VERIFIED if unavailable.
-4. Complete repository-specific change-control and recovery documentation.
-5. Keep licensing open until rights scope and LAEV decision are established.
-6. Revise governance draft as a new controlled version; do not overwrite historical versions.
-7. Produce WP-0.5 acceptance-readiness report and closeout audit.
+1. Complete effective collaborator/team/inherited access evidence to the extent available; retain NOT_VERIFIED if the integration cannot expose it.
+2. Document the actual unprotected main branch and prepare the change-control model; do not change live settings absent separate explicit authorization.
+3. Complete repository-specific change-control, backup and recovery documentation.
+4. Prepare a bounded intellectual-property and licensing decision record without assigning a license.
+5. Revise governance draft as a new controlled version; do not overwrite historical versions.
+6. Produce WP-0.5 acceptance-readiness report and closeout audit.
 
 ## 7. Current determination
 
 **WP-0.5: APPROVED — IN_PROGRESS.**  
-**No completion or acceptance is claimed by this matrix.**  
+**Activities 0.5.3 and 0.5.5: VERIFIED by complete repository tree evidence.**  
+**Activity 0.5.4: VERIFIED by reference to accepted WP-0.2 custody/integrity evidence.**  
+**No WP-0.5 completion or acceptance is claimed by this matrix.**  
 **WP-0.6 remains blocked until WP-0.5 is completed and accepted.**  
 **Phase 0 remains OPEN.**
 

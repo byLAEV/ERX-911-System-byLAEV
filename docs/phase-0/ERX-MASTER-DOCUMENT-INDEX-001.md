@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.6 |
+| Version | 1.5.7 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -145,7 +145,7 @@ This is a targeted catalogue addition, not a full recursive repository-tree refr
 
 ## 13. WP-0.7 conflict-correction update — 2026-11-25
 
-Document register version 1.2.8 now records IDX-085 through IDX-091 for the reconciled WP-0.7 matrix, classification, phase allocation, verification proposal, semantic review, gap register and LAEV baseline decision package. The catalogue total is 88 records.
+Document register version 1.2.9 now records IDX-085 through IDX-091 for the reconciled WP-0.7 matrix, classification, phase allocation, verification proposal, semantic review, gap register and LAEV baseline decision package. The catalogue total is 88 records.
 
 Corrected controlled snapshots:
 - 82 source candidates / 26 canonical CSV columns.

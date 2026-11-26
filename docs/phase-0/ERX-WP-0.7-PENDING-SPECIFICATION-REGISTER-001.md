@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | WORKING GAP REGISTER — REVIEW PENDING |
 | Work Package | WP-0.7 / Activity 0.7.7 |
 | Date | 2026-11-25 |
@@ -15,6 +15,9 @@
 This register captures specification gaps that prevent a candidate requirement from being fully verifiable or safely allocated. It does not resolve the gaps or make design decisions. Requirement IDs remain unchanged.
 
 ## 2. Candidate gaps
+
+### Inventory reconciliation — 2026-11-25
+The table below contains **63 unique candidate IDs with recorded specification gaps**. The canonical source register now has 82 candidates; therefore **19 candidate IDs are not represented in this gap table**. Their absence is NOT a determination that no specification gap exists: they remain UNASSESSED for this register until reviewed. The 107 individual records also require parent/child gap applicability review. This register is a gap list, not a completeness assertion.
 
 | Requirement ID | Source locator | Missing specification / closure work | Closure evidence |
 |---|---|---|---|
@@ -101,3 +104,17 @@ A gap is closed only when its missing parameter is specified by an authorized so
 
 ---
 End of ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001
+
+
+## 3. Coverage-control requirement
+
+For each of the 19 currently unrepresented source candidates, record one of:
+- GAP_IDENTIFIED (add a traceable row),
+- NO_GAP_WITH_EVIDENCE (cite why current approved specification is sufficient),
+- NOT_ASSESSED (retain open WP-0.7 status),
+- BLOCKED_BY_DECISION (link an open decision candidate).
+
+Do not close a gap solely because the candidate has a verification proposal or phase assignment. Child-level applicability must preserve the parent link and avoid duplicate gap records where a parent gap applies to multiple children.
+
+---
+End of reconciled gap register.

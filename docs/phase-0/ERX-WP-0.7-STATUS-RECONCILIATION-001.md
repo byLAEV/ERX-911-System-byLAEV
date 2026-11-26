@@ -19,7 +19,7 @@ The current branch contains later evidence than several older summary artifacts.
 - **82 source candidate requirements** in `registers/requirements-traceability.csv`, reconciled through extraction batches 001–005.
 - **107 individually identified requirements** in `registers/requirement-identification-register.csv`; 82 parent candidates represented, 14 compound candidates decomposed into 39 child records, 18 structured-list dispositions and eight overlap-group dispositions.
 - The source-candidate matrix was regenerated as v0.3.0 for all 82 candidates (26 canonical fields). Semantic-review and verification-proposal registers v0.2.0 now reflect the 82/107 inventory; exact semantic and acceptance review remains pending.
-- Classification register v0.2.0 lists all 82 candidates. Design assessment now covers all 82 source candidates. Phase allocation v0.2.0 lists 82 candidates, with 17 explicitly NOT_ALLOCATED. Verification proposal v0.2.0 now covers 82 and marks 17 late-extraction candidates as pending criteria. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.2.0 confirms 63 recorded gap IDs and explicitly flags 19 unrepresented candidates as UNASSESSED, not gap-free.
+- Classification register v0.2.0 lists all 82 candidates. Design assessment now covers all 82 source candidates. Phase allocation v0.3.1 lists all 82 source candidates; all assignments are preliminary, and 107 child-level mappings remain open. Verification proposal v0.3.0 now contains candidate-specific criteria for all 82; proposals remain unapproved and unexecuted. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.2.0 confirms 63 detailed gap IDs plus a 19-candidate disposition queue cover all 82; the 19 queue dispositions remain open.
 - All extracted/derived/proposed records remain **NOT_APPROVED**. Phase allocation is planning only.
 
 This audit is a synchronization record, not a claim that source fidelity or semantic acceptance has passed.
@@ -37,7 +37,7 @@ This audit is a synchronization record, not a claim that source fidelity or sema
 | 0.7.7 Specification gaps | 63 gap IDs recorded; 19 of 82 candidates not represented and expressly UNASSESSED | REGISTERED; complete coverage and reconcile parent/child links, closure criteria, owners and decision dependencies |
 | 0.7.8 Open decisions | Eight decision candidates; completeness review v0.1.0 | REVIEW EXECUTED; LAEV acceptance pending; decisions remain open and belong to WP-0.8 |
 | 0.7.9 Source links | 82 source locators; source audit validates bounds only | IN_PROGRESS; exact passage/diagram support for each statement not yet proven |
-| 0.7.10 Phase allocation | Allocation register v0.2.0 covers 82 candidates; 17 are explicitly NOT_ALLOCATED | IN_PROGRESS; resolve 17 allocations and validate 107 individual links without authorizing later phases |
+| 0.7.10 Phase allocation | Allocation register v0.2.0 covers 82 candidates; 17 are explicitly NOT_ALLOCATED | IN_PROGRESS; review 107 individual links and dependencies without authorizing later phases |
 | 0.7.11 Traceability matrix | Matrix v0.3.0 regenerated for 82 source candidates | IN_PROGRESS; audit candidate-to-individual, phase, gap, decision and source relations |
 
 ## 3. Non-negotiable closure sequence
@@ -45,7 +45,7 @@ This audit is a synchronization record, not a claim that source fidelity or sema
 1. Reconcile all controlled artifacts to the 82/107 register snapshot; mark stale versions superseded rather than silently treating them as current.
 2. Perform exact source-clause review for each of the 82 source candidates, including visual review of the relevant Atlas plates; record PASS / CORRECT / SPLIT / DERIVED / BLOCKED with evidence.
 3. Complete semantic and overlap disposition for all 107 individual records; retain IDs and parent lineage.
-4. Review normative force and design character at the individual level. Current screening is 57 mandatory candidates and 25 modality-unresolved; six candidates remain modality unresolved after exact-page review. Preserve descriptive source content and recommendations as such; do not infer mandatory status.
+4. Review normative force and design character at the individual level. Current screening is 76 MANDATORY_CANDIDATE and six MODALITY_UNRESOLVED after direct source-page review. Preserve descriptive source content and recommendations as such; do not infer mandatory status.
 5. Reconcile all 63 specification-gap candidates and eight open-decision candidates to the current requirement IDs; do not close gaps or adopt ADRs within WP-0.7.
 6. Complete primary phase allocation and cross-phase dependencies for the current set; no source candidates remain NOT_ALLOCATED in v0.3.0; validate all 107 individual mappings. Keep all allocations explicitly planning-only.
 7. Verification proposal v0.2.0 now covers all 82 candidates; 17 late-extraction rows remain explicitly pending criterion design. Develop child-specific criteria for the 107 individual records after semantic disposition. Do not invent numeric thresholds or claim tests executed.

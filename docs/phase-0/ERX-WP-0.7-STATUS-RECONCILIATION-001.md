@@ -18,7 +18,7 @@ The current branch contains later evidence than several older summary artifacts.
 
 - **82 source candidate requirements** in `registers/requirements-traceability.csv`, reconciled through extraction batches 001–005.
 - **107 individually identified requirements** in `registers/requirement-identification-register.csv`; 82 parent candidates represented, 14 compound candidates decomposed into 39 child records, 18 structured-list dispositions and eight overlap-group dispositions.
-- **65 candidate requirements** remain cited by older snapshots of the preliminary traceability matrix, semantic review register and verification-criteria proposal. These are stale snapshots and must not be used as the current full inventory.
+- The source-candidate matrix was regenerated as v0.3.0 for all 82 candidates (26 canonical fields). Older 65-candidate semantic-review and verification-proposal snapshots remain stale; refresh them against the 82/107 inventory before final acceptance.
 - The source-candidate classification, phase-allocation and decision/gap records likewise require a versioned refresh against 82 candidates and, where relevant, 107 individual records.
 - All extracted/derived/proposed records remain **NOT_APPROVED**. Phase allocation is planning only.
 
@@ -49,8 +49,8 @@ This audit is a synchronization record, not a claim that source fidelity or sema
 5. Reconcile all 63 specification-gap candidates and eight open-decision candidates to the current requirement IDs; do not close gaps or adopt ADRs within WP-0.7.
 6. Complete primary phase allocation and cross-phase dependencies for the current set; keep all allocations explicitly planning-only.
 7. Generate objective verification criteria for the current 82 source candidates and 107 individual records. Separate source-derived criteria from proposals; do not invent numeric thresholds or claim tests executed.
-8. Regenerate the traceability matrix and run referential, uniqueness, source-locator, parent-child, phase and status audits.
-9. Update the document register and master index to the actual branch tree; record superseded/stale snapshots and path coverage.
+8. Matrix v0.3.0 has been regenerated from the canonical 82-row CSV. Run the remaining referential, uniqueness, source-locator, parent-child, phase and status acceptance audits.
+9. Targeted document-register and master-index entries were updated (IDX-084; index v1.5.3). A full repository-tree refresh and path-coverage audit remain open.
 10. Issue the final readiness/acceptance package with exact versions and commit SHA. WP-0.7 can be marked COMPLETED only after its stated acceptance criteria are satisfied and LAEV expressly accepts the exact baseline.
 
 ## 4. Gate to WP-0.8
@@ -71,3 +71,12 @@ WP-0.8 scope is already approved, but execution remains NOT_STARTED. This reconc
 
 ---
 End of controlled reconciliation.
+
+
+## 6. Progress after this reconciliation was drafted
+
+- Traceability matrix v0.3.0 committed with 82 source-candidate rows and the current 26-field CSV schema.
+- Workplan WP-0.7 section reconciled to the current 82/107 inventory and activity-specific statuses.
+- Document register updated with IDX-084; master index incremented to v1.5.3 with a bounded supplemental note.
+- These repository updates are evidence of controlled drafting, not LAEV acceptance or PR merge.
+

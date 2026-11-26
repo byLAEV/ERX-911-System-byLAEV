@@ -19,7 +19,7 @@ The current branch contains later evidence than several older summary artifacts.
 - **82 source candidate requirements** in `registers/requirements-traceability.csv`, reconciled through extraction batches 001–005.
 - **107 individually identified requirements** in `registers/requirement-identification-register.csv`; 82 parent candidates represented, 14 compound candidates decomposed into 39 child records, 18 structured-list dispositions and eight overlap-group dispositions.
 - The source-candidate matrix was regenerated as v0.4.2 for all 82 candidates (26 canonical fields). Semantic-review register v0.2.0 and verification-proposal v0.3.1 reflect the 82/107 inventory; exact semantic and acceptance review remains pending.
-- Classification register v0.2.0 lists all 82 candidates. Design assessment now covers all 82 source candidates. Phase allocation v0.3.2 lists all 82 source candidates; all assignments are preliminary, and 107 child-level mappings remain open. Verification proposal v0.3.0 now contains candidate-specific criteria for all 82; proposals remain unapproved and unexecuted. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.3.0 contains 63 detailed gap records plus a 19-candidate disposition queue covering all 82; the 19 queue dispositions remain open.
+- Classification register v0.2.0 lists all 82 candidates. Design assessment now covers all 82 source candidates. Phase allocation v0.3.2 lists all 82 source candidates; all assignments are preliminary, and 107 child-level mappings remain open. Verification proposal v0.3.1 now contains candidate-specific criteria for all 82; proposals remain unapproved and unexecuted. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.4.0 contains 76 detailed specification gaps and six NO_GAP_WITH_EVIDENCE decisions cover all 82 source candidates; the 76 gaps remain open and child applicability/owners remain pending.
 - All extracted/derived/proposed records remain **NOT_APPROVED**. Phase allocation is planning only.
 
 This audit is a synchronization record, not a claim that source fidelity or semantic acceptance has passed.
@@ -38,7 +38,7 @@ This audit is a synchronization record, not a claim that source fidelity or sema
 | 0.7.8 Open decisions | Eight decision candidates; completeness review v0.1.0 | REVIEW EXECUTED; LAEV acceptance pending; decisions remain open and belong to WP-0.8 |
 | 0.7.9 Source links | 82 source locators; source audit validates bounds only | IN_PROGRESS; exact passage/diagram support for each statement not yet proven |
 | 0.7.10 Phase allocation | Allocation register v0.3.1 covers all 82 source candidates; all are preliminary | IN_PROGRESS; review 107 individual links and dependencies without authorizing later phases |
-| 0.7.11 Traceability matrix | Matrix v0.4.1 regenerated for 82 source candidates from current CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761 | IN_PROGRESS; audit candidate-to-individual, phase, gap, decision and source relations |
+| 0.7.11 Traceability matrix | Matrix v0.4.2 regenerated for 82 source candidates from current CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761 | IN_PROGRESS; audit candidate-to-individual, phase, gap, decision and source relations |
 
 ## 3. Non-negotiable closure sequence
 
@@ -115,3 +115,7 @@ The following stale-scope contradictions have been corrected in this branch:
 - Traceability matrix v0.4.1 regenerated from the latest CSV.
 - Workplan checkbox convention: only 0.7.1 remains marked [x], as instructed by LAEV. The separately recorded 0.7.3 acceptance evidence remains intact.
 - WP-0.7 remains IN_PROGRESS; exact source fidelity, 107 child-level semantic review, gap dispositions, open decisions and LAEV baseline approval remain gates.
+
+
+## 9. Activity 0.7.7 coverage disposition — 2026-11-25
+The 19 candidates previously absent from the original 63-row gap table were reviewed. Thirteen additional specification gaps were identified and six candidates received documented NO_GAP_WITH_EVIDENCE dispositions at candidate level. The register is now v0.4.0: 76 open specification gaps plus six evidenced no-gap decisions, covering all 82 source candidates. This closes the source-candidate coverage omission, not the specification gaps themselves. Owner assignment, closure evidence, and applicability across 107 individual records remain pending.

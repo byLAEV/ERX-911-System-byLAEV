@@ -4,13 +4,13 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7.6-DESIGN-REQUIREMENTS-ASSESSMENT-001 |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Status | DESIGN ASSESSMENT EXECUTED — SEMANTIC REVIEW / LAEV ACCEPTANCE PENDING |
 | Date | 2026-11-25 |
 | Activity | WP-0.7.6 — Identify design requirements |
 | Method | ERX-REQUIREMENTS-METHOD-001 v1.0.0, §§5–6.2 |
 | Canonical source | registers/requirements-traceability.csv |
-| Snapshot | 82 source candidates; 26 columns; CSV blob SHA df36822682576568f491c90f68bde9b631635d84 |
+| Snapshot | 82 source candidates; 26 columns; CSV blob SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761 |
 | Authority | LAEV |
 
 ## 1. Purpose and limits
@@ -122,7 +122,7 @@ The assessment is a source-candidate-level screening. Child-level review of the 
 - Source-derived design constraints remain EXTRACTED candidates and require exact source passage/diagram fidelity review.
 - Recommendations, options, and implementation alternatives in the technical response are not promoted to source-derived requirements.
 - No database, cryptographic algorithm, HSM, distributed consensus mechanism, cloud provider or vendor technology is selected by this activity.
-- The 17 records added during late extraction now have a design-assessment category. Their verification criteria remain pending in the separate verification proposal.
+- The 17 records added during late extraction now have a design-assessment category and candidate-specific proposed verification criteria in the separate verification proposal. All criteria remain unapproved and unexecuted.
 - A populated category is not equivalent to a complete design specification or acceptance criterion.
 
 ## 5. Remaining acceptance gates

@@ -18,8 +18,8 @@ The current branch contains later evidence than several older summary artifacts.
 
 - **82 source candidate requirements** in `registers/requirements-traceability.csv`, reconciled through extraction batches 001–005.
 - **107 individually identified requirements** in `registers/requirement-identification-register.csv`; 82 parent candidates represented, 14 compound candidates decomposed into 39 child records, 18 structured-list dispositions and eight overlap-group dispositions.
-- The source-candidate matrix was regenerated as v0.4.1 for all 82 candidates (26 canonical fields). Semantic-review register v0.2.0 and verification-proposal v0.3.0 reflect the 82/107 inventory; exact semantic and acceptance review remains pending.
-- Classification register v0.2.0 lists all 82 candidates. Design assessment now covers all 82 source candidates. Phase allocation v0.3.1 lists all 82 source candidates; all assignments are preliminary, and 107 child-level mappings remain open. Verification proposal v0.3.0 now contains candidate-specific criteria for all 82; proposals remain unapproved and unexecuted. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.3.0 contains 63 detailed gap records plus a 19-candidate disposition queue covering all 82; the 19 queue dispositions remain open.
+- The source-candidate matrix was regenerated as v0.4.2 for all 82 candidates (26 canonical fields). Semantic-review register v0.2.0 and verification-proposal v0.3.1 reflect the 82/107 inventory; exact semantic and acceptance review remains pending.
+- Classification register v0.2.0 lists all 82 candidates. Design assessment now covers all 82 source candidates. Phase allocation v0.3.2 lists all 82 source candidates; all assignments are preliminary, and 107 child-level mappings remain open. Verification proposal v0.3.0 now contains candidate-specific criteria for all 82; proposals remain unapproved and unexecuted. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.3.0 contains 63 detailed gap records plus a 19-candidate disposition queue covering all 82; the 19 queue dispositions remain open.
 - All extracted/derived/proposed records remain **NOT_APPROVED**. Phase allocation is planning only.
 
 This audit is a synchronization record, not a claim that source fidelity or semantic acceptance has passed.
@@ -38,7 +38,7 @@ This audit is a synchronization record, not a claim that source fidelity or sema
 | 0.7.8 Open decisions | Eight decision candidates; completeness review v0.1.0 | REVIEW EXECUTED; LAEV acceptance pending; decisions remain open and belong to WP-0.8 |
 | 0.7.9 Source links | 82 source locators; source audit validates bounds only | IN_PROGRESS; exact passage/diagram support for each statement not yet proven |
 | 0.7.10 Phase allocation | Allocation register v0.3.1 covers all 82 source candidates; all are preliminary | IN_PROGRESS; review 107 individual links and dependencies without authorizing later phases |
-| 0.7.11 Traceability matrix | Matrix v0.4.1 regenerated for 82 source candidates from current CSV SHA 2d080f9a0ab563d37edbcad54f12e7ddf14a62b1 | IN_PROGRESS; audit candidate-to-individual, phase, gap, decision and source relations |
+| 0.7.11 Traceability matrix | Matrix v0.4.1 regenerated for 82 source candidates from current CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761 | IN_PROGRESS; audit candidate-to-individual, phase, gap, decision and source relations |
 
 ## 3. Non-negotiable closure sequence
 

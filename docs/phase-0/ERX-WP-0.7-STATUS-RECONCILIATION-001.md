@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-STATUS-RECONCILIATION-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | CONTROLLED WORKING AUDIT — WP-0.7 NOT COMPLETED |
 | Date | 2026-11-25 |
 | Work Package | WP-0.7 — Requirements Identification and Classification |
@@ -103,3 +103,15 @@ The following stale-scope contradictions have been corrected in this branch:
 - All 82 source candidates now have a preliminary primary phase; phase allocation v0.3.0 is planning-only. Child-level mapping for 107 records remains pending.
 - Gap register remains 63/82; 19 IDs still require explicit disposition. No closure is inferred.
 - Workplan checklist now has only 0.7.1 marked, per LAEV's tracking instruction; this is a display/control convention and does not erase the separate accepted evidence for 0.7.3.
+
+
+## 8. Latest controlled updates — 2026-11-25
+- Canonical requirements CSV latest blob SHA: `2d080f9a0ab563d37edbcad54f12e7ddf14a62b1`; 82 rows, 26 columns.
+- Normative screening: 76 MANDATORY_CANDIDATE / six MODALITY_UNRESOLVED, based on direct review of cited source pages. These are not approvals.
+- Design-assessment register v0.1.0: all 82 source candidates categorized; child-level review pending.
+- Verification proposal v0.3.0: candidate-specific proposed criterion/method for all 82; no tests claimed executed.
+- Phase allocation register v0.3.1: all 82 source candidates assigned preliminary phases; child mapping remains pending.
+- Gap register v0.3.0: 63 detailed gaps plus 19 explicit disposition-queue entries; no automatic gap closure.
+- Traceability matrix v0.4.1 regenerated from the latest CSV.
+- Workplan checkbox convention: only 0.7.1 remains marked [x], as instructed by LAEV. The separately recorded 0.7.3 acceptance evidence remains intact.
+- WP-0.7 remains IN_PROGRESS; exact source fidelity, 107 child-level semantic review, gap dispositions, open decisions and LAEV baseline approval remain gates.

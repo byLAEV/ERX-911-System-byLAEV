@@ -251,7 +251,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.7.4 Classify requirements — classification executed for 82 source candidates and 107 individuals; controlled taxonomy and rationale recorded. **Semantic review and LAEV acceptance remain pending.**
 - [ ] 0.7.5 Identify mandatory requirements — preliminary screen completed for 82 source candidates (57 MANDATORY_CANDIDATE; 25 MODALITY_UNRESOLVED). Exact clause-level confirmation and review of all 107 individuals remain open.
 - [ ] 0.7.6 Identify design requirements — preliminary assessments exist; source constraints, descriptions, recommendations/options and derived proposals require item-by-item disposition.
-- [x] 0.7.7 Record requirements pending specification — 63 candidate gaps captured in the working register; not closed. Reconciliation against 82/107 and ownership/closure evidence remains open.
+- [x] 0.7.7 Record requirements pending specification — 63 gap IDs recorded; 19 of 82 source candidates are not represented and remain UNASSESSED (not gap-free). Parent/child applicability, owners and closure evidence remain open.
 - [ ] 0.7.8 Record open decisions — eight candidates reviewed for completeness; ready for LAEV acceptance, not accepted yet. No decision resolved and no ADR approved.
 - [ ] 0.7.9 Link requirements to sources — all 82 source candidates have locators and page bounds checked; exact passage/diagram fidelity review remains incomplete.
 - [ ] 0.7.10 Assign requirements to phases — preliminary allocation exists for 65 candidates; reconcile remaining candidates and the 107 individual records, dependencies and rationale.

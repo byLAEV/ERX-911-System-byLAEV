@@ -11,12 +11,12 @@
 | Scope | WP-0.7 requirements baseline only |
 
 ## 1. Decision requested
-LAEV is asked to review and decide whether the 65 candidate requirements, after closure of the review items below, may become the controlled ERX requirements baseline. This package does not request or imply approval of implementation, deployment, institutional operation, or Phase 1 execution.
+LAEV is asked to review and decide whether the 82 source-candidate requirements, with their 107 individually identified records as a linked decomposition layer, may become the controlled ERX requirements baseline after closure of the review items below. This package does not request or imply approval of implementation, deployment, institutional operation, or Phase 1 execution.
 
 ## 2. Current evidence snapshot
-- 65 candidate requirements; 25 canonical CSV columns; 65 unique IDs.
-- Four foundational documents supply all 65 candidate source references.
-- 65 preliminary primary-type classifications and 65 provisional Roadmap phase allocations.
+- 82 source-candidate requirements; 26 canonical CSV columns; 82 unique IDs (canonical CSV blob SHA: 703567101acf1634e8791ab9a9ccb3aa82ef786f).
+- The five inspected foundational/source PDFs are the extraction boundary; candidate source locators must still pass exact clause/diagram review.
+- Classification has been reconciled to 82 candidate rows; provisional phase allocation now lists all 82, with 17 explicitly NOT_ALLOCATED pending 0.7.10.
 - 63 pending-specification candidates and eight open decision candidates remain recorded.
 - Verification criteria have a separate derived proposal; they are not yet approved as the acceptance oracle.
 - All 65 requirements remain EXTRACTED — REVIEW PENDING.
@@ -25,15 +25,15 @@ LAEV is asked to review and decide whether the 65 candidate requirements, after 
 
 | Gate | Decision/evidence needed | Current state |
 |---|---|---|
-| G1 — Source fidelity | Exact clause/page/plate comparison for all 65 statements | PARTIAL — all source PDFs reopened; exact row-by-row matching not completed |
-| G2 — Atomicity | Retain/split/parent-child/overlap disposition for all 65 | PENDING — semantic register created |
-| G3 — Classification | Confirm one primary type and secondary tags for all 65 | PRELIMINARY |
+| G1 — Source fidelity | Exact clause/page/plate comparison for all 82 statements | PARTIAL — all source PDFs reopened; exact row-by-row matching not completed |
+| G2 — Atomicity | Retain/split/parent-child/overlap disposition for all 82 candidates and relevant 107 individuals | PENDING — semantic register created |
+| G3 — Classification | Confirm one primary type and secondary tags for all 82 candidates and relevant individual children | PRELIMINARY |
 | G4 — Normative force | Explicit mandatory, prohibitory, descriptive, recommendation, derived or proposed classification | PENDING exact clause review |
 | G5 — Design constraints | Separate adopted source constraints from recommendations/options | PRELIMINARY |
 | G6 — Specification gaps | Review and disposition 63 gap candidates | OPEN |
 | G7 — Decisions | Review eight decision candidates and ownership/deadline/ADR link | OPEN |
 | G8 — Source traceability | Verify each source locator and every dependency/reference | STRUCTURAL CHECKS PASS; semantic audit pending |
-| G9 — Phase allocation | Confirm primary phase and cross-phase dependencies | PRELIMINARY; planning only |
+| G9 — Phase allocation | Confirm primary phase and cross-phase dependencies for 82 candidates; 17 currently unallocated | PRELIMINARY; planning only |
 | G10 — Verification | Approve objective criteria and any numeric targets | PROPOSED; not approved |
 | G11 — Baseline approval | LAEV's explicit approval of exact document/register versions and commit | NOT REQUESTED/NOT GRANTED |
 

@@ -151,7 +151,7 @@ Corrected controlled snapshots:
 - 82 source candidates / 26 canonical CSV columns.
 - 107 individual records linked to 82 parents.
 - Classification v0.2.0 covers 82 candidates.
-- Phase allocation v0.2.0 covers 82; 17 are NOT_ALLOCATED.
+- Phase allocation v0.3.2 assigns all 82 source candidates preliminary phases; 107 child mappings remain open.
 - Verification proposal v0.2.0 covers 82; 17 late-extraction candidates have criterion design pending.
 - Semantic review v0.2.0 distinguishes the 82 source layer from 107 individual records.
 - Gap register v0.2.0 has 63 mapped gap IDs; 19 candidate IDs absent from that gap table are explicitly UNASSESSED.

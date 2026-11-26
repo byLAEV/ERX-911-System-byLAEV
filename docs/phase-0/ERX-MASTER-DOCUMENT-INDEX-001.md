@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.7 |
+| Version | 1.5.8 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -145,7 +145,7 @@ This is a targeted catalogue addition, not a full recursive repository-tree refr
 
 ## 13. WP-0.7 conflict-correction update — 2026-11-25
 
-Document register version 1.2.9 now records IDX-085 through IDX-091 for the reconciled WP-0.7 matrix, classification, phase allocation, verification proposal, semantic review, gap register and LAEV baseline decision package. The catalogue total is 88 records.
+Document register version 1.3.0 now records IDX-085 through IDX-091 for the reconciled WP-0.7 matrix, classification, phase allocation, verification proposal, semantic review, gap register and LAEV baseline decision package. The catalogue total is 88 records.
 
 Corrected controlled snapshots:
 - 82 source candidates / 26 canonical CSV columns.
@@ -171,3 +171,8 @@ Current WP-0.7 canonical state: 82 source candidates / 26 CSV columns / 107 indi
 ## 15. WP-0.7 register synchronization — 2026-11-25
 
 Document register v1.2.8 now contains 93 catalogue records and reconciles the WP-0.7.2 extraction completion, source coverage audit, review report, mandatory assessment, design assessment, phase allocation, verification proposal, gap register, traceability matrix and status reconciliation versions. Current canonical requirements CSV SHA is `2d080f9a0ab563d37edbcad54f12e7ddf14a62b1` (82 rows, 26 columns). The index records working evidence only; it does not constitute WP-0.7 acceptance or approval of the requirements baseline.
+
+
+## 16. WP-0.7 specification-gap coverage update — 2026-11-25
+
+Document register v1.3.0 tracks the updated pending-specification register v0.4.0. The 82 source-candidate coverage review produced 76 detailed open specification gaps and six NO_GAP_WITH_EVIDENCE dispositions. The gaps remain unresolved; child-level applicability across 107 individual records and owner assignment remain open. This is coverage reconciliation, not WP-0.7 closure.

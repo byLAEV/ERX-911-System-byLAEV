@@ -242,7 +242,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Approval status:** APPROVED — LAEV, 2026-11-24
 **Execution status:** IN_PROGRESS — formally initiated 2026-11-25; dependency gate satisfied by WP-0.6 acceptance.
 
-**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The 65-row matrix v0.2.0 and 65-candidate supporting snapshots are superseded by the regenerated source-candidate matrix v0.3.0. All candidates remain NOT_APPROVED.
+**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The 65-row matrix v0.2.0 and 65-candidate supporting snapshots are superseded by the regenerated source-candidate matrix v0.4.2. All candidates remain NOT_APPROVED.
 
 **Activities**
 - [x] 0.7.1 Identification methodology — controlled ERX-REQUIREMENTS-METHOD-001 v1.0.0.
@@ -257,7 +257,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases — all 82 source candidates now have a preliminary primary phase and dependency rationale; allocations remain planning-only and 107 child-level mappings require review.
 - [ ] 0.7.11 Build traceability matrix — regenerated matrix v0.4.2 for 82 source candidates from CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761; semantic/referential and child-level acceptance audit remains pending.
 
-**Controlled evidence:** initiation and source-inspection records; extraction batches 001–005; extraction completion record; accepted 0.7.3 record and atomicity/overlap disposition; classification record; design-requirements assessment v0.1.1; mandatory assessment v0.2.0; source-coverage audit v0.2.0; pending-specification register; open-decision review; phase-allocation register v0.3.1; LAEV baseline decision pack; verification-criteria proposal v0.3.1; semantic review register; review report; canonical source and individual registers; regenerated matrix v0.3.0; WP-0.7 status reconciliation v0.3.0.
+**Controlled evidence:** initiation and source-inspection records; extraction batches 001–005; extraction completion record; accepted 0.7.3 record and atomicity/overlap disposition; classification record; design-requirements assessment v0.1.1; mandatory assessment v0.2.0; source-coverage audit v0.2.0; pending-specification register v0.4.0; open-decision review; phase-allocation register v0.3.2; LAEV baseline decision pack; verification-criteria proposal v0.3.1; semantic review register; review report; canonical source and individual registers; regenerated matrix v0.4.2; WP-0.7 status reconciliation v0.3.0.
 
 **Acceptance gate:** each candidate/individual must have stable ID and lineage, atomic/unambiguous statement, source fidelity disposition, origin class, justified type and normative/design status, specification and decision links, justified phase/dependencies, objective criterion/method, and recorded review disposition. Derived/proposed content must remain distinguishable from source requirements. Explicit LAEV acceptance must identify exact baseline versions and commit.
 

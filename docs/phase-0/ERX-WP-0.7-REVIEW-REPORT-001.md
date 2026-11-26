@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-REVIEW-REPORT-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | WORKING REVIEW — NOT ACCEPTANCE |
 | Work Package | WP-0.7 / Activities 0.7.2–0.7.9 |
 | Date | 2026-11-25 |
@@ -15,9 +15,9 @@
 
 The approved WP-0.7 method, initiation record, source-inspection record, initial batch and batches 002–003 were inspected in the repository. The five original PDFs were confirmed present in the working project files with page counts 29, 29, 12, 37 and 2 respectively. The exact PDF page text for Roadmap pp.11–29 and the complete two-page technical response was inspected for the continuation batch.
 
-The requirements register was extended on this review branch with 20 additional candidate rows in batch 004. The current branch snapshot contains 65 data rows and 19 columns. Automated structural validation found:
-- 65 data rows;
-- 19 columns;
+The requirements register was extended on this review branch with 20 additional candidate rows in batch 004. The historical 65-row / 26-column statement describes the pre-batch-005 snapshot only; current canonical branch snapshot contains 82 data rows and 26 columns. Automated structural validation found:
+- 82 data rows;
+- 26 columns;
 - zero duplicate requirement IDs;
 - zero rows with a field count different from the header.
 
@@ -70,7 +70,7 @@ These are candidate relationships, not decisions to merge. The next review must 
 | Activity | Assessment at this snapshot |
 |---|---|
 | 0.7.1 | COMPLETED — controlled method v1.0.0 |
-| 0.7.2 | IN_PROGRESS — four batches, 65 candidates; source coverage audit remains |
+| 0.7.2 | IN_PROGRESS — four batches, 82 candidates; source coverage audit remains |
 | 0.7.3 | IN_PROGRESS — unique IDs and one-row candidate records; semantic validation remains |
 | 0.7.4 | IN_PROGRESS — preliminary types exist; normalize taxonomy and review each record |
 | 0.7.5 | NOT_COMPLETED — explicit mandatory modality review required |
@@ -83,7 +83,7 @@ These are candidate relationships, not decisions to merge. The next review must 
 
 ## 6. Mandatory next actions
 
-1. Conduct a row-by-row semantic and source-locator review of all 65 candidates.
+1. Conduct a row-by-row semantic and source-locator review of all 82 candidates.
 2. Create a controlled classification and mandatory/design disposition for every candidate, preserving origin class.
 3. Build the pending-specification register with missing parameters, closure criteria, owner and decision links.
 4. Validate the eight existing decision candidates and add any new ones supported by source gaps.
@@ -100,7 +100,7 @@ The following working artifacts were added after reopening all five supplied PDF
 - `ERX-WP-0.7-VERIFICATION-CRITERIA-PROPOSAL-001` v0.1.0 proposes requirement-level criteria while preserving existing candidate criteria and explicitly avoiding unapproved numeric targets.
 - `ERX-WP-0.7-LAEV-BASELINE-DECISION-PACK-001` v0.1.0 presents the remaining gates and approval boundary.
 
-Structural audit of the current canonical CSV: 65 rows, 25 unique columns, zero duplicate IDs, all 65 primary types in the controlled taxonomy, all 65 source locators non-empty, no first cited page beyond the source PDF page count, and no dangling ERX-REQ dependency IDs. Eight secondary-tag cells are empty and are not automatically errors; their semantic justification must be reviewed. Fifteen rows still had no criterion in the canonical CSV at the time of audit; the separate criteria proposal supplies candidate wording for those records, but the canonical CSV has not yet been updated and the criteria remain unapproved.
+Structural audit of the current canonical CSV: 82 rows, 25 unique columns, zero duplicate IDs, all 65 primary types in the controlled taxonomy, all 65 source locators non-empty, no first cited page beyond the source PDF page count, and no dangling ERX-REQ dependency IDs. Eight secondary-tag cells are empty and are not automatically errors; their semantic justification must be reviewed. Fifteen rows still had no criterion in the canonical CSV at the time of audit; the separate criteria proposal supplies candidate wording for those records, but the canonical CSV has not yet been updated and the criteria remain unapproved.
 
 The PR snapshot is open and unmerged. The current comparison against `main` reports 23 commits ahead and zero behind. The pull request reports mergeable=true in its latest fetched metadata; this is a repository mergeability signal only, not a review approval or permission to merge.
 
@@ -110,3 +110,7 @@ This report and its branch changes are working artifacts. They do not approve re
 
 ---
 End of ERX-WP-0.7-REVIEW-REPORT-001
+
+
+## 7. Current-snapshot addendum — 2026-11-25
+The current canonical CSV snapshot is 82 unique candidates and 26 columns (SHA `df36822682576568f491c90f68bde9b631635d84`). The source-boundary audit found no unknown source IDs or page locators outside the five source PDFs. This does not close exact source-fidelity review. Current mandatory screening is 76 MANDATORY_CANDIDATE / 6 MODALITY_UNRESOLVED. All 82 candidates now have design-assessment categories and preliminary phase allocations; these remain unapproved/planning-only. The 19 source candidates missing from the pending-specification register remain an open 0.7.7 coverage task. The earlier 65/19 figures in this report are retained only as historical snapshot context, not current state.

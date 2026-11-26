@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-LAEV-BASELINE-DECISION-PACK-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | SUBMISSION PACKAGE — NOT APPROVED |
 | Date | 2026-11-25 |
 | Decision authority | LAEV |

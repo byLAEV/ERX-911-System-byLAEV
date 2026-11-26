@@ -4,8 +4,8 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001 |
-| Version | 0.3.0 |
-| Status | WORKING GAP REGISTER — 82-CANDIDATE COVERAGE; 19 DISPOSITIONS OPEN |
+| Version | 0.4.0 |
+| Status | WORKING GAP REGISTER — 82-CANDIDATE COVERAGE REVIEWED |
 | Work Package | WP-0.7 / Activity 0.7.7 |
 | Date | 2026-11-25 |
 | Source register | registers/requirements-traceability.csv |
@@ -121,32 +121,51 @@ End of reconciled gap register.
 
 
 
-## 3. Coverage disposition queue — all remaining candidate IDs
+## 3. Disposition of the 19 previously unrepresented candidates
 
-The following 19 candidates were absent from the original 63-row gap table. They are now explicitly tracked so that no candidate is silently omitted. **This table does not claim that each is a confirmed specification gap.** Each remains GAP_REVIEW_REQUIRED until an evidence-based disposition is recorded as GAP_IDENTIFIED, NO_GAP_WITH_EVIDENCE, BLOCKED_BY_DECISION, or NOT_APPLICABLE with rationale. The candidate-specific verification proposals are available in ERX-WP-0.7-VERIFICATION-CRITERIA-PROPOSAL-001 v0.3.0; proposed criteria do not close specification gaps.
+A source/criterion-level first-pass disposition has now been recorded for all 19 candidates. Thirteen are added as specification gaps; six have a documented NO_GAP_WITH_EVIDENCE decision at this candidate level. A NO_GAP decision does not waive parent/child review or future design decisions.
 
-| Requirement ID | Source locator | Current design / verification evidence | Required 0.7.7 disposition |
+### 3.1 GAP_IDENTIFIED — 13 candidates
+
+| Requirement ID | Source locator | Missing specification | Closure evidence |
 |---|---|---|---|
-| ERX-REQ-TEST-0001 | ERX-ROADMAP-001 PDF p.24, Section 9.1 | VERIFICATION_DESIGN_CONSTRAINT; criterion: Test plan contains each of the six categories with mapped cases, expected results and evidence. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-TEST-0004 | ERX-ROADMAP-001 PDF p.24, §9.1 | VERIFICATION_DESIGN_CONSTRAINT; criterion: Test matrix traces every category and each of the twenty source-listed tests to case IDs, expected outcomes and evidence. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-RECV-0001 | ERX-PROT-001 PDF p.8, Step 1 | DATA_DESIGN_CONSTRAINT; criterion: Schema validation confirms every JSON 01 reception record contains the event, call, telephone-session, receiving-gateway, reception-source, observation-time, available technical-reference and available-origin fields; unavailable source data is represented as unavailable rather than fabricated. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-LOC-0001 | ERX-PROT-001 PDF p.9, Step 4 | DATA_DESIGN_CONSTRAINT; criterion: For each location datum, validate source, observation time, estimated precision, method and validation state; coordinates are required only when available, and each permitted availability state is represented distinctly. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-LOC-0002 | ERX-PROT-001 PDF p.9, Step 4 | FUNCTIONAL_DESIGN_CONSTRAINT; criterion: A missing location does not prevent call progression; a later location update creates a new linked event and leaves the original signed/committed JSON 01 unchanged. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-CONTACT-0001 | ERX-PROT-001 PDF p.11, Step 10 | DATA_DESIGN_CONSTRAINT; criterion: The record model stores initial call-reception time and agent-response time as distinct event fields with their respective event meanings; no value is substituted for the other. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-AGENT-0003 | ERX-PROT-001 PDF p.12, Step 11 | SECURITY_DESIGN_CONSTRAINT; criterion: Professional identity validation emits an explicit permitted result; a pending or failed check never yields VERIFIED, and call attention continues independently of the validation result. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-CONTACT-0002 | ERX-PROT-001 PDF p.12, Step 13 | FUNCTIONAL_DESIGN_CONSTRAINT; criterion: The contact outcome model represents each source-listed outcome distinctly and rejects a record that claims human attention when no human response occurred. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-CORR-0001 | ERX-PROT-001 PDF pp.18, 21–22, §§10.9 and 14 | DATA_DESIGN_CONSTRAINT; criterion: After a source document is signed/committed, its bytes and digest remain unchanged; a correction is a separately signed complementary document that identifies the original, reason and authorizing party and allows reconstruction of the full history. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-TIME-0001 | ERX-PROT-001 PDF p.18, §11 | DATA_DESIGN_CONSTRAINT; criterion: The data model distinguishes device-declared, gateway-observed, institutionally received, processed, signed, OTS-submitted and verifiably anchored times; each field retains its own meaning and is not substituted for another. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-TIME-0002 | ERX-PROT-001 PDF p.19, §11 | DATA_DESIGN_CONSTRAINT; criterion: Every stored time carries UTC representation, precision and source; where supported, a monotonic session reference is retained; clock discrepancies are recorded as discrepancies and not silently rewritten. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-OTS-0003 | ERX-PROT-001 PDF pp.19–20, §12 | SECURITY_DESIGN_CONSTRAINT; criterion: For each JSON document, the evidence workflow records completion/freeze, canonicalization, signature, commitment calculation, OTS request, proof retention, later proof update and verification against the document and Bitcoin chain; OTS unavailability leaves attention flow available. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-OTS-0004 | ERX-PROT-001 PDF p.20, §12.3 | VERIFICATION_DESIGN_CONSTRAINT; criterion: Verifier output explicitly separates what OTS establishes (commitment existence by anchored time) from claims it cannot establish, including truth, identity, conduct, exact location, audio completeness, institutional authority or exact event second. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-PRIV-0003 | ERX-PROT-001 PDF p.20, §13 | DATA_DESIGN_CONSTRAINT; criterion: Data-flow and storage review confirms original call content remains in protected institutional infrastructure, sensitive direct identifiers are not sent to Bitcoin/OTS, and data is encrypted at rest and in transit with authorized/audited access. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-PRIV-0004 | ERX-PROT-001 PDF p.21, §13.1 | SECURITY_DESIGN_CONSTRAINT; criterion: Public outputs contain no direct identifiers, isolated personal-data hashes or unnecessary metadata; commitment construction uses high-entropy random values or approved equivalent and verification material remains under authorized control. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-PRIV-0005 | ERX-PROT-001 PDF p.21, §13.2 | GOVERNANCE_DESIGN_CONSTRAINT; criterion: The institutional policy identifies retention periods and deletion procedures under applicable law; deletion records do not claim removal of an already published Bitcoin anchor and retain minimum policy/evidence metadata. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-OPS-0004 | ERX-PROT-001 PDF p.24, §16.10 | SECURITY_DESIGN_CONSTRAINT; criterion: When identity services are unavailable, the call continues and the identity state remains PENDING or NOT_VERIFIED; no transition may promote it to VERIFIED without a successful authorized check. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-OPS-0005 | ERX-PROT-001 PDF p.24, §16.8 | OPERATIONAL_DESIGN_CONSTRAINT; criterion: During ERX unavailability, official telephony continues; where local durable storage is available, queued events survive process restart and preserve original-event, recovery and commitment-generation times as distinct fields. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
-| ERX-REQ-BOUND-0001 | ERX-PROT-001 PDF p.28, §20 | ARCHITECTURAL_DESIGN_CONSTRAINT; criterion: Architecture and institutional responsibility documents explicitly state that ERX does not replace the emergency number, telephone network, dispatch system, agent judgment or public authority, and preserve each installation's institutional/legal responsibility. | GAP_REVIEW_REQUIRED — source/child/decision review pending |
+| ERX-REQ-TEST-0001 | ERX-ROADMAP-001 PDF p.14 §4.1 | Simulator fixtures, event inputs, expected state outputs, reproducibility and failure paths are not fully specified. | Approved simulator scenario catalogue, fixture format, expected outputs and repeatable execution evidence. |
+| ERX-REQ-TEST-0004 | ERX-ROADMAP-001 PDF p.24 §9.1; ERX-PROT-001 §19.1 | Roadmap references twenty mandatory tests but the requirement record does not yet map each source test to a named test case, preconditions, expected result and evidence. | Exact extraction of all twenty ERX-PROT-001 §19.1 tests and traceable test-case mapping. |
+| ERX-REQ-RECV-0001 | ERX-PROT-001 PDF p.8 Step 1 | The source lists reception fields but does not fully define field types, required/conditional presence, canonical schema version or unavailable-value representation. | Approved JSON 01 schema and positive/negative validation vectors. |
+| ERX-REQ-LOC-0001 | ERX-PROT-001 PDF p.9 Step 4 | Location provenance fields and states are listed, but coordinate reference, precision semantics, source taxonomy and validation-state transition rules are not fully defined. | Approved location data schema, state vocabulary and source/precision semantics. |
+| ERX-REQ-CORR-0001 | ERX-PROT-001 PDF p.18 §10.9; pp.21–22 §14 | Correction flow is defined, but the complementary-document schema, signer/authorizer authority and multi-correction linkage rules need formal specification. | Correction/addendum schema, authority matrix and chain-reconstruction rules. |
+| ERX-REQ-TIME-0001 | ERX-PROT-001 PDF p.18 §11 | Seven distinct time concepts are listed, but field-level schema, event applicability and ordering rules are not completely defined. | Versioned time-field schema and event applicability/ordering table. |
+| ERX-REQ-TIME-0002 | ERX-PROT-001 PDF p.19 §11 | UTC, precision, source and monotonic time are required, but allowed precision, source authority, monotonic-clock scope and discrepancy handling need specification. | Time-source policy, precision model and discrepancy-record schema; no invented tolerance. |
+| ERX-REQ-OTS-0003 | ERX-PROT-001 PDF pp.19–20 §12 | The evidence workflow is enumerated, but state transitions, canonicalization/signature dependencies, proof storage, update triggers and verification package boundaries remain unspecified. | Approved OTS workflow/state model and proof-retention/update contract. |
+| ERX-REQ-PRIV-0003 | ERX-PROT-001 PDF p.20 §13 | Protection objectives are stated, but encryption profiles, key lifecycle, access roles, audit events and custody boundaries are not specified. | Approved data-protection profile, key/access model and audit-control mapping. |
+| ERX-REQ-PRIV-0004 | ERX-PROT-001 PDF p.21 §13.1 | High-entropy commitments/equivalent structures are required where applicable, but construction, entropy policy, metadata minimization and verification disclosure controls remain undefined. | Approved anti-correlation commitment design and privacy threat-model evidence. |
+| ERX-REQ-PRIV-0005 | ERX-PROT-001 PDF p.21 §13.2 | The institution must define retention/deletion under applicable law, but jurisdictional periods, legal holds, deletion evidence and minimum retained metadata are not specified. | Jurisdiction-specific retention/deletion schedule and auditable deletion/anchor distinction. |
+| ERX-REQ-OPS-0004 | ERX-PROT-001 PDF p.24 §16.10 | The non-blocking identity-outage behavior is explicit, but retry cadence, authoritative revalidation source, timeout handling and transition from pending to final status remain unspecified. | Identity-service outage/recovery state machine and authorized revalidation rules. |
+| ERX-REQ-OPS-0005 | ERX-PROT-001 PDF p.24 §16.8 | Durable local queue behavior is conditional on technical feasibility; queue encryption, capacity, ordering, replay protection, reconciliation and overflow handling need specification. | Degraded-mode queue contract, persistence/replay/reconciliation policy and recovery evidence. |
 
-## 4. Coverage completion rule
+### 3.2 NO_GAP_WITH_EVIDENCE — 6 candidates
 
-The 63 detailed gap records plus this 19-candidate disposition queue provide visibility across all 82 source candidates, but **do not mean activity 0.7.7 is complete**. For every queue item, reviewer must record one allowed disposition, exact source/child applicability, reason, owner, affected decision and closure evidence. Parent-level gaps must not be duplicated for children; child-only gaps must retain the parent candidate link. A NO_GAP decision requires evidence and reviewer/date.
+| Requirement ID | Source locator | Disposition | Rationale |
+|---|---|---|---|
+| ERX-REQ-LOC-0002 | ERX-PROT-001 PDF p.9 Step 4 | NO_GAP_WITH_EVIDENCE | The source explicitly states that absent location does not block the call and later location changes are new events without modifying JSON 01. The candidate-specific criterion provides an observable test; additional location schema detail is tracked under LOC-0001. |
+| ERX-REQ-CONTACT-0001 | ERX-PROT-001 PDF p.11 Step 10 | NO_GAP_WITH_EVIDENCE | The source explicitly distinguishes initial reception time from agent response time. The criterion requires distinct event fields; shared timestamp schema work is tracked under TIME-0001. |
+| ERX-REQ-AGENT-0003 | ERX-PROT-001 PDF p.12 Step 11 | NO_GAP_WITH_EVIDENCE | The source explicitly lists validation outcomes and prohibits representing pending identity as verified while attention continues. Credential lifecycle detail is covered by existing INST/AGENT gaps. |
+| ERX-REQ-CONTACT-0002 | ERX-PROT-001 PDF p.12 Step 13 | NO_GAP_WITH_EVIDENCE | The source enumerates the contact outcomes and explicitly prohibits inventing human attention. The candidate-specific outcome-model criterion is directly testable; no additional specification gap identified at this level. |
+| ERX-REQ-OTS-0004 | ERX-PROT-001 PDF p.20 §12.3 | NO_GAP_WITH_EVIDENCE | The source explicitly lists the evidentiary limits of OTS. The candidate is treated as a proof-boundary/design constraint, not a mandatory system obligation; verifier-result detail is covered by VERIFY requirements. |
+| ERX-REQ-BOUND-0001 | ERX-PROT-001 PDF p.28 §20 | NO_GAP_WITH_EVIDENCE | The source explicitly defines the non-substitution boundary and institutional independence. The candidate-specific architecture/governance review criterion is sufficient at this requirements-identification level. |
+
+## 4. Coverage result and closure control
+
+- Original detailed gap entries: 63.
+- Additional gaps identified through this review: 13.
+- **Total detailed specification gaps: 76 unique candidate IDs.**
+- **NO_GAP_WITH_EVIDENCE: 6 candidate IDs.**
+- Total source-candidate coverage: 82/82.
+- No requirement ID was deleted, merged or renumbered.
+- The 107 individual records still require parent/child applicability review; a parent-level gap must not be duplicated across children.
+- Existing gaps remain OPEN until their specified closure evidence is produced and reviewed. The 13 added gaps are not resolved by being recorded.
+- The six NO_GAP dispositions apply only to the stated candidate-level scope and may be reopened if child decomposition or source review reveals additional obligations.
+
+Activity 0.7.7 can be treated as **recording coverage complete for the 82 source-candidate layer**, while the 76 specification gaps remain open work items. Formal activity acceptance and child-level applicability remain separate controls.
+
+

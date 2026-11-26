@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.4 |
+| Version | 1.5.5 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -30,7 +30,7 @@ A file's presence or a Git commit does not establish correctness, approval, or a
 3. WP-0.2 completion dossier and foundational register control the five-source baseline and byte-integrity evidence.
 4. WP-0.5 acceptance record and repository governance control repository identity, current governance and documented limitations.
 5. The recursive Git tree is the current path-presence baseline for this revision. Its exact SHA is recorded above; GitHub reported `truncated=false` and 71 repository files.
-6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 88 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.4; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
+6. The machine-readable companion is [registers/document-register.csv](../../registers/document-register.csv). It contains 89 catalogue records across 16 columns: catalogue key, formal document ID, source ID, title, source version, classification, lifecycle status, source-declared status/disposition, evidence verification, archival custody, repository presence, path, source location, notes, register version, and register status. The CSV has 79 PRESENT paths and one NOT_LOCATED referenced source. Its formal register identity is ERX-DOCUMENT-REGISTER-001 v1.2.4; the machine-readable metadata columns repeat the register version and lifecycle status on each row. Structural checks found no duplicate catalogue IDs, duplicate paths, missing live paths, stale paths, or malformed column counts. Lifecycle status is assigned conservatively; source-declared status is preserved separately and is not automatically interpreted as lifecycle.
 
 ## 3. Foundational source baseline
 
@@ -145,7 +145,7 @@ This is a targeted catalogue addition, not a full recursive repository-tree refr
 
 ## 13. WP-0.7 conflict-correction update — 2026-11-25
 
-Document register version 1.2.6 now records IDX-085 through IDX-091 for the reconciled WP-0.7 matrix, classification, phase allocation, verification proposal, semantic review, gap register and LAEV baseline decision package. The catalogue total is 88 records.
+Document register version 1.2.7 now records IDX-085 through IDX-091 for the reconciled WP-0.7 matrix, classification, phase allocation, verification proposal, semantic review, gap register and LAEV baseline decision package. The catalogue total is 88 records.
 
 Corrected controlled snapshots:
 - 82 source candidates / 26 canonical CSV columns.
@@ -159,3 +159,10 @@ Corrected controlled snapshots:
 
 This is a targeted WP-0.7 catalogue correction. The recursive repository tree/path-coverage audit and full index acceptance remain open; the recorded prior live-tree snapshot is historical, not current.
 
+
+
+## 14. WP-0.7 current evidence update — 2026-11-25
+
+Document register version 1.2.7 now contains IDX-092 for ERX-WP-0.7.6-DESIGN-REQUIREMENTS-ASSESSMENT-001 v0.1.0. Catalogue total: 89 records.
+
+Current WP-0.7 canonical state: 82 source candidates / 26 CSV columns / 107 individual records. The latest candidate CSV is regenerated into traceability matrix v0.4.1. Mandatory screening: 76 MANDATORY_CANDIDATE and six MODALITY_UNRESOLVED. Design assessment: 82/82 candidates. Preliminary phase allocation: 82/82 candidates, planning-only. Verification criteria proposal v0.3.0 covers 82 candidates; proposed criteria remain unapproved and unexecuted. The specification-gap register v0.3.0 retains 63 detailed gap records and explicitly tracks 19 additional candidates awaiting individual dispositions. Exact source fidelity, child-level acceptance, open-decision acceptance and LAEV baseline approval remain open.

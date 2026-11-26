@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | WORKING ASSESSMENT — SOURCE-MODALITY REVIEW PENDING |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
@@ -35,8 +35,8 @@ The assessment is against the five supplied foundational source documents alread
 
 | Preliminary disposition | Count | Meaning |
 |---|---:|---|
-| MANDATORY_CANDIDATE | 57 | Normalized statement contains explicit normative wording; exact source-clause confirmation and authority review are still required. |
-| MODALITY_UNRESOLVED | 25 | Existing evidence does not safely establish whether the source is mandatory, recommendatory, or descriptive. |
+| MANDATORY_CANDIDATE | 76 | Normalized statement contains explicit normative wording; exact source-clause confirmation and authority review are still required. |
+| MODALITY_UNRESOLVED | 6 | Existing evidence does not safely establish whether the source is mandatory, recommendatory, or descriptive. |
 | **Total source candidates assessed** | **82** | All rows in the canonical source-candidate register received a disposition. |
 
 The 57 records are candidates, not approved mandatory requirements. The 25 unresolved records are not treated as non-mandatory; their modality remains undetermined.
@@ -46,7 +46,7 @@ The 57 records are candidates, not approved mandatory requirements. The 25 unres
 The field `mandatory_assessment` in `registers/requirements-traceability.csv` was updated for all 82 source candidates:
 
 - 57 rows: `MANDATORY_CANDIDATE`, with explicit warning that clause-level confirmation remains pending.
-- 25 rows: `MODALITY_UNRESOLVED`, with a reason not to infer normative force.
+- 6 rows: `MODALITY_UNRESOLVED`, with a reason not to infer normative force.
 - Existing source IDs, source locators, origin classes, requirement text, classifications, lifecycle states, phase allocations and approval states were preserved.
 - No row was changed to APPROVED.
 - No source recommendation was converted into an obligation by this screening.
@@ -88,3 +88,7 @@ This record does not authorize protocol implementation, Phase 1, institutional d
 ---
 
 End of ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001
+
+
+## 7. Direct-source modality correction — 2026-11-25
+The 82 candidate rows were rechecked against the exact cited PDF pages for the previously unresolved set. The updated disposition is 76 MANDATORY_CANDIDATE and six MODALITY_UNRESOLVED. The six retained unresolved are: ERX-REQ-UTXO-0001 (definition/transition description); ERX-REQ-AGENT-0002 (Atlas flowchart no-response path, graphical process evidence without explicit textual modal); ERX-REQ-LOC-0002 (composite of non-blocking location and later-event behavior); ERX-REQ-CONTACT-0001 (descriptive distinction between reception and response time); ERX-REQ-OTS-0003 (descriptive workflow sequence); ERX-REQ-OTS-0004 (evidentiary limitations of OTS, better treated as proof-boundary/design semantics than a direct mandatory system obligation). The remaining 19 candidates received source-specific modal rationales in the canonical CSV. MANDATORY_CANDIDATE remains a screening category, not an approved obligation or legal conclusion.

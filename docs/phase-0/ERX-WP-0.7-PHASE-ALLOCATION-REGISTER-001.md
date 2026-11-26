@@ -4,30 +4,29 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-PHASE-ALLOCATION-REGISTER-001 |
-| Version | 0.2.0 |
+| Version | 0.3.0 |
 | Status | PRELIMINARY ALLOCATION — REVIEW PENDING |
 | Date | 2026-11-25 |
 | Canonical source | registers/requirements-traceability.csv |
-| Snapshot | 82 candidates; source CSV blob 703567101acf1634e8791ab9a9ccb3aa82ef786f |
+| Snapshot | 82 candidates; 26 columns; CSV blob SHA df36822682576568f491c90f68bde9b631635d84 |
 
 ## Allocation rule
-The primary phase and dependencies below are register values, not approval. NOT_ALLOCATED remains explicit; no phase is inferred. Assignments do not authorize later-phase execution.
+The assignments below are preliminary planning classifications derived from the subject of each candidate and the approved Roadmap lifecycle. They are not design decisions, phase authorization, or approval of a requirement. Cross-phase dependencies are retained separately. No source candidate is left unallocated in this revision; this does not complete child-level allocation.
 
 ## Distribution
-| Current phase value | Candidates |
+| Primary phase | Candidates |
 |---|---:|
-| PHASE_1 — Normative closure and state model | 19 |
-| PHASE_3 — Software architecture and infrastructure | 5 |
-| PHASE_2 — Formal data and cryptography | 4 |
-| PHASE_6 — Documentary evidence and OpenTimestamps | 6 |
+| PHASE_1 — Normative closure and state model | 25 |
+| PHASE_3 — Software architecture and infrastructure | 6 |
+| PHASE_2 — Formal data and cryptography | 8 |
+| PHASE_6 — Documentary evidence and OpenTimestamps | 9 |
 | PHASE_4 — ERX Core development | 3 |
 | PHASE_8 — Institutional integration | 3 |
-| PHASE_5 — Identity, trust and institutional security | 11 |
-| PHASE_7 — ERX Verifier development | 5 |
+| PHASE_5 — Identity, trust and institutional security | 13 |
+| PHASE_7 — ERX Verifier development | 6 |
 | PHASE_9 — Testing, audit and recovery | 5 |
 | PHASE_10 — Shadow pilot | 2 |
 | PHASE_11 — Homologation and institutional expansion | 2 |
-| NOT_ALLOCATED — WP-0.7.10 | 17 |
 | **Total** | **82** |
 
 ## Complete canonical allocation
@@ -98,26 +97,26 @@ The primary phase and dependencies below are register values, not approval. NOT_
 | ERX-REQ-PILOT-0002 | PHASE_10 — Shadow pilot | Primary lifecycle allocation by subject and explicit Roadmap phase gate; cross-phase dependencies remain recorded separately. Target: PHASE_10 — Shadow pilot. | ERX-REQ-PILOT-0001; ERX-REQ-TEST-0005 | EXTRACTED — REVIEW PENDING |
 | ERX-REQ-HOMO-0001 | PHASE_11 — Homologation and institutional expansion | Primary lifecycle allocation by subject and explicit Roadmap phase gate; cross-phase dependencies remain recorded separately. Target: PHASE_11 — Homologation and institutional expansion. | ERX-REQ-INST-0001; ERX-REQ-VERIFY-0004; ERX-REQ-OPS-0001 | EXTRACTED — REVIEW PENDING |
 | ERX-REQ-HOMO-0002 | PHASE_11 — Homologation and institutional expansion | Primary lifecycle allocation by subject and explicit Roadmap phase gate; cross-phase dependencies remain recorded separately. Target: PHASE_11 — Homologation and institutional expansion. | ERX-REQ-TRANS-0002; ERX-REQ-INT-0002; ERX-REQ-VERIFY-0004 | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-RECV-0001 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-LOC-0001 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-LOC-0002 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-CONTACT-0001 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-AGENT-0003 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-CONTACT-0002 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-CORR-0001 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-TIME-0001 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-TIME-0002 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-OTS-0003 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-OTS-0004 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-PRIV-0003 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-PRIV-0004 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-PRIV-0005 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-OPS-0004 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-OPS-0005 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
-| ERX-REQ-BOUND-0001 | NOT_ALLOCATED — WP-0.7.10 | Not assessed during extraction. | NOT_ASSESSED | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-RECV-0001 | PHASE_1 — Normative closure and state model | Reception event and initial UTXO record belong to the normative event/state model defined before implementation. | ERX-REQ-UTXO-0001; ERX-REQ-UTXO-0002; ERX-REQ-UTXO-0007 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-LOC-0001 | PHASE_1 — Normative closure and state model | Location provenance, observation and validation fields form part of the first-stage event/state semantics. | ERX-REQ-RECV-0001 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-LOC-0002 | PHASE_1 — Normative closure and state model | Non-blocking missing location and immutable correction-by-new-event behavior must be resolved as protocol state/exception semantics. | ERX-REQ-RECV-0001; ERX-REQ-CORR-0001 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-CONTACT-0001 | PHASE_1 — Normative closure and state model | Distinct reception and agent-response events define the boundary between UTXO 01 and UTXO 02. | ERX-REQ-RECV-0001; ERX-REQ-AGENT-0003 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-AGENT-0003 | PHASE_5 — Identity, trust and institutional security | Professional credential status and pending/unverified behavior are identity/trust lifecycle semantics. | ERX-REQ-INST-0002; ERX-REQ-KEY-0002 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-CONTACT-0002 | PHASE_1 — Normative closure and state model | Contact outcome vocabulary and truthful representation are part of the communication state machine. | ERX-REQ-AGENT-0003; ERX-REQ-STATE-0001 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-CORR-0001 | PHASE_2 — Formal data and cryptography | Immutable signed records and linked signed correction documents require formal document and cryptographic linkage rules. | ERX-REQ-UTXO-0006; ERX-REQ-CRYPTO-0001 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-TIME-0001 | PHASE_2 — Formal data and cryptography | Timestamp fields, event-time semantics and evidence-time distinctions require formal data/schema definition. | ERX-REQ-OTS-0003 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-TIME-0002 | PHASE_2 — Formal data and cryptography | UTC precision, time-source provenance and monotonic session ordering are formal time/data representation rules. | ERX-REQ-TIME-0001 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-OTS-0003 | PHASE_6 — Documentary evidence and OpenTimestamps | The independent commitment lifecycle, OTS submission, proof retention/update and verification are Roadmap Phase 6 responsibilities. | ERX-REQ-UTXO-0006; ERX-REQ-OTS-0001 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-OTS-0004 | PHASE_7 — ERX Verifier development | Proof limitations must be reflected in verifier result semantics and must not overstate what OTS establishes. | ERX-REQ-VERIFY-0001; ERX-REQ-VERIFY-0003 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-PRIV-0003 | PHASE_6 — Documentary evidence and OpenTimestamps | Protected institutional custody and separation of private content from public commitments are part of the evidence/file-custody phase. | ERX-REQ-PRIV-0001; ERX-REQ-PRIV-0002 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-PRIV-0004 | PHASE_2 — Formal data and cryptography | Anti-correlation commitments and protection against enumeration require formal cryptographic/data design. | ERX-REQ-PRIV-0003; ERX-REQ-UTXO-0006 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-PRIV-0005 | PHASE_6 — Documentary evidence and OpenTimestamps | Retention/deletion policy is tied to custody, evidence lifecycle and the distinction between deleting content and retaining an anchor. | ERX-REQ-PRIV-0003; ERX-REQ-PRIV-0002 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-OPS-0004 | PHASE_5 — Identity, trust and institutional security | Identity-service outage behavior and fail-closed verification status belong to credential/trust handling. | ERX-REQ-AGENT-0003; ERX-REQ-INST-0002 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-OPS-0005 | PHASE_3 — Software architecture and infrastructure | Durable local queueing and recovery timestamps are infrastructure/continuity architecture requirements. | ERX-REQ-OPS-0001; ERX-REQ-OPS-0002 | EXTRACTED — REVIEW PENDING |
+| ERX-REQ-BOUND-0001 | PHASE_1 — Normative closure and state model | Institutional scope boundaries and non-substitution of official emergency functions must be fixed in the normative baseline. | ERX-REQ-ARCH-0001; ERX-REQ-INST-0001 | EXTRACTED — REVIEW PENDING |
 
-## Review and authorization
-All phase allocations are provisional planning entries. 17 candidates remain unallocated and must be resolved during 0.7.10; this register does not silently allocate them. Cross-phase dependencies require validation. WP-0.7 completion and LAEV approval are still pending; no subsequent phase is authorized by this document.
+## Child-level allocation gate
+The 107 individually identified records remain linked to 82 parent candidates. Parent phase inheritance is a planning proposal only; every child must be checked for scope, dependencies and any legitimate phase divergence. This register does not assert that the 107 child-level allocations have been accepted.
 
 ---
-End of reconciled phase allocation.
+End of reconciled phase allocation register.

@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-SOURCE-COVERAGE-AUDIT-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | INSPECTION EVIDENCE — LOCATOR/CLAUSE REVIEW PARTIAL |
 | Date | 2026-11-25 |
 | Work Package | WP-0.7 / Activities 0.7.2 and 0.7.9 |
@@ -21,9 +21,9 @@ The five supplied PDF files were opened from the active project workspace and th
 | Respuesta técnica a ERX-ROADMAP-001 | version not stated in extracted title page | 2 | 0 |
 
 ## 2. Register structure and source-reference checks
-- Canonical CSV contains 65 candidate records and 25 unique columns.
-- Requirement IDs: 65 unique; no duplicates found.
-- All 65 rows have a source ID, source version and non-empty page/section locator.
+- Canonical CSV contains 82 candidate records and 26 unique columns.
+- Requirement IDs: 82 unique; no duplicates found.
+- All 82 rows have a source ID, source version and non-empty page/section locator.
 - All source IDs resolve to one of the four foundational source documents listed above.
 - First cited page number in each locator is within the corresponding PDF page count.
 - No dangling dependency reference to another ERX-REQ ID was found.
@@ -49,3 +49,7 @@ For each candidate, a reviewer must compare the exact page, section, clause or p
 
 ---
 End of ERX-WP-0.7-SOURCE-COVERAGE-AUDIT-001
+
+
+## 6. Reconciliation addendum — 2026-11-25
+The current canonical snapshot is 82 unique candidate IDs / 26 columns (blob SHA `df36822682576568f491c90f68bde9b631635d84`). All 82 page/section locators were checked against source PDF page bounds: ERX-PROT-001 29 pages, ERX-ATLAS-001 29 pages, UTXO-911-001 12 pages, ERX-ROADMAP-001 37 pages. No out-of-bounds locator or unknown source ID was found. This remains a locator-boundary check, not a row-by-row quotation/diagram fidelity pass. The 63-gap table still omits 19 candidate IDs; these remain unresolved for activity 0.7.7.

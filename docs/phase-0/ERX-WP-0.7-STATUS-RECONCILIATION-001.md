@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-STATUS-RECONCILIATION-001 |
-| Version | 0.1.0 |
+| Version | 0.2.0 |
 | Status | CONTROLLED WORKING AUDIT — WP-0.7 NOT COMPLETED |
 | Date | 2026-11-25 |
 | Work Package | WP-0.7 — Requirements Identification and Classification |
@@ -19,7 +19,7 @@ The current branch contains later evidence than several older summary artifacts.
 - **82 source candidate requirements** in `registers/requirements-traceability.csv`, reconciled through extraction batches 001–005.
 - **107 individually identified requirements** in `registers/requirement-identification-register.csv`; 82 parent candidates represented, 14 compound candidates decomposed into 39 child records, 18 structured-list dispositions and eight overlap-group dispositions.
 - The source-candidate matrix was regenerated as v0.3.0 for all 82 candidates (26 canonical fields). Older 65-candidate semantic-review and verification-proposal snapshots remain stale; refresh them against the 82/107 inventory before final acceptance.
-- The source-candidate classification, phase-allocation and decision/gap records likewise require a versioned refresh against 82 candidates and, where relevant, 107 individual records.
+- Classification register v0.2.0 now lists all 82 candidates. Phase allocation v0.2.0 lists 82 candidates, with 17 explicitly NOT_ALLOCATED. Verification proposal v0.2.0 now covers 82 and marks 17 late-extraction candidates as pending criteria. Semantic-review register v0.2.0 aligns to 82 candidates and 107 individual records. Gap register v0.2.0 confirms 63 recorded gap IDs and explicitly flags 19 unrepresented candidates as UNASSESSED, not gap-free.
 - All extracted/derived/proposed records remain **NOT_APPROVED**. Phase allocation is planning only.
 
 This audit is a synchronization record, not a claim that source fidelity or semantic acceptance has passed.
@@ -32,24 +32,24 @@ This audit is a synchronization record, not a claim that source fidelity or sema
 | 0.7.2 Extraction | Batches 001–005; extraction completion record v1.0.0; 82 candidates | COMPLETED for bounded extraction; exact clause audit remains in 0.7.9 |
 | 0.7.3 Individual identification | Accepted record v1.0.0; 107 IDs | COMPLETED / ACCEPTED |
 | 0.7.4 Classification | 82 source candidates and 107 individual records classified | EXECUTED; semantic and LAEV acceptance pending |
-| 0.7.5 Mandatory modality | Preliminary screening: 57 mandatory candidates, 25 modality unresolved, source candidates only | IN_PROGRESS; exact clause and 107-item review pending |
+| 0.7.5 Mandatory modality | Canonical register: 57 mandatory candidates, 25 modality unresolved (8 earlier unresolved + 17 late-extraction unresolved); individual child layer not yet fully assessed | IN_PROGRESS; exact clause and 107-item review pending |
 | 0.7.6 Design requirements | Preliminary design assessments exist | IN_PROGRESS; adopted constraints, descriptive statements, recommendations/options and derived proposals must be distinguished record by record |
-| 0.7.7 Specification gaps | Working register records 63 gap candidates | REGISTERED; reconcile parent/child links, closure criteria, owners and decision dependencies |
+| 0.7.7 Specification gaps | 63 gap IDs recorded; 19 of 82 candidates not represented and expressly UNASSESSED | REGISTERED; complete coverage and reconcile parent/child links, closure criteria, owners and decision dependencies |
 | 0.7.8 Open decisions | Eight decision candidates; completeness review v0.1.0 | REVIEW EXECUTED; LAEV acceptance pending; decisions remain open and belong to WP-0.8 |
 | 0.7.9 Source links | 82 source locators; source audit validates bounds only | IN_PROGRESS; exact passage/diagram support for each statement not yet proven |
-| 0.7.10 Phase allocation | Existing allocation snapshot covers 65 candidates | IN_PROGRESS; allocate/review remaining candidates and map 107 individual records without authorizing later phases |
-| 0.7.11 Traceability matrix | Existing matrix snapshot covers 65 candidates | IN_PROGRESS; regenerate from current canonical registers and audit every relation |
+| 0.7.10 Phase allocation | Allocation register v0.2.0 covers 82 candidates; 17 are explicitly NOT_ALLOCATED | IN_PROGRESS; resolve 17 allocations and validate 107 individual links without authorizing later phases |
+| 0.7.11 Traceability matrix | Matrix v0.3.0 regenerated for 82 source candidates | IN_PROGRESS; audit candidate-to-individual, phase, gap, decision and source relations |
 
 ## 3. Non-negotiable closure sequence
 
 1. Reconcile all controlled artifacts to the 82/107 register snapshot; mark stale versions superseded rather than silently treating them as current.
 2. Perform exact source-clause review for each of the 82 source candidates, including visual review of the relevant Atlas plates; record PASS / CORRECT / SPLIT / DERIVED / BLOCKED with evidence.
 3. Complete semantic and overlap disposition for all 107 individual records; retain IDs and parent lineage.
-4. Review normative force and design character at the individual level. Preserve descriptive source content and recommendations as such; do not infer mandatory status.
+4. Review normative force and design character at the individual level. Current screening is 57 mandatory candidates and 25 modality-unresolved; all 17 late-extraction candidates are modality unresolved. Preserve descriptive source content and recommendations as such; do not infer mandatory status.
 5. Reconcile all 63 specification-gap candidates and eight open-decision candidates to the current requirement IDs; do not close gaps or adopt ADRs within WP-0.7.
-6. Complete primary phase allocation and cross-phase dependencies for the current set; keep all allocations explicitly planning-only.
-7. Generate objective verification criteria for the current 82 source candidates and 107 individual records. Separate source-derived criteria from proposals; do not invent numeric thresholds or claim tests executed.
-8. Matrix v0.3.0 has been regenerated from the canonical 82-row CSV. Run the remaining referential, uniqueness, source-locator, parent-child, phase and status acceptance audits.
+6. Complete primary phase allocation and cross-phase dependencies for the current set; 17 remain NOT_ALLOCATED in v0.2.0. Keep all allocations explicitly planning-only.
+7. Verification proposal v0.2.0 now covers all 82 candidates; 17 late-extraction rows remain explicitly pending criterion design. Develop child-specific criteria for the 107 individual records after semantic disposition. Do not invent numeric thresholds or claim tests executed.
+8. Matrix v0.3.0 has been regenerated from the canonical 82-row CSV. Structural checks show 82 unique IDs, 107 individual IDs, zero orphan parent references, and zero missing dependency IDs. Run remaining source-fidelity, child-link, gap/decision, phase and status acceptance audits.
 9. Targeted document-register and master-index entries were updated (IDX-084; index v1.5.3). A full repository-tree refresh and path-coverage audit remain open.
 10. Issue the final readiness/acceptance package with exact versions and commit SHA. WP-0.7 can be marked COMPLETED only after its stated acceptance criteria are satisfied and LAEV expressly accepts the exact baseline.
 
@@ -79,4 +79,17 @@ End of controlled reconciliation.
 - Workplan WP-0.7 section reconciled to the current 82/107 inventory and activity-specific statuses.
 - Document register updated with IDX-084; master index incremented to v1.5.3 with a bounded supplemental note.
 - These repository updates are evidence of controlled drafting, not LAEV acceptance or PR merge.
+
+
+
+## 7. Corrective updates — version 0.2.0
+
+The following stale-scope contradictions have been corrected in this branch:
+- Classification register: v0.2.0, all 82 candidates.
+- Phase allocation register: v0.2.0, all 82 listed; 17 explicitly unallocated.
+- Verification proposal: v0.2.0, all 82 listed; 17 late candidates marked pending rather than fabricated.
+- Semantic review register: v0.2.0, 82 source candidates + 107 individual layer.
+- Pending-specification register: v0.2.0; 63 recorded gap IDs and 19 unrepresented candidates marked UNASSESSED.
+- LAEV baseline decision pack: corrected to 82/107 and current 26-column schema.
+- These corrections do not close WP-0.7; exact source review, gap coverage, 17 allocations, semantic disposition and LAEV baseline approval remain gates.
 

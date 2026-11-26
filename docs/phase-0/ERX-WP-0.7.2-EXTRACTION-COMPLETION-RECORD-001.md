@@ -4,7 +4,7 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7.2-EXTRACTION-COMPLETION-RECORD-001 |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | Status | ACTIVITY 0.7.2 — EXTRACTION COMPLETED; DOWNSTREAM REVIEW PENDING |
 | Work Package | WP-0.7 / Activity 0.7.2 |
 | Date | 2026-11-25 |
@@ -42,7 +42,7 @@ This completion closes extraction work only. It does not certify that every cand
 | 005 | Supplemental Protocol candidates for reception, location, contact, correction, time, OTS limits, privacy, exception handling and product boundaries | 17 |
 | **Total** |  | **82** |
 
-The canonical register was updated to incorporate batch 005. The 82 candidate IDs are unique in the current branch snapshot. The CSV retains its 25-column schema.
+The canonical register was updated to incorporate batch 005. The 82 candidate IDs are unique in the current branch snapshot. The canonical CSV currently retains a 26-column schema (blob SHA `df36822682576568f491c90f68bde9b631635d84`); this supersedes the 25-column statement in the initial completion snapshot.
 
 ## 4. Extraction controls applied
 

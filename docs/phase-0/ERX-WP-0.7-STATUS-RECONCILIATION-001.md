@@ -4,9 +4,9 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-STATUS-RECONCILIATION-001 |
-| Version | 0.4.0 |
-| Status | CONTROLLED WORKING AUDIT — WP-0.7 NOT COMPLETED |
-| Date | 2026-11-25 |
+| Version | 0.4.1 |
+| Status | CONTROLLED WORKING AUDIT — WP-0.7 IN_PROGRESS; ACCEPTANCE OPEN |
+| Date | 2026-11-26 |
 | Work Package | WP-0.7 — Requirements Identification and Classification |
 | Branch | `wp-0.7-requirements-review` |
 | Authority | LAEV |
@@ -40,7 +40,7 @@
 ## 3. Current controlled supporting artifacts
 
 - Extraction completion record: v1.0.1.
-- Source coverage audit: v0.2.0.
+- Source coverage audit: v0.3.0 (corrected source distribution: 40 protocol / 4 Atlas / 5 UTXO-911 / 33 Roadmap; 82 total).
 - Review report: v0.2.0.
 - Classification record: v0.1.0.
 - Mandatory assessment: v0.2.0.
@@ -51,8 +51,8 @@
 - Verification criteria proposal: v0.3.1.
 - Traceability matrix: v0.4.2.
 - LAEV baseline decision pack: v0.2.0 — NOT APPROVED.
-- Document register: v1.3.1; 93 catalogue records.
-- Master Document Index: v1.5.9.
+- Document register: current branch file identifies 93 catalogue records; its row-level version metadata is under reconciliation and must not be treated as a clean approved version baseline.
+- Master Document Index: v1.6.0 (working reconciliation; not a new WP-0.6 acceptance).
 
 The verification proposal contains candidate-specific proposed criteria and methods for all 82 source candidates. These are proposals only: no tests are claimed executed or passed, no quantitative target is invented, and no acceptance oracle is approved.
 
@@ -67,13 +67,13 @@ The verification proposal contains candidate-specific proposed criteria and meth
 - 82/82 proposed verification criteria and methods populated.
 - 82/82 source-candidate IDs represented in the gap register as either an open gap or a documented no-gap disposition.
 - Matrix v0.4.2 contains 82 candidate rows and its recorded source CSV SHA matches the canonical CSV blob.
-- Workplan checklist displays only 0.7.1 as [x], in accordance with LAEV's tracking instruction. The independent accepted evidence for 0.7.3 remains preserved; the checklist convention does not revoke it.
+- Workplan v1.5.4 now checks 0.7.1–0.7.8, 0.7.10 and 0.7.11 where candidate-level execution evidence exists. Activity 0.7.9 remains unchecked because exact clause/diagram fidelity dispositions are not yet recorded. Checked activity execution does not waive the 107-child semantic review or baseline acceptance gates.
 
 These checks establish structural consistency, not source fidelity, semantic correctness, independent verification or approval.
 
 ## 5. Remaining acceptance gates
 
-1. Complete exact source-clause and Atlas-diagram fidelity review for all 82 source candidates. Record PASS / CORRECT / SPLIT / DERIVED / BLOCKED with exact evidence.
+1. Complete exact source-clause and Atlas-diagram fidelity review for all 82 source candidates. Record PASS / CORRECT / SPLIT / DERIVED / BLOCKED with exact evidence. This is the remaining open Workplan activity 0.7.9.
 2. Complete child-level semantic, normative-modality, design and phase review for all 107 individual records.
 3. Assign responsible owners and closure evidence to the 76 open specification gaps; assess parent/child applicability without duplicating parent gaps.
 4. Record owner, due point, alternatives and impact for the eight open decision candidates. Decisions remain open for formal treatment under WP-0.8; do not resolve them silently in WP-0.7.
@@ -84,7 +84,7 @@ These checks establish structural consistency, not source fidelity, semantic cor
 
 ## 6. Authorization boundary
 
-WP-0.7 remains **IN_PROGRESS — BASELINE NOT APPROVED**. WP-0.8 execution remains NOT_STARTED until WP-0.7 is formally completed and accepted. No Phase 1 execution, implementation, deployment or institutional operation is authorized by this reconciliation.
+WP-0.7 remains **IN_PROGRESS — EXACT SOURCE FIDELITY, CHILD-LEVEL REVIEW AND BASELINE ACCEPTANCE OPEN**. WP-0.8 execution remains NOT_STARTED until WP-0.7 is formally completed and accepted. No Phase 1 execution, implementation, deployment or institutional operation is authorized by this reconciliation.
 
 ---
 End of controlled WP-0.7 status reconciliation.

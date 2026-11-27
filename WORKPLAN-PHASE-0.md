@@ -242,20 +242,20 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Approval status:** APPROVED — LAEV, 2026-11-24
 **Execution status:** IN_PROGRESS — formally initiated 2026-11-25; dependency gate satisfied by WP-0.6 acceptance.
 
-**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The 65-row matrix v0.2.0 and 65-candidate supporting snapshots are superseded by the regenerated source-candidate matrix v0.4.2. All candidates remain NOT_APPROVED.
+**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The former 65-row matrix v0.2.0 and 65-candidate snapshots are superseded by source-candidate matrix v0.4.2. All candidates remain NOT_APPROVED.
 
 **Activities**
 - [x] 0.7.1 Identification methodology — controlled ERX-REQUIREMENTS-METHOD-001 v1.0.0.
-- [ ] 0.7.2 Extract existing requirements — bounded five-source extraction completed through batches 001–005; 82 unique candidates. Exact clause support remains a separate 0.7.9 acceptance gate.
-- [ ] 0.7.3 Individually identify requirements — COMPLETED / ACCEPTED by LAEV; 107 unique records reconcile to 82 parent candidates, with decomposition, atomicity and overlap dispositions recorded.
-- [ ] 0.7.4 Classify requirements — classification executed for 82 source candidates and 107 individuals; controlled taxonomy and rationale recorded. **Semantic review and LAEV acceptance remain pending.**
+- [x] 0.7.2 Extract existing requirements — bounded five-source extraction completed through batches 001–005; 82 unique candidates. Exact clause support remains a separate 0.7.9 acceptance gate.
+- [x] 0.7.3 Individually identify requirements — COMPLETED / ACCEPTED by LAEV; 107 unique records reconcile to 82 parent candidates, with decomposition, atomicity and overlap dispositions recorded.
+- [x] 0.7.4 Classify requirements — classification executed for 82 source candidates and 107 individuals; controlled taxonomy and rationale recorded. **Semantic review and LAEV acceptance remain pending as separate baseline-acceptance gates.**
 - [ ] 0.7.5 Identify mandatory requirements — source-modality review completed for 82 candidates (76 MANDATORY_CANDIDATE; 6 MODALITY_UNRESOLVED); all remain candidates, not approved obligations. Exact clause-level confirmation and review of all 107 individuals remain open.
-- [ ] 0.7.6 Identify design requirements — all 82 candidates now have a recorded design-assessment category; derived design proposals remain distinct, and semantic review/LAEV acceptance remain pending.
-- [ ] 0.7.7 Record requirements pending specification — 76 detailed specification gaps and six NO_GAP_WITH_EVIDENCE dispositions now cover all 82 source candidates; the 76 gaps remain open, and 107 child-level applicability plus owner assignment remain pending. 
-- [ ] 0.7.8 Record open decisions — eight candidates reviewed for completeness; decision acceptance, owners and deadlines remain pending. No decision resolved and no ADR approved.
+- [x] 0.7.6 Identify design requirements — design-assessment categories recorded for all 82 source candidates; derived design proposals remain distinct. Child-level semantic review and LAEV acceptance remain pending.
+- [x] 0.7.7 Record requirements pending specification — 76 detailed specification gaps and six NO_GAP_WITH_EVIDENCE dispositions cover all 82 source candidates. The activity's candidate-level register is recorded; 76 gap resolutions, 107 child-level applicability and owner assignment remain pending. 
+- [x] 0.7.8 Record open decisions — eight open-decision candidates recorded and reviewed for completeness; decision acceptance, owners and deadlines remain pending. No decision resolved and no ADR approved.
 - [ ] 0.7.9 Link requirements to sources — all 82 source candidates have locators within source page bounds; exact passage/diagram fidelity review remains incomplete.
 - [ ] 0.7.10 Assign requirements to phases — all 82 source candidates now have a preliminary primary phase and dependency rationale; allocations remain planning-only and 107 child-level mappings require review.
-- [ ] 0.7.11 Build traceability matrix — regenerated matrix v0.4.2 for 82 source candidates from CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761; semantic/referential and child-level acceptance audit remains pending.
+- [x] 0.7.11 Build traceability matrix — regenerated matrix v0.4.2 for 82 source candidates from CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761; semantic/referential and child-level acceptance audit remains pending.
 
 **Controlled evidence:** initiation and source-inspection records; extraction batches 001–005; extraction completion record; accepted 0.7.3 record and atomicity/overlap disposition; classification record; design-requirements assessment v0.1.1; mandatory assessment v0.2.0; source-coverage audit v0.2.0; pending-specification register v0.4.0; open-decision review; phase-allocation register v0.3.2; LAEV baseline decision pack; verification-criteria proposal v0.3.1; semantic review register; review report; canonical source and individual registers; regenerated matrix v0.4.2; WP-0.7 status reconciliation v0.4.0.
 

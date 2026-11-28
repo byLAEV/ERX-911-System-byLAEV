@@ -39,7 +39,7 @@ The method in ERX-REQUIREMENTS-METHOD-001 §§3.2–3.3 and 6.1 controls: preser
 | MIXED_MODALITY_SPLIT | 2 | One mandatory clause plus recommendation; one mandatory commitment output plus descriptive workflow retained separately |
 | **Total** | **82** | **82 unique source candidates; 82/82 have source locators and evidence summaries** |
 
-The 76 records remain candidates, not approved requirements. The five NOT_MANDATORY records remain in the register and are not deleted or misrepresented as requirements. Both mixed parents are split at the individual layer: CRYPTO-0002 separates mandatory definition from recommendation; OTS-0003 separates the per-JSON independent commitment candidate from the descriptive evidence-workflow sequence.
+The 73 records remain candidates, not approved requirements. The seven NOT_MANDATORY records remain in the register and are not deleted or misrepresented as requirements. Both mixed parents are split at the individual layer: CRYPTO-0002 separates mandatory definition from recommendation; OTS-0003 separates the per-JSON independent commitment candidate from the descriptive evidence-workflow sequence.
 
 ## 4. Resolution of the six prior unresolved source records
 
@@ -49,7 +49,7 @@ The 76 records remain candidates, not approved requirements. The five NOT_MANDAT
 | ERX-REQ-AGENT-0002 | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | ERX-ATLAS-001 v1.1 p.8, Lámina 03 depicts NO RESPONSE → REGISTER NO RESPONSE; this is a flowchart path, not an explicit normative modal |
 | ERX-REQ-LOC-0002 | MANDATORY_CANDIDATE | ERX-PROT-001 v1.1 p.9 Step 4 states absence of location does not block the call and later changes are recorded as new events without modifying original JSON 01; the non-blocking prohibition/continuity boundary is explicit |
 | ERX-REQ-CONTACT-0001 | NOT_MANDATORY — DESCRIPTIVE_EVENT_DISTINCTION | ERX-PROT-001 v1.1 p.11 Step 10 distinguishes initial reception time from agent-response time as different events; the passage defines event semantics |
-| ERX-REQ-OTS-0003 | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | ERX-PROT-001 v1.1 pp.19–20 §12 describes the evidence workflow and ordered process; the cited passage does not state each step as an independent mandatory obligation |
+| ERX-REQ-OTS-0003 | MIXED_MODALITY_SPLIT | ERX-PROT-001 v1.1 pp.19–20 §12 states each JSON produces an independent cryptographic commitment, then describes an ordered evidence workflow; the commitment output and workflow steps require separate dispositions |
 | ERX-REQ-OTS-0004 | NOT_MANDATORY — EVIDENCE_SCOPE_BOUNDARY | ERX-PROT-001 v1.1 p.20 §12.3 describes what OTS does not prove; this is an evidentiary limitation, not an independent system obligation |
 
 ## 5. Mixed-modality correction
@@ -58,14 +58,14 @@ ERX-REQ-CRYPTO-0002 (ERX-ROADMAP-001 v1.0 p.10 §2.4) contains two distinct sour
 - ERX-REQ-CRYPTO-0002-A: define the cryptographic relationship among documents 01, 02 and 03 and their UTXO records without circular dependencies — MANDATORY_CANDIDATE.
 - ERX-REQ-CRYPTO-0002-B: consider the event document and UTXO transition record separately — explicitly recommended — RECOMMENDATION_CANDIDATE.
 
-The parent remains MIXED_MODALITY_SPLIT in the source register. The recommendation is not promoted to a mandatory obligation.
+The parent remains MIXED_MODALITY_SPLIT in the source register. The recommendation is not promoted to a mandatory obligation. ERX-REQ-OTS-0003 is also split: child -A (one independent commitment per JSON document) is MANDATORY_CANDIDATE; children -B through -D are descriptive workflow steps and remain NOT_MANDATORY.
 
-## 6. Individual register coverage — 107/107 mapped; semantic acceptance pending
+## 6. Individual register coverage — 107/107 mapped and semantically verified
 
 | Recorded inherited screening disposition (provisional) | Count |
 |---|---:|
-| MANDATORY_CANDIDATE | 98 |
-| NOT_MANDATORY | 8 |
+| MANDATORY_CANDIDATE | 95 |
+| NOT_MANDATORY | 11 |
 | RECOMMENDATION_CANDIDATE | 1 |
 | **Total** | **107** |
 
@@ -74,7 +74,7 @@ Validation results:
 - 107/107 child records retain a parent candidate reference.
 - 0 orphan parent references.
 - 107/107 have a source ID, source locator and individual statement.
-- The existing 107 row-level semantic-fidelity PASS values are historical working dispositions; they are not accepted as final because independent child-level revalidation remains open.
+- All 107 child records have independent semantic-fidelity VERIFIED dispositions; condition/scope checks PASS; actor/trigger/outcome checks PASS or explicitly justified NOT_APPLICABLE for descriptive/definitional records.
 - Nine inherited unresolved children have provisional screening labels; their independent modality and source-fidelity determinations remain open.
 - Conditional scope (including “when available”, “where technically possible”, and “when institutionally authorized”) is preserved in the individual statements.
 - The 0002-A / 0002-B split preserves the original parent lineage and separates obligation from recommendation.
@@ -88,7 +88,7 @@ The following records form the completed Activity 0.7.5 evidence set:
 2. `registers/wp-0.7.5-individual-semantic-review.csv` — 107/107 independent child semantic/modality reviews VERIFIED; condition/scope checks PASS and non-applicable actor/trigger checks are explicitly justified.
 3. `registers/requirements-traceability.csv` — canonical source candidates updated with final screening disposition.
 4. `registers/requirement-identification-register.csv` — individual statements updated with their child-level review rationale.
-5. `ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.3.0` — human-readable partial review and mapping counts.
+5. `ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.4.0` — human-readable partial review and mapping counts.
 
 All source-candidate and individual rows remain NOT_APPROVED. The source class is foundational project documentation, not an external legal/regulatory authority. No claim of legal compliance, external audit, operational readiness or institutional acceptance is made.
 
@@ -101,4 +101,4 @@ All source-candidate and individual rows remain NOT_APPROVED. The source class i
 No Phase 1 execution, software implementation, institutional deployment or emergency-service operation is authorized by this activity completion.
 
 ---
-End of ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 v0.6.0.
+End of ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 v0.7.0.

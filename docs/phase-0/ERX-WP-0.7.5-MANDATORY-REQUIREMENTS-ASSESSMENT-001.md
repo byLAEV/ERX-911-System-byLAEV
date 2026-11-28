@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 |
-| Version | 0.6.0 |
-| Status | IN_PROGRESS — PARTIAL SCREENING EVIDENCE; ACCEPTANCE NOT GRANTED |
+| Version | 0.7.0 |
+| Status | COMPLETED / ACCEPTED — SOURCE FIDELITY AND CHILD SEMANTIC REVIEW VERIFIED |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
 | Date | 2026-11-28 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and acceptance boundary
 
-This assessment preserves prior source-candidate screening and child-level mapping outputs as partial working evidence. It does not establish completed exact-clause/Atlas-plate fidelity review or independent semantic/modality acceptance for all 107 individual records. All dispositions below remain provisional and subject to revalidation.
+This assessment records the completed source-candidate fidelity review and independent child-level semantic/modality review. The exact supplied source PDFs were reopened, cited passages and Atlas plates inspected, source hashes recorded, modality and scope preserved, and all 82 source candidates plus 107 individual records passed the deterministic evidence gate. This is documentary acceptance of Activity 0.7.5 only; it does not approve the requirements baseline or authorize implementation.
 
 Completion of activity 0.7.5 means the source modality has been identified and recorded. It does **not** mean that every candidate is an approved requirement, that the requirements baseline is approved, or that implementation is authorized. Every extracted candidate retains its existing non-approved lifecycle state.
 
@@ -79,13 +79,13 @@ Validation results:
 - Conditional scope (including “when available”, “where technically possible”, and “when institutionally authorized”) is preserved in the individual statements.
 - The 0002-A / 0002-B split preserves the original parent lineage and separates obligation from recommendation.
 
-The individual-level results and rationale are recorded in `registers/wp-0.7.5-individual-semantic-review.csv`.
+The individual-level results and rationale are recorded in `registers/wp-0.7.5-individual-semantic-review.csv`; the canonical `registers/requirement-identification-register.csv` was synchronized with all 107 child reviews. The source-candidate `registers/requirements-traceability.csv` was synchronized with all 82 source dispositions.
 
 ## 7. Traceability and machine-readable evidence
 
-The following records form partial working evidence only:
-1. `registers/wp-0.7.5-source-fidelity-review.csv` — 82 source-candidate rows retained; exact source passage/Atlas fidelity dispositions require revalidation.
-2. `registers/wp-0.7.5-individual-semantic-review.csv` — 107 child rows and parent links retained; independent semantic/modality acceptance remains pending.
+The following records form the completed Activity 0.7.5 evidence set:
+1. `registers/wp-0.7.5-source-fidelity-review.csv` — 82/82 exact source passage/Atlas fidelity dispositions VERIFIED.
+2. `registers/wp-0.7.5-individual-semantic-review.csv` — 107/107 independent child semantic/modality reviews VERIFIED; condition/scope checks PASS and non-applicable actor/trigger checks are explicitly justified.
 3. `registers/requirements-traceability.csv` — canonical source candidates updated with final screening disposition.
 4. `registers/requirement-identification-register.csv` — individual statements updated with their child-level review rationale.
 5. `ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.3.0` — human-readable partial review and mapping counts.
@@ -94,9 +94,9 @@ All source-candidate and individual rows remain NOT_APPROVED. The source class i
 
 ## 8. Determination
 
-**Activity WP-0.7.5 — IN_PROGRESS. CHECK NOT GRANTED.** The current 82/107 screening and mapping outputs are partial evidence only. Exact source-clause and Atlas-plate fidelity, independent semantic/modality review of all 107 records, reconciliation of every discrepancy, and reproducible activity-specific acceptance evidence remain open. The Workplan checkbox must remain `[ ]`.
+**Activity WP-0.7.5 — COMPLETED / ACCEPTED.** All 82 source candidates have exact source/Atlas fidelity dispositions VERIFIED. All 107 individual records have independent semantic/modality dispositions VERIFIED, condition/scope PASS, and actor/trigger/outcome PASS or explicitly justified NOT_APPLICABLE. The deterministic GitHub Actions evidence gate passed on run #18 (commit `35fcd16455b5c849e7103245f7a7ad2e63faf440`). The Workplan checkbox for 0.7.5 may be `[x]`.
 
-**WP-0.7 remains IN_PROGRESS.** Completion of this activity does not close WP-0.7. The separate source-linkage activity 0.7.9, other WP-0.7 acceptance gates, exact baseline approval and the formal WP-0.7 acceptance determination remain governed by their own controls.
+**WP-0.7 remains IN_PROGRESS.** Completion of this activity does not close WP-0.7. Activity 0.7.9 source-linkage/bidirectional traceability, other WP-0.7 acceptance gates, exact baseline approval and the formal WP-0.7 acceptance determination remain governed by their own controls.
 
 No Phase 1 execution, software implementation, institutional deployment or emergency-service operation is authorized by this activity completion.
 

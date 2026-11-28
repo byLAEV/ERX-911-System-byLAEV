@@ -1,71 +1,86 @@
 # ERX-WP-0.7-LAEV-BASELINE-DECISION-PACK-001
-## Decision and acceptance package — requirements baseline
+## Decision and acceptance package — reconciled requirements baseline
 
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-LAEV-BASELINE-DECISION-PACK-001 |
-| Version | 0.2.0 |
-| Status | SUBMISSION PACKAGE — NOT APPROVED |
-| Date | 2026-11-25 |
+| Version | 0.3.0 |
+| Status | RECONCILED SUBMISSION PACKAGE — NOT APPROVED |
+| Date | 2026-11-28 |
 | Decision authority | LAEV |
-| Scope | WP-0.7 requirements baseline only |
+| Work Package | WP-0.7 |
+| Canonical branch | `wp-0.7-requirements-review` |
+| Canonical source register | `registers/requirements-traceability.csv` |
+| Canonical CSV blob SHA | `1b1bd462b916ea1fbca9ba9449a8114e13011761` |
 
 ## 1. Decision requested
-LAEV is asked to review and decide whether the 82 source-candidate requirements, with their 107 individually identified records as a linked decomposition layer, may become the controlled ERX requirements baseline after closure of the review items below. This package does not request or imply approval of implementation, deployment, institutional operation, or Phase 1 execution.
 
-## 2. Current evidence snapshot
-- 82 source-candidate requirements; 26 canonical CSV columns; 82 unique IDs (canonical CSV blob SHA: 703567101acf1634e8791ab9a9ccb3aa82ef786f).
-- The five inspected foundational/source PDFs are the extraction boundary; candidate source locators must still pass exact clause/diagram review.
-- Classification has been reconciled to 82 candidate rows; provisional phase allocation now lists all 82, with 17 explicitly NOT_ALLOCATED pending 0.7.10.
-- 63 pending-specification candidates and eight open decision candidates remain recorded.
-- Verification criteria have a separate derived proposal; they are not yet approved as the acceptance oracle.
-- All 65 requirements remain EXTRACTED — REVIEW PENDING.
+LAEV is asked to review and decide whether the reconciled **82 source-candidate requirements**, with **107 individually identified records** as a linked decomposition/identification layer, may become the controlled ERX requirements baseline after all acceptance gates are closed.
 
-## 3. Required decisions and review gates
+This package does not request or imply approval of implementation, deployment, institutional operation or Phase 1 execution.
 
-| Gate | Decision/evidence needed | Current state |
+## 2. Reconciled baseline counts
+
+| Register layer | Controlled count | Meaning |
+|---|---:|---|
+| Historical snapshot | 65 | Earlier scope; retained as history, not current canonical scope |
+| Current source-candidate register | 82 | Canonical source-derived candidate rows |
+| Individual identification register | 107 | Individually identified/decomposed records linked to the 82 parents; not additive source requirements |
+| Specification gaps | 76 OPEN | Candidate-level unresolved specification work |
+| NO_GAP_WITH_EVIDENCE | 6 | Candidate-level dispositions; not blanket child/design acceptance |
+| Open decision candidates | 8 | Remain open for controlled decision handling |
+| Primary phase allocation | 82/82 | Preliminary planning allocation; no phase execution authorization |
+| Exact clause/diagram fidelity | 82 dispositions required | Still open; page-bound checks are not fidelity acceptance |
+
+The historical 65 count is not reinstated. A row-by-row 65-to-82 crosswalk must cite the historical commit/blob and preserve ID lineage; no 17-item delta is presumed to consist solely of newly created obligations.
+
+## 3. Reconciled source distribution
+
+| Source | Candidates |
+|---|---:|
+| ERX-PROT-001 v1.1 | 40 |
+| ERX-ATLAS-001 v1.1 | 4 |
+| UTXO-911-001 v1.0 | 5 |
+| ERX-ROADMAP-001 v1.0 | 33 |
+| Technical response to ERX-ROADMAP-001 | 0 |
+| **Total** | **82** |
+
+The technical response remains contextual; its recommendations are not silently converted into source-mandatory requirements.
+
+## 4. Acceptance gates
+
+| Gate | Required evidence | Current disposition |
 |---|---|---|
-| G1 — Source fidelity | Exact clause/page/plate comparison for all 82 statements | PARTIAL — all source PDFs reopened; exact row-by-row matching not completed |
-| G2 — Atomicity | Retain/split/parent-child/overlap disposition for all 82 candidates and relevant 107 individuals | PENDING — semantic register created |
-| G3 — Classification | Confirm one primary type and secondary tags for all 82 candidates and relevant individual children | PRELIMINARY |
-| G4 — Normative force | Explicit mandatory, prohibitory, descriptive, recommendation, derived or proposed classification | PENDING exact clause review |
-| G5 — Design constraints | Separate adopted source constraints from recommendations/options | PRELIMINARY |
-| G6 — Specification gaps | Review and disposition 63 gap candidates | OPEN |
-| G7 — Decisions | Review eight decision candidates and ownership/deadline/ADR link | OPEN |
-| G8 — Source traceability | Verify each source locator and every dependency/reference | STRUCTURAL CHECKS PASS; semantic audit pending |
-| G9 — Phase allocation | Confirm primary phase and cross-phase dependencies for 82 candidates; 17 currently unallocated | PRELIMINARY; planning only |
-| G10 — Verification | Approve objective criteria and any numeric targets | PROPOSED; not approved |
-| G11 — Baseline approval | LAEV's explicit approval of exact document/register versions and commit | NOT REQUESTED/NOT GRANTED |
+| G1 — Historical scope lineage | Exact 65-to-82 ID/statement crosswalk, including historical commit/blob | OPEN — scope/count correction recorded; row-level historical crosswalk not yet certified |
+| G2 — Exact source fidelity | Exact clause, paragraph or Atlas plate disposition for every 82 candidates | OPEN — page bounds checked, exact fidelity not complete |
+| G3 — Individual semantics | Review all 107 records for atomicity, source lineage, overlap and parent-child applicability | OPEN — identification artifact exists; semantic acceptance remains pending |
+| G4 — Classification and modality | Confirm primary type, tags, mandatory/descriptive/recommendation/derived status | OPEN — candidate assessments are not approved obligations |
+| G5 — Specification gaps | Assign owner, child applicability and closure evidence to all 76 open gaps; retain six evidence-backed no-gap dispositions | OPEN |
+| G6 — Decisions | Maintain eight decision candidates with owner, alternatives, impacts and due point; do not resolve silently in WP-0.7 | OPEN |
+| G7 — Phase and dependencies | Review 82 primary allocations and 107 child mappings; preserve cross-phase dependencies | PRELIMINARY / REVIEW OPEN |
+| G8 — Verification | Approve objective criteria and required numeric thresholds before testing | PROPOSED / NOT APPROVED |
+| G9 — Cross-register audit | Verify requirement/source/individual/gap/decision/phase/verification links and version consistency | OPEN |
+| G10 — Baseline approval | LAEV approval of exact register versions and commit SHA | NOT GRANTED |
 
-## 4. Explicit scope boundaries
-- Extracted, derived and proposed requirements remain distinct.
-- No HSM, cryptographic algorithm, database product, distributed consensus mechanism or other technology option is selected by this package.
-- OTS/Bitcoin proof availability must not become a precondition for emergency intake or attention.
-- A single-spend guarantee is scoped to an explicitly defined authoritative coordination domain; independent disconnected databases are not assumed to provide global uniqueness.
-- Phase allocations do not authorize work in those phases.
+## 5. Structural evidence and limits
 
-## 5. Proposed baseline acceptance checklist
-A requirement baseline may be submitted for approval only when every row has:
-- stable unique ID;
-- atomic, unambiguous and verifiable statement;
-- correct origin class (EXTRACTED / DERIVED / PROPOSED);
-- primary type and justified secondary tags;
-- exact source locator and faithful supporting evidence, or explicit decision link for DERIVED/PROPOSED;
-- justified normative status;
-- justified design assessment;
-- explicit specification-gap and decision links;
-- justified phase and dependencies;
-- objective verification criterion and method;
-- recorded review disposition and change history.
+The current canonical CSV was retrieved from the WP-0.7 review branch and has 82 data rows, 82 unique canonical requirement IDs, 26 columns and blob SHA `1b1bd462b916ea1fbca9ba9449a8114e13011761`. The linked individual register has 107 records and must be reviewed at child level.
 
-## 6. LAEV decision record
-**Decision:** PENDING  
-**Approved baseline version:** NOT ASSIGNED  
-**Approved commit SHA:** NOT ASSIGNED  
-**Conditions / exclusions:** PENDING  
-**Date/time and approval evidence:** PENDING
+Structural consistency does not prove source fidelity, semantic correctness, independent verification, normative approval or implementation readiness.
 
-A blank or pending decision field is not approval. Repository publication, PR reviewability or an automated structural pass cannot substitute for LAEV's explicit decision.
+## 6. Explicit authorization boundary
+
+WP-0.7 remains **IN_PROGRESS — ACCEPTANCE OPEN**. WP-0.8 must not begin execution until WP-0.7 is formally completed and accepted. No Phase 1 execution, implementation, deployment or institutional operation is authorized by this package.
+
+## 7. LAEV decision record
+
+- Decision: PENDING
+- Approved baseline version: NOT ASSIGNED
+- Approved commit SHA: NOT ASSIGNED
+- Conditions / exclusions: PENDING
+- Approval evidence and date/time: PENDING
+
+A commit, publication, PR state or automated structural check is not LAEV approval.
 
 ---
-End of ERX-WP-0.7-LAEV-BASELINE-DECISION-PACK-001
+End of reconciled baseline decision package.

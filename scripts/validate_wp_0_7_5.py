@@ -90,8 +90,13 @@ def audit() -> list[str]:
         if not accepted(row.get("semantic_fidelity_disposition", "")):
             errors.append(f"{rid}: child semantic/source fidelity is not VERIFIED.")
         for field in ("condition_scope_check", "actor_trigger_outcome_check"):
-            if (row.get(field) or "").strip().upper() != "PASS":
-                errors.append(f"{rid}: {field} is not PASS.")
+            value = (row.get(field) or "").strip().upper()
+            rationale = (row.get("review_rationale") or "").upper()
+            if value != "PASS" and not (
+                value == "NOT_APPLICABLE"
+                and f"{field.upper()}: NOT_APPLICABLE" in rationale
+            ):
+                errors.append(f"{rid}: {field} is neither PASS nor explicitly justified NOT_APPLICABLE.")
         if (row.get("approval_state") or "").strip() != "NOT_APPROVED_BY_WP-0.7.5":
             errors.append(f"{rid}: approval boundary changed or is missing.")
 

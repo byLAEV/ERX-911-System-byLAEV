@@ -4,13 +4,17 @@
 |---|---|
 | Document ID | ERX-WP-0.7-PHASE-ALLOCATION-REGISTER-002 |
 | Version | 1.0.0 |
-| Status | CORRECTED WORKING REGISTER — REVIEW PENDING |
+| Status | HISTORICAL — SUPERSEDED; NOT CURRENT AUTHORITY |
 | Date | 2026-11-26 |
 | Work Package | WP-0.7 / Activity 0.7.10 |
 | Canonical source | registers/requirements-traceability.csv |
 | Allocation method | One primary lifecycle phase per canonical requirement ID; no execution authorization |
 
-## 1. Reconciliation result
+## Historical-use notice
+
+This 45-row correction snapshot is retained solely as documentary history. Its 45/65-row figures describe an earlier incomplete inventory and are not the current requirements population. It is superseded by `ERX-WP-0.7-PHASE-ALLOCATION-REGISTER-001 v0.3.3`, which covers the current 82 source candidates. Do not use this file for current allocation, traceability or acceptance decisions.
+
+## 1. Historical reconciliation result
 
 The current canonical CSV contains 45 data rows, 45 unique requirement IDs and 19 columns. The earlier allocation register contains 65 allocation rows and 65 unique IDs. Of those, 45 IDs occur in the canonical CSV and 20 are orphan allocation references.
 

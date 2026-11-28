@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.6.0 |
+| Version | 1.6.1 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -176,3 +176,20 @@ Document register v1.2.8 now contains 93 catalogue records and reconciles the WP
 ## 16. WP-0.7 specification-gap coverage update — 2026-11-25
 
 Document register v1.3.0 tracks the updated pending-specification register v0.4.0. The 82 source-candidate coverage review produced 76 detailed open specification gaps and six NO_GAP_WITH_EVIDENCE dispositions. The gaps remain unresolved; child-level applicability across 107 individual records and owner assignment remain open. This is coverage reconciliation, not WP-0.7 closure.
+
+
+## 17. WP-0.7 current authority and branch reconciliation — 2026-11-28
+
+This section is the controlling current WP-0.7 snapshot and supersedes earlier dated inventory figures and interim CSV hashes recorded above. Historical 45-row and 65-row snapshots are retained only as extraction/allocation lineage; the current source-candidate population is 82, with 107 individually identified records linked to those candidates.
+
+- Canonical source register: `registers/requirements-traceability.csv` — 82 records, 26 columns; current Git blob SHA `5a428e40a29f31558330ffc8ab25dc1f8970285e`. The previous SHA `1b1bd462b916ea1fbca9ba9449a8114e13011761` identifies an earlier pre-mixed-modality version and is not the current blob.
+- Individual register: `registers/requirement-identification-register.csv` — 107 individually identified records; parent links retained.
+- Traceability matrix: `ERX-REQ-TRACEABILITY-MATRIX-001 v0.4.3`, synchronized to the current CSV SHA.
+- Current phase allocation: `ERX-WP-0.7-PHASE-ALLOCATION-REGISTER-001 v0.3.3`, planning-only; 107 child-level allocations remain open.
+- Historical allocation 002: retained as historical/superseded; its 45-row and 65-row counts are not current inventory authority.
+- Specification gaps: 76 OPEN + six NO_GAP_WITH_EVIDENCE dispositions, covering 82/82 source candidates. The 76 gaps are documented/routed, not technically closed.
+- Decisions: eight decision candidates remain OPEN; no ADR outcomes are approved.
+- WP-0.7.5: IN_PROGRESS; its checkbox remains `[ ]`. The source-fidelity and individual-semantic CSVs are marked pending revalidation; prior PASS labels are not accepted as final evidence.
+- Activity 0.7.9 remains unchecked. WP-0.7 remains IN_PROGRESS — ACCEPTANCE NOT GRANTED. No WP-0.8 execution, Phase 1, implementation, deployment or institutional operation is authorized.
+
+The current WP-0.7.4 classification authority is `ERX-WP-0.7.4-REQUIREMENT-CLASSIFICATION-RECORD-001 v1.0.0`. The earlier `ERX-WP-0.7.4-CLASSIFICATION-RECORD-001` is retained as historical supporting evidence.

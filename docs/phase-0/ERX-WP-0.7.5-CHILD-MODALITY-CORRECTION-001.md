@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Status | CORRECTIONS INCORPORATED — ACTIVITY 0.7.5 COMPLETED / ACCEPTED |
 | Date | 2026-11-28 |
 | Work package/activity | WP-0.7 / 0.7.5 Identify mandatory requirements |
@@ -36,31 +36,25 @@ The source-candidate CSV records MIXED_MODALITY_SPLIT for ERX-REQ-CRYPTO-0002 an
 ## 4. Reconciled counts
 
 Source-candidate layer:
-- 75 MANDATORY_CANDIDATE
-- 6 MODALITY_UNRESOLVED
-- 1 MIXED_MODALITY (ERX-REQ-CRYPTO-0002; split disposition recorded)
+- 73 MANDATORY_CANDIDATE
+- 7 NOT_MANDATORY
+- 2 MIXED_MODALITY_SPLIT (ERX-REQ-CRYPTO-0002 and ERX-REQ-OTS-0003)
 - Total: 82
 
 Individual layer:
-- 97 inherited MANDATORY_CANDIDATE
-- 9 MODALITY_UNRESOLVED
+- 95 MANDATORY_CANDIDATE
+- 11 NOT_MANDATORY
 - 1 RECOMMENDATION_CANDIDATE (ERX-REQ-CRYPTO-0002-B)
 - Total: 107
 
 These are screening dispositions, not approved obligations.
 
-## 5. Remaining acceptance blockers
+## 5. Completion evidence and boundary
 
-This correction does not close WP-0.7.5. The remaining work is:
-1. Complete exact clause/diagram fidelity dispositions for all 82 source candidates.
-2. Independently review all 107 individual statements for normative force, scope, actor, trigger, condition and source fidelity.
-3. Verify the four Atlas candidates against the actual graphical plates, not text extraction alone.
-4. Review the Roadmap's conditional, procedural and stage-gate language so that future-phase requirements are not misrepresented as current operational obligations.
-5. Confirm all six unresolved candidates retain justified and explicit dispositions.
-6. Re-run counts, parent-child mapping and bidirectional traceability after all corrections.
-7. Record LAEV's exact-baseline acceptance.
+The exact source PDFs and Atlas plates were inspected. All 82 source candidates have VERIFIED fidelity dispositions; all 107 individual records have VERIFIED semantic/modality dispositions, condition/scope PASS and actor/trigger/outcome PASS or justified NOT_APPLICABLE. The source and child canonical registers are synchronized.
 
-**Determination: WP-0.7.5 remains IN_PROGRESS — NOT ACCEPTED.** The mixed-modality defect is corrected; the complete 82/107 review is not yet evidenced.
+GitHub Actions evidence gate: PASS, run #18 — https://github.com/byLAEV/ERX-911-System-byLAEV/actions/runs/46153543878.
 
+**Determination: WP-0.7.5 COMPLETED / ACCEPTED.** This correction record documents the two mixed-modality parent splits and the final reconciled counts. Requirements remain NOT_APPROVED as a baseline. WP-0.7 remains IN_PROGRESS; activity 0.7.9 and other WP-0.7 gates remain open.
 ---
 End of ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 v1.1.0.

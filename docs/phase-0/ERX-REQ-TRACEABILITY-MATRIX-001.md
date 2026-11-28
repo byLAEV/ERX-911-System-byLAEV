@@ -4,15 +4,15 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-REQ-TRACEABILITY-MATRIX-001 |
-| Version | 0.4.2 |
+| Version | 0.4.3 |
 | Status | REGENERATED WORKING MATRIX — SOURCE / SEMANTIC ACCEPTANCE PENDING |
 | Date | 2026-11-25 |
 | Canonical source | registers/requirements-traceability.csv |
 | Snapshot | 82 source candidates; 26 canonical columns |
-| Source CSV blob SHA | 1b1bd462b916ea1fbca9ba9449a8114e13011761 |
+| Source CSV blob SHA | 5a428e40a29f31558330ffc8ab25dc1f8970285e |
 | Companion | registers/requirement-identification-register.csv — 107 individually identified records |
 
-This matrix is regenerated from the exact canonical CSV blob SHA above. It is a navigational/traceability view, not approval of statements, modality, classification, phase allocation or verification proposals. Source locator page-bound checks passed; exact source passage/diagram fidelity remains open. The 107 individual records remain linked through the companion register and are not additional source candidates.
+This matrix is synchronized to the current canonical CSV blob SHA above. The 82-candidate/26-column inventory and 107-record companion remain working registers; no requirements baseline acceptance is implied. It is a navigational/traceability view, not approval of statements, modality, classification, phase allocation or verification proposals. Source locator page-bound checks passed; exact source passage/diagram fidelity remains open. The 107 individual records remain linked through the companion register and are not additional source candidates.
 
 | Requirement ID | Candidate statement | Source locator | Primary type | Origin | Modality assessment | Design assessment | Verification criterion | Primary phase | Dependencies | Status | Source |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|

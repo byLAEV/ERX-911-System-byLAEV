@@ -14,29 +14,29 @@
 
 **Activity 0.7.5 is COMPLETED / ACCEPTED on the documentary evidence gate.** The earlier status correction is superseded by this record. Exact source fidelity for all 82 candidates and independent semantic/modality review for all 107 individual records have been completed and passed the deterministic GitHub Actions gate.
 
-The existing assessment, registers and review matrices are retained as partial work evidence. Their presence, counts, structural checks or prior PASS labels do not independently establish that LAEV's current activity-specific completion gate has been met. Continue the source-by-source and individual-record verification, correct any inconsistencies, and preserve exact evidence. This record must not be cited as proof of completion until formally revised after all criteria are verified.
+The source and child review matrices contain row-specific evidence, source locators and dispositions. The canonical source traceability and child identification registers are synchronized. The deterministic GitHub Actions gate validates the complete 82/107 population; this completion is limited to Activity 0.7.5 and does not approve the requirements baseline.
 
 ## 2. Controlled evidence
 
-- ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 v0.5.0.
-- ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.2.0.
+- ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 v0.7.0.
+- ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.4.0.
 - registers/wp-0.7.5-source-fidelity-review.csv — 82 rows.
 - registers/wp-0.7.5-individual-semantic-review.csv — 107 rows.
 - registers/requirements-traceability.csv — canonical source-candidate dispositions.
 - registers/requirement-identification-register.csv — child-level review rationale.
-- ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 v1.0.0 — mixed modality split evidence.
+- ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 v1.1.0 — mixed modality split evidence.
 
 ## 3. Final counts
 
 Source candidates:
-- 76 MANDATORY_CANDIDATE.
-- 5 NOT_MANDATORY (descriptive definition, diagram-derived process path, descriptive event distinction, descriptive workflow sequence, evidentiary boundary).
-- 1 MIXED_MODALITY_SPLIT.
+- 73 MANDATORY_CANDIDATE.
+- 7 NOT_MANDATORY.
+- 2 MIXED_MODALITY_SPLIT (CRYPTO-0002 and OTS-0003).
 - Total: 82.
 
 Individual records:
-- 98 MANDATORY_CANDIDATE.
-- 8 NOT_MANDATORY.
+- 95 MANDATORY_CANDIDATE.
+- 11 NOT_MANDATORY.
 - 1 RECOMMENDATION_CANDIDATE.
 - Total: 107.
 
@@ -47,7 +47,9 @@ Structural review:
 - 0 orphan child references.
 - 82/82 source candidates have source locators and evidence summaries.
 - 107/107 individual records have source ID, locator and statement.
-- 107/107 child semantic/source fidelity dispositions VERIFIED.\n- 107/107 condition/scope checks PASS.\n- Actor/trigger/outcome checks PASS where applicable; 11 descriptive/definitional items have justified NOT_APPLICABLE dispositions.
+- 107/107 child semantic/source fidelity dispositions VERIFIED.
+- 107/107 condition/scope checks PASS.
+- Actor/trigger/outcome checks PASS where applicable; 11 descriptive/definitional items have justified NOT_APPLICABLE dispositions.
 
 ## 4. Modality decisions
 
@@ -59,7 +61,7 @@ The six previously unresolved source records were dispositioned:
 - OTS-0003 — descriptive ordered evidence workflow.
 - OTS-0004 — evidentiary boundary on what OTS proves.
 
-The mixed CRYPTO-0002 parent was split: child -A remains mandatory candidate and child -B remains a recommendation. No recommendation, definition or evidentiary boundary was upgraded to mandatory.
+Both mixed parents were split: CRYPTO-0002-A is mandatory candidate and CRYPTO-0002-B remains a recommendation; OTS-0003-A (per-JSON independent commitment) is mandatory candidate and OTS-0003-B through -D remain descriptive workflow steps. No recommendation, definition or evidentiary boundary was upgraded to mandatory.
 
 ## 5. Authority and approval boundary
 
@@ -67,11 +69,11 @@ The review uses the five supplied foundational project sources as project-source
 
 ## 6. Current determination
 
-**WP-0.7.5 — IN_PROGRESS. CHECK NOT GRANTED.** The prior completion claim is withdrawn for work-tracking purposes under LAEV's explicit direction of 2026-11-28. The activity remains in development until its complete activity-specific acceptance criteria are objectively verified and its check is authorized.
+**WP-0.7.5 — COMPLETED / ACCEPTED.** Source fidelity: 82/82 VERIFIED. Individual semantic/modality review: 107/107 VERIFIED; condition/scope: 107/107 PASS; actor/trigger/outcome: PASS or explicitly justified NOT_APPLICABLE. The deterministic GitHub Actions gate passed (run #18): https://github.com/byLAEV/ERX-911-System-byLAEV/actions/runs/46153543878.
 
-The checkbox in `WORKPLAN-PHASE-0.md` must remain `[ ] 0.7.5`. Do not infer completion from the historical counts or the former conclusion in this record.
+The checkbox in `WORKPLAN-PHASE-0.md` is `[x] 0.7.5`.
 
-WP-0.7 remains IN_PROGRESS — ACCEPTANCE NOT GRANTED. No downstream work-package or phase authorization is created by this correction.
+WP-0.7 remains IN_PROGRESS — ACCEPTANCE NOT GRANTED. Activity 0.7.9, gap closure, open decisions, exact baseline approval and the formal WP-0.7 acceptance determination remain open. No downstream work-package or phase authorization is created.
 
 ---
 End of ERX-WP-0.7.5-COMPLETION-RECORD-001 v1.1.0.

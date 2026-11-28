@@ -94,7 +94,7 @@ def audit() -> list[str]:
             rationale = (row.get("review_rationale") or "").upper()
             if value != "PASS" and not (
                 value == "NOT_APPLICABLE"
-                and f"{field.upper().replace('_', '/')}: NOT_APPLICABLE" in rationale
+                and f"{field.removesuffix('_check').upper().replace('_', '/')}: NOT_APPLICABLE" in rationale
             ):
                 errors.append(f"{rid}: {field} is neither PASS nor explicitly justified NOT_APPLICABLE.")
         if (row.get("approval_state") or "").strip() != "NOT_APPROVED_BY_WP-0.7.5":

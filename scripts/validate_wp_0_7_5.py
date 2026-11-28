@@ -104,8 +104,16 @@ def main() -> int:
     args = parser.parse_args()
     errors = audit()
     if errors:
+        source_findings = sum("exact source/Atlas fidelity is not VERIFIED" in item for item in errors)
+        child_findings = sum("child semantic/source fidelity is not VERIFIED" in item for item in errors)
+        condition_findings = sum("condition_scope_check is not PASS" in item for item in errors)
+        actor_findings = sum("actor_trigger_outcome_check is not PASS" in item for item in errors)
         print("WP-0.7.5 ACCEPTANCE GATE: BLOCKED")
         print(f"Outstanding validation findings: {len(errors)}")
+        print(f"- Source fidelity: {source_findings}")
+        print(f"- Child semantic fidelity: {child_findings}")
+        print(f"- Child condition/scope: {condition_findings}")
+        print(f"- Child actor/trigger/outcome: {actor_findings}")
         if not args.summary:
             for item in errors:
                 print(f"- {item}")

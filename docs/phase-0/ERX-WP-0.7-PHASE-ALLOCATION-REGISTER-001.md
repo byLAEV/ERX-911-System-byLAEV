@@ -4,11 +4,11 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-PHASE-ALLOCATION-REGISTER-001 |
-| Version | 0.3.2 |
+| Version | 0.3.3 |
 | Status | PRELIMINARY ALLOCATION — REVIEW PENDING |
 | Date | 2026-11-25 |
 | Canonical source | registers/requirements-traceability.csv |
-| Snapshot | 82 candidates; 26 columns; CSV blob SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761 |
+| Snapshot | 82 candidates; 26 columns; CSV blob SHA 5a428e40a29f31558330ffc8ab25dc1f8970285e |
 
 ## Allocation rule
 Assignments are preliminary planning classifications derived from the subject of each candidate and the approved Roadmap lifecycle. They are not design decisions, phase authorization or approval. Cross-phase dependencies are retained separately. No source candidate remains unallocated in this snapshot; this does not complete child-level allocation or LAEV acceptance.

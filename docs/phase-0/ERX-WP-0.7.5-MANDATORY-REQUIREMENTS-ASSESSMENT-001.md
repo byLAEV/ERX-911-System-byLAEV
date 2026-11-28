@@ -75,7 +75,7 @@ Validation results:
 - 0 orphan parent references.
 - 107/107 have a source ID, source locator and individual statement.
 - All 107 child records have independent semantic-fidelity VERIFIED dispositions; condition/scope checks PASS; actor/trigger/outcome checks PASS or explicitly justified NOT_APPLICABLE for descriptive/definitional records.
-- Nine inherited unresolved children have provisional screening labels; their independent modality and source-fidelity determinations remain open.
+- All 107 child records have final independent modality and source-fidelity dispositions; no child remains in a pending-revalidation state.
 - Conditional scope (including “when available”, “where technically possible”, and “when institutionally authorized”) is preserved in the individual statements.
 - The 0002-A / 0002-B split preserves the original parent lineage and separates obligation from recommendation.
 
@@ -88,7 +88,7 @@ The following records form the completed Activity 0.7.5 evidence set:
 2. `registers/wp-0.7.5-individual-semantic-review.csv` — 107/107 independent child semantic/modality reviews VERIFIED; condition/scope checks PASS and non-applicable actor/trigger checks are explicitly justified.
 3. `registers/requirements-traceability.csv` — canonical source candidates updated with final screening disposition.
 4. `registers/requirement-identification-register.csv` — individual statements updated with their child-level review rationale.
-5. `ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.4.0` — human-readable partial review and mapping counts.
+5. `ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.4.0` — completed human-readable review with final modality counts.
 
 All source-candidate and individual rows remain NOT_APPROVED. The source class is foundational project documentation, not an external legal/regulatory authority. No claim of legal compliance, external audit, operational readiness or institutional acceptance is made.
 

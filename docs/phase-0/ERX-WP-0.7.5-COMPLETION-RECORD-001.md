@@ -1,20 +1,20 @@
-# ERX-WP-0.7.5-COMPLETION-RECORD-001
+# ERX-WP-0.7.5-COMPLETION-RECORD-001 — STATUS CORRECTION
 
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-COMPLETION-RECORD-001 |
 | Version | 1.0.0 |
-| Status | COMPLETED — ACTIVITY CHECK AUTHORIZED |
+| Status | IN_PROGRESS — COMPLETION NOT AUTHORIZED; CHECK NOT GRANTED |
 | Date | 2026-11-28 |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
 | Branch | wp-0.7-requirements-review |
 
-## 1. Completion statement
+## 1. Status correction and controlling direction
 
-Activity 0.7.5 is completed. All 82 source candidates and all 107 individual records have a source-linked modality/semantic disposition recorded in the canonical registers and dedicated review matrices. The activity checkbox in WORKPLAN-PHASE-0.md is authorized to be marked complete.
+**Activity 0.7.5 remains IN_PROGRESS. Completion is NOT established and the Workplan checkbox must remain `[ ]`.** This revision supersedes the prior completion assertion and withdraws the prior authorization to mark the activity complete.
 
-This is activity completion only. It does not approve the requirements baseline or complete WP-0.7 as a whole.
+The existing assessment, registers and review matrices are retained as partial work evidence. Their presence, counts, structural checks or prior PASS labels do not independently establish that LAEV's current activity-specific completion gate has been met. Continue the source-by-source and individual-record verification, correct any inconsistencies, and preserve exact evidence. This record must not be cited as proof of completion until formally revised after all criteria are verified.
 
 ## 2. Controlled evidence
 
@@ -65,13 +65,13 @@ The mixed CRYPTO-0002 parent was split: child -A remains mandatory candidate and
 
 The review uses the five supplied foundational project sources as project-source authority. It does not claim that these sources establish external legal or regulatory compliance. Every source-derived candidate and child remains NOT_APPROVED pending the separate WP-0.7 baseline approval process. No implementation or operational authorization is created by this activity.
 
-## 6. Determination
+## 6. Current determination
 
-**WP-0.7.5 — COMPLETED.** Its activity-level acceptance criterion is satisfied: the mandatory-requirement identification has been completed for the entire source and individual populations, modality distinctions and source lineage are recorded, and the results are reproducible in the two review matrices.
+**WP-0.7.5 — IN_PROGRESS. CHECK NOT GRANTED.** The prior completion claim is withdrawn for work-tracking purposes under LAEV's explicit direction of 2026-11-28. The activity remains in development until its complete activity-specific acceptance criteria are objectively verified and its check is authorized.
 
-The checkbox `[x] 0.7.5` in WORKPLAN-PHASE-0.md is authorized.
+The checkbox in `WORKPLAN-PHASE-0.md` must remain `[ ] 0.7.5`. Do not infer completion from the historical counts or the former conclusion in this record.
 
-WP-0.7 remains IN_PROGRESS. The source-linkage and other acceptance gates, including activity 0.7.9 and the overall exact-baseline acceptance determination, remain separate and open.
+WP-0.7 remains IN_PROGRESS — ACCEPTANCE NOT GRANTED. No downstream work-package or phase authorization is created by this correction.
 
 ---
 End of completion record.

@@ -4,7 +4,7 @@
 |---|---|
 | Document ID | ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 |
 | Version | 1.1.0 |
-| Status | CORRECTIONS INCORPORATED — ACTIVITY 0.7.5 COMPLETED / ACCEPTED |
+| Status | CORRECTIONS INCORPORATED — ACTIVITY 0.7.5 TECHNICAL REVIEW COMPLETED |
 | Date | 2026-11-28 |
 | Work package/activity | WP-0.7 / 0.7.5 Identify mandatory requirements |
 | Branch | wp-0.7-requirements-review |
@@ -55,6 +55,6 @@ The exact source PDFs and Atlas plates were inspected. All 82 source candidates 
 
 GitHub Actions evidence gate: PASS, run #18 — https://github.com/byLAEV/ERX-911-System-byLAEV/actions/runs/46153543878.
 
-**Determination: WP-0.7.5 COMPLETED / ACCEPTED.** This correction record documents the two mixed-modality parent splits and the final reconciled counts. Requirements remain NOT_APPROVED as a baseline. WP-0.7 remains IN_PROGRESS; activity 0.7.9 and other WP-0.7 gates remain open.
+**Determination: WP-0.7.5 TECHNICAL REVIEW COMPLETED; EVIDENCE GATE PASSED.** This correction record documents the two mixed-modality parent splits and the final reconciled counts. Requirements remain NOT_APPROVED as a baseline. WP-0.7 remains IN_PROGRESS; activity 0.7.9 and other WP-0.7 gates remain open.
 ---
 End of ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 v1.1.0.

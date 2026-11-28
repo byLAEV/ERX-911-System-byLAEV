@@ -1,8 +1,8 @@
 # ERX-WP-0.7.4-CLASSIFICATION-RECORD-001
 
-Version: 0.1.0  
+Version: 0.2.0  
 Date: 2026-11-25  
-Status: CLASSIFICATION EXECUTED — SEMANTIC REVIEW / LAEV ACCEPTANCE PENDING  
+Status: CLASSIFICATION REVIEWED — SOURCE FIDELITY PENDING; NO REQUIREMENTS BASELINE APPROVAL  
 Work Package: WP-0.7 / Activity 0.7.4  
 Method: ERX-REQUIREMENTS-METHOD-001 v1.0.0, §5  
 Branch: `wp-0.7-requirements-review`
@@ -26,34 +26,34 @@ Legacy/preliminary tokens were normalized only where they mapped to a defined ta
 
 | Primary type | Records |
 |---|---:|
-| FUNCTIONAL | 18 |
-| SECURITY | 16 |
+| FUNCTIONAL | 17 |
+| SECURITY | 14 |
 | PRIVACY | 3 |
 | DATA_AND_RECORDS | 14 |
 | INTEROPERABILITY | 2 |
 | PERFORMANCE_AND_CAPACITY | 1 |
 | OPERATIONAL | 4 |
-| GOVERNANCE | 11 |
+| GOVERNANCE | 10 |
 | ARCHITECTURAL | 9 |
 | INTERFACE | 1 |
-| VERIFICATION | 3 |
+| VERIFICATION | 7 |
 | **Total** | **82** |
 
 ## 4. Individual requirement classification counts
 
 | Primary type | Records |
 |---|---:|
-| FUNCTIONAL | 19 |
-| SECURITY | 19 |
+| FUNCTIONAL | 18 |
+| SECURITY | 17 |
 | PRIVACY | 7 |
 | DATA_AND_RECORDS | 21 |
 | INTEROPERABILITY | 2 |
 | PERFORMANCE_AND_CAPACITY | 1 |
 | OPERATIONAL | 7 |
-| GOVERNANCE | 14 |
+| GOVERNANCE | 13 |
 | ARCHITECTURAL | 11 |
 | INTERFACE | 1 |
-| VERIFICATION | 5 |
+| VERIFICATION | 9 |
 | **Total** | **107** |
 
 The 39 decomposed child records received child-level primary/secondary labels according to their individual obligation. Other individual records inherit the parent candidate's provisional taxonomy and explicitly say so in their rationale; that inheritance remains subject to semantic review.
@@ -65,6 +65,7 @@ The 39 decomposed child records received child-level primary/secondary labels ac
 - Secondary tags use only controlled taxonomy values.
 - The 17 records previously marked NOT_CLASSIFIED were individually classified.
 - Primary/secondary values and rationale were written to both machine-readable registers.
+- Reconciled four primary/secondary taxonomy assignments against the later WP-0.7.4 review record on `main`: `ERX-REQ-CORE-0001`, `ERX-REQ-TEST-0002`, `ERX-REQ-TEST-0003`, and `ERX-REQ-TEST-0004` are `VERIFICATION` primary; secondary tags are respectively `ARCHITECTURAL`, none, `OPERATIONAL`, and none. The same assignments are synchronized in the 107-record individual register where those IDs occur.
 - Both registers preserve source origin, source references, lifecycle review status and NOT_APPROVED state.
 - No priority, mandatory status, legal compliance status, design approval, phase assignment or implementation authorization was inferred from classification.
 - No candidate was deleted or merged.
@@ -80,11 +81,11 @@ This is a controlled working classification, not an approved requirements baseli
 - System boundary/separation constraints are ARCHITECTURAL.
 - No COMPLIANCE classification is asserted because the inspected source candidate set does not by itself establish a jurisdiction-specific legal/regulatory obligation. This does not mean legal review is unnecessary.
 
-Exact source clause verification remains WP-0.7.9. Normative modality and mandatory/prohibitory/recommendatory assessment remain WP-0.7.5. Design constraints versus recommendations/options remain WP-0.7.6.
+Exact source clause verification remains WP-0.7.9. Normative modality and mandatory/prohibitory/recommendatory assessment remain WP-0.7.5; WP-0.7.5 is independently IN_PROGRESS and its check is not granted. Design constraints versus recommendations/options remain WP-0.7.6.
 
 ## 7. Acceptance recommendation
 
-Activity 0.7.4 classification execution is complete for the 82 source candidates and 107 individual records. The deliverables are submitted for semantic review and LAEV acceptance. Status must remain **CLASSIFICATION EXECUTED — REVIEW PENDING** until the taxonomy, primary assignments, secondary tags and inheritance treatment have been reviewed. This record does not approve requirements or authorize implementation.
+Activity 0.7.4 classification review is recorded for the 82 source candidates and 107 individual records. The four disputed assignments have been reconciled and the machine-readable registers synchronized. Exact source fidelity remains pending under WP-0.7.9; normative modality remains pending under WP-0.7.5. This record does not grant WP-0.7.5 completion or approve the requirements baseline. This record does not approve requirements or authorize implementation.
 
 ---
 End of record.

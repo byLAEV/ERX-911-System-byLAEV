@@ -4,8 +4,8 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-STATUS-RECONCILIATION-001 |
-| Version | 0.4.1 |
-| Status | CONTROLLED WORKING AUDIT — WP-0.7 IN_PROGRESS; ACCEPTANCE OPEN |
+| Version | 0.5.0 |
+| Status | FINAL GATE AUDIT — WP-0.7 IN_PROGRESS; ACCEPTANCE NOT GRANTED |
 | Date | 2026-11-26 |
 | Work Package | WP-0.7 — Requirements Identification and Classification |
 | Branch | `wp-0.7-requirements-review` |
@@ -31,7 +31,7 @@
 | 0.7.4 Classify requirements | Classification v0.2.0 covers 82 source candidates and 107 individual records | EXECUTED; semantic review and LAEV acceptance pending |
 | 0.7.5 Identify mandatory requirements | 76 MANDATORY_CANDIDATE; 6 MODALITY_UNRESOLVED after direct review of cited pages | SCREENING EXECUTED; exact authority and 107-child review pending; candidates are not approved obligations |
 | 0.7.6 Identify design requirements | Design assessment v0.1.1 categorizes all 82 source candidates | SOURCE-CANDIDATE ASSESSMENT EXECUTED; child-level semantic review and LAEV acceptance pending |
-| 0.7.7 Record requirements pending specification | Gap register v0.4.0: 76 detailed open specification gaps + 6 NO_GAP_WITH_EVIDENCE decisions; all 82 source candidates dispositioned at candidate level | SOURCE-CANDIDATE COVERAGE RECORDED; 76 gaps remain open; owner assignment and 107-child applicability pending |
+| 0.7.7 Record requirements pending specification | Gap register v0.5.0: 76 OPEN detailed gaps (63 historical + 13 supplemental) + 6 NO_GAP_WITH_EVIDENCE dispositions; all 82 source candidates dispositioned at candidate level | SOURCE-CANDIDATE COVERAGE RECORDED; 76 gaps remain open; owner assignment and 107-child applicability pending |
 | 0.7.8 Record open decisions | Eight decision candidates reviewed for completeness | REVIEW EXECUTED; all decisions remain open; LAEV acceptance/ownership/deadlines pending; no ADR approved |
 | 0.7.9 Link requirements to sources | 82 source IDs/locators; page-bound checks passed | IN_PROGRESS; exact passage/diagram support and source-native modality review not complete |
 | 0.7.10 Assign requirements to phases | Allocation v0.3.2 assigns all 82 source candidates to preliminary Roadmap phases | PRELIMINARY ALLOCATION EXECUTED; planning-only; 107 child-level mappings/dependencies pending |
@@ -67,7 +67,7 @@ The verification proposal contains candidate-specific proposed criteria and meth
 - 82/82 proposed verification criteria and methods populated.
 - 82/82 source-candidate IDs represented in the gap register as either an open gap or a documented no-gap disposition.
 - Matrix v0.4.2 contains 82 candidate rows and its recorded source CSV SHA matches the canonical CSV blob.
-- Workplan v1.5.4 now checks 0.7.1–0.7.8, 0.7.10 and 0.7.11 where candidate-level execution evidence exists. Activity 0.7.9 remains unchecked because exact clause/diagram fidelity dispositions are not yet recorded. Checked activity execution does not waive the 107-child semantic review or baseline acceptance gates.
+- Workplan v1.5.4 records activities 0.7.1–0.7.8, 0.7.10 and 0.7.11 as executed at source-candidate level; 0.7.9 remains unchecked. Activity 0.7.9 remains unchecked because exact clause/diagram fidelity dispositions are not yet recorded. Checked activity execution does not waive the 107-child semantic review or baseline acceptance gates.
 
 These checks establish structural consistency, not source fidelity, semantic correctness, independent verification or approval.
 
@@ -84,7 +84,22 @@ These checks establish structural consistency, not source fidelity, semantic cor
 
 ## 6. Authorization boundary
 
-WP-0.7 remains **IN_PROGRESS — EXACT SOURCE FIDELITY, CHILD-LEVEL REVIEW AND BASELINE ACCEPTANCE OPEN**. WP-0.8 execution remains NOT_STARTED until WP-0.7 is formally completed and accepted. No Phase 1 execution, implementation, deployment or institutional operation is authorized by this reconciliation.
+Bidirectional audit v1.0.0 structurally passes: 82 candidate IDs, 107 child IDs, no orphan parent/dependency/matrix/phase/gap references; 82 criteria and phase rows; 76 open gap IDs plus six no-gap dispositions; eight decision candidates. Classification taxonomy coverage passes structurally, while all 82 candidate classification statuses and all 107 child semantic statuses remain pending.
+
+Formal acceptance determination v1.0.0 records **ACCEPTANCE NOT GRANTED**. Reasons: Activity 0.7.9 exact clause/diagram fidelity remains open; 107 child-level semantic/classification/modality/phase review remains open; 76 gaps are documented and routed but not technically closed or assigned named phase owners; eight decisions are unresolved and lack approved deadlines; verification criteria are proposals; exact baseline approval is not recorded.
+
+WP-0.7 remains **IN_PROGRESS — ACCEPTANCE NOT GRANTED**. WP-0.8 execution remains NOT_STARTED until WP-0.7 is formally completed and accepted. No Phase 1 execution, implementation, deployment or institutional operation is authorized by this reconciliation.
 
 ---
 End of controlled WP-0.7 status reconciliation.
+
+
+## 6. Latest audit and formal determination — 2026-11-28
+
+- `ERX-WP-0.7-BIDIRECTIONAL-TRACEABILITY-AUDIT-001 v1.0.0`: structural bidirectional traceability PASS at source-candidate layer; semantic/source-fidelity gates OPEN.
+- `ERX-WP-0.7-ACCEPTANCE-DETERMINATION-001 v1.0.0`: formal acceptance reviewed and NOT GRANTED.
+- `ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001 v0.5.0`: restored historical 63-gap baseline, documented 13 supplemental gaps, routed all 76 open gaps to primary phases, and preserved six no-gap dispositions. Technical closure remains OPEN.
+- Exact source-candidate CSV blob SHA: `1b1bd462b916ea1fbca9ba9449a8114e13011761`.
+
+---
+End of status reconciliation v0.5.0.

@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 |
-| Version | 1.3.0 |
-| Status | IN_PROGRESS — 107/107 RECORDS MAPPED; SEMANTIC ACCEPTANCE PENDING |
+| Version | 1.4.0 |
+| Status | COMPLETED / ACCEPTED — 107/107 INDIVIDUAL REVIEWS VERIFIED |
 | Date | 2026-11-28 |
 | Activity | WP-0.7.5 — Identify mandatory requirements |
 | Source review matrix | registers/wp-0.7.5-source-fidelity-review.csv |
@@ -12,16 +12,16 @@
 
 ## 1. Scope
 
-This working record preserves the 107 individual records and their parent-source mapping. The inherited modality labels and prior review notes are provisional only. Independent child-level verification against exact source passages/Atlas plates, scope, actor, trigger, outcome and normative force remains in progress.
+This record documents independent child-level verification of all 107 individual records against their exact source passages or Atlas plates, parent lineage, scope, actor, trigger, outcome and normative force. Each record has a row-specific evidence summary and rationale. The five previously verified records were rechecked; the 102 pending records were resolved.
 
 ## 2. Population and structural checks
 
-- 107 individual records mapped; independent semantic review remains pending.
+- 107/107 individual records independently reviewed and VERIFIED.
 - 107 unique individual IDs.
 - All 82 parent candidates represented.
 - 0 orphan parent references.
 - All 107 records contain a source ID, locator and statement.
-- 107/107 prior semantic-fidelity PASS entries are not accepted as final; revalidation is required.
+- 107/107 semantic-fidelity dispositions VERIFIED; condition/scope checks PASS; actor/trigger/outcome checks PASS or explicitly justified NOT_APPLICABLE.
 
 ## 3. Provisional inherited modality snapshot
 

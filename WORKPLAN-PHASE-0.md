@@ -245,7 +245,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Activities**
 - [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
 - [x] 0.7.2 Extract existing requirements — bounded five-source extraction completed through batches 001–005; 82 unique source-derived candidates recorded in the canonical register. Exact clause/diagram fidelity review remains a separate 0.7.9 acceptance gate.
-- [ ] 0.7.3 Individually identify each requirement.
+- [x] 0.7.3 Individually identify requirements — 107 unique individual records reconciled to 82 source candidates; 14 compound candidates decomposed into 39 child records; 18 structured-list atomicity dispositions and eight overlap-group dispositions recorded; zero duplicate IDs, missing parents or orphan references. Accepted by LAEV under ERX-WP-0.7.3-ACCEPTANCE-RECORD-001 v1.0.0 (2026-11-25).
 - [ ] 0.7.4 Classify requirements.
 - [ ] 0.7.5 Identify mandatory requirements.
 - [ ] 0.7.6 Identify design requirements.
@@ -255,7 +255,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases.
 - [ ] 0.7.11 Build the traceability matrix.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; controlled method v1.0.0; bounded five-source extraction batches 001–005; extraction completion record; canonical machine-readable traceability register containing 82 unique source candidates (EXTRACTED — REVIEW PENDING); individual identification register containing 107 records; requirements-linked open-decision candidate register; source-coverage and structural review records; and reconciliation records. Extraction activity 0.7.2 is complete at the defined candidate-extraction boundary. Exact source-clause/diagram fidelity and semantic acceptance remain separate review gates under 0.7.9 and the WP-0.7 acceptance criteria. No requirement is approved by extraction alone.
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; controlled method v1.0.0; bounded five-source extraction batches 001–005; extraction completion record; canonical machine-readable traceability register containing 82 unique source candidates (EXTRACTED — REVIEW PENDING); individual identification register containing 107 records; ERX-WP-0.7.3-INDIVIDUAL-REQUIREMENT-IDENTIFICATION-RECORD-001 v1.0.1; ERX-WP-0.7.3-ATOMICITY-AND-OVERLAP-DISPOSITION-001 v1.0.0; ERX-WP-0.7.3-ACCEPTANCE-RECORD-001 v1.0.0; requirements-linked open-decision candidate register; source-coverage and structural review records; and reconciliation records. Activities 0.7.1, 0.7.2 and 0.7.3 have completed execution deliverables. Activity 0.7.3 is COMPLETED / ACCEPTED by LAEV for individual identification only. Exact source-clause/diagram fidelity and semantic acceptance remain separate WP-0.7 gates. No requirement is approved as a normative baseline by individual identification alone.
 **Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP.
 **Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; requirements approval and implementation remain separate gates.
 

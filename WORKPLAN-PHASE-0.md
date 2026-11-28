@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.5.3
+- **Version:** 1.5.4
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -240,24 +240,28 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 ### WP-0.7 — Requirements Identification and Classification
 **Approval status:** APPROVED — LAEV, 2026-11-24
-**Execution status:** IN_PROGRESS — formally initiated 2026-11-25 following WP-0.3 and WP-0.6 acceptance.
+**Execution status:** IN_PROGRESS — formally initiated 2026-11-25; dependency gate satisfied by WP-0.6 acceptance.
+
+**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The former 65-row matrix v0.2.0 and 65-candidate snapshots are superseded by source-candidate matrix v0.4.2. All candidates remain NOT_APPROVED.
 
 **Activities**
-- [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
-- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 45 source-derived candidate records across batches 001, 002 and 003; extraction continues.
-- [ ] 0.7.3 Individually identify each requirement.
-- [ ] 0.7.4 Classify requirements.
-- [ ] 0.7.5 Identify mandatory requirements.
-- [ ] 0.7.6 Identify design requirements.
-- [ ] 0.7.7 Record requirements pending specification.
-- [ ] 0.7.8 Record open decisions.
-- [ ] 0.7.9 Link requirements to sources.
-- [ ] 0.7.10 Assign requirements to phases.
-- [ ] 0.7.11 Build the traceability matrix.
+- [x] 0.7.1 Identification methodology — controlled ERX-REQUIREMENTS-METHOD-001 v1.0.0.
+- [x] 0.7.2 Extract existing requirements — bounded five-source extraction completed through batches 001–005; 82 unique candidates. Exact clause support remains a separate 0.7.9 acceptance gate.
+- [x] 0.7.3 Individually identify requirements — COMPLETED / ACCEPTED by LAEV; 107 unique records reconcile to 82 parent candidates, with decomposition, atomicity and overlap dispositions recorded.
+- [x] 0.7.4 Classify requirements — classification executed for 82 source candidates and 107 individuals; controlled taxonomy and rationale recorded. **Semantic review and LAEV acceptance remain pending as separate baseline-acceptance gates.**
+- [x] 0.7.5 Identify mandatory requirements — source-modality screening completed for all 82 source candidates (76 MANDATORY_CANDIDATE; 6 MODALITY_UNRESOLVED). These are screening dispositions, not approved obligations. Exact clause-level confirmation and child-level review of all 107 individuals remain acceptance gates.
+- [x] 0.7.6 Identify design requirements — design-assessment categories recorded for all 82 source candidates; derived design proposals remain distinct. Child-level semantic review and LAEV acceptance remain pending.
+- [x] 0.7.7 Record requirements pending specification — 76 detailed specification gaps and six NO_GAP_WITH_EVIDENCE dispositions cover all 82 source candidates. The activity's candidate-level register is recorded; 76 gap resolutions, 107 child-level applicability and owner assignment remain pending. 
+- [x] 0.7.8 Record open decisions — eight open-decision candidates recorded and reviewed for completeness; decision acceptance, owners and deadlines remain pending. No decision resolved and no ADR approved.
+- [ ] 0.7.9 Link requirements to sources — all 82 source candidates have locators within source page bounds; exact passage/diagram fidelity review remains incomplete.
+- [x] 0.7.10 Assign requirements to phases — all 82 source candidates have a preliminary primary phase and dependency rationale recorded in allocation v0.3.2. Allocations are planning-only; child-level mappings remain an acceptance gate.
+- [x] 0.7.11 Build traceability matrix — regenerated matrix v0.4.2 for 82 source candidates from CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761; semantic/referential and child-level acceptance audit remains pending.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; controlled method v1.0.0; machine-readable traceability register currently 45 candidate records (EXTRACTED — REVIEW PENDING); extraction batches 001–003, requirements-linked open-decision candidate register, preliminary structural review, register reconciliation and execution gap review recorded. The preliminary 65-row phase-allocation register contains 20 IDs absent from the canonical CSV; corrected working allocation v1.0.0 maps only the 45 canonical IDs and retains the 20 orphan references for investigation. No requirement is approved by extraction or allocation.
-**Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP.
-**Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; requirements approval and implementation remain separate gates.
+**Controlled evidence:** initiation and source-inspection records; extraction batches 001–005; extraction completion record; accepted 0.7.3 record and atomicity/overlap disposition; classification record; design-requirements assessment v0.1.1; mandatory assessment v0.2.0; source-coverage audit v0.2.0; pending-specification register v0.4.0; open-decision review; phase-allocation register v0.3.2; LAEV baseline decision pack; verification-criteria proposal v0.3.1; semantic review register; review report; canonical source and individual registers; regenerated matrix v0.4.2; WP-0.7 status reconciliation v0.4.0.
+
+**Acceptance gate:** each candidate/individual must have stable ID and lineage, atomic/unambiguous statement, source fidelity disposition, origin class, justified type and normative/design status, specification and decision links, justified phase/dependencies, objective criterion/method, and recorded review disposition. Derived/proposed content must remain distinguishable from source requirements. Explicit LAEV acceptance must identify exact baseline versions and commit.
+
+**Dependency and authorization boundary:** WP-0.3 and WP-0.6 are COMPLETED / ACCEPTED. WP-0.7 execution is authorized under its approved scope. WP-0.8 remains NOT_STARTED until WP-0.7 is formally completed and accepted. No Phase 1 execution, implementation, deployment or institutional operation is authorized.
 
 ### WP-0.8 — Architecture Decision Register (ADR)
 **Approval status:** APPROVED — LAEV, 2026-11-24
@@ -395,7 +399,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 | WP-0.4 | Document Control | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Approved baseline](docs/phase-0/ERX-DOCUMENT-CONTROL-001.md) · [Approval record](docs/phase-0/ERX-WP-0.4-APPROVAL-RECORD-001.md) · [Closeout audit](docs/phase-0/ERX-WP-0.4-CLOSEOUT-AUDIT-001.md) | WP-0.4 has its own approval/closeout record; WP-0.3 is now accepted. External independent review remains deferred under WP-0.4's approved record, not represented as performed. |
 | WP-0.5 | ERX Repository | APPROVED — execution COMPLETED / ACCEPTED | LAEV | [Governance v1.0.0](docs/phase-0/ERX-REPOSITORY-GOVERNANCE-001.md) · [Tree inventory](docs/phase-0/ERX-WP-0.5-REPOSITORY-TREE-INVENTORY-001.md) · [Acceptance readiness](docs/phase-0/ERX-WP-0.5-ACCEPTANCE-READINESS-REPORT-001.md) · [Closeout audit](docs/phase-0/ERX-WP-0.5-CLOSEOUT-AUDIT-001.md) · [Acceptance record](docs/phase-0/ERX-WP-0.5-ACCEPTANCE-RECORD-001.md) · [Access matrix](docs/phase-0/ERX-WP-0.5-ACCESS-AND-RESPONSIBILITY-MATRIX-001.md) · [Evidence register](registers/repository-governance-evidence.csv) | All ten documentary activities accepted. Residual limitations remain explicit: full access roster NOT_VERIFIED; main unprotected; no license assigned; independent backup/restore and reviewer not verified/assigned. WP-0.6 dependency gate SATISFIED. No Phase 1 authorization. |
 | WP-0.6 | Master Index | APPROVED — execution COMPLETED / ACCEPTED | LAEV / project drafting | [Initiation](docs/phase-0/ERX-WP-0.6-INITIATION-RECORD-001.md) · [Master index v1.5.2](docs/phase-0/ERX-MASTER-DOCUMENT-INDEX-001.md) · [Completion matrix v0.5.9](docs/phase-0/ERX-WP-0.6-DELIVERABLE-COMPLETION-MATRIX-001.md) · [Internal review v0.3.8](docs/phase-0/ERX-WP-0.6-INTERNAL-REVIEW-001.md) · [Relationship register v0.2.2](docs/phase-0/ERX-WP-0.6-DOCUMENT-RELATIONSHIP-REGISTER-001.md) · [ERX-DOCUMENT-REGISTER-001 v1.2.4](registers/document-register.csv) · [Acceptance record](docs/phase-0/ERX-WP-0.6-ACCEPTANCE-RECORD-001.md) | WP-0.6 accepted under the recorded conditional acceptance. Current post-acceptance synchronization confirms 80 catalogue records/16 columns, 79 live paths plus one NOT_LOCATED reference, 79/79 path coverage and zero duplicate IDs/paths or stale/missing paths. WP-0.7 execution was initiated under its existing approval; no Phase 1 or implementation authorization. |
-| WP-0.7 | Requirements | APPROVED — execution IN_PROGRESS; dependencies SATISFIED | LAEV / project drafting | [Initiation v1.0.0](docs/phase-0/ERX-WP-0.7-INITIATION-RECORD-001.md) · [Controlled method v1.0.0](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) · [Source inspection v1.0.0](docs/phase-0/ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md) · [Initial extraction v0.1.0](docs/phase-0/ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) · [Traceability register](registers/requirements-traceability.csv) | Activity 0.7.1 method controlled; 15 source-derived candidate requirements recorded, all EXTRACTED — REVIEW PENDING. Activities 0.7.2–0.7.11 remain in progress/open; no requirement is approved by extraction alone. |
+| WP-0.7 | Requirements | APPROVED — execution IN_PROGRESS; dependencies SATISFIED | LAEV / project drafting | [Initiation v1.0.0](docs/phase-0/ERX-WP-0.7-INITIATION-RECORD-001.md) · [Method v1.0.0](docs/phase-0/ERX-REQUIREMENTS-METHOD-001.md) · [Status reconciliation v0.4.1](docs/phase-0/ERX-WP-0.7-STATUS-RECONCILIATION-001.md) · [Source register](registers/requirements-traceability.csv) · [Individual register](registers/requirement-identification-register.csv) · [Traceability matrix v0.4.2](docs/phase-0/ERX-REQ-TRACEABILITY-MATRIX-001.md) | Current snapshot: 82 source candidates / 107 individual records; 76 open specification gaps + 6 evidence-backed no-gap dispositions; eight open decision candidates. Activities 0.7.1–0.7.8, 0.7.10 and 0.7.11 have execution artifacts; 0.7.9 exact passage/diagram fidelity review remains open. Semantic, child-level and cross-register acceptance audit, gap owners, decision owners/deadlines, criteria approval and exact-version LAEV baseline approval remain open. No requirement is approved by extraction alone. |
 | WP-0.8 | ADR Decisions | APPROVED — execution NOT_STARTED | LAEV / to be assigned | — | — |
 | WP-0.9 | Risks and Dependencies | APPROVED — execution NOT_STARTED | To be assigned | — | — |
 | WP-0.10 | Governance | APPROVED — execution NOT_STARTED | LAEV / to be assigned | — | — |

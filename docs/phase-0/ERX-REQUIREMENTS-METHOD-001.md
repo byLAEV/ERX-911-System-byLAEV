@@ -280,3 +280,8 @@ Acceptance of the entire WP-0.7 requires:
 
 ---
 End of ERX-REQUIREMENTS-METHOD-001
+
+
+## 12. Controlled batch continuation
+
+Each additional extraction batch must state the exact source/version, page/section range inspected, candidate IDs added, treatment of recommendation language, and resulting register row count. A batch count is not an acceptance metric. Candidate IDs must be unique across the full register. Before merging a batch, validate CSV field count, ID uniqueness, source locator presence, origin class, lifecycle status and explicit non-approval state. Any record whose source modality is not explicit must remain DERIVED or PROPOSED rather than being represented as EXTRACTED.

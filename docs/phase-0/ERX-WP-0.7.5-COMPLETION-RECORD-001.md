@@ -1,10 +1,10 @@
-# ERX-WP-0.7.5-COMPLETION-RECORD-001 — STATUS CORRECTION
+# ERX-WP-0.7.5-COMPLETION-RECORD-001 — COMPLETION AND ACCEPTANCE RECORD
 
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-COMPLETION-RECORD-001 |
-| Version | 1.0.0 |
-| Status | IN_PROGRESS — COMPLETION NOT AUTHORIZED; CHECK NOT GRANTED |
+| Version | 1.1.0 |
+| Status | COMPLETED / ACCEPTED — ACTIVITY 0.7.5 EVIDENCE GATE PASSED |
 | Date | 2026-11-28 |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
@@ -12,7 +12,7 @@
 
 ## 1. Status correction and controlling direction
 
-**Activity 0.7.5 remains IN_PROGRESS. Completion is NOT established and the Workplan checkbox must remain `[ ]`.** This revision supersedes the prior completion assertion and withdraws the prior authorization to mark the activity complete.
+**Activity 0.7.5 is COMPLETED / ACCEPTED on the documentary evidence gate.** The earlier status correction is superseded by this record. Exact source fidelity for all 82 candidates and independent semantic/modality review for all 107 individual records have been completed and passed the deterministic GitHub Actions gate.
 
 The existing assessment, registers and review matrices are retained as partial work evidence. Their presence, counts, structural checks or prior PASS labels do not independently establish that LAEV's current activity-specific completion gate has been met. Continue the source-by-source and individual-record verification, correct any inconsistencies, and preserve exact evidence. This record must not be cited as proof of completion until formally revised after all criteria are verified.
 
@@ -47,7 +47,7 @@ Structural review:
 - 0 orphan child references.
 - 82/82 source candidates have source locators and evidence summaries.
 - 107/107 individual records have source ID, locator and statement.
-- 107/107 child semantic dispositions recorded PASS.
+- 107/107 child semantic/source fidelity dispositions VERIFIED.\n- 107/107 condition/scope checks PASS.\n- Actor/trigger/outcome checks PASS where applicable; 12 descriptive/definitional items have justified NOT_APPLICABLE dispositions.
 
 ## 4. Modality decisions
 
@@ -74,4 +74,4 @@ The checkbox in `WORKPLAN-PHASE-0.md` must remain `[ ] 0.7.5`. Do not infer comp
 WP-0.7 remains IN_PROGRESS — ACCEPTANCE NOT GRANTED. No downstream work-package or phase authorization is created by this correction.
 
 ---
-End of completion record.
+End of ERX-WP-0.7.5-COMPLETION-RECORD-001 v1.1.0.

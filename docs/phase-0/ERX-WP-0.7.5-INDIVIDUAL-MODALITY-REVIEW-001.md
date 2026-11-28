@@ -40,7 +40,8 @@ This record documents independent child-level verification of all 107 individual
 | ERX-REQ-AGENT-0001-A / -B | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | Atlas Lámina 03 depicts separate center and agent identification/credential branches; they are diagram-derived process structure, not independent modal commands |
 | ERX-REQ-AGENT-0002 | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | Atlas p.8 shows the no-response registration branch as a process path |
 | ERX-REQ-ARCH-0002 | NOT_MANDATORY — PROPOSED_ARCHITECTURE | Roadmap §3.1 expressly says “Se propone organizar ERX”; proposal language is not an approved mandatory obligation |
-| ERX-REQ-CORE-0002 | NOT_MANDATORY — DESCRIPTIVE_DEVELOPMENT_SCOPE | Roadmap §4.1 presents a module/responsibility table as development scope, not an independent imperative |\n| ERX-REQ-CONTACT-0001 | NOT_MANDATORY — DESCRIPTIVE_EVENT_DISTINCTION | Protocol p.11 distinguishes initial reception time and agent-response time as separate events |
+| ERX-REQ-CORE-0002 | NOT_MANDATORY — DESCRIPTIVE_DEVELOPMENT_SCOPE | Roadmap §4.1 presents a module/responsibility table as development scope, not an independent imperative |
+| ERX-REQ-CONTACT-0001 | NOT_MANDATORY — DESCRIPTIVE_EVENT_DISTINCTION | Protocol p.11 distinguishes initial reception time and agent-response time as separate events |
 | ERX-REQ-OTS-0003-A | MANDATORY_CANDIDATE | Protocol §12 says each JSON document produces an independent cryptographic commitment; this per-document output is retained separately from the descriptive workflow sequence |
 | ERX-REQ-OTS-0003-B | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; preserve the order and process description without promoting it |
 | ERX-REQ-OTS-0003-C | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; preserve OTS request, retention and later update as workflow description |

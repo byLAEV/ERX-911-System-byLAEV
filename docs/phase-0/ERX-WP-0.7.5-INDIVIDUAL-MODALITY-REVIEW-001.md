@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 |
-| Version | 1.2.0 |
-| Status | COMPLETED — 107/107 INDIVIDUAL RECORDS REVIEWED |
+| Version | 1.3.0 |
+| Status | IN_PROGRESS — 107/107 RECORDS MAPPED; SEMANTIC ACCEPTANCE PENDING |
 | Date | 2026-11-28 |
 | Activity | WP-0.7.5 — Identify mandatory requirements |
 | Source review matrix | registers/wp-0.7.5-source-fidelity-review.csv |
@@ -12,18 +12,18 @@
 
 ## 1. Scope
 
-Every individual requirement statement was reviewed against its cited source passage or diagram, parent-source lineage, atomicity/decomposition disposition, normative force and preserved conditions. This review classifies source modality; it does not approve the requirements baseline.
+This working record preserves the 107 individual records and their parent-source mapping. The inherited modality labels and prior review notes are provisional only. Independent child-level verification against exact source passages/Atlas plates, scope, actor, trigger, outcome and normative force remains in progress.
 
 ## 2. Population and structural checks
 
-- 107 individual records reviewed.
+- 107 individual records mapped; independent semantic review remains pending.
 - 107 unique individual IDs.
 - All 82 parent candidates represented.
 - 0 orphan parent references.
 - All 107 records contain a source ID, locator and statement.
-- 107/107 semantic-fidelity dispositions: PASS.
+- 107/107 prior semantic-fidelity PASS entries are not accepted as final; revalidation is required.
 
-## 3. Final child-level modality
+## 3. Provisional inherited modality snapshot
 
 | Disposition | Count |
 |---|---:|
@@ -62,7 +62,7 @@ No recommendation was promoted to a mandatory candidate. No definition or eviden
 
 ## 6. Determination
 
-**Individual semantic/modality review COMPLETED — 107/107 PASS.** The detailed row-level evidence is in the individual review CSV. All candidates and children remain NOT_APPROVED pending the separate WP-0.7 baseline approval gate.
+**Individual semantic/modality review remains IN_PROGRESS.** The 107 records and their parent links are retained, but the inherited dispositions and previous PASS labels are not final acceptance evidence. Revalidate every child independently against the exact source, preserve modality and scope, resolve discrepancies, and record reproducible evidence. All candidates and children remain NOT_APPROVED.
 
 ---
-End of ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.2.0.
+End of ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.3.0.

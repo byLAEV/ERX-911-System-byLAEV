@@ -34,12 +34,12 @@ The method in ERX-REQUIREMENTS-METHOD-001 §§3.2–3.3 and 6.1 controls: preser
 
 | Recorded preliminary screening disposition | Count | Meaning |
 |---|---:|---|
-| MANDATORY_CANDIDATE | 76 | Source expresses an explicit obligation, prohibition or imperative applicable to the candidate |
-| NOT_MANDATORY | 5 | Definition, diagram-derived process path, descriptive event distinction, descriptive workflow sequence or evidentiary boundary; not an explicit mandatory obligation |
-| MIXED_MODALITY_SPLIT | 1 | One mandatory clause and one recommendation retained separately |
+| MANDATORY_CANDIDATE | 73 | Source expresses an explicit obligation, prohibition or imperative applicable to the candidate |
+| NOT_MANDATORY | 7 | Definition, diagram-derived process path, proposed architecture, descriptive development scope/event distinction or evidentiary boundary; not an explicit mandatory obligation |
+| MIXED_MODALITY_SPLIT | 2 | One mandatory clause plus recommendation; one mandatory commitment output plus descriptive workflow retained separately |
 | **Total** | **82** | **82 unique source candidates; 82/82 have source locators and evidence summaries** |
 
-The 76 records remain candidates, not approved requirements. The five NOT_MANDATORY records remain in the register and are not deleted or misrepresented as requirements. The mixed parent is split at the individual layer.
+The 76 records remain candidates, not approved requirements. The five NOT_MANDATORY records remain in the register and are not deleted or misrepresented as requirements. Both mixed parents are split at the individual layer: CRYPTO-0002 separates mandatory definition from recommendation; OTS-0003 separates the per-JSON independent commitment candidate from the descriptive evidence-workflow sequence.
 
 ## 4. Resolution of the six prior unresolved source records
 

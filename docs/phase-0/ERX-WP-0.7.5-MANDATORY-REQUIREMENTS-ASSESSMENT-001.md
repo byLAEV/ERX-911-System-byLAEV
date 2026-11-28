@@ -4,7 +4,7 @@
 |---|---|
 | Document ID | ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 |
 | Version | 0.7.0 |
-| Status | COMPLETED / ACCEPTED — SOURCE FIDELITY AND CHILD SEMANTIC REVIEW VERIFIED |
+| Status | COMPLETED — SOURCE FIDELITY AND CHILD SEMANTIC REVIEW VERIFIED |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
 | Date | 2026-11-28 |
@@ -14,7 +14,7 @@
 
 ## 1. Purpose and acceptance boundary
 
-This assessment records the completed source-candidate fidelity review and independent child-level semantic/modality review. The exact supplied source PDFs were reopened, cited passages and Atlas plates inspected, source hashes recorded, modality and scope preserved, and all 82 source candidates plus 107 individual records passed the deterministic evidence gate. This is documentary acceptance of Activity 0.7.5 only; it does not approve the requirements baseline or authorize implementation.
+This assessment records the completed source-candidate fidelity review and independent child-level semantic/modality review. The exact supplied source PDFs were reopened, cited passages and Atlas plates inspected, source hashes recorded, modality and scope preserved, and all 82 source candidates plus 107 individual records passed the deterministic evidence gate. This is documentary completion of Activity 0.7.5 only; it does not constitute separate LAEV approval of the activity, approve the requirements baseline or authorize implementation.
 
 Completion of activity 0.7.5 means the source modality has been identified and recorded. It does **not** mean that every candidate is an approved requirement, that the requirements baseline is approved, or that implementation is authorized. Every extracted candidate retains its existing non-approved lifecycle state.
 
@@ -94,7 +94,7 @@ All source-candidate and individual rows remain NOT_APPROVED. The source class i
 
 ## 8. Determination
 
-**Activity WP-0.7.5 — COMPLETED / ACCEPTED.** All 82 source candidates have exact source/Atlas fidelity dispositions VERIFIED. All 107 individual records have independent semantic/modality dispositions VERIFIED, condition/scope PASS, and actor/trigger/outcome PASS or explicitly justified NOT_APPLICABLE. The deterministic GitHub Actions evidence gate passed on run #18 (commit `35fcd16455b5c849e7103245f7a7ad2e63faf440`). The Workplan checkbox for 0.7.5 may be `[x]`.
+**Activity WP-0.7.5 — COMPLETED; TECHNICAL EVIDENCE GATE PASSED.** All 82 source candidates have exact source/Atlas fidelity dispositions VERIFIED. All 107 individual records have independent semantic/modality dispositions VERIFIED, condition/scope PASS, and actor/trigger/outcome PASS or explicitly justified NOT_APPLICABLE. The deterministic GitHub Actions evidence gate passed on run #18 (commit `35fcd16455b5c849e7103245f7a7ad2e63faf440`). The Workplan checkbox for 0.7.5 may be `[x]`.
 
 **WP-0.7 remains IN_PROGRESS.** Completion of this activity does not close WP-0.7. Activity 0.7.9 source-linkage/bidirectional traceability, other WP-0.7 acceptance gates, exact baseline approval and the formal WP-0.7 acceptance determination remain governed by their own controls.
 

@@ -47,7 +47,7 @@ Structural review:
 - 0 orphan child references.
 - 82/82 source candidates have source locators and evidence summaries.
 - 107/107 individual records have source ID, locator and statement.
-- 107/107 child semantic/source fidelity dispositions VERIFIED.\n- 107/107 condition/scope checks PASS.\n- Actor/trigger/outcome checks PASS where applicable; 12 descriptive/definitional items have justified NOT_APPLICABLE dispositions.
+- 107/107 child semantic/source fidelity dispositions VERIFIED.\n- 107/107 condition/scope checks PASS.\n- Actor/trigger/outcome checks PASS where applicable; 11 descriptive/definitional items have justified NOT_APPLICABLE dispositions.
 
 ## 4. Modality decisions
 

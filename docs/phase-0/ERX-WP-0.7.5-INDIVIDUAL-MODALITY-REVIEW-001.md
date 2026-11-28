@@ -27,8 +27,8 @@ This record documents independent child-level verification of all 107 individual
 
 | Disposition | Count |
 |---|---:|
-| MANDATORY_CANDIDATE | 98 |
-| NOT_MANDATORY | 8 |
+| MANDATORY_CANDIDATE | 95 |
+| NOT_MANDATORY | 11 |
 | RECOMMENDATION_CANDIDATE | 1 |
 | **Total** | **107** |
 
@@ -37,9 +37,9 @@ This record documents independent child-level verification of all 107 individual
 | Individual ID | Disposition | Source-derived rationale |
 |---|---|---|
 | ERX-REQ-UTXO-0001 | NOT_MANDATORY — DESCRIPTIVE_DEFINITION | Protocol p.3 defines a valid transition and consumed-state history; it does not state an independent obligation |
-| ERX-REQ-AGENT-0002 | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | Atlas p.8 shows the no-response registration branch as a process path |
-| ERX-REQ-CONTACT-0001 | NOT_MANDATORY — DESCRIPTIVE_EVENT_DISTINCTION | Protocol p.11 distinguishes initial reception time and agent-response time as separate events |
-| ERX-REQ-OTS-0003-A | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Protocol §12 enumerates the ordered evidence workflow without making each step an independent obligation |
+| ERX-REQ-AGENT-0001-A / -B | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | Atlas Lámina 03 depicts separate center and agent identification/credential branches; they are diagram-derived process structure, not independent modal commands |\n| ERX-REQ-AGENT-0002 | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | Atlas p.8 shows the no-response registration branch as a process path |
+| ERX-REQ-ARCH-0002 | NOT_MANDATORY — PROPOSED_ARCHITECTURE | Roadmap §3.1 expressly says “Se propone organizar ERX”; proposal language is not an approved mandatory obligation |\n| ERX-REQ-CORE-0002 | NOT_MANDATORY — DESCRIPTIVE_DEVELOPMENT_SCOPE | Roadmap §4.1 presents a module/responsibility table as development scope, not an independent imperative |\n| ERX-REQ-CONTACT-0001 | NOT_MANDATORY — DESCRIPTIVE_EVENT_DISTINCTION | Protocol p.11 distinguishes initial reception time and agent-response time as separate events |
+| ERX-REQ-OTS-0003-A | MANDATORY_CANDIDATE | Protocol §12 says each JSON document produces an independent cryptographic commitment; this per-document output is retained separately from the descriptive workflow sequence |
 | ERX-REQ-OTS-0003-B | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; preserve the order and process description without promoting it |
 | ERX-REQ-OTS-0003-C | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; preserve OTS request, retention and later update as workflow description |
 | ERX-REQ-OTS-0003-D | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; verification is part of the described sequence |
@@ -58,7 +58,7 @@ The review retained the conditions and limits present in the individual statemen
 - high-entropy commitments “where applicable”;
 - OTS as independent/asynchronous evidence, not a condition for emergency attention.
 
-No recommendation was promoted to a mandatory candidate. No definition or evidentiary boundary was treated as a mandatory implementation obligation. The mixed CRYPTO-0002 parent remains split between its mandatory and recommended children.
+No recommendation was promoted to a mandatory candidate. No definition, diagram-derived path, proposed architecture, descriptive scope or evidentiary boundary was treated as a mandatory implementation obligation. The independent per-JSON commitment output in OTS-0003-A remains a mandatory candidate. The mixed CRYPTO-0002 parent remains split between its mandatory and recommended children.
 
 ## 6. Determination
 

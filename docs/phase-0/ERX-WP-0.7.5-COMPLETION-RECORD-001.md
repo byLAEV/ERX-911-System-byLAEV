@@ -4,7 +4,7 @@
 |---|---|
 | Document ID | ERX-WP-0.7.5-COMPLETION-RECORD-001 |
 | Version | 1.1.0 |
-| Status | COMPLETED / ACCEPTED — ACTIVITY 0.7.5 EVIDENCE GATE PASSED |
+| Status | COMPLETED — TECHNICAL EVIDENCE GATE PASSED; FORMAL APPROVAL SEPARATE |
 | Date | 2026-11-28 |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
@@ -12,7 +12,7 @@
 
 ## 1. Status correction and controlling direction
 
-**Activity 0.7.5 is COMPLETED / ACCEPTED on the documentary evidence gate.** The earlier status correction is superseded by this record. Exact source fidelity for all 82 candidates and independent semantic/modality review for all 107 individual records have been completed and passed the deterministic GitHub Actions gate.
+**Activity 0.7.5 is COMPLETED on the documentary evidence gate.** The earlier status correction is superseded by this record. Exact source fidelity for all 82 candidates and independent semantic/modality review for all 107 individual records have been completed and passed the deterministic GitHub Actions gate.
 
 The source and child review matrices contain row-specific evidence, source locators and dispositions. The canonical source traceability and child identification registers are synchronized. The deterministic GitHub Actions gate validates the complete 82/107 population; this completion is limited to Activity 0.7.5 and does not approve the requirements baseline.
 
@@ -69,9 +69,9 @@ The review uses the five supplied foundational project sources as project-source
 
 ## 6. Current determination
 
-**WP-0.7.5 — COMPLETED / ACCEPTED.** Source fidelity: 82/82 VERIFIED. Individual semantic/modality review: 107/107 VERIFIED; condition/scope: 107/107 PASS; actor/trigger/outcome: PASS or explicitly justified NOT_APPLICABLE. The deterministic GitHub Actions gate passed (run #18): https://github.com/byLAEV/ERX-911-System-byLAEV/actions/runs/46153543878.
+**WP-0.7.5 — COMPLETED; TECHNICAL EVIDENCE GATE PASSED.** Source fidelity: 82/82 VERIFIED. Individual semantic/modality review: 107/107 VERIFIED; condition/scope: 107/107 PASS; actor/trigger/outcome: PASS or explicitly justified NOT_APPLICABLE. The deterministic GitHub Actions gate passed (run #18): https://github.com/byLAEV/ERX-911-System-byLAEV/actions/runs/46153543878.
 
-The checkbox in `WORKPLAN-PHASE-0.md` is `[x] 0.7.5`.
+The checkbox in `WORKPLAN-PHASE-0.md` is `[x] 0.7.5`. The Actions gate explicitly notes that formal LAEV acceptance remains separate; this activity completion does not approve the requirements baseline.
 
 WP-0.7 remains IN_PROGRESS — ACCEPTANCE NOT GRANTED. Activity 0.7.9, gap closure, open decisions, exact baseline approval and the formal WP-0.7 acceptance determination remain open. No downstream work-package or phase authorization is created.
 

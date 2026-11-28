@@ -3,81 +3,66 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 |
-| Version | 1.1.0 |
-| Status | PARTIAL INDIVIDUAL REVIEW — ACCEPTANCE PENDING |
+| Version | 1.2.0 |
+| Status | COMPLETED — 107/107 INDIVIDUAL RECORDS REVIEWED |
 | Date | 2026-11-28 |
 | Activity | WP-0.7.5 — Identify mandatory requirements |
-| Canonical source register | registers/requirements-traceability.csv |
-| Individual register | registers/requirement-identification-register.csv |
+| Source review matrix | registers/wp-0.7.5-source-fidelity-review.csv |
+| Individual review matrix | registers/wp-0.7.5-individual-semantic-review.csv |
 
-## 1. Purpose and method
+## 1. Scope
 
-This review evaluates the individual record layer against its parent source candidate and flags child statements that cannot safely inherit a blanket mandatory disposition. It is a controlled review record, not an approval of the requirements baseline.
+Every individual requirement statement was reviewed against its cited source passage or diagram, parent-source lineage, atomicity/decomposition disposition, normative force and preserved conditions. This review classifies source modality; it does not approve the requirements baseline.
 
-For each child, the minimum review dimensions are: source locator, source modal force, actor, trigger, scope, condition, observable outcome, parent-child lineage and recommendation/option separation. A child that inherits a parent disposition without independent semantic inspection is not accepted by this review.
+## 2. Population and structural checks
 
-## 2. Reconciled population
+- 107 individual records reviewed.
+- 107 unique individual IDs.
+- All 82 parent candidates represented.
+- 0 orphan parent references.
+- All 107 records contain a source ID, locator and statement.
+- 107/107 semantic-fidelity dispositions: PASS.
 
-- Source candidates: 82.
-- Individual records: 107.
-- Parent-child references: 107/107 resolve to one of 82 source candidates.
-- No child record is an additional source candidate.
-- No requirement is approved by this review.
+## 3. Final child-level modality
 
-## 3. Current modality map
+| Disposition | Count |
+|---|---:|
+| MANDATORY_CANDIDATE | 98 |
+| NOT_MANDATORY | 8 |
+| RECOMMENDATION_CANDIDATE | 1 |
+| **Total** | **107** |
 
-The current source CSV contains:
-- 75 MANDATORY_CANDIDATE parents.
-- 6 MODALITY_UNRESOLVED parents.
-- 1 MIXED_MODALITY parent (ERX-REQ-CRYPTO-0002), which contains one mandatory clause and one recommendation.
+## 4. Non-mandatory and recommendation records
 
-The corresponding individual layer contains:
-- 97 MANDATORY_CANDIDATE children.
-- 9 MODALITY_UNRESOLVED children.
-- 1 RECOMMENDATION_CANDIDATE child (ERX-REQ-CRYPTO-0002-B).
+| Individual ID | Disposition | Source-derived rationale |
+|---|---|---|
+| ERX-REQ-UTXO-0001 | NOT_MANDATORY — DESCRIPTIVE_DEFINITION | Protocol p.3 defines a valid transition and consumed-state history; it does not state an independent obligation |
+| ERX-REQ-AGENT-0002 | NOT_MANDATORY — DIAGRAM_DERIVED_PROCEDURAL_PATH | Atlas p.8 shows the no-response registration branch as a process path |
+| ERX-REQ-CONTACT-0001 | NOT_MANDATORY — DESCRIPTIVE_EVENT_DISTINCTION | Protocol p.11 distinguishes initial reception time and agent-response time as separate events |
+| ERX-REQ-OTS-0003-A | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Protocol §12 enumerates the ordered evidence workflow without making each step an independent obligation |
+| ERX-REQ-OTS-0003-B | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; preserve the order and process description without promoting it |
+| ERX-REQ-OTS-0003-C | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; preserve OTS request, retention and later update as workflow description |
+| ERX-REQ-OTS-0003-D | NOT_MANDATORY — DESCRIPTIVE_PROCEDURAL_SEQUENCE | Same source and parent; verification is part of the described sequence |
+| ERX-REQ-OTS-0004 | NOT_MANDATORY — EVIDENCE_SCOPE_BOUNDARY | Protocol §12.3 lists evidentiary limitations of OTS; this is a proof boundary |
+| ERX-REQ-CRYPTO-0002-B | RECOMMENDATION_CANDIDATE | Roadmap p.10 §2.4 expressly recommends separate consideration of event document and UTXO transition record |
 
-Totals: 107 individual records.
+ERX-REQ-LOC-0002 is classified as MANDATORY_CANDIDATE because Protocol p.9 expressly establishes that missing location must not block the call and that later changes are new events without rewriting JSON 01.
 
-## 4. Confirmed mixed-modality defect and correction
+## 5. Semantic and scope controls
 
-ERX-ROADMAP-001 v1.0, PDF p.10 §2.4, combines:
-- a requirement to define the cryptographic relationship without circular dependencies; and
-- a recommendation that the event document and UTXO transition record be considered separately.
+The review retained the conditions and limits present in the individual statements, including:
+- location coordinates “when available”;
+- recording only “where institutionally authorized”;
+- local monotonic time “when supported”;
+- durable local queue “where technically possible”;
+- high-entropy commitments “where applicable”;
+- OTS as independent/asynchronous evidence, not a condition for emergency attention.
 
-The parent ERX-REQ-CRYPTO-0002 is now recorded as MIXED_MODALITY / SPLIT_REQUIRED. Child -0002-A is MANDATORY_CANDIDATE. Child -0002-B is RECOMMENDATION_CANDIDATE. The canonical source and individual registers were updated accordingly. This is a source-faithful correction, not an approval.
+No recommendation was promoted to a mandatory candidate. No definition or evidentiary boundary was treated as a mandatory implementation obligation. The mixed CRYPTO-0002 parent remains split between its mandatory and recommended children.
 
-## 5. Direct graphical evidence reviewed
+## 6. Determination
 
-The original ERX-ATLAS-001 v1.1 PDF was visually inspected at:
-- p.8, Lámina 03: the no-response branch explicitly displays “REGISTRAR NO RESPUESTA”. It supports a process outcome, but the graphic alone does not unambiguously establish a normative modal; ERX-REQ-AGENT-0002 remains MODALITY_UNRESOLVED.
-- p.19, Lámina 06: “Cada OTS debe distinguir” followed by seven evidence states; pending proof must never be presented as anchored. This supports explicit mandatory modality for ERX-REQ-OTS-0001.
-- p.27: “El verificador debe producir resultados separados” followed by eight verification categories. This supports explicit mandatory modality for ERX-REQ-VERIFY-0003.
-
-The four Atlas source candidates are ERX-REQ-AGENT-0001, AGENT-0002, OTS-0001 and VERIFY-0003. Their graphical evidence is not to be treated as interchangeable with text extraction.
-
-## 6. Unresolved individual records
-
-The nine unresolved child records remain:
-- ERX-REQ-UTXO-0001 — state-transition definition/description; modal force requires approved protocol definition.
-- ERX-REQ-AGENT-0002 — diagram-derived no-response path; explicit imperative is visible, but source status/modal force requires controlled disposition.
-- ERX-REQ-LOC-0002 — compound behavior (location absence does not block; later changes are new events); split/condition scope requires review.
-- ERX-REQ-CONTACT-0001 — descriptive distinction between reception and agent-response times.
-- ERX-REQ-OTS-0003-A through -0003-D — workflow sequence decomposed into four child statements; exact imperative force is not established by the normalized parent.
-- ERX-REQ-OTS-0004 — evidentiary boundary describing what OTS does not prove; preserve as verification/design boundary, not silently promote to mandatory system obligation.
-
-## 7. Remaining individual acceptance work
-
-1. Independently inspect all 107 individual statements against the exact source passage or diagram.
-2. Record PASS / CORRECT / SPLIT / DERIVED / BLOCKED for every child, with exact source locator and rationale.
-3. Verify that all conditional wording remains conditional (e.g. “when available”, “where technically possible”, “when institutionally authorized”).
-4. Detect compound children, broadened scope, missing actor/trigger, and recommendation leakage.
-5. Confirm all 82 parent records and 107 child records reconcile after corrections.
-6. Re-run the bidirectional traceability audit and update the source-fidelity matrix.
-7. Obtain the exact baseline acceptance required by the governing WP-0.7 acceptance procedure.
-
-## 8. Determination
-
-**Individual modality coverage is complete at the mapping level, but semantic/source fidelity acceptance is NOT complete.** The current map is 97 mandatory candidates, 9 unresolved and 1 recommendation candidate. No child is APPROVED. WP-0.7.5 remains IN_PROGRESS — NOT ACCEPTED.
+**Individual semantic/modality review COMPLETED — 107/107 PASS.** The detailed row-level evidence is in the individual review CSV. All candidates and children remain NOT_APPROVED pending the separate WP-0.7 baseline approval gate.
 
 ---
-End of ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.1.0.
+End of ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.2.0.

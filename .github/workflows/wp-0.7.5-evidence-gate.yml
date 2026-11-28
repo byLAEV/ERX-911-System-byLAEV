@@ -1,0 +1,34 @@
+name: WP-0.7.5 Evidence Acceptance Gate
+
+on:
+  push:
+    branches:
+      - wp-0.7-requirements-review
+    paths:
+      - "registers/wp-0.7.5-*.csv"
+      - "scripts/validate_wp_0_7_5.py"
+      - ".github/workflows/wp-0.7.5-evidence-gate.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "registers/wp-0.7.5-*.csv"
+      - "scripts/validate_wp_0_7_5.py"
+      - ".github/workflows/wp-0.7.5-evidence-gate.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  wp-0-7-5-evidence:
+    name: Verify WP-0.7.5 evidence (82 + 107 records)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run deterministic acceptance gate
+        run: python scripts/validate_wp_0_7_5.py

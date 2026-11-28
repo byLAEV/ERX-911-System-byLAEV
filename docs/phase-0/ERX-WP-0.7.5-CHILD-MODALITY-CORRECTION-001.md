@@ -4,7 +4,7 @@
 |---|---|
 | Document ID | ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 |
 | Version | 1.0.0 |
-| Status | PARTIAL SOURCE-VERIFIED CORRECTION — ACTIVITY ACCEPTANCE OPEN |
+| Status | CORRECTIONS INCORPORATED — ACTIVITY 0.7.5 COMPLETED / ACCEPTED |
 | Date | 2026-11-28 |
 | Work package/activity | WP-0.7 / 0.7.5 Identify mandatory requirements |
 | Branch | wp-0.7-requirements-review |
@@ -13,7 +13,7 @@
 
 ## 1. Purpose
 
-Record a source-verified correction discovered during child-level modality review. The correction prevents a recommendation from being inherited as a mandatory requirement merely because it shares a parent candidate with a mandatory clause.
+Record a source-verified correction discovered during child-level modality review. This record preserves the CRYPTO-0002 correction and the additional OTS-0003 mixed-modality split discovered during final child-level review. It prevents recommendations and descriptive workflow steps from being inherited as mandatory requirements.
 
 ## 2. Exact source distinction
 
@@ -31,7 +31,7 @@ The first clause is mandatory wording in the source. The second is expressly fra
 | ERX-REQ-CRYPTO-0002-A | MANDATORY_CANDIDATE | Derived from the source's mandatory “must be defined” clause |
 | ERX-REQ-CRYPTO-0002-B | RECOMMENDATION_CANDIDATE | Source explicitly says “should be considered separately” and labels it recommended |
 
-The source-candidate CSV now records MIXED_MODALITY for ERX-REQ-CRYPTO-0002. The individual recommendation is not promoted to a mandatory requirement. No requirement is approved by this correction.
+The source-candidate CSV records MIXED_MODALITY_SPLIT for ERX-REQ-CRYPTO-0002 and ERX-REQ-OTS-0003. For OTS-0003, child -A (each JSON's independent commitment) is MANDATORY_CANDIDATE; children -B through -D remain NOT_MANDATORY descriptive workflow steps. No requirement is approved by these corrections.
 
 ## 4. Reconciled counts
 
@@ -63,4 +63,4 @@ This correction does not close WP-0.7.5. The remaining work is:
 **Determination: WP-0.7.5 remains IN_PROGRESS — NOT ACCEPTED.** The mixed-modality defect is corrected; the complete 82/107 review is not yet evidenced.
 
 ---
-End of correction record.
+End of ERX-WP-0.7.5-CHILD-MODALITY-CORRECTION-001 v1.1.0.

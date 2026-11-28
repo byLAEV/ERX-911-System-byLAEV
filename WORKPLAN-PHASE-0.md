@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.5.4
+- **Version:** 1.5.5
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -242,7 +242,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 **Approval status:** APPROVED — LAEV, 2026-11-24
 **Execution status:** IN_PROGRESS — formally initiated 2026-11-25; dependency gate satisfied by WP-0.6 acceptance. Formal acceptance determination v1.0.0: **NOT GRANTED** (2026-11-28).
 
-**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The former 65-row matrix v0.2.0 and 65-candidate snapshots are superseded by source-candidate matrix v0.4.2. All candidates remain NOT_APPROVED.
+**Current reconciled inventory (2026-11-25):** 82 source candidates in the canonical traceability CSV (26 columns); 107 individually identified records in the companion register. The former 65-row matrix v0.2.0 and 65-candidate snapshots are superseded by source-candidate matrix v0.4.3. All candidates remain NOT_APPROVED.
 
 **Activities**
 - [x] 0.7.1 Identification methodology — controlled ERX-REQUIREMENTS-METHOD-001 v1.0.0.
@@ -254,7 +254,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [x] 0.7.7 Record requirements pending specification — 76 OPEN detailed specification gaps (63 historical + 13 supplemental) and six NO_GAP_WITH_EVIDENCE dispositions cover all 82 source candidates. The activity's candidate-level coverage is documented and phase-routed; technical closure of 76 gaps, named owner assignment and 107-child applicability remain pending. 
 - [x] 0.7.8 Record open decisions — eight open-decision candidates reviewed for inventory completeness and source/requirement linkage; decisions remain OPEN for WP-0.8. LAEV decision ownership is recognized, but due points and formal ADR outcomes remain pending. No decision resolved and no ADR approved.
 - [ ] 0.7.9 Link requirements to sources — all 82 source candidates have locators within source page bounds; exact passage/diagram fidelity review remains incomplete.
-- [x] 0.7.10 Assign requirements to phases — all 82 source candidates have a preliminary primary phase and dependency rationale recorded in allocation v0.3.2. Allocations are planning-only; child-level mappings remain an acceptance gate.
+- [x] 0.7.10 Assign requirements to phases — all 82 source candidates have a preliminary primary phase and dependency rationale recorded in allocation v0.3.3. Allocations are planning-only; child-level mappings remain an acceptance gate.
 - [x] 0.7.11 Build traceability matrix — regenerated matrix v0.4.2 for 82 source candidates from CSV SHA 1b1bd462b916ea1fbca9ba9449a8114e13011761; semantic/referential and child-level acceptance audit remains pending.
 
 **Latest audit:** [Bidirectional traceability audit v1.0.0](docs/phase-0/ERX-WP-0.7-BIDIRECTIONAL-TRACEABILITY-AUDIT-001.md) — structural PASS at source-candidate layer; [acceptance determination v1.0.0](docs/phase-0/ERX-WP-0.7-ACCEPTANCE-DETERMINATION-001.md) — ACCEPTANCE NOT GRANTED.\n\n**Controlled evidence:** initiation and source-inspection records; extraction batches 001–005; extraction completion record; accepted 0.7.3 record and atomicity/overlap disposition; classification record; design-requirements assessment v0.1.1; mandatory assessment v0.4.0; individual modality review v1.1.0; child modality correction v1.0.0; source-coverage audit v0.3.0; pending-specification register v0.5.0; open-decision review; phase-allocation register v0.3.2; LAEV baseline decision pack; verification-criteria proposal v0.3.1; semantic review register; review report; canonical source and individual registers; regenerated matrix v0.4.2; WP-0.7 status reconciliation v0.5.0; bidirectional traceability audit v1.0.0; acceptance determination v1.0.0.

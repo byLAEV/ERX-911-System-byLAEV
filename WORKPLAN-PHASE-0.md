@@ -4,7 +4,7 @@
 - **Project:** ERX-911-System-byLAEV
 - **Identifier:** ERX-WP-PHASE-0-001
 - **Phase:** 0 — Project Governance and Preparation
-- **Version:** 1.5.3
+- **Version:** 1.5.7
 - **Status:** APPROVED — WORK-PACKAGE SCOPE AUTHORIZATION, 2026-11-24
 - **Design and Approval Authority:** LAEV
 
@@ -244,7 +244,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 
 **Activities**
 - [x] 0.7.1 Identification methodology — ERX-REQUIREMENTS-METHOD-001 v1.0.0 controlled; activity deliverable completed.
-- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 45 source-derived candidate records across batches 001, 002 and 003; extraction continues.
+- [ ] 0.7.2 Extract existing requirements — direct inspection baseline completed; 56 source-derived candidate records across batches 001–004; extraction continues.
 - [ ] 0.7.3 Individually identify each requirement.
 - [ ] 0.7.4 Classify requirements.
 - [ ] 0.7.5 Identify mandatory requirements.
@@ -255,7 +255,7 @@ The sequence represents logical dependencies. Iteration and controlled concurren
 - [ ] 0.7.10 Assign requirements to phases.
 - [ ] 0.7.11 Build the traceability matrix.
 
-**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; controlled method v1.0.0; machine-readable traceability register currently 45 candidate records (EXTRACTED — REVIEW PENDING); extraction batches 001–003, requirements-linked open-decision candidate register, and preliminary register structural review recorded.
+**Execution records:** WP-0.7 initiation v1.0.0; source inspection record v1.0.0; initial extraction batch v0.1.0; extraction batch 004 v0.1.0; preliminary candidate reconciliation review v0.1.0; controlled method v1.0.0; machine-readable traceability register currently 56 candidate records (EXTRACTED — REVIEW PENDING). Batch 004 adds 11 source-derived candidates on continuity, privacy, recovery, interface security, architecture, verification limits and mandatory test coverage. Preliminary review identified overlap clusters and a primary-type normalization issue; no candidate was approved, rejected or merged. Technical review and approval remain pending; phase allocation is unassigned. Individual classification review v0.1.0 proposes one primary type from the method's controlled taxonomy for all 56 candidates and preserves legacy secondary labels in a separate CSV field. Normative disposition review v0.1.0 records 49 MANDATORY, 4 DESIGN, 2 CONDITIONAL_MANDATORY and 1 PENDING_SPECIFICATION candidates; these are source-based working dispositions, not requirement approvals. The CSV now has 23 columns including normative_disposition, normative_basis and specification_gap. Open decision candidate list v0.1.0 records 10 unresolved decision topics, with no decisions adopted. Source locator bounds audit v0.1.0 confirms that all 56 recorded page locators fall within the physical page counts of their mapped inspected PDFs; exact passage and normative support verification remains open. WP-0.7-to-WP-0.8 entry-gate assessment v0.1.0 records that WP-0.7 remains the unsatisfied dependency for WP-0.8; WP-0.8 scope is already approved, but execution remains NOT_STARTED.
 **Acceptance:** each requirement has a unique ID, verifiable statement, type, source locator, status, justified phase assignment and verification criterion; extracted, derived and proposed requirements remain distinct. This criterion is not yet satisfied for the full WP.
 **Dependencies:** WP-0.3 and WP-0.6 — COMPLETED / ACCEPTED. WP-0.7 execution is authorized under existing scope approval; requirements approval and implementation remain separate gates.
 

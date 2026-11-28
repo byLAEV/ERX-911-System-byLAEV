@@ -4,7 +4,7 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-MASTER-DOCUMENT-INDEX-001 |
-| Version | 1.5.2 |
+| Version | 1.5.8 |
 | Status | IN_PROGRESS — CONTROLLED RECONCILIATION DRAFT |
 | Work Package | WP-0.6 |
 | Project | ERX byLAEV — 911 Double-Spend System |
@@ -133,3 +133,35 @@ WP-0.7 is now formally initiated under its previously approved scope. [ERX-WP-0.
 ## 11. WP-0.7 execution snapshot
 
 WP-0.7 is IN_PROGRESS under the previously approved scope and the released dependency gate. Its formal initiation is [ERX-WP-0.7-INITIATION-RECORD-001 v1.0.0](ERX-WP-0.7-INITIATION-RECORD-001.md). Activity 0.7.1 is controlled by [ERX-REQUIREMENTS-METHOD-001 v1.0.0](ERX-REQUIREMENTS-METHOD-001.md). The five foundational PDFs were directly inspected and recorded in [ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001 v1.0.0](ERX-WP-0.7-SOURCE-INSPECTION-RECORD-001.md). The first extraction batch [v0.1.0](ERX-WP-0.7-INITIAL-REQUIREMENT-EXTRACTION-001.md) and `registers/requirements-traceability.csv` contain 15 source-derived candidates; they remain EXTRACTED — REVIEW PENDING, not approved requirements. Activity 0.7.2 continues; activities 0.7.3–0.7.11 remain open.
+
+
+## 12. WP-0.7 extraction update — 2026-11-25
+
+The controlled requirements register now contains 56 source-derived candidate records across extraction batches 001–004. Batch 004 is [ERX-WP-0.7-REQUIREMENT-EXTRACTION-BATCH-004 v0.1.0](ERX-WP-0.7-REQUIREMENT-EXTRACTION-BATCH-004.md) and adds 11 candidates covering local queue and recovery behavior, storage failure, interface security, component separation, pre-implementation test coverage, institutional privacy custody, limits of cryptographic verification, independent agent availability, non-resurrection of consumed states and OTS evidence retention. All 56 candidates remain EXTRACTED — REVIEW PENDING; none is approved by extraction. Verification criteria and phase assignments remain incomplete where not specified. WP-0.7 remains IN_PROGRESS; Phase 0 remains OPEN and Phase 1 is NOT AUTHORIZED.
+
+
+## 13. WP-0.7 preliminary candidate review — 2026-11-25
+
+[ERX-WP-0.7-CANDIDATE-REVIEW-001 v0.1.0](ERX-WP-0.7-CANDIDATE-REVIEW-001.md) records a preliminary reconciliation of the 56 candidate requirements. It identifies overlapping scopes (single consumption/concurrency, replay/recovery, OTS, storage, privacy, verifier, availability, transfers, tests and architecture) and a taxonomy normalization issue: the CSV should contain one primary type from the controlled method's taxonomy, with secondary tags separated. This review makes no approvals, rejections or merges. Activities 0.7.3–0.7.4 remain open.
+
+
+## 14. WP-0.7 individual classification review — 2026-11-25
+
+[ERX-WP-0.7-INDIVIDUAL-CLASSIFICATION-REVIEW-001 v0.1.0](ERX-WP-0.7-INDIVIDUAL-CLASSIFICATION-REVIEW-001.md) records a proposed primary-type classification for all 56 candidate requirements using the controlled taxonomy in ERX-REQUIREMENTS-METHOD-001 §5. The traceability CSV now contains one primary type per record and a separate `secondary_tags` field preserving prior additional labels. This is a working classification proposal; it does not approve requirements, resolve normative modality, close source conflicts, complete verification criteria or allocate phases. All 56 records remain EXTRACTED — REVIEW PENDING. WP-0.7 remains IN_PROGRESS; Phase 0 remains OPEN and Phase 1 is NOT AUTHORIZED.
+
+
+## 15. WP-0.7 / WP-0.8 entry-gate assessment — 2026-11-25
+
+[ERX-WP-0.7-TO-WP-0.8-ENTRY-GATE-ASSESSMENT-001 v0.1.0](ERX-WP-0.7-TO-WP-0.8-ENTRY-GATE-ASSESSMENT-001.md) evaluates the WP-0.7 acceptance criteria and the dependency gate for WP-0.8. It confirms WP-0.3 and WP-0.6 are satisfied, WP-0.7 remains IN_PROGRESS, and WP-0.8 is already scope-approved but NOT_STARTED. It identifies remaining work across extraction completeness, individual classification review, mandatory/design/pending-specification/open-decision disposition, source locator audit, phase allocation, matrix validation and LAEV's express WP-0.7 acceptance. This assessment is not a WP-0.7 acceptance or WP-0.8 execution authorization.
+
+
+## 16. WP-0.7 normative disposition and open decision candidates — 2026-11-25
+
+- [ERX-WP-0.7-NORMATIVE-DISPOSITION-REVIEW-001 v0.1.0](ERX-WP-0.7-NORMATIVE-DISPOSITION-REVIEW-001.md) records source-based working dispositions for all 56 candidates: 49 MANDATORY, 4 DESIGN, 2 CONDITIONAL_MANDATORY and 1 PENDING_SPECIFICATION. These labels do not constitute approval of the requirements baseline.
+- [ERX-WP-0.7-OPEN-DECISION-CANDIDATES-001 v0.1.0](ERX-WP-0.7-OPEN-DECISION-CANDIDATES-001.md) identifies 10 preliminary decision topics, none adopted. They may be transferred into WP-0.8 only after its formal initiation.
+- The traceability CSV schema is 23 columns and retains all 56 lifecycle states as EXTRACTED — REVIEW PENDING; no phase assignment has been made.
+
+
+## 17. WP-0.7 source locator bounds audit — 2026-11-25
+
+[ERX-WP-0.7-SOURCE-LOCATOR-BOUNDS-AUDIT-001 v0.1.0](ERX-WP-0.7-SOURCE-LOCATOR-BOUNDS-AUDIT-001.md) checks all 56 candidate locators against the physical page counts of their mapped inspected PDFs. All 56 page references fall within the mapped PDF bounds. This is only a page-bounds check; exact clause, section, diagram and normative support verification remains open. No requirement status or approval was changed.

@@ -3,8 +3,8 @@
 | Field | Value |
 |---|---|
 | Document ID | ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001 |
-| Version | 0.2.0 |
-| Status | WORKING ASSESSMENT — SOURCE-MODALITY REVIEW PENDING |
+| Version | 0.3.0 |
+| Status | CONTROLLED SCREENING AND INDIVIDUAL MAPPING — ACCEPTANCE PENDING |
 | Work package | WP-0.7 — Requirements Identification and Classification |
 | Activity | 0.7.5 — Identify mandatory requirements |
 | Date | 2026-11-25 |
@@ -39,19 +39,19 @@ The assessment is against the five supplied foundational source documents alread
 | MODALITY_UNRESOLVED | 6 | Existing evidence does not safely establish whether the source is mandatory, recommendatory, or descriptive. |
 | **Total source candidates assessed** | **82** | All rows in the canonical source-candidate register received a disposition. |
 
-The 57 records are candidates, not approved mandatory requirements. The 25 unresolved records are not treated as non-mandatory; their modality remains undetermined.
+The 76 records are candidates, not approved mandatory requirements. The 6 unresolved records are not treated as non-mandatory; their modality remains undetermined.
 
 ## 4. Controlled register changes
 
 The field `mandatory_assessment` in `registers/requirements-traceability.csv` was updated for all 82 source candidates:
 
-- 57 rows: `MANDATORY_CANDIDATE`, with explicit warning that clause-level confirmation remains pending.
+- 76 rows: `MANDATORY_CANDIDATE`, with explicit warning that clause-level confirmation remains pending.
 - 6 rows: `MODALITY_UNRESOLVED`, with a reason not to infer normative force.
 - Existing source IDs, source locators, origin classes, requirement text, classifications, lifecycle states, phase allocations and approval states were preserved.
 - No row was changed to APPROVED.
 - No source recommendation was converted into an obligation by this screening.
 
-The 107 individually identified records remain linked to the 82 source candidates through their parent references. Their individual child-level normative review remains necessary wherever decomposition may have changed or narrowed the original obligation.
+The 107 individually identified records remain linked to the 82 source candidates through their parent references. The new `ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.0.0` maps the parent's preliminary modality to every child: 98 inherit `MANDATORY_CANDIDATE` and 9 inherit `MODALITY_UNRESOLVED`. This is a coverage/inheritance mapping, not independent child-level semantic acceptance.
 
 ## 5. Important source distinctions to preserve
 
@@ -92,3 +92,23 @@ End of ERX-WP-0.7.5-MANDATORY-REQUIREMENTS-ASSESSMENT-001
 
 ## 7. Direct-source modality correction — 2026-11-25
 The 82 candidate rows were rechecked against the exact cited PDF pages for the previously unresolved set. The updated disposition is 76 MANDATORY_CANDIDATE and six MODALITY_UNRESOLVED. The six retained unresolved are: ERX-REQ-UTXO-0001 (definition/transition description); ERX-REQ-AGENT-0002 (Atlas flowchart no-response path, graphical process evidence without explicit textual modal); ERX-REQ-LOC-0002 (composite of non-blocking location and later-event behavior); ERX-REQ-CONTACT-0001 (descriptive distinction between reception and response time); ERX-REQ-OTS-0003 (descriptive workflow sequence); ERX-REQ-OTS-0004 (evidentiary limitations of OTS, better treated as proof-boundary/design semantics than a direct mandatory system obligation). The remaining 19 candidates received source-specific modal rationales in the canonical CSV. MANDATORY_CANDIDATE remains a screening category, not an approved obligation or legal conclusion.
+
+
+## 8. Reconciliation correction — 2026-11-28
+
+This version corrects stale count language in v0.2.0. The canonical CSV and the v0.2.0 results table both establish 76 MANDATORY_CANDIDATE and 6 MODALITY_UNRESOLVED (82 total). Any reference in v0.2.0 to 57 candidates and 25 unresolved records is superseded and must not be used.
+
+The individual register contains 107 records linked to 82 parents. The individual modality mapping is 98 inherited MANDATORY_CANDIDATE and 9 inherited MODALITY_UNRESOLVED. The nine unresolved children are UTXO-0001, AGENT-0002, LOC-0002, CONTACT-0001, OTS-0003-A, OTS-0003-B, OTS-0003-C, OTS-0003-D and OTS-0004. No child was promoted to approved mandatory status.
+
+## 9. Remaining acceptance gates
+
+- Exact source-clause and diagram fidelity disposition for each of the 82 candidates remains to be completed and evidenced.
+- Independent semantic review of all 107 individual statements remains open; parent inheritance alone is not a child-level review.
+- For each candidate, the source modality and its authority class must be explicitly distinguished: source-design obligation/prohibition, procedural instruction, descriptive definition, diagram-derived process, recommendation/option, or external legal/regulatory obligation. The five-source baseline does not itself establish external legal compliance.
+- Any candidate combining mandatory and recommendatory clauses must be corrected or split without losing lineage.
+- LAEV's exact-baseline acceptance remains outstanding.
+
+**Determination: WP-0.7.5 remains IN_PROGRESS — NOT ACCEPTED.** The corrected 82/107 counts and complete parent-to-child mapping are now recorded; they do not satisfy the outstanding exact-source and semantic gates.
+
+---
+End of version 0.3.0.

@@ -4,7 +4,7 @@
 |---|---|
 | Document ID | ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 |
 | Version | 1.4.0 |
-| Status | COMPLETED / ACCEPTED — 107/107 INDIVIDUAL REVIEWS VERIFIED |
+| Status | COMPLETED — 107/107 INDIVIDUAL REVIEWS VERIFIED |
 | Date | 2026-11-28 |
 | Activity | WP-0.7.5 — Identify mandatory requirements |
 | Source review matrix | registers/wp-0.7.5-source-fidelity-review.csv |
@@ -65,7 +65,7 @@ No recommendation was promoted to a mandatory candidate. No definition, diagram-
 
 ## 6. Determination
 
-**Individual semantic/modality review COMPLETED / ACCEPTED.** All 107 child records have been independently checked against exact source evidence. The 95 mandatory candidates, 11 non-mandatory descriptive/derived records and one recommendation are separately classified. Scope/condition checks pass; actor/trigger/outcome is PASS or explicitly justified NOT_APPLICABLE. All candidates and children remain NOT_APPROVED pending the separate baseline approval process.
+**Individual semantic/modality review COMPLETED — evidence verified.** All 107 child records have been independently checked against exact source evidence. The 95 mandatory candidates, 11 non-mandatory descriptive/derived records and one recommendation are separately classified. Scope/condition checks pass; actor/trigger/outcome is PASS or explicitly justified NOT_APPLICABLE. All candidates and children remain NOT_APPROVED pending the separate baseline approval process.
 
 ---
 End of ERX-WP-0.7.5-INDIVIDUAL-MODALITY-REVIEW-001 v1.4.0.

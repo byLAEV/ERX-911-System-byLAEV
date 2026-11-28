@@ -4,8 +4,8 @@
 | Field | Record |
 |---|---|
 | Document ID | ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001 |
-| Version | 0.4.1 |
-| Status | RECONCILED GAP REGISTER — 82-CANDIDATE COVERAGE; CLOSURE OPEN |
+| Version | 0.5.0 |
+| Status | CONTROLLED GAP DISPOSITION REGISTER — 76 OPEN GAPS ROUTED; 6 NO-GAP DISPOSITIONS |
 | Work Package | WP-0.7 / Activity 0.7.7 |
 | Date | 2026-11-25 |
 | Source register | registers/requirements-traceability.csv |
@@ -14,13 +14,78 @@
 
 This register captures specification gaps that prevent a candidate requirement from being fully verifiable or safely allocated. It does not resolve the gaps or make design decisions. Requirement IDs remain unchanged.
 
-## 2. Reconciled coverage and gap dispositions
+## 2. Historical baseline — 63 open gaps (preserved)
 
-The current canonical source register contains 82 candidates (26 columns; CSV blob SHA `1b1bd462b916ea1fbca9ba9449a8114e13011761`). This register is synchronized to that snapshot.
+The following 63 original entries are retained verbatim as the historical gap baseline. Their current dispositions are carried forward in the routing register below.
 
-The gap inventory has **76 open specification gaps** and **6 candidate-level NO_GAP_WITH_EVIDENCE dispositions**, covering all 82 source candidates. This is candidate-level coverage only; the six no-gap findings do not waive individual-record, source-fidelity or later design review. The 76 gaps remain OPEN and require owner, applicability, closure evidence and approval.
+### Inventory reconciliation — 2026-11-25
+The historical gap baseline contains **63 individually recorded open gaps**. Subsequent source coverage review identified 13 additional gaps and documented six candidate-level NO_GAP_WITH_EVIDENCE dispositions. The controlled coverage is therefore **76 open specification gaps + 6 no-gap dispositions = 82/82 source candidates**. The earlier 63 remains preserved as the original register snapshot; it is not erased or misreported as the current total.
 
-The table below records individual gaps. Supplemental gap rows added after the earlier 63-row snapshot are part of the current 76-gap count; the earlier statement “63 gaps / 19 unassessed” is historical and superseded. No candidate is now classified UNASSESSED solely because it was absent from the earlier 63-row table.
+| Requirement ID | Source locator | Missing specification / closure work | Closure evidence |
+|---|---|---|---|
+| ERX-REQ-UTXO-0001 | ERX-PROT-001 PDF p.3 | Define canonical consumed/successor state evidence and historical status semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0002 | ERX-PROT-001 PDF p.3, Section 2.1 | Specify required field set, uniqueness scope, canonical encoding and versioning. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0003 | ERX-PROT-001 PDF p.3, Section 2.1 | Specify atomicity boundary, concurrency model and conflict outcome. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0004 | ERX-PROT-001 PDF p.3, Section 2.2 | Specify monotonic recovery and authoritative state reconciliation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0005 | ERX-PROT-001 PDF p.4 | Specify idempotency key scope, retention and retry result behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0006 | ERX-PROT-001 PDF p.10 | Specify cryptographic linkage and event/transition document boundaries. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0007 | ERX-PROT-001 PDF p.10, Step 7 | Specify transaction commit/rollback and external service boundary. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0008 | ERX-PROT-001 PDF p.10, Step 8 | Define OTS state vocabulary, retry policy and non-blocking operation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0009 | ERX-PROT-001 PDF p.17, Sections 10.1–10.5 | Specify replay detection, duplicate handling and adversarial test vectors. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0010 | ERX-PROT-001 PDF p.17, Section 10.6 | Specify concurrency and recovery invariants and authoritative persistence semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0011 | UTXO-911-001 PDF p.10, Principle of single spend | Specify uniqueness boundary and input-consumption validation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0012 | UTXO-911-001 PDF p.11, OTS function | Define OTS proof lifecycle and evidence retention. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-OPS-0001 | ERX-PROT-001 PDF p.25, Section 17.1 | Specify service continuity and degraded-mode behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-OPS-0002 | ERX-PROT-001 PDF p.24, Section 16.9 | Define audit record structure, time source and chronology semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INT-0001 | ERX-ROADMAP-001 PDF p.23, Section 8.1 | Specify adapter inputs/outputs, trust boundary and failure behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INST-0001 | ERX-PROT-001 PDF pp.5–6, Section 4 | Specify authority registry, issuer trust and credential lifecycle. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INST-0002 | ERX-PROT-001 PDF p.6, Section 4.1 | Define credential states and fail-closed behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INST-0003 | ERX-PROT-001 PDF p.6, Section 4.1 | Define authoritative jurisdiction sources and update responsibility. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-KEY-0001 | ERX-PROT-001 PDF p.6, Section 4.2 | Select key custody policy and approved controls; HSM remains recommendation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-KEY-0002 | ERX-PROT-001 PDF p.7, Section 4.2 | Define historical key-status lookup and verifier trust data. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-ARCH-0001 | ERX-PROT-001 PDF p.8, Section 4.3 | Specify core/adaptor authority boundary and non-overridable validation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-PRIV-0001 | ERX-PROT-001 PDF pp.14–15, Step 18 | Define protected original-to-evidence linkage, access and retention. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-TRANS-0001 | ERX-PROT-001 PDF pp.15–16, Step 19 | Specify transfer event identity, receiving authority and replay handling. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-CLOSE-0001 | ERX-PROT-001 PDF p.16, Step 20 | Define communication closure vs incident/intervention closure. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-VERIFY-0001 | ERX-PROT-001 PDF pp.21–23, Section 7 | Define export package contract and independent verification boundary. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-VERIFY-0002 | ERX-PROT-001 PDF p.24, Section 7.3 | Define verifier result vocabulary and missing-evidence behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-AGENT-0001 | ERX-ATLAS-001 PDF pp.7–8, Lámina 03 | Specify independent center/agent credential and availability state semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-AGENT-0002 | ERX-ATLAS-001 PDF p.8, Lámina 03 | Define non-response handling and prohibited false event creation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-OTS-0001 | ERX-ATLAS-001 PDF p.19, Lámina 06 | Define pending/submitted/anchored/failed evidence states and proof semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-VERIFY-0003 | ERX-ATLAS-001 PDF pp.27–28, verifier categories | Specify category checks, report schema and non-success outcomes. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-OPS-0003 | UTXO-911-001 PDF p.7, Section 4.2 | Define separate session and incident lifecycles. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-AVAIL-0001 | UTXO-911-001 PDF pp.9–10, availability lifecycle | Specify agent availability state machine, issuance guards and release authority. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-AVAIL-0002 | UTXO-911-001 PDF pp.9–11, Sections 5–8 | Specify separate agent-availability UTXO and communication UTXO models. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-STATE-0001 | ERX-ROADMAP-001 PDF pp.6–7, Sections 1.2–1.3 | Approve final state names and transitions; source says these require protocol approval. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-STATE-0002 | ERX-ROADMAP-001 PDF p.7, Section 1.3 | Specify transition table fields, authorization, guards and failure behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INV-0001 | ERX-ROADMAP-001 PDF p.8, Section 1.5 | Specify terminal-state transition guards. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INV-0002 | ERX-ROADMAP-001 PDF p.8, Section 1.5 | Specify correction/addendum model without mutation of sealed source evidence. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INV-0003 | ERX-ROADMAP-001 PDF p.8, Section 1.5 | Specify minimum provenance/audit fields and reconstruction test. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INV-0004 | ERX-ROADMAP-001 PDF p.8, Section 1.5 | Specify rollback/recovery monotonicity and credential revocation persistence. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-DATA-0001 | ERX-ROADMAP-001 PDF p.9, Section 2.1 | Define formal schemas, versions, required fields and validation vectors. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-CRYPTO-0001 | ERX-ROADMAP-001 PDF p.10, Section 2.3 | Algorithm and signature format remain an open decision; do not select by inference. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-CRYPTO-0002 | ERX-ROADMAP-001 PDF p.10, Section 2.4 | Define acyclic canonicalization/hash/signature dependency graph. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-VERIFY-0004 | ERX-ROADMAP-001 PDF p.21, Section 7 | Specify verifier independence, trust roots and shared dependency threat model. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-TRANS-0002 | ERX-ROADMAP-001 PDF pp.23–24, Section 8.2 | Specify multi-center transfer protocol and reconciliation authority. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-ARCH-0002 | ERX-ROADMAP-001 PDF pp.11–12, §3.1 | Define component responsibilities, interfaces, trust boundaries and privilege separation. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-UTXO-0013 | ERX-ROADMAP-001 PDF pp.12–13, §3.3 | Define transaction boundary and failure atomicity; OTS remains outside call-critical transaction. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-CORE-0001 | ERX-ROADMAP-001 PDF p.14, opening paragraph | Define measurable core readiness gate before telephone/OTS integration. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-CORE-0002 | ERX-ROADMAP-001 PDF p.14, §4.1 | Specify module boundaries, interfaces and ownership of listed responsibilities. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-TEST-0002 | ERX-ROADMAP-001 PDF pp.14–15, §§4.3 | Define simulator fixtures, event sequence, assertions and reproducible output. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-TEST-0003 | ERX-ROADMAP-001 PDF p.15, §4.4 | Define fault injection, concurrency test fixtures and expected recovery behavior. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-IDENT-0001 | ERX-ROADMAP-001 PDF p.16, §5.1 | Define identity record schemas, issuer relations and authorization model. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-IDENT-0002 | ERX-ROADMAP-001 PDF pp.16–17, §5.2 | Define credential state machine and validation source semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-KEY-0003 | ERX-ROADMAP-001 PDF p.17, §5.3 | Define full key lifecycle policy; do not imply a specific hardware technology. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-SEC-0001 | ERX-ROADMAP-001 PDF pp.17–18, §§5.4 and deliverables | Select algorithms, policy parameters and control evidence for each interface safeguard. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-OTS-0002 | ERX-ROADMAP-001 PDF pp.18–19, §6.1 | Define canonicalization, document versioning, proof update and verification semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-PRIV-0002 | ERX-ROADMAP-001 PDF p.20, §6.4 | Define custody locations, access, retention, recovery and deletion rules. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-VERIFY-0005 | ERX-ROADMAP-001 PDF p.21, §7.1 | Define export verifier schema and deterministic outcome semantics. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-INT-0002 | ERX-ROADMAP-001 PDF p.22, opening of Phase 8 | Define integration gate evidence and authorization authority. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-TEST-0005 | ERX-ROADMAP-001 PDF p.25, §9.3 | Set numeric thresholds and measurement methods before executing tests; values not specified in extraction. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-PILOT-0001 | ERX-ROADMAP-001 PDF pp.26–27, §§10.1–10.2 | Define shadow-pilot permissions, event feed and no-interference safeguards. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-PILOT-0002 | ERX-ROADMAP-001 PDF p.27, §10.3 | Define discrepancy classification, severity and reporting thresholds. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-HOMO-0001 | ERX-ROADMAP-001 PDF p.28, §11.1 | Define homologation dossier evidence and distinguish technical homologation from legal authorization. | Approved specification, decision record or testable criterion linked to this requirement |
+| ERX-REQ-HOMO-0002 | ERX-ROADMAP-001 PDF pp.28–29, §11.2 | Define multi-center onboarding evidence and institution approval gate. | Approved specification, decision record or testable criterion linked to this requirement |
 
 ## 3. Cross-cutting gaps requiring coordinated treatment
 
@@ -43,24 +108,7 @@ A gap is closed only when its missing parameter is specified by an authorized so
 End of ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001
 
 
-## 3. Coverage-control requirement
 
-For each of the 19 currently unrepresented source candidates, record one of:
-- GAP_IDENTIFIED (add a traceable row),
-- NO_GAP_WITH_EVIDENCE (cite why current approved specification is sufficient),
-- NOT_ASSESSED (retain open WP-0.7 status),
-- BLOCKED_BY_DECISION (link an open decision candidate).
-
-Do not close a gap solely because the candidate has a verification proposal or phase assignment. Child-level applicability must preserve the parent link and avoid duplicate gap records where a parent gap applies to multiple children.
-
----
-End of reconciled gap register.
-
-
-
-## 3. Disposition of the 19 previously unrepresented candidates
-
-A source/criterion-level first-pass disposition has now been recorded for all 19 candidates. Thirteen are added as specification gaps; six have a documented NO_GAP_WITH_EVIDENCE decision at this candidate level. A NO_GAP decision does not waive parent/child review or future design decisions.
 
 ### 3.1 GAP_IDENTIFIED — 13 candidates
 
@@ -91,28 +139,111 @@ A source/criterion-level first-pass disposition has now been recorded for all 19
 | ERX-REQ-OTS-0004 | ERX-PROT-001 PDF p.20 §12.3 | NO_GAP_WITH_EVIDENCE | The source explicitly lists the evidentiary limits of OTS. The candidate is treated as a proof-boundary/design constraint, not a mandatory system obligation; verifier-result detail is covered by VERIFY requirements. |
 | ERX-REQ-BOUND-0001 | ERX-PROT-001 PDF p.28 §20 | NO_GAP_WITH_EVIDENCE | The source explicitly defines the non-substitution boundary and institutional independence. The candidate-specific architecture/governance review criterion is sufficient at this requirements-identification level. |
 
-## 4. Coverage result and closure control
+## 5. Full 76-gap routing and disposition register
 
-- Original detailed gap entries: 63.
-- Additional gaps identified through this review: 13.
-- **Total detailed specification gaps: 76 unique candidate IDs.**
-- **NO_GAP_WITH_EVIDENCE: 6 candidate IDs.**
-- Total source-candidate coverage: 82/82.
-- No requirement ID was deleted, merged or renumbered.
-- The 107 individual records still require parent/child applicability review; a parent-level gap must not be duplicated across children.
-- Existing gaps remain OPEN until their specified closure evidence is produced and reviewed. The 13 added gaps are not resolved by being recorded.
-- The six NO_GAP dispositions apply only to the stated candidate-level scope and may be reopened if child decomposition or source review reveals additional obligations.
+Each of the 76 open gap IDs is retained as OPEN and routed to the primary phase currently assigned to its parent candidate in the canonical CSV. This is a documentary disposition, not a claim that the missing technical specification has been implemented or approved. The receiving phase must appoint a responsible owner; LAEV remains the approval authority. Closure occurs only when the specified evidence is approved and the verification criterion becomes evaluable.
 
-Activity 0.7.7 can be treated as **recording coverage complete for the 82 source-candidate layer**, while the 76 specification gaps remain open work items. Formal activity acceptance and child-level applicability remain separate controls.
+| Gap / requirement ID | Source and exact canonical locator | Receiving primary phase | Disposition | Responsible owner | Closure point |
+|---|---|---|---|---|---|
+| ERX-REQ-UTXO-0001 | ERX-PROT-001 v1.1 — PDF p.3 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0002 | ERX-PROT-001 v1.1 — PDF p.3, Section 2.1 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0003 | ERX-PROT-001 v1.1 — PDF p.3, Section 2.1 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0004 | ERX-PROT-001 v1.1 — PDF p.3, Section 2.2 | PHASE_3 — Software architecture and infrastructure | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0005 | ERX-PROT-001 v1.1 — PDF p.4 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0006 | ERX-PROT-001 v1.1 — PDF p.10 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0007 | ERX-PROT-001 v1.1 — PDF p.10, Step 7 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0008 | ERX-PROT-001 v1.1 — PDF p.10, Step 8 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0009 | ERX-PROT-001 v1.1 — PDF p.17, Sections 10.1–10.5 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0010 | ERX-PROT-001 v1.1 — PDF p.17, Section 10.6 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0011 | UTXO-911-001 v1.0 — PDF p.10, Principle of single spend | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0012 | UTXO-911-001 v1.0 — PDF p.11, OTS function | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OPS-0001 | ERX-PROT-001 v1.1 — PDF p.25, Section 17.1 | PHASE_3 — Software architecture and infrastructure | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OPS-0002 | ERX-PROT-001 v1.1 — PDF p.24, Section 16.9 | PHASE_4 — ERX Core development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INT-0001 | ERX-ROADMAP-001 v1.0 — PDF p.23, Section 8.1 | PHASE_8 — Institutional integration | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INST-0001 | ERX-PROT-001 v1.1 — PDF pp.5–6, Section 4 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INST-0002 | ERX-PROT-001 v1.1 — PDF p.6, Section 4.1 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INST-0003 | ERX-PROT-001 v1.1 — PDF p.6, Section 4.1 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-KEY-0001 | ERX-PROT-001 v1.1 — PDF p.6, Section 4.2 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-KEY-0002 | ERX-PROT-001 v1.1 — PDF p.7, Section 4.2 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-ARCH-0001 | ERX-PROT-001 v1.1 — PDF p.8, Section 4.3 | PHASE_3 — Software architecture and infrastructure | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PRIV-0001 | ERX-PROT-001 v1.1 — PDF pp.14–15, Step 18 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TRANS-0001 | ERX-PROT-001 v1.1 — PDF pp.15–16, Step 19 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-CLOSE-0001 | ERX-PROT-001 v1.1 — PDF p.16, Step 20 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-VERIFY-0001 | ERX-PROT-001 v1.1 — PDF pp.21–23, Section 7 | PHASE_7 — ERX Verifier development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-VERIFY-0002 | ERX-PROT-001 v1.1 — PDF p.24, Section 7.3 | PHASE_7 — ERX Verifier development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-AGENT-0001 | ERX-ATLAS-001 v1.1 — PDF pp.7–8, Lámina 03 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-AGENT-0002 | ERX-ATLAS-001 v1.1 — PDF p.8, Lámina 03 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OTS-0001 | ERX-ATLAS-001 v1.1 — PDF p.19, Lámina 06 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-VERIFY-0003 | ERX-ATLAS-001 v1.1 — PDF pp.27–28, verifier categories | PHASE_7 — ERX Verifier development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OPS-0003 | UTXO-911-001 v1.0 — PDF p.7, Section 4.2 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-AVAIL-0001 | UTXO-911-001 v1.0 — PDF pp.9–10, availability lifecycle | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-AVAIL-0002 | UTXO-911-001 v1.0 — PDF pp.9–11, Sections 5–8 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-STATE-0001 | ERX-ROADMAP-001 v1.0 — PDF pp.6–7, Sections 1.2–1.3 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-STATE-0002 | ERX-ROADMAP-001 v1.0 — PDF p.7, Section 1.3 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INV-0001 | ERX-ROADMAP-001 v1.0 — PDF p.8, Section 1.5 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INV-0002 | ERX-ROADMAP-001 v1.0 — PDF p.8, Section 1.5 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INV-0003 | ERX-ROADMAP-001 v1.0 — PDF p.8, Section 1.5 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INV-0004 | ERX-ROADMAP-001 v1.0 — PDF p.8, Section 1.5 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-DATA-0001 | ERX-ROADMAP-001 v1.0 — PDF p.9, Section 2.1 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-CRYPTO-0001 | ERX-ROADMAP-001 v1.0 — PDF p.10, Section 2.3 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-CRYPTO-0002 | ERX-ROADMAP-001 v1.0 — PDF p.10, Section 2.4 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-VERIFY-0004 | ERX-ROADMAP-001 v1.0 — PDF p.21, Section 7 | PHASE_7 — ERX Verifier development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TRANS-0002 | ERX-ROADMAP-001 v1.0 — PDF pp.23–24, Section 8.2 | PHASE_8 — Institutional integration | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-ARCH-0002 | ERX-ROADMAP-001 v1.0 — PDF pp.11–12, §3.1 | PHASE_3 — Software architecture and infrastructure | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-UTXO-0013 | ERX-ROADMAP-001 v1.0 — PDF pp.12–13, §3.3 | PHASE_3 — Software architecture and infrastructure | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-CORE-0001 | ERX-ROADMAP-001 v1.0 — PDF p.14, opening paragraph | PHASE_4 — ERX Core development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-CORE-0002 | ERX-ROADMAP-001 v1.0 — PDF p.14, §4.1 | PHASE_4 — ERX Core development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TEST-0002 | ERX-ROADMAP-001 v1.0 — PDF pp.14–15, §§4.3 | PHASE_9 — Testing, audit and recovery | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TEST-0003 | ERX-ROADMAP-001 v1.0 — PDF p.15, §4.4 | PHASE_9 — Testing, audit and recovery | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-IDENT-0001 | ERX-ROADMAP-001 v1.0 — PDF p.16, §5.1 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-IDENT-0002 | ERX-ROADMAP-001 v1.0 — PDF pp.16–17, §5.2 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-KEY-0003 | ERX-ROADMAP-001 v1.0 — PDF p.17, §5.3 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-SEC-0001 | ERX-ROADMAP-001 v1.0 — PDF pp.17–18, §§5.4 and deliverables | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OTS-0002 | ERX-ROADMAP-001 v1.0 — PDF pp.18–19, §6.1 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PRIV-0002 | ERX-ROADMAP-001 v1.0 — PDF p.20, §6.4 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-VERIFY-0005 | ERX-ROADMAP-001 v1.0 — PDF p.21, §7.1 | PHASE_7 — ERX Verifier development | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-INT-0002 | ERX-ROADMAP-001 v1.0 — PDF p.22, opening of Phase 8 | PHASE_8 — Institutional integration | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TEST-0005 | ERX-ROADMAP-001 v1.0 — PDF p.25, §9.3 | PHASE_9 — Testing, audit and recovery | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PILOT-0001 | ERX-ROADMAP-001 v1.0 — PDF pp.26–27, §§10.1–10.2 | PHASE_10 — Shadow pilot | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PILOT-0002 | ERX-ROADMAP-001 v1.0 — PDF p.27, §10.3 | PHASE_10 — Shadow pilot | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-HOMO-0001 | ERX-ROADMAP-001 v1.0 — PDF p.28, §11.1 | PHASE_11 — Homologation and institutional expansion | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-HOMO-0002 | ERX-ROADMAP-001 v1.0 — PDF pp.28–29, §11.2 | PHASE_11 — Homologation and institutional expansion | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TEST-0001 | ERX-ROADMAP-001 v1.0 — PDF p.24, Section 9.1 | PHASE_9 — Testing, audit and recovery | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TEST-0004 | ERX-ROADMAP-001 v1.0 — PDF p.24, §9.1 | PHASE_9 — Testing, audit and recovery | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-RECV-0001 | ERX-PROT-001 v1.1 — PDF p.8, Step 1 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-LOC-0001 | ERX-PROT-001 v1.1 — PDF p.9, Step 4 | PHASE_1 — Normative closure and state model | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-CORR-0001 | ERX-PROT-001 v1.1 — PDF pp.18, 21–22, §§10.9 and 14 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TIME-0001 | ERX-PROT-001 v1.1 — PDF p.18, §11 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-TIME-0002 | ERX-PROT-001 v1.1 — PDF p.19, §11 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OTS-0003 | ERX-PROT-001 v1.1 — PDF pp.19–20, §12 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PRIV-0003 | ERX-PROT-001 v1.1 — PDF p.20, §13 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PRIV-0004 | ERX-PROT-001 v1.1 — PDF p.21, §13.1 | PHASE_2 — Formal data and cryptography | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-PRIV-0005 | ERX-PROT-001 v1.1 — PDF p.21, §13.2 | PHASE_6 — Documentary evidence and OpenTimestamps | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OPS-0004 | ERX-PROT-001 v1.1 — PDF p.24, §16.10 | PHASE_5 — Identity, trust and institutional security | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
+| ERX-REQ-OPS-0005 | ERX-PROT-001 v1.1 — PDF p.24, §16.8 | PHASE_3 — Software architecture and infrastructure | OPEN — SPECIFIED / ROUTED, NOT CLOSED | LAEV to designate responsible phase owner; no owner inferred | At receiving phase gate, before dependent design/implementation |
 
+## 6. Six candidate-level no-gap dispositions
 
+| Requirement ID | Source locator | Status | Applicability control |
+|---|---|---|---|
+| ERX-REQ-LOC-0002 | ERX-PROT-001 v1.1 — PDF p.9, Step 4 | NO_GAP_WITH_EVIDENCE — candidate scope only | See evidence rationale above; parent/child applicability remains auditable |
+| ERX-REQ-CONTACT-0001 | ERX-PROT-001 v1.1 — PDF p.11, Step 10 | NO_GAP_WITH_EVIDENCE — candidate scope only | See evidence rationale above; parent/child applicability remains auditable |
+| ERX-REQ-AGENT-0003 | ERX-PROT-001 v1.1 — PDF p.12, Step 11 | NO_GAP_WITH_EVIDENCE — candidate scope only | See evidence rationale above; parent/child applicability remains auditable |
+| ERX-REQ-CONTACT-0002 | ERX-PROT-001 v1.1 — PDF p.12, Step 13 | NO_GAP_WITH_EVIDENCE — candidate scope only | See evidence rationale above; parent/child applicability remains auditable |
+| ERX-REQ-OTS-0004 | ERX-PROT-001 v1.1 — PDF p.20, §12.3 | NO_GAP_WITH_EVIDENCE — candidate scope only | See evidence rationale above; parent/child applicability remains auditable |
+| ERX-REQ-BOUND-0001 | ERX-PROT-001 v1.1 — PDF p.28, §20 | NO_GAP_WITH_EVIDENCE — candidate scope only | See evidence rationale above; parent/child applicability remains auditable |
 
+## 7. Controlled counts and acceptance boundary
 
-## 4. Version and authority control — 2026-11-28
+- Historical open gaps retained: 63.
+- Supplemental open gaps added: 13.
+- **Current open gap inventory: 76 unique requirement IDs.**
+- Candidate-level no-gap findings: 6; not added to open-gap count.
+- Coverage: 82/82 canonical source candidates.
+- 107 child records: parent/child applicability must be checked; do not clone parent gaps into child rows without evidence.
+- The 76 gaps are **documented and phase-routed**, not technically closed. The eight decision candidates remain unresolved and must not be decided in WP-0.7.
 
-The canonical CSV blob SHA above is the controlling row snapshot. The status reconciliation, current phase-allocation register and this gap register must be interpreted against it. A gap disposition is not requirement approval, implementation authorization or WP-0.7 acceptance.
-
-The current 107 individually identified records require child-level applicability review against the 76 open parent/candidate gaps. Do not duplicate parent gaps as independent obligations without evidence.
+The earlier v0.4.1 duplicated/contradictory narrative and truncated 19-ID table are superseded by this v0.5.0 controlled register. The 63-row historical baseline is restored from its recorded Git revision and preserved intact.
 
 ---
-End of reconciled gap register.
+End of ERX-WP-0.7-PENDING-SPECIFICATION-REGISTER-001 v0.5.0
